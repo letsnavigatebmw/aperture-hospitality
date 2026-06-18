@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom utilities */
+@layer components {
+  .section-label {
+    @apply flex items-center gap-3 text-xs font-medium tracking-widest uppercase text-muted mb-8;
+  }
+
+  .section-label::before {
+    @apply block w-0.5 h-5 bg-brass flex-shrink-0;
+    content: '';
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-8 py-3.5 bg-ink text-parchment font-medium text-xs tracking-wider uppercase hover:bg-opacity-90 transition-all;
+  }
+
+  .btn-ghost {
+    @apply text-xs font-medium tracking-wider uppercase text-muted border-b border-rule pb-0.5 hover:text-ink hover:border-ink transition-colors;
+  }
+
+  .container-max {
+    @apply max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-16;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
