@@ -4,10 +4,10 @@ import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'About | Aperture Hospitality',
-  description: 'Brandon Weaver, founder and CEO of Aperture Hospitality. 20+ years in hospitality, luxury travel, and real estate operations.',
+  description: 'Brandon M. Weaver, founder and CEO of Aperture Hospitality. 20+ years in hospitality, luxury travel, and real estate operations.',
   openGraph: {
     title: 'About | Aperture Hospitality',
-    description: 'Brandon Weaver, founder and CEO of Aperture Hospitality.',
+    description: 'Brandon M. Weaver, founder and CEO of Aperture Hospitality.',
   },
 }
 
@@ -23,8 +23,17 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-12 md:gap-16">
             {/* Left column */}
             <div>
+              {/* Photo */}
+              <div className="mb-8 overflow-hidden rounded-sm">
+                <img 
+                  src="/brandon-headshot.jpg" 
+                  alt="Brandon M. Weaver" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              
               <h1 className="font-display text-4xl md:text-5xl font-light leading-tight mb-2 text-ink">
-                Brandon<br />Weaver
+                Brandon M.<br />Weaver
               </h1>
               <p className="text-xs font-medium tracking-widest uppercase text-brass mb-8">
                 Founder &amp; CEO
