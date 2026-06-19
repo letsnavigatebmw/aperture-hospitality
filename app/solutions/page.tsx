@@ -234,9 +234,9 @@ export default function SolutionsPage() {
                   fontWeight: 500,
                   letterSpacing: '0.18em',
                   textTransform: 'uppercase',
-                  color: '#6B6760',
+                  color: '#B8924A',
                   marginBottom: '0.5rem'
-                }}>Starting from</div>
+                }}>Limited Time Offer</div>
                 
                 <div style={{
                   fontFamily: "'Cormorant Garamond', Georgia, serif",
@@ -244,9 +244,9 @@ export default function SolutionsPage() {
                   fontWeight: 300,
                   color: '#1C1A17',
                   lineHeight: 1,
-                  marginBottom: '0.5rem'
+                  marginBottom: '0rem'
                 }}>
-                  $2,995
+                  $350
                 </div>
                 
                 <div style={{
@@ -256,7 +256,7 @@ export default function SolutionsPage() {
                   color: '#6B6760',
                   marginBottom: '2rem'
                 }}>
-                  per month — no long-term contract required
+                  per month (Reg. Price: $500/month)
                 </div>
 
                 <Link href="/contact?product=revenue-factory" style={{
