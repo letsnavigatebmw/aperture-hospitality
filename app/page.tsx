@@ -8,7 +8,7 @@ import HowWeThink from '@/components/HowWeThink'
 
 import WhereWeFocused from '@/components/WhereWeFocused'
 import AboutFounder from '@/components/AboutFounder'
-import PodcastsMedia from '@/components/PodcastsMedia'
+
 import Testimonials from '@/components/Testimonials'
 import Link from 'next/link'
 
@@ -352,9 +352,6 @@ export default function Home() {
 
       {/* WHERE WE'RE FOCUSED */}
       <WhereWeFocused />
-
-      {/* PODCASTS & MEDIA */}
-      <PodcastsMedia />
 
       {/* CONTACT CTA */}
       <section className="border-b border-rule">
