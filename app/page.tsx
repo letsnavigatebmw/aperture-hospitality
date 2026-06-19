@@ -104,7 +104,7 @@ export default function Home() {
               color: '#1C1A17',
               marginBottom: '2rem'
             }}>
-              Results,<br/>not a <em style={{ fontStyle: 'italic', color: '#B8924A' }}>deck.</em>
+              Results, not a <em style={{ fontStyle: 'italic', color: '#B8924A' }}>deck.</em>
             </h1>
 
             {/* Body copy */}
