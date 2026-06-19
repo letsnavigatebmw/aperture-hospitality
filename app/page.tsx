@@ -28,15 +28,6 @@ export default function Home() {
           {/* RIGHT: Content */}
           <div className="order-1 md:order-2 flex flex-col justify-center py-16 md:py-24 container-max">
             <div className="space-y-8">
-              {/* Logo */}
-              <div>
-                <img 
-                  src="/aperture-logo.png" 
-                  alt="Aperture Hospitality"
-                  className="h-auto w-80 md:w-96 object-contain"
-                />
-              </div>
-
               {/* Headline */}
               <h1 className="font-display text-5xl md:text-6xl font-light leading-tight tracking-tighter">
                 Results, not a <em className="italic text-brass">deck.</em>
