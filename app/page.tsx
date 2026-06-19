@@ -71,23 +71,18 @@ export default function Home() {
 
             {/* Aperture Logo */}
             <div style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.75rem',
-              marginBottom: '2rem'
+              marginBottom: '2rem',
+              maxWidth: '280px'
             }}>
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="18" cy="18" r="15" stroke="#1C1A17" strokeWidth="1.5"/>
-                <line x1="3" y1="18" x2="33" y2="18" stroke="#1C1A17" strokeWidth="1.5"/>
-              </svg>
-              <span style={{
-                fontFamily: "'Inter', sans-serif",
-                fontSize: '0.75rem',
-                fontWeight: 500,
-                letterSpacing: '0.15em',
-                textTransform: 'uppercase',
-                color: '#1C1A17'
-              }}>APERTURE</span>
+              <img 
+                src="/aperture-logo.jpg" 
+                alt="Aperture Hospitality" 
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  display: 'block'
+                }}
+              />
             </div>
 
             {/* Headline */}
