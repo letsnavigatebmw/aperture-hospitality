@@ -22,7 +22,7 @@ export default function Nav() {
         </Link>
         <ul className="hidden lg:flex gap-6 xl:gap-8">
           <li>
-            <Link href="/#insights" className="text-xs font-normal tracking-wider uppercase text-muted hover:text-ink transition-colors">
+            <Link href="/insights" className="text-xs font-normal tracking-wider uppercase text-muted hover:text-ink transition-colors">
               Insights
             </Link>
           </li>

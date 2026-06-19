@@ -4,7 +4,7 @@ import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import AISolutions from '@/components/AISolutions'
 import IntakeForm from '@/components/IntakeForm'
-import Insights from '@/components/Insights'
+
 import HowWeThink from '@/components/HowWeThink'
 import WhereWeFocused from '@/components/WhereWeFocused'
 import AboutFounder from '@/components/AboutFounder'
@@ -343,9 +343,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* INSIGHTS */}
-      <Insights />
 
       {/* HOW WE THINK */}
       <HowWeThink />
