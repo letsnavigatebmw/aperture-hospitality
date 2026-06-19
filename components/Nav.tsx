@@ -27,7 +27,7 @@ export default function Nav() {
             </Link>
           </li>
           <li>
-            <Link href="/#how-we-think" className="text-xs font-normal tracking-wider uppercase text-muted hover:text-ink transition-colors">
+            <Link href="/philosophy" className="text-xs font-normal tracking-wider uppercase text-muted hover:text-ink transition-colors">
               Philosophy
             </Link>
           </li>
