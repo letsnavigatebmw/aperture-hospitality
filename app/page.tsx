@@ -22,25 +22,109 @@ export default function Home() {
       {/* HERO */}
       <div className="border-b border-rule">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0" style={{ minHeight: '600px' }}>
-          {/* LEFT: Headshot */}
+          {/* LEFT PANEL — Aperture SVG */}
           <div style={{
-            order: 1,
-            overflow: 'hidden',
-            background: '#f5f5f5',
+            background: '#1C1A17',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            minHeight: '600px'
+            minHeight: '600px',
+            order: 1,
+            position: 'relative',
+            overflow: 'hidden'
           }}>
-            <img
-              src="/brandon-headshot.jpg"
-              alt="Brandon Weaver"
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover'
-              }}
-            />
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 680 860"
+              preserveAspectRatio="xMidYMid slice"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}
+            >
+              {/* Grid texture */}
+              <line x1="0" y1="215" x2="680" y2="215" stroke="#2e2b26" strokeWidth="0.5"/>
+              <line x1="0" y1="430" x2="680" y2="430" stroke="#2e2b26" strokeWidth="0.5"/>
+              <line x1="0" y1="645" x2="680" y2="645" stroke="#2e2b26" strokeWidth="0.5"/>
+              <line x1="215" y1="0" x2="215" y2="860" stroke="#2e2b26" strokeWidth="0.5"/>
+              <line x1="430" y1="0" x2="430" y2="860" stroke="#2e2b26" strokeWidth="0.5"/>
+
+              {/* Outer ring */}
+              <circle cx="340" cy="380" r="140" stroke="#2e2b26" strokeWidth="1"/>
+
+              {/* Main circle */}
+              <circle cx="340" cy="380" r="110" stroke="#F0EDE6" strokeWidth="1.2" opacity="0.9"/>
+
+              {/* Brass arc: 12 to 3 o'clock */}
+              <path
+                d="M340 270 A110 110 0 0 1 450 380"
+                stroke="#B8924A"
+                strokeWidth="5"
+                strokeLinecap="round"
+              />
+
+              {/* Inner ring */}
+              <circle cx="340" cy="380" r="70" stroke="#2e2b26" strokeWidth="0.75"/>
+
+              {/* Center dot */}
+              <circle cx="340" cy="380" r="3" fill="#B8924A" opacity="0.6"/>
+
+              {/* Crosshairs */}
+              <line x1="340" y1="310" x2="340" y2="270" stroke="#2e2b26" strokeWidth="0.75"/>
+              <line x1="340" y1="490" x2="340" y2="450" stroke="#2e2b26" strokeWidth="0.75"/>
+              <line x1="270" y1="380" x2="230" y2="380" stroke="#2e2b26" strokeWidth="0.75"/>
+              <line x1="450" y1="380" x2="410" y2="380" stroke="#2e2b26" strokeWidth="0.75"/>
+
+              {/* Wordmark */}
+              <text
+                x="340" y="548"
+                fontFamily="'Inter', sans-serif"
+                fontSize="13"
+                fontWeight="300"
+                letterSpacing="8"
+                fill="#F0EDE6"
+                textAnchor="middle"
+                opacity="0.9"
+              >APERTURE</text>
+
+              <line x1="240" y1="560" x2="440" y2="560" stroke="#2e2b26" strokeWidth="0.75"/>
+
+              <text
+                x="340" y="577"
+                fontFamily="'Inter', sans-serif"
+                fontSize="7"
+                fontWeight="400"
+                letterSpacing="5"
+                fill="#B8924A"
+                textAnchor="middle"
+              >HOSPITALITY</text>
+
+              {/* Tagline */}
+              <text
+                x="340" y="760"
+                fontFamily="'Cormorant Garamond', Georgia, serif"
+                fontSize="15"
+                fontWeight="300"
+                fontStyle="italic"
+                letterSpacing="1"
+                fill="#6B6760"
+                textAnchor="middle"
+              >An operator's eye on every engagement.</text>
+
+              {/* Bottom rule */}
+              <line x1="100" y1="780" x2="580" y2="780" stroke="#2e2b26" strokeWidth="0.5"/>
+
+              {/* Founded line */}
+              <text
+                x="340" y="810"
+                fontFamily="'Inter', sans-serif"
+                fontSize="7"
+                fontWeight="400"
+                letterSpacing="3"
+                fill="#4a4845"
+                textAnchor="middle"
+              >FOUNDED 2021 · LOS ANGELES</text>
+            </svg>
           </div>
 
           {/* RIGHT: Content */}
