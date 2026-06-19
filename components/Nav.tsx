@@ -7,10 +7,15 @@ export default function Nav() {
         <Link href="/" className="text-xs font-medium tracking-widest uppercase text-ink">
           Aperture Hospitality
         </Link>
-        <ul className="hidden md:flex gap-10">
+        <ul className="hidden md:flex gap-8">
           <li>
             <Link href="/#insights" className="text-xs font-normal tracking-wider uppercase text-muted hover:text-ink transition-colors">
               Insights
+            </Link>
+          </li>
+          <li>
+            <Link href="/#how-we-think" className="text-xs font-normal tracking-wider uppercase text-muted hover:text-ink transition-colors">
+              Philosophy
             </Link>
           </li>
           <li>

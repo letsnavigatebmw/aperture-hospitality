@@ -1,6 +1,9 @@
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import Insights from '@/components/Insights'
+import HowWeThink from '@/components/HowWeThink'
+import WhereWeFocused from '@/components/WhereWeFocused'
+import PodcastsMedia from '@/components/PodcastsMedia'
 import Link from 'next/link'
 
 export default function Home() {
@@ -122,6 +125,15 @@ export default function Home() {
 
       {/* INSIGHTS */}
       <Insights />
+
+      {/* HOW WE THINK */}
+      <HowWeThink />
+
+      {/* WHERE WE'RE FOCUSED */}
+      <WhereWeFocused />
+
+      {/* PODCASTS & MEDIA */}
+      <PodcastsMedia />
 
       {/* CONTACT CTA */}
       <div className="bg-ink">
