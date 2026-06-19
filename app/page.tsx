@@ -30,16 +30,12 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-r from-parchment via-transparent to-transparent" />
                 
                 {/* Logo to the right of photo */}
-                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2 md:translate-x-1/3 h-32 w-32 md:h-48 md:w-48 bg-parchment rounded-full flex items-center justify-center shadow-lg">
-                  <svg viewBox="0 0 280 120" className="h-24 w-auto md:h-32 w-auto" xmlns="http://www.w3.org/2000/svg">
-                    {/* Circle/Aperture symbol */}
-                    <circle cx="45" cy="60" r="28" fill="none" stroke="#1C1A17" strokeWidth="2.5"/>
-                    <path d="M 45 32 A 28 28 0 0 1 73 60" fill="none" stroke="#B8924A" strokeWidth="3"/>
-                    
-                    {/* Text */}
-                    <text x="95" y="75" fontFamily="Georgia, serif" fontSize="32" fontWeight="300" letterSpacing="4" fill="#1C1A17">APERTURE</text>
-                    <text x="95" y="95" fontFamily="Georgia, serif" fontSize="12" fontWeight="300" letterSpacing="2.5" fill="#6B6760">HOSPITALITY</text>
-                  </svg>
+                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2 md:translate-x-1/3 h-32 w-32 md:h-48 md:w-48 bg-parchment rounded-full flex items-center justify-center shadow-lg p-4">
+                  <img 
+                    src="/aperture-logo.png" 
+                    alt="Aperture Hospitality"
+                    className="h-full w-full object-contain"
+                  />
                 </div>
               </div>
             </div>
