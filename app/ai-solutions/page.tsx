@@ -567,6 +567,454 @@ export default function AISolutionsPage() {
         </div>
       </section>
 
+      {/* BONUSES SECTION */}
+      <section style={{
+        padding: 'clamp(4rem, 10vw, 8rem) clamp(1.5rem, 4vw, 4rem)',
+        background: '#FFFFFF',
+        borderBottom: '1px solid #D4CFC6'
+      }}>
+        <div style={{ maxWidth: '1140px', margin: '0 auto' }}>
+          
+          <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+            <span style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '0.6875rem',
+              fontWeight: 600,
+              letterSpacing: '0.18em',
+              textTransform: 'uppercase',
+              color: '#666666'
+            }}>Bonuses</span>
+            
+            <h2 style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: 'clamp(2rem, 3.5vw, 3.5rem)',
+              fontWeight: 400,
+              lineHeight: 1.2,
+              color: '#1C1A17',
+              margin: 0,
+              marginTop: '1rem',
+              marginBottom: '1rem'
+            }}>
+              Resources To Make You More Successful With Your AI Employee From Day 1
+            </h2>
+            
+            <p style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '1rem',
+              fontWeight: 300,
+              lineHeight: 1.6,
+              color: '#666666',
+              maxWidth: '900px',
+              margin: '0 auto'
+            }}>
+              Four resources built to make you more successful with your AI Employee from day one — and yours to keep forever.
+            </p>
+          </div>
+
+          {/* Bonus Cards Grid */}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+            gap: '2rem',
+            marginBottom: '3rem'
+          }}>
+            {[
+              { icon: '📋', title: 'AI Employee Job Description Template', value: '$350', desc: 'Pre-written scope of work for your AI Receptionist role — ready to customize with your hours, offer, and call rules. Walk into your onboarding call with this completed and your setup time gets cut in half.' },
+              { icon: '☎️', title: 'Inbound Call Script Playbook', value: '$250', desc: 'The 12 most common questions your AI Employee will get — with tested response frameworks. Covers pricing objections, availability questions, emergency calls, and appointment booking. Yours to edit, own, and reuse for every new AI Employee you hire.' },
+              { icon: '✅', title: '30-Day AI Employee Quick-Start Checklist', value: '$150', desc: 'The exact sequence of actions — in the right order — for your first 30 days. No guessing what to do next. No skipping steps that matter. Your AI Employee goes live faster and performs better from day one.' },
+              { icon: '📊', title: 'Weekly Performance Scorecard Template', value: '$200', desc: 'The five numbers that tell you whether your AI Employee is working — calls answered, appointments booked, reviews requested, reviews responded to, and leads followed up. One glance, every Monday morning.' }
+            ].map((bonus, i) => (
+              <div key={i} style={{
+                padding: '2rem',
+                border: '1px solid #E0E0E0',
+                borderRadius: '4px',
+                background: '#FAFAFA'
+              }}>
+                <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>{bonus.icon}</div>
+                <h3 style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: '1.125rem',
+                  fontWeight: 600,
+                  color: '#1C1A17',
+                  margin: 0,
+                  marginBottom: '0.5rem'
+                }}>
+                  {bonus.title}
+                </h3>
+                <div style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: '0.875rem',
+                  fontWeight: 600,
+                  color: '#0066CC',
+                  marginBottom: '1rem'
+                }}>
+                  Value: {bonus.value}
+                </div>
+                <p style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: '0.875rem',
+                  fontWeight: 300,
+                  lineHeight: 1.6,
+                  color: '#666666',
+                  margin: 0
+                }}>
+                  {bonus.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Total Value */}
+          <div style={{
+            border: '1px solid #E0E0E0',
+            background: '#F5F5F5',
+            padding: '2rem',
+            borderRadius: '4px',
+            textAlign: 'center'
+          }}>
+            <div style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '0.875rem',
+              fontWeight: 600,
+              textTransform: 'uppercase',
+              letterSpacing: '0.08em',
+              color: '#666666',
+              marginBottom: '0.5rem'
+            }}>
+              Total Toolkit Value:
+            </div>
+            <div style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '2rem',
+              fontWeight: 600,
+              color: '#1C1A17',
+              marginBottom: '0.5rem'
+            }}>
+              <span style={{ textDecoration: 'line-through', color: '#999999' }}>$950</span>
+            </div>
+            <div style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '1.125rem',
+              fontWeight: 600,
+              color: '#0066CC'
+            }}>
+              ✓ Your Cost: Included free with any plan
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* VALUE SECTION */}
+      <section style={{
+        padding: 'clamp(4rem, 10vw, 8rem) clamp(1.5rem, 4vw, 4rem)',
+        background: '#1A1A1A',
+        borderBottom: '1px solid #2e2b26'
+      }}>
+        <div style={{ maxWidth: '1140px', margin: '0 auto' }}>
+          
+          <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+            <span style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '0.6875rem',
+              fontWeight: 600,
+              letterSpacing: '0.18em',
+              textTransform: 'uppercase',
+              color: '#6B6760'
+            }}>Value</span>
+            
+            <h2 style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: 'clamp(2.5rem, 4vw, 3.5rem)',
+              fontWeight: 300,
+              lineHeight: 1.2,
+              color: '#F0EDE6',
+              margin: 0,
+              marginTop: '1rem',
+              marginBottom: '1rem'
+            }}>
+              Three Full-Time Jobs. One Monthly Price.
+            </h2>
+            
+            <p style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '1rem',
+              fontWeight: 300,
+              lineHeight: 1.6,
+              color: '#6B6760',
+              maxWidth: '900px',
+              margin: '0 auto'
+            }}>
+              Get your AI Employee for less than the cost of an additional full-time employee and less than the cost of missing your next sales opportunities.
+            </p>
+          </div>
+
+          {/* Job Cards */}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: '2rem',
+            marginBottom: '3rem'
+          }}>
+            {[
+              { number: '01', title: 'Full-Time Receptionist', salary: '40K-$50K', note: '$40K-$50K annually + payroll taxes + benefits + training time' },
+              { number: '02', title: 'Full-Time Customer Service Rep', salary: '35K-$45K', note: '$35K-$45K annually + payroll taxes + benefits + training time' },
+              { number: '03', title: 'Full-Time Reputation Manager', salary: '15K-$25K', note: '$15K-$25K annually + payroll taxes + benefits + training time' }
+            ].map((job, i) => (
+              <div key={i} style={{
+                border: '1px solid #2e2b26',
+                padding: '2.5rem',
+                borderRadius: '4px',
+                background: '#222222'
+              }}>
+                <div style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: '0.875rem',
+                  fontWeight: 600,
+                  color: '#6B6760',
+                  marginBottom: '1rem'
+                }}>
+                  {job.number}
+                </div>
+                <h3 style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: '1.25rem',
+                  fontWeight: 600,
+                  color: '#F0EDE6',
+                  margin: 0,
+                  marginBottom: '0.5rem'
+                }}>
+                  {job.title}
+                </h3>
+                <div style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: '1.75rem',
+                  fontWeight: 600,
+                  color: '#0066CC',
+                  marginBottom: '1rem'
+                }}>
+                  {job.salary}
+                </div>
+                <p style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: '0.875rem',
+                  fontWeight: 300,
+                  lineHeight: 1.6,
+                  color: '#6B6760',
+                  margin: 0
+                }}>
+                  {job.note}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Total Cost Box */}
+          <div style={{
+            border: '1px solid #2e2b26',
+            background: '#222222',
+            padding: '3rem',
+            borderRadius: '4px',
+            textAlign: 'center',
+            marginBottom: '3rem'
+          }}>
+            <div style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '0.875rem',
+              fontWeight: 600,
+              letterSpacing: '0.08em',
+              textTransform: 'uppercase',
+              color: '#6B6760',
+              marginBottom: '1rem'
+            }}>
+              Total Annual Cost
+            </div>
+            <div style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '3.5rem',
+              fontWeight: 600,
+              color: '#F0EDE6',
+              margin: 0,
+              marginBottom: '0.5rem'
+            }}>
+              90K-$120K+
+            </div>
+            <p style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '0.875rem',
+              fontWeight: 300,
+              color: '#6B6760',
+              margin: 0
+            }}>
+              (plus ongoing management overhead)
+            </p>
+          </div>
+
+          {/* CTAs */}
+          <div style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            gap: '1.5rem',
+            justifyContent: 'center'
+          }}>
+            <Link href="#" style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '1.25rem 2.5rem',
+              background: '#0066CC',
+              color: '#FFFFFF',
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '0.9375rem',
+              fontWeight: 600,
+              letterSpacing: '0.1em',
+              textTransform: 'uppercase',
+              textDecoration: 'none',
+              borderRadius: '4px',
+              transition: 'all 0.3s ease'
+            }} onMouseEnter={(e) => {
+              (e.target as HTMLElement).style.background = '#0052A3'
+            }} onMouseLeave={(e) => {
+              (e.target as HTMLElement).style.background = '#0066CC'
+            }}>
+              Buy Now
+            </Link>
+            <div style={{ textAlign: 'center' }}>
+              <Link href="#" style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: '1.25rem 2.5rem',
+                background: 'transparent',
+                color: '#F0EDE6',
+                border: '1px solid #6B6760',
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '0.9375rem',
+                fontWeight: 600,
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase',
+                textDecoration: 'none',
+                borderRadius: '4px',
+                transition: 'all 0.3s ease'
+              }} onMouseEnter={(e) => {
+                (e.target as HTMLElement).style.background = '#2e2b26'
+              }} onMouseLeave={(e) => {
+                (e.target as HTMLElement).style.background = 'transparent'
+              }}>
+                Try Now
+              </Link>
+              <p style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '0.75rem',
+                fontWeight: 300,
+                color: '#6B6760',
+                margin: '0.5rem 0 0 0'
+              }}>
+                Click, Call, Or Text 786-706-8231
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* FAQ SECTION */}
+      <section style={{
+        padding: 'clamp(4rem, 10vw, 8rem) clamp(1.5rem, 4vw, 4rem)',
+        background: '#FFFFFF',
+        borderBottom: '1px solid #D4CFC6'
+      }}>
+        <div style={{ maxWidth: '1140px', margin: '0 auto' }}>
+          
+          <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+            <span style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '0.6875rem',
+              fontWeight: 600,
+              letterSpacing: '0.18em',
+              textTransform: 'uppercase',
+              color: '#666666'
+            }}>Frequently Asked Questions</span>
+            
+            <h2 style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: 'clamp(2rem, 3.5vw, 3rem)',
+              fontWeight: 400,
+              lineHeight: 1.2,
+              color: '#1C1A17',
+              margin: 0,
+              marginTop: '1rem'
+            }}>
+              Your AI Employee Questions, Answered
+            </h2>
+          </div>
+
+          {/* FAQ Accordion */}
+          <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+            {[
+              { q: 'What is an AI Employee?' },
+              { q: 'How much does my AI Employee Cost?' },
+              { q: 'Do I need technical skills to manage my AI Employee?' },
+              { q: 'How is my AI Employee different from other AI Tools?' },
+              { q: 'What\'s included with my AI Employee?' },
+              { q: 'Can I customize my AI Employee to fit my brand?' },
+              { q: 'Which platforms will my AI Employee work on?' },
+              { q: 'Will my AI Employee replace my team?' },
+              { q: 'Can I try out my AI Employee risk-free?' }
+            ].map((faq, i) => (
+              <div key={i} style={{
+                borderBottom: i < 8 ? '1px solid #E0E0E0' : 'none',
+                padding: '1.5rem 0'
+              }}>
+                <button
+                  style={{
+                    width: '100%',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    background: 'none',
+                    border: 'none',
+                    padding: 0,
+                    cursor: 'pointer',
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: '1rem',
+                    fontWeight: 600,
+                    color: '#1C1A17',
+                    textAlign: 'left'
+                  }}
+                  onClick={(e) => {
+                    const parent = (e.currentTarget as HTMLElement).parentElement
+                    const answer = parent?.querySelector('[data-answer]') as HTMLElement
+                    if (answer) {
+                      answer.style.display = answer.style.display === 'none' ? 'block' : 'none'
+                    }
+                  }}
+                >
+                  <span>{faq.q}</span>
+                  <span style={{ fontSize: '1.5rem' }}>▼</span>
+                </button>
+                <div
+                  data-answer
+                  style={{
+                    display: 'none',
+                    marginTop: '1rem',
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: '0.9375rem',
+                    fontWeight: 300,
+                    lineHeight: 1.6,
+                    color: '#666666'
+                  }}
+                >
+                  {/* Answer content here */}
+                  Answer to: {faq.q}
+                </div>
+              </div>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
       {/* CAPABILITIES GRID */}
       <section style={{
         padding: 'clamp(4rem, 10vw, 8rem) clamp(1.5rem, 4vw, 4rem)',
