@@ -7,7 +7,7 @@ import IntakeForm from '@/components/IntakeForm'
 
 
 import WhereWeFocused from '@/components/WhereWeFocused'
-import AboutFounder from '@/components/AboutFounder'
+
 
 import Testimonials from '@/components/Testimonials'
 import Link from 'next/link'
@@ -343,9 +343,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* ABOUT THE FOUNDER */}
-      <AboutFounder />
 
       {/* WHERE WE'RE FOCUSED */}
       <WhereWeFocused />
