@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import nodemailer from 'nodemailer'
 
 export async function POST(request: NextRequest) {
   try {
@@ -77,10 +78,6 @@ This submission came from aperturehospitality.com intake form.
     */
 
     // Option 3: Using Nodemailer with Gmail/SMTP
-    // Uncomment below and add EMAIL_USER, EMAIL_PASS to .env.local
-    /*
-    import nodemailer from 'nodemailer'
-
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -98,12 +95,6 @@ This submission came from aperturehospitality.com intake form.
       html: `<pre>${emailBody}</pre>`
     })
 
-    return NextResponse.json({ success: true })
-    */
-
-    // Default: Return success (until email service is configured)
-    // This prevents form errors while you set up your email service
-    console.log('Form submission received:', { first_name, last_name, email })
     return NextResponse.json({ success: true })
 
   } catch (error) {
