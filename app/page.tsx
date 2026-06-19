@@ -1,3 +1,5 @@
+'use client'
+
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import AISolutions from '@/components/AISolutions'
@@ -17,60 +19,171 @@ export default function Home() {
       <AISolutions />
       
       {/* HERO */}
-      <div className="border-b border-rule" style={{ background: '#F0EDE6' }}>
+      <div className="border-b border-rule">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0" style={{ minHeight: '600px' }}>
-          {/* LEFT: Large Logo + Headline */}
+          {/* LEFT: Headshot */}
+          <div style={{
+            order: 1,
+            overflow: 'hidden',
+            background: '#f5f5f5',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            minHeight: '600px'
+          }}>
+            <img
+              src="/brandon-headshot.jpg"
+              alt="Brandon Weaver"
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover'
+              }}
+            />
+          </div>
+
+          {/* RIGHT: Content */}
           <div style={{
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
-            alignItems: 'flex-start',
-            paddingLeft: 'clamp(2rem, 8vw, 6rem)',
-            paddingRight: 'clamp(1rem, 4vw, 3rem)',
-            paddingTop: 'clamp(3rem, 6vw, 4rem)',
-            paddingBottom: 'clamp(3rem, 6vw, 4rem)',
+            paddingLeft: 'clamp(2rem, 6vw, 4rem)',
+            paddingRight: 'clamp(2rem, 6vw, 4rem)',
+            paddingTop: 'clamp(3rem, 5vw, 4rem)',
+            paddingBottom: 'clamp(3rem, 5vw, 4rem)',
             background: '#F0EDE6',
-            order: 1
+            order: 2,
+            minHeight: '600px'
           }}>
 
-            {/* Large Logo Circle */}
+            {/* Top label */}
+            <p style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '0.65rem',
+              fontWeight: 400,
+              letterSpacing: '0.2em',
+              textTransform: 'uppercase',
+              color: '#B8924A',
+              margin: '0 0 1.5rem 0'
+            }}>
+              FOUNDER • CEO • HOSPITALITY • LUXURY
+            </p>
+
+            {/* Aperture Logo */}
             <div style={{
-              marginBottom: 'clamp(2rem, 5vw, 4rem)',
-              width: 'clamp(200px, 40vw, 320px)',
-              height: 'clamp(200px, 40vw, 320px)',
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'center'
+              gap: '0.75rem',
+              marginBottom: '2rem'
             }}>
-              <svg width="100%" height="100%" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="120" cy="120" r="110" stroke="#1C1A17" strokeWidth="8"/>
-                <path d="M120 10 A110 110 0 0 1 197.8 42.2" stroke="#B8924A" strokeWidth="12" strokeLinecap="round"/>
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="18" cy="18" r="15" stroke="#1C1A17" strokeWidth="1.5"/>
+                <line x1="3" y1="18" x2="33" y2="18" stroke="#1C1A17" strokeWidth="1.5"/>
               </svg>
+              <span style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '0.75rem',
+                fontWeight: 500,
+                letterSpacing: '0.15em',
+                textTransform: 'uppercase',
+                color: '#1C1A17'
+              }}>APERTURE</span>
             </div>
 
             {/* Headline */}
             <h1 style={{
               fontFamily: "'Cormorant Garamond', Georgia, serif",
-              fontSize: 'clamp(2.5rem, 6vw, 4rem)',
+              fontSize: 'clamp(2rem, 4vw, 3.5rem)',
               fontWeight: 300,
-              lineHeight: 1.1,
+              lineHeight: 1.15,
               letterSpacing: '-0.01em',
               color: '#1C1A17',
-              margin: 0,
-              maxWidth: '90%'
+              margin: '0 0 1.5rem 0'
             }}>
-              Results, not a <span style={{ fontStyle: 'italic', color: '#B8924A' }}>deck.</span>
+              Results, not a <span style={{ color: '#B8924A' }}>deck.</span>
             </h1>
 
-          </div>
+            {/* Body copy */}
+            <p style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '0.9375rem',
+              fontWeight: 300,
+              lineHeight: 1.75,
+              color: '#6B6760',
+              marginBottom: '1rem',
+              margin: '0 0 1rem 0',
+              maxWidth: '480px'
+            }}>
+              Founder & CEO of Aperture Hospitality, advising brands across real estate, luxury travel, and hospitality on the marketing, sales, and operations decisions that unlock value.
+            </p>
 
-          {/* RIGHT: Headshot */}
-          <div className="h-64 sm:h-80 md:h-[600px] lg:h-screen order-2 md:order-2 overflow-hidden bg-parchment">
-            <img
-              src="/brandon-headshot.jpg"
-              alt="Brandon Weaver"
-              className="w-full h-full object-cover"
-            />
+            <p style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '0.9375rem',
+              fontWeight: 300,
+              lineHeight: 1.75,
+              color: '#6B6760',
+              marginBottom: '2rem',
+              margin: '0 0 2rem 0',
+              maxWidth: '480px'
+            }}>
+              20+ years driving growth and transformation across consumer brands, hospitality, and technology platforms. Previously led commercial strategy at Diageo, Sonder, and Lacuré.
+            </p>
+
+            {/* CTAs */}
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '0.75rem',
+              maxWidth: '360px'
+            }}>
+              <Link href="/contact" style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: '0.875rem 1.5rem',
+                background: '#1C1A17',
+                color: '#F0EDE6',
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '0.6875rem',
+                fontWeight: 600,
+                letterSpacing: '0.16em',
+                textTransform: 'uppercase',
+                textDecoration: 'none',
+                transition: 'all 0.3s ease'
+              }} onMouseEnter={(e) => {
+                (e.target as HTMLElement).style.background = '#2a2520'
+              }} onMouseLeave={(e) => {
+                (e.target as HTMLElement).style.background = '#1C1A17'
+              }}>
+                Let's Talk
+              </Link>
+              <Link href="/about" style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: '0.875rem 1.5rem',
+                background: 'transparent',
+                color: '#1C1A17',
+                border: '1px solid #1C1A17',
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '0.6875rem',
+                fontWeight: 600,
+                letterSpacing: '0.16em',
+                textTransform: 'uppercase',
+                textDecoration: 'none',
+                transition: 'all 0.3s ease'
+              }} onMouseEnter={(e) => {
+                (e.target as HTMLElement).style.background = '#1C1A17'
+                ;(e.target as HTMLElement).style.color = '#F0EDE6'
+              }} onMouseLeave={(e) => {
+                (e.target as HTMLElement).style.background = 'transparent'
+                ;(e.target as HTMLElement).style.color = '#1C1A17'
+              }}>
+                Learn More
+              </Link>
+            </div>
+
           </div>
         </div>
       </div>
