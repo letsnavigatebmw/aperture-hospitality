@@ -15,66 +15,57 @@ export default function Home() {
       
       {/* HERO */}
       <div className="border-b border-rule">
-        <div className="relative">
-          {/* Hero Grid Layout */}
-          <div className="grid md:grid-cols-2 min-h-screen md:min-h-auto">
-            {/* LEFT: Image with Logo */}
-            <div className="relative order-2 md:order-1 h-64 md:h-auto flex items-center justify-center">
-              <div className="relative w-full h-full">
-                <img
-                  src="/brandon-headshot.jpg"
-                  alt="Brandon Weaver"
-                  className="w-full h-full object-cover"
+        <div className="grid md:grid-cols-2 min-h-screen md:min-h-auto">
+          {/* LEFT: Headshot */}
+          <div className="h-64 md:h-auto order-2 md:order-1">
+            <img
+              src="/brandon-headshot.jpg"
+              alt="Brandon Weaver"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* RIGHT: Content */}
+          <div className="order-1 md:order-2 flex flex-col justify-center py-16 md:py-24 container-max">
+            <div className="space-y-8">
+              {/* Logo */}
+              <div>
+                <img 
+                  src="/aperture-logo.png" 
+                  alt="Aperture Hospitality"
+                  className="h-auto w-80 md:w-96 object-contain"
                 />
-                {/* Fade overlay */}
-                <div className="absolute inset-0 bg-gradient-to-r from-parchment via-transparent to-transparent" />
               </div>
-            </div>
 
-            {/* RIGHT: Content */}
-            <div className="order-1 md:order-2 flex flex-col justify-center py-16 md:py-24 px-0 container-max md:pl-0">
-              <div className="space-y-8">
-                {/* Logo above headline */}
-                <div className="mb-8">
-                  <img 
-                    src="/aperture-logo.png" 
-                    alt="Aperture Hospitality"
-                    className="h-auto w-80 md:w-96 object-contain"
-                  />
-                </div>
+              {/* Headline */}
+              <h1 className="font-display text-5xl md:text-6xl font-light leading-tight tracking-tighter">
+                Results, not a <em className="italic text-brass">deck.</em>
+              </h1>
 
-                {/* Headline */}
-                <div className="space-y-6">
-                  <h1 className="font-display text-5xl md:text-6xl font-light leading-tight tracking-tighter">
-                    Results,<br />not a <em className="italic text-brass">deck.</em>
-                  </h1>
+              {/* Subheadline */}
+              <p className="text-lg md:text-xl text-muted leading-relaxed max-w-xl">
+                Founder & CEO of Aperture Hospitality, advising brands across real estate, luxury travel, and hospitality on the marketing, sales, and operations decisions that unlock value.
+              </p>
 
-                  {/* Subheadline */}
-                  <p className="text-lg md:text-xl text-muted leading-relaxed max-w-xl">
-                    Founder & CEO of Aperture Hospitality, advising brands across real estate, luxury travel, and hospitality on the marketing, sales, and operations decisions that unlock value.
-                  </p>
+              {/* Supporting line */}
+              <p className="text-base md:text-lg text-muted leading-relaxed max-w-xl">
+                20+ years driving growth and transformation across consumer brands, hospitality, and technology platforms. Previously led commercial strategy at Diageo, Sonder, and Lacure.
+              </p>
 
-                  {/* Supporting line */}
-                  <p className="text-base md:text-lg text-muted leading-relaxed max-w-xl">
-                    20+ years driving growth and transformation across consumer brands, hospitality, and technology platforms. Previously led commercial strategy at Diageo, Sonder, and Lacure.
-                  </p>
-                </div>
-
-                {/* CTA Buttons */}
-                <div className="flex flex-col gap-4 pt-4 w-full md:w-auto">
-                  <Link
-                    href="/contact"
-                    className="px-8 py-3 bg-ink text-parchment font-medium text-xs tracking-wider uppercase hover:bg-opacity-90 transition-all text-center inline-block"
-                  >
-                    Let's Talk
-                  </Link>
-                  <Link
-                    href="/about"
-                    className="px-8 py-3 border-2 border-ink text-ink font-medium text-xs tracking-wider uppercase hover:bg-ink hover:text-parchment transition-all text-center inline-block"
-                  >
-                    Learn More
-                  </Link>
-                </div>
+              {/* CTA Buttons */}
+              <div className="flex flex-col gap-4 pt-4 w-full md:w-auto">
+                <Link
+                  href="/contact"
+                  className="px-8 py-3 bg-ink text-parchment font-medium text-xs tracking-wider uppercase hover:bg-opacity-90 transition-all text-center inline-block"
+                >
+                  Let's Talk
+                </Link>
+                <Link
+                  href="/about"
+                  className="px-8 py-3 border-2 border-ink text-ink font-medium text-xs tracking-wider uppercase hover:bg-ink hover:text-parchment transition-all text-center inline-block"
+                >
+                  Learn More
+                </Link>
               </div>
             </div>
           </div>
