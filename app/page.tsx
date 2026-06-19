@@ -22,7 +22,7 @@ export default function Home() {
       {/* HERO */}
       <div className="border-b border-rule">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0" style={{ minHeight: '600px' }}>
-          {/* LEFT: Headshot */}
+          {/* LEFT: Hero Interior Image */}
           <div style={{
             order: 1,
             overflow: 'hidden',
@@ -33,8 +33,8 @@ export default function Home() {
             minHeight: '600px'
           }}>
             <img
-              src="/brandon-headshot.jpg"
-              alt="Brandon Weaver"
+              src="/hero-interior.jpg"
+              alt="Aperture Hospitality - Luxury Interior Design"
               style={{
                 width: '100%',
                 height: '100%',
@@ -57,21 +57,18 @@ export default function Home() {
             minHeight: '600px'
           }}>
 
-            {/* Hero Interior Image */}
+            {/* Aperture Logo */}
             <div style={{
               marginBottom: '2rem',
-              maxWidth: '380px',
-              borderRadius: '8px',
-              overflow: 'hidden'
+              maxWidth: '280px'
             }}>
               <img 
-                src="/hero-interior.jpg" 
-                alt="Aperture Hospitality - Luxury Interior Design" 
+                src="/aperture-logo.jpg" 
+                alt="Aperture Hospitality" 
                 style={{
                   width: '100%',
                   height: 'auto',
-                  display: 'block',
-                  objectFit: 'cover'
+                  display: 'block'
                 }}
               />
             </div>
