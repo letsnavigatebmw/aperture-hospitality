@@ -6,12 +6,12 @@ export default function Nav() {
       <div className="container-max h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 flex-shrink-0">
           {/* Aperture Arc Mark */}
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="32" height="32" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
             <circle cx="18" cy="18" r="15" stroke="#1C1A17" strokeWidth="1.2"/>
             <path d="M18 3 A15 15 0 0 1 33 18" stroke="#B8924A" strokeWidth="2.5" strokeLinecap="round"/>
           </svg>
-          <div className="text-xs font-medium tracking-widest uppercase text-ink">
-            <div>Aperture</div>
+          <div className="text-xs font-medium tracking-widest uppercase text-ink leading-tight">
+            <div className="text-xs">Aperture</div>
             <div className="text-xs font-light text-muted">Hospitality</div>
           </div>
         </Link>
