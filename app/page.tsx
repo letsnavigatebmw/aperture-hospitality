@@ -3,6 +3,7 @@
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import AISolutions from '@/components/AISolutions'
+import IntakeForm from '@/components/IntakeForm'
 import Insights from '@/components/Insights'
 import HowWeThink from '@/components/HowWeThink'
 import WhereWeFocused from '@/components/WhereWeFocused'
@@ -287,6 +288,9 @@ export default function Home() {
 
       {/* TESTIMONIALS */}
       <Testimonials />
+
+      {/* INTAKE FORM */}
+      <IntakeForm />
 
       {/* ENGAGEMENTS */}
       <div className="border-b border-rule">
