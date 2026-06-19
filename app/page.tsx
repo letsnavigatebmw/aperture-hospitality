@@ -44,9 +44,9 @@ export default function Home() {
             }}>
 
               {/* Arc mark SVG */}
-              <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="32" cy="32" r="27" stroke="#1C1A17" strokeWidth="1.2"/>
-                <path d="M32 5 A27 27 0 0 1 59 32" stroke="#B8924A" strokeWidth="3" strokeLinecap="round"/>
+              <svg width="64" height="64" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="18" cy="18" r="15" stroke="#1C1A17" strokeWidth="1.2"/>
+                <path d="M18 3 A15 15 0 0 1 33 18" stroke="#B8924A" strokeWidth="2.5" strokeLinecap="round"/>
               </svg>
 
               {/* Vertical rule */}

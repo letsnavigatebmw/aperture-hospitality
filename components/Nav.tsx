@@ -4,10 +4,13 @@ export default function Nav() {
   return (
     <nav className="sticky top-0 z-50 bg-parchment border-b border-rule">
       <div className="container-max h-20 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-4 flex-shrink-0">
-          {/* Aperture Circle Logo */}
-          <div className="w-10 h-10 rounded-full border-2 border-ink"></div>
-          <div className="text-sm font-medium tracking-widest uppercase text-ink">
+        <Link href="/" className="flex items-center gap-3 flex-shrink-0">
+          {/* Aperture Arc Mark */}
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="18" cy="18" r="15" stroke="#1C1A17" strokeWidth="1.2"/>
+            <path d="M18 3 A15 15 0 0 1 33 18" stroke="#B8924A" strokeWidth="2.5" strokeLinecap="round"/>
+          </svg>
+          <div className="text-xs font-medium tracking-widest uppercase text-ink">
             <div>Aperture</div>
             <div className="text-xs font-light text-muted">Hospitality</div>
           </div>
