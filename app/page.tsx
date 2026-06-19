@@ -57,18 +57,21 @@ export default function Home() {
             minHeight: '600px'
           }}>
 
-            {/* Aperture Logo */}
+            {/* Hero Interior Image */}
             <div style={{
               marginBottom: '2rem',
-              maxWidth: '280px'
+              maxWidth: '380px',
+              borderRadius: '8px',
+              overflow: 'hidden'
             }}>
               <img 
-                src="/aperture-logo.jpg" 
-                alt="Aperture Hospitality" 
+                src="/hero-interior.jpg" 
+                alt="Aperture Hospitality - Luxury Interior Design" 
                 style={{
                   width: '100%',
                   height: 'auto',
-                  display: 'block'
+                  display: 'block',
+                  objectFit: 'cover'
                 }}
               />
             </div>
