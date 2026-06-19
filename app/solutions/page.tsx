@@ -135,6 +135,16 @@ export default function SolutionsPage() {
                 marginBottom: '1rem'
               }}>AI Employee</div>
               
+              <div style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '0.625rem',
+                fontWeight: 500,
+                letterSpacing: '0.2em',
+                textTransform: 'uppercase',
+                color: '#B8924A',
+                marginBottom: '1rem'
+              }}>AI Employee</div>
+
               <h2 style={{
                 fontFamily: "'Cormorant Garamond', Georgia, serif",
                 fontSize: 'clamp(1.75rem, 2.5vw, 2.5rem)',
@@ -144,7 +154,7 @@ export default function SolutionsPage() {
                 margin: 0,
                 marginBottom: '1rem'
               }}>
-                AI Solutions for<br/>Small & Medium Sized Businesses
+                Revenue Factory<br/>for Hospitality
               </h2>
               
               <p style={{
@@ -234,9 +244,9 @@ export default function SolutionsPage() {
                   fontWeight: 500,
                   letterSpacing: '0.18em',
                   textTransform: 'uppercase',
-                  color: '#B8924A',
+                  color: '#6B6760',
                   marginBottom: '0.5rem'
-                }}>Limited Time Offer</div>
+                }}>Starting From</div>
                 
                 <div style={{
                   fontFamily: "'Cormorant Garamond', Georgia, serif",
@@ -246,7 +256,7 @@ export default function SolutionsPage() {
                   lineHeight: 1,
                   marginBottom: '0rem'
                 }}>
-                  $350
+                  $2,995
                 </div>
                 
                 <div style={{
@@ -256,7 +266,7 @@ export default function SolutionsPage() {
                   color: '#6B6760',
                   marginBottom: '2rem'
                 }}>
-                  per month (Reg. Price: $500/month)
+                  per month — no long-term contract required
                 </div>
 
                 <Link href="/contact?product=revenue-factory" style={{
@@ -268,7 +278,7 @@ export default function SolutionsPage() {
                   color: '#F0EDE6',
                   fontFamily: "'Inter', sans-serif",
                   fontSize: '0.6875rem',
-                  fontWeight: 500,
+                  fontWeight: 600,
                   letterSpacing: '0.16em',
                   textTransform: 'uppercase',
                   textDecoration: 'none',
@@ -301,7 +311,7 @@ export default function SolutionsPage() {
                 <div style={{
                   fontFamily: "'Inter', sans-serif",
                   fontSize: '0.625rem',
-                  fontWeight: 500,
+                  fontWeight: 600,
                   letterSpacing: '0.18em',
                   textTransform: 'uppercase',
                   color: '#6B6760',
