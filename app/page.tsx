@@ -195,7 +195,7 @@ export default function Home() {
               <div>
                 <h3 className="font-display text-xl font-medium text-ink mb-1">Diageo</h3>
                 <p className="text-xs tracking-tight text-muted">
-                  Luxury Portfolio & Commercial Strategy
+                  Marketing Leadership, Reserve Portfolio
                 </p>
               </div>
               <div>
@@ -207,7 +207,7 @@ export default function Home() {
               <div>
                 <h3 className="font-display text-xl font-medium text-ink mb-1">Sonder</h3>
                 <p className="text-xs tracking-tight text-muted">
-                  VP, Commercial Strategy
+                  Regional General Manager
                 </p>
               </div>
               <div>
@@ -219,7 +219,19 @@ export default function Home() {
               <div>
                 <h3 className="font-display text-xl font-medium text-ink mb-1">General Electric</h3>
                 <p className="text-xs tracking-tight text-muted">
-                  Commercial Roles, Appliances Division
+                  Sales Leadership, Consumer Finance
+                </p>
+              </div>
+              <div>
+                <h3 className="font-display text-xl font-medium text-ink mb-1">Bacardi</h3>
+                <p className="text-xs tracking-tight text-muted">
+                  Chief Marketing Officer
+                </p>
+              </div>
+              <div>
+                <h3 className="font-display text-xl font-medium text-ink mb-1">Stillhouse Spirits</h3>
+                <p className="text-xs tracking-tight text-muted">
+                  Chief Marketing Officer
                 </p>
               </div>
             </div>
