@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-ink border-t border-[#2e2b26]">
       <div className="container-max py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 flex-wrap">
-        <div className="h-10 w-auto brightness-0 invert">
+        <div className="h-8 w-auto brightness-0 invert">
           <img 
             src="/aperture-logo.png" 
             alt="Aperture Hospitality"

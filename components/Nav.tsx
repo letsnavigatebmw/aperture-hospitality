@@ -5,7 +5,7 @@ export default function Nav() {
   return (
     <nav className="sticky top-0 z-50 bg-parchment border-b border-rule">
       <div className="container-max h-20 flex items-center justify-between">
-        <Link href="/" className="flex-shrink-0 h-12 w-auto">
+        <Link href="/" className="flex-shrink-0 h-14 w-auto">
           <img 
             src="/aperture-logo.png" 
             alt="Aperture Hospitality"

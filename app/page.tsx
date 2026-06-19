@@ -30,7 +30,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-r from-parchment via-transparent to-transparent" />
                 
                 {/* Logo to the right of photo */}
-                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2 md:translate-x-1/3 h-32 w-32 md:h-48 md:w-48 bg-parchment rounded-full flex items-center justify-center shadow-lg p-4">
+                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-0 md:translate-x-1/4 h-32 w-56 md:h-40 md:w-80 bg-parchment flex items-center justify-center shadow-lg p-6 rounded-lg">
                   <img 
                     src="/aperture-logo.png" 
                     alt="Aperture Hospitality"
