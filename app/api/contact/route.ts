@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
-import nodemailer from 'nodemailer'
+import { Resend } from 'resend'
+
+const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(request: NextRequest) {
   try {
@@ -38,62 +40,19 @@ Interested In: ${formData.interested_in || 'Not specified'}
 This submission came from aperturehospitality.com intake form.
     `.trim()
 
-    // Option 1: Using Resend (Recommended)
-    // Uncomment below and add RESEND_API_KEY to .env.local
-    /*
-    const resend = new Resend(process.env.RESEND_API_KEY)
-    
+    // Send with Resend
     const response = await resend.emails.send({
-      from: 'inquiries@aperturehospitality.com',
+      from: 'onboarding@resend.dev',
       to: 'brandon@aperturehospitality.com',
       replyTo: email,
       subject: `New Inquiry from ${first_name} ${last_name}`,
       text: emailBody,
-      html: `<pre>${emailBody}</pre>`
+      html: `<pre style="font-family: monospace; white-space: pre-wrap;">${emailBody}</pre>`
     })
 
     if (response.error) {
       throw new Error(response.error.message)
     }
-
-    return NextResponse.json({ success: true })
-    */
-
-    // Option 2: Using SendGrid
-    // Uncomment below and add SENDGRID_API_KEY to .env.local
-    /*
-    const sgMail = require('@sendgrid/mail')
-    sgMail.setApiKey(process.env.SENDGRID_API_KEY)
-
-    await sgMail.send({
-      to: 'brandon@aperturehospitality.com',
-      from: 'noreply@aperturehospitality.com',
-      replyTo: email,
-      subject: `New Inquiry from ${first_name} ${last_name}`,
-      text: emailBody,
-      html: `<pre>${emailBody}</pre>`
-    })
-
-    return NextResponse.json({ success: true })
-    */
-
-    // Option 3: Using Nodemailer with Gmail/SMTP
-    const transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS
-      }
-    })
-
-    await transporter.sendMail({
-      from: process.env.EMAIL_USER,
-      to: 'brandon@aperturehospitality.com',
-      replyTo: email,
-      subject: `New Inquiry from ${first_name} ${last_name}`,
-      text: emailBody,
-      html: `<pre>${emailBody}</pre>`
-    })
 
     return NextResponse.json({ success: true })
 
