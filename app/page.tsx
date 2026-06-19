@@ -29,10 +29,13 @@ export default function Home() {
           <div style={{
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'center',
-            padding: 'clamp(3rem, 6vw, 6rem) clamp(2.5rem, 5vw, 5rem)',
+            justifyContent: 'flex-start',
+            paddingTop: 'clamp(3rem, 6vw, 6rem)',
+            paddingBottom: 'clamp(3rem, 6vw, 6rem)',
+            paddingLeft: 'clamp(2.5rem, 5vw, 5rem)',
+            paddingRight: 'clamp(2.5rem, 5vw, 5rem)',
             background: '#F0EDE6',
-            minHeight: '100vh'
+            minHeight: 'auto'
           }}>
 
             {/* Logo lockup */}
