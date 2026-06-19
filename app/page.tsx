@@ -25,49 +25,55 @@ export default function Home() {
             />
           </div>
 
-          {/* RIGHT: Content */}
-          <div className="order-1 md:order-2 flex flex-col justify-center py-16 md:py-24 container-max">
-            <div className="space-y-8">
-              {/* Logo - Minimal */}
-              <div className="mb-12 flex items-center gap-6">
-                <div className="w-24 h-24 rounded-full border-2 border-ink flex-shrink-0"></div>
-                <div>
-                  <div className="text-lg font-medium tracking-widest uppercase text-ink">Aperture</div>
-                  <div className="text-sm font-light tracking-wider uppercase text-muted">Hospitality</div>
-                </div>
+          {/* RIGHT: Content Panel */}
+          <div className="order-1 md:order-2 flex flex-col justify-center px-6 md:px-20 py-16 md:py-24 bg-parchment">
+            {/* Logo Lockup */}
+            <div className="flex items-center gap-5 mb-8 md:mb-10">
+              {/* Circle Mark */}
+              <div className="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-ink flex-shrink-0"></div>
+              
+              {/* Vertical Divider */}
+              <div className="w-px h-12 md:h-16 bg-rule flex-shrink-0"></div>
+              
+              {/* Wordmark */}
+              <div className="flex flex-col gap-1">
+                <div className="text-sm md:text-base font-light tracking-widest uppercase text-ink leading-none">Aperture</div>
+                <div className="text-xs md:text-xs font-normal tracking-widest uppercase text-muted leading-none">Hospitality</div>
               </div>
+            </div>
 
-              {/* Headline */}
-              <h1 className="font-display text-5xl md:text-6xl font-light leading-tight tracking-tighter">
-                Results, not a<br />
-                <em className="italic text-brass">deck.</em>
-              </h1>
+            {/* Horizontal Divider */}
+            <div className="w-full max-w-md h-px bg-rule mb-8 md:mb-10"></div>
 
-              {/* Subheadline */}
-              <p className="text-lg md:text-xl text-muted leading-relaxed max-w-xl">
-                Founder & CEO of Aperture Hospitality, advising brands across real estate, luxury travel, and hospitality on the marketing, sales, and operations decisions that unlock value.
-              </p>
+            {/* Headline */}
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-light leading-tight tracking-tighter text-ink mb-8 max-w-2xl">
+              Results, not a<br className="hidden md:block" />
+              <em className="italic text-brass">deck.</em>
+            </h1>
 
-              {/* Supporting line */}
-              <p className="text-base md:text-lg text-muted leading-relaxed max-w-xl">
-                20+ years driving growth and transformation across consumer brands, hospitality, and technology platforms. Previously led commercial strategy at Diageo, Sonder, and Lacure.
-              </p>
+            {/* Body Copy */}
+            <p className="text-sm md:text-base font-light leading-relaxed text-muted max-w-xl mb-5">
+              Founder & CEO of Aperture Hospitality, advising brands across real estate, luxury travel, and hospitality on the marketing, sales, and operations decisions that unlock value.
+            </p>
 
-              {/* CTA Buttons */}
-              <div className="flex flex-col gap-4 pt-8 w-full max-w-sm">
-                <Link
-                  href="/contact"
-                  className="w-full px-8 py-4 bg-ink text-parchment font-medium text-xs tracking-wider uppercase hover:bg-opacity-90 transition-all text-center"
-                >
-                  Let's Talk
-                </Link>
-                <Link
-                  href="/about"
-                  className="w-full px-8 py-4 border-2 border-ink text-ink font-medium text-xs tracking-wider uppercase hover:bg-ink hover:text-parchment transition-all text-center"
-                >
-                  Learn More
-                </Link>
-              </div>
+            <p className="text-sm md:text-base font-light leading-relaxed text-muted max-w-xl mb-10 md:mb-12">
+              20+ years driving growth and transformation across consumer brands, hospitality, and technology platforms. Previously led commercial strategy at Diageo, Sonder, and Lacure.
+            </p>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col gap-3 w-full max-w-md">
+              <Link
+                href="/contact"
+                className="px-8 py-4 bg-ink text-parchment font-medium text-xs tracking-wider uppercase hover:bg-opacity-90 transition-colors text-center"
+              >
+                Let's Talk
+              </Link>
+              <Link
+                href="/about"
+                className="px-8 py-4 border border-ink text-ink font-medium text-xs tracking-wider uppercase hover:bg-ink hover:text-parchment transition-colors text-center"
+              >
+                Learn More
+              </Link>
             </div>
           </div>
         </div>
