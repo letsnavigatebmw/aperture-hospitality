@@ -15,9 +15,9 @@ export default function Home() {
       
       {/* HERO */}
       <div className="border-b border-rule">
-        <div className="grid md:grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
           {/* LEFT: Headshot */}
-          <div className="h-64 md:h-[600px] lg:h-screen order-2 md:order-1 overflow-hidden bg-parchment">
+          <div className="h-64 sm:h-80 md:h-[600px] lg:h-screen order-2 md:order-1 overflow-hidden bg-parchment">
             <img
               src="/brandon-headshot.jpg"
               alt="Brandon Weaver"
@@ -30,24 +30,24 @@ export default function Home() {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'flex-start',
-            paddingTop: 'clamp(3rem, 6vw, 6rem)',
-            paddingBottom: 'clamp(3rem, 6vw, 6rem)',
-            paddingLeft: 'clamp(2.5rem, 5vw, 5rem)',
-            paddingRight: 'clamp(2.5rem, 5vw, 5rem)',
+            paddingTop: 'clamp(2rem, 4vw, 3rem)',
+            paddingBottom: 'clamp(2rem, 4vw, 3rem)',
+            paddingLeft: 'clamp(1.5rem, 4vw, 4rem)',
+            paddingRight: 'clamp(1.5rem, 4vw, 4rem)',
             background: '#F0EDE6',
-            minHeight: '100%'
+            minHeight: 'auto'
           }}>
 
             {/* Logo lockup */}
             <div style={{
               display: 'flex',
               alignItems: 'center',
-              gap: '1.25rem',
-              marginBottom: '2.5rem'
+              gap: 'clamp(0.75rem, 2vw, 1.25rem)',
+              marginBottom: 'clamp(1.5rem, 3vw, 2.5rem)'
             }}>
 
               {/* Arc mark SVG */}
-              <svg width="48" height="48" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
+              <svg width="clamp(36, 10vw, 48)" height="clamp(36, 10vw, 48)" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
                 <circle cx="18" cy="18" r="15" stroke="#1C1A17" strokeWidth="1.2"/>
                 <path d="M18 3 A15 15 0 0 1 33 18" stroke="#B8924A" strokeWidth="2.5" strokeLinecap="round"/>
               </svg>
@@ -55,7 +55,7 @@ export default function Home() {
               {/* Vertical rule */}
               <div style={{
                 width: '1px',
-                height: '52px',
+                height: 'clamp(40px, 10vw, 52px)',
                 background: '#D4CFC6',
                 flexShrink: 0
               }}></div>
@@ -64,11 +64,11 @@ export default function Home() {
               <div style={{
                 display: 'flex',
                 flexDirection: 'column',
-                gap: '6px'
+                gap: 'clamp(4px, 1vw, 6px)'
               }}>
                 <span style={{
                   fontFamily: "'Inter', sans-serif",
-                  fontSize: '1.375rem',
+                  fontSize: 'clamp(0.875rem, 2.5vw, 1.375rem)',
                   fontWeight: 300,
                   letterSpacing: '0.26em',
                   textTransform: 'uppercase',
@@ -77,7 +77,7 @@ export default function Home() {
                 }}>APERTURE</span>
                 <span style={{
                   fontFamily: "'Inter', sans-serif",
-                  fontSize: '0.5625rem',
+                  fontSize: 'clamp(0.4rem, 1vw, 0.5625rem)',
                   fontWeight: 400,
                   letterSpacing: '0.32em',
                   textTransform: 'uppercase',
@@ -94,18 +94,18 @@ export default function Home() {
               maxWidth: '480px',
               height: '1px',
               background: '#D4CFC6',
-              marginBottom: '2.5rem'
+              marginBottom: 'clamp(1.5rem, 3vw, 2.5rem)'
             }}></div>
 
             {/* Headline */}
             <h1 style={{
               fontFamily: "'Cormorant Garamond', Georgia, serif",
-              fontSize: 'clamp(2.75rem, 5vw, 4.5rem)',
+              fontSize: 'clamp(2rem, 5vw, 4.5rem)',
               fontWeight: 300,
               lineHeight: 1.08,
               letterSpacing: '-0.01em',
               color: '#1C1A17',
-              marginBottom: '2rem'
+              marginBottom: 'clamp(1rem, 3vw, 2rem)'
             }}>
               Results, not a <em style={{ fontStyle: 'italic', color: '#B8924A' }}>deck.</em>
             </h1>
@@ -113,19 +113,19 @@ export default function Home() {
             {/* Body copy */}
             <p style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: '1.0625rem',
+              fontSize: 'clamp(0.9375rem, 2vw, 1.0625rem)',
               fontWeight: 300,
               lineHeight: 1.75,
               color: '#6B6760',
               maxWidth: '44ch',
-              marginBottom: '1.25rem'
+              marginBottom: 'clamp(0.75rem, 2vw, 1.25rem)'
             }}>
               Founder & CEO of Aperture Hospitality, advising brands across real estate, luxury travel, and hospitality on the marketing, sales, and operations decisions that unlock value.
             </p>
 
             <p style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: '1.0625rem',
+              fontSize: 'clamp(0.9375rem, 2vw, 1.0625rem)',
               fontWeight: 300,
               lineHeight: 1.75,
               color: '#6B6760',
@@ -139,19 +139,20 @@ export default function Home() {
             <div style={{
               display: 'flex',
               flexDirection: 'column',
-              gap: '0.75rem',
-              marginTop: '2.5rem',
-              maxWidth: '480px'
+              gap: 'clamp(0.5rem, 1vw, 0.75rem)',
+              marginTop: 'clamp(1.5rem, 3vw, 2.5rem)',
+              maxWidth: '480px',
+              width: '100%'
             }}>
               <Link href="/contact" style={{
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                padding: '1rem 2rem',
+                padding: 'clamp(0.75rem, 2vw, 1rem) clamp(1.5rem, 4vw, 2rem)',
                 background: '#1C1A17',
                 color: '#F0EDE6',
                 fontFamily: "'Inter', sans-serif",
-                fontSize: '0.6875rem',
+                fontSize: 'clamp(0.625rem, 1.5vw, 0.6875rem)',
                 fontWeight: 500,
                 letterSpacing: '0.16em',
                 textTransform: 'uppercase',
@@ -161,12 +162,12 @@ export default function Home() {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                padding: '1rem 2rem',
+                padding: 'clamp(0.75rem, 2vw, 1rem) clamp(1.5rem, 4vw, 2rem)',
                 background: 'transparent',
                 color: '#1C1A17',
                 border: '1px solid #1C1A17',
                 fontFamily: "'Inter', sans-serif",
-                fontSize: '0.6875rem',
+                fontSize: 'clamp(0.625rem, 1.5vw, 0.6875rem)',
                 fontWeight: 500,
                 letterSpacing: '0.16em',
                 textTransform: 'uppercase',
