@@ -394,6 +394,179 @@ export default function AISolutionsPage() {
         </div>
       </section>
 
+      {/* REVENUE FACTORY CERTIFIED */}
+      <section style={{
+        padding: 'clamp(4rem, 10vw, 8rem) clamp(1.5rem, 4vw, 4rem)',
+        background: '#1a1a1a',
+        borderBottom: '1px solid #2e2b26'
+      }}>
+        <div style={{ maxWidth: '1140px', margin: '0 auto' }}>
+          
+          {/* Header */}
+          <div style={{ marginBottom: '3rem', textAlign: 'center' }}>
+            <span style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '0.6875rem',
+              fontWeight: 500,
+              letterSpacing: '0.18em',
+              textTransform: 'uppercase',
+              color: '#6B6760'
+            }}>FEATURES</span>
+            
+            <h2 style={{
+              fontFamily: "'Cormorant Garamond', Georgia, serif",
+              fontSize: 'clamp(2rem, 3.5vw, 3rem)',
+              fontWeight: 300,
+              lineHeight: 1.2,
+              color: '#F0EDE6',
+              margin: 0,
+              marginTop: '1rem',
+              marginBottom: '1.5rem'
+            }}>
+              Revenue Factory-Certified AI Employee
+            </h2>
+            
+            <p style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '0.9375rem',
+              fontWeight: 300,
+              lineHeight: 1.75,
+              color: '#6B6760',
+              maxWidth: '900px',
+              margin: '0 auto'
+            }}>
+              Some AI Employees Only Handle Calls, Texts, Or Reviews. Revenue Factory-certified AI Employees do all three, with AI Employee training, onboarding, and performance management included. Plus, VIP 24/7 live support (typically $599/month) with average response time under 4 minutes.
+            </p>
+          </div>
+
+          {/* Comparison Table */}
+          <div style={{
+            overflowX: 'auto',
+            borderRadius: '8px',
+            border: '1px solid #2e2b26'
+          }}>
+            <table style={{
+              width: '100%',
+              borderCollapse: 'collapse',
+              fontFamily: "'Inter', sans-serif"
+            }}>
+              <thead>
+                <tr style={{ background: '#2e2b26', borderBottom: '1px solid #3a3731' }}>
+                  <th style={{
+                    padding: '1.5rem 2rem',
+                    textAlign: 'left',
+                    fontSize: '0.875rem',
+                    fontWeight: 600,
+                    letterSpacing: '0.08em',
+                    textTransform: 'uppercase',
+                    color: '#F0EDE6',
+                    borderRight: '1px solid #3a3731'
+                  }}>AI Employee Skills You Get</th>
+                  <th style={{
+                    padding: '1.5rem 2rem',
+                    textAlign: 'left',
+                    fontSize: '0.875rem',
+                    fontWeight: 600,
+                    letterSpacing: '0.08em',
+                    textTransform: 'uppercase',
+                    color: '#F0EDE6',
+                    borderRight: '1px solid #3a3731'
+                  }}>What Others Charge</th>
+                  <th style={{
+                    padding: '1.5rem 2rem',
+                    textAlign: 'center',
+                    fontSize: '0.875rem',
+                    fontWeight: 600,
+                    letterSpacing: '0.08em',
+                    textTransform: 'uppercase',
+                    color: '#F0EDE6'
+                  }}>Included</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { skill: 'Inbound/Outbound Phone Conversations', desc: 'Answers every call, every channel', cost: 'Typically $999/month' },
+                  { skill: 'Request & Respond To Reviews', desc: 'Review requests + replies, automated', cost: 'Typically $299/month' },
+                  { skill: 'Conversational AI Texting', desc: 'Back-and-forth SMS handling', cost: 'Typically $499/month' },
+                  { skill: 'Expert Onboarding & Setup', desc: 'We build it with you', cost: 'Typically $297 one-time' },
+                  { skill: 'Recordings & Transcriptions', desc: 'Every conversation, accessible anytime', cost: 'Typically $99/month' },
+                  { skill: 'Real-Time Notifications', desc: 'Calls & reviews, text or email instantly', cost: 'Priceless' },
+                  { skill: '24/7 VIP Support', desc: 'Live response, avg. under 4 minutes', cost: 'Typically $99/month' }
+                ].map((row, i) => (
+                  <tr key={i} style={{
+                    borderBottom: i < 6 ? '1px solid #2e2b26' : 'none',
+                    background: i % 2 === 0 ? '#1a1a1a' : '#202020'
+                  }}>
+                    <td style={{
+                      padding: '1.5rem 2rem',
+                      fontSize: '0.9375rem',
+                      fontWeight: 500,
+                      color: '#F0EDE6',
+                      borderRight: '1px solid #2e2b26'
+                    }}>
+                      <div>{row.skill}</div>
+                      <div style={{
+                        fontSize: '0.75rem',
+                        fontWeight: 300,
+                        color: '#6B6760',
+                        marginTop: '0.25rem'
+                      }}>{row.desc}</div>
+                    </td>
+                    <td style={{
+                      padding: '1.5rem 2rem',
+                      fontSize: '0.9375rem',
+                      fontWeight: 300,
+                      color: '#6B6760',
+                      borderRight: '1px solid #2e2b26'
+                    }}>
+                      {row.cost}
+                    </td>
+                    <td style={{
+                      padding: '1.5rem 2rem',
+                      textAlign: 'center',
+                      fontSize: '1.5rem',
+                      color: '#B8924A'
+                    }}>
+                      ✓
+                    </td>
+                  </tr>
+                ))}
+                <tr style={{
+                  background: '#2e2b26',
+                  borderTop: '1px solid #3a3731',
+                  fontWeight: 600
+                }}>
+                  <td style={{
+                    padding: '1.5rem 2rem',
+                    fontSize: '0.9375rem',
+                    color: '#F0EDE6',
+                    borderRight: '1px solid #3a3731'
+                  }}>
+                    Total if purchased separately
+                  </td>
+                  <td style={{
+                    padding: '1.5rem 2rem',
+                    fontSize: '0.9375rem',
+                    color: '#F0EDE6',
+                    borderRight: '1px solid #3a3731'
+                  }}>
+                    ~$4,000/month
+                  </td>
+                  <td style={{
+                    padding: '1.5rem 2rem',
+                    textAlign: 'center',
+                    color: '#B8924A'
+                  }}>
+                    —
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </section>
+
       {/* CAPABILITIES GRID */}
       <section style={{
         padding: 'clamp(4rem, 10vw, 8rem) clamp(1.5rem, 4vw, 4rem)',
