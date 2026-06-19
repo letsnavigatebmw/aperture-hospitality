@@ -347,22 +347,8 @@ export default function Home() {
       {/* WHERE WE'RE FOCUSED */}
       <WhereWeFocused />
 
-      {/* CONTACT CTA */}
-      <section className="border-b border-rule">
-        <div className="container-max py-16 md:py-24">
-          <div className="max-w-3xl">
-            <h2 className="font-display text-4xl md:text-5xl font-light mb-6 text-ink">
-              Ready to work <em className="italic">together?</em>
-            </h2>
-            <p className="text-lg leading-relaxed text-muted mb-8 max-w-2xl">
-              Let's talk about your business, your challenges, and how Aperture can help unlock the next phase of growth.
-            </p>
-            <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-ink text-parchment font-medium uppercase tracking-wider text-sm hover:bg-muted transition-colors">
-              Get in Touch
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* CONTACT FORM */}
+      <IntakeForm />
 
       <Footer />
     </>
