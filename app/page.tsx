@@ -3,6 +3,7 @@ import Footer from '@/components/Footer'
 import Insights from '@/components/Insights'
 import HowWeThink from '@/components/HowWeThink'
 import WhereWeFocused from '@/components/WhereWeFocused'
+import AboutFounder from '@/components/AboutFounder'
 import PodcastsMedia from '@/components/PodcastsMedia'
 import Link from 'next/link'
 
@@ -128,6 +129,9 @@ export default function Home() {
 
       {/* HOW WE THINK */}
       <HowWeThink />
+
+      {/* ABOUT THE FOUNDER */}
+      <AboutFounder />
 
       {/* WHERE WE'RE FOCUSED */}
       <WhereWeFocused />
