@@ -32,8 +32,8 @@ export default function About() {
                 />
               </div>
               
-              <h1 className="font-display text-4xl md:text-5xl font-light leading-tight mb-2 text-ink">
-                Brandon M.<br />Weaver
+              <h1 className="font-display text-4xl md:text-5xl font-light leading-tight mb-2 text-ink whitespace-nowrap">
+                Brandon M. Weaver
               </h1>
               <p className="text-xs font-medium tracking-widest uppercase text-brass mb-8">
                 Founder &amp; CEO
