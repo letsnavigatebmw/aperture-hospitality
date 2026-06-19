@@ -343,7 +343,7 @@ export default function SolutionsPage() {
 
           {/* Placeholder */}
           <div style={{
-            border: '1px dashed #D4CFC6',
+            border: '1px dashed #6B6760',
             padding: '3.5rem',
             display: 'flex',
             alignItems: 'center',
@@ -355,21 +355,21 @@ export default function SolutionsPage() {
                 fontFamily: "'Cormorant Garamond', Georgia, serif",
                 fontSize: '1.5rem',
                 fontWeight: 300,
-                color: '#D4CFC6',
+                color: '#1C1A17',
                 marginBottom: '0.75rem'
               }}>More solutions coming.</h3>
               <p style={{
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '0.875rem',
                 fontWeight: 300,
-                color: '#D4CFC6',
+                color: '#6B6760',
                 lineHeight: 1.6
 
               }}>
                 Additional AI-powered tools for hospitality and luxury brands are in development. Check back or{' '}
                 <Link href="/contact" style={{
-                  color: '#6B6760',
-                  borderBottom: '1px solid #D4CFC6'
+                  color: '#B8924A',
+                  borderBottom: '1px solid #B8924A'
                 }}>get in touch</Link> to be notified when new solutions launch.
               </p>
             </div>
