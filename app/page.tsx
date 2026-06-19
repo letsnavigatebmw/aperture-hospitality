@@ -1,5 +1,6 @@
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+import AISolutions from '@/components/AISolutions'
 import Insights from '@/components/Insights'
 import HowWeThink from '@/components/HowWeThink'
 import WhereWeFocused from '@/components/WhereWeFocused'
@@ -12,6 +13,8 @@ export default function Home() {
   return (
     <>
       <Nav />
+      
+      <AISolutions />
       
       {/* HERO */}
       <div className="border-b border-rule">
