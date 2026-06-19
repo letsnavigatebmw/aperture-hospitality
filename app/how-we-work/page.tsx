@@ -2,6 +2,7 @@
 
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+import IntakeForm from '@/components/IntakeForm'
 import Link from 'next/link'
 
 export default function HowWeWorkPage() {
@@ -355,6 +356,8 @@ export default function HowWeWorkPage() {
 
         </div>
       </section>
+
+      <IntakeForm />
 
       <Footer />
     </>
