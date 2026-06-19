@@ -28,21 +28,21 @@ export default function Home() {
                 />
                 {/* Fade overlay */}
                 <div className="absolute inset-0 bg-gradient-to-r from-parchment via-transparent to-transparent" />
-                
-                {/* Logo to the right of photo */}
-                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-0 md:translate-x-1/4 h-32 w-56 md:h-40 md:w-80 bg-parchment flex items-center justify-center shadow-lg p-6 rounded-lg">
-                  <img 
-                    src="/aperture-logo.png" 
-                    alt="Aperture Hospitality"
-                    className="h-full w-full object-contain"
-                  />
-                </div>
               </div>
             </div>
 
             {/* RIGHT: Content */}
             <div className="order-1 md:order-2 flex flex-col justify-center py-16 md:py-24 px-0 container-max md:pl-0">
               <div className="space-y-8">
+                {/* Logo above headline */}
+                <div className="h-16 w-48 md:h-20 md:w-64">
+                  <img 
+                    src="/aperture-logo.png" 
+                    alt="Aperture Hospitality"
+                    className="h-full w-full object-contain"
+                  />
+                </div>
+
                 {/* Headline */}
                 <div className="space-y-6">
                   <h1 className="font-display text-5xl md:text-6xl font-light leading-tight tracking-tighter">
