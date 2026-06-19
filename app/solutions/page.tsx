@@ -144,7 +144,7 @@ export default function SolutionsPage() {
                 margin: 0,
                 marginBottom: '1rem'
               }}>
-                Revenue Factory<br/>for Hospitality
+                AI Solutions for<br/>Small & Medium Sized Businesses
               </h2>
               
               <p style={{
