@@ -14,7 +14,7 @@ export default function PhilosophyPage() {
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ borderLeft: '4px solid #B8924A', paddingLeft: '1.5rem', marginBottom: '3rem' }}>
             <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#6B6760' }}>
-              Founder's Philosophy
+              Founder's Story
             </div>
           </div>
           
