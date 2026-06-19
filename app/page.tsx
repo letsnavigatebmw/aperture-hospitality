@@ -39,12 +39,12 @@ export default function Home() {
             <div style={{
               display: 'flex',
               alignItems: 'center',
-              gap: '1.25rem',
-              marginBottom: '2rem'
+              gap: '1.75rem',
+              marginBottom: '3rem'
             }}>
 
               {/* Arc mark SVG */}
-              <svg width="64" height="64" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="96" height="96" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
                 <circle cx="18" cy="18" r="15" stroke="#1C1A17" strokeWidth="1.2"/>
                 <path d="M18 3 A15 15 0 0 1 33 18" stroke="#B8924A" strokeWidth="2.5" strokeLinecap="round"/>
               </svg>
@@ -52,7 +52,7 @@ export default function Home() {
               {/* Vertical rule */}
               <div style={{
                 width: '1px',
-                height: '52px',
+                height: '80px',
                 background: '#D4CFC6',
                 flexShrink: 0
               }}></div>
@@ -61,11 +61,11 @@ export default function Home() {
               <div style={{
                 display: 'flex',
                 flexDirection: 'column',
-                gap: '6px'
+                gap: '8px'
               }}>
                 <span style={{
                   fontFamily: "'Inter', sans-serif",
-                  fontSize: '1.375rem',
+                  fontSize: '1.625rem',
                   fontWeight: 300,
                   letterSpacing: '0.26em',
                   textTransform: 'uppercase',
@@ -74,7 +74,7 @@ export default function Home() {
                 }}>APERTURE</span>
                 <span style={{
                   fontFamily: "'Inter', sans-serif",
-                  fontSize: '0.5625rem',
+                  fontSize: '0.6875rem',
                   fontWeight: 400,
                   letterSpacing: '0.32em',
                   textTransform: 'uppercase',
