@@ -29,11 +29,11 @@ export default function Home() {
           <div className="order-1 md:order-2 flex flex-col justify-center py-16 md:py-24 container-max">
             <div className="space-y-8">
               {/* Logo - Minimal */}
-              <div className="mb-8 flex items-center gap-4">
-                <div className="w-14 h-14 rounded-full border-2 border-ink flex-shrink-0"></div>
+              <div className="mb-12 flex items-center gap-6">
+                <div className="w-24 h-24 rounded-full border-2 border-ink flex-shrink-0"></div>
                 <div>
-                  <div className="text-sm font-medium tracking-widest uppercase text-ink">Aperture</div>
-                  <div className="text-xs font-light tracking-wider uppercase text-muted">Hospitality</div>
+                  <div className="text-lg font-medium tracking-widest uppercase text-ink">Aperture</div>
+                  <div className="text-sm font-light tracking-wider uppercase text-muted">Hospitality</div>
                 </div>
               </div>
 

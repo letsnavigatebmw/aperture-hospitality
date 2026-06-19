@@ -4,10 +4,10 @@ export default function Nav() {
   return (
     <nav className="sticky top-0 z-50 bg-parchment border-b border-rule">
       <div className="container-max h-20 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3 flex-shrink-0">
+        <Link href="/" className="flex items-center gap-4 flex-shrink-0">
           {/* Aperture Circle Logo */}
-          <div className="w-6 h-6 rounded-full border-2 border-ink"></div>
-          <div className="text-xs font-medium tracking-widest uppercase text-ink">
+          <div className="w-10 h-10 rounded-full border-2 border-ink"></div>
+          <div className="text-sm font-medium tracking-widest uppercase text-ink">
             <div>Aperture</div>
             <div className="text-xs font-light text-muted">Hospitality</div>
           </div>
