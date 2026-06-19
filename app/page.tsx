@@ -17,7 +17,7 @@ export default function Home() {
       <div className="border-b border-rule">
         <div className="grid md:grid-cols-2">
           {/* LEFT: Headshot */}
-          <div className="h-64 md:h-auto order-2 md:order-1 overflow-hidden">
+          <div className="h-64 md:h-[600px] lg:h-screen order-2 md:order-1 overflow-hidden bg-parchment">
             <img
               src="/brandon-headshot.jpg"
               alt="Brandon Weaver"
