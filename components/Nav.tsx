@@ -32,6 +32,11 @@ export default function Nav() {
             </Link>
           </li>
           <li>
+            <Link href="/capabilities" className="text-xs font-normal tracking-wider uppercase text-muted hover:text-ink transition-colors">
+              Capabilities
+            </Link>
+          </li>
+          <li>
             <Link href="/solutions" className="text-xs font-normal tracking-wider uppercase text-muted hover:text-ink transition-colors">
               AI Solutions
             </Link>
