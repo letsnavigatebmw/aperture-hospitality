@@ -9,6 +9,11 @@ export default function Nav() {
         </Link>
         <ul className="hidden md:flex gap-10">
           <li>
+            <Link href="/#insights" className="text-xs font-normal tracking-wider uppercase text-muted hover:text-ink transition-colors">
+              Insights
+            </Link>
+          </li>
+          <li>
             <Link href="/about" className="text-xs font-normal tracking-wider uppercase text-muted hover:text-ink transition-colors">
               About
             </Link>

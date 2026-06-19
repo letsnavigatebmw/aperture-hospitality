@@ -1,5 +1,6 @@
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+import Insights from '@/components/Insights'
 import Link from 'next/link'
 
 export default function Home() {
@@ -118,6 +119,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* INSIGHTS */}
+      <Insights />
 
       {/* CONTACT CTA */}
       <div className="bg-ink">
