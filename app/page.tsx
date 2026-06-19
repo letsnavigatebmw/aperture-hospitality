@@ -15,9 +15,9 @@ export default function Home() {
       
       {/* HERO */}
       <div className="border-b border-rule">
-        <div className="grid md:grid-cols-2 min-h-screen md:min-h-auto">
+        <div className="grid md:grid-cols-2 md:min-h-screen">
           {/* LEFT: Headshot */}
-          <div className="h-64 md:h-auto order-2 md:order-1">
+          <div className="h-64 md:h-screen order-2 md:order-1 overflow-hidden">
             <img
               src="/brandon-headshot.jpg"
               alt="Brandon Weaver"
@@ -35,7 +35,7 @@ export default function Home() {
             paddingLeft: 'clamp(2.5rem, 5vw, 5rem)',
             paddingRight: 'clamp(2.5rem, 5vw, 5rem)',
             background: '#F0EDE6',
-            minHeight: 'auto'
+            minHeight: '100%'
           }}>
 
             {/* Logo lockup */}
