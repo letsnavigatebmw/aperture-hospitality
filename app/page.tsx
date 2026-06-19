@@ -40,17 +40,35 @@ export default function Home() {
               Brandon Weaver has led commercial and operating teams at
             </p>
             <div className="hidden md:block w-px h-10 bg-rule flex-shrink-0" />
-            <div className="flex flex-col md:flex-row gap-8">
+            <div className="flex flex-col md:flex-row gap-8 flex-wrap">
+              <div>
+                <h3 className="font-display text-xl font-medium text-ink mb-1">Diageo</h3>
+                <p className="text-xs tracking-tight text-muted">
+                  Luxury Portfolio & Commercial Strategy
+                </p>
+              </div>
               <div>
                 <h3 className="font-display text-xl font-medium text-ink mb-1">Lacure</h3>
                 <p className="text-xs tracking-tight text-muted">
-                  Chief Commercial Officer · 65-person org · 1,500-property portfolio
+                  Chief Commercial Officer · 65-person org
                 </p>
               </div>
               <div>
                 <h3 className="font-display text-xl font-medium text-ink mb-1">Sonder</h3>
                 <p className="text-xs tracking-tight text-muted">
                   Regional General Manager
+                </p>
+              </div>
+              <div>
+                <h3 className="font-display text-xl font-medium text-ink mb-1">Bonotel Exclusive Travel</h3>
+                <p className="text-xs tracking-tight text-muted">
+                  Strategic Leadership
+                </p>
+              </div>
+              <div>
+                <h3 className="font-display text-xl font-medium text-ink mb-1">General Electric</h3>
+                <p className="text-xs tracking-tight text-muted">
+                  Commercial Operations
                 </p>
               </div>
             </div>
