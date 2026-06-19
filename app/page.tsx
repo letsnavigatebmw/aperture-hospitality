@@ -96,7 +96,7 @@ export default function Home() {
               color: '#1C1A17',
               margin: '0 0 1.5rem 0'
             }}>
-              Results, not a <span style={{ color: '#B8924A' }}>deck.</span>
+              Real Results, Not a <span style={{ color: '#B8924A' }}>Deck!</span>
             </h1>
 
             {/* Body copy */}
