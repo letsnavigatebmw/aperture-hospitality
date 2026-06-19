@@ -16,27 +16,38 @@ export default function Home() {
       {/* HERO */}
       <div className="border-b border-rule">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
-          {/* LEFT: Headshot */}
-          <div className="h-64 sm:h-80 md:h-[600px] lg:h-screen order-2 md:order-1 overflow-hidden bg-parchment">
-            <img
-              src="/brandon-headshot.jpg"
-              alt="Brandon Weaver"
-              className="w-full h-full object-cover"
-            />
+          {/* LEFT: Large Aperture Circle */}
+          <div className="h-64 sm:h-80 md:h-[600px] lg:h-screen order-2 md:order-1 overflow-hidden bg-parchment flex items-center justify-center">
+            <svg width="80%" height="80%" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="100" r="95" stroke="#1C1A17" strokeWidth="8"/>
+              <path d="M100 5 A95 95 0 0 1 195 100" stroke="#B8924A" strokeWidth="12" strokeLinecap="round"/>
+            </svg>
           </div>
 
-          {/* RIGHT: Content Panel */}
-          <div style={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'flex-start',
-            paddingTop: 'clamp(2rem, 4vw, 3rem)',
-            paddingBottom: 'clamp(2rem, 4vw, 3rem)',
-            paddingLeft: 'clamp(1.5rem, 4vw, 4rem)',
-            paddingRight: 'clamp(1.5rem, 4vw, 4rem)',
-            background: '#F0EDE6',
-            minHeight: 'auto'
-          }}>
+          {/* RIGHT: Headshot + Content Panel */}
+          <div className="order-1 md:order-2 flex flex-col md:flex-row">
+            {/* Headshot - visible on desktop */}
+            <div className="hidden md:block w-1/3 h-[600px] lg:h-screen overflow-hidden bg-parchment">
+              <img
+                src="/brandon-headshot.jpg"
+                alt="Brandon Weaver"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            
+            {/* Content Panel */}
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'flex-start',
+              paddingTop: 'clamp(2rem, 4vw, 3rem)',
+              paddingBottom: 'clamp(2rem, 4vw, 3rem)',
+              paddingLeft: 'clamp(1.5rem, 4vw, 4rem)',
+              paddingRight: 'clamp(1.5rem, 4vw, 4rem)',
+              background: '#F0EDE6',
+              minHeight: 'auto',
+              flex: 1
+            }}>
 
             {/* Logo lockup */}
             <div style={{
@@ -175,6 +186,7 @@ export default function Home() {
               }}>LEARN MORE</Link>
             </div>
 
+            </div>
           </div>
         </div>
       </div>
