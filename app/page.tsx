@@ -5,6 +5,7 @@ import HowWeThink from '@/components/HowWeThink'
 import WhereWeFocused from '@/components/WhereWeFocused'
 import AboutFounder from '@/components/AboutFounder'
 import PodcastsMedia from '@/components/PodcastsMedia'
+import Testimonials from '@/components/Testimonials'
 import Link from 'next/link'
 
 export default function Home() {
@@ -148,6 +149,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* TESTIMONIALS */}
+      <Testimonials />
 
       {/* WORK / ENGAGEMENTS */}
       <section className="border-b border-rule">
