@@ -16,38 +16,19 @@ export default function Home() {
       {/* HERO */}
       <div className="border-b border-rule">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
-          {/* LEFT: Large Aperture Circle */}
-          <div className="h-64 sm:h-80 md:h-[600px] lg:h-screen order-2 md:order-1 overflow-hidden bg-parchment flex items-center justify-center">
-            <svg width="80%" height="80%" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="100" cy="100" r="95" stroke="#1C1A17" strokeWidth="8"/>
-              <path d="M100 5 A95 95 0 0 1 195 100" stroke="#B8924A" strokeWidth="12" strokeLinecap="round"/>
-            </svg>
-          </div>
-
-          {/* RIGHT: Headshot + Content Panel */}
-          <div className="order-1 md:order-2 flex flex-col md:flex-row">
-            {/* Headshot - visible on desktop */}
-            <div className="hidden md:block w-1/3 h-[600px] lg:h-screen overflow-hidden bg-parchment">
-              <img
-                src="/brandon-headshot.jpg"
-                alt="Brandon Weaver"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            
-            {/* Content Panel */}
-            <div style={{
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'flex-start',
-              paddingTop: 'clamp(2rem, 4vw, 3rem)',
-              paddingBottom: 'clamp(2rem, 4vw, 3rem)',
-              paddingLeft: 'clamp(1.5rem, 4vw, 4rem)',
-              paddingRight: 'clamp(1.5rem, 4vw, 4rem)',
-              background: '#F0EDE6',
-              minHeight: 'auto',
-              flex: 1
-            }}>
+          {/* LEFT: Content Panel with Logo, Headline, Copy, CTAs */}
+          <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'flex-start',
+            paddingTop: 'clamp(2rem, 4vw, 3rem)',
+            paddingBottom: 'clamp(2rem, 4vw, 3rem)',
+            paddingLeft: 'clamp(1.5rem, 4vw, 4rem)',
+            paddingRight: 'clamp(1.5rem, 4vw, 4rem)',
+            background: '#F0EDE6',
+            minHeight: 'auto',
+            order: 1
+          }}>
 
             {/* Logo lockup */}
             <div style={{
@@ -186,7 +167,15 @@ export default function Home() {
               }}>LEARN MORE</Link>
             </div>
 
-            </div>
+          </div>
+
+          {/* RIGHT: Headshot */}
+          <div className="h-64 sm:h-80 md:h-[600px] lg:h-screen order-2 md:order-2 overflow-hidden bg-parchment">
+            <img
+              src="/brandon-headshot.jpg"
+              alt="Brandon Weaver"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>
@@ -215,19 +204,19 @@ export default function Home() {
               <div>
                 <h3 className="font-display text-xl font-medium text-ink mb-1">Sonder</h3>
                 <p className="text-xs tracking-tight text-muted">
-                  Regional General Manager
+                  VP, Commercial Strategy
                 </p>
               </div>
               <div>
                 <h3 className="font-display text-xl font-medium text-ink mb-1">Bonotel Exclusive Travel</h3>
                 <p className="text-xs tracking-tight text-muted">
-                  Strategic Leadership
+                  Executive, Commercial & Operations
                 </p>
               </div>
               <div>
                 <h3 className="font-display text-xl font-medium text-ink mb-1">General Electric</h3>
                 <p className="text-xs tracking-tight text-muted">
-                  Commercial Operations
+                  Commercial Roles, Appliances Division
                 </p>
               </div>
             </div>
@@ -235,74 +224,106 @@ export default function Home() {
         </div>
       </div>
 
-      {/* SERVICES */}
-      <section className="border-b border-rule">
+      {/* WHAT WE DO (3 Pillars) */}
+      <div className="border-b border-rule">
         <div className="container-max py-16 md:py-24">
-          <div className="section-label">What We Do</div>
-          <div className="grid md:grid-cols-3 gap-0">
-            <div className="md:border-r border-rule p-0 md:pr-8 md:py-6 mb-8 md:mb-0">
-              <div className="text-xs font-medium tracking-widest uppercase text-brass mb-4">01</div>
-              <h3 className="font-display text-2xl font-normal leading-tight mb-4 text-ink">
-                Marketing &amp; Brand Strategy
+          <div className="mb-12">
+            <div className="section-label">Core Capabilities</div>
+            <h2 className="font-display text-4xl md:text-5xl font-light mb-6 text-ink">
+              What We <em className="italic">Do</em>
+            </h2>
+          </div>
+
+          <div className="w-full h-px bg-rule mb-12" />
+
+          <div className="grid md:grid-cols-3 gap-12">
+            {/* Pillar 1 */}
+            <div>
+              <h3 className="font-display text-2xl font-normal text-ink mb-4">
+                Commercial Strategy
               </h3>
-              <p className="text-sm leading-relaxed text-muted">
-                Positioning and go-to-market work for hospitality, real estate, and luxury brands looking to reposition or scale.
+              <p className="text-muted leading-relaxed mb-4">
+                Revenue optimization, unit economics, pricing, and margin architecture. We help brands think differently about how they create value.
               </p>
             </div>
-            <div className="md:border-r border-rule p-0 md:px-8 md:py-6 mb-8 md:mb-0">
-              <div className="text-xs font-medium tracking-widest uppercase text-brass mb-4">02</div>
-              <h3 className="font-display text-2xl font-normal leading-tight mb-4 text-ink">
-                Sales &amp; Commercial Strategy
+
+            {/* Pillar 2 */}
+            <div>
+              <h3 className="font-display text-2xl font-normal text-ink mb-4">
+                Sales & Go-to-Market
               </h3>
-              <p className="text-sm leading-relaxed text-muted">
-                Building the commercial engine — partnerships, channel strategy, and revenue structure — that turns positioning into pipeline.
+              <p className="text-muted leading-relaxed mb-4">
+                Building repeatable, scalable sales processes and distribution strategies. From acquisition to retention to expansion.
               </p>
             </div>
-            <div className="p-0 md:pl-8 md:py-6">
-              <div className="text-xs font-medium tracking-widest uppercase text-brass mb-4">03</div>
-              <h3 className="font-display text-2xl font-normal leading-tight mb-4 text-ink">
-                Operations &amp; Value Creation
+
+            {/* Pillar 3 */}
+            <div>
+              <h3 className="font-display text-2xl font-normal text-ink mb-4">
+                Operations & Leadership
               </h3>
-              <p className="text-sm leading-relaxed text-muted">
-                Identifying the operating gaps that limit performance, and the structural moves that close them.
+              <p className="text-muted leading-relaxed mb-4">
+                Organizational design, team scaling, process optimization, and the cross-functional alignment that drives execution.
               </p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* TESTIMONIALS */}
       <Testimonials />
 
-      {/* WORK / ENGAGEMENTS */}
-      <section className="border-b border-rule">
+      {/* ENGAGEMENTS */}
+      <div className="border-b border-rule">
         <div className="container-max py-16 md:py-24">
-          <div className="section-label">Selected Engagements</div>
-          <div className="space-y-0">
-            {[
-              { client: 'Voyage Real Estate (Compass)', scope: 'Growth Strategy & GTM', date: 'Nov 2023 – Aug 2024' },
-              { client: 'Wilbur Labs', scope: 'Strategic Advisory, Luxury Villas GTM', date: 'Oct 2025 – Apr 2026' },
-              { client: 'Waratah, Inc. — Morrison Hotel', scope: 'Due Diligence & Launch Strategy', date: 'Jul 2023 – TBD' },
-              { client: 'The Runda Lab & WES Brands', scope: 'Strategic Advisory', date: 'TBD' },
-              { client: 'Beverly Spirits', scope: 'Go-to-Market Strategy', date: 'May 2023 – Jun 2025' },
-              { client: 'Foto Comercio', scope: 'Go-to-Market Strategy', date: 'May 2026 – Present' },
-              { client: 'Iterum Labs', scope: 'Go-to-Market Strategy', date: 'May 2026 – Present' },
-            ].map((eng, i) => (
-              <div key={i} className="grid md:grid-cols-3 gap-4 py-4 border-t border-rule md:items-baseline">
-                <h3 className="font-display text-lg md:text-xl font-normal text-ink hover:text-brass transition-colors">
-                  {eng.client}
-                </h3>
-                <p className="text-xs md:text-sm text-muted tracking-tight">
-                  {eng.scope}
-                </p>
-                <p className="text-xs md:text-sm text-muted tracking-tight md:text-right">
-                  {eng.date}
-                </p>
-              </div>
-            ))}
+          <div className="mb-12">
+            <div className="section-label">Selected Engagements</div>
+            <h2 className="font-display text-4xl md:text-5xl font-light mb-6 text-ink">
+              Who We've <em className="italic">Worked With</em>
+            </h2>
+          </div>
+
+          <div className="w-full h-px bg-rule mb-12" />
+
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* Engagement 1 */}
+            <div>
+              <h3 className="font-display text-xl font-medium text-ink mb-2">Voyage</h3>
+              <p className="text-xs tracking-tight text-muted mb-3">Luxury travel platform</p>
+              <p className="text-muted leading-relaxed">
+                Commercial strategy and revenue optimization for high-net-worth travel bookings.
+              </p>
+            </div>
+
+            {/* Engagement 2 */}
+            <div>
+              <h3 className="font-display text-xl font-medium text-ink mb-2">Wilbur Labs</h3>
+              <p className="text-xs tracking-tight text-muted mb-3">Hospitality software</p>
+              <p className="text-muted leading-relaxed">
+                GTM strategy and sales process design for enterprise hospitality clients.
+              </p>
+            </div>
+
+            {/* Engagement 3 */}
+            <div>
+              <h3 className="font-display text-xl font-medium text-ink mb-2">Waratah</h3>
+              <p className="text-xs tracking-tight text-muted mb-3">Premium accommodations</p>
+              <p className="text-muted leading-relaxed">
+                Strategic pricing and revenue management across luxury properties.
+              </p>
+            </div>
+
+            {/* Engagement 4 */}
+            <div>
+              <h3 className="font-display text-xl font-medium text-ink mb-2">Compass</h3>
+              <p className="text-xs tracking-tight text-muted mb-3">Real estate platform</p>
+              <p className="text-muted leading-relaxed">
+                Commercial acceleration and market expansion strategy.
+              </p>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* INSIGHTS */}
       <Insights />
@@ -320,16 +341,21 @@ export default function Home() {
       <PodcastsMedia />
 
       {/* CONTACT CTA */}
-      <div className="bg-ink">
-        <div className="container-max py-16 md:py-24 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
-          <h2 className="font-display text-3xl md:text-5xl font-light leading-tight text-parchment max-w-2xl">
-            Have an asset that isn't performing the way it <em className="italic">should?</em>
-          </h2>
-          <Link href="/contact" className="btn-primary !bg-parchment !text-ink flex-shrink-0">
-            Let's talk
-          </Link>
+      <section className="border-b border-rule">
+        <div className="container-max py-16 md:py-24">
+          <div className="max-w-3xl">
+            <h2 className="font-display text-4xl md:text-5xl font-light mb-6 text-ink">
+              Ready to work <em className="italic">together?</em>
+            </h2>
+            <p className="text-lg leading-relaxed text-muted mb-8 max-w-2xl">
+              Let's talk about your business, your challenges, and how Aperture can help unlock the next phase of growth.
+            </p>
+            <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-ink text-parchment font-medium uppercase tracking-wider text-sm hover:bg-muted transition-colors">
+              Get in Touch
+            </Link>
+          </div>
         </div>
-      </div>
+      </section>
 
       <Footer />
     </>
