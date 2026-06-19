@@ -57,19 +57,6 @@ export default function Home() {
             minHeight: '600px'
           }}>
 
-            {/* Top label */}
-            <p style={{
-              fontFamily: "'Inter', sans-serif",
-              fontSize: '0.65rem',
-              fontWeight: 400,
-              letterSpacing: '0.2em',
-              textTransform: 'uppercase',
-              color: '#B8924A',
-              margin: '0 0 1.5rem 0'
-            }}>
-              FOUNDER • CEO • HOSPITALITY • LUXURY
-            </p>
-
             {/* Aperture Logo */}
             <div style={{
               marginBottom: '2rem',
