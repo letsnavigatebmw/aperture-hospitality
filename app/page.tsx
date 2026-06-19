@@ -289,9 +289,6 @@ export default function Home() {
       {/* TESTIMONIALS */}
       <Testimonials />
 
-      {/* INTAKE FORM */}
-      <IntakeForm />
-
       {/* ENGAGEMENTS */}
       <div className="border-b border-rule">
         <div className="container-max py-16 md:py-24">
