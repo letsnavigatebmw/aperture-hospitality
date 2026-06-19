@@ -1,16 +1,16 @@
 import Link from 'next/link'
-import Image from 'next/image'
 
 export default function Nav() {
   return (
     <nav className="sticky top-0 z-50 bg-parchment border-b border-rule">
       <div className="container-max h-20 flex items-center justify-between">
-        <Link href="/" className="flex-shrink-0 h-14 w-auto">
-          <img 
-            src="/aperture-logo.png" 
-            alt="Aperture Hospitality"
-            className="h-full w-auto object-contain"
-          />
+        <Link href="/" className="flex items-center gap-3 flex-shrink-0">
+          {/* Aperture Circle Logo */}
+          <div className="w-6 h-6 rounded-full border-2 border-ink"></div>
+          <div className="text-xs font-medium tracking-widest uppercase text-ink">
+            <div>Aperture</div>
+            <div className="text-xs font-light text-muted">Hospitality</div>
+          </div>
         </Link>
         <ul className="hidden md:flex gap-8">
           <li>

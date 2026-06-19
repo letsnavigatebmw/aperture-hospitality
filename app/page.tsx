@@ -28,18 +28,19 @@ export default function Home() {
           {/* RIGHT: Content */}
           <div className="order-1 md:order-2 flex flex-col justify-center py-16 md:py-24 container-max">
             <div className="space-y-8">
-              {/* Logo - Small */}
-              <div className="mb-6">
-                <img 
-                  src="/aperture-logo.png" 
-                  alt="Aperture Hospitality"
-                  className="h-auto w-48 md:w-56 object-contain"
-                />
+              {/* Logo - Minimal */}
+              <div className="mb-8 flex items-center gap-4">
+                <div className="w-14 h-14 rounded-full border-2 border-ink flex-shrink-0"></div>
+                <div>
+                  <div className="text-sm font-medium tracking-widest uppercase text-ink">Aperture</div>
+                  <div className="text-xs font-light tracking-wider uppercase text-muted">Hospitality</div>
+                </div>
               </div>
 
               {/* Headline */}
               <h1 className="font-display text-5xl md:text-6xl font-light leading-tight tracking-tighter">
-                Results, not a <em className="italic text-brass">deck.</em>
+                Results, not a<br />
+                <em className="italic text-brass">deck.</em>
               </h1>
 
               {/* Subheadline */}
@@ -53,16 +54,16 @@ export default function Home() {
               </p>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col gap-4 pt-4 w-full md:w-auto">
+              <div className="flex flex-col gap-4 pt-8 w-full max-w-sm">
                 <Link
                   href="/contact"
-                  className="px-8 py-3 bg-ink text-parchment font-medium text-xs tracking-wider uppercase hover:bg-opacity-90 transition-all text-center inline-block"
+                  className="w-full px-8 py-4 bg-ink text-parchment font-medium text-xs tracking-wider uppercase hover:bg-opacity-90 transition-all text-center"
                 >
                   Let's Talk
                 </Link>
                 <Link
                   href="/about"
-                  className="px-8 py-3 border-2 border-ink text-ink font-medium text-xs tracking-wider uppercase hover:bg-ink hover:text-parchment transition-all text-center inline-block"
+                  className="w-full px-8 py-4 border-2 border-ink text-ink font-medium text-xs tracking-wider uppercase hover:bg-ink hover:text-parchment transition-all text-center"
                 >
                   Learn More
                 </Link>

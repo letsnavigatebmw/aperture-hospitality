@@ -6,12 +6,13 @@ export default function Footer() {
   return (
     <footer className="bg-ink border-t border-[#2e2b26]">
       <div className="container-max py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 flex-wrap">
-        <div className="h-8 w-auto brightness-0 invert">
-          <img 
-            src="/aperture-logo.png" 
-            alt="Aperture Hospitality"
-            className="h-full w-auto object-contain"
-          />
+        <div className="flex items-center gap-3">
+          {/* Aperture Circle Logo - Light */}
+          <div className="w-5 h-5 rounded-full border-2 border-parchment"></div>
+          <div className="text-xs font-medium tracking-widest uppercase text-parchment">
+            <div>Aperture</div>
+            <div className="text-xs font-light text-muted">Hospitality</div>
+          </div>
         </div>
         <ul className="flex gap-8 flex-wrap">
           <li>
