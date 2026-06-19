@@ -35,11 +35,11 @@ export default function Home() {
             <div className="order-1 md:order-2 flex flex-col justify-center py-16 md:py-24 px-0 container-max md:pl-0">
               <div className="space-y-8">
                 {/* Logo above headline */}
-                <div className="h-16 w-48 md:h-20 md:w-64">
+                <div className="mb-8">
                   <img 
                     src="/aperture-logo.png" 
                     alt="Aperture Hospitality"
-                    className="h-full w-full object-contain"
+                    className="h-auto w-80 md:w-96 object-contain"
                   />
                 </div>
 
