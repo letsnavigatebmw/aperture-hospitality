@@ -63,7 +63,7 @@ export default function SolutionsPage() {
                 fontSize: '1.0625rem',
                 fontWeight: 300,
                 lineHeight: 1.8,
-                color: '#6B6760',
+                color: '#F0EDE6',
                 marginBottom: '2rem'
               }}>
                 Not every challenge requires a six-month engagement. Aperture's AI Solutions are productized tools built specifically for boutique hotels, luxury spirits brands, and independent hospitality businesses that need to create operational efficiencies and capture more revenue — without a consulting retainer.
@@ -73,7 +73,7 @@ export default function SolutionsPage() {
                 fontSize: '1.0625rem',
                 fontWeight: 300,
                 lineHeight: 1.8,
-                color: '#6B6760',
+                color: '#F0EDE6',
                 marginBottom: 0
               }}>
                 Transparent pricing. No scoping call required. Get started today.

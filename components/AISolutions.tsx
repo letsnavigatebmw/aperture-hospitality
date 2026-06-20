@@ -31,7 +31,7 @@ export default function AISolutions() {
             fontWeight: 500,
             letterSpacing: '0.18em',
             textTransform: 'uppercase',
-            color: '#6B6760'
+            color: '#F0EDE6'
           }}>New Capability</span>
         </div>
 
@@ -59,7 +59,7 @@ export default function AISolutions() {
             fontSize: '1.0625rem',
             fontWeight: 300,
             lineHeight: 1.8,
-            color: '#6B6760',
+            color: '#F0EDE6',
             margin: 0,
             paddingTop: '0.5rem'
           }}>
