@@ -55,6 +55,25 @@ export default function About() {
                   </div>
                 </div>
               </div>
+
+              <div className="mt-12 pt-8 border-t border-rule">
+                <div className="space-y-4">
+                  <div>
+                    <p className="text-sm text-muted">
+                      <a href="https://www.brandonmweaver.com" target="_blank" rel="noopener noreferrer" className="text-brass hover:text-brass-dim transition-colors font-medium">
+                        Want to Learn More About Brandon?
+                      </a>
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted">
+                      <a href="https://drive.google.com/file/d/1C4ksHla5bttjS9S_on_dwylaBkkfqSLp/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="text-brass hover:text-brass-dim transition-colors font-medium">
+                        Professional Bio
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Right column */}
