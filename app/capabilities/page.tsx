@@ -73,11 +73,11 @@ export default function CapabilitiesPage() {
               </h2>
             </div>
             <div>
-              <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#6B6760', marginBottom: '1.25rem' }}>
+              <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#1C1A17', marginBottom: '1.25rem' }}>
                 Running a boutique hotel, a luxury spirits brand, or an independent hospitality business means your marketing often gets whatever time is left over after everything else is handled. Which means it's inconsistent, reactive, and disconnected from actual revenue outcomes.
               </p>
-              <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#6B6760', marginBottom: '1.25rem' }}>
-                Digital marketing done right isn't about more content or more ads. It's about a coherent system — one that reaches the right person, with the right message, at the right moment — and measures what actually happens next.
+              <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#1C1A17', marginBottom: '1.25rem' }}>
+                Digital marketing done right is not about more content or more ads. It's about a coherent system — one that reaches the right person, with the right message, at the right moment — and measures what actually happens next.
               </p>
               <ul style={{ listStyle: 'none', borderTop: '1px solid #D4CFC6', margin: 0, padding: 0 }}>
                 {[
@@ -87,7 +87,7 @@ export default function CapabilitiesPage() {
                   'Email lists that sit unused or broadcast generic newsletters',
                   'No view of which marketing activities are actually working'
                 ].map((item, i) => (
-                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '1rem 0', borderBottom: '1px solid #D4CFC6', fontSize: '0.9375rem', fontWeight: 300, color: '#6B6760', lineHeight: 1.6 }}>
+                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '1rem 0', borderBottom: '1px solid #D4CFC6', fontSize: '0.9375rem', fontWeight: 300, color: '#1C1A17', lineHeight: 1.6 }}>
                     <span style={{ width: '4px', height: '4px', background: '#B8924A', borderRadius: '50%', flexShrink: 0, marginTop: '0.6rem' }}></span>
                     {item}
                   </li>
@@ -194,12 +194,12 @@ export default function CapabilitiesPage() {
                 <span style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></span>
                 The Technology
               </div>
-              <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15 }}>
+              <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, color: '#1C1A17' }}>
                 The right tools,<br/>properly <em style={{ fontStyle: 'italic', color: '#B8924A' }}>configured.</em>
               </h2>
             </div>
-            <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#6B6760' }}>
-              Aperture doesn't just recommend a martech stack — we configure it, integrate it, and make sure it's actually working together as a system. The platforms below are the foundation of every effective digital marketing operation.
+            <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#1C1A17' }}>
+              Aperture does not just recommend a martech stack — we configure it, integrate it, and make sure it is actually working together as a system. The platforms below are the foundation of every effective digital marketing operation.
             </p>
           </div>
 
@@ -217,7 +217,7 @@ export default function CapabilitiesPage() {
                 <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.25rem', fontWeight: 400, color: '#1C1A17', marginBottom: '0.75rem', lineHeight: 1.2 }}>
                   {item.name}
                 </div>
-                <div style={{ fontSize: '0.8125rem', fontWeight: 300, color: '#6B6760', lineHeight: 1.6 }}>
+                <div style={{ fontSize: '0.8125rem', fontWeight: 300, color: '#1C1A17', lineHeight: 1.6 }}>
                   {item.examples}
                 </div>
               </div>
@@ -250,7 +250,7 @@ export default function CapabilitiesPage() {
                 <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.375rem', fontWeight: 400, color: '#1C1A17', lineHeight: 1.2, marginBottom: '0.875rem' }}>
                   {step.title}
                 </h3>
-                <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760' }}>
+                <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.7, color: '#1C1A17' }}>
                   {step.desc}
                 </p>
               </div>
@@ -268,11 +268,11 @@ export default function CapabilitiesPage() {
                 <span style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></span>
                 Who It's For
               </div>
-              <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15 }}>
+              <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, color: '#1C1A17' }}>
                 Built for the brands<br/>that run on <em style={{ fontStyle: 'italic', color: '#B8924A' }}>reputation.</em>
               </h2>
             </div>
-            <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#6B6760' }}>
+            <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#1C1A17' }}>
               Aperture's digital marketing work is tailored to the specific needs, constraints, and customer profiles of boutique hospitality and luxury brands — not generic small business marketing advice.
             </p>
           </div>
@@ -322,7 +322,7 @@ export default function CapabilitiesPage() {
                 </div>
                 <ul style={{ listStyle: 'none', borderTop: '1px solid #D4CFC6', padding: 0, margin: 0 }}>
                   {audience.challenges.map((challenge, j) => (
-                    <li key={j} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', padding: '0.75rem 0', borderBottom: '1px solid #D4CFC6', fontSize: '0.875rem', fontWeight: 300, color: '#6B6760', lineHeight: 1.5 }}>
+                    <li key={j} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', padding: '0.75rem 0', borderBottom: '1px solid #D4CFC6', fontSize: '0.875rem', fontWeight: 300, color: '#1C1A17', lineHeight: 1.5 }}>
                       <span style={{ width: '4px', height: '4px', background: '#B8924A', borderRadius: '50%', flexShrink: 0, marginTop: '0.55rem' }}></span>
                       {challenge}
                     </li>
