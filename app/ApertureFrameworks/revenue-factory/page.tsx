@@ -17,7 +17,7 @@ export default function RevenueFactoryPage() {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'flex-end' }}>
             <div>
-              <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(3rem, 5.5vw, 5rem)', fontWeight: 300, lineHeight: 1.06, color: '#F0EDE6', marginBottom: '1.75rem', margin: 0, marginBottom: '1.75rem' }}>
+              <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(3rem, 5.5vw, 5rem)', fontWeight: 300, lineHeight: 1.06, color: '#F0EDE6', margin: 0, marginBottom: '1.75rem' }}>
                 Stop relying on superstars.<br/>Build a system that<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>produces revenue.</em>
               </h1>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
@@ -30,7 +30,7 @@ export default function RevenueFactoryPage() {
               </div>
             </div>
             <div>
-              <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '1.25rem', margin: 0, marginBottom: '1.25rem' }}>
+              <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', margin: 0, marginBottom: '1.25rem' }}>
                 The Revenue Factory is the operating model Aperture applies across every commercial strategy engagement. It treats your go-to-market motion like a production line — predictable, measurable, and not dependent on any single person to keep it running.
               </p>
               <div style={{ display: 'flex', gap: '2rem', paddingTop: '1.5rem', borderTop: '1px solid #2e2b26' }}>

@@ -17,7 +17,7 @@ export default function LuxuryBrandPositioningPage() {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'flex-end' }}>
             <div>
-              <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(3rem, 5.5vw, 5rem)', fontWeight: 300, lineHeight: 1.06, color: '#F0EDE6', marginBottom: '1.75rem', margin: 0, marginBottom: '1.75rem' }}>
+              <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(3rem, 5.5vw, 5rem)', fontWeight: 300, lineHeight: 1.06, color: '#F0EDE6', margin: 0, marginBottom: '1.75rem' }}>
                 Luxury isn't a price point.<br/>It's a promise you have<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>to earn repeatedly.</em>
               </h1>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
