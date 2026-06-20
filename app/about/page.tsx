@@ -100,7 +100,7 @@ export default function About() {
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 300, marginBottom: '1rem', color: '#F0EDE6' }}>
               What I <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Do</em>
             </h2>
-            <p style={{ fontSize: '1rem', fontWeight: 300, lineHeight: 1.8, color: '#6B6760', maxWidth: '600px' }}>
+            <p style={{ fontSize: '1rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', maxWidth: '600px' }}>
               The core competencies that drive growth, operational excellence, and sustainable value creation.
             </p>
           </div>
