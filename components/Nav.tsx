@@ -14,7 +14,7 @@ export default function Nav() {
         </Link>
 
         {/* Navigation */}
-        <ul className="hidden lg:flex gap-8 items-center">
+        <ul className="hidden lg:flex gap-6 items-center">
           <li>
             <Link href="/how-we-work" className="text-xs font-normal tracking-wider uppercase text-muted hover:text-ink transition-colors">
               How We Work
@@ -32,7 +32,7 @@ export default function Nav() {
           </li>
           <li>
             <Link href="/data-intelligence" className="text-xs font-normal tracking-wider uppercase text-muted hover:text-ink transition-colors">
-              Data & Intelligence
+              Intelligence
             </Link>
           </li>
           <li>
@@ -43,11 +43,6 @@ export default function Nav() {
           <li>
             <Link href="/about" className="text-xs font-normal tracking-wider uppercase text-muted hover:text-ink transition-colors">
               About
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact" className="text-xs font-normal tracking-wider uppercase text-muted hover:text-ink transition-colors">
-              Contact
             </Link>
           </li>
         </ul>
