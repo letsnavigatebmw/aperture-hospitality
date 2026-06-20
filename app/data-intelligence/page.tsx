@@ -152,16 +152,16 @@ export default function DataIntelligencePage() {
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
             {/* Navigate Demo Card */}
             <div style={{ background: '#252220', border: '1px solid #2e2b26', borderRadius: '8px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
-              <div style={{ position: 'relative', width: '100%', paddingBottom: '56.25%', background: '#000', backgroundImage: 'url(/navigate-demo.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0, 0, 0, 0.3)' }}>
-                  <button style={{ width: '60px', height: '60px', borderRadius: '50%', background: '#F0EDE6', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'transform 0.2s', zIndex: 10 }} onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.1)')} onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}>
+              <a href="https://vimeo.com/1171081239" target="_blank" rel="noopener noreferrer" style={{ position: 'relative', width: '100%', paddingBottom: '56.25%', background: '#000', backgroundImage: 'url(/navigate-demo.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', display: 'block', textDecoration: 'none' }}>
+                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0, 0, 0, 0.3)', transition: 'background 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.background = 'rgba(0, 0, 0, 0.5)')} onMouseLeave={(e) => (e.currentTarget.style.background = 'rgba(0, 0, 0, 0.3)')}>
+                  <div style={{ width: '60px', height: '60px', borderRadius: '50%', background: '#F0EDE6', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'transform 0.2s', zIndex: 10 }} onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.1)')} onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}>
                     <span style={{ fontSize: '24px', color: '#1C1A17', marginLeft: '4px' }}>▶</span>
-                  </button>
+                  </div>
                   <span style={{ position: 'absolute', color: '#F0EDE6', fontSize: '0.875rem', fontWeight: 500, bottom: '1rem', left: '50%', transform: 'translateX(-50%)', zIndex: 10 }}>
                     Watch Navigate Demo
                   </span>
                 </div>
-              </div>
+              </a>
               <div style={{ padding: '2rem' }}>
                 <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#9370DB', marginBottom: '1rem' }}>
                   Product Suite 01
@@ -172,7 +172,7 @@ export default function DataIntelligencePage() {
                 <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#F0EDE6', marginBottom: '1.5rem' }}>
                   An end-to-end walkthrough of the prospecting intelligence platform, from geo-targeted list building through campaign execution and conversion tracking.
                 </p>
-                <a href="#" style={{ fontSize: '0.875rem', fontWeight: 500, color: '#9370DB', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', transition: 'color 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#B8924A')} onMouseLeave={(e) => (e.currentTarget.style.color = '#9370DB')}>
+                <a href="https://vimeo.com/1171081239" target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.875rem', fontWeight: 500, color: '#9370DB', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', transition: 'color 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#B8924A')} onMouseLeave={(e) => (e.currentTarget.style.color = '#9370DB')}>
                   Watch Demo →
                 </a>
               </div>
