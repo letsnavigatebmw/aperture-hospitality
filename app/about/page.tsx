@@ -54,24 +54,17 @@ export default function About() {
                     <p className="text-xs text-muted">B.A., Communication</p>
                   </div>
                 </div>
-                <div className="mt-8">
+                <div className="mt-8 space-y-4">
                   <p className="text-sm text-muted">
                     <a href="https://drive.google.com/file/d/1C4ksHla5bttjS9S_on_dwylaBkkfqSLp/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="text-brass hover:text-brass-dim transition-colors font-medium">
                       Executive Bio
                     </a>
                   </p>
-                </div>
-              </div>
-
-              <div className="mt-12 pt-8 border-t border-rule">
-                <div className="flex flex-col md:flex-row gap-8 md:gap-12">
-                  <div>
-                    <p className="text-sm text-muted">
-                      <a href="https://www.brandonmweaver.com" target="_blank" rel="noopener noreferrer" className="text-brass hover:text-brass-dim transition-colors font-medium">
-                        Want to Learn More About Brandon?
-                      </a>
-                    </p>
-                  </div>
+                  <p className="text-sm text-muted">
+                    <a href="https://www.brandonmweaver.com" target="_blank" rel="noopener noreferrer" className="text-brass hover:text-brass-dim transition-colors font-medium">
+                      Want to Learn More About Brandon?
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
