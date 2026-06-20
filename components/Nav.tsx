@@ -37,6 +37,11 @@ export default function Nav() {
             </Link>
           </li>
           <li>
+            <Link href="/data-intelligence" className="text-xs font-normal tracking-wider uppercase text-muted hover:text-ink transition-colors">
+              Data & Intelligence
+            </Link>
+          </li>
+          <li>
             <Link href="/insights" className="text-xs font-normal tracking-wider uppercase text-muted hover:text-ink transition-colors">
               Insights
             </Link>
