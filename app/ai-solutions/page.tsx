@@ -27,14 +27,14 @@ export default function AISolutionsPage() {
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1.1fr 1fr', gap: '5rem', alignItems: 'center' }}>
             <div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#4a4845', marginBottom: '2rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#F0EDE6', marginBottom: '2rem' }}>
                 <div style={{ width: '2px', height: '1.25rem', background: '#B8924A', flexShrink: 0 }}></div>
                 AI Solutions for Hospitality & Luxury Brands
               </div>
               <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(3rem, 5.5vw, 5rem)', fontWeight: 300, lineHeight: 1.06, color: '#F0EDE6', marginBottom: '1.75rem' }}>
                 Win back revenue<br/>lost to <em style={{ fontStyle: 'italic', color: '#B8924A' }}>missed<br/>conversations.</em>
               </h1>
-              <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#6B6760', marginBottom: '2.5rem', maxWidth: '44ch' }}>
+              <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '2.5rem', maxWidth: '44ch' }}>
                 Boutique hotels, luxury spirits brands, and independent operators lose bookings and leads every day to missed calls, slow follow-ups, and unmanaged inquiries. Aperture's AI Employee works around the clock so your team doesn't have to.
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
@@ -54,7 +54,7 @@ export default function AISolutionsPage() {
                 <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '3rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1, marginBottom: '0.5rem' }}>
                   <em style={{ color: '#B8924A', fontStyle: 'normal' }}>62%</em>
                 </div>
-                <div style={{ fontSize: '0.875rem', fontWeight: 300, color: '#6B6760', lineHeight: 1.6 }}>
+                <div style={{ fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.6 }}>
                   of inbound calls to small businesses go unanswered. Each one is a potential booking, reservation, or sale walking out the door.
                 </div>
               </div>
@@ -63,7 +63,7 @@ export default function AISolutionsPage() {
                 <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '3rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1, marginBottom: '0.5rem' }}>
                   <em style={{ color: '#B8924A', fontStyle: 'normal' }}>5×</em>
                 </div>
-                <div style={{ fontSize: '0.875rem', fontWeight: 300, color: '#6B6760', lineHeight: 1.6 }}>
+                <div style={{ fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.6 }}>
                   more likely to convert a lead if you follow up within 5 minutes. Most hospitality businesses take hours — or never respond at all.
                 </div>
               </div>
@@ -72,7 +72,7 @@ export default function AISolutionsPage() {
                 <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '3rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1, marginBottom: '0.5rem' }}>
                   <em style={{ color: '#B8924A', fontStyle: 'normal' }}>$97</em>
                 </div>
-                <div style={{ fontSize: '0.875rem', fontWeight: 300, color: '#6B6760', lineHeight: 1.6 }}>
+                <div style={{ fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.6 }}>
                   per month. Less than the cost of one missed reservation, and far less than a part-time hire. No long-term contract required.
                 </div>
               </div>
