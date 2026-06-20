@@ -57,7 +57,7 @@ export default function About() {
               </div>
 
               <div className="mt-12 pt-8 border-t border-rule">
-                <div className="space-y-4">
+                <div className="flex flex-col md:flex-row gap-8 md:gap-12">
                   <div>
                     <p className="text-sm text-muted">
                       <a href="https://www.brandonmweaver.com" target="_blank" rel="noopener noreferrer" className="text-brass hover:text-brass-dim transition-colors font-medium">
