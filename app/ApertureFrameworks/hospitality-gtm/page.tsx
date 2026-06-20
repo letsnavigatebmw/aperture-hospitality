@@ -17,7 +17,7 @@ export default function HospitalityGTMPage() {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'flex-end' }}>
             <div>
-              <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(3rem, 5.5vw, 5rem)', fontWeight: 300, lineHeight: 1.06, color: '#F0EDE6', marginBottom: '1.75rem', margin: 0, marginBottom: '1.75rem' }}>
+              <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(3rem, 5.5vw, 5rem)', fontWeight: 300, lineHeight: 1.06, color: '#F0EDE6', margin: 0, marginBottom: '1.75rem' }}>
                 Your buyer is not who you think.<br/>Your channel is not<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>where you think it is.</em>
               </h1>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
@@ -86,7 +86,7 @@ export default function HospitalityGTMPage() {
             <span style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></span>
             The Framework
           </div>
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3vw, 2.75rem)', fontWeight: 300, lineHeight: 1.15, color: '#1C1A17', marginBottom: '3rem', maxWidth: '28ch' }}>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3vw, 2.75rem)', fontWeight: 300, lineHeight: 1.15, color: '#1C1A17', marginBottom: '3rem' }}>
             A go-to-market strategy answers four questions. Most brands have answered <em style={{ fontStyle: 'italic', color: '#B8924A' }}>one.</em>
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 0, borderTop: '1px solid #D4CFC6' }}>
@@ -95,11 +95,11 @@ export default function HospitalityGTMPage() {
               { num: 'Question 02', title: 'Where do they make their decisions?', desc: 'And what do they need to see before they commit? This determines your channel strategy, your content approach, and how much of your marketing budget is wasted reaching people at the wrong moment.' },
               { num: 'Question 03', title: 'What is your message?', desc: 'And how does it earn attention in a market full of identical claims? Most hospitality brands lead with adjectives — intimate, curated, bespoke — that every competitor uses identically. The framework builds the message architecture that actually differentiates.' },
               { num: 'Question 04', title: 'How do you reach them at scale?', desc: 'Without destroying your unit economics. The acquisition motion — the specific tactics, sequences, and touchpoints that move a stranger from awareness to booking — differs by buyer type and must be designed for each.' }
-            ].map((item, i) => (
-              <div key={i} style={{ padding: i % 2 === 0 ? '2.5rem 2.5rem 2.5rem 0' : '2.5rem 0 2.5rem 2.5rem', borderRight: i % 2 === 0 ? '1px solid #D4CFC6' : 'none', borderBottom: i < 2 ? '1px solid #D4CFC6' : 'none' }}>
-                <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1.25rem' }}>{item.num}</div>
-                <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.375rem', fontWeight: 400, color: '#1C1A17', marginBottom: '0.75rem', lineHeight: 1.2 }}>{item.title}</h3>
-                <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.7, color: '#1C1A17' }}>{item.desc}</p>
+            ].map((q, i) => (
+              <div key={i} style={{ padding: '2.5rem 2.5rem 2.5rem ' + (i % 2 === 1 ? '0' : '2.5rem'), borderRight: i % 2 === 0 ? '1px solid #D4CFC6' : 'none', borderBottom: i < 2 ? '1px solid #D4CFC6' : 'none' }}>
+                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.75rem', fontWeight: 300, color: '#B8924A', lineHeight: 1, marginBottom: '0.75rem' }}>{q.num}</div>
+                <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.125rem', fontWeight: 400, color: '#1C1A17', marginBottom: '0.75rem', lineHeight: 1.2 }}>{q.title}</h3>
+                <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.6, color: '#1C1A17' }}>{q.desc}</p>
               </div>
             ))}
           </div>
@@ -160,7 +160,7 @@ export default function HospitalityGTMPage() {
                   'Operators preparing for expansion into a new market or customer segment'
                 ].map((item, i) => (
                   <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '1rem 0', borderBottom: '1px solid #D4CFC6', fontSize: '0.9375rem', fontWeight: 300, color: '#1C1A17', lineHeight: 1.6 }}>
-                    <span style={{ width: '4px', height: '4px', background: '#B8924A', borderRadius: '50%', flexShrink: 0, marginTop: '0.6rem', display: 'block' }}></span>
+                    <span style={{ width: '4px', height: '4px', background: '#B8924A', borderRadius: '50%', flexShrink: 0, marginTop: '0.6rem' }}></span>
                     {item}
                   </li>
                 ))}
@@ -174,10 +174,10 @@ export default function HospitalityGTMPage() {
                 Start with buyer definition. Everything else follows from knowing precisely who you're building this for.
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.875rem' }}>
-                <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: '#B8924A', color: '#F0EDE6', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none', borderRadius: '2px' }}>
+                <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: '#B8924A', color: '#F0EDE6', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none' }}>
                   Start a GTM conversation
                 </Link>
-                <Link href="/apertureframeworks" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: 'transparent', color: '#1C1A17', border: '1px solid #1C1A17', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none', borderRadius: '2px' }}>
+                <Link href="/apertureframeworks" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: 'transparent', color: '#1C1A17', border: '1px solid #1C1A17', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none' }}>
                   ← Back to all frameworks
                 </Link>
               </div>
