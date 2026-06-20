@@ -62,7 +62,7 @@ export default function About() {
                   </p>
                   <p className="text-sm text-muted">
                     <a href="https://www.brandonmweaver.com" target="_blank" rel="noopener noreferrer" className="text-brass hover:text-brass-dim transition-colors font-medium">
-                      Want to Learn More About Brandon?
+                      Learn more about Brandon M. Weaver
                     </a>
                   </p>
                 </div>
