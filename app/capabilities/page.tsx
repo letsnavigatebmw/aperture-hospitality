@@ -7,6 +7,37 @@ import Link from 'next/link'
 export default function CapabilitiesPage() {
   return (
     <>
+      <style>{`
+        .hero-desc {
+          font-size: 1.0625rem;
+          font-weight: 300;
+          line-height: 1.8;
+          color: #F0EDE6;
+          margin-bottom: 2.5rem;
+          max-width: 44ch;
+        }
+
+        .section-label-dark {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          font-size: 0.6875rem;
+          font-weight: 500;
+          letter-spacing: 0.18em;
+          text-transform: uppercase;
+          color: #F0EDE6;
+          margin-bottom: 2rem;
+        }
+
+        .section-label-dark::before {
+          content: '';
+          display: block;
+          width: 2px;
+          height: 1.25rem;
+          background: #B8924A;
+          flex-shrink: 0;
+        }
+      `}</style>
       <Nav />
 
       {/* HERO */}
