@@ -274,13 +274,13 @@ export default function CapabilitiesPage() {
             
             {/* Placeholder card */}
             <div style={{ padding: '3rem 2.5rem', border: '1px dashed #2e2b26', background: 'transparent', display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: '280px' }}>
-              <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.25rem', fontWeight: 300, color: '#3a3733', marginBottom: '0.75rem', lineHeight: 1.3 }}>
+              <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.25rem', fontWeight: 300, color: '#F0EDE6', marginBottom: '0.75rem', lineHeight: 1.3 }}>
                 Need something more specific?
               </div>
-              <p style={{ fontSize: '0.875rem', fontWeight: 300, color: '#3a3733', lineHeight: 1.6, marginBottom: '1.5rem' }}>
+              <p style={{ fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.6, marginBottom: '1.5rem' }}>
                 Every engagement is scoped to your business. If you have a specific marketing problem not covered above, get in touch and we'll tell you how we'd approach it.
               </p>
-              <Link href="/contact" style={{ fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B8924A', borderBottom: '1px solid #2e2b26', paddingBottom: '2px', display: 'inline-flex', width: 'fit-content', textDecoration: 'none' }}>
+              <Link href="/contact" style={{ fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B8924A', borderBottom: '1px solid #B8924A', paddingBottom: '2px', display: 'inline-flex', width: 'fit-content', textDecoration: 'none' }}>
                 Talk to us →
               </Link>
             </div>
