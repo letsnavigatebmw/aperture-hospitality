@@ -83,7 +83,7 @@ export default function DataIntelligencePage() {
               <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1.75rem' }}>
                 What Navigate Gives You
               </div>
-              <div style={{ space: '2.5rem' }}>
+              <div>
                 {[
                   { title: 'Verified Owner Data', desc: 'Accurate, up-to-date contact information for property owners — so you\'re reaching real decision-makers, not dead ends.' },
                   { title: 'Targeted Campaigns', desc: 'Launch outreach via email, letter, and postcard — all automated, personalized, and built for scale — directly from the platform.' },
