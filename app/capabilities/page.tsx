@@ -47,6 +47,50 @@ export default function CapabilitiesPage() {
           border: 1px solid #2e2b26;
           color: #F0EDE6;
         }
+
+        .stack-item {
+          padding: 2.5rem 2rem 2.5rem 0;
+          border-right: 1px solid var(--rule);
+          display: flex;
+          flex-direction: column;
+          gap: 0;
+        }
+
+        .stack-item:last-child {
+          border-right: none;
+          padding-left: 2rem;
+          padding-right: 0;
+        }
+
+        .stack-item:nth-child(2), .stack-item:nth-child(3) {
+          padding-left: 2rem;
+        }
+
+        .stack-item-label {
+          font-size: 0.625rem;
+          font-weight: 500;
+          letter-spacing: 0.18em;
+          text-transform: uppercase;
+          color: var(--brass);
+          margin-bottom: 0.75rem;
+        }
+
+        .stack-item-name {
+          font-family: 'Cormorant Garamond', Georgia, serif;
+          font-size: 1.25rem;
+          font-weight: 400;
+          color: var(--ink);
+          margin-bottom: 0.75rem;
+          line-height: 1.2;
+        }
+
+        .stack-item-examples {
+          font-size: 0.8125rem;
+          font-weight: 300;
+          color: var(--muted);
+          line-height: 1.6;
+          margin-top: 0;
+        }
       `}</style>
       <Nav />
 
