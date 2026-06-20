@@ -20,6 +20,10 @@ export default function AISolutionsPage() {
 
   return (
     <>
+      <style>{`
+        /* AI Solutions - Dark background text to white */
+        .ai-solutions-dark-text { color: #F0EDE6 !important; }
+      `}</style>
       <Nav />
 
       {/* HERO */}
@@ -144,7 +148,7 @@ export default function AISolutionsPage() {
                 <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760', marginBottom: '1.75rem' }}>{tool.desc}</p>
                 <ul style={{ listStyle: 'none', borderTop: '1px solid #2e2b26', padding: 0, margin: 0 }}>
                   {tool.features.map((feat, j) => (
-                    <li key={j} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', padding: '0.75rem 0', borderBottom: '1px solid #2e2b26', fontSize: '0.875rem', fontWeight: 300, color: '#6B6760', lineHeight: 1.5 }}>
+                    <li key={j} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', padding: '0.75rem 0', borderBottom: '1px solid #2e2b26', fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.5 }}>
                       <span style={{ width: '4px', height: '4px', background: '#B8924A', borderRadius: '50%', flexShrink: 0, marginTop: '0.55rem' }}></span>
                       {feat}
                     </li>
