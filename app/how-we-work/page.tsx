@@ -301,6 +301,47 @@ export default function HowWeWorkPage() {
         </div>
       </section>
 
+      {/* FRAMEWORKS & THINKING */}
+      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) clamp(1.5rem, 4vw, 4rem)', borderBottom: '1px solid #2e2b26' }}>
+        <div style={{ maxWidth: '1140px', margin: '0 auto' }}>
+          
+          {/* Section label */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '3rem' }}>
+            <div style={{ width: '3px', height: '1.5rem', background: '#B8924A' }}></div>
+            <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#F0EDE6' }}>
+              Frameworks & Thinking
+            </span>
+          </div>
+
+          {/* Headline */}
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.5rem, 4vw, 3.5rem)', fontWeight: 300, lineHeight: 1.2, color: '#F0EDE6', marginBottom: '2rem', margin: 0, marginBottom: '2rem' }}>
+            The operating<br/>systems behind<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>real growth.</em>
+          </h2>
+
+          {/* Body copy */}
+          <div style={{ maxWidth: '700px' }}>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '1.5rem' }}>
+              Aperture's frameworks are the practical tools, mental models, and strategic systems we apply across every client engagement. They're not proprietary secrets — they're how we think, made visible.
+            </p>
+
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '2.5rem' }}>
+              Use them to pressure-test your own approach. If you want help applying them to your business, that's what we're here for.
+            </p>
+
+            {/* Footer note */}
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760', marginBottom: '2rem' }}>
+              Frameworks are published as standalone articles. More are added as engagements surface new patterns worth codifying.
+            </p>
+
+            {/* CTA Link */}
+            <a href="/ApertureFrameworks" style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.875rem', fontWeight: 500, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#B8924A', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', borderBottom: '1px solid #B8924A', paddingBottom: '4px', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.currentTarget.style.color = '#F0EDE6'; e.currentTarget.style.borderBottomColor = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.color = '#B8924A'; e.currentTarget.style.borderBottomColor = '#B8924A'; }}>
+              Explore Aperture's Revenue Frameworks →
+            </a>
+          </div>
+
+        </div>
+      </section>
+
       {/* CTA */}
       <section style={{
         padding: 'clamp(4rem, 10vw, 8rem) clamp(1.5rem, 4vw, 4rem)',
