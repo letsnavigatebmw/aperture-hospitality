@@ -135,12 +135,86 @@ export default function DataIntelligencePage() {
         </div>
       </section>
 
+      {/* PRODUCT DEMOS */}
+      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #2e2b26' }}>
+        <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#F0EDE6', marginBottom: '2rem' }}>
+            <span style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></span>
+            Product Demos
+          </div>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, color: '#F0EDE6', marginBottom: '1.5rem' }}>
+            See the Platform in <em style={{ fontStyle: 'italic', color: '#F0EDE6' }}>Action.</em>
+          </h2>
+          <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#6B6760', marginBottom: '3rem', maxWidth: '56ch' }}>
+            Watch walkthroughs of both Navigate and Nexus, our two core product offerings.
+          </p>
+
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
+            {/* Navigate Demo Card */}
+            <div style={{ background: '#252220', border: '1px solid #2e2b26', borderRadius: '8px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
+              <div style={{ position: 'relative', width: '100%', paddingBottom: '56.25%', background: '#000' }}>
+                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%)' }}>
+                  <button style={{ width: '60px', height: '60px', borderRadius: '50%', background: '#F0EDE6', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'transform 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.1)')} onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}>
+                    <span style={{ fontSize: '24px', color: '#1C1A17', marginLeft: '4px' }}>▶</span>
+                  </button>
+                  <span style={{ position: 'absolute', color: '#F0EDE6', fontSize: '0.875rem', fontWeight: 500, bottom: '1rem', left: '50%', transform: 'translateX(-50%)' }}>
+                    Watch Navigate Demo
+                  </span>
+                </div>
+              </div>
+              <div style={{ padding: '2rem' }}>
+                <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#9370DB', marginBottom: '1rem' }}>
+                  Product Suite 01
+                </div>
+                <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.625rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.2, marginBottom: '1rem' }}>
+                  Navigate
+                </h3>
+                <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760', marginBottom: '1.5rem' }}>
+                  An end-to-end walkthrough of the prospecting intelligence platform, from geo-targeted list building through campaign execution and conversion tracking.
+                </p>
+                <a href="#" style={{ fontSize: '0.875rem', fontWeight: 500, color: '#9370DB', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', transition: 'color 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#B8924A')} onMouseLeave={(e) => (e.currentTarget.style.color = '#9370DB')}>
+                  Watch Demo →
+                </a>
+              </div>
+            </div>
+
+            {/* Nexus Demo Card */}
+            <div style={{ background: '#252220', border: '1px solid #2e2b26', borderRadius: '8px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
+              <div style={{ position: 'relative', width: '100%', paddingBottom: '56.25%', background: '#000' }}>
+                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(135deg, #2d1b4e 0%, #1a0b3c 100%)' }}>
+                  <button style={{ width: '60px', height: '60px', borderRadius: '50%', background: '#F0EDE6', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'transform 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.1)')} onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}>
+                    <span style={{ fontSize: '24px', color: '#1C1A17', marginLeft: '4px' }}>▶</span>
+                  </button>
+                  <span style={{ position: 'absolute', color: '#F0EDE6', fontSize: '0.875rem', fontWeight: 500, bottom: '1rem', left: '50%', transform: 'translateX(-50%)' }}>
+                    Watch Nexus Demo
+                  </span>
+                </div>
+              </div>
+              <div style={{ padding: '2rem' }}>
+                <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#9370DB', marginBottom: '1rem' }}>
+                  Product Suite 02
+                </div>
+                <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.625rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.2, marginBottom: '1rem' }}>
+                  Nexus
+                </h3>
+                <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760', marginBottom: '1.5rem' }}>
+                  A demonstration of the Nexus enterprise infrastructure layer, showing how proptech platforms and brokerages embed Navigate's intelligence capabilities via API and MCP.
+                </p>
+                <a href="#" style={{ fontSize: '0.875rem', fontWeight: 500, color: '#9370DB', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', transition: 'color 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#B8924A')} onMouseLeave={(e) => (e.currentTarget.style.color = '#9370DB')}>
+                  Watch Demo →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* THREE PILLARS */}
       <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #2e2b26' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'end', marginBottom: '4rem' }}>
             <div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#4a4845', marginBottom: '2rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#F0EDE6', marginBottom: '2rem' }}>
                 <span style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></span>
                 Intelligence Layers
               </div>
