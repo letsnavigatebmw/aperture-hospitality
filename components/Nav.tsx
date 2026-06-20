@@ -22,11 +22,6 @@ export default function Nav() {
         </Link>
         <ul className="hidden lg:flex gap-6 xl:gap-8">
           <li>
-            <Link href="/insights" className="text-xs font-normal tracking-wider uppercase text-muted hover:text-ink transition-colors">
-              Insights
-            </Link>
-          </li>
-          <li>
             <Link href="/how-we-work" className="text-xs font-normal tracking-wider uppercase text-muted hover:text-ink transition-colors">
               How We Work
             </Link>
@@ -39,6 +34,11 @@ export default function Nav() {
           <li>
             <Link href="/solutions" className="text-xs font-normal tracking-wider uppercase text-muted hover:text-ink transition-colors">
               AI Solutions
+            </Link>
+          </li>
+          <li>
+            <Link href="/insights" className="text-xs font-normal tracking-wider uppercase text-muted hover:text-ink transition-colors">
+              Insights
             </Link>
           </li>
           <li>
