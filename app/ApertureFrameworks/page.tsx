@@ -80,7 +80,7 @@ export default function ApertureFrameworksPage() {
                 <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '0.625rem' }}>
                   {fw.category}
                 </div>
-                <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.625rem', fontWeight: 400, color: '#1C1A17', lineHeight: 1.2, marginBottom: '0.875rem', margin: 0, marginBottom: '0.875rem' }}>
+                <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.625rem', fontWeight: 400, color: '#1C1A17', lineHeight: 1.2, margin: 0, marginBottom: '0.875rem' }}>
                   {fw.title}
                 </h3>
                 <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760', maxWidth: '52ch', margin: 0 }}>
