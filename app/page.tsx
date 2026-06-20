@@ -171,62 +171,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* CREDIBILITY BAR */}
-      <div className="border-b border-rule">
-        <div className="container-max py-12">
-          <div className="flex flex-col md:flex-row md:items-center gap-8">
-            <p className="text-xs font-normal tracking-wide uppercase text-muted md:flex-shrink-0 max-w-xs">
-              Brandon Weaver has led commercial and operating teams at
-            </p>
-            <div className="hidden md:block w-px h-10 bg-rule flex-shrink-0" />
-            <div className="flex flex-col md:flex-row gap-8 flex-wrap">
-              <div>
-                <h3 className="font-display text-xl font-medium text-ink mb-1">Diageo</h3>
-                <p className="text-xs tracking-tight text-muted">
-                  Marketing Leadership, Reserve Portfolio
-                </p>
-              </div>
-              <div>
-                <h3 className="font-display text-xl font-medium text-ink mb-1">Lacure</h3>
-                <p className="text-xs tracking-tight text-muted">
-                  Chief Commercial Officer · 65-person org
-                </p>
-              </div>
-              <div>
-                <h3 className="font-display text-xl font-medium text-ink mb-1">Sonder</h3>
-                <p className="text-xs tracking-tight text-muted">
-                  Regional General Manager
-                </p>
-              </div>
-              <div>
-                <h3 className="font-display text-xl font-medium text-ink mb-1">Bonotel Exclusive Travel</h3>
-                <p className="text-xs tracking-tight text-muted">
-                  Executive, Commercial & Operations
-                </p>
-              </div>
-              <div>
-                <h3 className="font-display text-xl font-medium text-ink mb-1">General Electric</h3>
-                <p className="text-xs tracking-tight text-muted">
-                  Sales Leadership, Consumer Finance
-                </p>
-              </div>
-              <div>
-                <h3 className="font-display text-xl font-medium text-ink mb-1">Bacardi</h3>
-                <p className="text-xs tracking-tight text-muted">
-                  Chief Marketing Officer
-                </p>
-              </div>
-              <div>
-                <h3 className="font-display text-xl font-medium text-ink mb-1">Stillhouse Spirits</h3>
-                <p className="text-xs tracking-tight text-muted">
-                  Chief Marketing Officer
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* WHAT WE DO (3 Pillars) */}
       <div className="border-b border-rule">
         <div className="container-max py-16 md:py-24">
