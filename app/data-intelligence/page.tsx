@@ -152,12 +152,12 @@ export default function DataIntelligencePage() {
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
             {/* Navigate Demo Card */}
             <div style={{ background: '#252220', border: '1px solid #2e2b26', borderRadius: '8px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
-              <div style={{ position: 'relative', width: '100%', paddingBottom: '56.25%', background: '#000' }}>
-                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%)' }}>
-                  <button style={{ width: '60px', height: '60px', borderRadius: '50%', background: '#F0EDE6', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'transform 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.1)')} onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}>
+              <div style={{ position: 'relative', width: '100%', paddingBottom: '56.25%', background: '#000', backgroundImage: 'url(/navigate-demo.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0, 0, 0, 0.3)' }}>
+                  <button style={{ width: '60px', height: '60px', borderRadius: '50%', background: '#F0EDE6', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'transform 0.2s', zIndex: 10 }} onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.1)')} onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}>
                     <span style={{ fontSize: '24px', color: '#1C1A17', marginLeft: '4px' }}>▶</span>
                   </button>
-                  <span style={{ position: 'absolute', color: '#F0EDE6', fontSize: '0.875rem', fontWeight: 500, bottom: '1rem', left: '50%', transform: 'translateX(-50%)' }}>
+                  <span style={{ position: 'absolute', color: '#F0EDE6', fontSize: '0.875rem', fontWeight: 500, bottom: '1rem', left: '50%', transform: 'translateX(-50%)', zIndex: 10 }}>
                     Watch Navigate Demo
                   </span>
                 </div>
