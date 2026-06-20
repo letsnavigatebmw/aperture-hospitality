@@ -132,7 +132,7 @@ export default function AISolutionsPage() {
                 Three tools.<br/>One <em style={{ fontStyle: 'italic', color: '#B8924A' }}>AI teammate.</em>
               </h2>
             </div>
-            <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#6B6760' }}>
+            <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6' }}>
               Your AI Employee specializes in three specific roles. Use one or all three to capture more revenue, reduce no-shows, and protect your reputation — while your team stays focused on delivering the experience your guests came for.
             </p>
           </div>
@@ -146,7 +146,7 @@ export default function AISolutionsPage() {
               <div key={i} style={{ padding: '3rem 2.5rem 3rem 0', borderRight: i < 2 ? '1px solid #2e2b26' : 'none' }}>
                 <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1.5rem' }}>{tool.number}</div>
                 <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.625rem', fontWeight: 400, color: '#F0EDE6', lineHeight: 1.2, marginBottom: '1rem' }}>{tool.name}</h3>
-                <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760', marginBottom: '1.75rem' }}>{tool.desc}</p>
+                <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#F0EDE6', marginBottom: '1.75rem' }}>{tool.desc}</p>
                 <ul style={{ listStyle: 'none', borderTop: '1px solid #2e2b26', padding: 0, margin: 0 }}>
                   {tool.features.map((feat, j) => (
                     <li key={j} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', padding: '0.75rem 0', borderBottom: '1px solid #2e2b26', fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.5 }}>
