@@ -217,6 +217,9 @@ export default function Home() {
         </div>
       </div>
 
+      {/* WHERE WE'RE FOCUSED */}
+      <WhereWeFocused />
+
       {/* TESTIMONIALS */}
       <Testimonials />
 
@@ -271,9 +274,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* WHERE WE'RE FOCUSED */}
-      <WhereWeFocused />
 
       {/* CONTACT FORM */}
       <IntakeForm />
