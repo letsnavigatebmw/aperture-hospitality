@@ -45,7 +45,7 @@ export default function DataIntelligencePage() {
           <div style={{ display: 'grid', gridTemplateColumns: '1.1fr 1fr', gap: '5rem', alignItems: 'center' }}>
             {/* Left content */}
             <div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#4a4845', marginBottom: '2rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#F0EDE6', marginBottom: '2rem' }}>
                 <span style={{ width: '2px', height: '1.25rem', background: '#B8924A', display: 'block' }}></span>
                 Data & Intelligence
               </div>
@@ -216,7 +216,7 @@ export default function DataIntelligencePage() {
             <div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#F0EDE6', marginBottom: '2rem' }}>
                 <span style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></span>
-                Intelligence Layers
+                Data & Intelligence
               </div>
               <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, color: '#F0EDE6' }}>
                 Three types of data.<br/>One <em style={{ fontStyle: 'italic', color: '#B8924A' }}>unified view.</em>
