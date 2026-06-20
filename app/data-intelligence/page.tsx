@@ -107,19 +107,7 @@ export default function DataIntelligencePage() {
             </div>
           </div>
 
-          {/* Product screenshot area */}
-          <div style={{ borderTop: '1px solid #2e2b26', paddingTop: '3rem' }}>
-            <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#6B6760', marginBottom: '2rem' }}>
-              Product Screenshot
-            </div>
-            <div style={{ background: '#2e2b26', border: '1px solid #3a3733', borderRadius: '8px', overflow: 'hidden', aspectRatio: '16 / 9' }}>
-              <img
-                src="/navigate-redesign-hero.jpg"
-                alt="Navigate platform interface - property search and campaign management"
-                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
-              />
-            </div>
-          </div>
+
         </div>
       </section>
 
