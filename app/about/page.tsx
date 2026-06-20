@@ -208,53 +208,61 @@ export default function About() {
         </div>
       </section>
 
-      {/* CREDIBILITY BAR */}
+      {/* CREDIBILITY BAR - 2 COLUMN LAYOUT */}
       <section className="border-b border-rule">
-        <div className="container-max py-12">
-          <div className="flex flex-col md:flex-row md:items-center gap-8">
-            <p className="text-xs font-normal tracking-wide uppercase text-muted md:flex-shrink-0 max-w-xs">
-              Brandon Weaver has led commercial and operating teams at
-            </p>
-            <div className="hidden md:block w-px h-10 bg-rule flex-shrink-0" />
-            <div className="flex flex-col md:flex-row gap-8 flex-wrap">
+        <div className="container-max py-12 md:py-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+            {/* Left column */}
+            <div>
+              <p className="text-sm md:text-base font-normal tracking-wide uppercase text-muted mb-4 font-medium">
+                Brandon Weaver has led commercial and operating teams at
+              </p>
+              <div className="w-px h-8 bg-brass mb-6" />
+              <p className="text-sm md:text-base leading-relaxed text-muted max-w-sm">
+                Across luxury, hospitality, technology, and real estate, Brandon has driven revenue growth, launched new business units, managed $750M+ in P&L responsibility, and built teams from startup to scale-up operations.
+              </p>
+            </div>
+
+            {/* Right column - Companies Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
-                <h3 className="font-display text-xl font-medium text-ink mb-1">Diageo</h3>
+                <h3 className="font-display text-lg md:text-xl font-medium text-ink mb-1">Diageo</h3>
                 <p className="text-xs tracking-tight text-muted">
                   Marketing Leadership, Reserve Portfolio
                 </p>
               </div>
               <div>
-                <h3 className="font-display text-xl font-medium text-ink mb-1">Lacure</h3>
+                <h3 className="font-display text-lg md:text-xl font-medium text-ink mb-1">Lacure</h3>
                 <p className="text-xs tracking-tight text-muted">
                   Chief Commercial Officer · 65-person org
                 </p>
               </div>
               <div>
-                <h3 className="font-display text-xl font-medium text-ink mb-1">Sonder</h3>
+                <h3 className="font-display text-lg md:text-xl font-medium text-ink mb-1">Sonder</h3>
                 <p className="text-xs tracking-tight text-muted">
                   Regional General Manager
                 </p>
               </div>
               <div>
-                <h3 className="font-display text-xl font-medium text-ink mb-1">Bonotel Exclusive Travel</h3>
+                <h3 className="font-display text-lg md:text-xl font-medium text-ink mb-1">Bonotel Exclusive Travel</h3>
                 <p className="text-xs tracking-tight text-muted">
                   Executive, Commercial & Operations
                 </p>
               </div>
               <div>
-                <h3 className="font-display text-xl font-medium text-ink mb-1">General Electric</h3>
+                <h3 className="font-display text-lg md:text-xl font-medium text-ink mb-1">General Electric</h3>
                 <p className="text-xs tracking-tight text-muted">
                   Sales Leadership, Consumer Finance
                 </p>
               </div>
               <div>
-                <h3 className="font-display text-xl font-medium text-ink mb-1">Bacardi</h3>
+                <h3 className="font-display text-lg md:text-xl font-medium text-ink mb-1">Bacardi</h3>
                 <p className="text-xs tracking-tight text-muted">
                   Chief Marketing Officer
                 </p>
               </div>
               <div>
-                <h3 className="font-display text-xl font-medium text-ink mb-1">Stillhouse Spirits</h3>
+                <h3 className="font-display text-lg md:text-xl font-medium text-ink mb-1">Stillhouse Spirits</h3>
                 <p className="text-xs tracking-tight text-muted">
                   Chief Marketing Officer
                 </p>
