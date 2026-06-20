@@ -37,6 +37,16 @@ export default function CapabilitiesPage() {
           background: #B8924A;
           flex-shrink: 0;
         }
+
+        .cap-tag {
+          font-size: 0.5625rem;
+          font-weight: 500;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          padding: 0.3rem 0.625rem;
+          border: 1px solid #2e2b26;
+          color: #F0EDE6;
+        }
       `}</style>
       <Nav />
 
@@ -192,7 +202,7 @@ export default function CapabilitiesPage() {
                 </p>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
                   {cap.tags.map((tag, j) => (
-                    <span key={j} style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase', padding: '0.3rem 0.625rem', border: '1px solid #2e2b26', color: '#4a4845' }}>
+                    <span key={j} style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase', padding: '0.3rem 0.625rem', border: '1px solid #2e2b26', color: '#F0EDE6' }}>
                       {tag}
                     </span>
                   ))}
