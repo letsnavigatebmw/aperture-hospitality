@@ -71,12 +71,15 @@ export default function About() {
             </div>
 
             {/* Right column */}
-            <div className="space-y-6 text-sm md:text-base leading-relaxed text-muted">
+            <div className="space-y-6 text-sm md:text-base leading-relaxed text-muted italic">
               <p>
                 My professional and personal story has been largely shaped by the power of connectivity. The inertia that comes from human connection allows me to be as comfortable in a boardroom as I am sharing life lessons with a stranger. My work is guided by a deep belief in our collective potential. Modern leadership is about instilling in others the belief that they have the ability to transform their reality.
               </p>
               <p>
-                As a citizen of the world, I have learned to always be curious, to invest in relationships, and to exercise empathy and patience for things you don't quite understand. While my journey is far from linear, working across continents and companies, serving as a custodian for some of the world's most iconic luxury brands, and launching a software platform to address an archaic and broken process, it has taught me that I am a natural problem solver, inspired by a relentless pursuit of growth, a gift for bringing people together, and a rare authenticity that stands out in a world of AI and artifice. For me, it's not just about building businesses. It's about building bridges, one real conversation at a time.
+                As a citizen of the world, I have learned to always be curious, to invest in relationships, and to exercise empathy and patience for things you don't quite understand. While my journey is far from linear, working across continents and companies, serving as a custodian for some of the world's most iconic luxury brands, and launching a software platform to address an archaic and broken process, it has taught me that I am a natural problem solver, inspired by a relentless pursuit of growth, a gift for bringing people together, and a rare authenticity that stands out in a world of AI and artifice.
+              </p>
+              <p>
+                For me, it's not just about building businesses. It's about building bridges, one real conversation at a time.
               </p>
             </div>
           </div>
