@@ -314,7 +314,7 @@ export default function HowWeWorkPage() {
           </div>
 
           {/* Headline */}
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.5rem, 4vw, 3.5rem)', fontWeight: 300, lineHeight: 1.2, color: '#F0EDE6', marginBottom: '2rem', margin: 0, marginBottom: '2rem' }}>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.5rem, 4vw, 3.5rem)', fontWeight: 300, lineHeight: 1.2, color: '#F0EDE6', margin: 0, marginBottom: '2rem' }}>
             The operating<br/>systems behind<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>real growth.</em>
           </h2>
 
