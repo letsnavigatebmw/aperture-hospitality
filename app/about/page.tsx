@@ -72,13 +72,6 @@ export default function About() {
                       </a>
                     </p>
                   </div>
-                  <div>
-                    <p className="text-sm text-muted">
-                      <a href="https://drive.google.com/file/d/1C4ksHla5bttjS9S_on_dwylaBkkfqSLp/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="text-brass hover:text-brass-dim transition-colors font-medium">
-                        Professional Bio
-                      </a>
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
