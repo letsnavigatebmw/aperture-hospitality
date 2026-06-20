@@ -52,7 +52,7 @@ export default function DataIntelligencePage() {
               <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(3rem, 5.5vw, 5rem)', fontWeight: 300, lineHeight: 1.06, color: '#F0EDE6', marginBottom: '1.75rem' }}>
                 Turn your data<br/>into <em style={{ fontStyle: 'italic', color: '#B8924A' }}>deal flow.</em>
               </h1>
-              <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#6B6760', marginBottom: '2.5rem', maxWidth: '44ch' }}>
+              <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '2.5rem', maxWidth: '44ch' }}>
                 Aperture deploys Navigate — a property intelligence platform built for real estate professionals — to give hospitality operators, investors, and luxury brands a smarter, more precise way to prospect, connect, and convert.
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
@@ -145,7 +145,7 @@ export default function DataIntelligencePage() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, color: '#F0EDE6', marginBottom: '1.5rem' }}>
             See the Platform in <em style={{ fontStyle: 'italic', color: '#F0EDE6' }}>Action.</em>
           </h2>
-          <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#6B6760', marginBottom: '3rem', maxWidth: '56ch' }}>
+          <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '3rem', maxWidth: '56ch' }}>
             Watch walkthroughs of both Navigate and Nexus, our two core product offerings.
           </p>
 
@@ -169,7 +169,7 @@ export default function DataIntelligencePage() {
                 <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.625rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.2, marginBottom: '1rem' }}>
                   Navigate
                 </h3>
-                <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760', marginBottom: '1.5rem' }}>
+                <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#F0EDE6', marginBottom: '1.5rem' }}>
                   An end-to-end walkthrough of the prospecting intelligence platform, from geo-targeted list building through campaign execution and conversion tracking.
                 </p>
                 <a href="#" style={{ fontSize: '0.875rem', fontWeight: 500, color: '#9370DB', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', transition: 'color 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#B8924A')} onMouseLeave={(e) => (e.currentTarget.style.color = '#9370DB')}>
@@ -197,7 +197,7 @@ export default function DataIntelligencePage() {
                 <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.625rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.2, marginBottom: '1rem' }}>
                   Nexus
                 </h3>
-                <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760', marginBottom: '1.5rem' }}>
+                <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#F0EDE6', marginBottom: '1.5rem' }}>
                   A demonstration of the Nexus enterprise infrastructure layer, showing how proptech platforms and brokerages embed Navigate's intelligence capabilities via API and MCP.
                 </p>
                 <a href="#" style={{ fontSize: '0.875rem', fontWeight: 500, color: '#9370DB', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', transition: 'color 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#B8924A')} onMouseLeave={(e) => (e.currentTarget.style.color = '#9370DB')}>
@@ -222,7 +222,7 @@ export default function DataIntelligencePage() {
                 Three types of data.<br/>One <em style={{ fontStyle: 'italic', color: '#B8924A' }}>unified view.</em>
               </h2>
             </div>
-            <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#6B6760' }}>
+            <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6' }}>
               Navigate combines three distinct intelligence layers into a single workflow — so you're never switching between platforms, chasing outdated information, or guessing at who to contact next.
             </p>
           </div>
@@ -255,12 +255,12 @@ export default function DataIntelligencePage() {
                 <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.625rem', fontWeight: 400, color: '#F0EDE6', lineHeight: 1.2, marginBottom: '1rem' }}>
                   {pillar.name}
                 </h3>
-                <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760', marginBottom: '1.75rem' }}>
+                <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#F0EDE6', marginBottom: '1.75rem' }}>
                   {pillar.desc}
                 </p>
                 <ul style={{ listStyle: 'none', borderTop: '1px solid #2e2b26', padding: 0, margin: 0 }}>
                   {pillar.features.map((feature, j) => (
-                    <li key={j} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', padding: '0.75rem 0', borderBottom: '1px solid #2e2b26', fontSize: '0.875rem', fontWeight: 300, color: '#6B6760', lineHeight: 1.5 }}>
+                    <li key={j} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', padding: '0.75rem 0', borderBottom: '1px solid #2e2b26', fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.5 }}>
                       <span style={{ width: '4px', height: '4px', background: '#B8924A', borderRadius: '50%', flexShrink: 0, marginTop: '0.55rem' }}></span>
                       {feature}
                     </li>
@@ -328,7 +328,7 @@ export default function DataIntelligencePage() {
                     </span>
                   </div>
                   {openFaqId === i && (
-                    <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.75, color: '#6B6760', marginTop: '1.25rem', margin: '1.25rem 0 0 0' }}>
+                    <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.75, color: '#F0EDE6', marginTop: '1.25rem', margin: '1.25rem 0 0 0' }}>
                       {item.a}
                     </p>
                   )}
