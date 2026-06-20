@@ -69,8 +69,8 @@ export default function DataIntelligencePage() {
             {/* Right card - Features Image */}
             <div style={{ background: '#2e2b26', border: '1px solid #3a3733', borderRadius: '8px', overflow: 'hidden' }}>
               <img
-                src="/navigate-features.jpg"
-                alt="What Navigate Gives You - Features overview"
+                src="/navigate-hero.jpg"
+                alt="Navigate - Property Intelligence Platform"
                 style={{ width: '100%', height: 'auto', display: 'block' }}
               />
             </div>
