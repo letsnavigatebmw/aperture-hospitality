@@ -44,7 +44,7 @@ export default function AISolutionsPage() {
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <a href="#pricing" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: '#B8924A', color: '#F0EDE6', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', border: 'none', cursor: 'pointer', textDecoration: 'none' }}>
-                  Get started — $97/mo
+                  Get started — $350/mo
                 </a>
                 <a href="#tools" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: 'transparent', color: '#F0EDE6', border: '1px solid #4a4845', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', cursor: 'pointer', textDecoration: 'none' }}>
                   See what's included
@@ -75,7 +75,7 @@ export default function AISolutionsPage() {
 
               <div>
                 <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '3rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1, marginBottom: '0.5rem' }}>
-                  <em style={{ color: '#B8924A', fontStyle: 'normal' }}>$97</em>
+                  <em style={{ color: '#B8924A', fontStyle: 'normal' }}>$350</em>
                 </div>
                 <div style={{ fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.6 }}>
                   per month. Less than the cost of one missed reservation, and far less than a part-time hire. No long-term contract required.
@@ -238,7 +238,7 @@ export default function AISolutionsPage() {
               <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1rem' }}>Monthly</div>
               <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.875rem', fontWeight: 300, color: '#1C1A17', marginBottom: '0.5rem', lineHeight: 1.1 }}>AI Employee</h3>
               <p style={{ fontSize: '0.875rem', fontWeight: 300, color: '#6B6760', marginBottom: '2rem', lineHeight: 1.6 }}>All three tools. Full access. Month to month.</p>
-              <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '4rem', fontWeight: 300, color: '#1C1A17', lineHeight: 1, marginBottom: '0.25rem' }}>$97</div>
+              <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '4rem', fontWeight: 300, color: '#1C1A17', lineHeight: 1, marginBottom: '0.25rem' }}>$350</div>
               <div style={{ fontSize: '0.8125rem', fontWeight: 300, color: '#6B6760', marginBottom: '2.5rem' }}>per month · cancel anytime</div>
               <ul style={{ listStyle: 'none', borderTop: '1px solid #D4CFC6', margin: 0, padding: 0, marginBottom: '2.5rem' }}>
                 {['Voice AI — 24/7 inbound call handling', 'Conversation AI — web, SMS, and social', 'Reviews AI — request & respond', 'Aperture brand voice setup included', 'Hospitality-specific configuration', 'Standard onboarding support'].map((item, i) => (
@@ -259,8 +259,8 @@ export default function AISolutionsPage() {
               <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1rem' }}>Annual · Best Value</div>
               <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.875rem', fontWeight: 300, color: '#F0EDE6', marginBottom: '0.5rem', lineHeight: 1.1 }}>AI Employee</h3>
               <p style={{ fontSize: '0.875rem', fontWeight: 300, color: '#4a4845', marginBottom: '2rem', lineHeight: 1.6 }}>Two months free when you commit to a year.</p>
-              <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '4rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1, marginBottom: '0.25rem' }}>$970</div>
-              <div style={{ fontSize: '0.8125rem', fontWeight: 300, color: '#6B6760', marginBottom: '2.5rem' }}>per year · equivalent to $80.83/mo</div>
+              <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '4rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1, marginBottom: '0.25rem' }}>$3500</div>
+              <div style={{ fontSize: '0.8125rem', fontWeight: 300, color: '#6B6760', marginBottom: '2.5rem' }}>per year · equivalent to $291.67/mo</div>
               <ul style={{ listStyle: 'none', borderTop: '1px solid #2e2b26', margin: 0, padding: 0, marginBottom: '2.5rem' }}>
                 {['Everything in the monthly plan', 'Priority onboarding & setup', 'Quarterly performance review with Aperture', 'First access to new AI tools as they launch', 'Dedicated Aperture point of contact', 'Two months free vs. monthly billing'].map((item, i) => (
                   <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', padding: '0.875rem 0', borderBottom: '1px solid #2e2b26', fontSize: '0.875rem', fontWeight: 300, color: '#6B6760', lineHeight: 1.5 }}>
@@ -320,7 +320,7 @@ export default function AISolutionsPage() {
             </h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.875rem', flexShrink: 0 }}>
               <a href="#pricing" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: '#B8924A', color: '#F0EDE6', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', border: 'none', cursor: 'pointer', textDecoration: 'none' }}>
-                Get started — $97/mo
+                Get started — $350/mo
               </a>
               <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: '#1C1A17', color: '#F0EDE6', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', border: 'none', cursor: 'pointer', textDecoration: 'none' }}>
                 Talk to Brandon first
