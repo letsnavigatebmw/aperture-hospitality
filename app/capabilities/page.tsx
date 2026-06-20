@@ -104,6 +104,11 @@ export default function CapabilitiesPage() {
         .step-desc {
           color: #F0EDE6 !important;
         }
+
+        /* Section labels on dark backgrounds */
+        .section-label-dark {
+          color: #F0EDE6 !important;
+        }
       `}</style>
       <Nav />
 
