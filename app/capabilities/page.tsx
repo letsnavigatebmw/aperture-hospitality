@@ -91,6 +91,19 @@ export default function CapabilitiesPage() {
           line-height: 1.6;
           margin-top: 0;
         }
+
+        /* Dark background sections - muted text to white */
+        .capabilities-desc {
+          color: #F0EDE6 !important;
+        }
+
+        .cap-desc {
+          color: #F0EDE6 !important;
+        }
+
+        .step-desc {
+          color: #F0EDE6 !important;
+        }
       `}</style>
       <Nav />
 
@@ -196,7 +209,7 @@ export default function CapabilitiesPage() {
                 Five disciplines.<br/>One <em style={{ fontStyle: 'italic', color: '#B8924A' }}>integrated system.</em>
               </h2>
             </div>
-            <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6' }}>
+            <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: 0 }}>
               Aperture builds digital marketing capability across five core disciplines — deployable as a complete system or as targeted interventions in the areas your business needs most.
             </p>
           </div>
@@ -241,7 +254,7 @@ export default function CapabilitiesPage() {
                 <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5rem', fontWeight: 400, color: '#F0EDE6', marginBottom: '0.875rem', lineHeight: 1.2 }}>
                   {cap.title}
                 </h3>
-                <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#F0EDE6', marginBottom: '1.5rem' }}>
+                <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#F0EDE6', marginBottom: '1.5rem' }} className="cap-desc">
                   {cap.desc}
                 </p>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
