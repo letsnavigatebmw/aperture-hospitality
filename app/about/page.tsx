@@ -73,13 +73,10 @@ export default function About() {
             {/* Right column */}
             <div className="space-y-6 text-sm md:text-base leading-relaxed text-muted">
               <p>
-                Brandon Weaver is the Founder and CEO of Aperture Hospitality, a boutique consulting practice formed in 2021 to help hospitality, real estate, and luxury brands develop strategies that unlock value, spot new opportunity, and reposition for transformative growth.
+                My professional and personal story has been largely shaped by the power of connectivity. The inertia that comes from human connection allows me to be as comfortable in a boardroom as I am sharing life lessons with a stranger. My work is guided by a deep belief in our collective potential. Modern leadership is about instilling in others the belief that they have the ability to transform their reality.
               </p>
               <p>
-                Before founding Aperture, Brandon held senior operating roles across hospitality and luxury travel. As Chief Commercial Officer at Lacure, he led a 65-person organization across Sales, Contracting, Marketing, and Client Service, operating a global portfolio of 1,500 luxury private homes and villas. He drove field sales strategy and re-architected the supply portfolio and operating workflows to reduce service failures and improve quality control across secondary and tertiary markets.
-              </p>
-              <p>
-                Prior to Lacure, Brandon served as Regional General Manager at Sonder, where he helped lead one of the short-term rental industry's most closely watched expansions. He currently serves on the Board of Directors at WES Brands and The Runda Lab.
+                As a citizen of the world, I have learned to always be curious, to invest in relationships, and to exercise empathy and patience for things you don't quite understand. While my journey is far from linear, working across continents and companies, serving as a custodian for some of the world's most iconic luxury brands, and launching a software platform to address an archaic and broken process, it has taught me that I am a natural problem solver, inspired by a relentless pursuit of growth, a gift for bringing people together, and a rare authenticity that stands out in a world of AI and artifice. For me, it's not just about building businesses. It's about building bridges, one real conversation at a time.
               </p>
             </div>
           </div>
