@@ -123,30 +123,74 @@ export default function DataIntelligencePage() {
         </div>
       </section>
 
-      {/* WHAT IS NAVIGATE */}
-      <section id="what-is-navigate" style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', background: '#F5F2EF', borderTop: '1px solid #D4CFC6', borderBottom: '1px solid #D4CFC6' }}>
+      {/* WHAT IS NAVIGATE SECTION */}
+      <section style={{
+        padding: 'clamp(5rem, 10vw, 9rem) 0',
+        borderBottom: '1px solid #D4CFC6',
+        background: '#F0EDE6',
+      }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '6rem', alignItems: 'flex-start' }}>
-            {/* Left Column */}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: '1fr 1fr',
+            gap: '6rem',
+            alignItems: 'start',
+          }}>
+
+            {/* LEFT: label + heading */}
             <div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '2.5rem' }}>
-                <span style={{ width: '3px', height: '1.25rem', background: '#B8924A' }}></span>
-                <span style={{ fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#8B8680' }}>The Platform</span>
+
+              {/* Section label */}
+              <div style={{
+                display: 'flex', alignItems: 'center', gap: '0.75rem',
+                marginBottom: '2rem',
+              }}>
+                <div style={{ width: '2px', height: '1.25rem', background: '#B8924A', flexShrink: 0 }}></div>
+                <span style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: '0.6875rem', fontWeight: 500,
+                  letterSpacing: '0.18em', textTransform: 'uppercase',
+                  color: '#6B6760',
+                }}>The Platform</span>
               </div>
-              <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.75rem, 5vw, 3.5rem)', fontWeight: 300, lineHeight: 1.15, color: '#1C1A17', margin: 0 }}>
-                Property<br/>intelligence<br/>built for how<br/>operators <em style={{ fontStyle: 'italic', color: '#B8924A' }}>actually<br/>work.</em>
+
+              {/* Heading */}
+              <h2 style={{
+                fontFamily: "'Cormorant Garamond', Georgia, serif",
+                fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)',
+                fontWeight: 300, lineHeight: 1.15,
+                color: '#1C1A17',
+              }}>
+                Property intelligence<br/>built for how<br/>operators <em style={{ fontStyle: 'italic', color: '#B8924A' }}>actually work.</em>
               </h2>
+
             </div>
 
-            {/* Right Column */}
+            {/* RIGHT: paragraphs + bullet list */}
             <div>
-              <p style={{ fontSize: '1rem', fontWeight: 300, lineHeight: 1.8, color: '#4A4844', marginBottom: '2rem', margin: 0, marginBottom: '2rem' }}>
+
+              {/* Paragraph 1 */}
+              <p style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '1.0625rem', fontWeight: 300,
+                lineHeight: 1.8, color: '#1C1A17',
+                marginBottom: '1.25rem',
+              }}>
                 Navigate brings together owner intelligence, property data, and marketing automation into a single platform. It removes the manual work from prospecting — so your team spends less time behind a screen and more time talking to real prospects.
               </p>
-              <p style={{ fontSize: '1rem', fontWeight: 300, lineHeight: 1.8, color: '#4A4844', marginBottom: '2.5rem', margin: 0, marginBottom: '2.5rem' }}>
+
+              {/* Paragraph 2 */}
+              <p style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '1.0625rem', fontWeight: 300,
+                lineHeight: 1.8, color: '#1C1A17',
+                marginBottom: '2rem',
+              }}>
                 Aperture configures and deploys Navigate specifically for hospitality, real estate, and luxury brand contexts — setting up the right search criteria, the right outreach tone, and the right campaign structure for your market. You don't buy a tool and figure it out. You get a configured, working system.
               </p>
-              <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
+
+              {/* Bullet list */}
+              <ul style={{ listStyle: 'none', borderTop: '1px solid #D4CFC6', margin: 0, padding: 0 }}>
                 {[
                   'Define your territory and filter for the right properties',
                   'Access verified owner contact information instantly',
@@ -155,13 +199,20 @@ export default function DataIntelligencePage() {
                   'Monitor your market continuously for fresh data',
                   'Export contacts to your own tools if needed'
                 ].map((item, i) => (
-                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', paddingBottom: '1.5rem', borderBottom: '1px solid #D4CFC6', fontSize: '0.9375rem', fontWeight: 300, color: '#4A4844', lineHeight: 1.6 }}>
-                    <span style={{ width: '6px', height: '6px', background: '#B8924A', borderRadius: '50%', flexShrink: 0, marginTop: '0.6rem' }}></span>
-                    <span>{item}</span>
+                  <li key={i} style={{
+                    display: 'flex', alignItems: 'flex-start', gap: '1rem',
+                    padding: '1rem 0', borderBottom: '1px solid #D4CFC6',
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: '0.9375rem', fontWeight: 300,
+                    lineHeight: 1.6, color: '#1C1A17',
+                  }}>
+                    <span style={{ width: '4px', height: '4px', background: '#B8924A', borderRadius: '50%', flexShrink: 0, marginTop: '0.6rem', display: 'block' }}></span>
+                    {item}
                   </li>
                 ))}
               </ul>
             </div>
+
           </div>
         </div>
       </section>
