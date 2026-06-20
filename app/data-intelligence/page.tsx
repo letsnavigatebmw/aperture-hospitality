@@ -65,31 +65,13 @@ export default function DataIntelligencePage() {
               </div>
             </div>
 
-            {/* Right card */}
-            <div style={{ background: '#2e2b26', border: '1px solid #3a3733', padding: '3rem' }}>
-              <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '2rem' }}>
-                What Navigate gives you
-              </div>
-              {[
-                { title: 'Verified Owner Data', desc: 'Accurate, up-to-date contact information for property owners — so you\'re reaching real decision-makers, not dead ends.' },
-                { title: 'Targeted Campaigns', desc: 'Launch outreach via email, letter, and postcard — all automated, personalized, and built for scale — directly from the platform.' },
-                { title: 'Opportunity Before Competition', desc: 'Identify off-market properties and reach owners faster than the competition, turning overlooked assets into active deal flow.' }
-              ].map((feature, i) => (
-                <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', marginBottom: '1.75rem', paddingBottom: '1.75rem', borderBottom: '1px solid #3a3733' }}>
-                  <svg style={{ width: '32px', height: '32px', flexShrink: 0, marginTop: '2px' }} viewBox="0 0 32 32" fill="none">
-                    <circle cx="16" cy="16" r="14" stroke="#B8924A" strokeWidth="1"/>
-                    <path d="M10 16l4 4 8-8" stroke="#F0EDE6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                  <div>
-                    <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.125rem', fontWeight: 400, color: '#F0EDE6', marginBottom: '0.25rem', lineHeight: 1.2 }}>
-                      {feature.title}
-                    </div>
-                    <div style={{ fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.6 }}>
-                      {feature.desc}
-                    </div>
-                  </div>
-                </div>
-              ))}
+            {/* Right card - Features Image */}
+            <div style={{ background: '#2e2b26', border: '1px solid #3a3733', borderRadius: '8px', overflow: 'hidden' }}>
+              <img
+                src="/navigate-features.jpg"
+                alt="What Navigate Gives You - Features overview"
+                style={{ width: '100%', height: 'auto', display: 'block' }}
+              />
             </div>
           </div>
         </div>
