@@ -19,17 +19,17 @@ export default function Footer() {
         </div>
         <ul className="flex gap-8 flex-wrap">
           <li>
-            <a href="mailto:inquiries@aperturehospitality.com" className="text-xs tracking-wider uppercase text-muted hover:text-parchment transition-colors">
+            <a href="mailto:inquiries@aperturehospitality.com" className="text-xs tracking-wider uppercase text-parchment hover:text-brass transition-colors">
               inquiries@aperturehospitality.com
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/company/aperture-hospitality" target="_blank" rel="noopener noreferrer" className="text-xs tracking-wider uppercase text-muted hover:text-parchment transition-colors">
+            <a href="https://www.linkedin.com/company/aperture-hospitality" target="_blank" rel="noopener noreferrer" className="text-xs tracking-wider uppercase text-parchment hover:text-brass transition-colors">
               LinkedIn
             </a>
           </li>
         </ul>
-        <span className="text-xs text-[#4a4845] tracking-tight w-full md:w-auto">
+        <span className="text-xs text-parchment tracking-tight w-full md:w-auto">
           © {year} Aperture Hospitality. All rights reserved.
         </span>
       </div>
