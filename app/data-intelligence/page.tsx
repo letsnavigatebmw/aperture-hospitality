@@ -84,7 +84,7 @@ export default function DataIntelligencePage() {
                     <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.125rem', fontWeight: 400, color: '#F0EDE6', marginBottom: '0.25rem', lineHeight: 1.2 }}>
                       {feature.title}
                     </div>
-                    <div style={{ fontSize: '0.875rem', fontWeight: 300, color: '#6B6760', lineHeight: 1.6 }}>
+                    <div style={{ fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.6 }}>
                       {feature.desc}
                     </div>
                   </div>
