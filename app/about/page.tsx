@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+import NewsletterSection from '@/components/NewsletterSection'
 
 export const metadata: Metadata = {
   title: 'About | Aperture Hospitality',
@@ -264,6 +265,9 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      {/* NEWSLETTER SECTION */}
+      <NewsletterSection inputId="newsletter-email-about" />
 
       <Footer />
     </>

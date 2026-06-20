@@ -2,6 +2,7 @@
 
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+import NewsletterSection from '@/components/NewsletterSection'
 import Link from 'next/link'
 import { useState } from 'react'
 
@@ -328,6 +329,9 @@ export default function AISolutionsPage() {
           </div>
         </div>
       </section>
+
+      {/* NEWSLETTER SECTION */}
+      <NewsletterSection inputId="newsletter-email-ai" />
 
       <Footer />
     </>

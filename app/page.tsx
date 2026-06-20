@@ -4,12 +4,9 @@ import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import AISolutions from '@/components/AISolutions'
 import IntakeForm from '@/components/IntakeForm'
-
-
 import WhereWeFocused from '@/components/WhereWeFocused'
-
-
 import Testimonials from '@/components/Testimonials'
+import NewsletterSection from '@/components/NewsletterSection'
 import Link from 'next/link'
 
 export default function Home() {
@@ -277,6 +274,9 @@ export default function Home() {
 
       {/* CONTACT FORM */}
       <IntakeForm />
+
+      {/* NEWSLETTER SECTION */}
+      <NewsletterSection inputId="newsletter-email-home" />
 
       <Footer />
     </>
