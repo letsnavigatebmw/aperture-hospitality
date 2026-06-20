@@ -92,78 +92,118 @@ export default function About() {
         </div>
       </section>
 
-      {/* OPERATING MODEL & STATS */}
-      <section className="border-b border-rule">
+      {/* WHAT I DO - DARK SECTION */}
+      <section style={{ background: '#1C1A17', color: '#F0EDE6' }} className="border-b border-rule">
         <div className="container-max py-16 md:py-24">
-          <div className="grid md:grid-cols-2 gap-12 md:gap-16 mb-16">
-            {/* Left: Operating Model Design */}
+          {/* Header */}
+          <div className="mb-16">
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 300, marginBottom: '1rem', color: '#F0EDE6' }}>
+              What I <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Do</em>
+            </h2>
+            <p style={{ fontSize: '1rem', fontWeight: 300, lineHeight: 1.8, color: '#6B6760', maxWidth: '600px' }}>
+              The core competencies that drive growth, operational excellence, and sustainable value creation.
+            </p>
+          </div>
+
+          {/* 2x2 Competencies Grid */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem', marginBottom: '4rem' }}>
+            {/* P&L Management */}
             <div>
-              <h3 className="font-display text-2xl font-normal text-ink mb-4">
+              <h3 style={{ fontFamily: "'Inter', sans-serif", fontSize: '1.25rem', fontWeight: 600, color: '#F0EDE6', marginBottom: '1rem' }}>
+                P&L Management
+              </h3>
+              <p style={{ fontSize: '0.9rem', fontWeight: 300, lineHeight: 1.8, color: '#6B6760' }}>
+                Full P&L ownership across pricing strategy, unit economics, and financial modeling. Reduced data enrichment costs by 25% through vendor negotiation and demand-based optimization.
+              </p>
+            </div>
+
+            {/* Go-to-Market Strategy */}
+            <div>
+              <h3 style={{ fontFamily: "'Inter', sans-serif", fontSize: '1.25rem', fontWeight: 600, color: '#F0EDE6', marginBottom: '1rem' }}>
+                Go-to-Market Strategy
+              </h3>
+              <p style={{ fontSize: '0.9rem', fontWeight: 300, lineHeight: 1.8, color: '#6B6760' }}>
+                GTM execution, demand generation, and sales leadership. Built Compass partnership driving +75% trial participation and 90% trial-to-paid conversion.
+              </p>
+            </div>
+
+            {/* Operating Model Design */}
+            <div>
+              <h3 style={{ fontFamily: "'Inter', sans-serif", fontSize: '1.25rem', fontWeight: 600, color: '#F0EDE6', marginBottom: '1rem' }}>
                 Operating Model Design
               </h3>
-              <p className="text-sm leading-relaxed text-muted">
+              <p style={{ fontSize: '0.9rem', fontWeight: 300, lineHeight: 1.8, color: '#6B6760' }}>
                 Re-architected sales organizations, supply portfolios, and cross-functional workflows to align inventory with demand and improve execution.
               </p>
             </div>
 
-            {/* Right: Team Building */}
+            {/* Team Building */}
             <div>
-              <h3 className="font-display text-2xl font-normal text-ink mb-4">
+              <h3 style={{ fontFamily: "'Inter', sans-serif", fontSize: '1.25rem', fontWeight: 600, color: '#F0EDE6', marginBottom: '1rem' }}>
                 Team Building
               </h3>
-              <p className="text-sm leading-relaxed text-muted">
+              <p style={{ fontSize: '0.9rem', fontWeight: 300, lineHeight: 1.8, color: '#6B6760' }}>
                 Led organizations from 20 to 65 people across Sales, Marketing, Operations, and Client Services. Recognized for sales leadership and performance management.
               </p>
             </div>
           </div>
 
           {/* Operating Philosophy */}
-          <div className="mb-16 p-8 border border-rule rounded-sm">
-            <p className="font-display text-base font-light italic text-ink leading-relaxed">
+          <div style={{ marginBottom: '4rem', padding: '2rem', borderTop: '1px solid #2e2b26', borderBottom: '1px solid #2e2b26' }}>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '1rem', fontWeight: 300, fontStyle: 'italic', lineHeight: 1.8, color: '#6B6760' }}>
               I operate at the intersection of revenue, marketing, and product—ensuring strategy translates into execution and measurable growth. My focus: aligning product, go-to-market, and unit economics to build defensible revenue growth.
             </p>
           </div>
 
           {/* Stats Grid */}
-          <div className="grid md:grid-cols-2 gap-px border border-rule mb-8">
-            {/* Stat 1 */}
-            <div className="p-8 border-r border-b border-rule md:border-b-0">
-              <div className="font-display text-4xl font-light text-brass mb-2">8+</div>
-              <p className="text-xs font-medium tracking-widest uppercase text-muted">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '0', border: '1px solid #2e2b26', marginBottom: '3rem' }}>
+            {/* Stat 1: 8+ */}
+            <div style={{ padding: '2rem', borderRight: '1px solid #2e2b26', borderBottom: '1px solid #2e2b26' }}>
+              <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '3rem', fontWeight: 300, color: '#B8924A', marginBottom: '0.5rem' }}>
+                8+
+              </div>
+              <p style={{ fontSize: '0.65rem', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6B6760' }}>
                 B2C & B2B Brands Launched & Scaled
               </p>
             </div>
 
-            {/* Stat 2 */}
-            <div className="p-8 border-b border-rule md:border-b-0">
-              <div className="font-display text-4xl font-light text-brass mb-2">$10M+</div>
-              <p className="text-xs font-medium tracking-widest uppercase text-muted">
+            {/* Stat 2: $10M+ */}
+            <div style={{ padding: '2rem', borderBottom: '1px solid #2e2b26' }}>
+              <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '3rem', fontWeight: 300, color: '#B8924A', marginBottom: '0.5rem' }}>
+                $10M+
+              </div>
+              <p style={{ fontSize: '0.65rem', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6B6760' }}>
                 Capital Raised Across Ventures
               </p>
             </div>
 
-            {/* Stat 3 */}
-            <div className="p-8 border-r border-rule md:border-r-0">
-              <div className="font-display text-4xl font-light text-brass mb-2">20+</div>
-              <p className="text-xs font-medium tracking-widest uppercase text-muted">
+            {/* Stat 3: 20+ */}
+            <div style={{ padding: '2rem', borderRight: '1px solid #2e2b26' }}>
+              <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '3rem', fontWeight: 300, color: '#B8924A', marginBottom: '0.5rem' }}>
+                20+
+              </div>
+              <p style={{ fontSize: '0.65rem', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6B6760' }}>
                 Years Working Across FMCG, Hospitality, Real Estate, Finance and Technology
               </p>
             </div>
 
-            {/* Stat 4 */}
-            <div className="p-8">
-              <div className="font-display text-4xl font-light text-brass mb-2">$750M+</div>
-              <p className="text-xs font-medium tracking-widest uppercase text-muted">
+            {/* Stat 4: $750M+ */}
+            <div style={{ padding: '2rem' }}>
+              <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '3rem', fontWeight: 300, color: '#B8924A', marginBottom: '0.5rem' }}>
+                $750M+
+              </div>
+              <p style={{ fontSize: '0.65rem', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6B6760' }}>
                 P&L Management
               </p>
             </div>
           </div>
 
           {/* Closing Statement */}
-          <div className="text-center p-8 border border-rule rounded-sm">
-            <p className="font-display text-xl font-light text-ink">
-              Experience Forged Across Industry. A Perspective Built For What's Next.
-            </p>
+          <div style={{ padding: '2rem', border: '1px solid #2e2b26', textAlign: 'center' }}>
+            <div style={{ fontSize: '2rem', color: '#B8924A', marginBottom: '1rem' }}>∞</div>
+            <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5rem', fontWeight: 300, color: '#F0EDE6' }}>
+              Experience Forged Across Industry, A Perspective Built For What's Next...
+            </h3>
           </div>
         </div>
       </section>
