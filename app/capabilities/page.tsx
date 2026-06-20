@@ -437,21 +437,120 @@ export default function CapabilitiesPage() {
         </div>
       </section>
 
-      {/* FINAL CTA */}
-      <section style={{ padding: 'clamp(5rem, 10vw, 8rem) 0', borderBottom: '1px solid #D4CFC6' }}>
+      {/* HELP CARD SECTION */}
+      <section style={{ background: '#E8E4DB', borderBottom: '1px solid #D4CFC6' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '3rem' }}>
-            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, maxWidth: '22ch', margin: 0, color: '#1C1A17' }}>
-              Ready to build a<br/>marketing operation that<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>actually converts?</em>
+          <div style={{ paddingTop: 'clamp(3rem, 5vw, 4rem)', paddingBottom: 'clamp(3rem, 5vw, 4rem)' }}>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.75rem, 3vw, 2.25rem)', fontWeight: 300, lineHeight: 1.15, color: '#1C1A17', marginBottom: '2rem', paddingBottom: '2rem', borderBottom: '1px solid #D4CFC6' }}>
+              When you're ready, here's <em style={{ fontStyle: 'italic', color: '#B8924A' }}>how we can help.</em>
             </h2>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.875rem', flexShrink: 0 }}>
-              <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: '#1C1A17', color: '#F0EDE6', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none', border: 'none', cursor: 'pointer', transition: 'background 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.background = '#2e2b26')} onMouseLeave={(e) => (e.currentTarget.style.background = '#1C1A17')}>
-                Start a conversation
-              </Link>
-              <Link href="/how-we-work" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: 'transparent', color: '#1C1A17', border: '1px solid #1C1A17', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none', cursor: 'pointer', transition: 'background 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.background = '#1C1A17', e.currentTarget.style.color = '#F0EDE6')} onMouseLeave={(e) => (e.currentTarget.style.background = 'transparent', e.currentTarget.style.color = '#1C1A17')}>
-                See our work
-              </Link>
+
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0' }}>
+              {/* Option 1 */}
+              <div style={{ paddingRight: '2.5rem', borderRight: '1px solid #D4CFC6' }}>
+                <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '0.625rem' }}>
+                  Free · 1 Hour
+                </div>
+                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.375rem', fontWeight: 400, color: '#1C1A17', lineHeight: 1.2, marginBottom: '0.875rem' }}>
+                  Marketing Clarity Session
+                </div>
+                <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760', marginBottom: '1.5rem' }}>
+                  Get Brandon's direct read on your current marketing operation — what's working, what isn't, and where the highest-leverage opportunities are. Leave with a clear next step, not a sales pitch.
+                </p>
+                <Link href="/contact?type=clarity-session" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#1C1A17', borderBottom: '1px solid #D4CFC6', paddingBottom: '2px', textDecoration: 'none' }}>
+                  Book a session →
+                </Link>
+              </div>
+
+              {/* Option 2 */}
+              <div style={{ paddingLeft: '2.5rem' }}>
+                <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '0.625rem' }}>
+                  Engagement
+                </div>
+                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.375rem', fontWeight: 400, color: '#1C1A17', lineHeight: 1.2, marginBottom: '0.875rem' }}>
+                  Build Your Marketing Capability
+                </div>
+                <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760', marginBottom: '1.5rem' }}>
+                  A scoped Aperture engagement to build the digital marketing system your business needs — from strategy through execution. Configured for hospitality and luxury brands, not generic small business playbooks.
+                </p>
+                <Link href="/contact?type=engagement" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#1C1A17', borderBottom: '1px solid #D4CFC6', paddingBottom: '2px', textDecoration: 'none' }}>
+                  Start a conversation →
+                </Link>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* NEWSLETTER SECTION */}
+      <section style={{ background: '#1C1A17', padding: 'clamp(2.5rem, 5vw, 3.5rem) clamp(1.5rem, 5vw, 4rem)' }}>
+        <div style={{ maxWidth: '1140px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', alignItems: 'center' }}>
+          {/* Left: copy */}
+          <div>
+            <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.625rem, 2.5vw, 2rem)', fontWeight: 300, lineHeight: 1.2, color: '#F0EDE6', marginBottom: '0.875rem', margin: 0 }}>
+              Insights on hospitality,<br/>luxury, and <em style={{ fontStyle: 'italic', color: '#B8924A' }}>growth.</em>
+            </h3>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.75, color: '#6B6760', margin: 0 }}>
+              Practical thinking on marketing, commercial strategy, and what's actually working for boutique hospitality and luxury brands. No filler. Straight to the point.
+            </p>
+          </div>
+
+          {/* Right: form */}
+          <div>
+            <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#4a4845', marginBottom: '0.75rem' }}>
+              Subscribe to Aperture Insights
+            </div>
+            <div style={{ display: 'flex', gap: '0', marginBottom: '0.75rem' }}>
+              <input
+                type="email"
+                id="newsletter-email"
+                placeholder="your@email.com"
+                style={{
+                  flex: 1,
+                  padding: '0.875rem 1rem',
+                  background: '#2e2b26',
+                  border: '1px solid #3a3733',
+                  borderRight: 'none',
+                  color: '#F0EDE6',
+                  fontSize: '0.9375rem',
+                  fontWeight: 300,
+                  outline: 'none',
+                  borderRadius: 0,
+                  WebkitAppearance: 'none',
+                  fontFamily: "'Inter', sans-serif"
+                }}
+              />
+              <button
+                type="button"
+                onClick={() => {
+                  const email = (document.getElementById('newsletter-email') as HTMLInputElement)?.value;
+                  if (!email || !email.includes('@')) {
+                    alert('Please enter a valid email address.');
+                    return;
+                  }
+                  alert('Thanks for subscribing. You\'ll hear from us soon.');
+                }}
+                style={{
+                  padding: '0.875rem 1.5rem',
+                  background: '#B8924A',
+                  color: '#F0EDE6',
+                  fontSize: '0.6875rem',
+                  fontWeight: 500,
+                  letterSpacing: '0.16em',
+                  textTransform: 'uppercase',
+                  border: 'none',
+                  cursor: 'pointer',
+                  whiteSpace: 'nowrap',
+                  borderRadius: 0,
+                  fontFamily: "'Inter', sans-serif"
+                }}
+              >
+                Subscribe
+              </button>
+            </div>
+            <p style={{ fontSize: '0.6875rem', fontWeight: 300, color: '#4a4845', lineHeight: 1.5, margin: 0 }}>
+              No spam. Unsubscribe anytime. Brandon writes every issue personally.
+            </p>
           </div>
         </div>
       </section>
