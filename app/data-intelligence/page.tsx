@@ -38,40 +38,85 @@ export default function DataIntelligencePage() {
 
   return (
     <>
+      <style>{`
+        /* Global dark section text fix */
+        .hero-desc          { color: #F0EDE6 !important; }
+        .hero-feature-desc  { color: #F0EDE6 !important; }
+        .section-label-dark { color: #F0EDE6 !important; }
+        .pillars-desc       { color: #F0EDE6 !important; }
+        .pillar-desc        { color: #F0EDE6 !important; }
+        .pillar-features li { color: #F0EDE6 !important; }
+        .faq-a              { color: #F0EDE6 !important; }
+        .hero-stat-desc     { color: #F0EDE6 !important; }
+      `}</style>
       <Nav />
 
-      {/* HERO */}
-      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 8rem) 0 clamp(4rem, 8vw, 7rem)', borderBottom: '1px solid #2e2b26' }}>
+      {/* HERO REDESIGNED */}
+      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 8rem) 0', borderBottom: '1px solid #2e2b26' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1.1fr 1fr', gap: '5rem', alignItems: 'center' }}>
-            {/* Left content */}
+          {/* Top row: Left content + Right features */}
+          <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '5rem', alignItems: 'flex-start', marginBottom: '4rem' }}>
+            {/* Left: Headline + Copy + CTAs */}
             <div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#F0EDE6', marginBottom: '2rem' }}>
                 <span style={{ width: '2px', height: '1.25rem', background: '#B8924A', display: 'block' }}></span>
                 Data & Intelligence
               </div>
-              <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(3rem, 5.5vw, 5rem)', fontWeight: 300, lineHeight: 1.06, color: '#F0EDE6', marginBottom: '1.75rem' }}>
+              <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(3rem, 5.5vw, 4.5rem)', fontWeight: 300, lineHeight: 1.08, color: '#F0EDE6', marginBottom: '1.75rem' }}>
                 Turn your data<br/>into <em style={{ fontStyle: 'italic', color: '#B8924A' }}>deal flow.</em>
               </h1>
               <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '2.5rem', maxWidth: '44ch' }}>
                 Aperture deploys Navigate — a property intelligence platform built for real estate professionals — to give hospitality operators, investors, and luxury brands a smarter, more precise way to prospect, connect, and convert.
               </p>
-              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-                <a href="#pricing" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: '#B8924A', color: '#F0EDE6', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none', border: 'none', cursor: 'pointer', transition: 'background 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.background = '#9a7a3e')} onMouseLeave={(e) => (e.currentTarget.style.background = '#B8924A')}>
-                  Get started
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.875rem', maxWidth: '280px' }}>
+                <a href="#pricing" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: '#B8924A', color: '#1C1A17', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none', border: 'none', cursor: 'pointer', transition: 'background 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.background = '#9a7a3e')} onMouseLeave={(e) => (e.currentTarget.style.background = '#B8924A')}>
+                  Get Started
                 </a>
-                <a href="https://app.guidde.com/share/playbooks/orS5f73hqc9QkNyE9kTy1M?origin=eLXF4oshrtU3laZW7wh2RQaDByy1&mode=videoAndDoc" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: 'transparent', color: '#F0EDE6', border: '1px solid #4a4845', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none', cursor: 'pointer', transition: 'background 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.background = '#2e2b26')} onMouseLeave={(e) => (e.currentTarget.style.background = 'transparent')}>
-                  See how it works
+                <a href="https://app.guidde.com/share/playbooks/orS5f73hqc9QkNyE9kTy1M?origin=eLXF4oshrtU3laZW7wh2RQaDByy1&mode=videoAndDoc" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: 'transparent', color: '#F0EDE6', border: '1px solid #4a4845', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none', cursor: 'pointer', transition: 'all 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.background = '#2e2b26')} onMouseLeave={(e) => (e.currentTarget.style.background = 'transparent')}>
+                  See How It Works
                 </a>
               </div>
             </div>
 
-            {/* Right card - Features Image */}
-            <div style={{ background: '#2e2b26', border: '1px solid #3a3733', borderRadius: '8px', overflow: 'hidden' }}>
+            {/* Right: Feature card */}
+            <div>
+              <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1.75rem' }}>
+                What Navigate Gives You
+              </div>
+              <div style={{ space: '2.5rem' }}>
+                {[
+                  { title: 'Verified Owner Data', desc: 'Accurate, up-to-date contact information for property owners — so you\'re reaching real decision-makers, not dead ends.' },
+                  { title: 'Targeted Campaigns', desc: 'Launch outreach via email, letter, and postcard — all automated, personalized, and built for scale — directly from the platform.' },
+                  { title: 'Opportunity Before Competition', desc: 'Identify off-market properties and reach owners faster than the competition, turning overlooked assets into active deal flow.' }
+                ].map((feature, i) => (
+                  <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', marginBottom: i < 2 ? '1.75rem' : 0 }}>
+                    <div style={{ width: '24px', height: '24px', borderRadius: '50%', border: '1.5px solid #B8924A', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: '0.25rem' }}>
+                      <span style={{ fontSize: '14px', color: '#B8924A' }}>✓</span>
+                    </div>
+                    <div>
+                      <h4 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.1875rem', fontWeight: 400, color: '#F0EDE6', lineHeight: 1.2, marginBottom: '0.5rem', margin: 0 }}>
+                        {feature.title}
+                      </h4>
+                      <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.6, color: '#6B6760', margin: 0 }}>
+                        {feature.desc}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Product screenshot area */}
+          <div style={{ borderTop: '1px solid #2e2b26', paddingTop: '3rem' }}>
+            <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#6B6760', marginBottom: '2rem' }}>
+              Product Screenshot
+            </div>
+            <div style={{ background: '#2e2b26', border: '1px solid #3a3733', borderRadius: '8px', overflow: 'hidden', aspectRatio: '16 / 9' }}>
               <img
-                src="/navigate-hero.jpg"
-                alt="Navigate - Property Intelligence Platform"
-                style={{ width: '100%', height: 'auto', display: 'block' }}
+                src="/navigate-redesign-hero.jpg"
+                alt="Navigate platform interface - property search and campaign management"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
               />
             </div>
           </div>
@@ -83,7 +128,7 @@ export default function DataIntelligencePage() {
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6rem', alignItems: 'center' }}>
             <div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#6B6760', marginBottom: '2rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#F0EDE6', marginBottom: '2rem' }}>
                 <span style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></span>
                 The Platform
               </div>
@@ -92,10 +137,10 @@ export default function DataIntelligencePage() {
               </h2>
             </div>
             <div>
-              <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#6B6760', marginBottom: '1.25rem' }}>
+              <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '1.25rem' }}>
                 Navigate brings together owner intelligence, property data, and marketing automation into a single platform. It removes the manual work from prospecting — so your team spends less time behind a screen and more time talking to real prospects.
               </p>
-              <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#6B6760', marginBottom: '1.25rem' }}>
+              <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '1.25rem' }}>
                 Aperture configures and deploys Navigate specifically for hospitality, real estate, and luxury brand contexts — setting up the right search criteria, the right outreach tone, and the right campaign structure for your market. You don't buy a tool and figure it out. You get a configured, working system.
               </p>
               <ul style={{ listStyle: 'none', borderTop: '1px solid #D4CFC6', margin: 0, padding: 0 }}>
@@ -107,7 +152,7 @@ export default function DataIntelligencePage() {
                   'Monitor your market continuously for fresh data',
                   'Export contacts to your own tools if needed'
                 ].map((item, i) => (
-                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '1rem 0', borderBottom: '1px solid #D4CFC6', fontSize: '0.9375rem', fontWeight: 300, color: '#6B6760', lineHeight: 1.6 }}>
+                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '1rem 0', borderBottom: '1px solid #D4CFC6', fontSize: '0.9375rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.6 }}>
                     <span style={{ width: '4px', height: '4px', background: '#B8924A', borderRadius: '50%', flexShrink: 0, marginTop: '0.6rem' }}></span>
                     {item}
                   </li>
