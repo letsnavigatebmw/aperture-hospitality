@@ -65,33 +65,33 @@ export default function ApertureFrameworksPage() {
 
           {/* Framework cards */}
           {[
-            { num: '01', category: 'Commercial Strategy', title: 'The Revenue Factory Framework', desc: 'A framework for treating your go-to-market motion like a production line — aligning sales, marketing, and customer success into a unified, repeatable process. Systems over heroics. The six pillars of a functioning revenue operation, and how to build them in sequence.', status: 'published', link: '/apertureframeworks/revenue-factory' },
-            { num: '02', category: 'Go-to-Market', title: 'The Hospitality GTM Framework', desc: 'How boutique hotels, luxury travel brands, and independent operators should think about go-to-market strategy differently from generic B2B or B2C playbooks. Who your actual buyer is, where they are, and what it takes to earn their attention in a crowded market.', status: 'published', link: '/apertureframeworks/hospitality-gtm' },
-            { num: '03', category: 'Marketing Strategy', title: 'The Luxury Brand Positioning Framework', desc: 'Positioning a luxury hospitality or consumer brand isn\'t the same as positioning a product. This framework covers how to define a position that commands a premium, survives competitive pressure, and resonates with a high-net-worth buyer without resorting to adjective inflation.', status: 'published', link: '/apertureframeworks/luxury-brand-positioning' },
-            { num: '04', category: 'Operations', title: 'The Operating Partner Selection Framework', desc: 'For hotel owners and real estate investors choosing between management companies, operators, and operating partners. What to evaluate, how to structure the due diligence process, what questions most owners forget to ask, and the signals that predict whether a partnership will actually work.', status: 'published', link: '/apertureframeworks/operating-partner-selection' },
-            { num: '05', category: 'Forecasting & Planning', title: 'The Hospitality Revenue Planning Framework', desc: 'Math-based revenue planning for hospitality operators who are still running their forecasts on gut-feel and prior-year comparisons. How to build a bottom-up revenue model, what inputs matter, and how to use it to drive real decisions rather than just satisfy a board deck.', status: 'published', link: '/apertureframeworks/hospitality-revenue-planning' },
-            { num: '06', category: 'Digital Marketing', title: 'The Boutique Brand Digital Marketing Playbook', desc: 'A practical playbook for boutique hospitality and luxury brands building a digital marketing capability from scratch or fixing one that isn\'t working. Channel prioritization, tech stack decisions, and how to measure what actually drives revenue — not impressions.', status: 'published', link: '/apertureframeworks/digital-marketing-playbook' }
+            { num: '01', category: 'Commercial Strategy', title: 'The Revenue Factory Framework', desc: 'A framework for treating your go-to-market motion like a production line — aligning sales, marketing, and customer success into a unified, repeatable process. Systems over heroics. The six pillars of a functioning revenue operation, and how to build them in sequence.', link: '/apertureframeworks/revenue-factory' },
+            { num: '02', category: 'Go-to-Market', title: 'The Hospitality GTM Framework', desc: 'How boutique hotels, luxury travel brands, and independent operators should think about go-to-market strategy differently from generic B2B or B2C playbooks. Who your actual buyer is, where they are, and what it takes to earn their attention in a crowded market.', link: '/apertureframeworks/hospitality-gtm' },
+            { num: '03', category: 'Marketing Strategy', title: 'The Luxury Brand Positioning Framework', desc: 'Positioning a luxury hospitality or consumer brand isn\'t the same as positioning a product. This framework covers how to define a position that commands a premium, survives competitive pressure, and resonates with a high-net-worth buyer without resorting to adjective inflation.', link: '/apertureframeworks/luxury-brand-positioning' },
+            { num: '04', category: 'Operations', title: 'The Operating Partner Selection Framework', desc: 'For hotel owners and real estate investors choosing between management companies, operators, and operating partners. What to evaluate, how to structure the due diligence process, what questions most owners forget to ask, and the signals that predict whether a partnership will actually work.', link: '/apertureframeworks/operating-partner-selection' },
+            { num: '05', category: 'Forecasting & Planning', title: 'The Hospitality Revenue Planning Framework', desc: 'Math-based revenue planning for hospitality operators who are still running their forecasts on gut-feel and prior-year comparisons. How to build a bottom-up revenue model, what inputs matter, and how to use it to drive real decisions rather than just satisfy a board deck.', link: '/apertureframeworks/hospitality-revenue-planning' },
+            { num: '06', category: 'Digital Marketing', title: 'The Boutique Brand Digital Marketing Playbook', desc: 'A practical playbook for boutique hospitality and luxury brands building a digital marketing capability from scratch or fixing one that isn\'t working. Channel prioritization, tech stack decisions, and how to measure what actually drives revenue — not impressions.', link: '/apertureframeworks/digital-marketing-playbook' }
           ].map((fw, i) => (
-            <div key={i} style={{ display: 'grid', gridTemplateColumns: '80px 1fr auto', gap: '2rem', alignItems: 'start', padding: '2.5rem 0', borderTop: '1px solid #D4CFC6', borderBottom: i === 5 ? '1px solid #D4CFC6' : 'none' }}>
-              <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '2.5rem', fontWeight: 300, color: '#D4CFC6', lineHeight: 1, paddingTop: '0.25rem' }}>
+            <div key={i} style={{ display: 'grid', gridTemplateColumns: 'auto 1fr auto', gap: '3rem', alignItems: 'flex-start', padding: '2.5rem 0', borderTop: '1px solid #D4CFC6', borderBottom: i === 5 ? '1px solid #D4CFC6' : 'none' }}>
+              <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '3.5rem', fontWeight: 300, color: '#D4CFC6', lineHeight: 1, paddingTop: '0.25rem', minWidth: '60px', textAlign: 'right' }}>
                 {fw.num}
               </div>
               <div>
-                <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '0.625rem' }}>
+                <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '0.5rem' }}>
                   {fw.category}
                 </div>
-                <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.625rem', fontWeight: 400, color: '#1C1A17', lineHeight: 1.2, margin: 0, marginBottom: '0.875rem' }}>
+                <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.75rem', fontWeight: 400, color: '#1C1A17', lineHeight: 1.2, margin: 0, marginBottom: '0.875rem' }}>
                   {fw.title}
                 </h3>
-                <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760', maxWidth: '52ch', margin: 0 }}>
+                <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.65, color: '#6B6760', maxWidth: '55ch', margin: 0 }}>
                   {fw.desc}
                 </p>
               </div>
-              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '0.75rem', paddingTop: '0.375rem', flexShrink: 0 }}>
-                <span style={{ fontSize: '0.5rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', padding: '0.3rem 0.75rem', border: '1px solid #B8924A', color: '#B8924A' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '1.25rem', paddingTop: '0.5rem', flexShrink: 0, textAlign: 'right' }}>
+                <span style={{ fontSize: '0.5625rem', fontWeight: 600, letterSpacing: '0.16em', textTransform: 'uppercase', padding: '0.4rem 0.875rem', border: '1px solid #B8924A', color: '#B8924A', whiteSpace: 'nowrap' }}>
                   Published
                 </span>
-                <Link href={fw.link} style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#1C1A17', borderBottom: '1px solid #D4CFC6', paddingBottom: '1px', whiteSpace: 'nowrap' }}>
+                <Link href={fw.link} style={{ fontSize: '0.6875rem', fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#1C1A17', textDecoration: 'none', whiteSpace: 'nowrap', transition: 'opacity 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.opacity = '0.7')} onMouseLeave={(e) => (e.currentTarget.style.opacity = '1')}>
                   Read →
                 </Link>
               </div>
