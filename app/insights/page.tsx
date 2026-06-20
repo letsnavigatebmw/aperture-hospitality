@@ -259,6 +259,42 @@ export default function InsightsPage() {
         </div>
       </section>
 
+      {/* FEATURED PRODUCT - NAVIGATE */}
+      <section style={{ background: '#1C1A17', padding: 'clamp(4rem, 10vw, 8rem) 0', borderBottom: '1px solid #2e2b26' }}>
+        <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
+            {/* Left: Text */}
+            <div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#F0EDE6', marginBottom: '2rem' }}>
+                <span style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></span>
+                Featured Product
+              </div>
+              <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, color: '#F0EDE6', marginBottom: '1.5rem' }}>
+                Navigate: Property Intelligence<br/>for <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Real Estate Operators</em>
+              </h2>
+              <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '1.5rem' }}>
+                From geo-targeted list building to personalized campaign execution, Navigate brings together owner intelligence, property data, and marketing automation into a single platform.
+              </p>
+              <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '2rem' }}>
+                Stop switching between tools. Stop chasing outdated data. Start converting.
+              </p>
+              <a href="https://app.guidde.com/share/playbooks/orS5f73hqc9QkNyE9kTy1M?origin=eLXF4oshrtU3laZW7wh2RQaDByy1&mode=videoAndDoc" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: '#B8924A', color: '#F0EDE6', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none', border: 'none', cursor: 'pointer', transition: 'background 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.background = '#9a7a3e')} onMouseLeave={(e) => (e.currentTarget.style.background = '#B8924A')}>
+                Watch Navigate Demo
+              </a>
+            </div>
+
+            {/* Right: Image */}
+            <div style={{ borderRadius: '8px', overflow: 'hidden', border: '1px solid #2e2b26' }}>
+              <img
+                src="/navigate-interface.jpg"
+                alt="Navigate product interface - property intelligence platform"
+                style={{ width: '100%', height: 'auto', display: 'block' }}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* HELP CARD SECTION */}
       <section style={{ background: '#E8E4DB', borderBottom: '1px solid #D4CFC6' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
