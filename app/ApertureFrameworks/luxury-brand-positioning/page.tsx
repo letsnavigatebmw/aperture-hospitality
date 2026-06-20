@@ -40,7 +40,7 @@ export default function LuxuryBrandPositioningPage() {
                 </div>
                 <div>
                   <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#4a4845', marginBottom: '0.25rem' }}>Status</div>
-                  <div style={{ fontSize: '0.875rem', fontWeight: 300, color: '#B8924A' }}>Coming Soon — Outline Available</div>
+                  <div style={{ fontSize: '0.875rem', fontWeight: 300, color: '#B8924A' }}>Published</div>
                 </div>
               </div>
             </div>
