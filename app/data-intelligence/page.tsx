@@ -375,6 +375,32 @@ export default function DataIntelligencePage() {
         </div>
       </section>
 
+      {/* TESTIMONIAL SECTION */}
+      <section style={{ background: '#E8E4DB', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #D4CFC6' }}>
+        <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
+          {/* Header */}
+          <div style={{ marginBottom: '4rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '2rem' }}>
+              <div style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></div>
+              Success Stories
+            </div>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, maxWidth: '28ch' }}>
+              Results that <em style={{ fontStyle: 'italic', color: '#B8924A' }}>speak for themselves.</em>
+            </h2>
+          </div>
+
+          {/* Testimonial */}
+          <div style={{ paddingTop: '3rem', borderTop: '1px solid #D4CFC6' }}>
+            <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.25rem, 2vw, 1.5625rem)', fontWeight: 300, fontStyle: 'italic', lineHeight: 1.75, color: '#1C1A17', marginBottom: '2.5rem', margin: '0 0 2.5rem 0' }}>
+              "I wanted to let you know how impactful Navigate has been for my family. We had been looking in Boise for four years in our school district and had not found anything until Navigate. I'd been sending a mailer every month for over a year and nothing happened. I sent one mailer and email from Navigate to the same area and got 6 responses within a week. One of those emails was a seller who had been looking to move and his agent called me to see it before they listed it. My husband and I are now living in our dream property. Thank you so much for creating this. We cannot thank you enough!"
+            </p>
+            <div style={{ fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6B6760' }}>
+              — Rachel Haussman, Real Estate Agent · Compass
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #2e2b26' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
