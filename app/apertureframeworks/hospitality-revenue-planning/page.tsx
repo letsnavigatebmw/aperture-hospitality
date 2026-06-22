@@ -4,6 +4,7 @@ import Nav from '@/components/Nav'
 import Link from 'next/link'
 
 export default function HospitalityRevenueplanningPage() {
+  // Vercel rebuild trigger
   return (
     <>
       <Nav />

@@ -4,6 +4,7 @@ import Nav from '@/components/Nav'
 import Link from 'next/link'
 
 export default function LuxuryBrandPositioningPage() {
+  // Vercel rebuild trigger - framework pages now accessible
   return (
     <>
       <Nav />
