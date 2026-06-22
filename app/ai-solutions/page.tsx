@@ -188,21 +188,28 @@ export default function AISolutionsPage() {
         </div>
       </section>
 
-      {/* SOCIAL PROOF */}
+      {/* TESTIMONIAL SECTION */}
       <section style={{ background: '#E8E4DB', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #D4CFC6' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#6B6760', marginBottom: '2rem' }}>
-            <div style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></div>
-            Who It's For
+          {/* Header */}
+          <div style={{ marginBottom: '4rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '2rem' }}>
+              <div style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></div>
+              Who It's For
+            </div>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, maxWidth: '28ch' }}>
+              Built for the businesses that make hospitality <em style={{ fontStyle: 'italic', color: '#B8924A' }}>worth experiencing.</em>
+            </h2>
           </div>
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, marginBottom: '3.5rem', maxWidth: '24ch' }}>
-            Built for the businesses<br/>that make hospitality <em style={{ fontStyle: 'italic', color: '#B8924A' }}>worth experiencing.</em>
-          </h2>
-          <div style={{ padding: '3rem 0', borderTop: '1px solid #D4CFC6', borderBottom: '1px solid #D4CFC6' }}>
-            <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5625rem', fontWeight: 300, fontStyle: 'italic', lineHeight: 1.7, color: '#1C1A17', marginBottom: '2rem', maxWidth: 'none' }}>
+
+          {/* Testimonial */}
+          <div style={{ paddingTop: '3rem', borderTop: '1px solid #D4CFC6' }}>
+            <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.25rem, 2vw, 1.5625rem)', fontWeight: 300, fontStyle: 'italic', lineHeight: 1.75, color: '#1C1A17', marginBottom: '2.5rem', margin: '0 0 2.5rem 0' }}>
               "Implementing Navigate's AI Agent technology fundamentally changed how our team manages inbound opportunities. What used to require constant monitoring, follow-up, and administrative effort now happens automatically and consistently. The result wasn't just greater efficiency—it created a better experience for both our agents and our clients by ensuring every inquiry received an immediate, professional response. It's become an important part of how we scale service without sacrificing quality."
             </p>
-            <div style={{ fontSize: '0.875rem', fontWeight: 500, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#6B6760' }}>— Brooke Winner, Founder & CEO · Voyage Real Estate</div>
+            <div style={{ fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6B6760' }}>
+              — Brooke Winner, Founder & CEO · Voyage Real Estate
+            </div>
           </div>
         </div>
       </section>
