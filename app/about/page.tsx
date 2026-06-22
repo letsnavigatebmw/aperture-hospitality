@@ -19,7 +19,7 @@ export default function About() {
       
       <section className="border-b border-rule">
         <div className="container-max py-16 md:py-24">
-          <div className="section-label">About</div>
+          <div className="section-label">About The Founder</div>
           
           <div className="grid md:grid-cols-2 gap-12 md:gap-16">
             {/* Left column */}
