@@ -37,7 +37,7 @@ export default function AISolutionsPage() {
                 AI Solutions for Hospitality & Luxury Brands
               </div>
               <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(3rem, 5.5vw, 5rem)', fontWeight: 300, lineHeight: 1.06, color: '#F0EDE6', marginBottom: '1.75rem' }}>
-                Win back revenue<br/>lost to <em style={{ fontStyle: 'italic', color: '#B8924A' }}>missed<br/>conversations.</em>
+                Win Back Revenue<br/>Lost To <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Missed<br/>Conversations.</em>
               </h1>
               <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '2.5rem', maxWidth: '44ch' }}>
                 Boutique hotels, luxury spirits brands, and independent operators lose bookings and leads every day to missed calls, slow follow-ups, and unmanaged inquiries. Aperture's AI Employee works around the clock so your team doesn't have to.
@@ -96,7 +96,7 @@ export default function AISolutionsPage() {
                 The Problem
               </div>
               <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, marginBottom: '1.5rem' }}>
-                Your business runs on<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>conversations.</em><br/>You're missing them.
+                Your Business Runs On<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Conversations.</em><br/>You're Missing Them.
               </h2>
             </div>
             <div>
@@ -129,7 +129,7 @@ export default function AISolutionsPage() {
                 The AI Employee
               </div>
               <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, color: '#F0EDE6' }}>
-                Three tools.<br/>One <em style={{ fontStyle: 'italic', color: '#B8924A' }}>AI teammate.</em>
+                Three Tools.<br/>One <em style={{ fontStyle: 'italic', color: '#B8924A' }}>AI Teammate.</em>
               </h2>
             </div>
             <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6' }}>
