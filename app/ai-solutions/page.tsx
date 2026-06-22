@@ -44,10 +44,10 @@ export default function AISolutionsPage() {
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.875rem', maxWidth: '280px' }}>
                 <a href="https://offer.revenuefactory.com/buy-ai-employee-a" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: '#B8924A', color: '#F0EDE6', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', border: 'none', cursor: 'pointer', textDecoration: 'none' }}>
-                  Get started — $297/mo
+                  Buy Now - $297/Month
                 </a>
-                <a href="#tools" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: 'transparent', color: '#F0EDE6', border: '1px solid #4a4845', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', cursor: 'pointer', textDecoration: 'none' }}>
-                  See what's included
+                <a href="tel:786-706-8231" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: 'transparent', color: '#F0EDE6', border: '1px solid #4a4845', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', cursor: 'pointer', textDecoration: 'none' }}>
+                  Try Now: 786-706-8231
                 </a>
               </div>
             </div>
@@ -249,7 +249,7 @@ export default function AISolutionsPage() {
                 ))}
               </ul>
               <a href="https://offer.revenuefactory.com/buy-ai-employee-a" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2rem', background: '#1C1A17', color: '#F0EDE6', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', border: 'none', cursor: 'pointer', textDecoration: 'none' }}>
-                Get Started
+                Buy Now - $297/Month
               </a>
               <p style={{ fontSize: '0.75rem', fontWeight: 300, color: '#6B6760', lineHeight: 1.6, marginTop: '1.25rem', paddingTop: '1.25rem', borderTop: '1px solid #D4CFC6' }}>Setup fee may apply depending on integration complexity. Aperture handles all configuration.</p>
             </div>
@@ -270,7 +270,7 @@ export default function AISolutionsPage() {
                 ))}
               </ul>
               <a href="https://offer.revenuefactory.com/buy-ai-employee-a" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2rem', background: '#B8924A', color: '#F0EDE6', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', border: 'none', cursor: 'pointer', textDecoration: 'none' }}>
-                Get Started
+                Buy Now - $297/Month
               </a>
               <p style={{ fontSize: '0.75rem', fontWeight: 300, color: '#6B6760', lineHeight: 1.6, marginTop: '1.25rem', paddingTop: '1.25rem', borderTop: '1px solid #2e2b26' }}>Annual plans are billed upfront. Aperture handles all configuration at no additional charge.</p>
             </div>
@@ -320,11 +320,11 @@ export default function AISolutionsPage() {
             </h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.875rem', flexShrink: 0 }}>
               <a href="https://offer.revenuefactory.com/buy-ai-employee-a" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: '#B8924A', color: '#F0EDE6', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', border: 'none', cursor: 'pointer', textDecoration: 'none' }}>
-                Get started — $297/mo
+                Buy Now - $297/Month
               </a>
-              <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: '#1C1A17', color: '#F0EDE6', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', border: 'none', cursor: 'pointer', textDecoration: 'none' }}>
-                Talk to Brandon first
-              </Link>
+              <a href="tel:786-706-8231" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: '#1C1A17', color: '#F0EDE6', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', border: 'none', cursor: 'pointer', textDecoration: 'none' }}>
+                Try Now: 786-706-8231
+              </a>
             </div>
           </div>
         </div>
