@@ -70,12 +70,12 @@ export default function WorkplaceKitPage() {
               <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '2.5rem', maxWidth: '44ch' }}>
                 The Hospitality Marketing Workspace Kit gives your property a complete marketing operating system — so your team can build, ship, and sell without waiting on you every time.
               </p>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                <a href="/contact?product=workspace-kit" style={{ display: 'block', textAlign: 'center', padding: '3rem 2rem', background: '#B8924A', color: '#FFFFFF', border: 'none', borderRadius: '0px', textDecoration: 'none', transition: 'all 0.3s', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#9a7a3e'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#B8924A'; }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', width: '100%' }}>
+                <a href="/contact?product=workspace-kit" style={{ display: 'block', textAlign: 'center', padding: '3rem 2rem', background: '#B8924A', color: '#FFFFFF', border: 'none', borderRadius: '0px', textDecoration: 'none', transition: 'all 0.3s', cursor: 'pointer', width: '100%', boxSizing: 'border-box' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#9a7a3e'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#B8924A'; }}>
                 <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '2.25rem', fontWeight: 300, marginBottom: '1rem', lineHeight: 1.2 }}>Get The Workspace Kit</div>
                 <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '1rem', fontWeight: 400, letterSpacing: '0.05em' }}>$1,497</div>
               </a>
-                <a href="#whats-inside" style={{ display: 'block', textAlign: 'center', padding: '2.5rem 2rem', background: '#1C1A17', color: '#F0EDE6', border: '1px solid #4a4845', borderRadius: '0px', textDecoration: 'none', transition: 'all 0.3s', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#2e2b26'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#1C1A17'; }}>
+                <a href="#whats-inside" style={{ display: 'block', textAlign: 'center', padding: '2.5rem 2rem', background: '#1C1A17', color: '#F0EDE6', border: '1px solid #4a4845', borderRadius: '0px', textDecoration: 'none', transition: 'all 0.3s', cursor: 'pointer', width: '100%', boxSizing: 'border-box' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#2e2b26'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#1C1A17'; }}>
                 <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '2rem', fontWeight: 300, marginBottom: '0rem' }}>See What's Inside</div>
               </a>
               </div>
@@ -98,7 +98,7 @@ export default function WorkplaceKitPage() {
                 ))}
               </ul>
 
-              <a href="/contact?product=workspace-kit" style={{ display: 'block', textAlign: 'center', padding: '2rem 1.5rem', background: '#B8924A', color: '#FFFFFF', border: 'none', borderRadius: '0px', textDecoration: 'none', transition: 'all 0.3s', marginBottom: '1rem', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#9a7a3e'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#B8924A'; }}>
+              <a href="/contact?product=workspace-kit" style={{ display: 'block', textAlign: 'center', padding: '2rem 1.5rem', background: '#B8924A', color: '#FFFFFF', border: 'none', width: '100%', boxSizing: 'border-box', borderRadius: '0px', textDecoration: 'none', transition: 'all 0.3s', marginBottom: '1rem', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#9a7a3e'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#B8924A'; }}>
                 <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5rem', fontWeight: 300, marginBottom: '0.25rem' }}>Get The Workspace Kit</div>
                 <div style={{ fontSize: '0.9375rem', fontWeight: 400, letterSpacing: '0.05em' }}>$1,497</div>
               </a>
@@ -244,7 +244,7 @@ export default function WorkplaceKitPage() {
               <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--brass)', marginBottom: '1.5rem' }}>Hospitality Marketing Workspace Kit</div>
               <div style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: '3rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1, marginBottom: '0.25rem' }}>$1,497</div>
               <div style={{ fontSize: '0.8125rem', fontWeight: 300, color: 'var(--muted)', marginBottom: '2rem', paddingBottom: '2rem', borderBottom: '1px solid var(--dark2)' }}>One-time setup fee. No subscription. No monthly retainer.</div>
-              <a href="/contact?product=workspace-kit" style={{ display: 'block', textAlign: 'center', padding: '2rem 1.5rem', background: '#B8924A', color: '#FFFFFF', border: 'none', borderRadius: '0px', textDecoration: 'none', transition: 'all 0.3s', marginBottom: '1rem', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#9a7a3e'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#B8924A'; }}>
+              <a href="/contact?product=workspace-kit" style={{ display: 'block', textAlign: 'center', padding: '2rem 1.5rem', background: '#B8924A', color: '#FFFFFF', border: 'none', width: '100%', boxSizing: 'border-box', borderRadius: '0px', textDecoration: 'none', transition: 'all 0.3s', marginBottom: '1rem', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#9a7a3e'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#B8924A'; }}>
                 <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5rem', fontWeight: 300, marginBottom: '0.25rem' }}>Get The Workspace Kit</div>
                 <div style={{ fontSize: '0.9375rem', fontWeight: 400, letterSpacing: '0.05em' }}>$1,497</div>
               </a>
