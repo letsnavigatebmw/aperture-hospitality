@@ -198,18 +198,11 @@ export default function AISolutionsPage() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, marginBottom: '3.5rem', maxWidth: '24ch' }}>
             Built for the businesses<br/>that make hospitality <em style={{ fontStyle: 'italic', color: '#B8924A' }}>worth experiencing.</em>
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0', borderTop: '1px solid #D4CFC6' }}>
-            {[
-              { industry: 'Boutique Hotel', quote: '"We were losing bookings to missed calls during dinner service. The Voice AI paid for itself in the first week."', credit: '— [Name], General Manager · [Property Name]' },
-              { industry: 'Luxury Spirits Brand', quote: '"Our Google reviews went from an afterthought to a sales asset. Guests started mentioning them in conversations."', credit: '— [Name], Founder · [Brand Name]' },
-              { industry: 'Independent Restaurant', quote: '"We cut no-shows by a third in the first month just by adding automated confirmation texts. Simple and effective."', credit: '— [Name], Owner · [Restaurant Name]' }
-            ].map((proof, i) => (
-              <div key={i} style={{ padding: '2.5rem 2.5rem 2.5rem 0', borderRight: i < 2 ? '1px solid #D4CFC6' : 'none' }}>
-                <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1.25rem' }}>{proof.industry}</div>
-                <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.25rem', fontWeight: 300, fontStyle: 'italic', lineHeight: 1.5, color: '#1C1A17', marginBottom: '1.5rem' }}>{proof.quote}</p>
-                <div style={{ fontSize: '0.75rem', fontWeight: 500, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#6B6760' }}>{proof.credit}</div>
-              </div>
-            ))}
+          <div style={{ padding: '3rem 0', borderTop: '1px solid #D4CFC6', borderBottom: '1px solid #D4CFC6' }}>
+            <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5625rem', fontWeight: 300, fontStyle: 'italic', lineHeight: 1.7, color: '#1C1A17', marginBottom: '2rem', maxWidth: 'none' }}>
+              "Implementing Navigate's AI Agent technology fundamentally changed how our team manages inbound opportunities. What used to require constant monitoring, follow-up, and administrative effort now happens automatically and consistently. The result wasn't just greater efficiency—it created a better experience for both our agents and our clients by ensuring every inquiry received an immediate, professional response. It's become an important part of how we scale service without sacrificing quality."
+            </p>
+            <div style={{ fontSize: '0.875rem', fontWeight: 500, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#6B6760' }}>— Brooke Winner, Founder & CEO · Voyage Real Estate</div>
           </div>
         </div>
       </section>
