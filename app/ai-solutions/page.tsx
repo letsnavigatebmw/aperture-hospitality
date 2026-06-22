@@ -304,9 +304,9 @@ export default function AISolutionsPage() {
             <div style={{ background: '#2e2b26', border: '1px solid #3a3733', padding: '3rem', borderRadius: '16px' }}>
               <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.875rem', fontWeight: 300, color: '#F0EDE6', marginBottom: '1.5rem', lineHeight: 1.2 }}>AI Marketing Workspace Kit</h3>
               
-              <a href="/workplacekit" style={{ display: 'block', textAlign: 'center', padding: '2rem 1.5rem', background: '#B8924A', color: '#FFFFFF', border: 'none', borderRadius: '0px', textDecoration: 'none', transition: 'all 0.3s', marginBottom: '1rem', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#9a7a3e'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#B8924A'; }}>
-                <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '1.25rem', fontWeight: 600, marginBottom: '0.5rem' }}>Interested in the AI Marketing Workspace Kit</div>
-                <div style={{ fontSize: '0.875rem', fontWeight: 400, letterSpacing: '0.05em', textTransform: 'uppercase' }}>FOR $1,497</div>
+              <a href="/workplacekit" style={{ display: 'block', textAlign: 'center', padding: '2.5rem 1.5rem', background: '#B8924A', color: '#FFFFFF', border: 'none', borderRadius: '0px', textDecoration: 'none', transition: 'all 0.3s', marginBottom: '1rem', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#9a7a3e'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#B8924A'; }}>
+                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5rem', fontWeight: 300, marginBottom: '0.75rem' }}>Get The Workspace Kit</div>
+                <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.9375rem', fontWeight: 400, letterSpacing: '0.05em' }}>$1,497</div>
               </a>
 
               <p style={{ fontSize: '0.8125rem', fontWeight: 300, color: '#6B6760', marginBottom: '2rem', paddingBottom: '2rem', borderBottom: '1px solid #3a3733' }}>
