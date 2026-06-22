@@ -37,10 +37,11 @@ export default function Testimonials() {
             {testimonials.map((testimonial, index) => (
               <div 
                 key={index} 
+                style={{ minHeight: 'auto', maxHeight: 'none', height: 'auto' }}
                 className="flex-shrink-0 w-full md:w-1/3 space-y-6 p-8 border border-rule rounded-lg bg-parchment-dark hover:border-brass transition-all flex flex-col"
               >
                 {/* Quote */}
-                <blockquote className="text-base leading-relaxed text-muted italic flex-grow overflow-visible">
+                <blockquote className="text-base leading-relaxed text-muted italic flex-grow" style={{ overflow: 'visible' }}>
                   "{testimonial.quote}"
                 </blockquote>
 
