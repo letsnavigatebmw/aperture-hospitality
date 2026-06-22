@@ -68,7 +68,7 @@ export default function AISolutions() {
         </div>
 
         {/* CTA */}
-        <Link href="/solutions" style={{
+        <Link href="/ai-solutions" style={{
           display: 'inline-block',
           fontFamily: "'Inter', sans-serif",
           fontSize: '0.875rem',
