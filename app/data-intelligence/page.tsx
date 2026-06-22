@@ -63,10 +63,10 @@ export default function DataIntelligencePage() {
                 Data & Intelligence
               </div>
               <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(3rem, 5.5vw, 4.5rem)', fontWeight: 300, lineHeight: 1.08, color: '#F0EDE6', marginBottom: '1.75rem' }}>
-                Turn your data<br/>into <em style={{ fontStyle: 'italic', color: '#B8924A' }}>deal flow.</em>
+                Turn data<br/>into <em style={{ fontStyle: 'italic', color: '#B8924A' }}>deal flow.</em>
               </h1>
               <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '2.5rem', maxWidth: '44ch' }}>
-                Aperture deploys Navigate — a property intelligence platform built for real estate professionals — to give hospitality operators, investors, and luxury brands a smarter, more precise way to prospect, connect, and convert.
+                Aperture deploys Navigate — a property intelligence platform — to give travel companies, boutique hotel operators, small business owners, and boutique luxury brands a smarter, more precise way to prospect, connect, and convert prospects.
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.875rem', maxWidth: '280px' }}>
                 <a href="#pricing" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: '#B8924A', color: '#1C1A17', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none', border: 'none', cursor: 'pointer', transition: 'background 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.background = '#9a7a3e')} onMouseLeave={(e) => (e.currentTarget.style.background = '#B8924A')}>
