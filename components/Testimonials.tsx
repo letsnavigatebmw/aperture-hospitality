@@ -28,11 +28,11 @@ export default function Testimonials() {
 
         {/* Testimonials Horizontal Scroll */}
         <div className="overflow-x-auto scrollbar-hide">
-          <div className="flex gap-8 pb-4 min-w-max md:min-w-full items-stretch">
+          <div className="flex gap-8 pb-4 md:pb-0 min-w-max md:min-w-full items-stretch justify-center md:justify-start">
             {testimonials.map((testimonial, index) => (
               <div 
                 key={index} 
-                className="flex-shrink-0 w-full md:w-1/2 space-y-6 p-8 border border-rule rounded-lg bg-parchment-dark hover:border-brass transition-all flex flex-col"
+                className="flex-shrink-0 w-full md:flex-1 space-y-6 p-8 border border-rule rounded-lg bg-parchment-dark hover:border-brass transition-all flex flex-col"
               >
                 {/* Quote */}
                 <blockquote className="text-base leading-relaxed text-muted italic flex-grow" style={{ overflow: 'visible' }}>
