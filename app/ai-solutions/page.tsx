@@ -270,7 +270,7 @@ export default function AISolutionsPage() {
                 ))}
               </ul>
               <a href="https://offer.revenuefactory.com/buy-ai-employee-a" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2rem', background: '#B8924A', color: '#F0EDE6', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', border: 'none', cursor: 'pointer', textDecoration: 'none' }}>
-                Buy Now - $297/Month
+                Buy Now $2,997.00/yr
               </a>
               <p style={{ fontSize: '0.75rem', fontWeight: 300, color: '#6B6760', lineHeight: 1.6, marginTop: '1.25rem', paddingTop: '1.25rem', borderTop: '1px solid #2e2b26' }}>Annual plans are billed upfront. Aperture handles all configuration at no additional charge.</p>
             </div>
