@@ -315,7 +315,7 @@ export default function HowWeWorkPage() {
 
           {/* Headline */}
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.5rem, 4vw, 3.5rem)', fontWeight: 300, lineHeight: 1.2, color: '#F0EDE6', margin: 0, marginBottom: '2rem' }}>
-            The operating systems behind <em style={{ fontStyle: 'italic', color: '#B8924A' }}>real growth.</em>
+            The Operating Systems Behind <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Real Growth.</em>
           </h2>
 
           {/* Body copy */}
@@ -360,7 +360,7 @@ export default function HowWeWorkPage() {
             margin: 0,
             marginBottom: '1.5rem'
           }}>
-            Ready to build your revenue factory?
+            Ready To Build Your Revenue Factory?
           </h2>
 
           <p style={{
