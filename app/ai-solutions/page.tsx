@@ -304,22 +304,21 @@ export default function AISolutionsPage() {
             <div style={{ background: '#2e2b26', border: '1px solid #3a3733', padding: '3rem', borderRadius: '16px' }}>
               <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.875rem', fontWeight: 300, color: '#F0EDE6', marginBottom: '1.5rem', lineHeight: 1.2 }}>AI Marketing Workspace Kit</h3>
               
-              <a href="/workplacekit" style={{ display: 'block', textAlign: 'center', padding: '2rem 1.5rem', background: '#0066FF', color: '#FFFFFF', border: 'none', borderRadius: '12px', textDecoration: 'none', transition: 'background 0.3s', marginBottom: '1rem', cursor: 'pointer' }} onMouseEnter={(e) => (e.currentTarget.style.background = '#0052CC')} onMouseLeave={(e) => (e.currentTarget.style.background = '#0066FF')}>
-                <div style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '0.25rem' }}>Interested in the AI Marketing Workspace Kit</div>
-                <div style={{ fontSize: '0.75rem', fontWeight: 400, letterSpacing: '0.05em', marginTop: '0.5rem' }}>FOR $1,497</div>
+              <a href="/workplacekit" style={{ display: 'block', textAlign: 'center', padding: '2rem 1.5rem', background: '#1C1A17', color: '#F0EDE6', border: '2.5px solid #B8924A', borderRadius: '16px', textDecoration: 'none', transition: 'all 0.3s', marginBottom: '1rem', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#2e2b26'; e.currentTarget.style.borderColor = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#1C1A17'; e.currentTarget.style.borderColor = '#B8924A'; }}>
+                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.75rem', fontWeight: 300, marginBottom: '0.5rem' }}>Get The AI Marketing Workspace Kit</div>
+                <div style={{ fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase' }}>FOR $1,497</div>
               </a>
 
               <p style={{ fontSize: '0.8125rem', fontWeight: 300, color: '#6B6760', marginBottom: '2rem', paddingBottom: '2rem', borderBottom: '1px solid #3a3733' }}>
                 One-time setup fee. No subscription. No monthly retainer.
               </p>
 
-              <a href="/workplacekit" style={{ display: 'block', textAlign: 'center', padding: '1.5rem 1.5rem', background: 'transparent', color: '#F0EDE6', border: '1px solid #4a4845', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#3a3733'; }} onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; }}>
-                Want to start with the foundation only?
-              </a>
-
-              <p style={{ fontSize: '0.75rem', fontWeight: 300, color: '#6B6760', marginTop: '1rem' }}>
-                Get the Reference Library Builder Set — $297
+              <p style={{ fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.6, marginTop: '1.5rem' }}>
+                Want to start with the foundation only? Get the <strong style={{ fontWeight: 400 }}>Reference Library Builder Set — $297</strong>
               </p>
+              <a href="/workplacekit" style={{ display: 'inline-block', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#B8924A', borderBottom: '1px solid #B8924A', paddingBottom: '4px', textDecoration: 'none', cursor: 'pointer', marginTop: '0.5rem', transition: 'color 0.3s' }} onMouseEnter={(e) => { e.currentTarget.style.color = '#F0EDE6'; e.currentTarget.style.borderBottomColor = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.color = '#B8924A'; e.currentTarget.style.borderBottomColor = '#B8924A'; }}>
+                Learn more →
+              </a>
             </div>
           </div>
         </div>
