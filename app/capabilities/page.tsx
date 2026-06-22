@@ -337,7 +337,7 @@ export default function CapabilitiesPage() {
             How We Work
           </div>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, marginBottom: '3.5rem', maxWidth: '22ch', color: '#1C1A17' }}>
-            Built Around Your Business, Not A<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Standard Package.</em>
+            Built Around Your Business,<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Not A Standard Package.</em>
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0', borderTop: '1px solid #D4CFC6' }}>
             {[
