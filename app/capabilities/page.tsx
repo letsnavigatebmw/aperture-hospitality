@@ -298,7 +298,7 @@ export default function CapabilitiesPage() {
                 The Technology
               </div>
               <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, color: '#1C1A17' }}>
-                The right tools,<br/>properly <em style={{ fontStyle: 'italic', color: '#B8924A' }}>configured.</em>
+                The Right Tools,<br/>Properly <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Configured.</em>
               </h2>
             </div>
             <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#1C1A17' }}>
