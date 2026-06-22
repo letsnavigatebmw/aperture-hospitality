@@ -302,7 +302,7 @@ export default function Home() {
               <p className="text-sm text-muted leading-relaxed">
                 Proven framework for driving qualified leads and traffic to your business. Data-driven targeting and conversion optimization built in.
               </p>
-              <a href="/trafficsystem" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2rem', background: '#0066FF', color: '#FFFFFF', fontSize: '0.875rem', fontWeight: 600, letterSpacing: '0.05em', textDecoration: 'none', borderRadius: '8px', transition: 'background 0.3s', marginTop: '1rem' }} onMouseEnter={(e) => (e.currentTarget.style.background = '#0052CC')} onMouseLeave={(e) => (e.currentTarget.style.background = '#0066FF')}>
+              <a href="/trafficsystem" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2rem', background: '#B8924A', color: '#F0EDE6', fontSize: '0.875rem', fontWeight: 600, letterSpacing: '0.05em', textDecoration: 'none', borderRadius: '8px', transition: 'background 0.3s', marginTop: '1rem' }} onMouseEnter={(e) => (e.currentTarget.style.background = '#9a7a3e')} onMouseLeave={(e) => (e.currentTarget.style.background = '#B8924A')}>
                 Launch My Lead Acquisition Machine →
               </a>
             </div>
