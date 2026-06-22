@@ -169,7 +169,7 @@ export default function AISolutionsPage() {
             How It Works
           </div>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, marginBottom: '3.5rem', maxWidth: '20ch' }}>
-            Up and running<br/>in <em style={{ fontStyle: 'italic', color: '#B8924A' }}>days, not months.</em>
+            Up And Running<br/>In <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Days, Not Months.</em>
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0', borderTop: '1px solid #D4CFC6' }}>
             {[
