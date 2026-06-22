@@ -33,7 +33,7 @@ export default function ApertureFrameworksPage() {
                 <span style={{ fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#F0EDE6' }}>Frameworks & Thinking</span>
               </div>
               <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(3rem, 5.5vw, 5rem)', fontWeight: 300, lineHeight: 1.06, color: '#F0EDE6', margin: 0 }}>
-                The operating<br/>systems behind<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>real growth.</em>
+                The operating systems behind <em style={{ fontStyle: 'italic', color: '#B8924A' }}>real growth.</em>
               </h1>
             </div>
             <div style={{ paddingTop: '0.5rem' }}>
