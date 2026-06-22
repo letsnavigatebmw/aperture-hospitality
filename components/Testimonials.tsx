@@ -33,19 +33,19 @@ export default function Testimonials() {
 
         {/* Testimonials Horizontal Scroll */}
         <div className="overflow-x-auto scrollbar-hide">
-          <div className="flex gap-8 pb-4 min-w-max md:min-w-full">
+          <div className="flex gap-8 pb-4 min-w-max md:min-w-full items-start">
             {testimonials.map((testimonial, index) => (
               <div 
                 key={index} 
                 className="flex-shrink-0 w-full md:w-1/3 space-y-6 p-8 border border-rule rounded-lg bg-parchment-dark hover:border-brass transition-all flex flex-col"
               >
                 {/* Quote */}
-                <blockquote className="text-base leading-relaxed text-muted italic flex-grow">
+                <blockquote className="text-base leading-relaxed text-muted italic flex-grow overflow-visible">
                   "{testimonial.quote}"
                 </blockquote>
 
                 {/* Author */}
-                <div className="pt-4 border-t border-rule space-y-1">
+                <div className="pt-4 border-t border-rule space-y-1 flex-shrink-0">
                   <p className="font-medium text-ink">
                     {testimonial.author}
                   </p>
