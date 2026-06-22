@@ -328,7 +328,7 @@ export default function Home() {
                   Complete toolkit for team enablement, training, and operational excellence.
                 </p>
               </div>
-              <a href="/workplacekit" style={{ display: 'block', textAlign: 'center', padding: '2rem', background: '#B8924A', color: '#FFFFFF', border: 'none', borderRadius: '8px', textDecoration: 'none', transition: 'all 0.3s', cursor: 'pointer', marginTop: '2rem' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#9a7a3e'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#B8924A'; }}>
+              <a href="https://request.revenuefactory.com/widget/bookings/ai-employee-convo" target="_blank" rel="noopener noreferrer" style={{ display: 'block', textAlign: 'center', padding: '2rem', background: '#B8924A', color: '#FFFFFF', border: 'none', borderRadius: '8px', textDecoration: 'none', transition: 'all 0.3s', cursor: 'pointer', marginTop: '2rem' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#9a7a3e'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#B8924A'; }}>
                 <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5rem', fontWeight: 300, marginBottom: '0.5rem', color: '#FFFFFF' }}>Get The Workspace Kit</div>
                 <div style={{ fontSize: '1rem', fontWeight: 300, color: '#FFFFFF' }}>$1,497</div>
               </a>
