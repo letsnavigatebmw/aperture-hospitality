@@ -150,14 +150,14 @@ export default function HowWeWorkPage() {
             }}>Four-Phase Engagement</span>
             <h2 style={{
               fontFamily: "'Cormorant Garamond', Georgia, serif",
-              fontSize: 'clamp(2rem, 3vw, 2.5rem)',
+              fontSize: 'clamp(2.5rem, 4vw, 3.75rem)',
               fontWeight: 300,
               lineHeight: 1.1,
               color: '#1C1A17',
               margin: 0,
               marginTop: '1rem'
             }}>
-              Our Process
+              Our <span style={{ fontStyle: 'italic', color: '#B8924A' }}>Process</span>
             </h2>
           </div>
 
