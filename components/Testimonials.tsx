@@ -10,11 +10,6 @@ export default function Testimonials() {
       author: 'Michael Silver',
       title: 'CEO, Foto Comercio',
     },
-    {
-      quote: 'Brandon brings a rare blend of luxury brand expertise, commercial leadership, and authentic relationship-building. He understands how to create meaningful customer connections while never losing sight of revenue and operational performance. His strategic thinking and professionalism consistently elevate every project he touches.',
-      author: 'Andy Borenzweig',
-      title: 'Founder, Beverly Spirits',
-    },
   ]
 
   return (
@@ -38,7 +33,7 @@ export default function Testimonials() {
               <div 
                 key={index} 
                 style={{ minHeight: 'auto', maxHeight: 'none', height: 'auto' }}
-                className="flex-shrink-0 w-full md:w-1/3 space-y-6 p-8 border border-rule rounded-lg bg-parchment-dark hover:border-brass transition-all flex flex-col"
+                className="flex-shrink-0 w-full md:w-1/2 space-y-6 p-8 border border-rule rounded-lg bg-parchment-dark hover:border-brass transition-all flex flex-col"
               >
                 {/* Quote */}
                 <blockquote className="text-base leading-relaxed text-muted italic flex-grow" style={{ overflow: 'visible' }}>
