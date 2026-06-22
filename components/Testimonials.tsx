@@ -10,6 +10,7 @@ export default function Testimonials() {
       quote: 'Working with Brandon felt like having a true strategic partner rather than an outside advisor. He quickly understood our business, challenged our assumptions in the right ways, and helped translate complex growth objectives into practical, measurable actions. His ability to bridge data, marketing, and business development is exceptional.',
       author: 'Michael Silver',
       title: 'CEO, Foto Comercio',
+      link: 'https://www.fotocomercio.com/',
     },
   ]
 
