@@ -2,8 +2,9 @@ export default function Testimonials() {
   const testimonials = [
     {
       quote: 'Brandon has a unique ability to connect strategy with execution. During our growth initiatives, he consistently identified opportunities others missed, built alignment across teams, and helped us accelerate expansion while maintaining a strong focus on agent success. His combination of commercial acumen, relationship-building, and operational discipline makes him an invaluable partner.',
-      author: 'Ari Afshar',
-      title: 'Founder, Voyage',
+      author: 'Voyage Real Estate',
+      title: 'www.voyagerealestate.com',
+      link: 'https://www.voyagerealestate.com',
     },
     {
       quote: 'Working with Brandon felt like having a true strategic partner rather than an outside advisor. He quickly understood our business, challenged our assumptions in the right ways, and helped translate complex growth objectives into practical, measurable actions. His ability to bridge data, marketing, and business development is exceptional.',
@@ -44,9 +45,15 @@ export default function Testimonials() {
                   <p className="font-medium text-ink">
                     {testimonial.author}
                   </p>
-                  <p className="text-xs tracking-wide uppercase text-muted">
-                    {testimonial.title}
-                  </p>
+                  {testimonial.link ? (
+                    <a href={testimonial.link} target="_blank" rel="noopener noreferrer" className="text-xs tracking-wide uppercase text-brass hover:text-brass-dim transition-colors inline-block">
+                      {testimonial.title}
+                    </a>
+                  ) : (
+                    <p className="text-xs tracking-wide uppercase text-muted">
+                      {testimonial.title}
+                    </p>
+                  )}
                 </div>
               </div>
             ))}
