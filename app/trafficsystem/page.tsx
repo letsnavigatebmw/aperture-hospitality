@@ -77,13 +77,7 @@ export default function TrafficSystemPage() {
               <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '2.5rem', maxWidth: '44ch' }}>
                 Stop depending on OTAs for your revenue. Build a simple, repeatable direct booking system in 3 days and see measurable lead flow within 30 days.
               </p>
-              <a href="/contact?product=traffic-system" style={{ display: 'block', textAlign: 'center', padding: '2.5rem 2rem', background: '#1C1A17', color: '#F0EDE6', border: '2.5px solid #B8924A', borderRadius: '20px', textDecoration: 'none', transition: 'all 0.3s', cursor: 'pointer', marginBottom: '1rem' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#2e2b26'; e.currentTarget.style.borderColor = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#1C1A17'; e.currentTarget.style.borderColor = '#B8924A'; }}>
-                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '2rem', fontWeight: 300, marginBottom: '0.5rem' }}>Launch My Traffic System</div>
-                <div style={{ fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.15em', textTransform: 'uppercase' }}>FOR $500/MO</div>
-              </a>
-              <a href="#how-it-works" style={{ display: 'block', textAlign: 'center', padding: '2.5rem 2rem', background: '#1C1A17', color: '#F0EDE6', border: '2.5px solid #B8924A', borderRadius: '20px', textDecoration: 'none', transition: 'all 0.3s', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#2e2b26'; e.currentTarget.style.borderColor = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#1C1A17'; e.currentTarget.style.borderColor = '#B8924A'; }}>
-                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '2rem', fontWeight: 300, marginBottom: '0.5rem' }}>See How It Works</div>
-              </a>
+
             </div>
 
             {/* Pricing Card */}
