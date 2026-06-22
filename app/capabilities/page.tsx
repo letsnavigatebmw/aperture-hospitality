@@ -372,7 +372,7 @@ export default function CapabilitiesPage() {
                 Who It's For
               </div>
               <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, color: '#1C1A17' }}>
-                Built for the brands<br/>that run on <em style={{ fontStyle: 'italic', color: '#B8924A' }}>reputation.</em>
+                Built For The Brands That Run On<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Reputation.</em>
               </h2>
             </div>
             <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#1C1A17' }}>
