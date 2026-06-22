@@ -63,7 +63,7 @@ export default function DataIntelligencePage() {
                 Data & Intelligence
               </div>
               <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(3rem, 5.5vw, 4.5rem)', fontWeight: 300, lineHeight: 1.08, color: '#F0EDE6', marginBottom: '1.75rem' }}>
-                Turn data<br/>into <em style={{ fontStyle: 'italic', color: '#B8924A' }}>deal flow.</em>
+                Turn Data<br/>Into <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Deal Flow.</em>
               </h1>
               <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '2.5rem', maxWidth: '44ch' }}>
                 Aperture deploys Navigate — a property intelligence platform — to give travel companies, boutique hotel operators, small business owners, and boutique luxury brands a smarter, more precise way to prospect, connect, and convert prospects.
@@ -350,7 +350,7 @@ export default function DataIntelligencePage() {
             Approach
           </div>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, marginBottom: '3.5rem' }}>
-            From search to <em style={{ fontStyle: 'italic', color: '#B8924A' }}>outreach in minutes.</em>
+            From Search To <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Outreach In Minutes.</em>
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0', borderTop: '1px solid #D4CFC6' }}>
             {[
