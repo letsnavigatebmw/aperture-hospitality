@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 
 export default function ApertureFrameworksPage() {
+  // Force Vercel rebuild - all framework links now active
   const [email, setEmail] = useState('')
   const [subscribeMessage, setSubscribeMessage] = useState('')
 
