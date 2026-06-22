@@ -266,6 +266,15 @@ export default function Home() {
                 Commercial acceleration and market expansion strategy.
               </p>
             </div>
+
+            {/* Engagement 5 */}
+            <div>
+              <h3 className="font-display text-xl font-medium text-ink mb-2">Beverly Spirits</h3>
+              <p className="text-xs tracking-tight text-muted mb-3">Premium Spirits Portfolio</p>
+              <p className="text-muted leading-relaxed">
+                Commercial acceleration and market expansion strategy.
+              </p>
+            </div>
           </div>
         </div>
       </div>
