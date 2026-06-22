@@ -134,7 +134,7 @@ export default function HowWeWorkPage() {
       {/* PROCESS STEPS */}
       <section style={{
         padding: 'clamp(4rem, 10vw, 8rem) clamp(1.5rem, 4vw, 4rem)',
-        background: '#FFFFFF',
+        background: '#F0EDE6',
         borderBottom: '1px solid #D4CFC6'
       }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto' }}>
