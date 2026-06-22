@@ -172,7 +172,7 @@ export default function CapabilitiesPage() {
                 The Problem
               </div>
               <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, marginBottom: '1.5rem', color: '#1C1A17' }}>
-                Most small operators<br/>are marketing<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>without a system.</em>
+                Most Small Operators<br/>Are Marketing<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Without A System.</em>
               </h2>
             </div>
             <div>

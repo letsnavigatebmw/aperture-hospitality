@@ -59,7 +59,7 @@ export default function DigitalMarketingPlaybookPage() {
                 The Problem
               </div>
               <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3vw, 2.75rem)', fontWeight: 300, lineHeight: 1.15, color: '#1C1A17' }}>
-                Most small operators are marketing<br/>without<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>a system.</em>
+                Most Small Operators Are Marketing<br/>Without<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>A System.</em>
               </h2>
             </div>
             <div>
