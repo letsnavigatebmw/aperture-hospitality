@@ -123,7 +123,7 @@ export default function CapabilitiesPage() {
                 Digital Marketing
               </div>
               <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(3rem, 5.5vw, 5rem)', fontWeight: 300, lineHeight: 1.06, color: '#F0EDE6', marginBottom: '1.75rem' }}>
-                Marketing that<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>earns attention.</em><br/>Not just impressions.
+                Marketing That<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Earns Attention.</em><br/>Not Just Impressions.
               </h1>
               <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '2.5rem', maxWidth: '44ch' }}>
                 Boutique hospitality and luxury brands don't win by outspending the competition. They win by being more precise — knowing exactly who their customer is, where to reach them, and what to say. Aperture builds the digital marketing capability to make that happen.
