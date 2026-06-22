@@ -143,9 +143,9 @@ export default function Home() {
                 alignItems: 'center',
                 justifyContent: 'center',
                 padding: '0.875rem 1.5rem',
-                background: 'transparent',
-                color: '#1C1A17',
-                border: '1px solid #1C1A17',
+                background: '#B8924A',
+                color: '#FFFFFF',
+                border: 'none',
                 fontFamily: "'Inter', sans-serif",
                 fontSize: '0.6875rem',
                 fontWeight: 600,
@@ -154,11 +154,9 @@ export default function Home() {
                 textDecoration: 'none',
                 transition: 'all 0.3s ease'
               }} onMouseEnter={(e) => {
-                (e.target as HTMLElement).style.background = '#1C1A17'
-                ;(e.target as HTMLElement).style.color = '#F0EDE6'
+                (e.target as HTMLElement).style.background = '#9a7a3e'
               }} onMouseLeave={(e) => {
-                (e.target as HTMLElement).style.background = 'transparent'
-                ;(e.target as HTMLElement).style.color = '#1C1A17'
+                (e.target as HTMLElement).style.background = '#B8924A'
               }}>
                 Learn More
               </Link>
