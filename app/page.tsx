@@ -302,18 +302,21 @@ export default function Home() {
               <p className="text-sm text-muted leading-relaxed">
                 Proven framework for driving qualified leads and traffic to your business. Data-driven targeting and conversion optimization built in.
               </p>
-              <a href="/data-intelligence" className="text-brass font-medium text-sm hover:text-brass-dim transition-colors inline-block">
+              <a href="/trafficsystem" className="text-brass font-medium text-sm hover:text-brass-dim transition-colors inline-block">
                 Learn More →
               </a>
             </div>
 
             {/* Solution 3: Workplace Kit */}
             <div className="space-y-4 p-8 border border-rule rounded-lg bg-parchment-dark hover:border-brass transition-all">
-              <h3 className="font-display text-2xl font-medium text-ink">Workplace Kit</h3>
+              <h3 className="font-display text-2xl font-medium text-ink">AI Marketing Workplace Kit</h3>
               <p className="text-sm text-muted leading-relaxed">
-                Complete toolkit for team enablement, training, and operational excellence. Scale your business without scaling complexity.
+                Get the AI Marketing Workplace Kit
               </p>
-              <a href="/contact" className="text-brass font-medium text-sm hover:text-brass-dim transition-colors inline-block">
+              <div className="text-brass font-medium text-lg">
+                FOR $1,497
+              </div>
+              <a href="/workplacekit" className="text-brass font-medium text-sm hover:text-brass-dim transition-colors inline-block">
                 Learn More →
               </a>
             </div>
