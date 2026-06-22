@@ -57,7 +57,7 @@ export default function ApertureFrameworksPage() {
 
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '5rem', alignItems: 'start', marginBottom: '4rem' }}>
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3vw, 2.75rem)', fontWeight: 300, lineHeight: 1.15, position: 'sticky', top: '5rem', margin: 0 }}>
-              Practical<br/>tools for<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>operators.</em>
+              Practical<br/>Tools For<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Operators.</em>
             </h2>
             <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#6B6760' }}>
               These frameworks are drawn from real engagements across hospitality, real estate, luxury travel, and wine & spirits. Each one addresses a specific problem operators and owners encounter when trying to grow, reposition, or create more efficient commercial operations. They're written for founders and executives, not consultants.
@@ -111,7 +111,7 @@ export default function ApertureFrameworksPage() {
                 <span style={{ fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#F0EDE6' }}>How We Think</span>
               </div>
               <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, color: '#F0EDE6', margin: 0 }}>
-                A few principles<br/>that run through<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>everything.</em>
+                A Few Principles<br/>That Run Through<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Everything.</em>
               </h2>
             </div>
             <div>
@@ -146,7 +146,7 @@ export default function ApertureFrameworksPage() {
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '4rem', flexWrap: 'wrap' }}>
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3vw, 2.75rem)', fontWeight: 300, lineHeight: 1.15, maxWidth: '22ch', margin: 0 }}>
-              Get new frameworks<br/>sent to your <em style={{ fontStyle: 'italic', color: '#B8924A' }}>inbox.</em>
+              Get New Frameworks<br/>Sent To Your <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Inbox.</em>
             </h2>
             <div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', minWidth: '360px' }}>
