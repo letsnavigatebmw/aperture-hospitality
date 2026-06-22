@@ -27,8 +27,8 @@ export default function Testimonials() {
         <div className="w-full h-px bg-rule mb-12" />
 
         {/* Testimonials Horizontal Scroll */}
-        <div className="overflow-x-auto scrollbar-hide">
-          <div className="flex gap-8 pb-4 md:pb-0 min-w-max md:min-w-full items-stretch justify-center md:justify-start">
+        <div className="w-full overflow-hidden">
+          <div className="flex gap-8 pb-4 md:pb-0 w-full items-stretch justify-center md:justify-start">
             {testimonials.map((testimonial, index) => (
               <div 
                 key={index} 
