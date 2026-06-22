@@ -312,13 +312,11 @@ export default function Home() {
             <div className="space-y-4 p-8 border border-rule rounded-lg bg-parchment-dark hover:border-brass transition-all">
               <h3 className="font-display text-2xl font-medium text-ink">AI Marketing Workplace Kit</h3>
               <p className="text-sm text-muted leading-relaxed">
-                Get the AI Marketing Workplace Kit
+                Complete toolkit for team enablement, training, and operational excellence.
               </p>
-              <div className="text-brass font-medium text-lg">
-                FOR $1,497
-              </div>
-              <a href="/workplacekit" className="text-brass font-medium text-sm hover:text-brass-dim transition-colors inline-block">
-                Learn More →
+              <a href="/workplacekit" style={{ display: 'block', textAlign: 'center', padding: '2rem 1.5rem', background: '#0066FF', color: '#FFFFFF', border: 'none', borderRadius: '16px', textDecoration: 'none', transition: 'background 0.3s', marginTop: '1.5rem', cursor: 'pointer' }} onMouseEnter={(e) => (e.currentTarget.style.background = '#0052CC')} onMouseLeave={(e) => (e.currentTarget.style.background = '#0066FF')}>
+                <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '1.25rem', fontWeight: 600, letterSpacing: '0.02em', marginBottom: '0.5rem' }}>Get the AI Marketing Workspace Kit</div>
+                <div style={{ fontSize: '0.875rem', fontWeight: 400, letterSpacing: '0.05em', textTransform: 'uppercase' }}>FOR $1,497</div>
               </a>
             </div>
           </div>
