@@ -70,10 +70,6 @@ export default function WorkplaceKitPage() {
               <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '2.5rem', maxWidth: '44ch' }}>
                 The Hospitality Marketing Workspace Kit gives your property a complete marketing operating system — so your team can build, ship, and sell without waiting on you every time.
               </p>
-              <a href="https://request.revenuefactory.com/widget/bookings/ai-employee-convo" target="_blank" rel="noopener noreferrer" style={{ display: 'block', textAlign: 'center', padding: '4rem 3rem', background: '#B8924A', color: '#FFFFFF', border: 'none', borderRadius: '0px', textDecoration: 'none', transition: 'all 0.3s', cursor: 'pointer', width: '100%', boxSizing: 'border-box' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#9a7a3e'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#B8924A'; }}>
-                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '3rem', fontWeight: 300, marginBottom: '2rem', lineHeight: 1.2 }}>Get The Workspace Kit</div>
-                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '2.5rem', fontWeight: 300, letterSpacing: '0.05em' }}>$1,497</div>
-              </a>
             </div>
 
             {/* Pricing Card */}
