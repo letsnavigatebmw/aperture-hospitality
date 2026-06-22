@@ -77,12 +77,13 @@ export default function TrafficSystemPage() {
               <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '2.5rem', maxWidth: '44ch' }}>
                 Stop depending on OTAs for your revenue. Build a simple, repeatable direct booking system in 3 days and see measurable lead flow within 30 days.
               </p>
-              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-                <a href="/contact?product=traffic-system" className="btn-brass">Launch my traffic system</a>
-                <a href="#how-it-works" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: 'transparent', color: '#F0EDE6', border: '1px solid #4a4845', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none' }}>
-                  See how it works
-                </a>
-              </div>
+              <a href="/contact?product=traffic-system" style={{ display: 'block', textAlign: 'center', padding: '2.5rem 2rem', background: '#1C1A17', color: '#F0EDE6', border: '2.5px solid #B8924A', borderRadius: '20px', textDecoration: 'none', transition: 'all 0.3s', cursor: 'pointer', marginBottom: '1rem' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#2e2b26'; e.currentTarget.style.borderColor = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#1C1A17'; e.currentTarget.style.borderColor = '#B8924A'; }}>
+                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '2rem', fontWeight: 300, marginBottom: '0.5rem' }}>Launch My Traffic System</div>
+                <div style={{ fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.15em', textTransform: 'uppercase' }}>FOR $500/MO</div>
+              </a>
+              <a href="#how-it-works" style={{ display: 'block', textAlign: 'center', padding: '2.5rem 2rem', background: '#1C1A17', color: '#F0EDE6', border: '2.5px solid #B8924A', borderRadius: '20px', textDecoration: 'none', transition: 'all 0.3s', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#2e2b26'; e.currentTarget.style.borderColor = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#1C1A17'; e.currentTarget.style.borderColor = '#B8924A'; }}>
+                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '2rem', fontWeight: 300, marginBottom: '0.5rem' }}>See How It Works</div>
+              </a>
             </div>
 
             {/* Pricing Card */}
@@ -109,7 +110,10 @@ export default function TrafficSystemPage() {
                 ))}
               </ul>
 
-              <a href="/contact?product=traffic-system" className="btn-brass" style={{ width: '100%', display: 'flex' }}>Launch my traffic system</a>
+              <a href="/contact?product=traffic-system" style={{ display: 'block', textAlign: 'center', padding: '2rem 1.5rem', background: '#1C1A17', color: '#F0EDE6', border: '2.5px solid #B8924A', borderRadius: '16px', textDecoration: 'none', transition: 'all 0.3s', marginBottom: '1rem', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#2e2b26'; e.currentTarget.style.borderColor = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#1C1A17'; e.currentTarget.style.borderColor = '#B8924A'; }}>
+                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5rem', fontWeight: 300, marginBottom: '0.25rem' }}>Launch My Traffic System</div>
+                <div style={{ fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase' }}>$500/MONTH</div>
+              </a>
               <p style={{ fontSize: '0.6875rem', fontWeight: 300, color: 'var(--muted)', marginTop: '1rem', lineHeight: 1.5, textAlign: 'center' }}>
                 Time to launch: 3 working days · Primary metric: direct bookings
               </p>
@@ -243,10 +247,11 @@ export default function TrafficSystemPage() {
               <div style={{ fontSize: '0.8125rem', fontWeight: 300, color: 'var(--muted)', marginBottom: '2rem', paddingBottom: '2rem', borderBottom: '1px solid var(--dark2)' }}>
                 + media spend & one-time setup
               </div>
-              <a href="/contact?product=traffic-system" className="btn-brass" style={{ width: '100%', display: 'flex', marginBottom: '0.875rem' }}>
-                Launch my traffic system
+              <a href="/contact?product=traffic-system" style={{ display: 'block', textAlign: 'center', padding: '2rem 1.5rem', background: '#1C1A17', color: '#F0EDE6', border: '2.5px solid #B8924A', borderRadius: '16px', textDecoration: 'none', transition: 'all 0.3s', marginBottom: '1rem', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#2e2b26'; e.currentTarget.style.borderColor = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#1C1A17'; e.currentTarget.style.borderColor = '#B8924A'; }}>
+                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5rem', fontWeight: 300, marginBottom: '0.25rem' }}>Launch My Traffic System</div>
+                <div style={{ fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase' }}>$500/MONTH</div>
               </a>
-              <a href="/contact" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '100%', padding: '0.875rem 2.25rem', background: 'transparent', color: '#F0EDE6', border: '1px solid #4a4845', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none' }}>
+              <a href="/contact" style={{ display: 'block', textAlign: 'center', padding: '1.5rem 1.5rem', background: 'transparent', color: '#F0EDE6', border: '1px solid #4a4845', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#2e2b26'; e.currentTarget.style.borderColor = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.borderColor = '#4a4845'; }}>
                 Talk to Brandon first
               </a>
             </div>

@@ -71,10 +71,13 @@ export default function WorkplaceKitPage() {
                 The Hospitality Marketing Workspace Kit gives your property a complete marketing operating system — so your team can build, ship, and sell without waiting on you every time.
               </p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-                <a href="/contact?product=workspace-kit" className="btn-brass">Get the workspace kit — $1,497</a>
-                <a href="#whats-inside" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: 'transparent', color: '#F0EDE6', border: '1px solid #4a4845', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none' }}>
-                  See what's inside
-                </a>
+                <a href="/contact?product=workspace-kit" style={{ display: 'block', textAlign: 'center', padding: '2.5rem 2rem', background: '#1C1A17', color: '#F0EDE6', border: '2.5px solid #B8924A', borderRadius: '20px', textDecoration: 'none', transition: 'all 0.3s', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#2e2b26'; e.currentTarget.style.borderColor = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#1C1A17'; e.currentTarget.style.borderColor = '#B8924A'; }}>
+                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '2rem', fontWeight: 300, marginBottom: '0.5rem' }}>Get The Workspace Kit</div>
+                <div style={{ fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.15em', textTransform: 'uppercase' }}>FOR $1,497</div>
+              </a>
+                <a href="#whats-inside" style={{ display: 'block', textAlign: 'center', padding: '2.5rem 2rem', background: '#1C1A17', color: '#F0EDE6', border: '2.5px solid #B8924A', borderRadius: '20px', textDecoration: 'none', transition: 'all 0.3s', cursor: 'pointer', marginTop: '1rem' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#2e2b26'; e.currentTarget.style.borderColor = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#1C1A17'; e.currentTarget.style.borderColor = '#B8924A'; }}>
+                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '2rem', fontWeight: 300, marginBottom: '0.5rem' }}>See What's Inside</div>
+              </a>
               </div>
             </div>
 
@@ -95,8 +98,11 @@ export default function WorkplaceKitPage() {
                 ))}
               </ul>
 
-              <a href="/contact?product=workspace-kit" className="btn-brass" style={{ width: '100%', display: 'flex', marginBottom: '1rem' }}>Get the workspace kit for $1,497</a>
-              <a href="/contact?product=foundation-library" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: 'transparent', color: 'var(--muted)', border: '1px solid var(--dark2)', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none' }}>
+              <a href="/contact?product=workspace-kit" style={{ display: 'block', textAlign: 'center', padding: '2rem 1.5rem', background: '#1C1A17', color: '#F0EDE6', border: '2.5px solid #B8924A', borderRadius: '16px', textDecoration: 'none', transition: 'all 0.3s', marginBottom: '1rem', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#2e2b26'; e.currentTarget.style.borderColor = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#1C1A17'; e.currentTarget.style.borderColor = '#B8924A'; }}>
+                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5rem', fontWeight: 300, marginBottom: '0.25rem' }}>Get The Workspace Kit</div>
+                <div style={{ fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase' }}>$1,497</div>
+              </a>
+              <a href="/contact?product=foundation-library" style={{ display: 'block', textAlign: 'center', padding: '1.5rem 1.5rem', background: 'transparent', color: 'var(--muted)', border: '1px solid var(--dark2)', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = 'var(--dark2)'; e.currentTarget.style.color = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = 'var(--muted)'; }}>
                 Start with Foundation Library only — $297
               </a>
             </div>
@@ -238,8 +244,11 @@ export default function WorkplaceKitPage() {
               <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--brass)', marginBottom: '1.5rem' }}>Hospitality Marketing Workspace Kit</div>
               <div style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: '3rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1, marginBottom: '0.25rem' }}>$1,497</div>
               <div style={{ fontSize: '0.8125rem', fontWeight: 300, color: 'var(--muted)', marginBottom: '2rem', paddingBottom: '2rem', borderBottom: '1px solid var(--dark2)' }}>One-time setup fee. No subscription. No monthly retainer.</div>
-              <a href="/contact?product=workspace-kit" className="btn-brass" style={{ width: '100%', display: 'flex', marginBottom: '0.875rem' }}>Get the workspace kit for $1,497</a>
-              <a href="/contact?product=foundation-library" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: 'transparent', color: 'var(--muted)', border: '1px solid var(--dark2)', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none' }}>
+              <a href="/contact?product=workspace-kit" style={{ display: 'block', textAlign: 'center', padding: '2rem 1.5rem', background: '#1C1A17', color: '#F0EDE6', border: '2.5px solid #B8924A', borderRadius: '16px', textDecoration: 'none', transition: 'all 0.3s', marginBottom: '1rem', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#2e2b26'; e.currentTarget.style.borderColor = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#1C1A17'; e.currentTarget.style.borderColor = '#B8924A'; }}>
+                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5rem', fontWeight: 300, marginBottom: '0.25rem' }}>Get The Workspace Kit</div>
+                <div style={{ fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase' }}>$1,497</div>
+              </a>
+              <a href="/contact?product=foundation-library" style={{ display: 'block', textAlign: 'center', padding: '1.5rem 1.5rem', background: 'transparent', color: 'var(--muted)', border: '1px solid var(--dark2)', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = 'var(--dark2)'; e.currentTarget.style.color = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = 'var(--muted)'; }}>
                 Start with Foundation Library only — $297
               </a>
             </div>
