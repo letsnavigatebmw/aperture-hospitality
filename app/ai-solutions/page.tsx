@@ -34,7 +34,7 @@ export default function AISolutionsPage() {
             <div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#F0EDE6', marginBottom: '2rem' }}>
                 <div style={{ width: '2px', height: '1.25rem', background: '#B8924A', flexShrink: 0 }}></div>
-                AI Solutions for Hospitality & Luxury Brands
+                AI Solutions for Small Business Owners and Boutique Luxury Brands
               </div>
               <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(3rem, 5.5vw, 5rem)', fontWeight: 300, lineHeight: 1.06, color: '#F0EDE6', marginBottom: '1.75rem' }}>
                 Win Back Revenue<br/>Lost To <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Missed<br/>Conversations.</em>
