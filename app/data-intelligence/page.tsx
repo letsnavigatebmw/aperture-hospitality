@@ -149,7 +149,7 @@ export default function DataIntelligencePage() {
                 fontWeight: 300, lineHeight: 1.15,
                 color: '#1C1A17',
               }}>
-                Property intelligence<br/>built for how<br/>operators <em style={{ fontStyle: 'italic', color: '#B8924A' }}>actually work.</em>
+                Property Intelligence<br/>Built For How<br/>Operators <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Actually Work.</em>
               </h2>
 
             </div>
