@@ -279,54 +279,61 @@ export default function Home() {
         </div>
       </div>
 
-      {/* OFF THE SHELF SOLUTIONS */}
-      <section className="border-b border-rule">
-        <div className="container-max py-16 md:py-24">
-          <div className="mb-12">
-            <div className="section-label">Off The Shelf Solutions</div>
-            <h2 className="font-display text-4xl md:text-5xl font-light mb-6 text-ink">
-              Marketing Solutions <em className="italic">Ready to Deploy</em>
-            </h2>
+      {/* AI SOLUTIONS SUITE */}
+      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', background: '#F0EDE6', borderBottom: '1px solid #D4CFC6' }}>
+        <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
+          
+          {/* Section label */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '3rem' }}>
+            <div style={{ width: '2px', height: '1.25rem', background: '#B8924A', flexShrink: 0 }}></div>
+            <span style={{ fontFamily: "'Inter',sans-serif", fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#6B6760' }}>AI Solutions Suite</span>
           </div>
 
-          <div className="w-full h-px bg-rule mb-12" />
+          {/* Cards grid */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem' }}>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Solution 1: AI Employee */}
-            <div className="space-y-4 p-8 border border-rule rounded-lg bg-parchment-dark hover:border-brass transition-all">
-              <h3 className="font-display text-2xl font-medium text-ink">AI Employee</h3>
-              <p className="text-sm text-muted leading-relaxed">
-                24/7 automated voice, chat, and review responses. Handle missed calls, conversations, and reputation management without adding headcount.
-              </p>
-              <a href="tel:786-706-8231" style={{ display: 'block', textAlign: 'center', padding: '1.5rem', background: '#1C1A17', color: '#F0EDE6', border: '2px solid #B8924A', borderRadius: '12px', textDecoration: 'none', transition: 'all 0.3s', marginTop: '1.5rem', cursor: 'pointer', width: '100%', boxSizing: 'border-box' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#B8924A'; e.currentTarget.style.color = '#1C1A17'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#1C1A17'; e.currentTarget.style.color = '#F0EDE6'; }}>
-                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.75rem', fontWeight: 300, marginBottom: '0.25rem' }}>Try Now</div>
+            {/* CARD 1: AI Employee */}
+            <div style={{ background: '#FFFFFF', border: '1.5px solid #B8924A', borderRadius: '8px', padding: '2rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: '400px' }}>
+              <div>
+                <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.75rem', fontWeight: 300, color: '#1C1A17', marginBottom: '1rem' }}>AI Employee</h3>
+                <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760' }}>
+                  24/7 automated voice, chat, and review responses. Handle missed calls, conversations, and reputation management without adding headcount.
+                </p>
+              </div>
+              <a href="tel:786-706-8231" style={{ display: 'block', textAlign: 'center', padding: '2rem', background: '#1C1A17', color: '#F0EDE6', border: '2px solid #B8924A', borderRadius: '12px', textDecoration: 'none', transition: 'all 0.3s', cursor: 'pointer', marginTop: '2rem' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#B8924A'; e.currentTarget.style.color = '#1C1A17'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#1C1A17'; e.currentTarget.style.color = '#F0EDE6'; }}>
+                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.75rem', fontWeight: 300, marginBottom: '0.5rem' }}>Try Now</div>
                 <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.15em', textTransform: 'uppercase' }}>Click, Call, Or Text 786-706-8231</div>
               </a>
             </div>
 
-            {/* Solution 2: Traffic System */}
-            <div className="space-y-4 p-8 border border-rule rounded-lg bg-parchment-dark hover:border-brass transition-all">
-              <h3 className="font-display text-2xl font-medium text-ink">Traffic System</h3>
-              <p className="text-sm text-muted leading-relaxed">
-                Proven framework for driving qualified leads and traffic to your business. Data-driven targeting and conversion optimization built in.
-              </p>
-              <a href="/trafficsystem" style={{ display: 'block', textAlign: 'center', padding: '1.5rem', background: '#B8924A', color: '#FFFFFF', border: 'none', borderRadius: '12px', textDecoration: 'none', transition: 'all 0.3s', marginTop: '1.5rem', cursor: 'pointer', width: '100%', boxSizing: 'border-box' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#9a7a3e'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#B8924A'; }}>
-                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.75rem', fontWeight: 300, marginBottom: '0.25rem' }}>Launch My Lead</div>
-                <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.15em', textTransform: 'uppercase' }}>Acquisition Machine →</div>
+            {/* CARD 2: Traffic System */}
+            <div style={{ background: '#FFFFFF', border: '1.5px solid #D4CFC6', borderRadius: '8px', padding: '2rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: '400px' }}>
+              <div>
+                <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.75rem', fontWeight: 300, color: '#1C1A17', marginBottom: '1rem' }}>Traffic System</h3>
+                <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760' }}>
+                  Proven framework for driving qualified leads and traffic to your business. Data-driven targeting and conversion optimization built in.
+                </p>
+              </div>
+              <a href="/trafficsystem" style={{ display: 'block', textAlign: 'center', padding: '2rem', background: '#B8924A', color: '#FFFFFF', border: 'none', borderRadius: '8px', textDecoration: 'none', transition: 'all 0.3s', cursor: 'pointer', marginTop: '2rem' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#9a7a3e'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#B8924A'; }}>
+                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5rem', fontWeight: 300, marginBottom: '0.5rem', color: '#FFFFFF' }}>Launch My Lead</div>
+                <div style={{ fontSize: '0.75rem', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#FFFFFF' }}>Acquisition Machine →</div>
               </a>
             </div>
 
-            {/* Solution 3: Workplace Kit */}
-            <div className="space-y-4 p-8 border border-rule rounded-lg bg-parchment-dark hover:border-brass transition-all">
-              <h3 className="font-display text-2xl font-medium text-ink">AI Marketing Workplace Kit</h3>
-              <p className="text-sm text-muted leading-relaxed">
-                Complete toolkit for team enablement, training, and operational excellence.
-              </p>
-              <a href="/workplacekit" style={{ display: 'block', textAlign: 'center', padding: '2rem 1.5rem', background: '#B8924A', color: '#FFFFFF', border: 'none', borderRadius: '0px', textDecoration: 'none', transition: 'all 0.3s', marginTop: '1.5rem', cursor: 'pointer', width: '100%', boxSizing: 'border-box' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#9a7a3e'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#B8924A'; }}>
-                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '2rem', fontWeight: 300, marginBottom: '1rem', lineHeight: 1.2 }}>Get The Workspace Kit</div>
-                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5rem', fontWeight: 300, letterSpacing: '0.05em' }}>$1,497</div>
+            {/* CARD 3: Workspace Kit */}
+            <div style={{ background: '#FFFFFF', border: '1.5px solid #D4CFC6', borderRadius: '8px', padding: '2rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: '400px' }}>
+              <div>
+                <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.75rem', fontWeight: 300, color: '#1C1A17', marginBottom: '1rem' }}>AI Marketing Workspace Kit</h3>
+                <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760' }}>
+                  Complete toolkit for team enablement, training, and operational excellence.
+                </p>
+              </div>
+              <a href="/workplacekit" style={{ display: 'block', textAlign: 'center', padding: '2rem', background: '#B8924A', color: '#FFFFFF', border: 'none', borderRadius: '8px', textDecoration: 'none', transition: 'all 0.3s', cursor: 'pointer', marginTop: '2rem' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#9a7a3e'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#B8924A'; }}>
+                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5rem', fontWeight: 300, marginBottom: '0.5rem', color: '#FFFFFF' }}>Get The Workspace Kit</div>
+                <div style={{ fontSize: '1rem', fontWeight: 300, color: '#FFFFFF' }}>$1,497</div>
               </a>
             </div>
+
           </div>
         </div>
       </section>
