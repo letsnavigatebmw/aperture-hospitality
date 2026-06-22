@@ -334,7 +334,7 @@ export default function HowWeWorkPage() {
             </p>
 
             {/* CTA Link */}
-            <a href="/ApertureFrameworks" style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.875rem', fontWeight: 500, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#B8924A', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', borderBottom: '1px solid #B8924A', paddingBottom: '4px', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.currentTarget.style.color = '#F0EDE6'; e.currentTarget.style.borderBottomColor = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.color = '#B8924A'; e.currentTarget.style.borderBottomColor = '#B8924A'; }}>
+            <a href="/apertureframeworks" style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.875rem', fontWeight: 500, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#B8924A', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', borderBottom: '1px solid #B8924A', paddingBottom: '4px', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.currentTarget.style.color = '#F0EDE6'; e.currentTarget.style.borderBottomColor = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.color = '#B8924A'; e.currentTarget.style.borderBottomColor = '#B8924A'; }}>
               Explore Aperture's Revenue Frameworks →
             </a>
           </div>
