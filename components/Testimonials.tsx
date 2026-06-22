@@ -28,11 +28,10 @@ export default function Testimonials() {
 
         {/* Testimonials Horizontal Scroll */}
         <div className="overflow-x-auto scrollbar-hide">
-          <div className="flex gap-8 pb-4 min-w-max md:min-w-full items-start">
+          <div className="flex gap-8 pb-4 min-w-max md:min-w-full items-stretch">
             {testimonials.map((testimonial, index) => (
               <div 
                 key={index} 
-                style={{ minHeight: 'auto', maxHeight: 'none', height: 'auto' }}
                 className="flex-shrink-0 w-full md:w-1/2 space-y-6 p-8 border border-rule rounded-lg bg-parchment-dark hover:border-brass transition-all flex flex-col"
               >
                 {/* Quote */}
