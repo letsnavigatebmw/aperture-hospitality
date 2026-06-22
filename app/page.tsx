@@ -314,7 +314,7 @@ export default function Home() {
               <p className="text-sm text-muted leading-relaxed">
                 Complete toolkit for team enablement, training, and operational excellence.
               </p>
-              <a href="/workplacekit" style={{ display: 'block', textAlign: 'center', padding: '1.5rem', background: '#1C1A17', color: '#F0EDE6', border: '2px solid #B8924A', borderRadius: '12px', textDecoration: 'none', transition: 'all 0.3s', marginTop: '1.5rem', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#B8924A'; e.currentTarget.style.color = '#1C1A17'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#1C1A17'; e.currentTarget.style.color = '#F0EDE6'; }}>
+              <a href="/workplacekit" style={{ display: 'block', textAlign: 'center', padding: '1.5rem', background: '#B8924A', color: '#FFFFFF', border: 'none', borderRadius: '0px', textDecoration: 'none', transition: 'all 0.3s', marginTop: '1.5rem', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#9a7a3e'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#B8924A'; }}>
                 <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.75rem', fontWeight: 300, marginBottom: '0.25rem' }}>Get The AI Marketing Workspace Kit</div>
                 <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.15em', textTransform: 'uppercase' }}>FOR $1,497</div>
               </a>
