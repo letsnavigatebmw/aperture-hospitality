@@ -289,7 +289,7 @@ export default function DataIntelligencePage() {
                 Data & Intelligence
               </div>
               <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, color: '#F0EDE6' }}>
-                Three types of data.<br/>One <em style={{ fontStyle: 'italic', color: '#B8924A' }}>unified view.</em>
+                Three Types Of Data.<br/>One <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Unified View.</em>
               </h2>
             </div>
             <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6' }}>
