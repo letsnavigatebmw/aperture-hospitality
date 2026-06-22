@@ -96,7 +96,7 @@ export default function AISolutionsPage() {
                 The Problem
               </div>
               <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, marginBottom: '1.5rem' }}>
-                Your Business Runs On<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Conversations.</em><br/>You're Missing Them.
+                Your Business Runs<br/>On <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Conversations.</em><br/>You're Missing Them.
               </h2>
             </div>
             <div>
