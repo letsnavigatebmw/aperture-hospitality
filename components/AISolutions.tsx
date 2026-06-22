@@ -87,7 +87,7 @@ export default function AISolutions() {
           (e.target as HTMLElement).style.color = '#B8924A'
           ;(e.target as HTMLElement).style.borderBottomColor = '#B8924A'
         }}>
-          Explore AI Solutions →
+          Explore Aperture's AI Solutions →
         </Link>
 
       </div>
