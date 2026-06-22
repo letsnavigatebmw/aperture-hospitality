@@ -313,9 +313,9 @@ export default function Home() {
               <p className="text-sm text-muted leading-relaxed">
                 Complete toolkit for team enablement, training, and operational excellence.
               </p>
-              <a href="/workplacekit" style={{ display: 'block', textAlign: 'center', padding: '1.5rem', background: '#B8924A', color: '#FFFFFF', border: 'none', borderRadius: '12px', textDecoration: 'none', transition: 'all 0.3s', marginTop: '1.5rem', cursor: 'pointer', width: '100%', boxSizing: 'border-box' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#9a7a3e'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#B8924A'; }}>
-                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.75rem', fontWeight: 300, marginBottom: '0.25rem', lineHeight: 1.2 }}>Get The AI Marketing Workspace Kit</div>
-                <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.15em', textTransform: 'uppercase' }}>For $1,497</div>
+              <a href="/workplacekit" style={{ display: 'block', textAlign: 'center', padding: '2rem 1.5rem', background: '#B8924A', color: '#FFFFFF', border: 'none', borderRadius: '0px', textDecoration: 'none', transition: 'all 0.3s', marginTop: '1.5rem', cursor: 'pointer', width: '100%', boxSizing: 'border-box' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#9a7a3e'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#B8924A'; }}>
+                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '2rem', fontWeight: 300, marginBottom: '1rem', lineHeight: 1.2 }}>Get The Workspace Kit</div>
+                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5rem', fontWeight: 300, letterSpacing: '0.05em' }}>$1,497</div>
               </a>
             </div>
           </div>
