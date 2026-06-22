@@ -272,6 +272,55 @@ export default function Home() {
         </div>
       </div>
 
+      {/* OFF THE SHELF SOLUTIONS */}
+      <section className="border-b border-rule">
+        <div className="container-max py-16 md:py-24">
+          <div className="mb-12">
+            <div className="section-label">Off The Shelf Solutions</div>
+            <h2 className="font-display text-4xl md:text-5xl font-light mb-6 text-ink">
+              Marketing Solutions <em className="italic">Ready to Deploy</em>
+            </h2>
+          </div>
+
+          <div className="w-full h-px bg-rule mb-12" />
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Solution 1: AI Employee */}
+            <div className="space-y-4 p-8 border border-rule rounded-lg bg-parchment-dark hover:border-brass transition-all">
+              <h3 className="font-display text-2xl font-medium text-ink">AI Employee</h3>
+              <p className="text-sm text-muted leading-relaxed">
+                24/7 automated voice, chat, and review responses. Handle missed calls, conversations, and reputation management without adding headcount.
+              </p>
+              <a href="/ai-solutions" className="text-brass font-medium text-sm hover:text-brass-dim transition-colors inline-block">
+                Learn More →
+              </a>
+            </div>
+
+            {/* Solution 2: Traffic System */}
+            <div className="space-y-4 p-8 border border-rule rounded-lg bg-parchment-dark hover:border-brass transition-all">
+              <h3 className="font-display text-2xl font-medium text-ink">Traffic System</h3>
+              <p className="text-sm text-muted leading-relaxed">
+                Proven framework for driving qualified leads and traffic to your business. Data-driven targeting and conversion optimization built in.
+              </p>
+              <a href="/data-intelligence" className="text-brass font-medium text-sm hover:text-brass-dim transition-colors inline-block">
+                Learn More →
+              </a>
+            </div>
+
+            {/* Solution 3: Workplace Kit */}
+            <div className="space-y-4 p-8 border border-rule rounded-lg bg-parchment-dark hover:border-brass transition-all">
+              <h3 className="font-display text-2xl font-medium text-ink">Workplace Kit</h3>
+              <p className="text-sm text-muted leading-relaxed">
+                Complete toolkit for team enablement, training, and operational excellence. Scale your business without scaling complexity.
+              </p>
+              <a href="/contact" className="text-brass font-medium text-sm hover:text-brass-dim transition-colors inline-block">
+                Learn More →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CONTACT FORM */}
       <IntakeForm />
 
