@@ -76,7 +76,7 @@ export default function SolutionsPage() {
                 color: '#F0EDE6',
                 marginBottom: 0
               }}>
-                Transparent pricing. No scoping call required. Get started today.
+                Transparent Pricing. No Scoping Call Required. Get Started Today.
               </p>
             </div>
           </div>

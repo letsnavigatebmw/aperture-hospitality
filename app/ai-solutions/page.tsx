@@ -224,7 +224,7 @@ export default function AISolutionsPage() {
                 Pricing
               </div>
               <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15 }}>
-                Transparent pricing.<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>No surprises.</em>
+                Transparent Pricing.<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>No Surprises.</em>
               </h2>
             </div>
             <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#6B6760' }}>
