@@ -278,6 +278,53 @@ export default function AISolutionsPage() {
         </div>
       </section>
 
+      {/* AI MARKETING WORKSPACE KIT */}
+      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #2e2b26' }}>
+        <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'center' }}>
+            <div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#F0EDE6', marginBottom: '2rem' }}>
+                <span style={{ width: '2px', height: '1.25rem', background: '#B8924A', display: 'block' }}></span>
+                Ready to Install the Fix?
+              </div>
+              <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, color: '#F0EDE6', marginBottom: '1.5rem' }}>
+                Stop rebuilding from scratch. Start<br/>running a <em style={{ fontStyle: 'italic', color: '#B8924A' }}>system.</em>
+              </h2>
+              <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '1.5rem' }}>
+                Every week you operate without a marketing foundation, the leak gets bigger. Standards stay in your head. New content starts from zero. AI tools produce output that sounds like everyone else's property. Team members guess. Deals slip through because the follow-up copy wasn't ready.
+              </p>
+              <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '1.5rem' }}>
+                <strong style={{ fontWeight: 400 }}>The AI Marketing Workspace Kit fixes the foundation — one time.</strong>
+              </p>
+              <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#B8924A' }}>
+                One AI. One workspace. One operating system for every piece of marketing you ship.
+              </p>
+            </div>
+
+            <div style={{ background: '#2e2b26', border: '1px solid #3a3733', padding: '3rem', borderRadius: '16px' }}>
+              <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.875rem', fontWeight: 300, color: '#F0EDE6', marginBottom: '1.5rem', lineHeight: 1.2 }}>AI Marketing Workspace Kit</h3>
+              
+              <a href="/workplacekit" style={{ display: 'block', textAlign: 'center', padding: '2rem 1.5rem', background: '#0066FF', color: '#FFFFFF', border: 'none', borderRadius: '12px', textDecoration: 'none', transition: 'background 0.3s', marginBottom: '1rem', cursor: 'pointer' }} onMouseEnter={(e) => (e.currentTarget.style.background = '#0052CC')} onMouseLeave={(e) => (e.currentTarget.style.background = '#0066FF')}>
+                <div style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '0.25rem' }}>Interested in the AI Marketing Workspace Kit</div>
+                <div style={{ fontSize: '0.75rem', fontWeight: 400, letterSpacing: '0.05em', marginTop: '0.5rem' }}>FOR $1,497</div>
+              </a>
+
+              <p style={{ fontSize: '0.8125rem', fontWeight: 300, color: '#6B6760', marginBottom: '2rem', paddingBottom: '2rem', borderBottom: '1px solid #3a3733' }}>
+                One-time setup fee. No subscription. No monthly retainer.
+              </p>
+
+              <a href="/workplacekit" style={{ display: 'block', textAlign: 'center', padding: '1.5rem 1.5rem', background: 'transparent', color: '#F0EDE6', border: '1px solid #4a4845', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#3a3733'; }} onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; }}>
+                Want to start with the foundation only?
+              </a>
+
+              <p style={{ fontSize: '0.75rem', fontWeight: 300, color: '#6B6760', marginTop: '1rem' }}>
+                Get the Reference Library Builder Set — $297
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #2e2b26' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
