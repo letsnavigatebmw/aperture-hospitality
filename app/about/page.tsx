@@ -118,7 +118,7 @@ export default function About() {
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, marginBottom: '1rem', color: '#F0EDE6' }}>
               What I <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Do</em>
             </h2>
-            <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.75, color: '#6B6760', maxWidth: '600px' }}>
+            <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.75, color: '#F0EDE6', maxWidth: '600px' }}>
               The core competencies that drive growth, operational excellence, and sustainable value creation.
             </p>
           </div>
@@ -130,7 +130,7 @@ export default function About() {
               <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.375rem', fontWeight: 300, color: '#F0EDE6', marginBottom: '1rem', lineHeight: 1.2 }}>
                 P&L Management
               </h3>
-              <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.6, color: '#6B6760' }}>
+              <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.6, color: '#F0EDE6' }}>
                 Full P&L ownership across pricing strategy, unit economics, and financial modeling. Reduced data enrichment costs by 25% through vendor negotiation and demand-based optimization.
               </p>
             </div>
@@ -140,7 +140,7 @@ export default function About() {
               <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.375rem', fontWeight: 300, color: '#F0EDE6', marginBottom: '1rem', lineHeight: 1.2 }}>
                 Go-to-Market Strategy
               </h3>
-              <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.6, color: '#6B6760' }}>
+              <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.6, color: '#F0EDE6' }}>
                 GTM execution, demand generation, and sales leadership. Built Compass partnership driving +75% trial participation and 90% trial-to-paid conversion.
               </p>
             </div>
@@ -150,7 +150,7 @@ export default function About() {
               <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.375rem', fontWeight: 300, color: '#F0EDE6', marginBottom: '1rem', lineHeight: 1.2 }}>
                 Operating Model Design
               </h3>
-              <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.6, color: '#6B6760' }}>
+              <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.6, color: '#F0EDE6' }}>
                 Re-architected sales organizations, supply portfolios, and cross-functional workflows to align inventory with demand and improve execution.
               </p>
             </div>
@@ -160,7 +160,7 @@ export default function About() {
               <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.375rem', fontWeight: 300, color: '#F0EDE6', marginBottom: '1rem', lineHeight: 1.2 }}>
                 Team Building
               </h3>
-              <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.6, color: '#6B6760' }}>
+              <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.6, color: '#F0EDE6' }}>
                 Led organizations from 20 to 65 people across Sales, Marketing, Operations, and Client Services. Recognized for sales leadership and performance management.
               </p>
             </div>
@@ -170,7 +170,7 @@ export default function About() {
               <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.375rem', fontWeight: 300, color: '#F0EDE6', marginBottom: '1rem', lineHeight: 1.2 }}>
                 Data Strategy
               </h3>
-              <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.6, color: '#6B6760' }}>
+              <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.6, color: '#F0EDE6' }}>
                 Architect data-driven business models by integrating customer, property, behavioral, and market intelligence into scalable operating systems. Leveraged analytics, automation, and predictive insights to improve targeting, optimize performance, and uncover new revenue opportunities.
               </p>
             </div>
@@ -180,7 +180,7 @@ export default function About() {
               <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.375rem', fontWeight: 300, color: '#F0EDE6', marginBottom: '1rem', lineHeight: 1.2 }}>
                 Leadership Coaching
               </h3>
-              <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.6, color: '#6B6760' }}>
+              <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.6, color: '#F0EDE6' }}>
                 Coached executives and commercial teams through growth, restructuring, and business transformation. Built leadership capabilities, performance frameworks, and accountability systems that improved execution, strengthened culture, and accelerated individual and organizational performance.
               </p>
             </div>
@@ -200,7 +200,7 @@ export default function About() {
               <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '3.5rem', fontWeight: 300, color: '#B8924A', marginBottom: '1rem' }}>
                 8+
               </div>
-              <p style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#6B6760' }}>
+              <p style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#F0EDE6' }}>
                 B2C & B2B Brands Launched & Scaled
               </p>
             </div>
@@ -210,7 +210,7 @@ export default function About() {
               <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '3.5rem', fontWeight: 300, color: '#B8924A', marginBottom: '1rem' }}>
                 $10M+
               </div>
-              <p style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#6B6760' }}>
+              <p style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#F0EDE6' }}>
                 Capital Raised Across Ventures
               </p>
             </div>
@@ -220,7 +220,7 @@ export default function About() {
               <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '3.5rem', fontWeight: 300, color: '#B8924A', marginBottom: '1rem' }}>
                 20+
               </div>
-              <p style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#6B6760' }}>
+              <p style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#F0EDE6' }}>
                 Years Working Across FMCG, Hospitality, Real Estate, Finance and Technology
               </p>
             </div>
@@ -230,7 +230,7 @@ export default function About() {
               <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '3.5rem', fontWeight: 300, color: '#B8924A', marginBottom: '1rem' }}>
                 $750M+
               </div>
-              <p style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#6B6760' }}>
+              <p style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#F0EDE6' }}>
                 P&L Management
               </p>
             </div>
