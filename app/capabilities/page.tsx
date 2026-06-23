@@ -436,6 +436,17 @@ export default function CapabilitiesPage() {
                   'Provide marketing support and training to wholesale partners',
                   'Track and maximize revenue from wholesale and partner channels'
                 ]
+              },
+              {
+                type: 'Real Estate',
+                name: 'Growth, Positioning & Client Acquisition',
+                challenges: [
+                  'Build a predictable prospecting engine that creates a consistent flow of opportunities',
+                  'Differentiate your value proposition in a crowded and highly competitive market',
+                  'Develop marketing and channel strategies that generate awareness, trust, and referrals',
+                  'Create a personal brand that extends beyond transactions and drives long-term loyalty',
+                  'Measure prospecting performance based on appointments, listings, and revenue—not activity alone'
+                ]
               }
             ].map((audience, i) => (
               <div key={i} style={{ padding: 0 }}>
