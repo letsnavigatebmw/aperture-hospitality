@@ -313,7 +313,7 @@ export default function CapabilitiesPage() {
               { label: 'Search & Advertising', name: 'SEO & Paid Media', examples: 'SEMrush, Moz, Google Ads Manager — used to manage organic search performance and paid campaign efficiency across search and social platforms.' },
               { label: 'Email & Automation', name: 'Marketing Automation', examples: 'Klaviyo, Mailchimp, or HubSpot Marketing — configured for automated, personalized guest communication at every stage of the customer lifecycle.' }
             ].map((item, i) => (
-              <div key={i} style={{ padding: '2.5rem 2rem 2.5rem 0', borderRight: i < 3 ? '2px solid #B8924A' : 'none' }}>
+              <div key={i} style={{ padding: '2.5rem 2rem 2.5rem 0' }}>
                 <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1rem' }}>
                   {item.label}
                 </div>
@@ -346,7 +346,7 @@ export default function CapabilitiesPage() {
               { num: '03', title: 'Build & deploy', desc: "We configure the platforms, build the campaigns, and set up the measurement infrastructure - so you are not handed a strategy deck with no execution path." },
               { num: '04', title: 'Measure & optimize', desc: "Every engagement includes a reporting cadence so you can see what is working, what to double down on, and what to cut - without guessing." }
             ].map((step, i) => (
-              <div key={i} style={{ padding: '2.5rem 2rem 2.5rem 0', borderRight: i < 3 ? '2px solid #B8924A' : 'none' }}>
+              <div key={i} style={{ padding: '2.5rem 2rem 2.5rem 0' }}>
                 <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1.25rem' }}>
                   {step.num}
                 </div>
@@ -478,9 +478,9 @@ export default function CapabilitiesPage() {
               When you're ready, here's <em style={{ fontStyle: 'italic', color: '#B8924A' }}>how we can help.</em>
             </h2>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem' }}>
               {/* Option 1 */}
-              <div style={{ paddingRight: '2.5rem', borderRight: '2px solid #B8924A' }}>
+              <div style={{ paddingRight: '0' }}>
                 <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '0.625rem' }}>
                   Free · 1 Hour
                 </div>
@@ -496,7 +496,7 @@ export default function CapabilitiesPage() {
               </div>
 
               {/* Option 2 */}
-              <div style={{ paddingLeft: '2.5rem' }}>
+              <div style={{ paddingLeft: '0' }}>
                 <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '0.625rem' }}>
                   Engagement
                 </div>
