@@ -28,6 +28,11 @@ export default function Footer() {
               LinkedIn
             </a>
           </li>
+          <li>
+            <a href="https://substack.com/@expandyouraperture" target="_blank" rel="noopener noreferrer" className="text-xs tracking-wider uppercase text-parchment hover:text-brass transition-colors">
+              Follow us on Substack
+            </a>
+          </li>
         </ul>
         <span className="text-xs text-parchment tracking-tight w-full md:w-auto">
           © {year} Aperture Hospitality. All rights reserved.
