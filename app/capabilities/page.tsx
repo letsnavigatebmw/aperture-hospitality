@@ -252,7 +252,7 @@ export default function CapabilitiesPage() {
                 tags: ['Campaign Attribution', 'Conversion Tracking', 'ROI Reporting', 'Dashboard Setup']
               }
             ].map((cap, i) => (
-              <div key={i} style={{ padding: '3rem 2.5rem 3rem 0', borderRight: i % 3 !== 2 ? '2px solid #3a3733' : 'none' }}>
+              <div key={i} style={{ padding: '3rem 2.5rem 3rem 0' }}>
                 <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1.25rem' }}>
                   {cap.num}
                 </div>
@@ -273,7 +273,7 @@ export default function CapabilitiesPage() {
             ))}
             
             {/* Placeholder card */}
-            <div style={{ padding: '0', border: '1px dashed #2e2b26', background: 'transparent', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', minHeight: '280px' }}>
+            <div style={{ padding: '3rem 2.5rem 3rem 0', border: 'none', background: 'transparent', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', minHeight: 'auto' }}>
               <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.25rem', fontWeight: 300, color: '#F0EDE6', marginBottom: '0.75rem', lineHeight: 1.3 }}>
                 Need something more specific?
               </div>
