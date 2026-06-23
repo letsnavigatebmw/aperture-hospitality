@@ -384,7 +384,7 @@ export default function DataIntelligencePage() {
               <div style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></div>
               Success Stories
             </div>
-            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, maxWidth: '28ch' }}>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', fontWeight: 300, lineHeight: 1.15 }}>
               Results That <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Speak For Themselves.</em>
             </h2>
           </div>
