@@ -28,7 +28,7 @@ export default function AISolutionsPage() {
       <Nav />
 
       {/* HERO */}
-      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 8rem) 0 clamp(4rem, 8vw, 7rem)', borderBottom: '1px solid #2e2b26' }}>
+      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 8rem) 0 clamp(4rem, 8vw, 7rem)', borderBottom: '2px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1.1fr 1fr', gap: '5rem', alignItems: 'center' }}>
             <div>
@@ -87,7 +87,7 @@ export default function AISolutionsPage() {
       </section>
 
       {/* PROBLEM */}
-      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #D4CFC6' }}>
+      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #B8924A' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6rem', alignItems: 'center' }}>
             <div>
@@ -106,9 +106,9 @@ export default function AISolutionsPage() {
               <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#6B6760', marginBottom: '1.25rem' }}>
                 Every unanswered call, every slow reply, every ignored review is a signal to your next potential customer that you're not paying attention. An AI Employee fixes that — without adding headcount.
               </p>
-              <ul style={{ listStyle: 'none', marginTop: '2rem', borderTop: '1px solid #D4CFC6', padding: 0 }}>
+              <ul style={{ listStyle: 'none', marginTop: '2rem', borderTop: '2px solid #B8924A', padding: 0 }}>
                 {['Calls go to voicemail during peak service hours', 'Website inquiries sit unanswered for hours or days', 'Google and social reviews accumulate without responses', 'No-shows increase when confirmation follow-ups don\'t happen', 'Staff time is consumed by repetitive, low-value conversations'].map((item, i) => (
-                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '1rem 0', borderBottom: '1px solid #D4CFC6', fontSize: '0.9375rem', fontWeight: 300, color: '#6B6760', lineHeight: 1.6 }}>
+                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '1rem 0', borderBottom: '2px solid #B8924A', fontSize: '0.9375rem', fontWeight: 300, color: '#6B6760', lineHeight: 1.6 }}>
                     <span style={{ width: '4px', height: '4px', background: '#B8924A', borderRadius: '50%', flexShrink: 0, marginTop: '0.6rem' }}></span>
                     {item}
                   </li>
@@ -120,7 +120,7 @@ export default function AISolutionsPage() {
       </section>
 
       {/* THREE AI TOOLS */}
-      <section id="tools" style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #2e2b26' }}>
+      <section id="tools" style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'end', marginBottom: '4rem' }}>
             <div>
@@ -137,19 +137,19 @@ export default function AISolutionsPage() {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0', borderTop: '1px solid #2e2b26' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0', borderTop: '2px solid #3a3733' }}>
             {[
               { number: '01', name: 'Voice AI', desc: 'Answers your phone 24/7, qualifies callers, captures information, and books appointments — in your brand\'s voice. Never miss a call again.', features: ['Answers inbound calls around the clock', 'Qualifies leads and captures contact details', 'Books appointments directly into your calendar', 'Sends SMS confirmation and reminders', 'Trained on your specific services and tone'] },
               { number: '02', name: 'Conversation AI', desc: 'Handles multiple text conversations simultaneously — across your website, social channels, and mobile — so no inquiry goes cold while your team is busy.', features: ['Web chat, SMS, Facebook, Instagram, Google', 'Books appointments with instant confirmations', 'Sends automated follow-ups to reduce no-shows', 'Escalates complex queries to your team', 'Fully customizable responses and tone'] },
               { number: '03', name: 'Reviews AI', desc: 'Automatically requests reviews from satisfied guests and responds to existing reviews across Google and Facebook — protecting and building your reputation without manual effort.', features: ['Automated review requests post-stay or post-visit', 'Responds to Google and Facebook reviews', 'Maintains consistent brand voice in responses', 'Surfaces negative feedback before it goes public', 'Reputation dashboard for at-a-glance monitoring'] }
             ].map((tool, i) => (
-              <div key={i} style={{ padding: '3rem 2.5rem 3rem 0', borderRight: i < 2 ? '1px solid #2e2b26' : 'none' }}>
+              <div key={i} style={{ padding: '3rem 2.5rem 3rem 0', borderRight: i < 2 ? '2px solid #3a3733' : 'none' }}>
                 <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1.5rem' }}>{tool.number}</div>
                 <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.625rem', fontWeight: 400, color: '#F0EDE6', lineHeight: 1.2, marginBottom: '1rem' }}>{tool.name}</h3>
                 <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#F0EDE6', marginBottom: '1.75rem' }}>{tool.desc}</p>
-                <ul style={{ listStyle: 'none', borderTop: '1px solid #2e2b26', padding: 0, margin: 0 }}>
+                <ul style={{ listStyle: 'none', borderTop: '2px solid #3a3733', padding: 0, margin: 0 }}>
                   {tool.features.map((feat, j) => (
-                    <li key={j} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', padding: '0.75rem 0', borderBottom: '1px solid #2e2b26', fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.5 }}>
+                    <li key={j} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', padding: '0.75rem 0', borderBottom: '2px solid #3a3733', fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.5 }}>
                       <span style={{ width: '4px', height: '4px', background: '#B8924A', borderRadius: '50%', flexShrink: 0, marginTop: '0.55rem' }}></span>
                       {feat}
                     </li>
@@ -162,7 +162,7 @@ export default function AISolutionsPage() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #D4CFC6' }}>
+      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #B8924A' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#6B6760', marginBottom: '2rem' }}>
             <div style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></div>
@@ -171,14 +171,14 @@ export default function AISolutionsPage() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, marginBottom: '3.5rem', maxWidth: '20ch' }}>
             Up And Running<br/>In <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Days, Not Months.</em>
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0', borderTop: '1px solid #D4CFC6' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0', borderTop: '2px solid #B8924A' }}>
             {[
               { number: '01', title: 'Choose your plan', desc: 'Select monthly or annual. No sales call required. You\'re on the platform the same day.' },
               { number: '02', title: 'Aperture configures it', desc: 'We handle the setup, brand voice training, and integrations so the AI fits your business — not a generic template.' },
               { number: '03', title: 'Go live fast', desc: 'Most properties are live within 48 hours. You start capturing missed conversations immediately.' },
               { number: '04', title: 'Scale as you grow', desc: 'Add tools as your needs evolve, or graduate to a full Aperture strategic engagement when the time comes.' }
             ].map((step, i) => (
-              <div key={i} style={{ padding: '2.5rem 2rem 2.5rem 0', borderRight: i < 3 ? '1px solid #D4CFC6' : 'none' }}>
+              <div key={i} style={{ padding: '2.5rem 2rem 2.5rem 0', borderRight: i < 3 ? '2px solid #B8924A' : 'none' }}>
                 <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1.25rem' }}>{step.number}</div>
                 <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.375rem', fontWeight: 400, color: '#1C1A17', lineHeight: 1.2, marginBottom: '0.875rem' }}>{step.title}</h3>
                 <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760', margin: 0 }}>{step.desc}</p>
@@ -189,7 +189,7 @@ export default function AISolutionsPage() {
       </section>
 
       {/* TESTIMONIAL SECTION */}
-      <section style={{ background: '#E8E4DB', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #D4CFC6' }}>
+      <section style={{ background: '#E8E4DB', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #B8924A' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           {/* Header */}
           <div style={{ marginBottom: '4rem' }}>
@@ -203,7 +203,7 @@ export default function AISolutionsPage() {
           </div>
 
           {/* Testimonial */}
-          <div style={{ paddingTop: '3rem', borderTop: '1px solid #D4CFC6' }}>
+          <div style={{ paddingTop: '3rem', borderTop: '2px solid #B8924A' }}>
             <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.25rem, 2vw, 1.5625rem)', fontWeight: 300, fontStyle: 'italic', lineHeight: 1.75, color: '#1C1A17', marginBottom: '2.5rem', margin: '0 0 2.5rem 0' }}>
               "I wanted to let you know how impactful Navigate has been for my family. We had been looking in Boise for four years in our school district and had not found anything until Navigate. I'd been sending a mailer every month for over a year and nothing happened. I sent one mailer and email from Navigate to the same area and got 6 responses within a week. One of those emails was a seller who had been looking to move and his agent called me to see it before they listed it. My husband and I are now living in our dream property. Thank you so much for creating this. We cannot thank you enough!"
             </p>
@@ -215,7 +215,7 @@ export default function AISolutionsPage() {
       </section>
 
       {/* PRICING */}
-      <section id="pricing" style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #D4CFC6' }}>
+      <section id="pricing" style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #B8924A' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'end', marginBottom: '4rem' }}>
             <div>
@@ -234,15 +234,15 @@ export default function AISolutionsPage() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '0' }}>
             {/* Monthly */}
-            <div style={{ padding: '3.5rem', border: '1px solid #D4CFC6', borderRight: 'none' }}>
+            <div style={{ padding: '3.5rem', border: '2px solid #B8924A', borderRight: 'none' }}>
               <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1rem' }}>Monthly</div>
               <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.875rem', fontWeight: 300, color: '#1C1A17', marginBottom: '0.5rem', lineHeight: 1.1 }}>AI Employee</h3>
               <p style={{ fontSize: '0.875rem', fontWeight: 300, color: '#6B6760', marginBottom: '2rem', lineHeight: 1.6 }}>All three tools. Full access. Month to month.</p>
               <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '4rem', fontWeight: 300, color: '#1C1A17', lineHeight: 1, marginBottom: '0.25rem' }}>$297</div>
               <div style={{ fontSize: '0.8125rem', fontWeight: 300, color: '#6B6760', marginBottom: '2.5rem' }}>per month · cancel anytime</div>
-              <ul style={{ listStyle: 'none', borderTop: '1px solid #D4CFC6', margin: 0, padding: 0, marginBottom: '2.5rem' }}>
+              <ul style={{ listStyle: 'none', borderTop: '2px solid #B8924A', margin: 0, padding: 0, marginBottom: '2.5rem' }}>
                 {['Voice AI — 24/7 inbound call handling', 'Conversation AI — web, SMS, and social', 'Reviews AI — request & respond', 'Aperture brand voice setup included', 'Hospitality-specific configuration', 'Standard onboarding support'].map((item, i) => (
-                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', padding: '0.875rem 0', borderBottom: '1px solid #D4CFC6', fontSize: '0.875rem', fontWeight: 300, color: '#6B6760', lineHeight: 1.5 }}>
+                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', padding: '0.875rem 0', borderBottom: '2px solid #B8924A', fontSize: '0.875rem', fontWeight: 300, color: '#6B6760', lineHeight: 1.5 }}>
                     <span style={{ width: '4px', height: '4px', background: '#B8924A', borderRadius: '50%', flexShrink: 0, marginTop: '0.55rem' }}></span>
                     {item}
                   </li>
@@ -251,19 +251,19 @@ export default function AISolutionsPage() {
               <a href="https://offer.revenuefactory.com/buy-ai-employee-a" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2rem', background: '#1C1A17', color: '#F0EDE6', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', border: 'none', cursor: 'pointer', textDecoration: 'none' }}>
                 Buy Now - $297/Month
               </a>
-              <p style={{ fontSize: '0.75rem', fontWeight: 300, color: '#6B6760', lineHeight: 1.6, marginTop: '1.25rem', paddingTop: '1.25rem', borderTop: '1px solid #D4CFC6' }}>Setup fee may apply depending on integration complexity. Aperture handles all configuration.</p>
+              <p style={{ fontSize: '0.75rem', fontWeight: 300, color: '#6B6760', lineHeight: 1.6, marginTop: '1.25rem', paddingTop: '1.25rem', borderTop: '2px solid #B8924A' }}>Setup fee may apply depending on integration complexity. Aperture handles all configuration.</p>
             </div>
 
             {/* Annual */}
-            <div style={{ padding: '3.5rem', background: '#1C1A17', border: '1px solid #1C1A17', borderRight: '1px solid #D4CFC6' }}>
+            <div style={{ padding: '3.5rem', background: '#1C1A17', border: '1px solid #1C1A17', borderRight: '2px solid #B8924A' }}>
               <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1rem' }}>Annual · Best Value</div>
               <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.875rem', fontWeight: 300, color: '#F0EDE6', marginBottom: '0.5rem', lineHeight: 1.1 }}>AI Employee</h3>
               <p style={{ fontSize: '0.875rem', fontWeight: 300, color: '#4a4845', marginBottom: '2rem', lineHeight: 1.6 }}>Two months free when you commit to a year.</p>
               <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '4rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1, marginBottom: '0.25rem' }}>$2,997</div>
               <div style={{ fontSize: '0.8125rem', fontWeight: 300, color: '#6B6760', marginBottom: '2.5rem' }}>per year · equivalent to $249.75/mo</div>
-              <ul style={{ listStyle: 'none', borderTop: '1px solid #2e2b26', margin: 0, padding: 0, marginBottom: '2.5rem' }}>
+              <ul style={{ listStyle: 'none', borderTop: '2px solid #3a3733', margin: 0, padding: 0, marginBottom: '2.5rem' }}>
                 {['Everything in the monthly plan', 'Priority onboarding & setup', 'Quarterly performance review with Aperture', 'First access to new AI tools as they launch', 'Dedicated Aperture point of contact', 'Two months free vs. monthly billing'].map((item, i) => (
-                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', padding: '0.875rem 0', borderBottom: '1px solid #2e2b26', fontSize: '0.875rem', fontWeight: 300, color: '#6B6760', lineHeight: 1.5 }}>
+                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', padding: '0.875rem 0', borderBottom: '2px solid #3a3733', fontSize: '0.875rem', fontWeight: 300, color: '#6B6760', lineHeight: 1.5 }}>
                     <span style={{ width: '4px', height: '4px', background: '#B8924A', borderRadius: '50%', flexShrink: 0, marginTop: '0.55rem' }}></span>
                     {item}
                   </li>
@@ -272,14 +272,14 @@ export default function AISolutionsPage() {
               <a href="https://offer.revenuefactory.com/buy-ai-employee-a" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2rem', background: '#B8924A', color: '#F0EDE6', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', border: 'none', cursor: 'pointer', textDecoration: 'none' }}>
                 Buy Now $2,997.00/yr
               </a>
-              <p style={{ fontSize: '0.75rem', fontWeight: 300, color: '#6B6760', lineHeight: 1.6, marginTop: '1.25rem', paddingTop: '1.25rem', borderTop: '1px solid #2e2b26' }}>Annual plans are billed upfront. Aperture handles all configuration at no additional charge.</p>
+              <p style={{ fontSize: '0.75rem', fontWeight: 300, color: '#6B6760', lineHeight: 1.6, marginTop: '1.25rem', paddingTop: '1.25rem', borderTop: '2px solid #3a3733' }}>Annual plans are billed upfront. Aperture handles all configuration at no additional charge.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* AI MARKETING WORKSPACE KIT */}
-      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #2e2b26' }}>
+      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'center' }}>
             <div>
@@ -324,7 +324,7 @@ export default function AISolutionsPage() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #2e2b26' }}>
+      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.5fr', gap: '6rem', alignItems: 'start' }}>
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, color: '#F0EDE6', position: 'sticky', top: '5rem' }}>
@@ -335,7 +335,7 @@ export default function AISolutionsPage() {
               {faqItems.map((item, i) => (
                 <div
                   key={i}
-                  style={{ borderBottom: '1px solid #2e2b26', padding: '1.75rem 0', cursor: 'pointer' }}
+                  style={{ borderBottom: '2px solid #3a3733', padding: '1.75rem 0', cursor: 'pointer' }}
                   onClick={() => setOpenFaqId(openFaqId === i ? -1 : i)}
                 >
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem' }}>
@@ -357,7 +357,7 @@ export default function AISolutionsPage() {
       </section>
 
       {/* FINAL CTA */}
-      <section style={{ padding: 'clamp(5rem, 10vw, 8rem) 0', borderBottom: '1px solid #D4CFC6' }}>
+      <section style={{ padding: 'clamp(5rem, 10vw, 8rem) 0', borderBottom: '2px solid #B8924A' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '3rem' }}>
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, maxWidth: '22ch', margin: 0 }}>

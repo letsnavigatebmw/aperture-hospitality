@@ -59,7 +59,7 @@ export default function WorkplaceKitPage() {
       `}</style>
 
       {/* HERO */}
-      <section style={{ background: 'var(--ink)', padding: 'clamp(5rem,10vw,8rem) 0', borderBottom: '1px solid var(--dark2)' }}>
+      <section style={{ background: 'var(--ink)', padding: 'clamp(5rem,10vw,8rem) 0', borderBottom: '2px solid #3a3733' }}>
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'center' }}>
             <div>
@@ -78,7 +78,7 @@ export default function WorkplaceKitPage() {
               <div style={{ fontSize: '0.8125rem', fontWeight: 300, color: 'var(--muted)', marginBottom: '1.5rem' }}>No monthly fee. Own it permanently.</div>
 
               <div style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: '3.5rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1, marginBottom: '0.25rem' }}>$1,497</div>
-              <div style={{ fontSize: '0.8125rem', fontWeight: 300, color: 'var(--muted)', marginBottom: '2rem', paddingBottom: '2rem', borderBottom: '1px solid var(--dark2)' }}>One-time. No retainer. No subscription.</div>
+              <div style={{ fontSize: '0.8125rem', fontWeight: 300, color: 'var(--muted)', marginBottom: '2rem', paddingBottom: '2rem', borderBottom: '2px solid #3a3733' }}>One-time. No retainer. No subscription.</div>
 
               <ul style={{ listStyle: 'none', marginBottom: '2rem' }}>
                 {['The Brand Foundation Library', 'The Builder Prompts — hospitality-specific', 'The Guest Conversion Asset Stack', 'No technical background required', 'Built for hospitality — not generic small business'].map((item, i) => (
@@ -92,7 +92,7 @@ export default function WorkplaceKitPage() {
               <a href="/contact?product=workspace-kit" style={{ display: 'block', textAlign: 'center', padding: '1.5rem 2rem', background: '#1C1A17', color: '#FFFFFF', border: '1.5px solid #B8924A', width: '100%', boxSizing: 'border-box', borderRadius: '8px', textDecoration: 'none', transition: 'all 0.3s', marginBottom: '1rem', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#B8924A'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#1C1A17'; }}>
                 <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', lineHeight: 1.2 }}>Get The Workspace Kit - $1,497</div>
               </a>
-              <a href="/contact?product=foundation-library" style={{ display: 'block', textAlign: 'center', padding: '1.5rem 1.5rem', background: 'transparent', color: 'var(--muted)', border: '1px solid var(--dark2)', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = 'var(--dark2)'; e.currentTarget.style.color = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = 'var(--muted)'; }}>
+              <a href="/contact?product=foundation-library" style={{ display: 'block', textAlign: 'center', padding: '1.5rem 1.5rem', background: 'transparent', color: 'var(--muted)', border: '2px solid #3a3733', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = 'var(--dark2)'; e.currentTarget.style.color = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = 'var(--muted)'; }}>
                 Start with Foundation Library only — $297
               </a>
             </div>
@@ -126,7 +126,7 @@ export default function WorkplaceKitPage() {
       </section>
 
       {/* SOLUTION */}
-      <section style={{ padding: 'clamp(5rem,10vw,9rem) 0', background: 'var(--ink)', borderBottom: '1px solid var(--dark2)' }}>
+      <section style={{ padding: 'clamp(5rem,10vw,9rem) 0', background: 'var(--ink)', borderBottom: '2px solid #3a3733' }}>
         <div className="container">
           <div className="sl-dark">What Actually Fixes It</div>
           <h2 style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: 'clamp(2.25rem,3.5vw,3.25rem)', fontWeight: 300, lineHeight: 1.15, color: '#F0EDE6', marginBottom: '3.5rem', maxWidth: '28ch' }}>
@@ -219,7 +219,7 @@ export default function WorkplaceKitPage() {
       </section>
 
       {/* FINAL CTA */}
-      <section style={{ padding: 'clamp(5rem,10vw,8rem) 0', background: 'var(--ink)', borderBottom: '1px solid var(--dark2)' }}>
+      <section style={{ padding: 'clamp(5rem,10vw,8rem) 0', background: 'var(--ink)', borderBottom: '2px solid #3a3733' }}>
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'center' }}>
             <div>
@@ -233,11 +233,11 @@ export default function WorkplaceKitPage() {
             <div style={{ background: 'var(--dark2)', border: '1px solid #3a3733', padding: '3rem' }}>
               <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--brass)', marginBottom: '1.5rem' }}>Hospitality Marketing Workspace Kit</div>
               <div style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: '3rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1, marginBottom: '0.25rem' }}>$1,497</div>
-              <div style={{ fontSize: '0.8125rem', fontWeight: 300, color: 'var(--muted)', marginBottom: '2rem', paddingBottom: '2rem', borderBottom: '1px solid var(--dark2)' }}>One-time setup fee. No subscription. No monthly retainer.</div>
+              <div style={{ fontSize: '0.8125rem', fontWeight: 300, color: 'var(--muted)', marginBottom: '2rem', paddingBottom: '2rem', borderBottom: '2px solid #3a3733' }}>One-time setup fee. No subscription. No monthly retainer.</div>
               <a href="https://request.revenuefactory.com/widget/bookings/ai-employee-convo" target="_blank" rel="noopener noreferrer" style={{ display: 'block', textAlign: 'center', padding: '1.5rem 2rem', background: '#1C1A17', color: '#FFFFFF', border: '1.5px solid #B8924A', width: '100%', boxSizing: 'border-box', borderRadius: '8px', textDecoration: 'none', transition: 'all 0.3s', marginBottom: '1rem', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#B8924A'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#1C1A17'; }}>
                 <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', lineHeight: 1.2 }}>Get The Workspace Kit - $1,497</div>
               </a>
-              <a href="/contact?product=foundation-library" style={{ display: 'block', textAlign: 'center', padding: '1.5rem 1.5rem', background: 'transparent', color: 'var(--muted)', border: '1px solid var(--dark2)', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none', cursor: 'pointer', borderRadius: '8px' }} onMouseEnter={(e) => { e.currentTarget.style.background = 'var(--dark2)'; e.currentTarget.style.color = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = 'var(--muted)'; }}>
+              <a href="/contact?product=foundation-library" style={{ display: 'block', textAlign: 'center', padding: '1.5rem 1.5rem', background: 'transparent', color: 'var(--muted)', border: '2px solid #3a3733', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none', cursor: 'pointer', borderRadius: '8px' }} onMouseEnter={(e) => { e.currentTarget.style.background = 'var(--dark2)'; e.currentTarget.style.color = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = 'var(--muted)'; }}>
                 Start with Foundation Library only — $297
               </a>
             </div>

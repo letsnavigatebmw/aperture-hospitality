@@ -10,7 +10,7 @@ export default function OperatingPartnerSelectionPage() {
       <Nav />
 
       {/* HERO */}
-      <section style={{ background: '#1C1A17', padding: 'clamp(5rem,10vw,8rem) 0 clamp(4rem,8vw,7rem)', borderBottom: '1px solid #2e2b26' }}>
+      <section style={{ background: '#1C1A17', padding: 'clamp(5rem,10vw,8rem) 0 clamp(4rem,8vw,7rem)', borderBottom: '2px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '2rem' }}>
             <span style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></span>
@@ -34,7 +34,7 @@ export default function OperatingPartnerSelectionPage() {
               <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '1.25rem' }}>
                 Choosing the wrong operating partner is the single most common and most expensive mistake hotel owners and real estate investors make. This framework is the due diligence process most ownership groups never run.
               </p>
-              <div style={{ display: 'flex', gap: '2rem', paddingTop: '1.5rem', borderTop: '1px solid #2e2b26' }}>
+              <div style={{ display: 'flex', gap: '2rem', paddingTop: '1.5rem', borderTop: '2px solid #3a3733' }}>
                 <div>
                   <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#4a4845', marginBottom: '0.25rem' }}>Category</div>
                   <div style={{ fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6' }}>Operations</div>
@@ -50,7 +50,7 @@ export default function OperatingPartnerSelectionPage() {
       </section>
 
       {/* PROBLEM */}
-      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #D4CFC6' }}>
+      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #B8924A' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.5fr', gap: '6rem', alignItems: 'flex-start' }}>
             <div>
@@ -78,7 +78,7 @@ export default function OperatingPartnerSelectionPage() {
       </section>
 
       {/* SIX EVALUATION DIMENSIONS */}
-      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', background: '#1C1A17', borderBottom: '1px solid #2e2b26' }}>
+      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', background: '#1C1A17', borderBottom: '2px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'flex-end', marginBottom: '4rem' }}>
             <div>
@@ -94,7 +94,7 @@ export default function OperatingPartnerSelectionPage() {
               The standard evaluation — brand reputation, financial projections, fee structure, personal chemistry — is necessary but insufficient. These are the five additional dimensions that separate a sound operator selection from an expensive mistake.
             </p>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 0, borderTop: '1px solid #2e2b26' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 0, borderTop: '2px solid #3a3733' }}>
             {[
               { num: '01', title: 'Operating Track Record', desc: 'Not their global portfolio — their track record on properties genuinely comparable to yours. A company that excels at 400-key urban hotels is not the right partner for a 28-key boutique coastal property, regardless of how impressive their portfolio deck looks.' },
               { num: '02', title: 'Team Stability & Depth', desc: 'The people in the room during the pitch are almost never the people who will actually run your hotel. Understanding the real depth of their operational bench — and whether the key people assigned to your property are stable and actually available — is a different question from evaluating the brand.' },
@@ -103,7 +103,7 @@ export default function OperatingPartnerSelectionPage() {
               { num: '05', title: 'Alignment & Incentive Structure', desc: 'Where their incentives align with yours and where they diverge. Base management fees are paid regardless of performance. The structure of incentive thresholds — and how realistically achievable they are — tells you a great deal about how confident the operator actually is in their own projections.' },
               { num: '06', title: 'Reference Quality', desc: 'Not the references they give you. The references you find independently — the owners who worked with them two years ago and are no longer with them. What ended those relationships, and why, is the most valuable data point in the entire process.' }
             ].map((item, i) => (
-              <div key={i} style={{ padding: '2.5rem 2.5rem 2.5rem ' + (i % 3 === 2 ? '0' : '2.5rem'), borderRight: i % 3 !== 2 ? '1px solid #2e2b26' : 'none', borderBottom: i < 3 ? '1px solid #2e2b26' : 'none' }}>
+              <div key={i} style={{ padding: '2.5rem 2.5rem 2.5rem ' + (i % 3 === 2 ? '0' : '2.5rem'), borderRight: i % 3 !== 2 ? '2px solid #3a3733' : 'none', borderBottom: i < 3 ? '2px solid #3a3733' : 'none' }}>
                 <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '2rem', fontWeight: 300, color: '#B8924A', lineHeight: 1, marginBottom: '0.75rem' }}>{item.num}</div>
                 <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.125rem', fontWeight: 400, color: '#F0EDE6', marginBottom: '0.75rem', lineHeight: 1.2 }}>{item.title}</h3>
                 <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.6, color: '#F0EDE6' }}>{item.desc}</p>
@@ -114,7 +114,7 @@ export default function OperatingPartnerSelectionPage() {
       </section>
 
       {/* SIX STEP PROCESS */}
-      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', background: '#E8E4DB', borderBottom: '1px solid #D4CFC6' }}>
+      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', background: '#E8E4DB', borderBottom: '2px solid #B8924A' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#6B6760', marginBottom: '2rem' }}>
             <span style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></span>
@@ -123,7 +123,7 @@ export default function OperatingPartnerSelectionPage() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3vw, 2.75rem)', fontWeight: 300, lineHeight: 1.15, color: '#1C1A17', marginBottom: '3rem' }}>
             Six steps. In this order. <em style={{ fontStyle: 'italic', color: '#B8924A' }}>No shortcuts.</em>
           </h2>
-          <div style={{ display: 'flex', flexDirection: 'column', borderTop: '1px solid #D4CFC6' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', borderTop: '2px solid #B8924A' }}>
             {[
               { num: '01', title: 'Longlist development and initial screening', desc: 'Filter against comparable property criteria before anyone sees your RFP.' },
               { num: '02', title: 'RFP distribution and management proposal review', desc: 'Evaluate proposals against the nine dimensions, not just the fee structure and the projections.' },
@@ -132,7 +132,7 @@ export default function OperatingPartnerSelectionPage() {
               { num: '05', title: 'Contract term negotiation', desc: 'Performance thresholds, exclusivity carve-outs, termination provisions. The contract reveals the relationship.' },
               { num: '06', title: 'Final selection and transition planning', desc: 'How you transition matters as much as who you select. The first 90 days set the tone for the entire relationship.' }
             ].map((step, i) => (
-              <div key={i} style={{ display: 'grid', gridTemplateColumns: '48px 1fr', gap: '1.5rem', padding: '1.75rem 0', borderBottom: i < 5 ? '1px solid #D4CFC6' : 'none', alignItems: 'flex-start' }}>
+              <div key={i} style={{ display: 'grid', gridTemplateColumns: '48px 1fr', gap: '1.5rem', padding: '1.75rem 0', borderBottom: i < 5 ? '2px solid #B8924A' : 'none', alignItems: 'flex-start' }}>
                 <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', paddingTop: '0.2rem' }}>{step.num}</div>
                 <div>
                   <strong style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.125rem', fontWeight: 400, color: '#1C1A17' }}>{step.title}</strong>
@@ -145,7 +145,7 @@ export default function OperatingPartnerSelectionPage() {
       </section>
 
       {/* IN PRACTICE + CTA */}
-      <section style={{ padding: 'clamp(5rem, 10vw, 8rem) 0', background: '#1C1A17', borderBottom: '1px solid #2e2b26' }}>
+      <section style={{ padding: 'clamp(5rem, 10vw, 8rem) 0', background: '#1C1A17', borderBottom: '2px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6rem', alignItems: 'flex-start' }}>
             <div>

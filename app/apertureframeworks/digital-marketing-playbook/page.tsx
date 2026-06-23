@@ -10,7 +10,7 @@ export default function DigitalMarketingPlaybookPage() {
       <Nav />
 
       {/* HERO */}
-      <section style={{ background: '#1C1A17', padding: 'clamp(5rem,10vw,8rem) 0 clamp(4rem,8vw,7rem)', borderBottom: '1px solid #2e2b26' }}>
+      <section style={{ background: '#1C1A17', padding: 'clamp(5rem,10vw,8rem) 0 clamp(4rem,8vw,7rem)', borderBottom: '2px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '2rem' }}>
             <span style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></span>
@@ -34,7 +34,7 @@ export default function DigitalMarketingPlaybookPage() {
               <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '1.25rem' }}>
                 Boutique hospitality and luxury brands don't win the digital marketing game by outspending the competition. They win by being more precise. This playbook is the system behind that precision.
               </p>
-              <div style={{ display: 'flex', gap: '2rem', paddingTop: '1.5rem', borderTop: '1px solid #2e2b26' }}>
+              <div style={{ display: 'flex', gap: '2rem', paddingTop: '1.5rem', borderTop: '2px solid #3a3733' }}>
                 <div>
                   <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#4a4845', marginBottom: '0.25rem' }}>Category</div>
                   <div style={{ fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6' }}>Digital Marketing</div>
@@ -50,7 +50,7 @@ export default function DigitalMarketingPlaybookPage() {
       </section>
 
       {/* PROBLEM */}
-      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #D4CFC6' }}>
+      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #B8924A' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.5fr', gap: '6rem', alignItems: 'flex-start' }}>
             <div>
@@ -78,7 +78,7 @@ export default function DigitalMarketingPlaybookPage() {
       </section>
 
       {/* FIVE LAYERS */}
-      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', background: '#1C1A17', borderBottom: '1px solid #2e2b26' }}>
+      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', background: '#1C1A17', borderBottom: '2px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'flex-end', marginBottom: '4rem' }}>
             <div>
@@ -94,7 +94,7 @@ export default function DigitalMarketingPlaybookPage() {
               Skipping to executional layers — ads, content, tools — before the strategic layers are resolved is the single most common and most expensive digital marketing mistake in hospitality. Most operators start at layer three.
             </p>
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column', borderTop: '1px solid #2e2b26' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', borderTop: '2px solid #3a3733' }}>
             {[
               { num: '1', title: 'Foundation: Audience Clarity', desc: 'Every other layer in this system depends on a clear, specific answer to who your actual buyer is. Not "affluent travelers." The specific psychographic description, consumption behavior, and channel habits of the person who books fastest, stays longest, spends most, and refers most reliably. If this layer is wrong or vague, every subsequent investment is partially wasted.' },
               { num: '2', title: 'Organic Presence: SEO & Content', desc: 'For boutique hospitality brands, organic search is one of the highest-ROI long-term investments available — and the most neglected. The content strategy that drives this isn\'t volume — it\'s specificity. One well-researched piece that genuinely answers a question your buyer is asking outperforms twenty generic social posts every time.' },
@@ -102,7 +102,7 @@ export default function DigitalMarketingPlaybookPage() {
               { num: '4', title: 'Owned Channel: Email & Automation', desc: 'Your email list is the only marketing asset you actually own. Every other channel can change its algorithm, increase its fees, or disappear. The automation sequences that matter most: post-inquiry follow-up, pre-arrival communication, post-stay retention, and win-back reactivation. Most operators use none of these.' },
               { num: '5', title: 'Measurement: Attribution & Optimization', desc: 'The final layer closes the loop between marketing activity and revenue outcome. Which channels produced which bookings, at what cost, from which customer segments. Without this layer, you cannot optimize anything — you can only guess what\'s working and spend accordingly.' }
             ].map((item, i) => (
-              <div key={i} style={{ display: 'grid', gridTemplateColumns: '80px 1fr', gap: '2rem', padding: '2.5rem 0', borderBottom: i < 4 ? '1px solid #2e2b26' : 'none', alignItems: 'flex-start' }}>
+              <div key={i} style={{ display: 'grid', gridTemplateColumns: '80px 1fr', gap: '2rem', padding: '2.5rem 0', borderBottom: i < 4 ? '2px solid #3a3733' : 'none', alignItems: 'flex-start' }}>
                 <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '2.5rem', fontWeight: 300, color: '#2e2b26', lineHeight: 1 }}>{item.num}</div>
                 <div>
                   <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5rem', fontWeight: 400, color: '#F0EDE6', marginBottom: '0.75rem', lineHeight: 1.2 }}>{item.title}</h3>
@@ -115,7 +115,7 @@ export default function DigitalMarketingPlaybookPage() {
       </section>
 
       {/* DIAGNOSTIC */}
-      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', background: '#E8E4DB', borderBottom: '1px solid #D4CFC6' }}>
+      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', background: '#E8E4DB', borderBottom: '2px solid #B8924A' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6rem', alignItems: 'flex-start' }}>
             <div>
@@ -132,7 +132,7 @@ export default function DigitalMarketingPlaybookPage() {
             </div>
             <div>
               <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1.25rem' }}>Five diagnostic questions</div>
-              <ul style={{ listStyle: 'none', borderTop: '1px solid #D4CFC6', margin: 0, padding: 0, marginBottom: '1.5rem' }}>
+              <ul style={{ listStyle: 'none', borderTop: '2px solid #B8924A', margin: 0, padding: 0, marginBottom: '1.5rem' }}>
                 {[
                   'What is your current direct booking percentage, and how has it trended over the last 24 months?',
                   'What percentage of your website traffic comes from organic, paid, direct, and referral respectively?',
@@ -140,7 +140,7 @@ export default function DigitalMarketingPlaybookPage() {
                   'Which booking channel has your lowest cost per acquisition?',
                   'What is your average guest lifetime value, broken down by acquisition channel?'
                 ].map((q, i) => (
-                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '1rem 0', borderBottom: '1px solid #D4CFC6', fontSize: '0.9375rem', fontWeight: 300, color: '#1C1A17', lineHeight: 1.6 }}>
+                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '1rem 0', borderBottom: '2px solid #B8924A', fontSize: '0.9375rem', fontWeight: 300, color: '#1C1A17', lineHeight: 1.6 }}>
                     <span style={{ width: '4px', height: '4px', background: '#B8924A', borderRadius: '50%', flexShrink: 0, marginTop: '0.6rem' }}></span>
                     {q}
                   </li>
@@ -155,7 +155,7 @@ export default function DigitalMarketingPlaybookPage() {
       </section>
 
       {/* WHO + CTA */}
-      <section style={{ padding: 'clamp(5rem, 10vw, 8rem) 0', background: '#1C1A17', borderBottom: '1px solid #2e2b26' }}>
+      <section style={{ padding: 'clamp(5rem, 10vw, 8rem) 0', background: '#1C1A17', borderBottom: '2px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6rem', alignItems: 'flex-start' }}>
             <div>

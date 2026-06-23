@@ -10,7 +10,7 @@ export default function LuxuryBrandPositioningPage() {
       <Nav />
 
       {/* HERO */}
-      <section style={{ background: '#1C1A17', padding: 'clamp(5rem,10vw,8rem) 0 clamp(4rem,8vw,7rem)', borderBottom: '1px solid #2e2b26' }}>
+      <section style={{ background: '#1C1A17', padding: 'clamp(5rem,10vw,8rem) 0 clamp(4rem,8vw,7rem)', borderBottom: '2px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '2rem' }}>
             <span style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></span>
@@ -34,7 +34,7 @@ export default function LuxuryBrandPositioningPage() {
               <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '1.25rem' }}>
                 Most brands trying to position in the luxury tier describe what they are instead of what they make the customer feel. This framework builds the positioning architecture that actually holds under pressure.
               </p>
-              <div style={{ display: 'flex', gap: '2rem', paddingTop: '1.5rem', borderTop: '1px solid #2e2b26' }}>
+              <div style={{ display: 'flex', gap: '2rem', paddingTop: '1.5rem', borderTop: '2px solid #3a3733' }}>
                 <div>
                   <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#4a4845', marginBottom: '0.25rem' }}>Category</div>
                   <div style={{ fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6' }}>Marketing Strategy</div>
@@ -50,7 +50,7 @@ export default function LuxuryBrandPositioningPage() {
       </section>
 
       {/* THE PROBLEM */}
-      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #D4CFC6' }}>
+      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #B8924A' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.5fr', gap: '6rem', alignItems: 'flex-start' }}>
             <div>
@@ -78,7 +78,7 @@ export default function LuxuryBrandPositioningPage() {
       </section>
 
       {/* WHAT POSITIONING DOES */}
-      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', background: '#E8E4DB', borderBottom: '1px solid #D4CFC6' }}>
+      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', background: '#E8E4DB', borderBottom: '2px solid #B8924A' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#6B6760', marginBottom: '2rem' }}>
             <span style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></span>
@@ -89,13 +89,13 @@ export default function LuxuryBrandPositioningPage() {
               Good positioning does<br/>three things<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>simultaneously.</em>
             </h2>
             <div>
-              <ul style={{ listStyle: 'none', borderTop: '1px solid #D4CFC6', margin: 0, padding: 0, marginBottom: '1.5rem' }}>
+              <ul style={{ listStyle: 'none', borderTop: '2px solid #B8924A', margin: 0, padding: 0, marginBottom: '1.5rem' }}>
                 {[
                   'It differentiates you from every alternative your buyer is considering',
                   'It attracts the right customer and repels the wrong one',
                   'It remains true under pressure — when a competitor copies your marketing, when a review goes badly, when a staff member leaves'
                 ].map((item, i) => (
-                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '1rem 0', borderBottom: '1px solid #D4CFC6', fontSize: '0.9375rem', fontWeight: 300, color: '#1C1A17', lineHeight: 1.6 }}>
+                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '1rem 0', borderBottom: '2px solid #B8924A', fontSize: '0.9375rem', fontWeight: 300, color: '#1C1A17', lineHeight: 1.6 }}>
                     <span style={{ width: '4px', height: '4px', background: '#B8924A', borderRadius: '50%', flexShrink: 0, marginTop: '0.6rem', display: 'block' }}></span>
                     {item}
                   </li>
@@ -110,7 +110,7 @@ export default function LuxuryBrandPositioningPage() {
       </section>
 
       {/* FIVE LAYERS */}
-      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', background: '#1C1A17', borderBottom: '1px solid #2e2b26' }}>
+      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', background: '#1C1A17', borderBottom: '2px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'flex-end', marginBottom: '4rem' }}>
             <div>
@@ -126,7 +126,7 @@ export default function LuxuryBrandPositioningPage() {
               Positioning is built in layers, each one dependent on the one before it. Skipping to the executional layers — voice, visuals, taglines — before the strategic layers are resolved is why most luxury brands end up repositioning every two to three years.
             </p>
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column', borderTop: '1px solid #2e2b26' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', borderTop: '2px solid #3a3733' }}>
             {[
               { num: '01', title: 'Category Definition', desc: 'What category are you actually in? Not "boutique hotel" or "luxury spirits brand" — those are product descriptions. The category is the mental frame your buyer uses to evaluate you. Defining it narrowly and specifically changes who your competitors are, what your buyer compares you against, and how you win.' },
               { num: '02', title: 'Buyer Truth', desc: 'The specific, true, unsaid thing your ideal buyer believes about themselves, their taste, or what they deserve — that your brand can authentically affirm. Luxury positioning is always, at its core, a mirror. You\'re not selling a room or a bottle. You\'re affirming a self-image.' },
@@ -134,7 +134,7 @@ export default function LuxuryBrandPositioningPage() {
               { num: '04', title: 'Proof Architecture', desc: 'The hierarchy of evidence that makes your claim believable. For hospitality brands this typically runs: physical evidence → staff behavior → guest testimonial → editorial coverage → brand story. Most brands build these elements but never sequence them in a way that creates cumulative trust.' },
               { num: '05', title: 'Voice & Register', desc: 'How a positioned brand speaks, not just what it says. Luxury brands that speak like everyone else undercut their own positioning regardless of how good the underlying claim is. This layer defines the specific verbal and visual register that makes every piece of communication feel consistent with the brand\'s claimed position.' }
             ].map((item, i) => (
-              <div key={i} style={{ display: 'grid', gridTemplateColumns: '80px 1fr', gap: '2rem', padding: '2.5rem 0', borderBottom: i < 4 ? '1px solid #2e2b26' : 'none', alignItems: 'flex-start' }}>
+              <div key={i} style={{ display: 'grid', gridTemplateColumns: '80px 1fr', gap: '2rem', padding: '2.5rem 0', borderBottom: i < 4 ? '2px solid #3a3733' : 'none', alignItems: 'flex-start' }}>
                 <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '2.5rem', fontWeight: 300, color: '#2e2b26', lineHeight: 1 }}>{item.num}</div>
                 <div>
                   <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5rem', fontWeight: 400, color: '#F0EDE6', marginBottom: '0.75rem', lineHeight: 1.2 }}>{item.title}</h3>
@@ -147,7 +147,7 @@ export default function LuxuryBrandPositioningPage() {
       </section>
 
       {/* WHO + CTA */}
-      <section style={{ padding: 'clamp(5rem, 10vw, 8rem) 0', borderBottom: '1px solid #D4CFC6' }}>
+      <section style={{ padding: 'clamp(5rem, 10vw, 8rem) 0', borderBottom: '2px solid #B8924A' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6rem', alignItems: 'flex-start' }}>
             <div>
@@ -155,14 +155,14 @@ export default function LuxuryBrandPositioningPage() {
                 <span style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></span>
                 Who This Is For
               </div>
-              <ul style={{ listStyle: 'none', borderTop: '1px solid #D4CFC6', margin: 0, padding: 0 }}>
+              <ul style={{ listStyle: 'none', borderTop: '2px solid #B8924A', margin: 0, padding: 0 }}>
                 {[
                   'Boutique hotel operators who feel their property is better than how it\'s perceived in the market',
                   'Luxury spirits and consumer brands competing against well-funded incumbents',
                   'Hospitality brands preparing for a rebrand or repositioning exercise',
                   'Founders who know what makes them different but can\'t articulate it in a way that lands'
                 ].map((item, i) => (
-                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '1rem 0', borderBottom: '1px solid #D4CFC6', fontSize: '0.9375rem', fontWeight: 300, color: '#1C1A17', lineHeight: 1.6 }}>
+                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '1rem 0', borderBottom: '2px solid #B8924A', fontSize: '0.9375rem', fontWeight: 300, color: '#1C1A17', lineHeight: 1.6 }}>
                     <span style={{ width: '4px', height: '4px', background: '#B8924A', borderRadius: '50%', flexShrink: 0, marginTop: '0.6rem', display: 'block' }}></span>
                     {item}
                   </li>

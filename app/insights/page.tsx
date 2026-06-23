@@ -260,16 +260,16 @@ export default function InsightsPage() {
       </section>
 
       {/* HELP CARD SECTION */}
-      <section style={{ background: '#E8E4DB', borderBottom: '1px solid #D4CFC6' }}>
+      <section style={{ background: '#E8E4DB', borderBottom: '2px solid #B8924A' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ paddingTop: 'clamp(3rem, 5vw, 4rem)', paddingBottom: 'clamp(3rem, 5vw, 4rem)' }}>
-            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.75rem, 3vw, 2.25rem)', fontWeight: 300, lineHeight: 1.15, color: '#1C1A17', marginBottom: '2rem', paddingBottom: '2rem', borderBottom: '1px solid #D4CFC6' }}>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.75rem, 3vw, 2.25rem)', fontWeight: 300, lineHeight: 1.15, color: '#1C1A17', marginBottom: '2rem', paddingBottom: '2rem', borderBottom: '2px solid #B8924A' }}>
               When you're ready, here's <em style={{ fontStyle: 'italic', color: '#B8924A' }}>how we can help.</em>
             </h2>
 
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0' }}>
               {/* Option 1 */}
-              <div style={{ paddingRight: '2.5rem', borderRight: '1px solid #D4CFC6' }}>
+              <div style={{ paddingRight: '2.5rem', borderRight: '2px solid #B8924A' }}>
                 <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '0.625rem' }}>
                   Free · 1 Hour
                 </div>
@@ -279,7 +279,7 @@ export default function InsightsPage() {
                 <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760', marginBottom: '1.5rem' }}>
                   Get Brandon's direct read on your business strategy, commercial positioning, or growth challenges. Leave with a clear next step and actionable insights.
                 </p>
-                <Link href="/contact?type=clarity-session" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#1C1A17', borderBottom: '1px solid #D4CFC6', paddingBottom: '2px', textDecoration: 'none' }}>
+                <Link href="/contact?type=clarity-session" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#1C1A17', borderBottom: '2px solid #B8924A', paddingBottom: '2px', textDecoration: 'none' }}>
                   Book a session →
                 </Link>
               </div>
@@ -295,7 +295,7 @@ export default function InsightsPage() {
                 <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760', marginBottom: '1.5rem' }}>
                   A comprehensive Aperture engagement to build strategy, structure, and execution roadmap for sustainable growth. Hands-on from discovery through implementation.
                 </p>
-                <Link href="/contact?type=engagement" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#1C1A17', borderBottom: '1px solid #D4CFC6', paddingBottom: '2px', textDecoration: 'none' }}>
+                <Link href="/contact?type=engagement" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#1C1A17', borderBottom: '2px solid #B8924A', paddingBottom: '2px', textDecoration: 'none' }}>
                   Start a conversation →
                 </Link>
               </div>

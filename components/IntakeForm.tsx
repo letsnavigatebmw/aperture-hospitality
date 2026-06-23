@@ -63,7 +63,7 @@ export default function IntakeForm() {
   }
 
   return (
-    <section style={{ background: '#F0EDE6', borderTop: '1px solid #D4CFC6' }}>
+    <section style={{ background: '#F0EDE6', borderTop: '2px solid #B8924A' }}>
       <div style={{
         maxWidth: '1140px',
         margin: '0 auto',
@@ -119,7 +119,7 @@ export default function IntakeForm() {
 
           <div style={{
             paddingTop: '2rem',
-            borderTop: '1px solid #D4CFC6'
+            borderTop: '2px solid #B8924A'
           }}>
             <div style={{
               fontSize: '0.625rem',
@@ -180,7 +180,7 @@ export default function IntakeForm() {
                     width: '100%',
                     padding: '0.875rem 1rem',
                     background: '#E8E4DB',
-                    border: '1px solid #D4CFC6',
+                    border: '2px solid #B8924A',
                     color: '#1C1A17',
                     fontFamily: "'Inter', sans-serif",
                     fontSize: '0.9375rem',
@@ -213,7 +213,7 @@ export default function IntakeForm() {
                     width: '100%',
                     padding: '0.875rem 1rem',
                     background: '#E8E4DB',
-                    border: '1px solid #D4CFC6',
+                    border: '2px solid #B8924A',
                     color: '#1C1A17',
                     fontFamily: "'Inter', sans-serif",
                     fontSize: '0.9375rem',
@@ -249,7 +249,7 @@ export default function IntakeForm() {
                     width: '100%',
                     padding: '0.875rem 1rem',
                     background: '#E8E4DB',
-                    border: '1px solid #D4CFC6',
+                    border: '2px solid #B8924A',
                     color: '#1C1A17',
                     fontFamily: "'Inter', sans-serif",
                     fontSize: '0.9375rem',
@@ -281,7 +281,7 @@ export default function IntakeForm() {
                     width: '100%',
                     padding: '0.875rem 1rem',
                     background: '#E8E4DB',
-                    border: '1px solid #D4CFC6',
+                    border: '2px solid #B8924A',
                     color: '#1C1A17',
                     fontFamily: "'Inter', sans-serif",
                     fontSize: '0.9375rem',
@@ -296,7 +296,7 @@ export default function IntakeForm() {
             </div>
 
             {/* YOUR BUSINESS */}
-            <div style={{ marginTop: '2.5rem', paddingTop: '2rem', borderTop: '1px solid #D4CFC6' }}>
+            <div style={{ marginTop: '2.5rem', paddingTop: '2rem', borderTop: '2px solid #B8924A' }}>
               <div style={{
                 fontSize: '0.625rem',
                 fontWeight: 500,
@@ -327,7 +327,7 @@ export default function IntakeForm() {
                     width: '100%',
                     padding: '0.875rem 1rem',
                     background: '#E8E4DB',
-                    border: '1px solid #D4CFC6',
+                    border: '2px solid #B8924A',
                     color: '#1C1A17',
                     fontFamily: "'Inter', sans-serif",
                     fontSize: '0.9375rem',
@@ -363,7 +363,7 @@ export default function IntakeForm() {
                       background: '#E8E4DB url("data:image/svg+xml,%3Csvg width=\'10\' height=\'6\' viewBox=\'0 0 10 6\' fill=\'none\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M1 1L5 5L9 1\' stroke=\'%236B6760\' stroke-width=\'1.2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/%3E%3C/svg%3E")',
                       backgroundRepeat: 'no-repeat',
                       backgroundPosition: 'right 1rem center',
-                      border: '1px solid #D4CFC6',
+                      border: '2px solid #B8924A',
                       color: '#1C1A17',
                       fontFamily: "'Inter', sans-serif",
                       fontSize: '0.9375rem',
@@ -404,7 +404,7 @@ export default function IntakeForm() {
                       background: '#E8E4DB url("data:image/svg+xml,%3Csvg width=\'10\' height=\'6\' viewBox=\'0 0 10 6\' fill=\'none\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M1 1L5 5L9 1\' stroke=\'%236B6760\' stroke-width=\'1.2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/%3E%3C/svg%3E")',
                       backgroundRepeat: 'no-repeat',
                       backgroundPosition: 'right 1rem center',
-                      border: '1px solid #D4CFC6',
+                      border: '2px solid #B8924A',
                       color: '#1C1A17',
                       fontFamily: "'Inter', sans-serif",
                       fontSize: '0.9375rem',
@@ -451,7 +451,7 @@ export default function IntakeForm() {
                       background: '#E8E4DB url("data:image/svg+xml,%3Csvg width=\'10\' height=\'6\' viewBox=\'0 0 10 6\' fill=\'none\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M1 1L5 5L9 1\' stroke=\'%236B6760\' stroke-width=\'1.2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/%3E%3C/svg%3E")',
                       backgroundRepeat: 'no-repeat',
                       backgroundPosition: 'right 1rem center',
-                      border: '1px solid #D4CFC6',
+                      border: '2px solid #B8924A',
                       color: '#1C1A17',
                       fontFamily: "'Inter', sans-serif",
                       fontSize: '0.9375rem',
@@ -493,7 +493,7 @@ export default function IntakeForm() {
                       background: '#E8E4DB url("data:image/svg+xml,%3Csvg width=\'10\' height=\'6\' viewBox=\'0 0 10 6\' fill=\'none\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M1 1L5 5L9 1\' stroke=\'%236B6760\' stroke-width=\'1.2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/%3E%3C/svg%3E")',
                       backgroundRepeat: 'no-repeat',
                       backgroundPosition: 'right 1rem center',
-                      border: '1px solid #D4CFC6',
+                      border: '2px solid #B8924A',
                       color: '#1C1A17',
                       fontFamily: "'Inter', sans-serif",
                       fontSize: '0.9375rem',
@@ -539,7 +539,7 @@ export default function IntakeForm() {
                       background: '#E8E4DB url("data:image/svg+xml,%3Csvg width=\'10\' height=\'6\' viewBox=\'0 0 10 6\' fill=\'none\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M1 1L5 5L9 1\' stroke=\'%236B6760\' stroke-width=\'1.2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/%3E%3C/svg%3E")',
                       backgroundRepeat: 'no-repeat',
                       backgroundPosition: 'right 1rem center',
-                      border: '1px solid #D4CFC6',
+                      border: '2px solid #B8924A',
                       color: '#1C1A17',
                       fontFamily: "'Inter', sans-serif",
                       fontSize: '0.9375rem',
@@ -628,7 +628,7 @@ export default function IntakeForm() {
                       background: '#E8E4DB url("data:image/svg+xml,%3Csvg width=\'10\' height=\'6\' viewBox=\'0 0 10 6\' fill=\'none\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M1 1L5 5L9 1\' stroke=\'%236B6760\' stroke-width=\'1.2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/%3E%3C/svg%3E")',
                       backgroundRepeat: 'no-repeat',
                       backgroundPosition: 'right 1rem center',
-                      border: '1px solid #D4CFC6',
+                      border: '2px solid #B8924A',
                       color: '#1C1A17',
                       fontFamily: "'Inter', sans-serif",
                       fontSize: '0.9375rem',
@@ -654,7 +654,7 @@ export default function IntakeForm() {
             </div>
 
             {/* SUBMIT */}
-            <div style={{ marginTop: '2.5rem', paddingTop: '2rem', borderTop: '1px solid #D4CFC6' }}>
+            <div style={{ marginTop: '2.5rem', paddingTop: '2rem', borderTop: '2px solid #B8924A' }}>
               <button
                 type="submit"
                 disabled={loading}
@@ -698,7 +698,7 @@ export default function IntakeForm() {
         ) : (
           <div style={{
             padding: '3rem',
-            border: '1px solid #D4CFC6',
+            border: '2px solid #B8924A',
             textAlign: 'center'
           }}>
             <h3 style={{

@@ -177,16 +177,16 @@ export default function About() {
           </div>
 
           {/* Operating Philosophy */}
-          <div style={{ marginBottom: '4rem', padding: '2rem', borderTop: '1px solid #2e2b26', borderBottom: '1px solid #2e2b26' }}>
+          <div style={{ marginBottom: '4rem', padding: '2rem', borderTop: '2px solid #3a3733', borderBottom: '2px solid #3a3733' }}>
             <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '1rem', fontWeight: 300, fontStyle: 'italic', lineHeight: 1.8, color: '#F0EDE6' }}>
               I operate at the intersection of revenue, marketing, and product—ensuring strategy translates into execution and measurable growth. My focus: aligning product, go-to-market, and unit economics to build defensible revenue growth.
             </p>
           </div>
 
           {/* Stats Grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '0', border: '1px solid #2e2b26', marginBottom: '3rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '0', border: '2px solid #3a3733', marginBottom: '3rem' }}>
             {/* Stat 1: 8+ */}
-            <div style={{ padding: '2rem', borderRight: '1px solid #2e2b26', borderBottom: '1px solid #2e2b26' }}>
+            <div style={{ padding: '2rem', borderRight: '2px solid #3a3733', borderBottom: '2px solid #3a3733' }}>
               <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '3rem', fontWeight: 300, color: '#B8924A', marginBottom: '0.5rem' }}>
                 8+
               </div>
@@ -196,7 +196,7 @@ export default function About() {
             </div>
 
             {/* Stat 2: $10M+ */}
-            <div style={{ padding: '2rem', borderBottom: '1px solid #2e2b26' }}>
+            <div style={{ padding: '2rem', borderBottom: '2px solid #3a3733' }}>
               <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '3rem', fontWeight: 300, color: '#B8924A', marginBottom: '0.5rem' }}>
                 $10M+
               </div>
@@ -206,7 +206,7 @@ export default function About() {
             </div>
 
             {/* Stat 3: 20+ */}
-            <div style={{ padding: '2rem', borderRight: '1px solid #2e2b26' }}>
+            <div style={{ padding: '2rem', borderRight: '2px solid #3a3733' }}>
               <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '3rem', fontWeight: 300, color: '#B8924A', marginBottom: '0.5rem' }}>
                 20+
               </div>
@@ -227,7 +227,7 @@ export default function About() {
           </div>
 
           {/* Closing Statement */}
-          <div style={{ padding: '2rem', border: '1px solid #2e2b26', textAlign: 'center' }}>
+          <div style={{ padding: '2rem', border: '2px solid #3a3733', textAlign: 'center' }}>
             <div style={{ fontSize: '2rem', color: '#B8924A', marginBottom: '1rem' }}>∞</div>
             <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5rem', fontWeight: 300, color: '#F0EDE6' }}>
               Experience Forged Across Industry, A Perspective Built For What's Next...

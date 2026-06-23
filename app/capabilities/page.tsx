@@ -44,7 +44,7 @@ export default function CapabilitiesPage() {
           letter-spacing: 0.12em;
           text-transform: uppercase;
           padding: 0.3rem 0.625rem;
-          border: 1px solid #2e2b26;
+          border: 2px solid #3a3733;
           color: #F0EDE6;
         }
 
@@ -113,7 +113,7 @@ export default function CapabilitiesPage() {
       <Nav />
 
       {/* HERO */}
-      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 8rem) 0 clamp(4rem, 8vw, 7rem)', borderBottom: '1px solid #2e2b26' }}>
+      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 8rem) 0 clamp(4rem, 8vw, 7rem)', borderBottom: '2px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1.1fr 1fr', gap: '5rem', alignItems: 'center' }}>
             {/* Left content */}
@@ -163,7 +163,7 @@ export default function CapabilitiesPage() {
       </section>
 
       {/* PROBLEM */}
-      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #D4CFC6' }}>
+      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #B8924A' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6rem', alignItems: 'center' }}>
             <div>
@@ -182,7 +182,7 @@ export default function CapabilitiesPage() {
               <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#1C1A17', marginBottom: '1.25rem' }}>
                 Digital marketing done right is not about more content or more ads. It's about a coherent system — one that reaches the right person, with the right message, at the right moment — and measures what actually happens next.
               </p>
-              <ul style={{ listStyle: 'none', borderTop: '1px solid #D4CFC6', margin: 0, padding: 0 }}>
+              <ul style={{ listStyle: 'none', borderTop: '2px solid #B8924A', margin: 0, padding: 0 }}>
                 {[
                   'No consistent presence in search when potential guests are looking',
                   'Ad spend with no clear attribution to bookings or revenue',
@@ -190,7 +190,7 @@ export default function CapabilitiesPage() {
                   'Email lists that sit unused or broadcast generic newsletters',
                   'No view of which marketing activities are actually working'
                 ].map((item, i) => (
-                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '1rem 0', borderBottom: '1px solid #D4CFC6', fontSize: '0.9375rem', fontWeight: 300, color: '#1C1A17', lineHeight: 1.6 }}>
+                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '1rem 0', borderBottom: '2px solid #B8924A', fontSize: '0.9375rem', fontWeight: 300, color: '#1C1A17', lineHeight: 1.6 }}>
                     <span style={{ width: '4px', height: '4px', background: '#B8924A', borderRadius: '50%', flexShrink: 0, marginTop: '0.6rem' }}></span>
                     {item}
                   </li>
@@ -202,7 +202,7 @@ export default function CapabilitiesPage() {
       </section>
 
       {/* CORE CAPABILITIES */}
-      <section id="capabilities" style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #2e2b26' }}>
+      <section id="capabilities" style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'end', marginBottom: '4rem' }}>
             <div>
@@ -219,7 +219,7 @@ export default function CapabilitiesPage() {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0', borderTop: '1px solid #2e2b26' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0', borderTop: '2px solid #3a3733' }}>
             {[
               {
                 num: '01',
@@ -252,7 +252,7 @@ export default function CapabilitiesPage() {
                 tags: ['Campaign Attribution', 'Conversion Tracking', 'ROI Reporting', 'Dashboard Setup']
               }
             ].map((cap, i) => (
-              <div key={i} style={{ padding: '3rem 2.5rem 3rem 0', borderRight: i % 3 !== 2 ? '1px solid #2e2b26' : 'none' }}>
+              <div key={i} style={{ padding: '3rem 2.5rem 3rem 0', borderRight: i % 3 !== 2 ? '2px solid #3a3733' : 'none' }}>
                 <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1.25rem' }}>
                   {cap.num}
                 </div>
@@ -264,7 +264,7 @@ export default function CapabilitiesPage() {
                 </p>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
                   {cap.tags.map((tag, j) => (
-                    <span key={j} style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase', padding: '0.3rem 0.625rem', border: '1px solid #2e2b26', color: '#F0EDE6' }}>
+                    <span key={j} style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase', padding: '0.3rem 0.625rem', border: '2px solid #3a3733', color: '#F0EDE6' }}>
                       {tag}
                     </span>
                   ))}
@@ -289,7 +289,7 @@ export default function CapabilitiesPage() {
       </section>
 
       {/* TECH STACK */}
-      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #D4CFC6' }}>
+      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #B8924A' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6rem', alignItems: 'start', marginBottom: '4rem' }}>
             <div>
@@ -306,14 +306,14 @@ export default function CapabilitiesPage() {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0', borderTop: '1px solid #D4CFC6' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0', borderTop: '2px solid #B8924A' }}>
             {[
               { label: 'CRM', name: 'Customer Relationship Management', examples: 'HubSpot, Salesforce, or the platform that fits your business size and workflow — configured for hospitality-specific lead and guest lifecycle management.' },
               { label: 'Analytics', name: 'Data & Measurement', examples: 'Google Analytics 4, Google Tag Manager, Looker Studio — set up to track what actually matters: conversions, bookings, and revenue attribution, not pageviews.' },
               { label: 'Search & Advertising', name: 'SEO & Paid Media', examples: 'SEMrush, Moz, Google Ads Manager — used to manage organic search performance and paid campaign efficiency across search and social platforms.' },
               { label: 'Email & Automation', name: 'Marketing Automation', examples: 'Klaviyo, Mailchimp, or HubSpot Marketing — configured for automated, personalized guest communication at every stage of the customer lifecycle.' }
             ].map((item, i) => (
-              <div key={i} style={{ padding: '2.5rem 2rem 2.5rem 0', borderRight: i < 3 ? '1px solid #D4CFC6' : 'none' }}>
+              <div key={i} style={{ padding: '2.5rem 2rem 2.5rem 0', borderRight: i < 3 ? '2px solid #B8924A' : 'none' }}>
                 <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1rem' }}>
                   {item.label}
                 </div>
@@ -330,7 +330,7 @@ export default function CapabilitiesPage() {
       </section>
 
       {/* HOW WE ENGAGE */}
-      <section style={{ background: '#E8E4DB', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #D4CFC6' }}>
+      <section style={{ background: '#E8E4DB', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #B8924A' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#6B6760', marginBottom: '2rem' }}>
             <span style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></span>
@@ -339,14 +339,14 @@ export default function CapabilitiesPage() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, marginBottom: '3.5rem', maxWidth: '22ch', color: '#1C1A17' }}>
             Built Around Your Business,<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Not A Standard Package.</em>
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0', borderTop: '1px solid #D4CFC6' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0', borderTop: '2px solid #B8924A' }}>
             {[
               { num: '01', title: 'Audit & diagnosis', desc: 'We start by understanding what you have, what is working, and what is not - before recommending anything. No assumptions.' },
               { num: '02', title: 'Strategy & prioritization', desc: 'We identify the highest-leverage opportunities for your specific business and budget - and build a phased plan to address them in order of impact.' },
               { num: '03', title: 'Build & deploy', desc: "We configure the platforms, build the campaigns, and set up the measurement infrastructure - so you are not handed a strategy deck with no execution path." },
               { num: '04', title: 'Measure & optimize', desc: "Every engagement includes a reporting cadence so you can see what is working, what to double down on, and what to cut - without guessing." }
             ].map((step, i) => (
-              <div key={i} style={{ padding: '2.5rem 2rem 2.5rem 0', borderRight: i < 3 ? '1px solid #D4CFC6' : 'none' }}>
+              <div key={i} style={{ padding: '2.5rem 2rem 2.5rem 0', borderRight: i < 3 ? '2px solid #B8924A' : 'none' }}>
                 <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1.25rem' }}>
                   {step.num}
                 </div>
@@ -363,7 +363,7 @@ export default function CapabilitiesPage() {
       </section>
 
       {/* WHO IT'S FOR */}
-      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #D4CFC6' }}>
+      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #B8924A' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'end', marginBottom: '4rem' }}>
             <div>
@@ -471,16 +471,16 @@ export default function CapabilitiesPage() {
       </section>
 
       {/* HELP CARD SECTION */}
-      <section style={{ background: '#E8E4DB', borderBottom: '1px solid #D4CFC6' }}>
+      <section style={{ background: '#E8E4DB', borderBottom: '2px solid #B8924A' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ paddingTop: 'clamp(3rem, 5vw, 4rem)', paddingBottom: 'clamp(3rem, 5vw, 4rem)' }}>
-            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.75rem, 3vw, 2.25rem)', fontWeight: 300, lineHeight: 1.15, color: '#1C1A17', marginBottom: '2rem', paddingBottom: '2rem', borderBottom: '1px solid #D4CFC6' }}>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.75rem, 3vw, 2.25rem)', fontWeight: 300, lineHeight: 1.15, color: '#1C1A17', marginBottom: '2rem', paddingBottom: '2rem', borderBottom: '2px solid #B8924A' }}>
               When you're ready, here's <em style={{ fontStyle: 'italic', color: '#B8924A' }}>how we can help.</em>
             </h2>
 
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0' }}>
               {/* Option 1 */}
-              <div style={{ paddingRight: '2.5rem', borderRight: '1px solid #D4CFC6' }}>
+              <div style={{ paddingRight: '2.5rem', borderRight: '2px solid #B8924A' }}>
                 <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '0.625rem' }}>
                   Free · 1 Hour
                 </div>
@@ -490,7 +490,7 @@ export default function CapabilitiesPage() {
                 <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760', marginBottom: '1.5rem' }}>
                   Get Brandon's direct read on your current marketing operation — what's working, what isn't, and where the highest-leverage opportunities are. Leave with a clear next step, not a sales pitch.
                 </p>
-                <Link href="/contact?type=clarity-session" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#1C1A17', borderBottom: '1px solid #D4CFC6', paddingBottom: '2px', textDecoration: 'none' }}>
+                <Link href="/contact?type=clarity-session" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#1C1A17', borderBottom: '2px solid #B8924A', paddingBottom: '2px', textDecoration: 'none' }}>
                   Book a session →
                 </Link>
               </div>
@@ -506,7 +506,7 @@ export default function CapabilitiesPage() {
                 <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760', marginBottom: '1.5rem' }}>
                   A scoped Aperture engagement to build the digital marketing system your business needs — from strategy through execution. Configured for hospitality and luxury brands, not generic small business playbooks.
                 </p>
-                <Link href="/contact?type=engagement" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#1C1A17', borderBottom: '1px solid #D4CFC6', paddingBottom: '2px', textDecoration: 'none' }}>
+                <Link href="/contact?type=engagement" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#1C1A17', borderBottom: '2px solid #B8924A', paddingBottom: '2px', textDecoration: 'none' }}>
                   Start a conversation →
                 </Link>
               </div>

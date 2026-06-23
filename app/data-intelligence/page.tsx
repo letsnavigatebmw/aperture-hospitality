@@ -52,7 +52,7 @@ export default function DataIntelligencePage() {
       <Nav />
 
       {/* HERO REDESIGNED */}
-      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 8rem) 0', borderBottom: '1px solid #2e2b26' }}>
+      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 8rem) 0', borderBottom: '2px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           {/* Top row: Left content + Right features */}
           <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '5rem', alignItems: 'flex-start', marginBottom: '4rem' }}>
@@ -114,7 +114,7 @@ export default function DataIntelligencePage() {
       {/* WHAT IS NAVIGATE SECTION */}
       <section style={{
         padding: 'clamp(5rem, 10vw, 9rem) 0',
-        borderBottom: '1px solid #D4CFC6',
+        borderBottom: '2px solid #B8924A',
         background: '#F0EDE6',
       }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
@@ -178,7 +178,7 @@ export default function DataIntelligencePage() {
               </p>
 
               {/* Bullet list */}
-              <ul style={{ listStyle: 'none', borderTop: '1px solid #D4CFC6', margin: 0, padding: 0 }}>
+              <ul style={{ listStyle: 'none', borderTop: '2px solid #B8924A', margin: 0, padding: 0 }}>
                 {[
                   'Define your territory and filter for the right properties',
                   'Access verified owner contact information instantly',
@@ -189,7 +189,7 @@ export default function DataIntelligencePage() {
                 ].map((item, i) => (
                   <li key={i} style={{
                     display: 'flex', alignItems: 'flex-start', gap: '1rem',
-                    padding: '1rem 0', borderBottom: '1px solid #D4CFC6',
+                    padding: '1rem 0', borderBottom: '2px solid #B8924A',
                     fontFamily: "'Inter', sans-serif",
                     fontSize: '0.9375rem', fontWeight: 300,
                     lineHeight: 1.6, color: '#1C1A17',
@@ -206,7 +206,7 @@ export default function DataIntelligencePage() {
       </section>
 
       {/* PRODUCT DEMOS */}
-      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #2e2b26' }}>
+      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#F0EDE6', marginBottom: '2rem' }}>
             <span style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></span>
@@ -221,7 +221,7 @@ export default function DataIntelligencePage() {
 
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
             {/* Navigate Demo Card */}
-            <div style={{ background: '#252220', border: '1px solid #2e2b26', borderRadius: '8px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
+            <div style={{ background: '#252220', border: '2px solid #3a3733', borderRadius: '8px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
               <a href="https://app.guidde.com/share/playbooks/orS5f73hqc9QkNyE9kTy1M?origin=eLXF4oshrtU3laZW7wh2RQaDByy1&mode=videoAndDoc" target="_blank" rel="noopener noreferrer" style={{ position: 'relative', width: '100%', paddingBottom: '56.25%', background: '#000', backgroundImage: 'url(/navigate-demo.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', display: 'block', textDecoration: 'none' }}>
                 <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0, 0, 0, 0.3)', transition: 'background 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.background = 'rgba(0, 0, 0, 0.5)')} onMouseLeave={(e) => (e.currentTarget.style.background = 'rgba(0, 0, 0, 0.3)')}>
                   <div style={{ width: '60px', height: '60px', borderRadius: '50%', background: '#F0EDE6', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'transform 0.2s', zIndex: 10 }} onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.1)')} onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}>
@@ -249,7 +249,7 @@ export default function DataIntelligencePage() {
             </div>
 
             {/* Nexus Demo Card */}
-            <div style={{ background: '#252220', border: '1px solid #2e2b26', borderRadius: '8px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
+            <div style={{ background: '#252220', border: '2px solid #3a3733', borderRadius: '8px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
               <a href="https://app.guidde.com/share/playbooks/hRYrhiL82diYNCAd1iNfQL?origin=eLXF4oshrtU3laZW7wh2RQaDByy1&mode=videoAndDoc" target="_blank" rel="noopener noreferrer" style={{ position: 'relative', width: '100%', paddingBottom: '56.25%', background: '#000', backgroundImage: 'url(/nexus-demo.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', display: 'block', textDecoration: 'none' }}>
                 <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0, 0, 0, 0.3)', transition: 'background 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.background = 'rgba(0, 0, 0, 0.5)')} onMouseLeave={(e) => (e.currentTarget.style.background = 'rgba(0, 0, 0, 0.3)')}>
                   <div style={{ width: '60px', height: '60px', borderRadius: '50%', background: '#F0EDE6', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'transform 0.2s', zIndex: 10 }} onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.1)')} onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}>
@@ -280,7 +280,7 @@ export default function DataIntelligencePage() {
       </section>
 
       {/* THREE PILLARS */}
-      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #2e2b26' }}>
+      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'end', marginBottom: '4rem' }}>
             <div>
@@ -297,7 +297,7 @@ export default function DataIntelligencePage() {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0', borderTop: '1px solid #2e2b26' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0', borderTop: '2px solid #3a3733' }}>
             {[
               {
                 num: '01',
@@ -318,7 +318,7 @@ export default function DataIntelligencePage() {
                 features: ['Email, letter, and postcard campaigns', 'One-click personalized mass outreach', 'Timing optimization for highest conversion', 'Campaign tracking and pipeline reporting']
               }
             ].map((pillar, i) => (
-              <div key={i} style={{ padding: '3rem 2.5rem 3rem 0', borderRight: i < 2 ? '1px solid #2e2b26' : 'none' }}>
+              <div key={i} style={{ padding: '3rem 2.5rem 3rem 0', borderRight: i < 2 ? '2px solid #3a3733' : 'none' }}>
                 <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1.5rem' }}>
                   {pillar.num}
                 </div>
@@ -328,9 +328,9 @@ export default function DataIntelligencePage() {
                 <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#F0EDE6', marginBottom: '1.75rem' }}>
                   {pillar.desc}
                 </p>
-                <ul style={{ listStyle: 'none', borderTop: '1px solid #2e2b26', padding: 0, margin: 0 }}>
+                <ul style={{ listStyle: 'none', borderTop: '2px solid #3a3733', padding: 0, margin: 0 }}>
                   {pillar.features.map((feature, j) => (
-                    <li key={j} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', padding: '0.75rem 0', borderBottom: '1px solid #2e2b26', fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.5 }}>
+                    <li key={j} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', padding: '0.75rem 0', borderBottom: '2px solid #3a3733', fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.5 }}>
                       <span style={{ width: '4px', height: '4px', background: '#B8924A', borderRadius: '50%', flexShrink: 0, marginTop: '0.55rem' }}></span>
                       {feature}
                     </li>
@@ -343,7 +343,7 @@ export default function DataIntelligencePage() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #D4CFC6' }}>
+      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #B8924A' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#6B6760', marginBottom: '2rem' }}>
             <span style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></span>
@@ -376,7 +376,7 @@ export default function DataIntelligencePage() {
       </section>
 
       {/* TESTIMONIAL SECTION */}
-      <section style={{ background: '#E8E4DB', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #D4CFC6' }}>
+      <section style={{ background: '#E8E4DB', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #B8924A' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           {/* Header */}
           <div style={{ marginBottom: '4rem' }}>
@@ -390,7 +390,7 @@ export default function DataIntelligencePage() {
           </div>
 
           {/* Testimonial */}
-          <div style={{ paddingTop: '3rem', borderTop: '1px solid #D4CFC6' }}>
+          <div style={{ paddingTop: '3rem', borderTop: '2px solid #B8924A' }}>
             <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.25rem, 2vw, 1.5625rem)', fontWeight: 300, fontStyle: 'italic', lineHeight: 1.75, color: '#1C1A17', marginBottom: '2.5rem', margin: '0 0 2.5rem 0' }}>
               "I wanted to let you know how impactful Navigate has been for my family. We had been looking in Boise for four years in our school district and had not found anything until Navigate. I'd been sending a mailer every month for over a year and nothing happened. I sent one mailer and email from Navigate to the same area and got 6 responses within a week. One of those emails was a seller who had been looking to move and his agent called me to see it before they listed it. My husband and I are now living in our dream property. Thank you so much for creating this. We cannot thank you enough!"
             </p>
@@ -402,7 +402,7 @@ export default function DataIntelligencePage() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #2e2b26' }}>
+      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.5fr', gap: '6rem', alignItems: 'start' }}>
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, color: '#F0EDE6' }}>
@@ -412,7 +412,7 @@ export default function DataIntelligencePage() {
               {faqItems.map((item, i) => (
                 <div
                   key={i}
-                  style={{ borderBottom: '1px solid #2e2b26', padding: '1.75rem 0', cursor: 'pointer' }}
+                  style={{ borderBottom: '2px solid #3a3733', padding: '1.75rem 0', cursor: 'pointer' }}
                   onClick={() => setOpenFaqId(openFaqId === i ? -1 : i)}
                 >
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem' }}>
@@ -436,7 +436,7 @@ export default function DataIntelligencePage() {
       </section>
 
       {/* FINAL CTA */}
-      <section style={{ padding: 'clamp(5rem, 10vw, 8rem) 0', borderBottom: '1px solid #D4CFC6' }}>
+      <section style={{ padding: 'clamp(5rem, 10vw, 8rem) 0', borderBottom: '2px solid #B8924A' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '3rem' }}>
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, maxWidth: '22ch', margin: 0 }}>

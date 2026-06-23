@@ -12,7 +12,7 @@ export default function SolutionsPage() {
       {/* SOLUTIONS HERO */}
       <section style={{
         padding: 'clamp(5rem, 10vw, 8rem) 0 clamp(4rem, 8vw, 7rem)',
-        borderBottom: '1px solid #D4CFC6',
+        borderBottom: '2px solid #B8924A',
         background: '#1C1A17'
       }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
@@ -86,7 +86,7 @@ export default function SolutionsPage() {
       {/* PRODUCTS */}
       <section style={{
         padding: 'clamp(5rem, 10vw, 9rem) 0',
-        borderBottom: '1px solid #D4CFC6'
+        borderBottom: '2px solid #B8924A'
       }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           
@@ -117,13 +117,13 @@ export default function SolutionsPage() {
             display: 'grid',
             gridTemplateColumns: '1fr 1fr',
             gap: 0,
-            border: '1px solid #D4CFC6',
+            border: '2px solid #B8924A',
             marginBottom: '2rem'
           }}>
             {/* Left: Info */}
             <div style={{
               padding: '3.5rem',
-              borderRight: '1px solid #D4CFC6'
+              borderRight: '2px solid #B8924A'
             }}>
               <div style={{
                 fontFamily: "'Inter', sans-serif",
@@ -192,7 +192,7 @@ export default function SolutionsPage() {
               
               <ul style={{
                 listStyle: 'none',
-                borderTop: '1px solid #D4CFC6',
+                borderTop: '2px solid #B8924A',
                 margin: 0,
                 padding: 0
               }}>
@@ -210,7 +210,7 @@ export default function SolutionsPage() {
                     fontWeight: 300,
                     color: '#6B6760',
                     padding: '0.75rem 0',
-                    borderBottom: '1px solid #D4CFC6',
+                    borderBottom: '2px solid #B8924A',
                     display: 'flex',
                     alignItems: 'center',
                     gap: '0.75rem'
@@ -301,13 +301,13 @@ export default function SolutionsPage() {
                   lineHeight: 1.6,
                   marginTop: '1rem',
                   paddingTop: '1rem',
-                  borderTop: '1px solid #D4CFC6'
+                  borderTop: '2px solid #B8924A'
                 }}>
                   Setup fee may apply depending on integration complexity. Aperture handles configuration. Powered by Revenue Factory technology.
                 </p>
               </div>
 
-              <div style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid #D4CFC6' }}>
+              <div style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '2px solid #B8924A' }}>
                 <div style={{
                   fontFamily: "'Inter', sans-serif",
                   fontSize: '0.625rem',
@@ -330,7 +330,7 @@ export default function SolutionsPage() {
                       fontWeight: 300,
                       color: '#6B6760',
                       padding: '0.5rem 0',
-                      borderBottom: i < 3 ? '1px solid #D4CFC6' : 'none',
+                      borderBottom: i < 3 ? '2px solid #B8924A' : 'none',
                       display: 'flex',
                       gap: '0.75rem',
                       alignItems: 'center'
@@ -392,7 +392,7 @@ export default function SolutionsPage() {
       <section style={{
         padding: 'clamp(5rem, 10vw, 9rem) 0',
         background: '#1C1A17',
-        borderBottom: '1px solid #2e2b26'
+        borderBottom: '2px solid #3a3733'
       }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           
@@ -423,7 +423,7 @@ export default function SolutionsPage() {
             gridTemplateColumns: 'repeat(4, 1fr)',
             gap: 0,
             marginTop: '3rem',
-            borderTop: '1px solid #2e2b26'
+            borderTop: '2px solid #3a3733'
           }}>
             {[
               { number: '01', title: 'Choose a solution', desc: 'Browse the available tools, review the pricing, and select what fits your immediate need. No sales call required.' },
@@ -433,7 +433,7 @@ export default function SolutionsPage() {
             ].map((step, i) => (
               <div key={i} style={{
                 padding: i === 3 ? '2.5rem 0 2.5rem 2rem' : '2.5rem 2rem 2.5rem 0',
-                borderRight: i === 3 ? 'none' : '1px solid #2e2b26'
+                borderRight: i === 3 ? 'none' : '2px solid #3a3733'
               }}>
                 <div style={{
                   fontFamily: "'Inter', sans-serif",
@@ -474,7 +474,7 @@ export default function SolutionsPage() {
       {/* CTA BAND */}
       <section style={{
         padding: 'clamp(4rem, 8vw, 7rem) 0',
-        borderBottom: '1px solid #D4CFC6'
+        borderBottom: '2px solid #B8924A'
       }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{

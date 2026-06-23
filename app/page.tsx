@@ -300,7 +300,7 @@ export default function Home() {
       </div>
 
       {/* AI SOLUTIONS SUITE */}
-      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', background: '#F0EDE6', borderBottom: '1px solid #D4CFC6' }}>
+      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', background: '#F0EDE6', borderBottom: '2px solid #B8924A' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           
           {/* Section label */}

@@ -24,7 +24,7 @@ export default function ApertureFrameworksPage() {
       <Nav />
 
       {/* HERO */}
-      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 8rem) 0 clamp(4rem, 8vw, 7rem)', borderBottom: '1px solid #2e2b26' }}>
+      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 8rem) 0 clamp(4rem, 8vw, 7rem)', borderBottom: '2px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'flex-end' }}>
             <div>
@@ -43,7 +43,7 @@ export default function ApertureFrameworksPage() {
               <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: 0, maxWidth: '44ch' }}>
                 Use them to pressure-test your own approach. If you want help applying them to your business, that's what we're here for.
               </p>
-              <div style={{ fontSize: '0.8125rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760', paddingTop: '1.5rem', borderTop: '1px solid #2e2b26', marginTop: '1.5rem' }}>
+              <div style={{ fontSize: '0.8125rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760', paddingTop: '1.5rem', borderTop: '2px solid #3a3733', marginTop: '1.5rem' }}>
                 Frameworks are published as standalone articles. More are added as engagements surface new patterns worth codifying.
               </div>
             </div>
@@ -52,7 +52,7 @@ export default function ApertureFrameworksPage() {
       </section>
 
       {/* FRAMEWORK INDEX */}
-      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #D4CFC6' }}>
+      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #B8924A' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
 
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '5rem', alignItems: 'start', marginBottom: '4rem' }}>
@@ -73,7 +73,7 @@ export default function ApertureFrameworksPage() {
             { num: '05', category: 'Forecasting & Planning', title: 'The Hospitality Revenue Planning Framework', desc: 'Math-based revenue planning for hospitality operators who are still running their forecasts on gut-feel and prior-year comparisons. How to build a bottom-up revenue model, what inputs matter, and how to use it to drive real decisions rather than just satisfy a board deck.', link: '/apertureframeworks/hospitality-revenue-planning' },
             { num: '06', category: 'Digital Marketing', title: 'The Boutique Brand Digital Marketing Playbook', desc: 'A practical playbook for boutique hospitality and luxury brands building a digital marketing capability from scratch or fixing one that isn\'t working. Channel prioritization, tech stack decisions, and how to measure what actually drives revenue — not impressions.', link: '/apertureframeworks/digital-marketing-playbook' }
           ].map((fw, i) => (
-            <div key={i} style={{ display: 'grid', gridTemplateColumns: 'auto 1fr auto', gap: '3rem', alignItems: 'flex-start', padding: '2.5rem 0', borderTop: '1px solid #D4CFC6', borderBottom: i === 5 ? '1px solid #D4CFC6' : 'none' }}>
+            <div key={i} style={{ display: 'grid', gridTemplateColumns: 'auto 1fr auto', gap: '3rem', alignItems: 'flex-start', padding: '2.5rem 0', borderTop: '2px solid #B8924A', borderBottom: i === 5 ? '2px solid #B8924A' : 'none' }}>
               <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '3.5rem', fontWeight: 300, color: '#D4CFC6', lineHeight: 1, paddingTop: '0.25rem', minWidth: '60px', textAlign: 'right' }}>
                 {fw.num}
               </div>
@@ -102,7 +102,7 @@ export default function ApertureFrameworksPage() {
       </section>
 
       {/* PHILOSOPHY */}
-      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #2e2b26' }}>
+      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6rem', alignItems: 'center' }}>
             <div>
@@ -118,7 +118,7 @@ export default function ApertureFrameworksPage() {
               <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '1.25rem' }}>
                 Every framework Aperture applies is grounded in the same underlying convictions about how commercial strategy actually works in hospitality and luxury contexts.
               </p>
-              <ul style={{ listStyle: 'none', borderTop: '1px solid #2e2b26', margin: 0, padding: 0, marginBottom: '2rem' }}>
+              <ul style={{ listStyle: 'none', borderTop: '2px solid #3a3733', margin: 0, padding: 0, marginBottom: '2rem' }}>
                 {[
                   'Systems outperform talent over time. Build the process, not the superstar.',
                   'Specificity beats comprehensiveness. A narrow, precise strategy beats a broad, hedged one.',
@@ -127,7 +127,7 @@ export default function ApertureFrameworksPage() {
                   'Most hospitality brands market to the wrong person. Start with who actually buys.',
                   'Revenue is a lagging indicator. Fix the inputs, the outputs follow.'
                 ].map((pillar, i) => (
-                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '0.875rem 0', borderBottom: '1px solid #2e2b26', fontSize: '0.9375rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.5 }}>
+                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '0.875rem 0', borderBottom: '2px solid #3a3733', fontSize: '0.9375rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.5 }}>
                     <span style={{ width: '4px', height: '4px', background: '#B8924A', borderRadius: '50%', flexShrink: 0, marginTop: '0.55rem', display: 'block' }}></span>
                     {pillar}
                   </li>
@@ -142,7 +142,7 @@ export default function ApertureFrameworksPage() {
       </section>
 
       {/* NEWSLETTER */}
-      <section style={{ padding: 'clamp(5rem, 10vw, 8rem) 0', borderBottom: '1px solid #D4CFC6', background: '#F0EDE6' }}>
+      <section style={{ padding: 'clamp(5rem, 10vw, 8rem) 0', borderBottom: '2px solid #B8924A', background: '#F0EDE6' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '4rem', flexWrap: 'wrap' }}>
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3vw, 2.75rem)', fontWeight: 300, lineHeight: 1.15, maxWidth: '22ch', margin: 0 }}>
@@ -158,7 +158,7 @@ export default function ApertureFrameworksPage() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     onKeyPress={(e) => e.key === 'Enter' && handleSubscribe()}
-                    style={{ flex: 1, padding: '0.875rem 1rem', background: '#E8E4DB', border: '1px solid #D4CFC6', borderRight: 'none', color: '#1C1A17', fontFamily: "'Inter', sans-serif", fontSize: '0.9375rem', fontWeight: 300, outline: 'none', borderRadius: 0 }}
+                    style={{ flex: 1, padding: '0.875rem 1rem', background: '#E8E4DB', border: '2px solid #B8924A', borderRight: 'none', color: '#1C1A17', fontFamily: "'Inter', sans-serif", fontSize: '0.9375rem', fontWeight: 300, outline: 'none', borderRadius: 0 }}
                   />
                   <button
                     onClick={handleSubscribe}
@@ -179,7 +179,7 @@ export default function ApertureFrameworksPage() {
       </section>
 
       {/* FOOTER */}
-      <footer style={{ background: '#1C1A17', borderTop: '1px solid #2e2b26', padding: '2.5rem 0' }}>
+      <footer style={{ background: '#1C1A17', borderTop: '2px solid #3a3733', padding: '2.5rem 0' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
           <span style={{ fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#F0EDE6' }}>Aperture Hospitality</span>
           <div style={{ display: 'flex', gap: '2rem', listStyle: 'none' }}>

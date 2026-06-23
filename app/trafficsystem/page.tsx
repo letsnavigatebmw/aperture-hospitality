@@ -66,7 +66,7 @@ export default function TrafficSystemPage() {
       `}</style>
 
       {/* HERO */}
-      <section style={{ background: 'var(--ink)', padding: 'clamp(5rem,10vw,8rem) 0', borderBottom: '1px solid var(--dark2)' }}>
+      <section style={{ background: 'var(--ink)', padding: 'clamp(5rem,10vw,8rem) 0', borderBottom: '2px solid #3a3733' }}>
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'center' }}>
             <div>
@@ -91,13 +91,13 @@ export default function TrafficSystemPage() {
                 <span style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: '3.5rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1 }}>$500</span>
                 <span style={{ fontSize: '0.875rem', fontWeight: 300, color: 'var(--muted)' }}>/mo management</span>
               </div>
-              <div style={{ fontSize: '0.75rem', fontWeight: 300, color: 'var(--muted)', marginBottom: '2rem', paddingBottom: '2rem', borderBottom: '1px solid var(--dark2)' }}>
+              <div style={{ fontSize: '0.75rem', fontWeight: 300, color: 'var(--muted)', marginBottom: '2rem', paddingBottom: '2rem', borderBottom: '2px solid #3a3733' }}>
                 + media spend & one-time setup fee
               </div>
 
               <ul style={{ listStyle: 'none', marginBottom: '2rem' }}>
                 {['Completed hospitality landing page', 'Inquiry form and lead routing configured', 'First campaign setup and creative brief', 'Weekly performance scorecard', '30–90 day test window included'].map((item, i) => (
-                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', padding: '0.75rem 0', borderBottom: '1px solid var(--dark2)', fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.5 }}>
+                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', padding: '0.75rem 0', borderBottom: '2px solid #3a3733', fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.5 }}>
                     <span style={{ width: '16px', height: '16px', minWidth: '16px', marginTop: '2px', color: 'var(--brass)', fontWeight: 'bold' }}>✓</span>
                     {item}
                   </li>
@@ -145,7 +145,7 @@ export default function TrafficSystemPage() {
       </section>
 
       {/* SOLUTION */}
-      <section style={{ padding: 'clamp(5rem,10vw,9rem) 0', background: 'var(--ink)', borderBottom: '1px solid var(--dark2)' }}>
+      <section style={{ padding: 'clamp(5rem,10vw,9rem) 0', background: 'var(--ink)', borderBottom: '2px solid #3a3733' }}>
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6rem', alignItems: 'center' }}>
             <div>
@@ -224,7 +224,7 @@ export default function TrafficSystemPage() {
       </section>
 
       {/* FINAL CTA */}
-      <section style={{ padding: 'clamp(5rem,10vw,8rem) 0', background: 'var(--ink)', borderBottom: '1px solid var(--dark2)' }}>
+      <section style={{ padding: 'clamp(5rem,10vw,8rem) 0', background: 'var(--ink)', borderBottom: '2px solid #3a3733' }}>
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'center' }}>
             <div>
@@ -238,7 +238,7 @@ export default function TrafficSystemPage() {
               <div style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: '3rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1, marginBottom: '0.25rem' }}>
                 $500<span style={{ fontSize: '1rem', color: 'var(--muted)' }}>/mo</span>
               </div>
-              <div style={{ fontSize: '0.8125rem', fontWeight: 300, color: 'var(--muted)', marginBottom: '2rem', paddingBottom: '2rem', borderBottom: '1px solid var(--dark2)' }}>
+              <div style={{ fontSize: '0.8125rem', fontWeight: 300, color: 'var(--muted)', marginBottom: '2rem', paddingBottom: '2rem', borderBottom: '2px solid #3a3733' }}>
                 + media spend & one-time setup
               </div>
               <a href="/contact?product=traffic-system" style={{ display: 'block', textAlign: 'center', padding: '2rem 1.5rem', background: '#1C1A17', color: '#F0EDE6', border: '2.5px solid #B8924A', borderRadius: '16px', textDecoration: 'none', transition: 'all 0.3s', marginBottom: '1rem', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#2e2b26'; e.currentTarget.style.borderColor = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#1C1A17'; e.currentTarget.style.borderColor = '#B8924A'; }}>

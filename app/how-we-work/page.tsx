@@ -71,7 +71,7 @@ export default function HowWeWorkPage() {
       <section style={{
         padding: 'clamp(4rem, 10vw, 8rem) clamp(1.5rem, 4vw, 4rem)',
         background: '#F0EDE6',
-        borderBottom: '1px solid #D4CFC6'
+        borderBottom: '2px solid #B8924A'
       }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto' }}>
           
@@ -136,7 +136,7 @@ export default function HowWeWorkPage() {
       <section style={{
         padding: 'clamp(4rem, 10vw, 8rem) clamp(1.5rem, 4vw, 4rem)',
         background: '#F0EDE6',
-        borderBottom: '1px solid #D4CFC6'
+        borderBottom: '2px solid #B8924A'
       }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto' }}>
           
@@ -221,7 +221,7 @@ export default function HowWeWorkPage() {
       <section style={{
         padding: 'clamp(4rem, 10vw, 8rem) clamp(1.5rem, 4vw, 4rem)',
         background: '#1C1A17',
-        borderBottom: '1px solid #2e2b26'
+        borderBottom: '2px solid #3a3733'
       }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto' }}>
           
@@ -303,7 +303,7 @@ export default function HowWeWorkPage() {
       </section>
 
       {/* FRAMEWORKS & THINKING */}
-      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) clamp(1.5rem, 4vw, 4rem)', borderBottom: '1px solid #2e2b26' }}>
+      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) clamp(1.5rem, 4vw, 4rem)', borderBottom: '2px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto' }}>
           
           {/* Section label */}
@@ -348,7 +348,7 @@ export default function HowWeWorkPage() {
         padding: 'clamp(4rem, 10vw, 8rem) clamp(1.5rem, 4vw, 4rem)',
         background: '#F0EDE6',
         textAlign: 'center',
-        borderBottom: '1px solid #D4CFC6'
+        borderBottom: '2px solid #B8924A'
       }}>
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
           
