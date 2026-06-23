@@ -306,14 +306,14 @@ export default function CapabilitiesPage() {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0', borderTop: '2px solid #B8924A' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0', borderTop: '2px solid #B8924A', position: 'relative' }}>
             {[
               { label: 'CRM', name: 'Customer Relationship Management', examples: 'HubSpot, Salesforce, or the platform that fits your business size and workflow — configured for hospitality-specific lead and guest lifecycle management.' },
               { label: 'Analytics', name: 'Data & Measurement', examples: 'Google Analytics 4, Google Tag Manager, Looker Studio — set up to track what actually matters: conversions, bookings, and revenue attribution, not pageviews.' },
               { label: 'Search & Advertising', name: 'SEO & Paid Media', examples: 'SEMrush, Moz, Google Ads Manager — used to manage organic search performance and paid campaign efficiency across search and social platforms.' },
               { label: 'Email & Automation', name: 'Marketing Automation', examples: 'Klaviyo, Mailchimp, or HubSpot Marketing — configured for automated, personalized guest communication at every stage of the customer lifecycle.' }
             ].map((item, i) => (
-              <div key={i} style={{ padding: '2.5rem 2rem 2.5rem 0' }}>
+              <div key={i} style={{ padding: '2.5rem 2rem 2.5rem 0', position: 'relative' }}>
                 <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1rem' }}>
                   {item.label}
                 </div>
@@ -324,6 +324,7 @@ export default function CapabilitiesPage() {
                   {item.examples}
                 </div>
               </div>
+              {i < 3 && <div style={{ position: 'absolute', right: '0', top: '0', bottom: '0', width: '2px', background: '#B8924A' }}></div>}
             ))}
           </div>
         </div>
@@ -339,14 +340,14 @@ export default function CapabilitiesPage() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, marginBottom: '3.5rem', maxWidth: '22ch', color: '#1C1A17' }}>
             Built Around Your Business,<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Not A Standard Package.</em>
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0', borderTop: '2px solid #B8924A' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0', borderTop: '2px solid #B8924A', position: 'relative' }}>
             {[
               { num: '01', title: 'Audit & diagnosis', desc: 'We start by understanding what you have, what is working, and what is not - before recommending anything. No assumptions.' },
               { num: '02', title: 'Strategy & prioritization', desc: 'We identify the highest-leverage opportunities for your specific business and budget - and build a phased plan to address them in order of impact.' },
               { num: '03', title: 'Build & deploy', desc: "We configure the platforms, build the campaigns, and set up the measurement infrastructure - so you are not handed a strategy deck with no execution path." },
               { num: '04', title: 'Measure & optimize', desc: "Every engagement includes a reporting cadence so you can see what is working, what to double down on, and what to cut - without guessing." }
             ].map((step, i) => (
-              <div key={i} style={{ padding: '2.5rem 2rem 2.5rem 0' }}>
+              <div key={i} style={{ padding: '2.5rem 2rem 2.5rem 0', position: 'relative' }}>
                 <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1.25rem' }}>
                   {step.num}
                 </div>
@@ -357,6 +358,7 @@ export default function CapabilitiesPage() {
                   {step.desc}
                 </p>
               </div>
+              {i < 3 && <div style={{ position: 'absolute', right: '0', top: '0', bottom: '0', width: '2px', background: '#B8924A' }}></div>}
             ))}
           </div>
         </div>
@@ -427,8 +429,8 @@ export default function CapabilitiesPage() {
                 ]
               },
               {
-                type: 'Travel Distribution',
-                name: 'Travel Wholesalers',
+                type: 'Channel Strategy & Development',
+                name: 'Distribution & Partnership Management',
                 challenges: [
                   'Distribute inventory through partner channels while maintaining brand positioning',
                   'Optimize commission structures and manage channel profitability',
@@ -478,9 +480,9 @@ export default function CapabilitiesPage() {
               When you're ready, here's <em style={{ fontStyle: 'italic', color: '#B8924A' }}>how we can help.</em>
             </h2>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0', position: 'relative' }}>
               {/* Option 1 */}
-              <div style={{ paddingRight: '0' }}>
+              <div style={{ paddingRight: '3rem' }}>
                 <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '0.625rem' }}>
                   Free · 1 Hour
                 </div>
@@ -495,8 +497,11 @@ export default function CapabilitiesPage() {
                 </Link>
               </div>
 
+              {/* Vertical divider */}
+              <div style={{ position: 'absolute', left: '50%', top: '0', bottom: '0', width: '2px', background: '#B8924A', transform: 'translateX(-50%)' }}></div>
+
               {/* Option 2 */}
-              <div style={{ paddingLeft: '0' }}>
+              <div style={{ paddingLeft: '3rem' }}>
                 <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '0.625rem' }}>
                   Engagement
                 </div>
