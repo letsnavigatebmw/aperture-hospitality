@@ -339,7 +339,7 @@ export default function Home() {
                   Complete toolkit for team enablement, training, and operational excellence.
                 </p>
               </div>
-              <a href="https://request.revenuefactory.com/widget/bookings/ai-employee-convo" target="_blank" rel="noopener noreferrer" style={{ display: 'block', textAlign: 'center', padding: '1.5rem 2rem', background: '#B8924A', color: '#FFFFFF', border: 'none', borderRadius: '0px', textDecoration: 'none', transition: 'all 0.3s', cursor: 'pointer', marginTop: '2rem' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#9a7a3e'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#B8924A'; }}>
+              <a href="https://request.revenuefactory.com/widget/bookings/ai-employee-convo" target="_blank" rel="noopener noreferrer" style={{ display: 'block', textAlign: 'center', padding: '1.5rem 2rem', background: '#1C1A17', color: '#FFFFFF', border: '1.5px solid #B8924A', borderRadius: '8px', textDecoration: 'none', transition: 'all 0.3s', cursor: 'pointer', marginTop: '2rem' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#B8924A'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#1C1A17'; }}>
                 <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', lineHeight: 1.2 }}>Get The Workspace Kit - $1,497</div>
               </a>
             </div>
