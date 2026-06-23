@@ -72,7 +72,7 @@ export default function About() {
 
             {/* Right column */}
             <div>
-              <p className="font-display text-lg md:text-xl font-light text-brass mb-6">Many Rooms, One Frequency</p>
+              <p className="font-display text-2xl md:text-3xl font-light text-brass mb-8">Many Rooms, One Frequency</p>
               <div className="space-y-6 text-sm md:text-base leading-relaxed text-muted italic">
                 <p>
                   My professional and personal story has been largely shaped by the power of <strong style={{ fontWeight: 400 }}>connectivity</strong>. The inertia that comes from human connection allows me to be as comfortable in a boardroom as I am sharing life lessons with a stranger. My work is guided by a deep belief in our <strong style={{ fontWeight: 400 }}>collective potential</strong>. Modern leadership is about instilling in others the belief that they have the ability to transform their reality.
