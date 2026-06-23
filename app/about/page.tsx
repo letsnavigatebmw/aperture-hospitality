@@ -166,12 +166,22 @@ export default function About() {
             </div>
 
             {/* Data Strategy */}
-            <div style={{ gridColumn: 'span 1' }}>
+            <div>
               <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.375rem', fontWeight: 300, color: '#F0EDE6', marginBottom: '1rem', lineHeight: 1.2 }}>
                 Data Strategy
               </h3>
               <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.6, color: '#6B6760' }}>
                 Architect data-driven business models by integrating customer, property, behavioral, and market intelligence into scalable operating systems. Leveraged analytics, automation, and predictive insights to improve targeting, optimize performance, and uncover new revenue opportunities.
+              </p>
+            </div>
+
+            {/* Leadership Coaching */}
+            <div>
+              <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.375rem', fontWeight: 300, color: '#F0EDE6', marginBottom: '1rem', lineHeight: 1.2 }}>
+                Leadership Coaching
+              </h3>
+              <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.6, color: '#6B6760' }}>
+                Coached executives and commercial teams through growth, restructuring, and business transformation. Built leadership capabilities, performance frameworks, and accountability systems that improved execution, strengthened culture, and accelerated individual and organizational performance.
               </p>
             </div>
           </div>
