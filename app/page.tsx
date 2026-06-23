@@ -262,6 +262,15 @@ export default function Home() {
 
             {/* Engagement 4 */}
             <div>
+              <h3 className="font-display text-xl font-medium text-ink mb-2">Edge Swarm</h3>
+              <p className="text-xs tracking-tight text-muted mb-3">AI Infrastructure</p>
+              <p className="text-muted leading-relaxed">
+                GTM Strategy, Partner Strategy & Fundraising.
+              </p>
+            </div>
+
+            {/* Engagement 5 */}
+            <div>
               <h3 className="font-display text-xl font-medium text-ink mb-2">Beverly Spirits</h3>
               <p className="text-xs tracking-tight text-muted mb-3">Premium Spirits Portfolio</p>
               <p className="text-muted leading-relaxed">
@@ -269,7 +278,7 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Engagement 5 */}
+            {/* Engagement 6 */}
             <div>
               <h3 className="font-display text-xl font-medium text-ink mb-2">Foto Comercio</h3>
               <p className="text-xs tracking-tight text-muted mb-3">Iconic Photo Booths</p>
