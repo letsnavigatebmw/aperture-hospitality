@@ -32,13 +32,13 @@ export default function Testimonials() {
         {/* Divider */}
         <div className="w-full h-px bg-rule mb-12" />
 
-        {/* Testimonials Horizontal Scroll */}
-        <div className="w-full overflow-hidden">
-          <div className="flex gap-8 pb-4 md:pb-0 w-full items-stretch justify-center md:justify-start">
+        {/* Testimonials Grid */}
+        <div className="w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {testimonials.map((testimonial, index) => (
               <div 
                 key={index} 
-                className="flex-shrink-0 w-full md:flex-1 space-y-6 p-8 border border-rule rounded-lg bg-parchment-dark hover:border-brass transition-all flex flex-col"
+                className="space-y-6 p-8 border border-rule rounded-lg bg-parchment-dark hover:border-brass transition-all flex flex-col"
               >
                 {/* Quote */}
                 <blockquote className="text-base leading-relaxed text-muted italic flex-grow" style={{ overflow: 'visible' }}>
