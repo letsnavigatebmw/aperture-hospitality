@@ -323,8 +323,8 @@ export default function CapabilitiesPage() {
                 <div style={{ fontSize: '0.8125rem', fontWeight: 300, color: '#1C1A17', lineHeight: 1.6 }}>
                   {item.examples}
                 </div>
+                {i < 3 && <div style={{ position: 'absolute', right: '0', top: '0', bottom: '0', width: '2px', background: '#B8924A' }}></div>}
               </div>
-              {i < 3 && <div style={{ position: 'absolute', right: '0', top: '0', bottom: '0', width: '2px', background: '#B8924A' }}></div>}
             ))}
           </div>
         </div>
@@ -357,8 +357,8 @@ export default function CapabilitiesPage() {
                 <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.7, color: '#1C1A17' }}>
                   {step.desc}
                 </p>
+                {i < 3 && <div style={{ position: 'absolute', right: '0', top: '0', bottom: '0', width: '2px', background: '#B8924A' }}></div>}
               </div>
-              {i < 3 && <div style={{ position: 'absolute', right: '0', top: '0', bottom: '0', width: '2px', background: '#B8924A' }}></div>}
             ))}
           </div>
         </div>
