@@ -235,7 +235,7 @@ export default function HowWeWorkPage() {
             }}>Six Core Competencies</span>
             <h2 style={{
               fontFamily: "'Cormorant Garamond', Georgia, serif",
-              fontSize: 'clamp(2rem, 3vw, 2.5rem)',
+              fontSize: 'clamp(2.5rem, 4vw, 3.75rem)',
               fontWeight: 300,
               lineHeight: 1.1,
               color: '#F0EDE6',
