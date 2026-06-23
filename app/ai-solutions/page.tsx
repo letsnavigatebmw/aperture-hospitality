@@ -171,14 +171,14 @@ export default function AISolutionsPage() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, marginBottom: '3.5rem', maxWidth: '20ch' }}>
             Up And Running<br/>In <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Days, Not Months.</em>
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0', borderTop: '2px solid #B8924A' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '3rem' }}>
             {[
               { number: '01', title: 'Choose your plan', desc: 'Select monthly or annual. No sales call required. You\'re on the platform the same day.' },
               { number: '02', title: 'Aperture configures it', desc: 'We handle the setup, brand voice training, and integrations so the AI fits your business — not a generic template.' },
               { number: '03', title: 'Go live fast', desc: 'Most properties are live within 48 hours. You start capturing missed conversations immediately.' },
               { number: '04', title: 'Scale as you grow', desc: 'Add tools as your needs evolve, or graduate to a full Aperture strategic engagement when the time comes.' }
             ].map((step, i) => (
-              <div key={i} style={{ padding: '2.5rem 2rem 2.5rem 0', borderRight: i < 3 ? '2px solid #B8924A' : 'none' }}>
+              <div key={i} style={{ padding: '2.5rem 2rem 2.5rem 0' }}>
                 <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1.25rem' }}>{step.number}</div>
                 <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.375rem', fontWeight: 400, color: '#1C1A17', lineHeight: 1.2, marginBottom: '0.875rem' }}>{step.title}</h3>
                 <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760', margin: 0 }}>{step.desc}</p>
