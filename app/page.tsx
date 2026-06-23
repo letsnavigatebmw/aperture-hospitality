@@ -97,18 +97,7 @@ export default function Home() {
               Aperture Hospitality is driven by a passion for problem solving and a relentless commitment to creating bespoke solutions that meet the needs of our clients. If you are a small business owner in need of solutions you can implement in your business or an operator of a business that is growing and needs help scaling, our team can assist. With a combined 30+ years of hospitality experience, the Aperture team harnesses its diverse background and experiences to deliver durable, dependable and defensible solutions for our clients.
             </p>
 
-            <p style={{
-              fontFamily: "'Inter', sans-serif",
-              fontSize: '0.9375rem',
-              fontWeight: 300,
-              lineHeight: 1.75,
-              color: '#6B6760',
-              marginBottom: '2rem',
-              margin: '0 0 2rem 0',
-              maxWidth: '480px'
-            }}>
-              20+ years driving growth and transformation across consumer brands, hospitality, and technology platforms. Previously led commercial strategy at Diageo, Sonder, and Lacuré.
-            </p>
+
 
             {/* CTAs */}
             <div style={{
