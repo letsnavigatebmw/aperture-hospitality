@@ -286,6 +286,15 @@ export default function Home() {
                 GTM strategy and Channel Partner Development.
               </p>
             </div>
+
+            {/* Engagement 7 */}
+            <div>
+              <h3 className="font-display text-xl font-medium text-ink mb-2">CSC Coaching</h3>
+              <p className="text-xs tracking-tight text-muted mb-3">Real Estate Coaching & Advisory</p>
+              <p className="text-muted leading-relaxed">
+                Real Estate Prospecting Training.
+              </p>
+            </div>
           </div>
         </div>
       </div>
