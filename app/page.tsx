@@ -295,7 +295,7 @@ export default function Home() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
 
             {/* CARD 1: AI Employee */}
-            <div style={{ background: '#FFFFFF', border: '1.5px solid #B8924A', borderRadius: '8px', padding: '2rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: '400px' }}>
+            <div style={{ background: '#FFFFFF', border: '1.5px solid #B8924A', borderRadius: '8px', padding: '2rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: 'auto' }}>
               <div>
                 <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.75rem', fontWeight: 300, color: '#1C1A17', marginBottom: '1rem' }}>AI Employee</h3>
                 <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760' }}>
@@ -309,7 +309,7 @@ export default function Home() {
             </div>
 
             {/* CARD 2: Traffic System */}
-            <div style={{ background: '#FFFFFF', border: '1.5px solid #D4CFC6', borderRadius: '8px', padding: '2rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: '400px' }}>
+            <div style={{ background: '#FFFFFF', border: '1.5px solid #D4CFC6', borderRadius: '8px', padding: '2rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: 'auto' }}>
               <div>
                 <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.75rem', fontWeight: 300, color: '#1C1A17', marginBottom: '1rem' }}>Traffic System</h3>
                 <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760' }}>
@@ -323,7 +323,7 @@ export default function Home() {
             </div>
 
             {/* CARD 3: Workspace Kit */}
-            <div style={{ background: '#FFFFFF', border: '1.5px solid #D4CFC6', borderRadius: '8px', padding: '2rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: '400px' }}>
+            <div style={{ background: '#FFFFFF', border: '1.5px solid #D4CFC6', borderRadius: '8px', padding: '2rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: 'auto' }}>
               <div>
                 <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.75rem', fontWeight: 300, color: '#1C1A17', marginBottom: '1rem' }}>AI Marketing Workspace Kit</h3>
                 <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760' }}>
