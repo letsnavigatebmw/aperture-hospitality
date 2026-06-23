@@ -273,7 +273,7 @@ export default function CapabilitiesPage() {
             ))}
             
             {/* Placeholder card */}
-            <div style={{ padding: '3rem 2.5rem', border: '1px dashed #2e2b26', background: 'transparent', display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: '280px' }}>
+            <div style={{ padding: '0', border: '1px dashed #2e2b26', background: 'transparent', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', minHeight: '280px' }}>
               <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.25rem', fontWeight: 300, color: '#F0EDE6', marginBottom: '0.75rem', lineHeight: 1.3 }}>
                 Need something more specific?
               </div>
