@@ -137,19 +137,19 @@ export default function AISolutionsPage() {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0', borderTop: '2px solid #3a3733' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '3rem' }}>
             {[
               { number: '01', name: 'Voice AI', desc: 'Answers your phone 24/7, qualifies callers, captures information, and books appointments — in your brand\'s voice. Never miss a call again.', features: ['Answers inbound calls around the clock', 'Qualifies leads and captures contact details', 'Books appointments directly into your calendar', 'Sends SMS confirmation and reminders', 'Trained on your specific services and tone'] },
               { number: '02', name: 'Conversation AI', desc: 'Handles multiple text conversations simultaneously — across your website, social channels, and mobile — so no inquiry goes cold while your team is busy.', features: ['Web chat, SMS, Facebook, Instagram, Google', 'Books appointments with instant confirmations', 'Sends automated follow-ups to reduce no-shows', 'Escalates complex queries to your team', 'Fully customizable responses and tone'] },
               { number: '03', name: 'Reviews AI', desc: 'Automatically requests reviews from satisfied guests and responds to existing reviews across Google and Facebook — protecting and building your reputation without manual effort.', features: ['Automated review requests post-stay or post-visit', 'Responds to Google and Facebook reviews', 'Maintains consistent brand voice in responses', 'Surfaces negative feedback before it goes public', 'Reputation dashboard for at-a-glance monitoring'] }
             ].map((tool, i) => (
-              <div key={i} style={{ padding: '3rem 2.5rem 3rem 0', borderRight: i < 2 ? '2px solid #3a3733' : 'none' }}>
+              <div key={i} style={{ padding: '0' }}>
                 <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1.5rem' }}>{tool.number}</div>
                 <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.625rem', fontWeight: 400, color: '#F0EDE6', lineHeight: 1.2, marginBottom: '1rem' }}>{tool.name}</h3>
                 <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#F0EDE6', marginBottom: '1.75rem' }}>{tool.desc}</p>
-                <ul style={{ listStyle: 'none', borderTop: '2px solid #3a3733', padding: 0, margin: 0 }}>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                   {tool.features.map((feat, j) => (
-                    <li key={j} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', padding: '0.75rem 0', borderBottom: '2px solid #3a3733', fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.5 }}>
+                    <li key={j} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', padding: '0.75rem 0', fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.5 }}>
                       <span style={{ width: '4px', height: '4px', background: '#B8924A', borderRadius: '50%', flexShrink: 0, marginTop: '0.55rem' }}></span>
                       {feat}
                     </li>
