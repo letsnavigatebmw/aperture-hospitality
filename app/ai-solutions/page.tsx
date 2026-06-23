@@ -197,7 +197,7 @@ export default function AISolutionsPage() {
               <div style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></div>
               Who It's For
             </div>
-            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, maxWidth: '28ch' }}>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, maxWidth: '55ch' }}>
               Built For The Businesses That Make Hospitality<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Worth Experiencing.</em>
             </h2>
           </div>
