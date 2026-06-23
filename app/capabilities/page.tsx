@@ -423,9 +423,9 @@ export default function CapabilitiesPage() {
                 <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.375rem', fontWeight: 400, color: '#1C1A17', marginBottom: '1rem', lineHeight: 1.2 }}>
                   {audience.name}
                 </div>
-                <ul style={{ listStyle: 'none', borderTop: '1px solid #D4CFC6', padding: 0, margin: 0 }}>
+                <ul style={{ listStyle: 'none', borderTop: '1px solid #D4CFC6', padding: '1.25rem 0 0 0', margin: 0 }}>
                   {audience.challenges.map((challenge, j) => (
-                    <li key={j} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', padding: '0.75rem 0', borderBottom: '1px solid #D4CFC6', fontSize: '0.875rem', fontWeight: 300, color: '#1C1A17', lineHeight: 1.5 }}>
+                    <li key={j} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', padding: '1.25rem 0', borderBottom: '1px solid #D4CFC6', fontSize: '0.875rem', fontWeight: 300, color: '#1C1A17', lineHeight: 1.5 }}>
                       <span style={{ width: '4px', height: '4px', background: '#B8924A', borderRadius: '50%', flexShrink: 0, marginTop: '0.55rem' }}></span>
                       {challenge}
                     </li>
