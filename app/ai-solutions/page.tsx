@@ -328,7 +328,7 @@ export default function AISolutionsPage() {
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.5fr', gap: '6rem', alignItems: 'start' }}>
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, color: '#F0EDE6', position: 'sticky', top: '5rem' }}>
-              Questions<br/>worth <em style={{ fontStyle: 'italic', color: '#B8924A' }}>asking.</em>
+              Questions<br/>Worth <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Asking.</em>
             </h2>
 
             <div style={{ display: 'flex', flexDirection: 'column' }}>

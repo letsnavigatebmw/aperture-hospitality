@@ -187,7 +187,7 @@ export default function TrafficSystemPage() {
             <div>
               <div className="sl">Frequently Asked Questions</div>
               <h2 style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: 'clamp(2rem,3vw,2.75rem)', fontWeight: 300, lineHeight: 1.15, color: 'var(--ink)' }}>
-                Questions worth<br/><em style={{ fontStyle: 'italic', color: 'var(--brass)' }}>asking.</em>
+                Questions Worth<br/><em style={{ fontStyle: 'italic', color: 'var(--brass)' }}>Asking.</em>
               </h2>
             </div>
 
