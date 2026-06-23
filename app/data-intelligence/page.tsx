@@ -352,14 +352,14 @@ export default function DataIntelligencePage() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, marginBottom: '3.5rem' }}>
             From Search To <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Outreach In Minutes.</em>
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0', borderTop: '1px solid #D4CFC6' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '3rem' }}>
             {[
-              { num: '01', title: 'Choose your market', desc: 'Draw your territory, set your filters, and define your ideal property and owner criteria. No technical setup required.' },
-              { num: '02', title: 'Access verified data', desc: 'Instantly surface owner contact information, property details, and market activity — accurate and ready to act on.' },
-              { num: '03', title: 'Launch your campaign', desc: 'Customize your message and send personalized outreach at scale — email, letter, or postcard — directly from the platform.' },
-              { num: '04', title: 'Convert opportunities', desc: 'Track response, manage your pipeline, and move faster than the competition on every opportunity you uncover.' }
+              { num: '01', title: 'Choose Your Market', desc: 'Draw your territory, set your filters, and define your ideal property and owner criteria. No technical setup required.' },
+              { num: '02', title: 'Access Verified Data', desc: 'Instantly surface owner contact information, property details, and market activity — accurate and ready to act on.' },
+              { num: '03', title: 'Launch Your Campaign', desc: 'Customize your message and send personalized outreach at scale — email, letter, or postcard — directly from the platform.' },
+              { num: '04', title: 'Convert Opportunities', desc: 'Track response, manage your pipeline, and move faster than the competition on every opportunity you uncover.' }
             ].map((step, i) => (
-              <div key={i} style={{ padding: '2.5rem 2rem 2.5rem 0', borderRight: i < 3 ? '1px solid #D4CFC6' : 'none' }}>
+              <div key={i} style={{ padding: 0 }}>
                 <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1.25rem' }}>
                   {step.num}
                 </div>
