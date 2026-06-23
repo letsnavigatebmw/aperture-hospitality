@@ -63,7 +63,7 @@ export default function AISolutions() {
             margin: 0,
             paddingTop: '0.5rem'
           }}>
-            Leverage advanced AI to optimize your revenue strategy, forecast demand, and unlock growth opportunities. We integrate cutting-edge AI insights into your existing revenue factory.
+            Leverage advanced AI to optimize your revenue strategy, forecast demand, and unlock growth opportunities. We integrate cutting-edge AI insights into your existing revenue strategy.
           </p>
         </div>
 
