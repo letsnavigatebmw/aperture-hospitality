@@ -253,7 +253,7 @@ export default function About() {
             {/* Left column */}
             <div>
               <p className="text-sm md:text-base font-normal tracking-wide uppercase text-muted mb-4 font-medium">
-                Brandon Weaver has led commercial and operating teams at
+                Brandon Weaver Led Commercial &amp; Operating Teams At
               </p>
               <div className="w-px h-8 bg-brass mb-6" />
               <p className="text-sm md:text-base leading-relaxed text-muted max-w-sm">
