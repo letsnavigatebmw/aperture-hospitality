@@ -262,8 +262,8 @@ export default function Home() {
 
             {/* Engagement 4 */}
             <div>
-              <h3 className="font-display text-xl font-medium text-ink mb-2">Compass</h3>
-              <p className="text-xs tracking-tight text-muted mb-3">Real estate platform</p>
+              <h3 className="font-display text-xl font-medium text-ink mb-2">Beverly Spirits</h3>
+              <p className="text-xs tracking-tight text-muted mb-3">Premium Spirits Portfolio</p>
               <p className="text-muted leading-relaxed">
                 Commercial acceleration and market expansion strategy.
               </p>
@@ -271,10 +271,10 @@ export default function Home() {
 
             {/* Engagement 5 */}
             <div>
-              <h3 className="font-display text-xl font-medium text-ink mb-2">Beverly Spirits</h3>
-              <p className="text-xs tracking-tight text-muted mb-3">Premium Spirits Portfolio</p>
+              <h3 className="font-display text-xl font-medium text-ink mb-2">Foto Comercio</h3>
+              <p className="text-xs tracking-tight text-muted mb-3">Iconic Photo Booths</p>
               <p className="text-muted leading-relaxed">
-                Commercial acceleration and market expansion strategy.
+                GTM strategy and Channel Partner Development.
               </p>
             </div>
           </div>
