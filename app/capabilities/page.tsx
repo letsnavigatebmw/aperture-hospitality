@@ -614,3 +614,4 @@ export default function CapabilitiesPage() {
     </>
   )
 }
+/* Build trigger */
