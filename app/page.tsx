@@ -235,7 +235,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12">
             {/* Engagement 1 */}
             <div>
-              <h3 className="font-display text-xl font-medium text-ink mb-2">Voyage</h3>
+              <h3 className="font-display text-xl font-medium text-ink mb-2">Voyage Hospitality Group</h3>
               <p className="text-xs tracking-tight text-muted mb-3">Luxury travel platform</p>
               <p className="text-muted leading-relaxed">
                 Commercial strategy and revenue optimization for high-net-worth travel bookings.
