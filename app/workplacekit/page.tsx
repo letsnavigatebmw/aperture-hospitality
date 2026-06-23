@@ -223,8 +223,8 @@ export default function WorkplaceKitPage() {
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'center' }}>
             <div>
-              <h2 style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: 'clamp(2.25rem,3.5vw,3.25rem)', fontWeight: 300, lineHeight: 1.15, color: '#F0EDE6', marginBottom: '1.5rem' }}>
-                Stop Rebuilding From Scratch.<br/><em style={{ fontStyle: 'italic', color: 'var(--brass)' }}>Start Running A System.</em>
+              <h2 style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: 'clamp(1.75rem,3vw,2.75rem)', fontWeight: 300, lineHeight: 1.15, color: '#F0EDE6', marginBottom: '1.5rem' }}>
+                Stop Rebuilding From Scratch. <em style={{ fontStyle: 'italic', color: 'var(--brass)' }}>Start Running A System.</em>
               </h2>
               <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6' }}>
                 Every week you operate without a marketing foundation, the leak gets bigger. The Hospitality Marketing Workspace Kit fixes the foundation — one time.
