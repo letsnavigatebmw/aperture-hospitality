@@ -472,6 +472,23 @@ export default function CapabilitiesPage() {
         </div>
       </section>
 
+      {/* TESTIMONIAL SECTION */}
+      <section style={{ background: '#F0EDE6', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #B8924A' }}>
+        <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
+          <div style={{ paddingBottom: '2rem', borderBottom: '2px solid #B8924A', marginBottom: '3rem' }}>
+            <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1.5rem' }}>
+              Trusted by Leaders
+            </div>
+            <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5625rem', fontWeight: 300, fontStyle: 'italic', lineHeight: 1.7, color: '#1C1A17', marginBottom: '2rem', maxWidth: 'none' }}>
+              "Implementing Navigate's AI Agent technology fundamentally changed how our team manages inbound opportunities. What used to require constant monitoring, follow-up, and administrative effort now happens automatically and consistently. The result wasn't just greater efficiency—it created a better experience for both our agents and our clients by ensuring every inquiry received an immediate, professional response. It's become an important part of how we scale service without sacrificing quality."
+            </p>
+            <div style={{ fontSize: '0.875rem', fontWeight: 500, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#6B6760' }}>
+              — Brooke Winner, Founder &amp; CEO · Voyage Real Estate
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* HELP CARD SECTION */}
       <section style={{ background: '#E8E4DB', borderBottom: '2px solid #B8924A' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
