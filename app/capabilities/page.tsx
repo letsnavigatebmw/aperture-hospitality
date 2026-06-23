@@ -380,7 +380,7 @@ export default function CapabilitiesPage() {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0', borderTop: '1px solid #D4CFC6' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '0', borderTop: '1px solid #D4CFC6' }}>
             {[
               {
                 type: 'Boutique Hotels',
@@ -414,9 +414,23 @@ export default function CapabilitiesPage() {
                   'Market private dining and events without a dedicated team',
                   'Convert social followers into reservations and revenue'
                 ]
+              },
+              {
+                type: 'Hospitality Finance',
+                name: 'Revenue & Profitability Management',
+                challenges: [
+                  'Balance supplier relationships, inventory availability, and profitability',
+                  'Drive direct demand while maximizing marketplace and partner channels',
+                  'Increase customer lifetime value through cross-sell and upsell strategies',
+                  'Improve merchandising and content to influence booking decisions',
+                  'Use data and forecasting to align inventory with market demand',
+                  'Expand high-margin ancillary revenue opportunities',
+                  'Strengthen brand loyalty in a highly transactional marketplace',
+                  'Connect marketing investment to revenue, margin, and customer retention'
+                ]
               }
             ].map((audience, i) => (
-              <div key={i} style={{ padding: '2.5rem 2.5rem 2.5rem 0', borderRight: i < 2 ? '1px solid #D4CFC6' : 'none' }}>
+              <div key={i} style={{ padding: '2.5rem 2.5rem 2.5rem 0', borderRight: i % 2 === 0 ? '1px solid #D4CFC6' : 'none', borderBottom: i < 2 ? '1px solid #D4CFC6' : 'none' }}>
                 <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1rem' }}>
                   {audience.type}
                 </div>
