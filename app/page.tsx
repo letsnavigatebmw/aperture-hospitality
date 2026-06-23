@@ -245,7 +245,7 @@ export default function Home() {
             {/* Engagement 2 */}
             <div>
               <h3 className="font-display text-xl font-medium text-ink mb-2">Wilbur Labs</h3>
-              <p className="text-xs tracking-tight text-muted mb-3">Hospitality software</p>
+              <p className="text-xs tracking-tight text-muted mb-3">Venture Lab</p>
               <p className="text-muted leading-relaxed">
                 GTM strategy and sales process design for enterprise hospitality clients.
               </p>
