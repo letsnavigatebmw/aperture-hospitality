@@ -117,6 +117,38 @@ export default function IntakeForm() {
             Tell us a little about where you are and what you're working on. Brandon reviews every submission personally and follows up within one business day.
           </p>
 
+          <a
+            href="https://calendar.app.google/Z5iZP6bsn5Xze1QN8"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'inline-block',
+              width: '100%',
+              padding: '1rem 2rem',
+              background: '#1C1A17',
+              color: '#F0EDE6',
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '0.6875rem',
+              fontWeight: 500,
+              letterSpacing: '0.16em',
+              textTransform: 'uppercase',
+              textDecoration: 'none',
+              border: 'none',
+              cursor: 'pointer',
+              textAlign: 'center',
+              transition: 'background 0.2s',
+              marginBottom: '2.5rem'
+            }}
+            onMouseEnter={(e) => {
+              (e.target as HTMLElement).style.background = '#2e2b26'
+            }}
+            onMouseLeave={(e) => {
+              (e.target as HTMLElement).style.background = '#1C1A17'
+            }}
+          >
+            Book a Time with Aperture
+          </a>
+
           <div style={{
             paddingTop: '2rem',
             borderTop: '2px solid #B8924A'
