@@ -205,10 +205,10 @@ export default function AISolutionsPage() {
           {/* Testimonial */}
           <div style={{ paddingTop: '3rem', borderTop: '2px solid #B8924A' }}>
             <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.25rem, 2vw, 1.5625rem)', fontWeight: 300, fontStyle: 'italic', lineHeight: 1.75, color: '#1C1A17', marginBottom: '2.5rem', margin: '0 0 2.5rem 0' }}>
-              "I wanted to let you know how impactful Navigate has been for my family. We had been looking in Boise for four years in our school district and had not found anything until Navigate. I'd been sending a mailer every month for over a year and nothing happened. I sent one mailer and email from Navigate to the same area and got 6 responses within a week. One of those emails was a seller who had been looking to move and his agent called me to see it before they listed it. My husband and I are now living in our dream property. Thank you so much for creating this. We cannot thank you enough!"
+              "Implementing Navigate's AI Agent technology fundamentally changed how our team manages inbound opportunities. What used to require constant monitoring, follow-up, and administrative effort now happens automatically and consistently. The result wasn't just greater efficiency—it created a better experience for both our agents and our clients by ensuring every inquiry received an immediate, professional response. It's become an important part of how we scale service without sacrificing quality."
             </p>
             <div style={{ fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6B6760' }}>
-              — Rachel Haussman, Real Estate Agent · Compass
+              — Brooke Winner, Founder &amp; CEO · Voyage Real Estate
             </div>
           </div>
         </div>
