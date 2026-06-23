@@ -318,7 +318,7 @@ export default function DataIntelligencePage() {
                 features: ['Email, letter, and postcard campaigns', 'One-click personalized mass outreach', 'Timing optimization for highest conversion', 'Campaign tracking and pipeline reporting']
               }
             ].map((pillar, i) => (
-              <div key={i} style={{ padding: '3rem 2.5rem 3rem 0', borderRight: i < 2 ? '2px solid #3a3733' : 'none' }}>
+              <div key={i} style={{ padding: '3rem 2.5rem 3rem 0' }}>
                 <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1.5rem' }}>
                   {pillar.num}
                 </div>
@@ -328,9 +328,9 @@ export default function DataIntelligencePage() {
                 <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#F0EDE6', marginBottom: '1.75rem' }}>
                   {pillar.desc}
                 </p>
-                <ul style={{ listStyle: 'none', borderTop: '2px solid #3a3733', padding: 0, margin: 0 }}>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                   {pillar.features.map((feature, j) => (
-                    <li key={j} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', padding: '0.75rem 0', borderBottom: '2px solid #3a3733', fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.5 }}>
+                    <li key={j} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', padding: '0.75rem 0', fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.5 }}>
                       <span style={{ width: '4px', height: '4px', background: '#B8924A', borderRadius: '50%', flexShrink: 0, marginTop: '0.55rem' }}></span>
                       {feature}
                     </li>
