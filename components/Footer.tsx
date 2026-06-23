@@ -30,7 +30,7 @@ export default function Footer() {
           </li>
           <li>
             <a href="https://substack.com/@expandyouraperture" target="_blank" rel="noopener noreferrer" className="text-xs tracking-wider uppercase text-parchment hover:text-brass transition-colors">
-              Follow us on Substack
+              Follow Aperture on Substack
             </a>
           </li>
         </ul>
