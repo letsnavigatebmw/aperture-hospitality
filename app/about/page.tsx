@@ -71,19 +71,40 @@ export default function About() {
             </div>
 
             {/* Right column */}
-            <div>
-              <p className="font-display text-2xl md:text-3xl font-light text-brass mb-8">Many Rooms, One Frequency</p>
-              <div className="space-y-6 text-sm md:text-base leading-relaxed text-muted italic">
-                <p>
-                  My professional and personal story has been largely shaped by the power of <strong style={{ fontWeight: 400 }}>connectivity</strong>. The inertia that comes from human connection allows me to be as comfortable in a boardroom as I am sharing life lessons with a stranger. My work is guided by a deep belief in our <strong style={{ fontWeight: 400 }}>collective potential</strong>. Modern leadership is about instilling in others the belief that they have the ability to transform their reality.
-                </p>
-                <p>
-                  As a citizen of the world, I have learned to always be <strong style={{ fontWeight: 400 }}>curious</strong>, to invest in relationships, and to exercise empathy and patience for things you don't quite understand. While my journey is far from linear, working across continents and companies, serving as a custodian for some of the world's most iconic luxury brands, and launching a software platform to address an archaic and broken process, it has taught me that I am a <strong style={{ fontWeight: 400 }}>natural problem solver</strong>, inspired by a <strong style={{ fontWeight: 400 }}>relentless pursuit of growth</strong>, a gift for bringing people together, and a rare authenticity that stands out in a world of AI and artifice.
-                </p>
-                <p>
-                  For me, it's not just about building businesses. It's about <strong style={{ fontWeight: 400 }}>building bridges</strong>, one real conversation at a time.
-                </p>
-              </div>
+            <div className="space-y-6 text-sm md:text-base leading-relaxed text-muted">
+              <h3 className="font-display text-2xl md:text-3xl font-light text-brass">Many Rooms, One Frequency</h3>
+              
+              <p>
+                I've spent much of my life trying to answer a simple question: <strong style={{ fontWeight: 500 }}>How do you build something that truly matters?</strong>
+              </p>
+
+              <p>
+                Growing up in Los Angeles, I was surrounded by people who had already achieved success. The expected path was fairly straightforward—medicine, education, or another respected profession. I chose a different route.
+              </p>
+
+              <p>
+                That decision led me from <strong style={{ fontWeight: 500 }}>the University of Southern California's Annenberg School of Communication</strong> to <strong style={{ fontWeight: 500 }}>the Harvard Kennedy School</strong> and <strong style={{ fontWeight: 500 }}>Northwestern University's Kellogg School of Management</strong>. Each institution challenged me to think differently, but together they reinforced a belief that has shaped my career: <strong style={{ fontWeight: 500 }}>meaningful growth happens at the intersection of people, ideas, and opportunity.</strong>
+              </p>
+
+              <p>
+                My career has taken me across industries, continents, and cultures. I've lived and worked throughout the United States, the United Kingdom, and Africa, experiencing firsthand that <strong style={{ fontWeight: 500 }}>commerce and community are not opposites—they're in constant negotiation.</strong> The best builders are fluent in both.
+              </p>
+
+              <p>
+                From leading <strong style={{ fontWeight: 500 }}>Diageo's</strong> luxury portfolio vision across Africa to scaling and eventually selling a PE-backed hospitality platform, <strong style={{ fontWeight: 500 }}>I built a career at the intersection of connectivity, creativity, and opportunity. I didn't inherit a playbook. I wrote one.</strong>
+              </p>
+
+              <p>
+                That same instinct brought me to real estate technology. Navigate wasn't a pivot. It was the logical conclusion of two decades spent watching an industry resist modernisation until someone forces the issue.
+              </p>
+
+              <p>
+                But the thread running through all of it isn't the résumé. It's the relationships. I move through rooms differently, not as the loudest voice, but as the most connected one. <strong style={{ fontWeight: 500 }}>I build relationship capital the way others build financial capital: deliberately, generously, and with a long time horizon.</strong> The "plug" who knows someone for everything, and shares that access freely.
+              </p>
+
+              <p>
+                In a world increasingly mediated by algorithms, my conviction is simple. <strong style={{ fontWeight: 500 }}>Success moves at the speed of connectivity.</strong>
+              </p>
             </div>
           </div>
         </div>
