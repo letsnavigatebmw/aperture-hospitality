@@ -380,7 +380,7 @@ export default function CapabilitiesPage() {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '0', borderTop: '1px solid #D4CFC6' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '3rem' }}>
             {[
               {
                 type: 'Boutique Hotels',
@@ -423,23 +423,31 @@ export default function CapabilitiesPage() {
                   'Drive direct demand while maximizing marketplace and partner channels',
                   'Increase customer lifetime value through cross-sell and upsell strategies',
                   'Improve merchandising and content to influence booking decisions',
-                  'Use data and forecasting to align inventory with market demand',
-                  'Expand high-margin ancillary revenue opportunities',
-                  'Strengthen brand loyalty in a highly transactional marketplace',
                   'Connect marketing investment to revenue, margin, and customer retention'
+                ]
+              },
+              {
+                type: 'Travel Distribution',
+                name: 'Travel Wholesalers',
+                challenges: [
+                  'Distribute inventory through partner channels while maintaining brand positioning',
+                  'Optimize commission structures and manage channel profitability',
+                  'Coordinate pricing and inventory across all distribution channels',
+                  'Provide marketing support and training to wholesale partners',
+                  'Track and maximize revenue from wholesale and partner channels'
                 ]
               }
             ].map((audience, i) => (
-              <div key={i} style={{ padding: '2.5rem 2.5rem 2.5rem 0', borderRight: i % 2 === 0 ? '1px solid #D4CFC6' : 'none', borderBottom: i < 2 ? '1px solid #D4CFC6' : 'none' }}>
+              <div key={i} style={{ padding: 0 }}>
                 <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1rem' }}>
                   {audience.type}
                 </div>
-                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.375rem', fontWeight: 400, color: '#1C1A17', marginBottom: '1rem', lineHeight: 1.2 }}>
+                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.375rem', fontWeight: 400, color: '#1C1A17', marginBottom: '1.5rem', lineHeight: 1.2 }}>
                   {audience.name}
                 </div>
-                <ul style={{ listStyle: 'none', borderTop: '1px solid #D4CFC6', padding: '1.25rem 0 0 0', margin: 0 }}>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                   {audience.challenges.map((challenge, j) => (
-                    <li key={j} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', padding: '1.25rem 0', borderBottom: '1px solid #D4CFC6', fontSize: '0.875rem', fontWeight: 300, color: '#1C1A17', lineHeight: 1.5 }}>
+                    <li key={j} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', padding: '0.75rem 0', fontSize: '0.875rem', fontWeight: 300, color: '#1C1A17', lineHeight: 1.5 }}>
                       <span style={{ width: '4px', height: '4px', background: '#B8924A', borderRadius: '50%', flexShrink: 0, marginTop: '0.55rem' }}></span>
                       {challenge}
                     </li>
