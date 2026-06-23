@@ -165,11 +165,7 @@ export default function IntakeForm() {
               fontSize: '0.875rem',
               fontWeight: 300,
               color: '#B8924A',
-              textDecoration: 'none'
-            }} onMouseEnter={(e) => {
-              (e.target as HTMLElement).style.textDecoration = 'underline'
-            }} onMouseLeave={(e) => {
-              (e.target as HTMLElement).style.textDecoration = 'none'
+              textDecoration: 'underline'
             }}>
               inquiries@aperturehospitality.com
             </a>

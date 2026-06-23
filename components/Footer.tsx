@@ -19,7 +19,7 @@ export default function Footer() {
         </div>
         <ul className="flex gap-8 flex-wrap">
           <li>
-            <a href="mailto:inquiries@aperturehospitality.com" className="text-xs tracking-wider uppercase text-parchment hover:text-brass transition-colors">
+            <a href="mailto:inquiries@aperturehospitality.com" className="text-xs tracking-wider uppercase text-parchment hover:text-brass transition-colors underline">
               inquiries@aperturehospitality.com
             </a>
           </li>

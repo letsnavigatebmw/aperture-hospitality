@@ -183,7 +183,7 @@ export default function ApertureFrameworksPage() {
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
           <span style={{ fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#F0EDE6' }}>Aperture Hospitality</span>
           <div style={{ display: 'flex', gap: '2rem', listStyle: 'none' }}>
-            <a href="mailto:inquiries@aperturehospitality.com" style={{ fontSize: '0.6875rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: '#4a4845', transition: 'color 0.2s', textDecoration: 'none' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#F0EDE6')} onMouseLeave={(e) => (e.currentTarget.style.color = '#4a4845')}>
+            <a href="mailto:inquiries@aperturehospitality.com" style={{ fontSize: '0.6875rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: '#4a4845', transition: 'color 0.2s', textDecoration: 'underline' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#F0EDE6')} onMouseLeave={(e) => (e.currentTarget.style.color = '#4a4845')}>
               inquiries@aperturehospitality.com
             </a>
             <a href="https://linkedin.com/company/aperture-hospitality" target="_blank" rel="noopener" style={{ fontSize: '0.6875rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: '#4a4845', transition: 'color 0.2s', textDecoration: 'none' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#F0EDE6')} onMouseLeave={(e) => (e.currentTarget.style.color = '#4a4845')}>
