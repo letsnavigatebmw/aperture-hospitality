@@ -164,6 +164,16 @@ export default function About() {
                 Led organizations from 20 to 65 people across Sales, Marketing, Operations, and Client Services. Recognized for sales leadership and performance management.
               </p>
             </div>
+
+            {/* Data Strategy */}
+            <div>
+              <h3 style={{ fontFamily: "'Inter', sans-serif", fontSize: '1.25rem', fontWeight: 600, color: '#F0EDE6', marginBottom: '1rem' }}>
+                Data Strategy
+              </h3>
+              <p style={{ fontSize: '0.9rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6' }}>
+                Architect data-driven business models by integrating customer, property, behavioral, and market intelligence into scalable operating systems. Leveraged analytics, automation, and predictive insights to improve targeting, optimize performance, and uncover new revenue opportunities.
+              </p>
+            </div>
           </div>
 
           {/* Operating Philosophy */}
