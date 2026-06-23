@@ -406,7 +406,7 @@ export default function DataIntelligencePage() {
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.5fr', gap: '6rem', alignItems: 'start' }}>
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, color: '#F0EDE6' }}>
-              Good<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>questions.</em>
+              Good<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Questions.</em>
             </h2>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
               {faqItems.map((item, i) => (
