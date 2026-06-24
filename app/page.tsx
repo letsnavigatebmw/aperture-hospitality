@@ -8,12 +8,76 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <>
+      <style>{`
+        @media (max-width: 768px) {
+          .hero-grid {
+            grid-template-columns: 1fr !important;
+            gap: 3rem !important;
+          }
+          .hero-right {
+            border-left: none !important;
+            padding-left: 0 !important;
+            padding-top: 2rem;
+            border-top: 1px solid #2e2b26 !important;
+          }
+          .two-col-grid {
+            grid-template-columns: 1fr !important;
+            gap: 2rem !important;
+          }
+          .four-col-grid {
+            grid-template-columns: 1fr !important;
+            gap: 0 !important;
+          }
+          .four-col-grid > div {
+            padding: 2rem 0 !important;
+            border-right: none !important;
+            border-bottom: 1px solid #2e2b26 !important;
+          }
+          .four-col-grid > div:last-child {
+            border-bottom: none !important;
+          }
+          .services-header {
+            grid-template-columns: 1fr !important;
+            gap: 2rem !important;
+          }
+          .two-card-grid {
+            grid-template-columns: 1fr !important;
+            gap: 1rem !important;
+          }
+          .testimonial-grid {
+            grid-template-columns: 1fr !important;
+            gap: 1.5rem !important;
+          }
+          .engagement-grid {
+            grid-template-columns: 1fr !important;
+            gap: 0 !important;
+          }
+          .engagement-grid > div {
+            border-bottom: 1px solid #D4CFC6 !important;
+            border-right: none !important;
+            padding: 1.5rem 0 !important;
+          }
+          .engagement-grid > div:last-child {
+            border-bottom: none !important;
+          }
+          
+          /* Better button wrapping on mobile */
+          .hero-cta {
+            flex-direction: column;
+            gap: 0.75rem !important;
+          }
+          .hero-cta > a {
+            width: 100% !important;
+            text-align: center !important;
+          }
+        }
+      `}</style>
       <Nav />
 
       {/* ══════ HERO ══════ */}
       <section style={{ background: '#1C1A17', padding: 'clamp(5rem,10vw,8rem) 0 0', borderBottom: '1px solid #2e2b26', overflow: 'hidden' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6rem', alignItems: 'end', paddingBottom: 'clamp(4rem,8vw,7rem)' }}>
+          <div className="hero-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6rem', alignItems: 'end', paddingBottom: 'clamp(4rem,8vw,7rem)' }}>
             {/* LEFT */}
             <div style={{ paddingBottom: 'clamp(4rem,8vw,7rem)' }}>
               <div style={{ display:'flex', alignItems:'center', gap:'0.75rem', marginBottom:'2rem' }}>
@@ -31,7 +95,7 @@ export default function Home() {
               <p style={{ fontSize:'1.0625rem', fontWeight:300, lineHeight:1.8, color:'#F0EDE6', marginBottom:'2.5rem', maxWidth:'44ch' }}>
                 We combine data strategy, AI agents, automation, and commercial expertise to help businesses create more predictable revenue, more efficient operations, and better customer experiences.
               </p>
-              <div style={{ display:'flex', gap:'1rem', flexWrap:'wrap' }}>
+              <div className="hero-cta" style={{ display:'flex', gap:'1rem', flexWrap:'wrap' }}>
                 <Link href="/contact" style={{ display:'inline-flex', alignItems:'center', justifyContent:'center', padding:'0.875rem 2.25rem', background:'#B8924A', color:'#F0EDE6', fontSize:'0.6875rem', fontWeight:500, letterSpacing:'0.16em', textTransform:'uppercase', textDecoration:'none', border:'none', cursor:'pointer', transition:'background 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.background = '#9a7a3e')} onMouseLeave={(e) => (e.currentTarget.style.background = '#B8924A')}>
                   Start a conversation
                 </Link>
@@ -42,7 +106,7 @@ export default function Home() {
             </div>
 
             {/* RIGHT: Three pillars */}
-            <div style={{ paddingBottom: 'clamp(4rem,8vw,7rem)', borderLeft:'1px solid #2e2b26', paddingLeft:'3rem' }}>
+            <div className="hero-right" style={{ paddingBottom: 'clamp(4rem,8vw,7rem)', borderLeft:'1px solid #2e2b26', paddingLeft:'3rem' }}>
               {/* Logo */}
               <div style={{ marginBottom:'4rem', textAlign:'center', paddingRight:'3rem', marginLeft:'-3rem' }}>
                 <svg width="140" height="140" viewBox="0 0 40 40" fill="none" style={{ margin:'0 auto', marginBottom:'2rem' }}>
@@ -98,7 +162,7 @@ export default function Home() {
       {/* ══════ INTELLIGENCE PROBLEM ══════ */}
       <section style={{ padding:'clamp(5rem,10vw,9rem) 0', borderBottom:'1px solid #D4CFC6' }}>
         <div style={{ maxWidth:'1140px', margin:'0 auto', padding:'0 clamp(1.5rem, 5vw, 4rem)' }}>
-          <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'6rem', alignItems:'start' }}>
+          <div className="two-col-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'6rem', alignItems:'start' }}>
             <div>
               <div style={{ display:'flex', alignItems:'center', gap:'0.75rem', fontSize:'0.6875rem', fontWeight:500, letterSpacing:'0.18em', textTransform:'uppercase', color:'#6B6760', marginBottom:'2rem' }}>
                 <span style={{ width:'2px', height:'1.25rem', background:'#B8924A', flexShrink:0 }}></span>
@@ -136,7 +200,7 @@ export default function Home() {
       {/* ══════ FOUR SERVICES ══════ */}
       <section style={{ background:'#1C1A17', padding:'clamp(5rem,10vw,9rem) 0', borderBottom:'1px solid #2e2b26' }}>
         <div style={{ maxWidth:'1140px', margin:'0 auto', padding:'0 clamp(1.5rem, 5vw, 4rem)' }}>
-          <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'5rem', alignItems:'end', marginBottom:'4rem' }}>
+          <div className="services-header" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'5rem', alignItems:'end', marginBottom:'4rem' }}>
             <div>
               <div style={{ display:'flex', alignItems:'center', gap:'0.75rem', fontSize:'0.6875rem', fontWeight:500, letterSpacing:'0.18em', textTransform:'uppercase', color:'#F0EDE6', marginBottom:'2rem' }}>
                 <span style={{ width:'2px', height:'1.25rem', background:'#B8924A', flexShrink:0 }}></span>
@@ -151,7 +215,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div style={{ display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:'0', borderTop:'1px solid #2e2b26' }}>
+          <div className="four-col-grid" style={{ display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:'0', borderTop:'1px solid #2e2b26' }}>
             {[
               { num:'01', title:'Data & Intelligence', desc:'Transform fragmented customer, operational, and market data into actionable business intelligence. We build the foundation that powers better decisions, stronger targeting, and more profitable growth.', link:'/data-intelligence' },
               { num:'02', title:'AI Agents & Automation', desc:'Deploy AI-powered agents that work alongside your team to engage prospects, respond to customers, automate workflows, and eliminate repetitive tasks. Adding capability without adding headcount.', link:'/ai-solutions' },
@@ -174,7 +238,7 @@ export default function Home() {
       {/* ══════ WHO WE HELP ══════ */}
       <section style={{ padding:'clamp(5rem,10vw,9rem) 0', borderBottom:'1px solid #D4CFC6' }}>
         <div style={{ maxWidth:'1140px', margin:'0 auto', padding:'0 clamp(1.5rem, 5vw, 4rem)' }}>
-          <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'6rem', alignItems:'end', marginBottom:'4rem' }}>
+          <div className="two-col-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'6rem', alignItems:'end', marginBottom:'4rem' }}>
             <div>
               <div style={{ display:'flex', alignItems:'center', gap:'0.75rem', fontSize:'0.6875rem', fontWeight:500, letterSpacing:'0.18em', textTransform:'uppercase', color:'#6B6760', marginBottom:'2rem' }}>
                 <span style={{ width:'2px', height:'1.25rem', background:'#B8924A', flexShrink:0 }}></span>
@@ -189,7 +253,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div style={{ display:'grid', gridTemplateColumns:'repeat(2, 1fr)', gap:'1.5rem' }}>
+          <div className="two-card-grid" style={{ display:'grid', gridTemplateColumns:'repeat(2, 1fr)', gap:'1.5rem' }}>
             {[
               {
                 title: 'Struggling to Generate Consistent Demand',
@@ -233,7 +297,7 @@ export default function Home() {
             <span style={{ width:'2px', height:'1.25rem', background:'#B8924A', flexShrink:0 }}></span>
             What Clients Say
           </div>
-          <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'3rem' }}>
+          <div className="testimonial-grid" style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'3rem' }}>
             {[
               {
                 quote: '"Brandon has a unique ability to connect strategy with execution. He consistently identified opportunities others missed, built alignment across teams, and helped us accelerate expansion while maintaining a strong focus on agent success. His combination of commercial acumen, relationship-building, and operational discipline makes him an invaluable partner."',
@@ -271,7 +335,7 @@ export default function Home() {
             Who We've <em style={{ color:'#B8924A' }}>Worked With.</em>
           </h2>
 
-          <div style={{ display:'grid', gridTemplateColumns:'repeat(3, 1fr)', gap:'0', borderTop:'1px solid #D4CFC6' }}>
+          <div className="engagement-grid" style={{ display:'grid', gridTemplateColumns:'repeat(3, 1fr)', gap:'0', borderTop:'1px solid #D4CFC6' }}>
             {[
               { label:'Real Estate', company:'Voyage Real Estate', desc:'Commercial strategy & AI-powered lead generation' },
               { label:'Venture', company:'Wilbur Labs', desc:'GTM strategy & enterprise sales process design' },
