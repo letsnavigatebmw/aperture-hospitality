@@ -43,6 +43,14 @@ export default function Home() {
 
             {/* RIGHT: Three pillars */}
             <div style={{ paddingBottom: 'clamp(4rem,8vw,7rem)', borderLeft:'1px solid #2e2b26', paddingLeft:'3rem' }}>
+              {/* Logo */}
+              <div style={{ marginBottom:'3rem', textAlign:'center', paddingRight:'3rem', marginLeft:'-3rem' }}>
+                <svg width="48" height="48" viewBox="0 0 32 32" fill="none" style={{ margin:'0 auto' }}>
+                  <circle cx="16" cy="16" r="13" stroke="#F0EDE6" strokeWidth="1.1"/>
+                  <path d="M16 3 A13 13 0 0 1 29 16" stroke="#B8924A" strokeWidth="2.4" strokeLinecap="round"/>
+                </svg>
+              </div>
+
               <div style={{ fontSize:'0.5625rem', fontWeight:500, letterSpacing:'0.2em', textTransform:'uppercase', color:'#B8924A', marginBottom:'1.75rem' }}>
                 Build a business that grows with intelligence, not just headcount.
               </div>
