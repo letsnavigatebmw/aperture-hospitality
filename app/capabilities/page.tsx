@@ -554,6 +554,49 @@ export default function CapabilitiesPage() {
         </div>
       </section>
 
+      {/* CORE COMPETENCIES */}
+      <section style={{ background: '#F0EDE6', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #B8924A' }}>
+        <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#6B6760', marginBottom: '2rem' }}>
+            <span style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></span>
+            Core Competencies
+          </div>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 300, lineHeight: 1.15, marginBottom: '4rem', color: '#1C1A17', fontStyle: 'italic' }}>
+            What We Do
+          </h2>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '4rem' }}>
+            {[
+              {
+                title: 'Commercial Strategy',
+                desc: 'Revenue optimization, unit economics, pricing, and margin architecture. We help brands think differently about how they create value.'
+              },
+              {
+                title: 'Sales & Go-to-Market',
+                desc: 'Building repeatable, scalable sales processes and distribution strategies. From acquisition to retention to expansion.'
+              },
+              {
+                title: 'Operations & Leadership',
+                desc: 'Organizational design, team scaling, process optimization, and the cross-functional alignment that drives execution.'
+              },
+              {
+                title: 'Data & Intelligence',
+                desc: 'Integrating customer, market, operational, and financial intelligence into a unified decision-making framework. We leverage analytics, automation, and insight generation to improve targeting, optimize performance, and identify growth opportunities before competitors do.'
+              }
+            ].map((competency, i) => (
+              <div key={i}>
+                <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.375rem', fontWeight: 400, color: '#1C1A17', lineHeight: 1.2, marginBottom: '1rem' }}>
+                  {competency.title}
+                </h3>
+                <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760' }}>
+                  {competency.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* NEWSLETTER SECTION */}
       <section style={{ background: '#1C1A17', padding: 'clamp(2.5rem, 5vw, 3.5rem) clamp(1.5rem, 5vw, 4rem)' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', alignItems: 'center' }}>
