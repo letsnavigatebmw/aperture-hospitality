@@ -190,18 +190,12 @@ export default function HowWeWorkPage() {
         {/* Aperture Logo */}
         <div style={{ position: 'absolute', top: '140px', right: '120px', width: '220px', height: '220px', display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none', zIndex: 0 }}>
           <svg viewBox="0 0 200 200" width="220" height="220" fill="none" xmlns="http://www.w3.org/2000/svg">
-            {/* Outer circle - very subtle */}
-            <circle cx="100" cy="100" r="95" stroke="rgba(184,146,74,0.08)" strokeWidth="1"/>
-            {/* Middle circle */}
-            <circle cx="100" cy="100" r="75" stroke="rgba(184,146,74,0.15)" strokeWidth="1.2"/>
-            {/* Inner circle */}
-            <circle cx="100" cy="100" r="55" stroke="rgba(184,146,74,0.25)" strokeWidth="1.5"/>
-            {/* Brass accent arc - upper right quarter circle */}
-            <path d="M 100 45 A 55 55 0 0 1 155 100" stroke="#B8924A" strokeWidth="5" strokeLinecap="round" fill="none"/>
-            {/* Brass accent arc - lower right quarter circle */}
-            <path d="M 155 100 A 55 55 0 0 1 100 155" stroke="#B8924A" strokeWidth="5" strokeLinecap="round" fill="none"/>
+            {/* Main circle */}
+            <circle cx="100" cy="100" r="80" stroke="rgba(184,146,74,0.3)" strokeWidth="2"/>
+            {/* Brass accent arc - flowing curve on right side */}
+            <path d="M 150 40 A 85 85 0 0 1 160 160" stroke="#B8924A" strokeWidth="7" strokeLinecap="round" fill="none"/>
             {/* Center dot */}
-            <circle cx="100" cy="100" r="3" fill="#B8924A"/>
+            <circle cx="100" cy="100" r="2.5" fill="#B8924A"/>
           </svg>
         </div>
         
