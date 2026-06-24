@@ -93,7 +93,7 @@ export default function Home() {
                 Most businesses don't have a marketing problem. They have an intelligence problem.
               </p>
               <p style={{ fontSize:'1.0625rem', fontWeight:300, lineHeight:1.8, color:'#F0EDE6', marginBottom:'2.5rem', maxWidth:'44ch' }}>
-                We combine data strategy, AI agents, automation, and commercial expertise to help businesses create more predictable revenue, more efficient operations, and better customer experiences.
+                Aperture combines data strategy, artificial intelligence, automation, and commercial expertise to help businesses identify growth opportunities, improve customer acquisition, and build scalable commercial systems that create predictable revenue.
               </p>
               <div className="hero-cta" style={{ display:'flex', gap:'1rem', flexWrap:'wrap' }}>
                 <Link href="/contact" style={{ display:'inline-flex', alignItems:'center', justifyContent:'center', padding:'0.875rem 2.25rem', background:'#B8924A', color:'#F0EDE6', fontSize:'0.6875rem', fontWeight:500, letterSpacing:'0.16em', textTransform:'uppercase', textDecoration:'none', border:'none', cursor:'pointer', transition:'background 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.background = '#9a7a3e')} onMouseLeave={(e) => (e.currentTarget.style.background = '#B8924A')}>
