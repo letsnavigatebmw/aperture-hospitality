@@ -36,7 +36,7 @@ export default function ApertureScorecardPage() {
       number: '3',
       title: 'MQL',
       percentage: '25–35%',
-      question: 'How consistently do you and/or your team collect contact information from people who show interest but aren't yet ready to book?',
+      question: 'How consistently do you and/or your team collect contact information from people who show interest but are not yet ready to book?',
       cost: 'Interest disappears before you can follow up.'
     },
     {
@@ -52,7 +52,7 @@ export default function ApertureScorecardPage() {
       number: '5',
       title: 'Opportunity',
       percentage: '50–62%',
-      question: 'How consistently do you and/or your team follow up with buyers who received pricing information but haven't yet made a purchase decision?',
+      question: 'How consistently do you and/or your team follow up with buyers who received pricing information but have not yet made a purchase decision?',
       cost: 'Most deals die in the silence.'
     },
     {
@@ -60,7 +60,7 @@ export default function ApertureScorecardPage() {
       number: '6',
       title: 'Customer',
       percentage: '15–30%',
-      question: 'How consistently are you and/or your team available to collect payments from customers when they're ready to pay — including after hours?',
+      question: 'How consistently are you and/or your team available to collect payments from customers when they are ready to pay — including after hours?',
       cost: 'Payment friction costs sales you already won.'
     },
     {
