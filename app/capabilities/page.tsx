@@ -86,7 +86,7 @@ export default function CapabilitiesPage() {
       {/* HERO */}
       <section style={{ background: '#1C1A17', padding: 'clamp(7rem, 10vw, 8rem) clamp(1.5rem, 5vw, 4rem)', position: 'relative', overflow: 'hidden' }}>
         {/* Aperture Logo */}
-        <div style={{ position: 'absolute', top: '140px', right: '220px', width: '240px', height: '240px', display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none', zIndex: 0 }}>
+        <div style={{ position: 'absolute', top: '140px', right: '320px', width: '240px', height: '240px', display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none', zIndex: 0 }}>
           <svg viewBox="0 0 200 200" width="240" height="240" fill="none" xmlns="http://www.w3.org/2000/svg">
             {/* Main circle */}
             <circle cx="100" cy="100" r="80" stroke="rgba(184,146,74,0.3)" strokeWidth="2"/>
