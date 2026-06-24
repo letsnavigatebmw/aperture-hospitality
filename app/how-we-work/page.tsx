@@ -453,7 +453,7 @@ export default function HowWeWorkPage() {
                   <p style={{ fontSize: '0.78rem', color: 'rgba(240,237,230,0.35)', fontWeight: 300, margin: 0, lineHeight: 1.5 }}>{option.desc}</p>
                 </div>
                 <div style={{ flexShrink: 0, width: '36px', height: '36px', border: '1px solid rgba(240,237,230,0.1)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'border-color 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.borderColor = 'rgba(184,146,74,0.4)')} onMouseLeave={(e) => (e.currentTarget.style.borderColor = 'rgba(240,237,230,0.1)')}>
-                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="rgba(240,237,230,0.3)" strokeWidth="1.5" style={{ transition: 'stroke 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.stroke = '#B8924A')} onMouseLeave={(e) => (e.currentTarget.style.stroke = 'rgba(240,237,230,0.3)')}>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="rgba(240,237,230,0.3)" strokeWidth="1.5" style={{ transition: 'stroke 0.2s' }} onMouseEnter={(e) => { (e.currentTarget as any).style.stroke = '#B8924A'; }} onMouseLeave={(e) => { (e.currentTarget as any).style.stroke = 'rgba(240,237,230,0.3)'; }}>
                     <path d="M2 7h10M8 3l4 4-4 4"/>
                   </svg>
                 </div>
