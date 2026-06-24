@@ -104,7 +104,7 @@ export default function IntakeForm() {
             margin: 0,
             marginBottom: '1.5rem'
           }}>
-            Let's talk about<br/>your <span style={{ fontStyle: 'italic', color: '#B8924A' }}>business.</span>
+            Let's Talk About<br/>Your <span style={{ fontStyle: 'italic', color: '#B8924A' }}>Business.</span>
           </h2>
 
           <p style={{
