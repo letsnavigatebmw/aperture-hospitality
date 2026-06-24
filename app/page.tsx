@@ -45,16 +45,27 @@ export default function Home() {
             <div style={{ paddingBottom: 'clamp(4rem,8vw,7rem)', borderLeft:'1px solid #2e2b26', paddingLeft:'3rem' }}>
               {/* Logo */}
               <div style={{ marginBottom:'4rem', textAlign:'center', paddingRight:'3rem', marginLeft:'-3rem' }}>
-                <svg width="120" height="120" viewBox="0 0 32 32" fill="none" style={{ margin:'0 auto', marginBottom:'2rem' }}>
-                  <circle cx="16" cy="16" r="13" stroke="#F0EDE6" strokeWidth="1.1"/>
-                  <circle cx="16" cy="16" r="9" stroke="#F0EDE6" strokeWidth="0.8" opacity="0.5"/>
-                  <path d="M16 3 A13 13 0 0 1 29 16" stroke="#B8924A" strokeWidth="2.4" strokeLinecap="round"/>
-                  <circle cx="16" cy="16" r="1.5" fill="#B8924A"/>
+                <svg width="100" height="100" viewBox="0 0 36 36" fill="none" style={{ margin:'0 auto', marginBottom:'2rem' }}>
+                  {/* Faint concentric circles */}
+                  <circle cx="18" cy="18" r="14" stroke="#3a3733" strokeWidth="0.5" opacity="0.3"/>
+                  <circle cx="18" cy="18" r="10" stroke="#3a3733" strokeWidth="0.5" opacity="0.3"/>
+                  <circle cx="18" cy="18" r="6" stroke="#3a3733" strokeWidth="0.5" opacity="0.3"/>
+                  
+                  {/* Main white circle aperture */}
+                  <circle cx="18" cy="18" r="14" stroke="#F0EDE6" strokeWidth="1.2"/>
+                  
+                  {/* Gold arc from ~12 o'clock to ~4 o'clock */}
+                  <path d="M18 4 A14 14 0 0 1 31 18" stroke="#B8924A" strokeWidth="2" strokeLinecap="round"/>
+                  
+                  {/* Center gold dot */}
+                  <circle cx="18" cy="18" r="1.5" fill="#B8924A"/>
                 </svg>
-                <div style={{ fontSize:'0.875rem', fontWeight:400, letterSpacing:'0.26em', textTransform:'uppercase', color:'#F0EDE6', textAlign:'center', marginBottom:'0.5rem' }}>
+                
+                <div style={{ fontSize:'0.875rem', fontWeight:500, letterSpacing:'0.3em', textTransform:'uppercase', color:'#F0EDE6', textAlign:'center', marginBottom:'1rem' }}>
                   Aperture
                 </div>
-                <div style={{ fontSize:'0.75rem', fontWeight:400, letterSpacing:'0.22em', textTransform:'uppercase', color:'#B8924A', textAlign:'center' }}>
+                <div style={{ width:'40px', height:'1px', background:'#B8924A', margin:'1rem auto' }}></div>
+                <div style={{ fontSize:'0.8rem', fontWeight:500, letterSpacing:'0.3em', textTransform:'uppercase', color:'#B8924A', textAlign:'center' }}>
                   Hospitality
                 </div>
               </div>
