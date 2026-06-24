@@ -367,6 +367,117 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* CONTACT FORM SECTION */}
+      <section style={{ padding: '7rem clamp(1.5rem, 5vw, 4rem)', background: '#F0EDE6' }}>
+        <div style={{ maxWidth: '1140px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1.5fr', gap: '6rem', alignItems: 'start' }}>
+          {/* Left Column */}
+          <div>
+            <div style={{ fontSize: '0.67rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#6B6760', marginBottom: '2rem' }}>Contact</div>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', fontWeight: 300, color: '#1C1A17', lineHeight: 1.1, marginBottom: '1.5rem' }}>
+              Let us Talk About<br/>Your <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Business.</em>
+            </h2>
+            <p style={{ fontSize: '0.875rem', color: '#6B6760', lineHeight: 1.8, fontWeight: 300, marginBottom: '2.5rem' }}>
+              Tell us a little about where you are and what you are working on. Brandon reviews every submission personally and follows up within one business day.
+            </p>
+            <button style={{ width: '100%', padding: '0.9rem 1.85rem', background: '#1C1A17', color: '#F0EDE6', fontSize: '0.72rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', border: '1px solid #1C1A17', transition: 'background 0.2s', cursor: 'pointer', marginBottom: '3rem' }} onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = '#2a2720'; }} onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = '#1C1A17'; }}>
+              Book a Time With Aperture
+            </button>
+            <div style={{ borderTop: '1px solid #D4CFC6', paddingTop: '2rem' }}>
+              <div style={{ fontSize: '0.65rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#6B6760', marginBottom: '0.75rem' }}>Prefer Email Directly?</div>
+              <a href="mailto:inquiries@aperturehospitality.com" style={{ fontSize: '0.875rem', color: '#B8924A', textDecoration: 'none', fontWeight: 300, transition: 'color 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#1C1A17')} onMouseLeave={(e) => (e.currentTarget.style.color = '#B8924A')}>
+                inquiries@aperturehospitality.com
+              </a>
+            </div>
+          </div>
+
+          {/* Right Column - Form */}
+          <form style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+            <div style={{ fontSize: '0.67rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '0.5rem' }}>Your Information</div>
+
+            {/* Name Row */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+              <input type="text" placeholder="First Name" style={{ padding: '0.75rem 1rem', border: '1px solid #B8924A', background: 'transparent', fontFamily: "'Inter', sans-serif", fontSize: '0.875rem', color: '#1C1A17', transition: 'border-color 0.2s' }} onFocus={(e) => (e.currentTarget.style.borderColor = '#1C1A17')} onBlur={(e) => (e.currentTarget.style.borderColor = '#B8924A')} />
+              <input type="text" placeholder="Last Name" style={{ padding: '0.75rem 1rem', border: '1px solid #B8924A', background: 'transparent', fontFamily: "'Inter', sans-serif", fontSize: '0.875rem', color: '#1C1A17', transition: 'border-color 0.2s' }} onFocus={(e) => (e.currentTarget.style.borderColor = '#1C1A17')} onBlur={(e) => (e.currentTarget.style.borderColor = '#B8924A')} />
+            </div>
+
+            {/* Email & Phone Row */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+              <input type="email" placeholder="you@yourbusiness.com" style={{ padding: '0.75rem 1rem', border: '1px solid #B8924A', background: 'transparent', fontFamily: "'Inter', sans-serif", fontSize: '0.875rem', color: '#1C1A17', transition: 'border-color 0.2s' }} onFocus={(e) => (e.currentTarget.style.borderColor = '#1C1A17')} onBlur={(e) => (e.currentTarget.style.borderColor = '#B8924A')} />
+              <input type="tel" placeholder="+1 (310) 000-0000" style={{ padding: '0.75rem 1rem', border: '1px solid #B8924A', background: 'transparent', fontFamily: "'Inter', sans-serif", fontSize: '0.875rem', color: '#1C1A17', transition: 'border-color 0.2s' }} onFocus={(e) => (e.currentTarget.style.borderColor = '#1C1A17')} onBlur={(e) => (e.currentTarget.style.borderColor = '#B8924A')} />
+            </div>
+
+            <div style={{ fontSize: '0.67rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginTop: '1rem', marginBottom: '0.5rem' }}>Your Business</div>
+
+            {/* Business Name */}
+            <input type="text" placeholder="Your company name" style={{ padding: '0.75rem 1rem', border: '1px solid #B8924A', background: 'transparent', fontFamily: "'Inter', sans-serif", fontSize: '0.875rem', color: '#1C1A17', transition: 'border-color 0.2s' }} onFocus={(e) => (e.currentTarget.style.borderColor = '#1C1A17')} onBlur={(e) => (e.currentTarget.style.borderColor = '#B8924A')} />
+
+            {/* Business Type & Industry Row */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+              <select style={{ padding: '0.75rem 1rem', border: '1px solid #B8924A', background: 'transparent', fontFamily: "'Inter', sans-serif", fontSize: '0.875rem', color: '#1C1A17', cursor: 'pointer', transition: 'border-color 0.2s' }} onFocus={(e) => (e.currentTarget.style.borderColor = '#1C1A17')} onBlur={(e) => (e.currentTarget.style.borderColor = '#B8924A')}>
+                <option value="">Select business type</option>
+                <option value="saas">SaaS</option>
+                <option value="agency">Agency</option>
+                <option value="ecommerce">E-commerce</option>
+                <option value="service">Service</option>
+              </select>
+              <select style={{ padding: '0.75rem 1rem', border: '1px solid #B8924A', background: 'transparent', fontFamily: "'Inter', sans-serif", fontSize: '0.875rem', color: '#1C1A17', cursor: 'pointer', transition: 'border-color 0.2s' }} onFocus={(e) => (e.currentTarget.style.borderColor = '#1C1A17')} onBlur={(e) => (e.currentTarget.style.borderColor = '#B8924A')}>
+                <option value="">Select industry</option>
+                <option value="tech">Technology</option>
+                <option value="hospitality">Hospitality</option>
+                <option value="real-estate">Real Estate</option>
+                <option value="consumer">Consumer</option>
+              </select>
+            </div>
+
+            {/* Revenue & Employees Row */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+              <select style={{ padding: '0.75rem 1rem', border: '1px solid #B8924A', background: 'transparent', fontFamily: "'Inter', sans-serif", fontSize: '0.875rem', color: '#1C1A17', cursor: 'pointer', transition: 'border-color 0.2s' }} onFocus={(e) => (e.currentTarget.style.borderColor = '#1C1A17')} onBlur={(e) => (e.currentTarget.style.borderColor = '#B8924A')}>
+                <option value="">Annual revenue</option>
+                <option value="0-100k">$0 - $100K</option>
+                <option value="100k-1m">$100K - $1M</option>
+                <option value="1m-10m">$1M - $10M</option>
+                <option value="10m+">$10M+</option>
+              </select>
+              <select style={{ padding: '0.75rem 1rem', border: '1px solid #B8924A', background: 'transparent', fontFamily: "'Inter', sans-serif", fontSize: '0.875rem', color: '#1C1A17', cursor: 'pointer', transition: 'border-color 0.2s' }} onFocus={(e) => (e.currentTarget.style.borderColor = '#1C1A17')} onBlur={(e) => (e.currentTarget.style.borderColor = '#B8924A')}>
+                <option value="">Number of employees</option>
+                <option value="1-5">1 - 5</option>
+                <option value="5-20">5 - 20</option>
+                <option value="20-50">20 - 50</option>
+                <option value="50+">50+</option>
+              </select>
+            </div>
+
+            {/* Location & Interested In Row */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+              <select style={{ padding: '0.75rem 1rem', border: '1px solid #B8924A', background: 'transparent', fontFamily: "'Inter', sans-serif", fontSize: '0.875rem', color: '#1C1A17', cursor: 'pointer', transition: 'border-color 0.2s' }} onFocus={(e) => (e.currentTarget.style.borderColor = '#1C1A17')} onBlur={(e) => (e.currentTarget.style.borderColor = '#B8924A')}>
+                <option value="">Business location</option>
+                <option value="ca">California</option>
+                <option value="ny">New York</option>
+                <option value="tx">Texas</option>
+                <option value="other">Other</option>
+              </select>
+              <select style={{ padding: '0.75rem 1rem', border: '1px solid #B8924A', background: 'transparent', fontFamily: "'Inter', sans-serif", fontSize: '0.875rem', color: '#1C1A17', cursor: 'pointer', transition: 'border-color 0.2s' }} onFocus={(e) => (e.currentTarget.style.borderColor = '#1C1A17')} onBlur={(e) => (e.currentTarget.style.borderColor = '#B8924A')}>
+                <option value="">Interested in</option>
+                <option value="strategy">Strategy</option>
+                <option value="automation">Automation</option>
+                <option value="ai">AI Solutions</option>
+                <option value="all">All Services</option>
+              </select>
+            </div>
+
+            {/* Submit Button */}
+            <button type="submit" style={{ padding: '0.9rem 1.85rem', background: '#1C1A17', color: '#F0EDE6', fontSize: '0.72rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', border: '1px solid #1C1A17', transition: 'background 0.2s', cursor: 'pointer', marginTop: '1rem' }} onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = '#2a2720'; }} onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = '#1C1A17'; }}>
+              Submit Inquiry
+            </button>
+
+            {/* Footer Note */}
+            <p style={{ fontSize: '0.7rem', color: '#6B6760', textAlign: 'center', fontWeight: 300, marginTop: '1rem' }}>
+              No spam. No added to a list. Brandon reads every submission personally.
+            </p>
+          </form>
+        </div>
+      </section>
+
       <Footer />
     </>
   )
