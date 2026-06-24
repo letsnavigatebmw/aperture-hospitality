@@ -1,9 +1,11 @@
-import { Metadata } from 'next'
+'use client'
+
 import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import NewsletterSection from '@/components/NewsletterSection'
 
+/*
 export const metadata: Metadata = {
   title: 'About | Aperture Hospitality',
   description: 'Brandon M. Weaver, founder and CEO of Aperture Hospitality. 20+ years in hospitality, luxury travel, and real estate operations.',
@@ -12,6 +14,7 @@ export const metadata: Metadata = {
     description: 'Brandon M. Weaver, founder and CEO of Aperture Hospitality.',
   },
 }
+*/
 
 export default function About() {
   return (
