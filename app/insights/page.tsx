@@ -18,15 +18,17 @@ const ContentGrid = ({ items }: { items: InsightCard[] }) => (
         href={item.link}
         target="_blank"
         rel="noopener noreferrer"
-        className="block border border-rule rounded-lg p-6 bg-parchment-dark hover:border-brass hover:bg-parchment transition-all"
+        style={{ display: 'block', border: '1px solid rgba(184,146,74,0.3)', borderRadius: '0.5rem', padding: '1.5rem', background: '#232118', color: '#F0EDE6', transition: 'all 0.3s' }}
+        onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#B8924A'; e.currentTarget.style.background = '#2a2520'; }}
+        onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'rgba(184,146,74,0.3)'; e.currentTarget.style.background = '#232118'; }}
       >
-        <p className="text-brass font-bold uppercase tracking-widest text-xs mb-4">
+        <p style={{ color: '#B8924A', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '0.08em', fontSize: '0.75rem', marginBottom: '1rem' }}>
           {item.type}
         </p>
-        <h3 className="text-lg font-display text-ink mb-6 leading-tight">
+        <h3 style={{ fontSize: '1.125rem', fontFamily: "'Cormorant Garamond', Georgia, serif", color: '#F0EDE6', marginBottom: '1.5rem', lineHeight: 1.4 }}>
           {item.title}
         </h3>
-        <p className="text-brass font-bold uppercase tracking-widest text-xs">
+        <p style={{ color: '#B8924A', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '0.08em', fontSize: '0.75rem' }}>
           Read →
         </p>
       </a>
@@ -139,58 +141,58 @@ export default function InsightsPage() {
     <>
       <Nav />
       
-      <section className="border-b border-rule">
-        <div className="container-max py-16 md:py-24">
+      <section style={{ background: '#1C1A17', borderBottom: '1px solid rgba(184,146,74,0.2)' }}>
+        <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)', paddingTop: 'clamp(4rem, 8vw, 6rem)', paddingBottom: 'clamp(4rem, 8vw, 6rem)' }}>
           {/* Header */}
-          <div className="mb-12">
-            <div className="section-label">Insights & Expertise</div>
-            <h1 className="font-display text-4xl md:text-5xl font-light mb-6 text-ink">
-              Thought <em className="italic">Leadership</em>
+          <div style={{ marginBottom: '3rem' }}>
+            <div style={{ fontSize: '0.65rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1rem' }}>Insights & Expertise</div>
+            <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 300, marginBottom: '1.5rem', color: '#F0EDE6', lineHeight: 1.1 }}>
+              Thought <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Leadership</em>
             </h1>
-            <p className="text-lg leading-relaxed text-muted max-w-2xl">
+            <p style={{ fontSize: '1.125rem', lineHeight: 1.8, color: '#F0EDE6', maxWidth: '50ch', fontWeight: 300 }}>
               We write on building businesses at scale, commercial strategy, and leadership. Here's what we've learned.
             </p>
           </div>
 
           {/* Divider */}
-          <div className="w-full h-px bg-rule mb-12" />
+          <div style={{ width: '100%', height: '1px', background: 'rgba(184,146,74,0.2)', marginBottom: '3rem' }} />
 
           {/* Sales Strategy */}
-          <div className="mb-20">
-            <h2 className="font-display text-2xl md:text-3xl font-normal text-ink mb-8">
+          <div style={{ marginBottom: '5rem' }}>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 300, color: '#F0EDE6', marginBottom: '2rem' }}>
               Sales Strategy
             </h2>
             <ContentGrid items={salesStrategy} />
           </div>
 
           {/* Commercial Strategy */}
-          <div className="mb-20">
-            <h2 className="font-display text-2xl md:text-3xl font-normal text-ink mb-8">
+          <div style={{ marginBottom: '5rem' }}>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 300, color: '#F0EDE6', marginBottom: '2rem' }}>
               Commercial Strategy
             </h2>
             <ContentGrid items={commercialStrategy} />
           </div>
 
           {/* Lessons in Luxury */}
-          <div className="mb-20">
-            <h2 className="font-display text-2xl md:text-3xl font-normal text-ink mb-8">
-              Lessons in <em className="italic">Luxury</em>
+          <div style={{ marginBottom: '5rem' }}>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 300, color: '#F0EDE6', marginBottom: '2rem' }}>
+              Lessons in <em style={{ fontStyle: 'italic' }}>Luxury</em>
             </h2>
             <ContentGrid items={lessonsInLuxury} />
           </div>
 
           {/* Marketing Strategy */}
-          <div className="mb-20">
-            <h2 className="font-display text-2xl md:text-3xl font-normal text-ink mb-8">
+          <div style={{ marginBottom: '5rem' }}>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 300, color: '#F0EDE6', marginBottom: '2rem' }}>
               Marketing Strategy
             </h2>
             <ContentGrid items={marketingStrategy} />
           </div>
 
           {/* Lessons in Leadership */}
-          <div className="mb-16">
-            <h2 className="font-display text-2xl md:text-3xl font-normal text-ink mb-8">
-              Lessons in <em className="italic">Leadership</em>
+          <div>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 300, color: '#F0EDE6', marginBottom: '2rem' }}>
+              Lessons in <em style={{ fontStyle: 'italic' }}>Leadership</em>
             </h2>
             <ContentGrid items={lessonsInLeadership} />
           </div>
@@ -198,39 +200,41 @@ export default function InsightsPage() {
       </section>
 
       {/* PODCASTS & MEDIA */}
-      <section className="border-b border-rule">
-        <div className="container-max py-16 md:py-24">
+      <section style={{ background: '#1C1A17', borderBottom: '1px solid rgba(184,146,74,0.2)' }}>
+        <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)', paddingTop: 'clamp(4rem, 8vw, 6rem)', paddingBottom: 'clamp(4rem, 8vw, 6rem)' }}>
           {/* Header */}
-          <div className="mb-12">
-            <div className="section-label">Featured Content</div>
-            <h2 className="font-display text-4xl md:text-5xl font-light mb-6 text-ink">
-              Featured <em className="italic">Podcasts & Media</em>
+          <div style={{ marginBottom: '3rem' }}>
+            <div style={{ fontSize: '0.65rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1rem' }}>Featured Content</div>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 300, marginBottom: '1.5rem', color: '#F0EDE6', lineHeight: 1.1 }}>
+              Featured <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Podcasts & Media</em>
             </h2>
           </div>
 
           {/* Divider */}
-          <div className="w-full h-px bg-rule mb-12" />
+          <div style={{ width: '100%', height: '1px', background: 'rgba(184,146,74,0.2)', marginBottom: '3rem' }} />
 
           {/* Main Content Card */}
           <a
             href="https://www.youtube.com/@BrandonMWeaver/videos"
             target="_blank"
             rel="noopener noreferrer"
-            className="block mb-12 border-2 border-brass rounded-lg p-8 bg-parchment-dark hover:bg-parchment hover:border-brass-dim transition-all"
+            style={{ display: 'block', marginBottom: '3rem', border: '2px solid #B8924A', borderRadius: '0.5rem', padding: '2rem', background: '#232118', color: '#F0EDE6', textDecoration: 'none', transition: 'all 0.3s' }}
+            onMouseEnter={(e) => { e.currentTarget.style.background = '#2a2520'; }}
+            onMouseLeave={(e) => { e.currentTarget.style.background = '#232118'; }}
           >
-            <p className="text-brass font-bold uppercase tracking-widest text-xs mb-4">
+            <p style={{ color: '#B8924A', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '0.08em', fontSize: '0.75rem', marginBottom: '1rem' }}>
               Featured
             </p>
-            <h3 className="font-display text-3xl md:text-4xl font-normal text-ink mb-4">
+            <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.5rem, 3vw, 2.25rem)', fontWeight: 300, color: '#F0EDE6', marginBottom: '1rem', lineHeight: 1.2 }}>
               Insights on Strategy, Operations, and Building for Scale
             </h3>
-            <p className="text-muted text-sm">
+            <p style={{ color: '#6B6760', fontSize: '0.875rem' }}>
               YouTube
             </p>
           </a>
 
           {/* Featured Shorts Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem' }}>
             {[
               { title: "It's Not Happening to You, It's Happening for You", url: 'https://youtube.com/shorts/MvYFAvVDfZ8' },
               { title: 'Moving Prospects from Indifference to Engagement', url: 'https://youtube.com/shorts/AckWa5ML22w' },
@@ -242,15 +246,17 @@ export default function InsightsPage() {
                 href={item.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block border border-rule rounded-lg p-6 bg-parchment-dark hover:border-brass hover:bg-parchment transition-all"
+                style={{ display: 'block', border: '1px solid rgba(184,146,74,0.3)', borderRadius: '0.5rem', padding: '1.5rem', background: '#232118', color: '#F0EDE6', textDecoration: 'none', transition: 'all 0.3s' }}
+                onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#B8924A'; e.currentTarget.style.background = '#2a2520'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'rgba(184,146,74,0.3)'; e.currentTarget.style.background = '#232118'; }}
               >
-                <p className="text-brass font-bold uppercase tracking-widest text-xs mb-3">
+                <p style={{ color: '#B8924A', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '0.08em', fontSize: '0.75rem', marginBottom: '0.75rem' }}>
                   YouTube
                 </p>
-                <h4 className="font-display text-base font-normal text-ink mb-4 leading-tight">
+                <h4 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1rem', fontWeight: 300, color: '#F0EDE6', marginBottom: '1rem', lineHeight: 1.3 }}>
                   {item.title}
                 </h4>
-                <p className="text-brass text-xs font-medium uppercase tracking-wider">
+                <p style={{ color: '#B8924A', fontSize: '0.75rem', fontWeight: 500, textTransform: 'uppercase', letterSpacing: '0.08em', margin: 0 }}>
                   Watch →
                 </p>
               </a>
@@ -260,26 +266,26 @@ export default function InsightsPage() {
       </section>
 
       {/* HELP CARD SECTION */}
-      <section style={{ background: '#E8E4DB', borderBottom: '2px solid #B8924A' }}>
+      <section style={{ background: '#1C1A17', borderBottom: '2px solid rgba(184,146,74,0.2)' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ paddingTop: 'clamp(3rem, 5vw, 4rem)', paddingBottom: 'clamp(3rem, 5vw, 4rem)' }}>
-            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.75rem, 3vw, 2.25rem)', fontWeight: 300, lineHeight: 1.15, color: '#1C1A17', marginBottom: '2rem', paddingBottom: '2rem', borderBottom: '2px solid #B8924A' }}>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.75rem, 3vw, 2.25rem)', fontWeight: 300, lineHeight: 1.15, color: '#F0EDE6', marginBottom: '2rem', paddingBottom: '2rem', borderBottom: '2px solid rgba(184,146,74,0.3)' }}>
               When you're ready, here's <em style={{ fontStyle: 'italic', color: '#B8924A' }}>how we can help.</em>
             </h2>
 
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0' }}>
               {/* Option 1 */}
-              <div style={{ paddingRight: '2.5rem', borderRight: '2px solid #B8924A' }}>
+              <div style={{ paddingRight: '2.5rem', borderRight: '2px solid rgba(184,146,74,0.3)' }}>
                 <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '0.625rem' }}>
                   Free · 1 Hour
                 </div>
-                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.375rem', fontWeight: 400, color: '#1C1A17', lineHeight: 1.2, marginBottom: '0.875rem' }}>
+                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.375rem', fontWeight: 400, color: '#F0EDE6', lineHeight: 1.2, marginBottom: '0.875rem' }}>
                   Strategy Consultation
                 </div>
-                <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760', marginBottom: '1.5rem' }}>
+                <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.7, color: '#F0EDE6', marginBottom: '1.5rem' }}>
                   Get Brandon's direct read on your business strategy, commercial positioning, or growth challenges. Leave with a clear next step and actionable insights.
                 </p>
-                <Link href="/contact?type=clarity-session" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#1C1A17', borderBottom: '2px solid #B8924A', paddingBottom: '2px', textDecoration: 'none' }}>
+                <Link href="/contact?type=clarity-session" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B8924A', borderBottom: '2px solid #B8924A', paddingBottom: '2px', textDecoration: 'none' }}>
                   Book a session →
                 </Link>
               </div>
@@ -289,13 +295,13 @@ export default function InsightsPage() {
                 <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '0.625rem' }}>
                   Engagement
                 </div>
-                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.375rem', fontWeight: 400, color: '#1C1A17', lineHeight: 1.2, marginBottom: '0.875rem' }}>
+                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.375rem', fontWeight: 400, color: '#F0EDE6', lineHeight: 1.2, marginBottom: '0.875rem' }}>
                   Full Strategic Partnership
                 </div>
-                <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760', marginBottom: '1.5rem' }}>
+                <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.7, color: '#F0EDE6', marginBottom: '1.5rem' }}>
                   A comprehensive Aperture engagement to build strategy, structure, and execution roadmap for sustainable growth. Hands-on from discovery through implementation.
                 </p>
-                <Link href="/contact?type=engagement" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#1C1A17', borderBottom: '2px solid #B8924A', paddingBottom: '2px', textDecoration: 'none' }}>
+                <Link href="/contact?type=engagement" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B8924A', borderBottom: '2px solid #B8924A', paddingBottom: '2px', textDecoration: 'none' }}>
                   Start a conversation →
                 </Link>
               </div>
@@ -312,7 +318,7 @@ export default function InsightsPage() {
             <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.25rem, 2vw, 1.625rem)', fontWeight: 300, lineHeight: 1.2, color: '#F0EDE6', marginBottom: '0.875rem', margin: 0 }}>
               Insights on hospitality, luxury, and <em style={{ fontStyle: 'italic', color: '#B8924A' }}>growth.</em>
             </h3>
-            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.75, color: '#6B6760', margin: 0 }}>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.75, color: '#F0EDE6', margin: 0 }}>
               Practical thinking on marketing, commercial strategy, and what's actually working for boutique hospitality and luxury brands. No filler. Straight to the point.
             </p>
           </div>
