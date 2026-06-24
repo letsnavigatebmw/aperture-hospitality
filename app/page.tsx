@@ -91,8 +91,8 @@ export default function HomePage() {
         <div style={{ position: 'absolute', top: '-50px', right: '-50px', width: '320px', height: '320px', borderRadius: '50%', border: '1.5px solid rgba(184,146,74,0.18)', clipPath: 'polygon(50% 0%, 100% 0%, 100% 50%, 50% 50%)', pointerEvents: 'none' }}></div>
 
         {/* Aperture Logo */}
-        <div style={{ position: 'absolute', top: '60px', right: '60px', width: '240px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none', zIndex: 0 }}>
-          <div style={{ width: '240px', height: '240px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem' }}>
+        <div style={{ position: 'absolute', top: '100px', left: '50%', transform: 'translateX(-50%)', width: '240px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none', zIndex: 0 }}>
+          <div style={{ width: '240px', height: '240px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.5rem' }}>
             <svg viewBox="0 0 200 200" width="240" height="240" fill="none" xmlns="http://www.w3.org/2000/svg">
               {/* Main circle */}
               <circle cx="100" cy="100" r="80" stroke="rgba(184,146,74,0.3)" strokeWidth="2"/>
@@ -102,7 +102,7 @@ export default function HomePage() {
               <circle cx="100" cy="100" r="2.5" fill="#B8924A"/>
             </svg>
           </div>
-          <div style={{ fontSize: '0.65rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', textAlign: 'center' }}>
+          <div style={{ fontSize: '0.5rem', fontWeight: 400, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'rgba(240,237,230,0.35)', textAlign: 'center' }}>
             Aperture
           </div>
         </div>
