@@ -107,7 +107,7 @@ export default function CapabilitiesPage() {
             Stop Buying<br/>Tactics. Start<br/>Building <em style={{ fontStyle: 'italic', color: '#B8924A' }}>A System.</em>
           </h1>
 
-          <p style={{ fontSize: '1rem', lineHeight: 1.7, color: 'rgba(240,237,230,0.65)', maxWidth: '52ch', marginBottom: '3rem', fontWeight: 300 }}>
+          <p style={{ fontSize: '1rem', lineHeight: 1.7, color: '#F0EDE6', maxWidth: '52ch', marginBottom: '3rem', fontWeight: 300 }}>
             Most small businesses have pieces. A landing page here, some ads there, an email tool they barely use. None of it works because none of it connects. Aperture builds the acquisition engine that ties it together, from first contact to loyal customer.
           </p>
 
@@ -132,13 +132,13 @@ export default function CapabilitiesPage() {
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.15, marginBottom: '1.25rem' }}>
               You Have<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Tactics.</em> You<br/>Need a System.
             </h2>
-            <p style={{ color: 'rgba(240,237,230,0.55)', fontSize: '0.95rem', lineHeight: 1.75, fontWeight: 300, marginTop: '1.5rem' }}>
+            <p style={{ color: '#F0EDE6', fontSize: '0.95rem', lineHeight: 1.75, fontWeight: 300, marginTop: '1.5rem' }}>
               Tactics are the things you buy hoping something will move. A system is what makes everything move together. The difference between the two is not effort. It is architecture.
             </p>
           </div>
           <div style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 0 }}>
             {problems.map((problem, i) => (
-              <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '1.1rem 0', borderBottom: '1px solid rgba(240,237,230,0.08)', fontSize: '0.9rem', color: 'rgba(240,237,230,0.6)', lineHeight: 1.5, fontWeight: 300 }}>
+              <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '1.1rem 0', borderBottom: '1px solid rgba(240,237,230,0.08)', fontSize: '0.9rem', color: '#F0EDE6', lineHeight: 1.5, fontWeight: 300 }}>
                 <span style={{ display: 'block', width: '4px', height: '4px', borderRadius: '50%', background: '#B8924A', flexShrink: 0, marginTop: '0.55rem' }}></span>
                 {problem}
               </div>
@@ -205,12 +205,12 @@ export default function CapabilitiesPage() {
                 <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '4rem', fontWeight: 300, color: 'rgba(184,146,74,0.15)', lineHeight: 1, marginBottom: '1.5rem', letterSpacing: '-0.02em' }}>{engine.number}</div>
                 <div style={{ fontSize: '0.65rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', fontWeight: 500, marginBottom: '0.6rem' }}>{engine.label}</div>
                 <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.85rem', fontWeight: 400, color: '#F0EDE6', lineHeight: 1.15, marginBottom: '1.25rem' }}>{engine.name}</h3>
-                <p style={{ fontSize: '0.88rem', color: 'rgba(240,237,230,0.55)', lineHeight: 1.7, fontWeight: 300, marginBottom: '2rem' }}>{engine.description}</p>
+                <p style={{ fontSize: '0.88rem', color: '#F0EDE6', lineHeight: 1.7, fontWeight: 300, marginBottom: '2rem' }}>{engine.description}</p>
                 <div style={{ width: '2rem', height: '1px', background: 'rgba(184,146,74,0.35)', marginBottom: '1.5rem' }}></div>
-                <div style={{ fontSize: '0.62rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: '#6B6760', fontWeight: 500, marginBottom: '0.85rem' }}>What is inside</div>
+                <div style={{ fontSize: '0.62rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: '#F0EDE6', fontWeight: 500, marginBottom: '0.85rem' }}>What is inside</div>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '2rem' }}>
                   {engine.tags.map((tag, j) => (
-                    <span key={j} style={{ fontSize: '0.68rem', letterSpacing: '0.08em', color: 'rgba(240,237,230,0.45)', border: '1px solid rgba(240,237,230,0.12)', padding: '0.3rem 0.7rem', fontWeight: 300 }}>{tag}</span>
+                    <span key={j} style={{ fontSize: '0.68rem', letterSpacing: '0.08em', color: '#F0EDE6', border: '1px solid rgba(240,237,230,0.12)', padding: '0.3rem 0.7rem', fontWeight: 300 }}>{tag}</span>
                   ))}
                 </div>
                 <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', paddingTop: '1.5rem', borderTop: '1px solid rgba(240,237,230,0.08)' }}>
@@ -219,8 +219,8 @@ export default function CapabilitiesPage() {
                       <path d="M6 1v5M6 9v1"/><circle cx="6" cy="6" r="5"/>
                     </svg>
                   </div>
-                  <div style={{ fontSize: '0.8rem', color: 'rgba(240,237,230,0.45)', lineHeight: 1.5, fontWeight: 300 }}>
-                    <strong style={{ color: 'rgba(240,237,230,0.75)', fontWeight: 500, display: 'block', marginBottom: '0.15rem', fontSize: '0.75rem', letterSpacing: '0.08em', textTransform: 'uppercase' }}>The Goal</strong>
+                  <div style={{ fontSize: '0.8rem', color: '#F0EDE6', lineHeight: 1.5, fontWeight: 300 }}>
+                    <strong style={{ color: '#F0EDE6', fontWeight: 500, display: 'block', marginBottom: '0.15rem', fontSize: '0.75rem', letterSpacing: '0.08em', textTransform: 'uppercase' }}>The Goal</strong>
                     {engine.goal}
                   </div>
                 </div>
@@ -270,10 +270,10 @@ export default function CapabilitiesPage() {
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.1, marginBottom: '1.25rem' }}>
               Find Out<br/>Where Your<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Revenue Leaks.</em>
             </h2>
-            <p style={{ fontSize: '0.9rem', color: 'rgba(240,237,230,0.55)', lineHeight: 1.75, fontWeight: 300, marginBottom: '1rem' }}>
+            <p style={{ fontSize: '0.9rem', color: '#F0EDE6', lineHeight: 1.75, fontWeight: 300, marginBottom: '1rem' }}>
               Most businesses do not have a marketing problem. They have a system problem. The Revenue Leak Audit maps your current customer journey, finds the gaps, and tells you which engine to build first. It is the only honest place to start.
             </p>
-            <p style={{ fontSize: '0.9rem', color: 'rgba(240,237,230,0.55)', lineHeight: 1.75, fontWeight: 300, marginBottom: '2rem' }}>
+            <p style={{ fontSize: '0.9rem', color: '#F0EDE6', lineHeight: 1.75, fontWeight: 300, marginBottom: '2rem' }}>
               The audit is the entry point for every Aperture engagement. The diagnosis comes first. The recommendation follows from the evidence. Nothing is sold before the problem is understood.
             </p>
             <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.6rem', background: '#B8924A', color: '#F0EDE6', fontFamily: "'Inter', sans-serif", fontSize: '0.72rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', padding: '0.85rem 1.75rem', textDecoration: 'none', border: '1px solid #B8924A', transition: 'background 0.2s, color 0.2s', cursor: 'pointer' }} onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = '#a07e40'; (e.currentTarget as HTMLElement).style.borderColor = '#a07e40'; }} onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = '#B8924A'; (e.currentTarget as HTMLElement).style.borderColor = '#B8924A'; }}>
@@ -286,10 +286,10 @@ export default function CapabilitiesPage() {
           <div style={{ border: '1px solid rgba(184,146,74,0.25)', padding: '2.5rem', position: 'relative' }}>
             <span style={{ display: 'inline-block', fontSize: '0.62rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', fontWeight: 500, border: '1px solid rgba(184,146,74,0.35)', padding: '0.3rem 0.75rem', marginBottom: '1.5rem' }}>Revenue Leak Audit</span>
             <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.6rem', fontWeight: 400, color: '#F0EDE6', marginBottom: '0.75rem', lineHeight: 1.2 }}>What the Audit Covers</h3>
-            <p style={{ fontSize: '0.85rem', color: 'rgba(240,237,230,0.5)', lineHeight: 1.7, marginBottom: '2rem', fontWeight: 300 }}>A structured diagnostic across your full customer journey. Where you are losing people and why.</p>
+            <p style={{ fontSize: '0.85rem', color: '#F0EDE6', lineHeight: 1.7, marginBottom: '2rem', fontWeight: 300 }}>A structured diagnostic across your full customer journey. Where you are losing people and why.</p>
             <ul style={{ listStyle: 'none', marginBottom: '2.5rem' }}>
               {auditItems.map((item, i) => (
-                <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', fontSize: '0.82rem', color: 'rgba(240,237,230,0.55)', padding: '0.65rem 0', borderBottom: '1px solid rgba(240,237,230,0.06)', fontWeight: 300, lineHeight: 1.5 }}>
+                <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', fontSize: '0.82rem', color: '#F0EDE6', padding: '0.65rem 0', borderBottom: '1px solid rgba(240,237,230,0.06)', fontWeight: 300, lineHeight: 1.5 }}>
                   <span style={{ display: 'block', width: '4px', height: '4px', borderRadius: '50%', background: '#B8924A', flexShrink: 0, marginTop: '0.55rem' }}></span>
                   {item}
                 </li>
@@ -298,7 +298,7 @@ export default function CapabilitiesPage() {
             <Link href="/contact" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', background: '#B8924A', color: '#F0EDE6', fontFamily: "'Inter', sans-serif", fontSize: '0.72rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', padding: '0.85rem 1.75rem', textDecoration: 'none', border: '1px solid #B8924A', transition: 'background 0.2s, color 0.2s', cursor: 'pointer', marginBottom: '1rem' }} onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = '#a07e40'; (e.currentTarget as HTMLElement).style.borderColor = '#a07e40'; }} onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = '#B8924A'; (e.currentTarget as HTMLElement).style.borderColor = '#B8924A'; }}>
               Start With the Audit
             </Link>
-            <p style={{ fontSize: '0.72rem', color: 'rgba(240,237,230,0.3)', letterSpacing: '0.04em', fontWeight: 300, marginTop: '1rem' }}>Free for qualified businesses. One hour. You will leave with a diagnosis, not a sales pitch.</p>
+            <p style={{ fontSize: '0.72rem', color: 'rgba(240,237,230,0.55)', letterSpacing: '0.04em', fontWeight: 300, marginTop: '1rem' }}>Free for qualified businesses. One hour. You will leave with a diagnosis, not a sales pitch.</p>
           </div>
         </div>
       </section>
@@ -326,7 +326,7 @@ export default function CapabilitiesPage() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.2rem, 5vw, 4rem)', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.1, marginBottom: '1.25rem' }}>
             Build the<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Engine.</em>
           </h2>
-          <p style={{ fontSize: '0.95rem', color: 'rgba(240,237,230,0.5)', marginBottom: '2.5rem', lineHeight: 1.7, fontWeight: 300 }}>
+          <p style={{ fontSize: '0.95rem', color: '#F0EDE6', marginBottom: '2.5rem', lineHeight: 1.7, fontWeight: 300 }}>
             The audit is free and takes an hour. You will know exactly what is broken, what to build first, and what it takes to fix it. No pressure, no generic advice. Just an honest read on your business.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
