@@ -45,27 +45,30 @@ export default function Home() {
             <div style={{ paddingBottom: 'clamp(4rem,8vw,7rem)', borderLeft:'1px solid #2e2b26', paddingLeft:'3rem' }}>
               {/* Logo */}
               <div style={{ marginBottom:'4rem', textAlign:'center', paddingRight:'3rem', marginLeft:'-3rem' }}>
-                <svg width="100" height="100" viewBox="0 0 36 36" fill="none" style={{ margin:'0 auto', marginBottom:'2rem' }}>
+                <svg width="140" height="140" viewBox="0 0 40 40" fill="none" style={{ margin:'0 auto', marginBottom:'2rem' }}>
+                  {/* Grid background */}
+                  <line x1="20" y1="2" x2="20" y2="38" stroke="#3a3733" strokeWidth="0.4" opacity="0.2"/>
+                  <line x1="2" y1="20" x2="38" y2="20" stroke="#3a3733" strokeWidth="0.4" opacity="0.2"/>
+                  
                   {/* Faint concentric circles */}
-                  <circle cx="18" cy="18" r="14" stroke="#3a3733" strokeWidth="0.5" opacity="0.3"/>
-                  <circle cx="18" cy="18" r="10" stroke="#3a3733" strokeWidth="0.5" opacity="0.3"/>
-                  <circle cx="18" cy="18" r="6" stroke="#3a3733" strokeWidth="0.5" opacity="0.3"/>
+                  <circle cx="20" cy="20" r="16" stroke="#3a3733" strokeWidth="0.3" opacity="0.15"/>
+                  <circle cx="20" cy="20" r="12" stroke="#3a3733" strokeWidth="0.3" opacity="0.15"/>
+                  <circle cx="20" cy="20" r="8" stroke="#3a3733" strokeWidth="0.3" opacity="0.15"/>
                   
-                  {/* Main white circle aperture */}
-                  <circle cx="18" cy="18" r="14" stroke="#F0EDE6" strokeWidth="1.2"/>
+                  {/* Main white circle aperture - thin stroke */}
+                  <circle cx="20" cy="20" r="15" stroke="#F0EDE6" strokeWidth="0.8" fill="none"/>
                   
-                  {/* Gold arc from ~12 o'clock to ~4 o'clock */}
-                  <path d="M18 4 A14 14 0 0 1 31 18" stroke="#B8924A" strokeWidth="2" strokeLinecap="round"/>
+                  {/* Gold arc from 12 o'clock to ~4 o'clock - thicker stroke */}
+                  <path d="M20 5 A15 15 0 0 1 33 20" stroke="#B8924A" strokeWidth="1.8" strokeLinecap="round" fill="none"/>
                   
                   {/* Center gold dot */}
-                  <circle cx="18" cy="18" r="1.5" fill="#B8924A"/>
+                  <circle cx="20" cy="20" r="1.2" fill="#B8924A"/>
                 </svg>
                 
-                <div style={{ fontSize:'0.875rem', fontWeight:500, letterSpacing:'0.3em', textTransform:'uppercase', color:'#F0EDE6', textAlign:'center', marginBottom:'1rem' }}>
+                <div style={{ fontSize:'1rem', fontWeight:400, letterSpacing:'0.35em', textTransform:'uppercase', color:'#F0EDE6', textAlign:'center', marginBottom:'1.5rem' }}>
                   Aperture
                 </div>
-                <div style={{ width:'40px', height:'1px', background:'#B8924A', margin:'1rem auto' }}></div>
-                <div style={{ fontSize:'0.8rem', fontWeight:500, letterSpacing:'0.3em', textTransform:'uppercase', color:'#B8924A', textAlign:'center' }}>
+                <div style={{ fontSize:'0.85rem', fontWeight:400, letterSpacing:'0.35em', textTransform:'uppercase', color:'#B8924A', textAlign:'center' }}>
                   Hospitality
                 </div>
               </div>
