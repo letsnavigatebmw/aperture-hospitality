@@ -7,6 +7,15 @@ import NewsletterSection from '@/components/NewsletterSection'
 import Link from 'next/link'
 
 export default function HowWeWorkPage() {
+  const styles = `
+    @media (max-width: 768px) {
+      .two-col-hero {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+      }
+    }
+  `
+
   const steps = [
     {
       number: '01',
@@ -65,6 +74,7 @@ export default function HowWeWorkPage() {
 
   return (
     <>
+      <style>{styles}</style>
       <Nav />
 
       {/* PHILOSOPHY */}
@@ -195,7 +205,7 @@ export default function HowWeWorkPage() {
           </div>
 
           {/* Headline + intro */}
-          <div style={{
+          <div className="two-col-hero" style={{
             display: 'grid',
             gridTemplateColumns: '1fr 1fr',
             gap: '4rem',
@@ -434,6 +444,42 @@ export default function HowWeWorkPage() {
             <a href="/apertureframeworks" style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.875rem', fontWeight: 500, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#B8924A', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', borderBottom: '1px solid #B8924A', paddingBottom: '4px', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.currentTarget.style.color = '#F0EDE6'; e.currentTarget.style.borderBottomColor = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.color = '#B8924A'; e.currentTarget.style.borderBottomColor = '#B8924A'; }}>
               Explore Aperture's Revenue Frameworks →
             </a>
+          </div>
+
+        </div>
+      </section>
+
+      {/* APERTURE SCORECARD */}
+      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) clamp(1.5rem, 4vw, 4rem)', borderBottom: '2px solid #3a3733' }}>
+        <div style={{ maxWidth: '1140px', margin: '0 auto' }}>
+          
+          {/* Section label */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '3rem' }}>
+            <div style={{ width: '3px', height: '1.5rem', background: '#B8924A' }}></div>
+            <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#F0EDE6' }}>
+              Diagnostic Tools
+            </span>
+          </div>
+
+          {/* Headline */}
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.5rem, 4vw, 3.5rem)', fontWeight: 300, lineHeight: 1.2, color: '#F0EDE6', margin: 0, marginBottom: '2rem' }}>
+            The Aperture <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Scorecard</em>
+          </h2>
+
+          {/* Body copy */}
+          <div style={{ maxWidth: '700px' }}>
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '1.5rem' }}>
+              Understand where your business stands today. The Aperture Scorecard measures your revenue intelligence across the dimensions that matter — from data maturity to forecasting accuracy to organizational alignment.
+            </p>
+
+            <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '2.5rem' }}>
+              Get a clear picture of your growth infrastructure and identify where to focus next.
+            </p>
+
+            {/* CTA Link */}
+            <Link href="/aperture-scorecard" style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.875rem', fontWeight: 500, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#B8924A', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', borderBottom: '1px solid #B8924A', paddingBottom: '4px', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.currentTarget.style.color = '#F0EDE6'; e.currentTarget.style.borderBottomColor = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.color = '#B8924A'; e.currentTarget.style.borderBottomColor = '#B8924A'; }}>
+              Learn More About the Aperture Scorecard →
+            </Link>
           </div>
 
         </div>
