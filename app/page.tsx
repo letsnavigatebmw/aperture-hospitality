@@ -2,10 +2,7 @@
 
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
-import AISolutions from '@/components/AISolutions'
 import IntakeForm from '@/components/IntakeForm'
-import WhereWeFocused from '@/components/WhereWeFocused'
-import Testimonials from '@/components/Testimonials'
 import NewsletterSection from '@/components/NewsletterSection'
 import Link from 'next/link'
 
@@ -13,357 +10,289 @@ export default function Home() {
   return (
     <>
       <Nav />
-      
-      <AISolutions />
-      
-      {/* HERO */}
-      <div className="border-b border-rule">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-0" style={{ minHeight: '600px' }}>
-          {/* LEFT: Hero Interior Image */}
-          <div style={{
-            order: 1,
-            overflow: 'hidden',
-            background: '#f5f5f5',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            minHeight: '600px'
-          }}>
-            <img
-              src="/hero-interior.jpg"
-              alt="Aperture Hospitality - Luxury Interior Design"
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover'
-              }}
-            />
-          </div>
 
-          {/* RIGHT: Content */}
-          <div style={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            paddingLeft: 'clamp(2rem, 6vw, 4rem)',
-            paddingRight: 'clamp(2rem, 6vw, 4rem)',
-            paddingTop: 'clamp(3rem, 5vw, 4rem)',
-            paddingBottom: 'clamp(3rem, 5vw, 4rem)',
-            background: '#F0EDE6',
-            order: 2,
-            minHeight: '600px'
-          }}>
-
-            {/* Aperture Logo */}
-            <div style={{
-              marginBottom: '2rem',
-              maxWidth: '280px'
-            }}>
-              <img 
-                src="/aperture-logo.jpg" 
-                alt="Aperture Hospitality" 
-                style={{
-                  width: '100%',
-                  height: 'auto',
-                  display: 'block'
-                }}
-              />
-            </div>
-
-            {/* Headline */}
-            <h1 style={{
-              fontFamily: "'Cormorant Garamond', Georgia, serif",
-              fontSize: 'clamp(2rem, 4vw, 3.5rem)',
-              fontWeight: 300,
-              lineHeight: 1.15,
-              letterSpacing: '-0.01em',
-              color: '#1C1A17',
-              margin: '0 0 1.5rem 0'
-            }}>
-              Real Results, Not a <span style={{ color: '#B8924A' }}>Deck!</span>
-            </h1>
-
-            {/* Body copy */}
-            <p style={{
-              fontFamily: "'Inter', sans-serif",
-              fontSize: '0.9375rem',
-              fontWeight: 300,
-              lineHeight: 1.75,
-              color: '#6B6760',
-              marginBottom: '1rem',
-              margin: '0 0 1rem 0',
-              maxWidth: '480px'
-            }}>
-              Aperture Hospitality is driven by a passion for problem solving and a relentless commitment to creating bespoke solutions that meet the needs of our clients. If you are a small business owner in need of solutions you can implement in your business or an operator of a business that is growing and needs help scaling, our team can assist.
-            </p>
-
-            <p style={{
-              fontFamily: "'Inter', sans-serif",
-              fontSize: '0.9375rem',
-              fontWeight: 300,
-              lineHeight: 1.75,
-              color: '#6B6760',
-              marginBottom: '2rem',
-              margin: '0 0 2rem 0',
-              maxWidth: '480px'
-            }}>
-              With a combined 30+ years of hospitality experience, the Aperture team harnesses its diverse background and experiences to deliver durable, dependable and defensible solutions for our clients.
-            </p>
-
-
-
-            {/* CTAs */}
-            <div style={{
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '0.75rem',
-              maxWidth: '360px'
-            }}>
-              <Link href="/contact" style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                padding: '0.875rem 1.5rem',
-                background: '#1C1A17',
-                color: '#F0EDE6',
-                fontFamily: "'Inter', sans-serif",
-                fontSize: '0.6875rem',
-                fontWeight: 600,
-                letterSpacing: '0.16em',
-                textTransform: 'uppercase',
-                textDecoration: 'none',
-                transition: 'all 0.3s ease'
-              }} onMouseEnter={(e) => {
-                (e.target as HTMLElement).style.background = '#2a2520'
-              }} onMouseLeave={(e) => {
-                (e.target as HTMLElement).style.background = '#1C1A17'
-              }}>
-                Let's Talk
-              </Link>
-              <Link href="/about" style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                padding: '0.875rem 1.5rem',
-                background: '#B8924A',
-                color: '#FFFFFF',
-                border: 'none',
-                fontFamily: "'Inter', sans-serif",
-                fontSize: '0.6875rem',
-                fontWeight: 600,
-                letterSpacing: '0.16em',
-                textTransform: 'uppercase',
-                textDecoration: 'none',
-                transition: 'all 0.3s ease'
-              }} onMouseEnter={(e) => {
-                (e.target as HTMLElement).style.background = '#9a7a3e'
-              }} onMouseLeave={(e) => {
-                (e.target as HTMLElement).style.background = '#B8924A'
-              }}>
-                Learn More
-              </Link>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      {/* WHAT WE DO (3 Pillars) */}
-      <div className="border-b border-rule">
-        <div className="container-max py-16 md:py-24">
-          <div className="mb-12">
-            <div className="section-label">Core Capabilities</div>
-            <h2 className="font-display text-4xl md:text-5xl font-light mb-6 text-ink">
-              What We <em className="italic">Do</em>
-            </h2>
-          </div>
-
-          <div className="w-full h-px bg-rule mb-12" />
-
-          <div className="grid md:grid-cols-3 gap-12">
-            {/* Pillar 1 */}
-            <div>
-              <h3 className="font-display text-2xl font-normal text-ink mb-4">
-                Commercial Strategy
-              </h3>
-              <p className="text-muted leading-relaxed mb-4">
-                Revenue optimization, unit economics, pricing, and margin architecture. We help brands think differently about how they create value.
-              </p>
-            </div>
-
-            {/* Pillar 2 */}
-            <div>
-              <h3 className="font-display text-2xl font-normal text-ink mb-4">
-                Sales & Go-to-Market
-              </h3>
-              <p className="text-muted leading-relaxed mb-4">
-                Building repeatable, scalable sales processes and distribution strategies. From acquisition to retention to expansion.
-              </p>
-            </div>
-
-            {/* Pillar 3 */}
-            <div>
-              <h3 className="font-display text-2xl font-normal text-ink mb-4">
-                Operations & Leadership
-              </h3>
-              <p className="text-muted leading-relaxed mb-4">
-                Organizational design, team scaling, process optimization, and the cross-functional alignment that drives execution.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* WHERE WE'RE FOCUSED */}
-      <WhereWeFocused />
-
-      {/* TESTIMONIALS */}
-      <Testimonials />
-
-      {/* ENGAGEMENTS */}
-      <div className="border-b border-rule">
-        <div className="container-max py-16 md:py-24">
-          <div className="mb-12">
-            <div className="section-label">Selected Engagements</div>
-            <h2 className="font-display text-4xl md:text-5xl font-light mb-6 text-ink">
-              Who We've <em className="italic">Worked With</em>
-            </h2>
-          </div>
-
-          <div className="w-full h-px bg-rule mb-12" />
-
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Engagement 1 */}
-            <div>
-              <h3 className="font-display text-xl font-medium text-ink mb-2">Voyage Hospitality Group</h3>
-              <p className="text-xs tracking-tight text-muted mb-3">Luxury travel platform</p>
-              <p className="text-muted leading-relaxed">
-                Commercial strategy and revenue optimization for high-net-worth travel bookings.
-              </p>
-            </div>
-
-            {/* Engagement 2 */}
-            <div>
-              <h3 className="font-display text-xl font-medium text-ink mb-2">Wilbur Labs</h3>
-              <p className="text-xs tracking-tight text-muted mb-3">Venture Lab</p>
-              <p className="text-muted leading-relaxed">
-                GTM strategy and sales process design for enterprise hospitality clients.
-              </p>
-            </div>
-
-            {/* Engagement 3 */}
-            <div>
-              <h3 className="font-display text-xl font-medium text-ink mb-2">Waratah</h3>
-              <p className="text-xs tracking-tight text-muted mb-3">Premium accommodations</p>
-              <p className="text-muted leading-relaxed">
-                Strategic pricing and revenue management across luxury properties.
-              </p>
-            </div>
-
-            {/* Engagement 4 */}
-            <div>
-              <h3 className="font-display text-xl font-medium text-ink mb-2">Edge Swarm</h3>
-              <p className="text-xs tracking-tight text-muted mb-3">AI Infrastructure</p>
-              <p className="text-muted leading-relaxed">
-                GTM Strategy, Partner Strategy & Fundraising.
-              </p>
-            </div>
-
-            {/* Engagement 5 */}
-            <div>
-              <h3 className="font-display text-xl font-medium text-ink mb-2">Beverly Spirits</h3>
-              <p className="text-xs tracking-tight text-muted mb-3">Premium Spirits Portfolio</p>
-              <p className="text-muted leading-relaxed">
-                Commercial acceleration and market expansion strategy.
-              </p>
-            </div>
-
-            {/* Engagement 6 */}
-            <div>
-              <h3 className="font-display text-xl font-medium text-ink mb-2">Foto Comercio</h3>
-              <p className="text-xs tracking-tight text-muted mb-3">Iconic Photo Booths</p>
-              <p className="text-muted leading-relaxed">
-                GTM strategy and Channel Partner Development.
-              </p>
-            </div>
-
-            {/* Engagement 7 */}
-            <div>
-              <h3 className="font-display text-xl font-medium text-ink mb-2">CSC Coaching</h3>
-              <p className="text-xs tracking-tight text-muted mb-3">Real Estate Coaching & Advisory</p>
-              <p className="text-muted leading-relaxed">
-                Real Estate Prospecting Training.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* AI SOLUTIONS SUITE */}
-      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', background: '#F0EDE6', borderBottom: '2px solid #B8924A' }}>
+      {/* ══════ HERO ══════ */}
+      <section style={{ background: '#1C1A17', padding: 'clamp(5rem,10vw,8rem) 0 0', borderBottom: '1px solid #2e2b26', overflow: 'hidden' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
-          
-          {/* Section label */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '3rem' }}>
-            <div style={{ width: '2px', height: '1.25rem', background: '#B8924A', flexShrink: 0 }}></div>
-            <span style={{ fontFamily: "'Inter',sans-serif", fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#6B6760' }}>AI Solutions Suite</span>
-          </div>
-
-          {/* Cards grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
-
-            {/* CARD 1: AI Employee */}
-            <div style={{ background: '#E8E4DB', border: '1.5px solid #B8924A', borderRadius: '8px', padding: '2rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: 'auto' }}>
-              <div>
-                <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.75rem', fontWeight: 300, color: '#1C1A17', marginBottom: '1rem' }}>AI Employee</h3>
-                <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760' }}>
-                  24/7 automated voice, chat, and review responses. Handle missed calls, conversations, and reputation management without adding headcount.
-                </p>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6rem', alignItems: 'end', paddingBottom: 'clamp(4rem,8vw,7rem)' }}>
+            {/* LEFT */}
+            <div style={{ paddingBottom: 'clamp(4rem,8vw,7rem)' }}>
+              <div style={{ display:'flex', alignItems:'center', gap:'0.75rem', marginBottom:'2rem' }}>
+                <div style={{ width:'2px', height:'1.25rem', background:'#B8924A', flexShrink:0 }}></div>
+                <span style={{ fontSize:'0.6875rem', fontWeight:500, letterSpacing:'0.18em', textTransform:'uppercase', color:'#F0EDE6' }}>Strategy · Intelligence · Automation</span>
               </div>
-              <a href="tel:786-706-8231" style={{ display: 'block', textAlign: 'center', padding: '2rem', background: '#1C1A17', color: '#F0EDE6', border: '2px solid #B8924A', borderRadius: '12px', textDecoration: 'none', transition: 'all 0.3s', cursor: 'pointer', marginTop: '2rem' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#B8924A'; e.currentTarget.style.color = '#1C1A17'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#1C1A17'; e.currentTarget.style.color = '#F0EDE6'; }}>
-                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.75rem', fontWeight: 300, marginBottom: '0.5rem' }}>Try Now</div>
-                <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.15em', textTransform: 'uppercase' }}>Click, Call, Or Text 786-706-8231</div>
-              </a>
+              <h1 style={{ fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:'clamp(3rem,5.5vw,5rem)', fontWeight:300, lineHeight:1.06, color:'#F0EDE6', marginBottom:'1.75rem' }}>
+                The Modern<br/>
+                <em style={{ fontStyle:'italic', color:'#B8924A' }}>Growth Stack</em><br/>
+                for Ambitious<br/>Businesses.
+              </h1>
+              <p style={{ fontSize:'1.0625rem', fontWeight:300, lineHeight:1.8, color:'#F0EDE6', marginBottom:'0.875rem', maxWidth:'44ch' }}>
+                Most businesses don't have a marketing problem. They have an intelligence problem.
+              </p>
+              <p style={{ fontSize:'1.0625rem', fontWeight:300, lineHeight:1.8, color:'#F0EDE6', marginBottom:'2.5rem', maxWidth:'44ch' }}>
+                We combine data strategy, AI agents, automation, and commercial expertise to help businesses create more predictable revenue, more efficient operations, and better customer experiences.
+              </p>
+              <div style={{ display:'flex', gap:'1rem', flexWrap:'wrap' }}>
+                <Link href="/contact" style={{ display:'inline-flex', alignItems:'center', justifyContent:'center', padding:'0.875rem 2.25rem', background:'#B8924A', color:'#F0EDE6', fontSize:'0.6875rem', fontWeight:500, letterSpacing:'0.16em', textTransform:'uppercase', textDecoration:'none', border:'none', cursor:'pointer', transition:'background 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.background = '#9a7a3e')} onMouseLeave={(e) => (e.currentTarget.style.background = '#B8924A')}>
+                  Start a conversation
+                </Link>
+                <Link href="/how-we-work" style={{ display:'inline-flex', alignItems:'center', justifyContent:'center', padding:'0.875rem 2.25rem', background:'transparent', color:'#F0EDE6', border:'1px solid #4a4845', fontSize:'0.6875rem', fontWeight:500, letterSpacing:'0.16em', textTransform:'uppercase', textDecoration:'none', transition:'background 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.background = '#2e2b26')} onMouseLeave={(e) => (e.currentTarget.style.background = 'transparent')}>
+                  See how we work
+                </Link>
+              </div>
             </div>
 
-            {/* CARD 2: Traffic System */}
-            <div style={{ background: '#E8E4DB', border: '1.5px solid #D4CFC6', borderRadius: '8px', padding: '2rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: 'auto' }}>
-              <div>
-                <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.75rem', fontWeight: 300, color: '#1C1A17', marginBottom: '1rem' }}>Traffic System</h3>
-                <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760' }}>
-                  Proven framework for driving qualified leads and traffic to your business. Data-driven targeting and conversion optimization built in.
-                </p>
+            {/* RIGHT: Three pillars */}
+            <div style={{ paddingBottom: 'clamp(4rem,8vw,7rem)', borderLeft:'1px solid #2e2b26', paddingLeft:'3rem' }}>
+              <div style={{ fontSize:'0.5625rem', fontWeight:500, letterSpacing:'0.2em', textTransform:'uppercase', color:'#B8924A', marginBottom:'1.75rem' }}>
+                Build a business that grows with intelligence, not just headcount.
               </div>
-              <a href="https://request.revenuefactory.com/widget/bookings/ai-employee-convo" target="_blank" rel="noopener noreferrer" style={{ display: 'block', textAlign: 'center', padding: '2rem', background: '#1C1A17', color: '#FFFFFF', border: '1.5px solid #B8924A', borderRadius: '8px', textDecoration: 'none', transition: 'all 0.3s', cursor: 'pointer', marginTop: '2rem' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#B8924A'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#1C1A17'; }}>
-                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5rem', fontWeight: 300, marginBottom: '0.5rem', color: '#FFFFFF' }}>Launch My Lead</div>
-                <div style={{ fontSize: '0.75rem', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#FFFFFF' }}>Acquisition Machine →</div>
-              </a>
-            </div>
-
-            {/* CARD 3: Workspace Kit */}
-            <div style={{ background: '#E8E4DB', border: '1.5px solid #D4CFC6', borderRadius: '8px', padding: '2rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: 'auto' }}>
-              <div>
-                <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.75rem', fontWeight: 300, color: '#1C1A17', marginBottom: '1rem' }}>AI Marketing Workspace Kit</h3>
-                <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760' }}>
-                  Complete toolkit for team enablement, training, and operational excellence.
-                </p>
+              <div style={{ display:'flex', flexDirection:'column', gap:'0' }}>
+                <div style={{ padding:'1.5rem 0', borderBottom:'1px solid #2e2b26' }}>
+                  <div style={{ fontSize:'0.5625rem', fontWeight:500, letterSpacing:'0.16em', textTransform:'uppercase', color:'#B8924A', marginBottom:'0.5rem' }}>Data & Intelligence</div>
+                  <p style={{ fontSize:'0.9375rem', fontWeight:300, lineHeight:1.7, color:'#F0EDE6', margin:0 }}>Transform fragmented customer, operational, and market data into actionable business intelligence that powers better decisions and more profitable growth.</p>
+                </div>
+                <div style={{ padding:'1.5rem 0', borderBottom:'1px solid #2e2b26' }}>
+                  <div style={{ fontSize:'0.5625rem', fontWeight:500, letterSpacing:'0.16em', textTransform:'uppercase', color:'#B8924A', marginBottom:'0.5rem' }}>AI Agents & Automation</div>
+                  <p style={{ fontSize:'0.9375rem', fontWeight:300, lineHeight:1.7, color:'#F0EDE6', margin:0 }}>Deploy AI-powered agents that engage prospects, respond to customers, automate workflows, and eliminate repetitive tasks. Capability without headcount.</p>
+                </div>
+                <div style={{ padding:'1.5rem 0' }}>
+                  <div style={{ fontSize:'0.5625rem', fontWeight:500, letterSpacing:'0.16em', textTransform:'uppercase', color:'#B8924A', marginBottom:'0.5rem' }}>Revenue & Growth Systems</div>
+                  <p style={{ fontSize:'0.9375rem', fontWeight:300, lineHeight:1.7, color:'#F0EDE6', margin:0 }}>Scalable acquisition, retention, and expansion strategies that create predictable pipelines and measurable revenue outcomes. From lead generation to lifecycle optimization.</p>
+                </div>
               </div>
-              <a href="https://request.revenuefactory.com/widget/bookings/ai-employee-convo" target="_blank" rel="noopener noreferrer" style={{ display: 'block', textAlign: 'center', padding: '2rem', background: '#1C1A17', color: '#FFFFFF', border: '1.5px solid #B8924A', borderRadius: '8px', textDecoration: 'none', transition: 'all 0.3s', cursor: 'pointer', marginTop: '2rem' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#B8924A'; e.currentTarget.style.color = '#1C1A17'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#1C1A17'; e.currentTarget.style.color = '#FFFFFF'; }}>
-                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5rem', fontWeight: 300, marginBottom: '0.5rem' }}>Get The Kit</div>
-                <div style={{ fontSize: '0.75rem', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase' }}>$1,497 one-time setup</div>
-              </a>
             </div>
-
           </div>
         </div>
       </section>
 
-      {/* CONTACT FORM */}
+      {/* ══════ INTELLIGENCE PROBLEM ══════ */}
+      <section style={{ padding:'clamp(5rem,10vw,9rem) 0', borderBottom:'1px solid #D4CFC6' }}>
+        <div style={{ maxWidth:'1140px', margin:'0 auto', padding:'0 clamp(1.5rem, 5vw, 4rem)' }}>
+          <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'6rem', alignItems:'start' }}>
+            <div>
+              <div style={{ display:'flex', alignItems:'center', gap:'0.75rem', fontSize:'0.6875rem', fontWeight:500, letterSpacing:'0.18em', textTransform:'uppercase', color:'#6B6760', marginBottom:'2rem' }}>
+                <span style={{ width:'2px', height:'1.25rem', background:'#B8924A', flexShrink:0 }}></span>
+                Why Most Businesses Plateau
+              </div>
+              <h2 style={{ fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:'clamp(2.25rem,3.5vw,3.25rem)', fontWeight:300, lineHeight:1.15, color:'#1C1A17' }}>
+                It's not a<br/>marketing problem.<br/><em style={{ fontStyle:'italic', color:'#B8924A' }}>It's an intelligence problem.</em>
+              </h2>
+            </div>
+            <div>
+              <p style={{ fontSize:'1.0625rem', fontWeight:300, lineHeight:1.8, color:'#1C1A17', marginBottom:'1.25rem' }}>
+                Most growing businesses are sitting on valuable data they can't act on, running manual processes that don't scale, and buying one-off tactics that produce inconsistent results. The symptom looks like a revenue problem. The cause is almost always a systems problem.
+              </p>
+              <p style={{ fontSize:'1.0625rem', fontWeight:300, lineHeight:1.8, color:'#1C1A17', marginBottom:'2rem' }}>
+                Aperture builds the underlying infrastructure — data strategy, AI agents, automation, and commercial systems — that turns a good business into one that compounds.
+              </p>
+              <ul style={{ listStyle:'none', borderTop:'1px solid #D4CFC6', margin:0, padding:0 }}>
+                {[
+                  'Customer information spread across disconnected systems with no actionable view',
+                  'Inconsistent lead flow and unpredictable revenue that can\'t be forecast or planned around',
+                  'Missed inquiries, slow response times, and administrative bottlenecks eating into capacity',
+                  'Growth that requires proportional headcount increases to sustain — not systems that scale'
+                ].map((item, i) => (
+                  <li key={i} style={{ display:'flex', alignItems:'flex-start', gap:'1rem', padding:'0.875rem 0', borderBottom:'1px solid #D4CFC6', fontSize:'0.9375rem', fontWeight:300, color:'#1C1A17', lineHeight:1.6 }}>
+                    <span style={{ width:'4px', height:'4px', background:'#B8924A', borderRadius:'50%', flexShrink:0, marginTop:'0.6rem' }}></span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ══════ FOUR SERVICES ══════ */}
+      <section style={{ background:'#1C1A17', padding:'clamp(5rem,10vw,9rem) 0', borderBottom:'1px solid #2e2b26' }}>
+        <div style={{ maxWidth:'1140px', margin:'0 auto', padding:'0 clamp(1.5rem, 5vw, 4rem)' }}>
+          <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'5rem', alignItems:'end', marginBottom:'4rem' }}>
+            <div>
+              <div style={{ display:'flex', alignItems:'center', gap:'0.75rem', fontSize:'0.6875rem', fontWeight:500, letterSpacing:'0.18em', textTransform:'uppercase', color:'#F0EDE6', marginBottom:'2rem' }}>
+                <span style={{ width:'2px', height:'1.25rem', background:'#B8924A', flexShrink:0 }}></span>
+                What We Build
+              </div>
+              <h2 style={{ fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:'clamp(2.25rem,3.5vw,3.25rem)', fontWeight:300, lineHeight:1.15, color:'#F0EDE6' }}>
+                Four capabilities.<br/>One <em style={{ fontStyle:'italic', color:'#B8924A' }}>integrated system.</em>
+              </h2>
+            </div>
+            <p style={{ fontSize:'1.0625rem', fontWeight:300, lineHeight:1.8, color:'#F0EDE6' }}>
+              Aperture doesn't deliver isolated tactics. We build the interconnected systems — data, AI, automation, and commercial strategy — that produce consistent, measurable outcomes at scale.
+            </p>
+          </div>
+
+          <div style={{ display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:'0', borderTop:'1px solid #2e2b26' }}>
+            {[
+              { num:'01', title:'Data & Intelligence', desc:'Transform fragmented customer, operational, and market data into actionable business intelligence. We build the foundation that powers better decisions, stronger targeting, and more profitable growth.', link:'/data-intelligence' },
+              { num:'02', title:'AI Agents & Automation', desc:'Deploy AI-powered agents that work alongside your team to engage prospects, respond to customers, automate workflows, and eliminate repetitive tasks. Adding capability without adding headcount.', link:'/ai-solutions' },
+              { num:'03', title:'Revenue & Growth Systems', desc:'Design scalable acquisition, retention, and expansion strategies that create predictable pipelines and measurable revenue outcomes. From lead generation to customer lifecycle optimization.', link:'/capabilities' },
+              { num:'04', title:'Commercial Strategy', desc:'Align pricing, positioning, channels, partnerships, and customer experience around a unified growth strategy that improves both revenue and profitability. Strategy that connects to execution.', link:'/how-we-work' }
+            ].map((service, i) => (
+              <div key={i} style={{ padding:'2.5rem 2.5rem 2.5rem 0', borderRight: i < 3 ? '1px solid #2e2b26' : 'none' }}>
+                <div style={{ fontSize:'0.5625rem', fontWeight:500, letterSpacing:'0.2em', textTransform:'uppercase', color:'#B8924A', marginBottom:'1.25rem' }}>{service.num}</div>
+                <h3 style={{ fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:'1.5rem', fontWeight:400, color:'#F0EDE6', lineHeight:1.2, marginBottom:'0.875rem' }}>{service.title}</h3>
+                <p style={{ fontSize:'0.875rem', fontWeight:300, lineHeight:1.7, color:'#F0EDE6', marginBottom:'1.5rem' }}>{service.desc}</p>
+                <Link href={service.link} style={{ fontSize:'0.625rem', fontWeight:500, letterSpacing:'0.14em', textTransform:'uppercase', color:'#B8924A', borderBottom:'1px solid #2e2b26', paddingBottom:'2px', display:'inline-flex', textDecoration:'none' }}>
+                  Learn more →
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ══════ WHO WE HELP ══════ */}
+      <section style={{ padding:'clamp(5rem,10vw,9rem) 0', borderBottom:'1px solid #D4CFC6' }}>
+        <div style={{ maxWidth:'1140px', margin:'0 auto', padding:'0 clamp(1.5rem, 5vw, 4rem)' }}>
+          <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'6rem', alignItems:'end', marginBottom:'4rem' }}>
+            <div>
+              <div style={{ display:'flex', alignItems:'center', gap:'0.75rem', fontSize:'0.6875rem', fontWeight:500, letterSpacing:'0.18em', textTransform:'uppercase', color:'#6B6760', marginBottom:'2rem' }}>
+                <span style={{ width:'2px', height:'1.25rem', background:'#B8924A', flexShrink:0 }}></span>
+                Who We Help
+              </div>
+              <h2 style={{ fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:'clamp(2.25rem,3.5vw,3.25rem)', fontWeight:300, lineHeight:1.15, color:'#1C1A17' }}>
+                Segmented by<br/>challenge, not<br/><em style={{ fontStyle:'italic', color:'#B8924A' }}>industry.</em>
+              </h2>
+            </div>
+            <p style={{ fontSize:'1.0625rem', fontWeight:300, lineHeight:1.8, color:'#1C1A17' }}>
+              The businesses we work best with don't share an industry. They share a problem — they're growing, they're capable, and they've hit a ceiling that more effort alone won't break through. They need systems.
+            </p>
+          </div>
+
+          <div style={{ display:'grid', gridTemplateColumns:'repeat(2, 1fr)', gap:'1.5rem' }}>
+            {[
+              {
+                title: 'Struggling to Generate Consistent Demand',
+                items: ['Inconsistent lead flow with no reliable pipeline', 'Low brand visibility in your target market', 'Poor conversion rates from traffic to customers', 'High acquisition costs eating into margins']
+              },
+              {
+                title: 'Drowning in Manual Work',
+                items: ['Missed inquiries from slow or inconsistent follow-up', 'Slow response times losing customers to faster competitors', 'Administrative bottlenecks constraining capacity', 'Skilled staff spending time on work that should be automated']
+              },
+              {
+                title: 'Sitting on Valuable Data You Can\'t Use',
+                items: ['Customer information spread across disconnected systems', 'No actionable insights from the data you do have', 'No forecasting capability — running on instinct and prior year', 'Limited visibility into which activities actually drive performance']
+              },
+              {
+                title: 'Ready to Scale and Need the Infrastructure to Do It',
+                items: ['Expanding locations or markets that require scalable systems', 'Growing teams that need process and infrastructure, not just headcount', 'New products or services that need a commercial launch strategy', 'New markets requiring targeted intelligence and positioning']
+              }
+            ].map((challenge, i) => (
+              <div key={i} style={{ background: i === 3 ? '#1C1A17' : '#E8E4DB', border: i === 3 ? '1px solid #2e2b26' : '1px solid #D4CFC6', padding:'2.5rem' }}>
+                <h3 style={{ fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:'1.5rem', fontWeight:400, color: i === 3 ? '#F0EDE6' : '#1C1A17', lineHeight:1.2, marginBottom:'1.25rem' }}>
+                  {challenge.title}
+                </h3>
+                <ul style={{ listStyle:'none', borderTop: i === 3 ? '1px solid #2e2b26' : '1px solid #D4CFC6', margin:0, padding:0 }}>
+                  {challenge.items.map((item, j) => (
+                    <li key={j} style={{ display:'flex', alignItems:'flex-start', gap:'0.75rem', padding:'0.75rem 0', borderBottom: i === 3 ? '1px solid #2e2b26' : '1px solid #D4CFC6', fontSize:'0.875rem', fontWeight:300, color: i === 3 ? '#F0EDE6' : '#1C1A17', lineHeight:1.5 }}>
+                      <span style={{ width:'4px', height:'4px', background:'#B8924A', borderRadius:'50%', flexShrink:0, marginTop:'0.55rem' }}></span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ══════ TESTIMONIALS ══════ */}
+      <section style={{ background:'#E8E4DB', padding:'clamp(5rem,10vw,9rem) 0', borderBottom:'1px solid #D4CFC6' }}>
+        <div style={{ maxWidth:'1140px', margin:'0 auto', padding:'0 clamp(1.5rem, 5vw, 4rem)' }}>
+          <div style={{ display:'flex', alignItems:'center', gap:'0.75rem', fontSize:'0.6875rem', fontWeight:500, letterSpacing:'0.18em', textTransform:'uppercase', color:'#6B6760', marginBottom:'4rem' }}>
+            <span style={{ width:'2px', height:'1.25rem', background:'#B8924A', flexShrink:0 }}></span>
+            What Clients Say
+          </div>
+          <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'3rem' }}>
+            {[
+              {
+                quote: '"Brandon has a unique ability to connect strategy with execution. He consistently identified opportunities others missed, built alignment across teams, and helped us accelerate expansion while maintaining a strong focus on agent success. His combination of commercial acumen, relationship-building, and operational discipline makes him an invaluable partner."',
+                author: 'Ari Afshar, Founder',
+                company: 'Voyage Real Estate'
+              },
+              {
+                quote: '"Working with Brandon felt like having a true strategic partner rather than an outside advisor. He quickly understood our business, challenged our assumptions in the right ways, and helped translate complex growth objectives into practical, measurable actions. His ability to bridge data, marketing, and business development is exceptional."',
+                author: 'Michael Silver, CEO',
+                company: 'Foto Comercio'
+              }
+            ].map((testimonial, i) => (
+              <div key={i} style={{ border:'1px solid #D4CFC6', padding:'2.5rem', background:'#F0EDE6' }}>
+                <p style={{ fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:'1.25rem', fontWeight:300, lineHeight:1.6, color:'#1C1A17', marginBottom:'1.5rem', fontStyle:'italic' }}>
+                  {testimonial.quote}
+                </p>
+                <div style={{ borderTop:'1px solid #D4CFC6', paddingTop:'1rem' }}>
+                  <div style={{ fontSize:'0.875rem', fontWeight:400, color:'#1C1A17' }}>{testimonial.author}</div>
+                  <div style={{ fontSize:'0.75rem', fontWeight:300, color:'#6B6760' }}>{testimonial.company}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ══════ ENGAGEMENTS ══════ */}
+      <section style={{ padding:'clamp(5rem,10vw,9rem) 0', borderBottom:'1px solid #D4CFC6' }}>
+        <div style={{ maxWidth:'1140px', margin:'0 auto', padding:'0 clamp(1.5rem, 5vw, 4rem)' }}>
+          <div style={{ display:'flex', alignItems:'center', gap:'0.75rem', fontSize:'0.6875rem', fontWeight:500, letterSpacing:'0.18em', textTransform:'uppercase', color:'#6B6760', marginBottom:'2rem' }}>
+            <span style={{ width:'2px', height:'1.25rem', background:'#B8924A', flexShrink:0 }}></span>
+            Selected Engagements
+          </div>
+          <h2 style={{ fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:'clamp(2rem,3vw,2.75rem)', fontWeight:300, lineHeight:1.15, color:'#1C1A17', marginBottom:'3.5rem', fontStyle:'italic' }}>
+            Who we've <em style={{ color:'#B8924A' }}>worked with.</em>
+          </h2>
+
+          <div style={{ display:'grid', gridTemplateColumns:'repeat(3, 1fr)', gap:'0', borderTop:'1px solid #D4CFC6' }}>
+            {[
+              { label:'Real Estate', company:'Voyage Real Estate', desc:'Commercial strategy & AI-powered lead generation' },
+              { label:'Venture', company:'Wilbur Labs', desc:'GTM strategy & enterprise sales process design' },
+              { label:'Hospitality', company:'Waratah / Morrison Hotel', desc:'Due diligence, launch strategy & partner negotiations' },
+              { label:'AI Infrastructure', company:'Edge Swarm', desc:'GTM strategy, partner strategy & fundraising' },
+              { label:'Spirits', company:'Beverly Spirits', desc:'Commercial acceleration & market expansion' },
+              { label:'Experiential', company:'Foto Comercio', desc:'GTM strategy & channel partner development' }
+            ].map((engagement, i) => (
+              <div key={i} style={{ padding:'1.5rem 1.5rem 1.5rem 0', borderRight: i % 3 !== 2 ? '1px solid #D4CFC6' : 'none', borderBottom: i < 3 ? '1px solid #D4CFC6' : 'none' }}>
+                <div style={{ fontSize:'0.5625rem', fontWeight:500, letterSpacing:'0.14em', textTransform:'uppercase', color:'#B8924A', marginBottom:'0.375rem' }}>
+                  {engagement.label}
+                </div>
+                <div style={{ fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:'1.125rem', fontWeight:400, color:'#1C1A17', marginBottom:'0.375rem' }}>
+                  {engagement.company}
+                </div>
+                <div style={{ fontSize:'0.8125rem', fontWeight:300, color:'#6B6760' }}>
+                  {engagement.desc}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ══════ FINAL CTA ══════ */}
+      <section style={{ background:'#1C1A17', padding:'clamp(5rem,10vw,8rem) 0', borderBottom:'1px solid #2e2b26' }}>
+        <div style={{ maxWidth:'1140px', margin:'0 auto', padding:'0 clamp(1.5rem, 5vw, 4rem)' }}>
+          <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'5rem', alignItems:'center' }}>
+            <div>
+              <h2 style={{ fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:'clamp(2.25rem,3.5vw,3.25rem)', fontWeight:300, lineHeight:1.15, color:'#F0EDE6', marginBottom:'1.25rem' }}>
+                Let's talk about<br/>your <em style={{ fontStyle:'italic', color:'#B8924A' }}>business.</em>
+              </h2>
+              <p style={{ fontSize:'1.0625rem', fontWeight:300, lineHeight:1.8, color:'#F0EDE6' }}>
+                Tell us where you are and what you're working on. Brandon reviews every submission personally and follows up within one business day.
+              </p>
+            </div>
+            <div style={{ display:'flex', flexDirection:'column', gap:'0.875rem' }}>
+              <Link href="/contact" style={{ display:'inline-flex', alignItems:'center', justifyContent:'center', padding:'0.875rem 2.25rem', background:'#B8924A', color:'#F0EDE6', fontSize:'0.6875rem', fontWeight:500, letterSpacing:'0.16em', textTransform:'uppercase', textDecoration:'none', border:'none', cursor:'pointer', transition:'background 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.background = '#9a7a3e')} onMouseLeave={(e) => (e.currentTarget.style.background = '#B8924A')}>
+                Start a conversation
+              </Link>
+              <Link href="/how-we-work" style={{ display:'inline-flex', alignItems:'center', justifyContent:'center', padding:'0.875rem 2.25rem', background:'transparent', color:'#F0EDE6', border:'1px solid #4a4845', fontSize:'0.6875rem', fontWeight:500, letterSpacing:'0.16em', textTransform:'uppercase', textDecoration:'none', transition:'background 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.background = '#2e2b26')} onMouseLeave={(e) => (e.currentTarget.style.background = 'transparent')}>
+                See how we work
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <IntakeForm />
-
-      {/* NEWSLETTER SECTION */}
       <NewsletterSection inputId="newsletter-email-home" />
-
       <Footer />
     </>
   )
