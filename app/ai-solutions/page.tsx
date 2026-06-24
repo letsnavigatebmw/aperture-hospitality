@@ -177,46 +177,233 @@ export default function AISolutionsPage() {
           {/* Divider */}
           <div style={{ borderTop: '1px solid rgba(240,237,230,0.1)', margin: '2.5rem 0 3rem 0 ' }}></div>
 
-          {/* Funnel Steps - Browser Mockups */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '1.5rem', marginBottom: '3rem', position: 'relative' }}>
-            {[
-              { number: '01', page: 'SALES PAGE', button: 'GET STARTED', title: 'Prospect lands on your page', color: '#2a3f5f' },
-              { number: '02', page: 'ORDER FORM', button: 'COMPLETE ORDER', title: 'Prospect goes through checkout', color: '#3a3733' },
-              { number: '03', page: 'SURVEY', button: 'SUBMIT', title: 'Customer fills out pre-onboarding survey', color: '#3a3733' },
-              { number: '04', page: 'CALENDAR', button: 'BOOK CALL', title: 'Customer books implementation call', color: '#3a3733' },
-              { number: '05', page: 'THANK YOU PAGE', button: 'YOU\'RE IN', title: 'Customer directed to confirmation', color: '#1a4d2e' }
-            ].map((step, i) => (
-              <div key={i} style={{ textAlign: 'center' }}>
-                {/* Browser mockup */}
-                <div style={{ background: step.color, border: '2px solid rgba(184,146,74,0.4)', borderRadius: '0.5rem', padding: '0.75rem', marginBottom: '1.5rem', minHeight: '200px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-                  {/* Browser header */}
-                  <div style={{ background: '#2a2520', borderRadius: '0.25rem', padding: '0.5rem', marginBottom: '1rem', display: 'flex', gap: '0.5rem', fontSize: '1rem' }}>
-                    <span style={{ width: '0.6rem', height: '0.6rem', borderRadius: '50%', background: '#ff5f56' }}></span>
-                    <span style={{ width: '0.6rem', height: '0.6rem', borderRadius: '50%', background: '#ffbd2e' }}></span>
-                    <span style={{ width: '0.6rem', height: '0.6rem', borderRadius: '50%', background: '#27c93f' }}></span>
-                  </div>
+          {/* Funnel Steps - Browser Mockups with detailed content */}
+          <style>{`
+            .funnel-stage { position: relative; }
+            .funnel-stage:not(:last-child)::after {
+              content: '';
+              position: absolute;
+              top: 72px;
+              right: -10px;
+              width: 20px;
+              height: 1px;
+              background: #B8924A;
+              opacity: 0.5;
+              z-index: 2;
+            }
+            .funnel-stage:not(:last-child)::before {
+              content: '';
+              position: absolute;
+              top: 68px;
+              right: -6px;
+              border-top: 4px solid transparent;
+              border-bottom: 4px solid transparent;
+              border-left: 6px solid #B8924A;
+              opacity: 0.5;
+              z-index: 3;
+            }
+            .screen-content {
+              display: flex;
+              flex-direction: column;
+              gap: 0.4rem;
+              padding: 0.5rem;
+            }
+            .video-thumb {
+              background: #243040;
+              border-radius: 3px;
+              height: 36px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-bottom: 0.3rem;
+            }
+            .form-field {
+              height: 5px;
+              background: #232018;
+              border: 0.5px solid #3A3730;
+              border-radius: 1px;
+            }
+            .form-row {
+              display: flex;
+              gap: 3px;
+            }
+            .form-row .form-field { flex: 1; }
+            .cal-wrap {
+              background: #1A2A38;
+              border: 0.75px solid #2A3D50;
+              border-radius: 3px;
+              padding: 0.3rem;
+              margin-bottom: 0.3rem;
+            }
+            .cal-grid {
+              display: grid;
+              grid-template-columns: repeat(4, 1fr);
+              gap: 2px;
+            }
+            .cal-dot {
+              height: 4px;
+              background: rgba(184,146,74,0.4);
+              border-radius: 1px;
+            }
+            .cal-dot.active { background: rgba(184,146,74,0.8); }
+            .confirm-hero {
+              background: #1D2D1F;
+              border-radius: 3px;
+              height: 36px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-bottom: 0.3rem;
+            }
+            .check-circle {
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              border: 1px solid rgba(184,146,74,0.5);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .check-mark {
+              width: 10px;
+              height: 6px;
+              border-left: 1.5px solid #B8924A;
+              border-bottom: 1.5px solid #B8924A;
+              transform: rotate(-45deg) translate(0.5px, -0.5px);
+            }
+            .screen-btn {
+              background: #B8924A;
+              color: #1C1A17;
+              font-size: 0.5rem;
+              font-weight: 600;
+              letter-spacing: 0.1em;
+              text-transform: uppercase;
+              text-align: center;
+              padding: 0.4rem 0;
+              border-radius: 2px;
+              border: none;
+              cursor: pointer;
+            }
+          `}</style>
 
-                  {/* Content placeholder */}
-                  <div style={{ flex: 1 }}></div>
-
-                  {/* Button */}
-                  <button style={{ background: '#B8924A', color: '#1C1A17', padding: '0.5rem', fontSize: '0.55rem', fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', border: 'none', cursor: 'pointer', marginBottom: '0.75rem' }}>
-                    {step.button}
-                  </button>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '0', marginBottom: '3rem', position: 'relative', alignItems: 'start' }}>
+            {/* 01 Sales Page */}
+            <div className="funnel-stage" style={{ textAlign: 'center' }}>
+              <div style={{ background: '#1C1A17', border: '1px solid rgba(184,146,74,0.4)', borderRadius: '0.3rem', padding: '0.5rem', marginBottom: '1rem', minHeight: '140px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                <div style={{ background: '#2A2720', borderRadius: '2px', padding: '0.35rem', display: 'flex', gap: '0.3rem', fontSize: '0.8rem' }}>
+                  <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: '#E05555', opacity: 0.7 }}></span>
+                  <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: '#E0A935', opacity: 0.7 }}></span>
+                  <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: '#4CAF50', opacity: 0.7 }}></span>
                 </div>
-
-                {/* Step info */}
-                <div style={{ fontSize: '0.6rem', fontWeight: 600, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '0.5rem' }}>
-                  {step.page}
-                </div>
-                <div style={{ fontSize: '0.7rem', color: '#F0EDE6', lineHeight: 1.4, marginBottom: '0.75rem' }}>
-                  {step.title}
-                </div>
-                <div style={{ fontSize: '0.85rem', fontWeight: 500, color: '#B8924A' }}>
-                  {step.number}
+                <div className="screen-content">
+                  <div className="video-thumb"><div style={{ width: '0', height: '0', borderTop: '6px solid transparent', borderBottom: '6px solid transparent', borderLeft: '10px solid #B8924A', opacity: 0.8 }}></div></div>
+                  <button className="screen-btn">Get Started</button>
                 </div>
               </div>
-            ))}
+              <div style={{ fontSize: '0.55rem', fontWeight: 600, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '0.3rem' }}>Sales Page</div>
+              <div style={{ fontSize: '0.65rem', color: '#F0EDE6', lineHeight: 1.3, marginBottom: '0.5rem' }}>Prospect lands<br/>on your page</div>
+              <div style={{ fontSize: '0.6rem', color: '#6B6760' }}>01</div>
+            </div>
+
+            {/* 02 Order Form */}
+            <div className="funnel-stage" style={{ textAlign: 'center' }}>
+              <div style={{ background: '#1C1A17', border: '1px solid rgba(184,146,74,0.4)', borderRadius: '0.3rem', padding: '0.5rem', marginBottom: '1rem', minHeight: '140px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                <div style={{ background: '#2A2720', borderRadius: '2px', padding: '0.35rem', display: 'flex', gap: '0.3rem' }}>
+                  <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: '#E05555', opacity: 0.7 }}></span>
+                  <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: '#E0A935', opacity: 0.7 }}></span>
+                  <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: '#4CAF50', opacity: 0.7 }}></span>
+                </div>
+                <div className="screen-content">
+                  <div style={{ display: 'flex', gap: '0.3rem', marginBottom: '0.3rem' }}>
+                    <span style={{ fontSize: '0.45rem', fontWeight: 600, color: '#B8924A', background: '#243040', padding: '1px 3px', borderRadius: '1px' }}>VISA</span>
+                    <span style={{ fontSize: '0.45rem', fontWeight: 600, color: '#6B6760', background: '#243040', padding: '1px 3px', borderRadius: '1px' }}>MC</span>
+                    <span style={{ fontSize: '0.45rem', fontWeight: 600, color: '#6B6760', background: '#243040', padding: '1px 3px', borderRadius: '1px' }}>DISC</span>
+                  </div>
+                  <div className="form-field" style={{ marginBottom: '0.25rem' }}></div>
+                  <div className="form-field" style={{ marginBottom: '0.25rem' }}></div>
+                  <div className="form-row" style={{ marginBottom: '0.3rem' }}><div className="form-field"></div><div className="form-field"></div></div>
+                  <button className="screen-btn">Complete Order</button>
+                </div>
+              </div>
+              <div style={{ fontSize: '0.55rem', fontWeight: 600, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '0.3rem' }}>Order Form</div>
+              <div style={{ fontSize: '0.65rem', color: '#F0EDE6', lineHeight: 1.3, marginBottom: '0.5rem' }}>Prospect goes<br/>through checkout</div>
+              <div style={{ fontSize: '0.6rem', color: '#6B6760' }}>02</div>
+            </div>
+
+            {/* 03 Survey */}
+            <div className="funnel-stage" style={{ textAlign: 'center' }}>
+              <div style={{ background: '#1C1A17', border: '1px solid rgba(184,146,74,0.4)', borderRadius: '0.3rem', padding: '0.5rem', marginBottom: '1rem', minHeight: '140px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                <div style={{ background: '#2A2720', borderRadius: '2px', padding: '0.35rem', display: 'flex', gap: '0.3rem' }}>
+                  <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: '#E05555', opacity: 0.7 }}></span>
+                  <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: '#E0A935', opacity: 0.7 }}></span>
+                  <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: '#4CAF50', opacity: 0.7 }}></span>
+                </div>
+                <div className="screen-content">
+                  <div style={{ height: '6px', background: 'rgba(184,146,74,0.3)', borderRadius: '1px', marginBottom: '0.25rem' }}></div>
+                  <div className="form-field" style={{ marginBottom: '0.2rem' }}></div>
+                  <div className="form-field" style={{ marginBottom: '0.2rem' }}></div>
+                  <div className="form-field" style={{ marginBottom: '0.2rem' }}></div>
+                  <div className="form-field" style={{ marginBottom: '0.3rem' }}></div>
+                  <button className="screen-btn">Submit</button>
+                </div>
+              </div>
+              <div style={{ fontSize: '0.55rem', fontWeight: 600, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '0.3rem' }}>Survey</div>
+              <div style={{ fontSize: '0.65rem', color: '#F0EDE6', lineHeight: 1.3, marginBottom: '0.5rem' }}>Customer fills out<br/>pre-onboarding survey</div>
+              <div style={{ fontSize: '0.6rem', color: '#6B6760' }}>03</div>
+            </div>
+
+            {/* 04 Calendar */}
+            <div className="funnel-stage" style={{ textAlign: 'center' }}>
+              <div style={{ background: '#1C1A17', border: '1px solid rgba(184,146,74,0.4)', borderRadius: '0.3rem', padding: '0.5rem', marginBottom: '1rem', minHeight: '140px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                <div style={{ background: '#2A2720', borderRadius: '2px', padding: '0.35rem', display: 'flex', gap: '0.3rem' }}>
+                  <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: '#E05555', opacity: 0.7 }}></span>
+                  <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: '#E0A935', opacity: 0.7 }}></span>
+                  <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: '#4CAF50', opacity: 0.7 }}></span>
+                </div>
+                <div className="screen-content">
+                  <div className="cal-wrap">
+                    <div className="cal-grid">
+                      <div className="cal-dot"></div>
+                      <div className="cal-dot"></div>
+                      <div className="cal-dot"></div>
+                      <div className="cal-dot"></div>
+                      <div className="cal-dot"></div>
+                      <div className="cal-dot active"></div>
+                      <div className="cal-dot"></div>
+                      <div className="cal-dot"></div>
+                    </div>
+                  </div>
+                  <button className="screen-btn">Book Call</button>
+                </div>
+              </div>
+              <div style={{ fontSize: '0.55rem', fontWeight: 600, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '0.3rem' }}>Calendar</div>
+              <div style={{ fontSize: '0.65rem', color: '#F0EDE6', lineHeight: 1.3, marginBottom: '0.5rem' }}>Customer books<br/>implementation call</div>
+              <div style={{ fontSize: '0.6rem', color: '#6B6760' }}>04</div>
+            </div>
+
+            {/* 05 Thank You */}
+            <div className="funnel-stage" style={{ textAlign: 'center' }}>
+              <div style={{ background: '#1C1A17', border: '1px solid rgba(184,146,74,0.6)', borderRadius: '0.3rem', padding: '0.5rem', marginBottom: '1rem', minHeight: '140px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                <div style={{ background: '#2A2720', borderRadius: '2px', padding: '0.35rem', display: 'flex', gap: '0.3rem' }}>
+                  <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: '#E05555', opacity: 0.7 }}></span>
+                  <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: '#E0A935', opacity: 0.7 }}></span>
+                  <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: '#4CAF50', opacity: 0.7 }}></span>
+                </div>
+                <div className="screen-content">
+                  <div className="confirm-hero">
+                    <div className="check-circle">
+                      <div className="check-mark"></div>
+                    </div>
+                  </div>
+                  <div className="form-field" style={{ marginBottom: '0.2rem' }}></div>
+                  <div className="form-field" style={{ width: '75%', marginLeft: 'auto', marginRight: 'auto', marginBottom: '0.3rem' }}></div>
+                  <button className="screen-btn">You're In</button>
+                </div>
+              </div>
+              <div style={{ fontSize: '0.55rem', fontWeight: 600, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '0.3rem' }}>Thank You Page</div>
+              <div style={{ fontSize: '0.65rem', color: '#F0EDE6', lineHeight: 1.3, marginBottom: '0.5rem' }}>Customer directed<br/>to confirmation</div>
+              <div style={{ fontSize: '0.6rem', color: '#6B6760' }}>05</div>
+            </div>
           </div>
 
           {/* Timeline footer */}
