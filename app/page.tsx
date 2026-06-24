@@ -91,7 +91,7 @@ export default function HomePage() {
         <div style={{ position: 'absolute', top: '-50px', right: '-50px', width: '320px', height: '320px', borderRadius: '50%', border: '1.5px solid rgba(184,146,74,0.18)', clipPath: 'polygon(50% 0%, 100% 0%, 100% 50%, 50% 50%)', pointerEvents: 'none' }}></div>
 
         {/* Aperture Logo */}
-        <div style={{ position: 'absolute', top: '140px', right: '120px', width: '240px', height: '240px', display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none', zIndex: 0 }}>
+        <div style={{ position: 'absolute', top: '140px', right: '220px', width: '240px', height: '240px', display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none', zIndex: 0 }}>
           <svg viewBox="0 0 200 200" width="240" height="240" fill="none" xmlns="http://www.w3.org/2000/svg">
             {/* Main circle */}
             <circle cx="100" cy="100" r="80" stroke="rgba(184,146,74,0.3)" strokeWidth="2"/>
