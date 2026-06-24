@@ -57,7 +57,7 @@ export default function HowWeWorkPage() {
   ]
 
   const journeyNodes = [
-    { stage: 'Stranger', sub: 'No awareness', level: 'dim', icon: 'person' },
+    { stage: 'Stranger', sub: 'No awareness', level: 'mid', icon: 'person' },
     { stage: 'Prospect', sub: 'Aware of you', level: 'mid', icon: 'star' },
     { stage: 'Lead', sub: 'In your database', level: 'mid', icon: 'envelope' },
     { stage: 'Customer', sub: 'Revenue on board', level: 'hi', icon: 'check' },
@@ -286,10 +286,10 @@ export default function HowWeWorkPage() {
                 The Framework
               </div>
               <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3.4rem)', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.1 }}>
-                Prospect to<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Promoter.</em><br/>Every Time.
+                From Prospect to <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Promoter.</em><br/>Every Time.
               </h2>
             </div>
-            <p style={{ fontSize: '0.9rem', color: 'rgba(240,237,230,0.5)', lineHeight: 1.8, fontWeight: 300 }}>
+            <p style={{ fontSize: '0.9rem', color: '#F0EDE6', lineHeight: 1.8, fontWeight: 300 }}>
               The acquisition engine maps every stage of your customer journey and assigns an engine to each one. Four machines, one connected system. The audit tells you which to build first. The engagement builds it. The scoreboard tells you how it is running.
             </p>
           </div>
@@ -328,14 +328,7 @@ export default function HowWeWorkPage() {
               </div>
             ))}
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '1px', background: 'rgba(240,237,230,0.06)', marginTop: '1px' }} className="engine-map">
-            <div style={{ display: 'none' }}></div>
-            <div style={{ background: '#1C1A17', padding: '1.5rem', gridColumn: 'span 3' }}>
-              <div style={{ width: '2rem', height: '2px', background: '#B8924A', marginBottom: '0.75rem', opacity: 0.4 }}></div>
-              <div style={{ fontSize: '0.62rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', fontWeight: 500, marginBottom: '0.4rem' }}>Amplification Machine</div>
-              <div style={{ fontSize: '0.78rem', color: 'rgba(240,237,230,0.35)', lineHeight: 1.55, fontWeight: 300, maxWidth: '60ch' }}>Customer → Promoter. Earns reviews, generates referrals, and drives repeat business. The engine that compounds over time.</div>
-            </div>
-          </div>
+
         </div>
       </section>
 
