@@ -91,7 +91,7 @@ export default function HomePage() {
         <div style={{ position: 'absolute', top: '-50px', right: '-50px', width: '320px', height: '320px', borderRadius: '50%', border: '1.5px solid rgba(184,146,74,0.18)', clipPath: 'polygon(50% 0%, 100% 0%, 100% 50%, 50% 50%)', pointerEvents: 'none' }}></div>
 
         {/* Aperture Logo */}
-        <div style={{ position: 'absolute', top: '60px', right: '40px', width: '240px', height: '240px', display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none', zIndex: 0 }}>
+        <div style={{ position: 'absolute', top: '140px', right: '120px', width: '240px', height: '240px', display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none', zIndex: 0 }}>
           <svg viewBox="0 0 200 200" width="240" height="240" fill="none" xmlns="http://www.w3.org/2000/svg">
             {/* Outer circle - very subtle */}
             <circle cx="100" cy="100" r="95" stroke="rgba(184,146,74,0.08)" strokeWidth="1"/>
@@ -99,10 +99,10 @@ export default function HomePage() {
             <circle cx="100" cy="100" r="75" stroke="rgba(184,146,74,0.15)" strokeWidth="1.2"/>
             {/* Inner circle */}
             <circle cx="100" cy="100" r="55" stroke="rgba(184,146,74,0.25)" strokeWidth="1.5"/>
-            {/* Brass accent arc - upper right */}
-            <path d="M 155 55 A 78 78 0 0 1 180 100" stroke="#B8924A" strokeWidth="5" strokeLinecap="round" fill="none"/>
-            {/* Brass accent arc - lower right */}
-            <path d="M 155 145 A 78 78 0 0 0 180 100" stroke="#B8924A" strokeWidth="5" strokeLinecap="round" fill="none"/>
+            {/* Brass accent arc - upper right quarter circle */}
+            <path d="M 100 45 A 55 55 0 0 1 155 100" stroke="#B8924A" strokeWidth="5" strokeLinecap="round" fill="none"/>
+            {/* Brass accent arc - lower right quarter circle */}
+            <path d="M 155 100 A 55 55 0 0 1 100 155" stroke="#B8924A" strokeWidth="5" strokeLinecap="round" fill="none"/>
             {/* Center dot */}
             <circle cx="100" cy="100" r="3" fill="#B8924A"/>
           </svg>
