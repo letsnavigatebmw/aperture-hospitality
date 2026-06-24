@@ -268,7 +268,7 @@ export default function Home() {
             Selected Engagements
           </div>
           <h2 style={{ fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:'clamp(2rem,3vw,2.75rem)', fontWeight:300, lineHeight:1.15, color:'#1C1A17', marginBottom:'3.5rem', fontStyle:'italic' }}>
-            Who we've <em style={{ color:'#B8924A' }}>worked with.</em>
+            Who We've <em style={{ color:'#B8924A' }}>Worked With.</em>
           </h2>
 
           <div style={{ display:'grid', gridTemplateColumns:'repeat(3, 1fr)', gap:'0', borderTop:'1px solid #D4CFC6' }}>
