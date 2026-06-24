@@ -124,12 +124,12 @@ export default function CapabilitiesPage() {
               Tactics are the things you buy hoping something will move. A system is what makes everything move together. The difference between the two is not effort. It is architecture.
             </p>
           </div>
-          <div style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 0 }} as="ul">
+          <div style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 0 }}>
             {problems.map((problem, i) => (
-              <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '1.1rem 0', borderBottom: '1px solid rgba(240,237,230,0.08)', fontSize: '0.9rem', color: 'rgba(240,237,230,0.6)', lineHeight: 1.5, fontWeight: 300 }}>
+              <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '1.1rem 0', borderBottom: '1px solid rgba(240,237,230,0.08)', fontSize: '0.9rem', color: 'rgba(240,237,230,0.6)', lineHeight: 1.5, fontWeight: 300 }}>
                 <span style={{ display: 'block', width: '4px', height: '4px', borderRadius: '50%', background: '#B8924A', flexShrink: 0, marginTop: '0.55rem' }}></span>
                 {problem}
-              </li>
+              </div>
             ))}
           </div>
         </div>
