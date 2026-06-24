@@ -408,7 +408,7 @@ export default function AISolutionsPage() {
 
           {/* Timeline footer */}
           <div style={{ borderTop: '1px solid rgba(240,237,230,0.15)', paddingTop: '2rem', textAlign: 'center' }}>
-            <div style={{ fontSize: '0.65rem', fontWeight: 400, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(240,237,230,0.4)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1.25rem', flexWrap: 'wrap' }}>
+            <div style={{ fontSize: '0.65rem', fontWeight: 400, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#F0EDE6', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1.25rem', flexWrap: 'wrap' }}>
               <span>Prospect Lands</span>
               <span style={{ color: '#B8924A' }}>→</span>
               <span>Checkout</span>
