@@ -186,6 +186,20 @@ export default function HowWeWorkPage() {
       <section style={{ background: '#1C1A17', padding: 'clamp(7rem, 10vw, 8rem) clamp(1.5rem, 5vw, 4rem) 0', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', top: '-180px', right: '-180px', width: '600px', height: '600px', borderRadius: '50%', border: '1px solid rgba(184,146,74,0.12)', pointerEvents: 'none' }}></div>
         <div style={{ position: 'absolute', top: '-80px', right: '-80px', width: '380px', height: '380px', borderRadius: '50%', border: '1px solid rgba(184,146,74,0.07)', pointerEvents: 'none' }}></div>
+
+        {/* Aperture Logo */}
+        <div style={{ position: 'absolute', top: '100px', right: '60px', width: '220px', height: '220px', display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none', zIndex: 0 }}>
+          <svg viewBox="0 0 200 200" width="220" height="220" fill="none" xmlns="http://www.w3.org/2000/svg">
+            {/* Outer circle */}
+            <circle cx="100" cy="100" r="95" stroke="rgba(184,146,74,0.15)" strokeWidth="1.5"/>
+            {/* Middle circle */}
+            <circle cx="100" cy="100" r="70" stroke="rgba(184,146,74,0.2)" strokeWidth="1.5"/>
+            {/* Inner circle */}
+            <circle cx="100" cy="100" r="45" stroke="rgba(184,146,74,0.3)" strokeWidth="1.5"/>
+            {/* Brass accent arc - right side */}
+            <path d="M 100 55 A 45 45 0 0 1 145 100" stroke="#B8924A" strokeWidth="2.5" strokeLinecap="round"/>
+          </svg>
+        </div>
         
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)', position: 'relative', zIndex: 1 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '2rem', fontSize: '0.68rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A' }}>
