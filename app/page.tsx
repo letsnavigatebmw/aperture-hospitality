@@ -274,30 +274,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ══════ FINAL CTA ══════ */}
-      <section style={{ background:'#1C1A17', padding:'clamp(5rem,10vw,8rem) 0', borderBottom:'1px solid #2e2b26' }}>
-        <div style={{ maxWidth:'1140px', margin:'0 auto', padding:'0 clamp(1.5rem, 5vw, 4rem)' }}>
-          <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'5rem', alignItems:'center' }}>
-            <div>
-              <h2 style={{ fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:'clamp(2.25rem,3.5vw,3.25rem)', fontWeight:300, lineHeight:1.15, color:'#F0EDE6', marginBottom:'1.25rem' }}>
-                Let's talk about<br/>your <em style={{ fontStyle:'italic', color:'#B8924A' }}>business.</em>
-              </h2>
-              <p style={{ fontSize:'1.0625rem', fontWeight:300, lineHeight:1.8, color:'#F0EDE6' }}>
-                Tell us where you are and what you're working on. Brandon reviews every submission personally and follows up within one business day.
-              </p>
-            </div>
-            <div style={{ display:'flex', flexDirection:'column', gap:'0.875rem' }}>
-              <Link href="/contact" style={{ display:'inline-flex', alignItems:'center', justifyContent:'center', padding:'0.875rem 2.25rem', background:'#B8924A', color:'#F0EDE6', fontSize:'0.6875rem', fontWeight:500, letterSpacing:'0.16em', textTransform:'uppercase', textDecoration:'none', border:'none', cursor:'pointer', transition:'background 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.background = '#9a7a3e')} onMouseLeave={(e) => (e.currentTarget.style.background = '#B8924A')}>
-                Start a conversation
-              </Link>
-              <Link href="/how-we-work" style={{ display:'inline-flex', alignItems:'center', justifyContent:'center', padding:'0.875rem 2.25rem', background:'transparent', color:'#F0EDE6', border:'1px solid #4a4845', fontSize:'0.6875rem', fontWeight:500, letterSpacing:'0.16em', textTransform:'uppercase', textDecoration:'none', transition:'background 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.background = '#2e2b26')} onMouseLeave={(e) => (e.currentTarget.style.background = 'transparent')}>
-                See how we work
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <IntakeForm />
       <Footer />
     </>
