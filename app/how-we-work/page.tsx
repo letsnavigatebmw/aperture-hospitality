@@ -165,15 +165,15 @@ export default function HowWeWorkPage() {
     },
     {
       badge: 'Conversation',
-      title: 'Talk to Brandon Directly',
+      title: 'Talk to A Member of the Aperture Team',
       desc: 'Not sure where to start? Get a direct read on your business and figure out the right next step together.',
       link: '/contact'
     },
     {
       badge: 'Learn More',
-      title: 'Explore the Four Engines',
-      desc: 'See the full capabilities breakdown and understand what goes inside each machine.',
-      link: '/capabilities'
+      title: 'Learn About the Revenue Leak Audit',
+      desc: 'See the full Revenue Leak Audit framework and understand what the diagnostic process looks like.',
+      link: '/aperture-scorecard'
     }
   ]
 
