@@ -83,7 +83,7 @@ export default function Home() {
                 Why Most Businesses Plateau
               </div>
               <h2 style={{ fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:'clamp(2.25rem,3.5vw,3.25rem)', fontWeight:300, lineHeight:1.15, color:'#1C1A17' }}>
-                It's not a<br/>marketing problem.<br/><em style={{ fontStyle:'italic', color:'#B8924A' }}>It's an intelligence problem.</em>
+                It's Not A Marketing Problem.<br/><em style={{ fontStyle:'italic', color:'#B8924A' }}>It's An Intelligence Problem.</em>
               </h2>
             </div>
             <div>
