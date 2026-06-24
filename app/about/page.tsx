@@ -331,23 +331,61 @@ export default function About() {
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1px', background: 'rgba(240,237,230,0.06)' }}>
+            <style>{`
+              .about-cta-item {
+                background: #1C1A17;
+                padding: 1.75rem 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 2rem;
+                transition: background 0.2s;
+                text-decoration: none;
+                cursor: pointer;
+                color: inherit;
+              }
+              .about-cta-item:hover {
+                background: #242219;
+              }
+              .about-cta-icon-circle {
+                width: 34px;
+                height: 34px;
+                border-radius: 50%;
+                border: 1px solid rgba(240,237,230,0.1);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                transition: border-color 0.2s;
+              }
+              .about-cta-item:hover .about-cta-icon-circle {
+                border-color: rgba(184,146,74,0.4);
+              }
+              .about-cta-svg {
+                transition: stroke 0.2s;
+                stroke: rgba(240,237,230,0.25);
+              }
+              .about-cta-item:hover .about-cta-svg {
+                stroke: #B8924A;
+              }
+            `}</style>
             {[
               { badge: 'Direct', title: 'Start a Conversation', desc: 'Tell Brandon where you are and what you are working on. He responds personally within one business day.', link: '/contact' },
               { badge: 'Learn More', title: 'Explore Capabilities', desc: 'See the full service breakdown and the acquisition engine framework in detail.', link: '/capabilities' },
               { badge: 'Methodology', title: 'How We Work', desc: 'Understand the approach before committing to anything. Diagnosis always comes first.', link: '/how-we-work' }
             ].map((cta, i) => (
-              <Link key={i} href={cta.link} style={{ background: '#1C1A17', padding: '1.75rem 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '2rem', transition: 'background 0.2s', textDecoration: 'none', cursor: 'pointer' }} onMouseEnter={(e) => (e.currentTarget.style.background = '#242219')} onMouseLeave={(e) => (e.currentTarget.style.background = '#1C1A17')}>
+              <a key={i} href={cta.link} className="about-cta-item">
                 <div>
                   <div style={{ fontSize: '0.58rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', fontWeight: 500, marginBottom: '0.3rem' }}>{cta.badge}</div>
                   <h4 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.05rem', fontWeight: 400, color: '#F0EDE6', marginBottom: '0.2rem' }}>{cta.title}</h4>
                   <p style={{ fontSize: '0.75rem', color: 'rgba(240,237,230,0.28)', margin: 0, fontWeight: 300, lineHeight: 1.4 }}>{cta.desc}</p>
                 </div>
-                <div style={{ width: '34px', height: '34px', borderRadius: '50%', border: '1px solid rgba(240,237,230,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, transition: 'border-color 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.borderColor = 'rgba(184,146,74,0.4)')} onMouseLeave={(e) => (e.currentTarget.style.borderColor = 'rgba(240,237,230,0.1)')}>
-                  <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="rgba(240,237,230,0.25)" strokeWidth="1.5" style={{ transition: 'stroke 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.stroke = '#B8924A')} onMouseLeave={(e) => (e.currentTarget.style.stroke = 'rgba(240,237,230,0.25)')}>
+                <div className="about-cta-icon-circle">
+                  <svg width="13" height="13" viewBox="0 0 14 14" fill="none" strokeWidth="1.5" className="about-cta-svg">
                     <path d="M2 7h10M8 3l4 4-4 4"/>
                   </svg>
                 </div>
-              </Link>
+              </a>
             ))}
           </div>
         </div>
