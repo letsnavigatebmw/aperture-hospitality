@@ -204,86 +204,105 @@ export default function CapabilitiesPage() {
       {/* CORE CAPABILITIES */}
       <section id="capabilities" style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'end', marginBottom: '4rem' }}>
+          {/* THE ACQUISITION ENGINE */}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6rem', alignItems: 'start', marginBottom: '6rem' }}>
             <div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#F0EDE6', marginBottom: '2rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '2rem' }}>
                 <span style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></span>
-                Core Capabilities
+                The Acquisition Engine
               </div>
-              <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, color: '#F0EDE6' }}>
-                Five Disciplines. One<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Integrated System.</em>
+              <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 5vw, 3.5rem)', fontWeight: 300, lineHeight: 1.15, color: '#F0EDE6', marginBottom: '2rem' }}>
+                Stop Buying Tactics.<br/>Start Building<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>A System.</em>
               </h2>
             </div>
-            <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: 0 }}>
-              Aperture builds digital marketing capability across five core disciplines — deployable as a complete system or as targeted interventions in the areas your business needs most.
-            </p>
+            <div>
+              <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '1.5rem' }}>
+                One-off tactics don't build businesses. They create noise, burn budget, and produce results you can't replicate or predict. The operators who consistently outgrow their competitive set share one thing: a system that turns strangers into customers and customers into advocates — repeatedly, measurably, and without starting over every quarter.
+              </p>
+              <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6' }}>
+                Aperture's Acquisition Engine is that system. Four integrated pillars that work together to deliver consistency, predictability, and scale — not a menu of services you mix and match.
+              </p>
+            </div>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0', borderTop: '2px solid #3a3733' }}>
+          {/* THREE PILLARS */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '4rem', marginBottom: '6rem', borderTop: '2px solid #3a3733', paddingTop: '4rem' }}>
             {[
-              {
-                num: '01',
-                title: 'Search Engine Optimization',
-                desc: "When a potential guest, buyer, or investor searches for what you offer, you need to be there. SEO for hospitality and luxury brands isn't generic — it's built around the specific terms your customer uses at the moment they're ready to engage.",
-                tags: ['Technical SEO', 'Local Search', 'Content Strategy', 'Site Architecture']
-              },
-              {
-                num: '02',
-                title: 'Paid Advertising (SEM & Social)',
-                desc: 'Strategic deployment of paid budgets across Google, Meta, and LinkedIn — targeted at the specific guest profile, buyer persona, or trade partner your business is trying to reach. Every dollar measured against actual outcomes, not impression volume.',
-                tags: ['Google Ads', 'Meta', 'LinkedIn', 'Retargeting']
-              },
-              {
-                num: '03',
-                title: 'Content & Social Strategy',
-                desc: "Content that builds brand authority and drives real engagement — not a content calendar full of filler posts. We develop a strategy built around your brand's voice, your audience's actual interests, and the platforms where your customer spends time.",
-                tags: ['Brand Voice', 'Instagram', 'LinkedIn', 'Content Planning']
-              },
-              {
-                num: '04',
-                title: 'Email Marketing & Automation',
-                desc: "Your email list is the most valuable marketing asset you own — and most small operators aren't using it properly. Aperture builds automated, personalized drip campaigns that nurture prospects, reduce no-shows, and drive repeat bookings without manual effort.",
-                tags: ['Drip Campaigns', 'Segmentation', 'Automation', 'Re-engagement']
-              },
-              {
-                num: '05',
-                title: 'Marketing Analytics & Reporting',
-                desc: "You can't optimize what you can't see. Aperture sets up the measurement infrastructure — tracking, attribution, and reporting — so you know exactly which marketing activities are driving revenue and which ones to stop spending money on.",
-                tags: ['Campaign Attribution', 'Conversion Tracking', 'ROI Reporting', 'Dashboard Setup']
-              }
-            ].map((cap, i) => (
-              <div key={i} style={{ padding: '3rem 2.5rem 3rem 0' }}>
-                <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1.25rem' }}>
-                  {cap.num}
-                </div>
-                <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5rem', fontWeight: 400, color: '#F0EDE6', marginBottom: '0.875rem', lineHeight: 1.2 }}>
-                  {cap.title}
+              { title: 'Consistent', desc: 'Your operations run reliably, not just when you have time to post something.' },
+              { title: 'Predictable', desc: 'You know where your revenue is coming and which ones to stop spending on.' },
+              { title: 'Scalable', desc: 'Every customer becomes a mechanism for finding the next one.' }
+            ].map((pillar, i) => (
+              <div key={i} style={{ borderBottom: '1px solid #3a3733', paddingBottom: '3rem' }}>
+                <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.875rem', fontWeight: 300, color: '#B8924A', lineHeight: 1.2, marginBottom: '1rem' }}>
+                  {pillar.title}
                 </h3>
-                <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#F0EDE6', marginBottom: '1.5rem' }} className="cap-desc">
-                  {cap.desc}
+                <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#F0EDE6' }}>
+                  {pillar.desc}
                 </p>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
-                  {cap.tags.map((tag, j) => (
-                    <span key={j} style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase', padding: '0.3rem 0.625rem', border: '2px solid #3a3733', color: '#F0EDE6' }}>
-                      {tag}
-                    </span>
-                  ))}
-                </div>
               </div>
             ))}
-            
-            {/* Placeholder card */}
-            <div style={{ padding: '3rem 2.5rem 3rem 0', border: 'none', background: 'transparent', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
-              <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.25rem', fontWeight: 300, color: '#F0EDE6', marginBottom: '0.75rem', lineHeight: 1.3 }}>
-                Need something more specific?
-              </div>
-              <p style={{ fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.6, marginBottom: '1.5rem' }}>
-                Every engagement is scoped to your business. If you have a specific marketing problem not covered above, get in touch and we'll tell you how we'd approach it.
-              </p>
-              <Link href="/contact" style={{ fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#B8924A', borderBottom: '1px solid #B8924A', paddingBottom: '2px', display: 'inline-flex', width: 'fit-content', textDecoration: 'none' }}>
-                Talk to us →
-              </Link>
+          </div>
+
+          {/* FOUR PILLARS SECTION */}
+          <div style={{ marginBottom: '4rem' }}>
+            <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#6B6760', marginBottom: '3rem' }}>
+              The Four Pillars
             </div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '4rem' }}>
+              {[
+                {
+                  num: '01',
+                  title: 'Awareness',
+                  desc: 'Get in front of the right people.',
+                  details: 'Visibility with precision. Your ideal customer is out there — we find them. The work is making sure they find you before they find your competition. SEO, paid media, content, and social strategy aligned to reach one specific person at the right moment.'
+                },
+                {
+                  num: '02',
+                  title: 'Acquisition',
+                  desc: 'Turn interest into a booking.',
+                  details: 'Traffic without conversion is just noise. This pillar is where traffic becomes leads and leads become customers — a focused, conversion-optimized path. Landing page and offer design, lead capture and routing, email nurture sequences that close gaps.'
+                },
+                {
+                  num: '03',
+                  title: 'Activation',
+                  desc: 'Deliver an experience worth coming back for.',
+                  details: 'Acquisition is profitable when the reservation is profitable. Activation is what happens between the booking and the review — pre-arrival and onboarding communication, the experience that determines whether a new customer becomes a repeat customer or a one-time transaction.'
+                },
+                {
+                  num: '04',
+                  title: 'Amplification',
+                  desc: 'Turn customers into your best marketing channel.',
+                  details: 'The most credible endorsement comes from someone who just had a good experience. Amplification is the system that turns every satisfied customer into your referral engine — reviews, testimonials, community building, and social proof.'
+                }
+              ].map((pillar, i) => (
+                <div key={i} style={{ paddingBottom: '2rem', borderBottom: '2px solid #3a3733' }}>
+                  <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1rem' }}>
+                    {pillar.num} — {pillar.title.toUpperCase()}
+                  </div>
+                  <h4 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.25rem', fontWeight: 400, color: '#F0EDE6', lineHeight: 1.2, marginBottom: '1rem' }}>
+                    {pillar.desc}
+                  </h4>
+                  <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.6, color: '#F0EDE6' }}>
+                    {pillar.details}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* BOTTOM CTA SECTION */}
+          <div style={{ background: '#2e2b26', border: '1px solid #3a3733', padding: '3rem', display: 'grid', gridTemplateColumns: '1fr auto', gap: '3rem', alignItems: 'center' }}>
+            <div>
+              <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#6B6760', marginBottom: '1rem' }}>
+                Why a System Beats Tactics Every Time
+              </div>
+              <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', margin: 0 }}>
+                Tactics get you a result once. A system gets you the same result — predictably — every time you need it.
+              </p>
+            </div>
+            <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: '#B8924A', color: '#F0EDE6', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none', border: 'none', cursor: 'pointer', transition: 'background 0.2s', whiteSpace: 'nowrap' }} onMouseEnter={(e) => (e.currentTarget.style.background = '#9a7a3e')} onMouseLeave={(e) => (e.currentTarget.style.background = '#B8924A')}>
+              Build My Acquisition Engine
+            </Link>
           </div>
         </div>
       </section>
