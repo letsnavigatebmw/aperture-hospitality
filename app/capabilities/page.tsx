@@ -211,8 +211,8 @@ export default function CapabilitiesPage() {
                 <span style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></span>
                 The Acquisition Engine
               </div>
-              <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 5vw, 3.5rem)', fontWeight: 300, lineHeight: 1.15, color: '#F0EDE6', marginBottom: '2rem' }}>
-                Stop Buying Tactics.<br/>Start Building<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>A System.</em>
+              <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 5vw, 3.5rem)', fontWeight: 300, lineHeight: 1.15, color: '#FFFFFF', marginBottom: '2rem' }}>
+                Stop Buying Tactics.<br/>Start Building <em style={{ fontStyle: 'italic', color: '#FFFFFF' }}>A System.</em>
               </h2>
             </div>
             <div>
