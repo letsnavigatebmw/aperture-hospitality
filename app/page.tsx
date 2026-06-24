@@ -137,7 +137,7 @@ export default function HomePage() {
       </section>
 
       {/* CHALLENGE */}
-      <section style={{ background: '#1C1A17', padding: '7rem clamp(1.5rem, 5vw, 4rem)' }}>
+      <section style={{ background: '#1C1A17', padding: '3rem clamp(1.5rem, 5vw, 4rem)' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', display: 'grid', gridTemplateColumns: '5fr 7fr', gap: '7rem', alignItems: 'start' }} className="challenge-inner">
           <div>
             <div style={{ fontSize: '0.67rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.25rem' }}>
@@ -177,7 +177,7 @@ export default function HomePage() {
       </section>
 
       {/* INDUSTRIES */}
-      <section style={{ padding: '7rem clamp(1.5rem, 5vw, 4rem)', background: '#F0EDE6' }}>
+      <section style={{ padding: '3rem clamp(1.5rem, 5vw, 4rem)', background: '#F0EDE6' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
             <div style={{ fontSize: '0.67rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1.25rem', display: 'flex', alignItems: 'center', gap: '0.75rem', justifyContent: 'center' }}>
@@ -226,7 +226,7 @@ export default function HomePage() {
       </section>
 
       {/* SERVICES */}
-      <section style={{ background: '#1C1A17', padding: '7rem clamp(1.5rem, 5vw, 4rem)' }}>
+      <section style={{ background: '#1C1A17', padding: '3rem clamp(1.5rem, 5vw, 4rem)' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto' }}>
           <div style={{ marginBottom: '4rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'end' }} className="services-header">
             <div>
@@ -266,7 +266,7 @@ export default function HomePage() {
       </section>
 
       {/* PROOF / TESTIMONIALS */}
-      <section style={{ padding: '7rem clamp(1.5rem, 5vw, 4rem)', background: '#F0EDE6' }}>
+      <section style={{ padding: '3rem clamp(1.5rem, 5vw, 4rem)', background: '#F0EDE6' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'end', marginBottom: '4rem' }} className="proof-header">
             <div>
@@ -329,7 +329,7 @@ export default function HomePage() {
       </section>
 
       {/* CONTACT FORM SECTION */}
-      <section style={{ padding: '7rem clamp(1.5rem, 5vw, 4rem)', background: '#F0EDE6' }}>
+      <section style={{ padding: '3rem clamp(1.5rem, 5vw, 4rem)', background: '#F0EDE6' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1.5fr', gap: '6rem', alignItems: 'start' }}>
           {/* Left Column */}
           <div>
