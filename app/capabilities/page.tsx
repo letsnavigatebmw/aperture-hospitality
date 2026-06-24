@@ -276,10 +276,10 @@ export default function CapabilitiesPage() {
                 }
               ].map((pillar, i) => (
                 <div key={i} style={{ paddingBottom: '2rem', borderBottom: '2px solid #3a3733' }}>
-                  <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1rem' }}>
+                  <div style={{ fontSize: '0.875rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1rem' }}>
                     {pillar.num} — {pillar.title.toUpperCase()}
                   </div>
-                  <h4 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.25rem', fontWeight: 400, color: '#F0EDE6', lineHeight: 1.2, marginBottom: '1rem' }}>
+                  <h4 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5rem', fontWeight: 400, color: '#F0EDE6', lineHeight: 1.2, marginBottom: '1rem' }}>
                     {pillar.desc}
                   </h4>
                   <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.6, color: '#F0EDE6' }}>
