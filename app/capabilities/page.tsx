@@ -86,15 +86,20 @@ export default function CapabilitiesPage() {
       {/* HERO */}
       <section style={{ background: '#1C1A17', padding: 'clamp(7rem, 10vw, 8rem) clamp(1.5rem, 5vw, 4rem)', position: 'relative', overflow: 'hidden' }}>
         {/* Aperture Logo */}
-        <div style={{ position: 'absolute', top: '140px', right: '320px', width: '240px', height: '240px', display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none', zIndex: 0 }}>
-          <svg viewBox="0 0 200 200" width="240" height="240" fill="none" xmlns="http://www.w3.org/2000/svg">
-            {/* Main circle */}
-            <circle cx="100" cy="100" r="80" stroke="rgba(184,146,74,0.3)" strokeWidth="2"/>
-            {/* Brass accent arc - flowing curve on right side */}
-            <path d="M 150 40 A 85 85 0 0 1 160 160" stroke="#B8924A" strokeWidth="7" strokeLinecap="round" fill="none"/>
-            {/* Center dot */}
-            <circle cx="100" cy="100" r="2.5" fill="#B8924A"/>
-          </svg>
+        <div style={{ position: 'absolute', top: '80px', right: '60px', width: '240px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none', zIndex: 0 }}>
+          <div style={{ width: '240px', height: '240px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.75rem' }}>
+            <svg viewBox="0 0 200 200" width="240" height="240" fill="none" xmlns="http://www.w3.org/2000/svg">
+              {/* Main circle */}
+              <circle cx="100" cy="100" r="80" stroke="rgba(184,146,74,0.3)" strokeWidth="2"/>
+              {/* Brass accent arc - flowing curve on right side */}
+              <path d="M 150 40 A 85 85 0 0 1 160 160" stroke="#B8924A" strokeWidth="7" strokeLinecap="round" fill="none"/>
+              {/* Center dot */}
+              <circle cx="100" cy="100" r="2.5" fill="#B8924A"/>
+            </svg>
+          </div>
+          <div style={{ fontSize: '0.65rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', textAlign: 'center' }}>
+            Aperture
+          </div>
         </div>
 
         <div style={{ maxWidth: '1140px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
