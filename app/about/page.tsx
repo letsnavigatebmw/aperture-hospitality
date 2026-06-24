@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import NewsletterSection from '@/components/NewsletterSection'
@@ -306,6 +307,45 @@ export default function About() {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FINAL CTA */}
+      <section style={{ background: '#1C1A17', padding: '7rem clamp(1.5rem, 5vw, 4rem)' }}>
+        <div style={{ maxWidth: '1140px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6rem', alignItems: 'center' }}>
+          <div>
+            <div style={{ fontSize: '0.67rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
+              <span style={{ width: '2rem', height: '1px', background: '#B8924A' }}></span>
+              Ready When You Are
+            </div>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.05, marginBottom: '1.25rem' }}>
+              Let us Talk<br/>About Your<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Business.</em>
+            </h2>
+            <p style={{ fontSize: '0.9rem', color: 'rgba(240,237,230,0.42)', lineHeight: 1.8, fontWeight: 300, marginBottom: '2.5rem' }}>
+              Brandon reviews every submission personally and responds within one business day. No forms routed to a sales team. No discovery calls that are really demos. A direct conversation about your business and what would actually move it forward.
+            </p>
+          </div>
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1px', background: 'rgba(240,237,230,0.06)' }}>
+            {[
+              { badge: 'Direct', title: 'Start a Conversation', desc: 'Tell Brandon where you are and what you are working on. He responds personally within one business day.', link: '/contact' },
+              { badge: 'Learn More', title: 'Explore Capabilities', desc: 'See the full service breakdown and the acquisition engine framework in detail.', link: '/capabilities' },
+              { badge: 'Methodology', title: 'How We Work', desc: 'Understand the approach before committing to anything. Diagnosis always comes first.', link: '/how-we-work' }
+            ].map((cta, i) => (
+              <Link key={i} href={cta.link} style={{ background: '#1C1A17', padding: '1.75rem 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '2rem', transition: 'background 0.2s', textDecoration: 'none', cursor: 'pointer' }} onMouseEnter={(e) => (e.currentTarget.style.background = '#242219')} onMouseLeave={(e) => (e.currentTarget.style.background = '#1C1A17')}>
+                <div>
+                  <div style={{ fontSize: '0.58rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', fontWeight: 500, marginBottom: '0.3rem' }}>{cta.badge}</div>
+                  <h4 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.05rem', fontWeight: 400, color: '#F0EDE6', marginBottom: '0.2rem' }}>{cta.title}</h4>
+                  <p style={{ fontSize: '0.75rem', color: 'rgba(240,237,230,0.28)', margin: 0, fontWeight: 300, lineHeight: 1.4 }}>{cta.desc}</p>
+                </div>
+                <div style={{ width: '34px', height: '34px', borderRadius: '50%', border: '1px solid rgba(240,237,230,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, transition: 'border-color 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.borderColor = 'rgba(184,146,74,0.4)')} onMouseLeave={(e) => (e.currentTarget.style.borderColor = 'rgba(240,237,230,0.1)')}>
+                  <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="rgba(240,237,230,0.25)" strokeWidth="1.5" style={{ transition: 'stroke 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.stroke = '#B8924A')} onMouseLeave={(e) => (e.currentTarget.style.stroke = 'rgba(240,237,230,0.25)')}>
+                    <path d="M2 7h10M8 3l4 4-4 4"/>
+                  </svg>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
