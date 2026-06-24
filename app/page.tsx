@@ -159,7 +159,7 @@ export default function Home() {
                 Who We Help
               </div>
               <h2 style={{ fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:'clamp(2.25rem,3.5vw,3.25rem)', fontWeight:300, lineHeight:1.15, color:'#1C1A17' }}>
-                Segmented by<br/>challenge, not<br/><em style={{ fontStyle:'italic', color:'#B8924A' }}>industry.</em>
+                Segmented By Challenge, Not<br/><em style={{ fontStyle:'italic', color:'#B8924A' }}>Industry.</em>
               </h2>
             </div>
             <p style={{ fontSize:'1.0625rem', fontWeight:300, lineHeight:1.8, color:'#1C1A17' }}>
