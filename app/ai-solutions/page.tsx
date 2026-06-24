@@ -209,10 +209,10 @@ export default function AISolutionsPage() {
                 <div style={{ fontSize: '0.6rem', fontWeight: 600, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '0.5rem' }}>
                   {step.page}
                 </div>
-                <div style={{ fontSize: '0.7rem', color: 'rgba(240,237,230,0.6)', lineHeight: 1.4 }}>
+                <div style={{ fontSize: '0.7rem', color: '#F0EDE6', lineHeight: 1.4, marginBottom: '0.75rem' }}>
                   {step.title}
                 </div>
-                <div style={{ fontSize: '0.85rem', fontWeight: 500, color: '#B8924A', marginTop: '0.75rem' }}>
+                <div style={{ fontSize: '0.85rem', fontWeight: 500, color: '#B8924A' }}>
                   {step.number}
                 </div>
               </div>
