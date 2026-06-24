@@ -169,21 +169,41 @@ export default function AISolutionsPage() {
             How It Works
           </div>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, marginBottom: '3.5rem', maxWidth: '20ch' }}>
-            Up And Running<br/>In <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Days, Not Months.</em>
+            Here's <em style={{ fontStyle: 'italic', color: '#B8924A' }}>How It Works</em>
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '3rem' }}>
+          <p style={{ fontSize: '0.95rem', fontWeight: 300, lineHeight: 1.75, color: '#6B6760', marginBottom: '3.5rem' }}>
+            From sign-up to your first implementation call in five simple steps.
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '2rem', marginBottom: '3rem' }}>
             {[
-              { number: '01', title: 'Choose your plan', desc: 'Select monthly or annual. No sales call required. You\'re on the platform the same day.' },
-              { number: '02', title: 'Aperture configures it', desc: 'We handle the setup, brand voice training, and integrations so the AI fits your business — not a generic template.' },
-              { number: '03', title: 'Go live fast', desc: 'Most properties are live within 48 hours. You start capturing missed conversations immediately.' },
-              { number: '04', title: 'Scale as you grow', desc: 'Add tools as your needs evolve, or graduate to a full Aperture strategic engagement when the time comes.' }
+              { number: '01', badge: 'GET STARTED', title: 'Choose Your Plan', desc: 'Review what is included and select the option that fits your business.' },
+              { number: '02', badge: 'COMPLETE PURCHASE', title: 'Secure Checkout', desc: 'Complete your purchase safely. Takes less than two minutes.' },
+              { number: '03', badge: 'SUBMIT', title: 'Tell Us About Your Business', desc: 'A short intake form so we show up to your call prepared.' },
+              { number: '04', badge: 'BOOK YOUR CALL', title: 'Pick Your Time', desc: 'Schedule your implementation call at a time that works for you.' },
+              { number: '05', badge: 'YOU\'RE ALL SET', title: 'You\'re Confirmed', desc: 'Check your inbox. We\'ll see you on the call.' }
             ].map((step, i) => (
-              <div key={i} style={{ padding: '2.5rem 2rem 2.5rem 0' }}>
-                <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1.25rem' }}>{step.number}</div>
-                <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.375rem', fontWeight: 400, color: '#1C1A17', lineHeight: 1.2, marginBottom: '0.875rem' }}>{step.title}</h3>
-                <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760', margin: 0 }}>{step.desc}</p>
+              <div key={i} style={{ padding: '2rem 0', textAlign: 'center' }}>
+                <div style={{ fontSize: '3rem', fontWeight: 300, color: '#B8924A', lineHeight: 1, marginBottom: '1rem' }}>{step.number}</div>
+                <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#6B6760', marginBottom: '0.75rem' }}>{step.badge}</div>
+                <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.15rem', fontWeight: 400, color: '#1C1A17', lineHeight: 1.2, marginBottom: '0.75rem' }}>{step.title}</h3>
+                <p style={{ fontSize: '0.8125rem', fontWeight: 300, lineHeight: 1.6, color: '#6B6760', margin: 0 }}>{step.desc}</p>
               </div>
             ))}
+          </div>
+          
+          {/* Timeline footer */}
+          <div style={{ borderTop: '1px solid #D4CFC6', paddingTop: '2rem', textAlign: 'center' }}>
+            <div style={{ fontSize: '0.7rem', fontWeight: 300, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#6B6760', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+              <span>Choose Your Plan</span>
+              <span style={{ color: '#B8924A' }}>→</span>
+              <span>Secure Checkout</span>
+              <span style={{ color: '#B8924A' }}>→</span>
+              <span>Tell Us About Your Business</span>
+              <span style={{ color: '#B8924A' }}>→</span>
+              <span>Pick Your Time</span>
+              <span style={{ color: '#B8924A' }}>→</span>
+              <span>You\'re Confirmed</span>
+            </div>
           </div>
         </div>
       </section>
