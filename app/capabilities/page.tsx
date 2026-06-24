@@ -182,7 +182,7 @@ export default function CapabilitiesPage() {
               <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#1C1A17', marginBottom: '1.25rem' }}>
                 Digital marketing done right is not about more content or more ads. It's about a coherent system — one that reaches the right person, with the right message, at the right moment — and measures what actually happens next.
               </p>
-              <ul style={{ listStyle: 'none', borderTop: '2px solid #B8924A', margin: 0, padding: 0 }}>
+              <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
                 {[
                   'No consistent presence in search when potential guests are looking',
                   'Ad spend with no clear attribution to bookings or revenue',
@@ -190,7 +190,7 @@ export default function CapabilitiesPage() {
                   'Email lists that sit unused or broadcast generic newsletters',
                   'No view of which marketing activities are actually working'
                 ].map((item, i) => (
-                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '1rem 0', borderBottom: '2px solid #B8924A', fontSize: '0.9375rem', fontWeight: 300, color: '#1C1A17', lineHeight: 1.6 }}>
+                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '1rem 0', fontSize: '0.9375rem', fontWeight: 300, color: '#1C1A17', lineHeight: 1.6 }}>
                     <span style={{ width: '4px', height: '4px', background: '#B8924A', borderRadius: '50%', flexShrink: 0, marginTop: '0.6rem' }}></span>
                     {item}
                   </li>
