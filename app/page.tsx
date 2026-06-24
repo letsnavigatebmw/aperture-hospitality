@@ -143,7 +143,7 @@ export default function Home() {
                 What We Build
               </div>
               <h2 style={{ fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:'clamp(2.25rem,3.5vw,3.25rem)', fontWeight:300, lineHeight:1.15, color:'#F0EDE6' }}>
-                Four capabilities.<br/>One <em style={{ fontStyle:'italic', color:'#B8924A' }}>integrated system.</em>
+                Four Capabilities.<br/>One <em style={{ fontStyle:'italic', color:'#B8924A' }}>Integrated System.</em>
               </h2>
             </div>
             <p style={{ fontSize:'1.0625rem', fontWeight:300, lineHeight:1.8, color:'#F0EDE6' }}>
