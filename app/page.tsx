@@ -95,7 +95,7 @@ export default function HomePage() {
             Strategy. Intelligence. Automation.
           </div>
           <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 300, fontSize: 'clamp(3rem, 7.5vw, 6.5rem)', lineHeight: 1, color: '#F0EDE6', letterSpacing: '-0.02em', maxWidth: '100%', margin: 0, marginBottom: '0' }}>
-            Clarity<br/>Over <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Data.</em><br/>Growth<br/>Over Noise.
+            Clarity Over <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Data.</em><br/>Growth Over Noise.
           </h1>
         </div>
 
