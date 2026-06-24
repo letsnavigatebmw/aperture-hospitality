@@ -44,13 +44,18 @@ export default function Home() {
             {/* RIGHT: Three pillars */}
             <div style={{ paddingBottom: 'clamp(4rem,8vw,7rem)', borderLeft:'1px solid #2e2b26', paddingLeft:'3rem' }}>
               {/* Logo */}
-              <div style={{ marginBottom:'3rem', textAlign:'center', paddingRight:'3rem', marginLeft:'-3rem' }}>
-                <svg width="48" height="48" viewBox="0 0 32 32" fill="none" style={{ margin:'0 auto', marginBottom:'1rem' }}>
+              <div style={{ marginBottom:'4rem', textAlign:'center', paddingRight:'3rem', marginLeft:'-3rem' }}>
+                <svg width="120" height="120" viewBox="0 0 32 32" fill="none" style={{ margin:'0 auto', marginBottom:'2rem' }}>
                   <circle cx="16" cy="16" r="13" stroke="#F0EDE6" strokeWidth="1.1"/>
+                  <circle cx="16" cy="16" r="9" stroke="#F0EDE6" strokeWidth="0.8" opacity="0.5"/>
                   <path d="M16 3 A13 13 0 0 1 29 16" stroke="#B8924A" strokeWidth="2.4" strokeLinecap="round"/>
+                  <circle cx="16" cy="16" r="1.5" fill="#B8924A"/>
                 </svg>
-                <div style={{ fontSize:'0.6875rem', fontWeight:500, letterSpacing:'0.22em', textTransform:'uppercase', color:'#F0EDE6', textAlign:'center' }}>
-                  Aperture Hospitality
+                <div style={{ fontSize:'0.875rem', fontWeight:400, letterSpacing:'0.26em', textTransform:'uppercase', color:'#F0EDE6', textAlign:'center', marginBottom:'0.5rem' }}>
+                  Aperture
+                </div>
+                <div style={{ fontSize:'0.75rem', fontWeight:400, letterSpacing:'0.22em', textTransform:'uppercase', color:'#B8924A', textAlign:'center' }}>
+                  Hospitality
                 </div>
               </div>
 
