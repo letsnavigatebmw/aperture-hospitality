@@ -258,7 +258,7 @@ export default function Home() {
               { label:'Spirits', company:'Beverly Spirits', desc:'Commercial acceleration & market expansion' },
               { label:'Experiential', company:'Foto Comercio', desc:'GTM strategy & channel partner development' }
             ].map((engagement, i) => (
-              <div key={i} style={{ padding:'1.5rem 1.5rem 1.5rem 0', borderRight: i % 3 !== 2 ? '1px solid #D4CFC6' : 'none', borderBottom: i < 3 ? '1px solid #D4CFC6' : 'none' }}>
+              <div key={i} style={{ padding:'1.5rem 1.5rem 1.5rem 0', borderBottom: i < 3 ? '1px solid #D4CFC6' : 'none' }}>
                 <div style={{ fontSize:'0.5625rem', fontWeight:500, letterSpacing:'0.14em', textTransform:'uppercase', color:'#B8924A', marginBottom:'0.375rem' }}>
                   {engagement.label}
                 </div>
