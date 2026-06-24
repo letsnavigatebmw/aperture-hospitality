@@ -161,48 +161,76 @@ export default function AISolutionsPage() {
         </div>
       </section>
 
-      {/* HOW IT WORKS */}
-      <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #B8924A' }}>
-        <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#6B6760', marginBottom: '2rem' }}>
-            <div style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></div>
-            How It Works
+      {/* FUNNEL FLOW */}
+      <section style={{ background: '#1C1A17', padding: 'clamp(4rem, 8vw, 6rem) clamp(1.5rem, 5vw, 4rem)', borderBottom: '2px solid #3a3733' }}>
+        <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
+          {/* Header */}
+          <div style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
+            <div style={{ fontSize: '0.65rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1rem' }}>
+              AI Implementation Snapshot
+            </div>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.5rem, 4vw, 3.5rem)', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.1, margin: 0 }}>
+              Funnel <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Flow</em>
+            </h2>
           </div>
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, marginBottom: '3.5rem', maxWidth: '20ch' }}>
-            Here's <em style={{ fontStyle: 'italic', color: '#B8924A' }}>How It Works</em>
-          </h2>
-          <p style={{ fontSize: '0.95rem', fontWeight: 300, lineHeight: 1.75, color: '#6B6760', marginBottom: '3.5rem' }}>
-            From sign-up to your first implementation call in five simple steps.
-          </p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '2rem', marginBottom: '3rem' }}>
+
+          {/* Divider */}
+          <div style={{ borderTop: '1px solid rgba(240,237,230,0.1)', margin: '2.5rem 0 3rem 0 ' }}></div>
+
+          {/* Funnel Steps - Browser Mockups */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '1.5rem', marginBottom: '3rem', position: 'relative' }}>
             {[
-              { number: '01', badge: 'GET STARTED', title: 'Choose Your Plan', desc: 'Review what is included and select the option that fits your business.' },
-              { number: '02', badge: 'COMPLETE PURCHASE', title: 'Secure Checkout', desc: 'Complete your purchase safely. Takes less than two minutes.' },
-              { number: '03', badge: 'SUBMIT', title: 'Tell Us About Your Business', desc: 'A short intake form so we show up to your call prepared.' },
-              { number: '04', badge: 'BOOK YOUR CALL', title: 'Pick Your Time', desc: 'Schedule your implementation call at a time that works for you.' },
-              { number: '05', badge: 'YOU\'RE ALL SET', title: 'You\'re Confirmed', desc: 'Check your inbox. We\'ll see you on the call.' }
+              { number: '01', page: 'SALES PAGE', button: 'GET STARTED', title: 'Prospect lands on your page', color: '#2a3f5f' },
+              { number: '02', page: 'ORDER FORM', button: 'COMPLETE ORDER', title: 'Prospect goes through checkout', color: '#3a3733' },
+              { number: '03', page: 'SURVEY', button: 'SUBMIT', title: 'Customer fills out pre-onboarding survey', color: '#3a3733' },
+              { number: '04', page: 'CALENDAR', button: 'BOOK CALL', title: 'Customer books implementation call', color: '#3a3733' },
+              { number: '05', page: 'THANK YOU PAGE', button: 'YOU\'RE IN', title: 'Customer directed to confirmation', color: '#1a4d2e' }
             ].map((step, i) => (
-              <div key={i} style={{ padding: '2rem 0', textAlign: 'center' }}>
-                <div style={{ fontSize: '3rem', fontWeight: 300, color: '#B8924A', lineHeight: 1, marginBottom: '1rem' }}>{step.number}</div>
-                <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#6B6760', marginBottom: '0.75rem' }}>{step.badge}</div>
-                <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.15rem', fontWeight: 400, color: '#1C1A17', lineHeight: 1.2, marginBottom: '0.75rem' }}>{step.title}</h3>
-                <p style={{ fontSize: '0.8125rem', fontWeight: 300, lineHeight: 1.6, color: '#6B6760', margin: 0 }}>{step.desc}</p>
+              <div key={i} style={{ textAlign: 'center' }}>
+                {/* Browser mockup */}
+                <div style={{ background: step.color, border: '2px solid rgba(184,146,74,0.4)', borderRadius: '0.5rem', padding: '0.75rem', marginBottom: '1.5rem', minHeight: '200px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                  {/* Browser header */}
+                  <div style={{ background: '#2a2520', borderRadius: '0.25rem', padding: '0.5rem', marginBottom: '1rem', display: 'flex', gap: '0.5rem', fontSize: '1rem' }}>
+                    <span style={{ width: '0.6rem', height: '0.6rem', borderRadius: '50%', background: '#ff5f56' }}></span>
+                    <span style={{ width: '0.6rem', height: '0.6rem', borderRadius: '50%', background: '#ffbd2e' }}></span>
+                    <span style={{ width: '0.6rem', height: '0.6rem', borderRadius: '50%', background: '#27c93f' }}></span>
+                  </div>
+
+                  {/* Content placeholder */}
+                  <div style={{ flex: 1 }}></div>
+
+                  {/* Button */}
+                  <button style={{ background: '#B8924A', color: '#1C1A17', padding: '0.5rem', fontSize: '0.55rem', fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', border: 'none', cursor: 'pointer', marginBottom: '0.75rem' }}>
+                    {step.button}
+                  </button>
+                </div>
+
+                {/* Step info */}
+                <div style={{ fontSize: '0.6rem', fontWeight: 600, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '0.5rem' }}>
+                  {step.page}
+                </div>
+                <div style={{ fontSize: '0.7rem', color: 'rgba(240,237,230,0.6)', lineHeight: 1.4 }}>
+                  {step.title}
+                </div>
+                <div style={{ fontSize: '0.85rem', fontWeight: 500, color: '#B8924A', marginTop: '0.75rem' }}>
+                  {step.number}
+                </div>
               </div>
             ))}
           </div>
-          
+
           {/* Timeline footer */}
-          <div style={{ borderTop: '1px solid #D4CFC6', paddingTop: '2rem', textAlign: 'center' }}>
-            <div style={{ fontSize: '0.7rem', fontWeight: 300, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#6B6760', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-              <span>Choose Your Plan</span>
+          <div style={{ borderTop: '1px solid rgba(240,237,230,0.15)', paddingTop: '2rem', textAlign: 'center' }}>
+            <div style={{ fontSize: '0.65rem', fontWeight: 400, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(240,237,230,0.4)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1.25rem', flexWrap: 'wrap' }}>
+              <span>Prospect Lands</span>
               <span style={{ color: '#B8924A' }}>→</span>
-              <span>Secure Checkout</span>
+              <span>Checkout</span>
               <span style={{ color: '#B8924A' }}>→</span>
-              <span>Tell Us About Your Business</span>
+              <span>Onboarding Survey</span>
               <span style={{ color: '#B8924A' }}>→</span>
-              <span>Pick Your Time</span>
+              <span>Books Implementation Call</span>
               <span style={{ color: '#B8924A' }}>→</span>
-              <span>You\'re Confirmed</span>
+              <span>Confirmed</span>
             </div>
           </div>
         </div>
