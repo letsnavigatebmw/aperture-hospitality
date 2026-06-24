@@ -83,75 +83,90 @@ export default function HomePage() {
       <style>{mobileStyles}</style>
       <Nav />
 
+      <style>{`
+        @media (max-width: 860px) {
+          .hero-grid { grid-template-columns: 1fr !important; padding: 4rem 2.5rem 6rem !important; min-height: auto !important; }
+        }
+        @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+      `}</style>
+
       {/* HERO */}
-      <section style={{ background: '#1C1A17', minHeight: '50vh', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', position: 'relative', overflow: 'hidden' }}>
-        {/* Decorative circles */}
-        <div style={{ position: 'absolute', top: '-280px', right: '-280px', width: '820px', height: '820px', borderRadius: '50%', border: '1px solid rgba(184,146,74,0.08)', pointerEvents: 'none' }}></div>
-        <div style={{ position: 'absolute', top: '-150px', right: '-150px', width: '560px', height: '560px', borderRadius: '50%', border: '1px solid rgba(184,146,74,0.06)', pointerEvents: 'none' }}></div>
-        <div style={{ position: 'absolute', top: '-50px', right: '-50px', width: '320px', height: '320px', borderRadius: '50%', border: '1.5px solid rgba(184,146,74,0.18)', clipPath: 'polygon(50% 0%, 100% 0%, 100% 50%, 50% 50%)', pointerEvents: 'none' }}></div>
+      <section className="hero-grid" style={{ background: '#1C1A17', minHeight: '100vh', display: 'grid', gridTemplateColumns: '1fr 1fr', alignItems: 'center', padding: '5rem', gap: '3rem', position: 'relative', overflow: 'hidden' }}>
+        {/* Subtle outer arc watermark */}
+        <div style={{ position: 'absolute', top: '-200px', right: '-200px', width: '600px', height: '600px', borderRadius: '50%', border: '1px solid rgba(184,146,74,0.07)', pointerEvents: 'none' }}></div>
 
-        {/* Aperture Logo */}
-        <div style={{ position: 'absolute', top: '100px', left: '50%', transform: 'translateX(-50%)', width: '240px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none', zIndex: 0 }}>
-          <div style={{ width: '240px', height: '240px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.5rem' }}>
-            <svg viewBox="0 0 200 200" width="240" height="240" fill="none" xmlns="http://www.w3.org/2000/svg">
-              {/* Main circle */}
-              <circle cx="100" cy="100" r="80" stroke="rgba(184,146,74,0.3)" strokeWidth="2"/>
-              {/* Brass accent arc - flowing curve on right side */}
-              <path d="M 150 40 A 85 85 0 0 1 160 160" stroke="#B8924A" strokeWidth="7" strokeLinecap="round" fill="none"/>
-              {/* Center dot */}
-              <circle cx="100" cy="100" r="2.5" fill="#B8924A"/>
-            </svg>
+        {/* LEFT: Copy */}
+        <div style={{ position: 'relative', zIndex: 1 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '2rem' }}>
+            <div style={{ width: '2rem', height: '1px', background: '#B8924A', flexShrink: 0 }}></div>
+            <span style={{ fontFamily: "'Inter', system-ui, sans-serif", fontSize: '0.62rem', fontWeight: 400, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#B8924A' }}>Strategy. Intelligence. Automation.</span>
           </div>
-          <div style={{ fontSize: '0.5rem', fontWeight: 400, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'rgba(240,237,230,0.35)', textAlign: 'center' }}>
-            Aperture
-          </div>
-        </div>
 
-        <div style={{ maxWidth: '1140px', margin: '0 auto', width: '100%', padding: '1rem clamp(1.5rem, 5vw, 4rem) 0', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', position: 'relative', zIndex: 1 }}>
-          <div style={{ fontSize: '0.68rem', fontWeight: 500, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <span style={{ display: 'block', width: '2rem', height: '1px', background: '#B8924A' }}></span>
-            Strategy. Intelligence. Automation.
-          </div>
-          <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 300, fontSize: 'clamp(3rem, 7.5vw, 6.5rem)', lineHeight: 1, color: '#F0EDE6', letterSpacing: '-0.02em', maxWidth: '100%', margin: 0, marginBottom: '0' }}>
+          <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 300, fontSize: 'clamp(2.4rem, 4.5vw, 4rem)', lineHeight: 1.05, color: '#F0EDE6', letterSpacing: '-0.01em', marginBottom: '2rem' }}>
             Clarity Over <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Data.</em><br/>Growth Over Noise.
           </h1>
-        </div>
 
-        {/* Hero Foot */}
-        <div style={{ borderTop: '1px solid rgba(240,237,230,0.07)', padding: '1rem clamp(1.5rem, 5vw, 4rem) 4rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'end', maxWidth: '1140px', margin: '1rem auto 0', position: 'relative', zIndex: 1 }} className="hero-foot">
-          <p style={{ fontSize: '1rem', lineHeight: 1.75, color: 'rgba(240,237,230,0.48)', fontWeight: 300, maxWidth: '48ch' }} className="hero-sub">
+          <div style={{ width: '100%', height: '1px', background: 'rgba(240,237,230,0.08)', marginBottom: '1.75rem' }}></div>
+
+          <p style={{ fontFamily: "'Inter', system-ui, sans-serif", fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.8, color: 'rgba(240,237,230,0.48)', maxWidth: '42ch', marginBottom: '2.5rem' }}>
             Most companies are not suffering from a lack of data. They are suffering from a lack of clarity. Aperture connects the dots between people, property, products, and performance, turning disconnected information into decisions that drive growth.
           </p>
-          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'flex-end', alignItems: 'flex-end' }} className="hero-ctas">
-            <Link href="/contact?type=audit" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.6rem', background: '#B8924A', color: '#F0EDE6', fontSize: '0.72rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', padding: '0.9rem 1.85rem', border: '1px solid #B8924A', transition: 'background 0.2s', textDecoration: 'none', cursor: 'pointer' }} onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = '#a07e40'; (e.currentTarget as HTMLElement).style.borderColor = '#a07e40'; }} onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = '#B8924A'; (e.currentTarget as HTMLElement).style.borderColor = '#B8924A'; }}>
+
+          <div style={{ display: 'flex', gap: '0.85rem', alignItems: 'center', flexWrap: 'wrap' }}>
+            <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.55rem', background: '#B8924A', border: '1px solid #B8924A', color: '#F0EDE6', fontFamily: "'Inter', system-ui, sans-serif", fontSize: '0.67rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', padding: '0.85rem 1.6rem', textDecoration: 'none', transition: 'background 0.2s, border-color 0.2s', cursor: 'pointer' }} onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = '#a07e40'; (e.currentTarget as HTMLElement).style.borderColor = '#a07e40'; }} onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = '#B8924A'; (e.currentTarget as HTMLElement).style.borderColor = '#B8924A'; }}>
               Start With a Conversation
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <path d="M2 7h10M8 3l4 4-4 4"/>
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <path d="M1.5 6.5h10M8 2.5l4 4-4 4"/>
               </svg>
             </Link>
-            <Link href="/how-we-work" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.6rem', background: 'transparent', color: 'rgba(240,237,230,0.55)', fontSize: '0.72rem', fontWeight: 400, letterSpacing: '0.14em', textTransform: 'uppercase', padding: '0.9rem 1.85rem', border: '1px solid rgba(240,237,230,0.2)', transition: 'border-color 0.2s, color 0.2s', textDecoration: 'none', cursor: 'pointer' }} onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.borderColor = 'rgba(240,237,230,0.5)'; (e.currentTarget as HTMLElement).style.color = '#F0EDE6'; }} onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.borderColor = 'rgba(240,237,230,0.2)'; (e.currentTarget as HTMLElement).style.color = 'rgba(240,237,230,0.55)'; }}>
+            <Link href="/how-we-work" style={{ display: 'inline-flex', alignItems: 'center', background: 'transparent', border: '1px solid rgba(240,237,230,0.2)', color: 'rgba(240,237,230,0.55)', fontFamily: "'Inter', system-ui, sans-serif", fontSize: '0.67rem', fontWeight: 400, letterSpacing: '0.14em', textTransform: 'uppercase', padding: '0.85rem 1.6rem', textDecoration: 'none', transition: 'border-color 0.2s, color 0.2s', cursor: 'pointer' }} onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.borderColor = 'rgba(240,237,230,0.5)'; (e.currentTarget as HTMLElement).style.color = '#F0EDE6'; }} onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.borderColor = 'rgba(240,237,230,0.2)'; (e.currentTarget as HTMLElement).style.color = 'rgba(240,237,230,0.55)'; }}>
               How We Work
             </Link>
           </div>
         </div>
 
-        {/* Ticker */}
-        <div style={{ background: 'rgba(240,237,230,0.03)', borderTop: '1px solid rgba(240,237,230,0.05)', padding: '0.9rem 0', overflow: 'hidden' }}>
-          <div style={{ display: 'flex', gap: '5rem', whiteSpace: 'nowrap', animation: 'tick 36s linear infinite' }} className="ticker-track">
-            <span style={{ fontSize: '0.62rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(240,237,230,0.18)', flexShrink: 0 }}>
-              People<span style={{ color: 'rgba(184,146,74,0.35)', margin: '0 1.25rem' }}>·</span>Property<span style={{ color: 'rgba(184,146,74,0.35)', margin: '0 1.25rem' }}>·</span>Products<span style={{ color: 'rgba(184,146,74,0.35)', margin: '0 1.25rem' }}>·</span>Performance
+        {/* RIGHT: Logo centered */}
+        <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+          <svg viewBox="0 0 380 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Aperture logo mark" style={{ width: '100%', maxWidth: '380px', display: 'block' }}>
+            <title>Aperture logo</title>
+            {/* Crosshair guide lines */}
+            <line x1="190" y1="12" x2="190" y2="345" stroke="#F0EDE6" strokeWidth="0.4" opacity="0.08"/>
+            <line x1="12" y1="190" x2="368" y2="190" stroke="#F0EDE6" strokeWidth="0.4" opacity="0.08"/>
+            {/* Outer ghost ring */}
+            <circle cx="190" cy="190" r="172" fill="none" stroke="#F0EDE6" strokeWidth="0.5" opacity="0.09"/>
+            {/* Main ring */}
+            <circle cx="190" cy="190" r="120" fill="none" stroke="#F0EDE6" strokeWidth="1" opacity="0.72"/>
+            {/* Inner ghost ring */}
+            <circle cx="190" cy="190" r="72" fill="none" stroke="#F0EDE6" strokeWidth="0.5" opacity="0.09"/>
+            {/* Brass arc */}
+            <path d="M 190 18 A 172 172 0 0 1 362 190" fill="none" stroke="#B8924A" strokeWidth="11" strokeLinecap="round" opacity="0.95"/>
+            {/* Brass arc shadow */}
+            <path d="M 190 22 A 168 168 0 0 1 358 190" fill="none" stroke="#7A5C28" strokeWidth="1.5" strokeLinecap="round" opacity="0.28"/>
+            {/* Centre dot */}
+            <circle cx="190" cy="190" r="4" fill="#B8924A" opacity="0.72"/>
+            {/* APERTURE wordmark */}
+            <text x="190" y="376" fontFamily="Inter, system-ui, sans-serif" fontWeight="300" fontSize="22" fill="#F0EDE6" textAnchor="middle" letterSpacing="10" opacity="0.88">APERTURE</text>
+          </svg>
+        </div>
+
+        {/* Ticker at bottom */}
+        <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, borderTop: '1px solid rgba(240,237,230,0.05)', padding: '1rem 0', overflow: 'hidden', zIndex: 1 }}>
+          <div style={{ display: 'flex', gap: '5rem', whiteSpace: 'nowrap', animation: 'ticker 36s linear infinite' }} className="ticker-track">
+            <span style={{ fontFamily: "'Inter', system-ui, sans-serif", fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(240,237,230,0.16)', fontWeight: 400, flexShrink: 0 }}>
+              People<span style={{ color: 'rgba(184,146,74,0.35)', margin: '0 1rem' }}>·</span>Property<span style={{ color: 'rgba(184,146,74,0.35)', margin: '0 1rem' }}>·</span>Products<span style={{ color: 'rgba(184,146,74,0.35)', margin: '0 1rem' }}>·</span>Performance
             </span>
-            <span style={{ fontSize: '0.62rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(240,237,230,0.18)', flexShrink: 0 }}>
-              Strategy<span style={{ color: 'rgba(184,146,74,0.35)', margin: '0 1.25rem' }}>→</span>Intelligence<span style={{ color: 'rgba(184,146,74,0.35)', margin: '0 1.25rem' }}>→</span>Automation
+            <span style={{ fontFamily: "'Inter', system-ui, sans-serif", fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(240,237,230,0.16)', fontWeight: 400, flexShrink: 0 }}>
+              Strategy<span style={{ color: 'rgba(184,146,74,0.35)', margin: '0 1rem' }}>→</span>Intelligence<span style={{ color: 'rgba(184,146,74,0.35)', margin: '0 1rem' }}>→</span>Automation
             </span>
-            <span style={{ fontSize: '0.62rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(240,237,230,0.18)', flexShrink: 0 }}>
-              Hospitality<span style={{ color: 'rgba(184,146,74,0.35)', margin: '0 1.25rem' }}>·</span>Real Estate<span style={{ color: 'rgba(184,146,74,0.35)', margin: '0 1.25rem' }}>·</span>Consumer Brands<span style={{ color: 'rgba(184,146,74,0.35)', margin: '0 1.25rem' }}>·</span>Technology<span style={{ color: 'rgba(184,146,74,0.35)', margin: '0 1.25rem' }}>·</span>Professional Services
+            <span style={{ fontFamily: "'Inter', system-ui, sans-serif", fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(240,237,230,0.16)', fontWeight: 400, flexShrink: 0 }}>
+              Prospect<span style={{ color: 'rgba(184,146,74,0.35)', margin: '0 1rem' }}>·</span>Lead<span style={{ color: 'rgba(184,146,74,0.35)', margin: '0 1rem' }}>·</span>Customer<span style={{ color: 'rgba(184,146,74,0.35)', margin: '0 1rem' }}>·</span>Promoter
             </span>
-            <span style={{ fontSize: '0.62rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(240,237,230,0.18)', flexShrink: 0 }}>
-              People<span style={{ color: 'rgba(184,146,74,0.35)', margin: '0 1.25rem' }}>·</span>Property<span style={{ color: 'rgba(184,146,74,0.35)', margin: '0 1.25rem' }}>·</span>Products<span style={{ color: 'rgba(184,146,74,0.35)', margin: '0 1.25rem' }}>·</span>Performance
+            <span style={{ fontFamily: "'Inter', system-ui, sans-serif", fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(240,237,230,0.16)', fontWeight: 400, flexShrink: 0 }}>
+              People<span style={{ color: 'rgba(184,146,74,0.35)', margin: '0 1rem' }}>·</span>Property<span style={{ color: 'rgba(184,146,74,0.35)', margin: '0 1rem' }}>·</span>Products<span style={{ color: 'rgba(184,146,74,0.35)', margin: '0 1rem' }}>·</span>Performance
             </span>
           </div>
         </div>
+        <style>{`@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }`}</style>
       </section>
 
       {/* CHALLENGE */}
