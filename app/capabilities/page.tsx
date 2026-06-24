@@ -306,14 +306,14 @@ export default function CapabilitiesPage() {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0', borderTop: '2px solid #B8924A', position: 'relative' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0', borderTop: '2px solid #B8924A' }}>
             {[
               { label: 'CRM', name: 'Customer Relationship Management', examples: 'HubSpot, Salesforce, or the platform that fits your business size and workflow — configured for hospitality-specific lead and guest lifecycle management.' },
               { label: 'Analytics', name: 'Data & Measurement', examples: 'Google Analytics 4, Google Tag Manager, Looker Studio — set up to track what actually matters: conversions, bookings, and revenue attribution, not pageviews.' },
               { label: 'Search & Advertising', name: 'SEO & Paid Media', examples: 'SEMrush, Moz, Google Ads Manager — used to manage organic search performance and paid campaign efficiency across search and social platforms.' },
               { label: 'Email & Automation', name: 'Marketing Automation', examples: 'Klaviyo, Mailchimp, or HubSpot Marketing — configured for automated, personalized guest communication at every stage of the customer lifecycle.' }
             ].map((item, i) => (
-              <div key={i} style={{ padding: '2.5rem 2rem 2.5rem 0', position: 'relative' }}>
+              <div key={i} style={{ padding: '2.5rem 2rem 2.5rem 0' }}>
                 <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1rem' }}>
                   {item.label}
                 </div>
@@ -323,7 +323,6 @@ export default function CapabilitiesPage() {
                 <div style={{ fontSize: '0.8125rem', fontWeight: 300, color: '#1C1A17', lineHeight: 1.6 }}>
                   {item.examples}
                 </div>
-                {i < 3 && <div style={{ position: 'absolute', right: '0', top: '0', bottom: '0', width: '2px', background: '#B8924A' }}></div>}
               </div>
             ))}
           </div>
@@ -340,14 +339,14 @@ export default function CapabilitiesPage() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, marginBottom: '3.5rem', maxWidth: '22ch', color: '#1C1A17' }}>
             Built Around Your Business,<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Not A Standard Package.</em>
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0', borderTop: '2px solid #B8924A', position: 'relative' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0', borderTop: '2px solid #B8924A' }}>
             {[
               { num: '01', title: 'Audit & diagnosis', desc: 'We start by understanding what you have, what is working, and what is not - before recommending anything. No assumptions.' },
               { num: '02', title: 'Strategy & prioritization', desc: 'We identify the highest-leverage opportunities for your specific business and budget - and build a phased plan to address them in order of impact.' },
               { num: '03', title: 'Build & deploy', desc: "We configure the platforms, build the campaigns, and set up the measurement infrastructure - so you are not handed a strategy deck with no execution path." },
               { num: '04', title: 'Measure & optimize', desc: "Every engagement includes a reporting cadence so you can see what is working, what to double down on, and what to cut - without guessing." }
             ].map((step, i) => (
-              <div key={i} style={{ padding: '2.5rem 2rem 2.5rem 0', position: 'relative' }}>
+              <div key={i} style={{ padding: '2.5rem 2rem 2.5rem 0' }}>
                 <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1.25rem' }}>
                   {step.num}
                 </div>
@@ -357,7 +356,6 @@ export default function CapabilitiesPage() {
                 <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.7, color: '#1C1A17' }}>
                   {step.desc}
                 </p>
-                {i < 3 && <div style={{ position: 'absolute', right: '0', top: '0', bottom: '0', width: '2px', background: '#B8924A' }}></div>}
               </div>
             ))}
           </div>
