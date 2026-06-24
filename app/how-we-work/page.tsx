@@ -346,8 +346,8 @@ export default function HowWeWorkPage() {
                 <span style={{ width: '2rem', height: '1px', background: '#B8924A' }}></span>
                 The Engagement
               </div>
-              <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 300, color: '#1C1A17', lineHeight: 1.1 }}>
-                How an<br/>Aperture<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Engagement Works.</em>
+              <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 300, color: '#1C1A17', lineHeight: 1.1, maxWidth: '25ch' }}>
+                How an Aperture<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Engagement Works.</em>
               </h2>
             </div>
             <p style={{ fontSize: '0.875rem', color: '#6B6760', lineHeight: 1.8, fontWeight: 300 }}>
@@ -377,8 +377,8 @@ export default function HowWeWorkPage() {
               <span style={{ width: '2rem', height: '1px', background: '#B8924A' }}></span>
               Intelligence
             </div>
-            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.8rem, 3vw, 2.6rem)', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.1, marginBottom: '1.25rem' }}>
-              Data Is<br/>the <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Diagnostic</em><br/>Layer.
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.8rem, 3vw, 2.6rem)', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.1, marginBottom: '1.25rem', maxWidth: '22ch' }}>
+              Data Is the<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Diagnostic</em> Layer.
             </h2>
             <p style={{ fontSize: '0.875rem', color: 'rgba(240,237,230,0.5)', lineHeight: 1.8, fontWeight: 300, marginBottom: '1rem' }}>
               Aperture intelligence capability is not a separate product. It is embedded in everything we do. Data tells us where the engine is leaking, which stage has the highest drop-off, and what is actually driving revenue versus what just looks good on a dashboard.
