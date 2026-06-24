@@ -84,12 +84,12 @@ export default function HomePage() {
       <Nav />
 
       {/* HERO */}
-      <section style={{ background: '#1C1A17', minHeight: '65vh', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ background: '#1C1A17', minHeight: '50vh', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', top: '-280px', right: '-280px', width: '820px', height: '820px', borderRadius: '50%', border: '1px solid rgba(184,146,74,0.08)', pointerEvents: 'none' }}></div>
         <div style={{ position: 'absolute', top: '-150px', right: '-150px', width: '560px', height: '560px', borderRadius: '50%', border: '1px solid rgba(184,146,74,0.06)', pointerEvents: 'none' }}></div>
         <div style={{ position: 'absolute', top: '-50px', right: '-50px', width: '320px', height: '320px', borderRadius: '50%', border: '1.5px solid rgba(184,146,74,0.18)', clipPath: 'polygon(50% 0%, 100% 0%, 100% 50%, 50% 50%)', pointerEvents: 'none' }}></div>
 
-        <div style={{ maxWidth: '1140px', margin: '0 auto', width: '100%', padding: '3rem clamp(1.5rem, 5vw, 4rem) 0', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', position: 'relative', zIndex: 1 }}>
+        <div style={{ maxWidth: '1140px', margin: '0 auto', width: '100%', padding: '1rem clamp(1.5rem, 5vw, 4rem) 0', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', position: 'relative', zIndex: 1 }}>
           <div style={{ fontSize: '0.68rem', fontWeight: 500, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <span style={{ display: 'block', width: '2rem', height: '1px', background: '#B8924A' }}></span>
             Strategy. Intelligence. Automation.
@@ -100,7 +100,7 @@ export default function HomePage() {
         </div>
 
         {/* Hero Foot */}
-        <div style={{ borderTop: '1px solid rgba(240,237,230,0.07)', padding: '2.5rem clamp(1.5rem, 5vw, 4rem) 4rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'end', maxWidth: '1140px', margin: '2.5rem auto 0', position: 'relative', zIndex: 1 }} className="hero-foot">
+        <div style={{ borderTop: '1px solid rgba(240,237,230,0.07)', padding: '1rem clamp(1.5rem, 5vw, 4rem) 4rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'end', maxWidth: '1140px', margin: '1rem auto 0', position: 'relative', zIndex: 1 }} className="hero-foot">
           <p style={{ fontSize: '1rem', lineHeight: 1.75, color: 'rgba(240,237,230,0.48)', fontWeight: 300, maxWidth: '48ch' }} className="hero-sub">
             Most companies are not suffering from a lack of data. They are suffering from a lack of clarity. Aperture connects the dots between people, property, products, and performance, turning disconnected information into decisions that drive growth.
           </p>
