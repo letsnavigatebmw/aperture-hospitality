@@ -182,66 +182,77 @@ export default function HowWeWorkPage() {
       <style>{mobileStyles}</style>
       <Nav />
 
+      <style>{`@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }`}</style>
+
       {/* HERO */}
-      <section style={{ background: '#1C1A17', padding: 'clamp(7rem, 10vw, 8rem) clamp(1.5rem, 5vw, 4rem) 0', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', top: '-180px', right: '-180px', width: '600px', height: '600px', borderRadius: '50%', border: '1px solid rgba(184,146,74,0.12)', pointerEvents: 'none' }}></div>
-        <div style={{ position: 'absolute', top: '-80px', right: '-80px', width: '380px', height: '380px', borderRadius: '50%', border: '1px solid rgba(184,146,74,0.07)', pointerEvents: 'none' }}></div>
+      <section style={{ background: '#1C1A17', minHeight: '100vh', display: 'grid', gridTemplateColumns: '1fr 1fr', alignItems: 'center', padding: 'clamp(5rem, 8vw, 7rem) clamp(1.5rem, 5vw, 4rem)', gap: '3rem', position: 'relative', overflow: 'hidden' }}>
+        {/* Subtle outer arc watermark */}
+        <div style={{ position: 'absolute', top: '-200px', right: '-200px', width: '600px', height: '600px', borderRadius: '50%', border: '1px solid rgba(184,146,74,0.07)', pointerEvents: 'none' }}></div>
 
-        {/* Aperture Logo */}
-        <div style={{ position: 'absolute', top: '120px', left: '50%', transform: 'translateX(-50%)', width: '220px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none', zIndex: 0 }}>
-          <div style={{ width: '220px', height: '220px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.5rem' }}>
-            <svg viewBox="0 0 200 200" width="220" height="220" fill="none" xmlns="http://www.w3.org/2000/svg">
-              {/* Main circle */}
-              <circle cx="100" cy="100" r="80" stroke="rgba(184,146,74,0.3)" strokeWidth="2"/>
-              {/* Brass accent arc - flowing curve on right side */}
-              <path d="M 150 40 A 85 85 0 0 1 160 160" stroke="#B8924A" strokeWidth="7" strokeLinecap="round" fill="none"/>
-              {/* Center dot */}
-              <circle cx="100" cy="100" r="2.5" fill="#B8924A"/>
-            </svg>
-          </div>
-          <div style={{ fontSize: '0.5rem', fontWeight: 400, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'rgba(240,237,230,0.35)', textAlign: 'center' }}>
-            Aperture
-          </div>
-        </div>
-        
-        <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)', position: 'relative', zIndex: 1 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '2rem', fontSize: '0.68rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A' }}>
-            <span style={{ width: '2rem', height: '1px', background: '#B8924A' }}></span>
-            Our Approach
+        {/* LEFT: Copy */}
+        <div style={{ position: 'relative', zIndex: 1 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '2rem' }}>
+            <div style={{ width: '2rem', height: '1px', background: '#B8924A', flexShrink: 0 }}></div>
+            <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.62rem', fontWeight: 400, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#B8924A' }}>Our Approach</span>
           </div>
 
-          <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 300, fontSize: 'clamp(2.8rem, 6vw, 5rem)', lineHeight: 1.05, color: '#F0EDE6', maxWidth: '18ch', marginBottom: '1.75rem', letterSpacing: '-0.01em' }}>
+          <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 300, fontSize: 'clamp(2.4rem, 4.5vw, 4rem)', lineHeight: 1.05, color: '#F0EDE6', letterSpacing: '-0.01em', marginBottom: '2rem' }}>
             A Methodology.<br/>Not a <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Menu</em><br/>of Services.
           </h1>
 
-          <p style={{ fontSize: '1rem', lineHeight: 1.75, color: 'rgba(240,237,230,0.55)', maxWidth: '54ch', marginBottom: '3rem', fontWeight: 300 }}>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.8, color: 'rgba(240,237,230,0.48)', maxWidth: '42ch', marginBottom: '2.5rem' }}>
             Aperture does not sell tactics. We build acquisition engines: the connected system that moves someone from never having heard of your business to becoming a customer who sends you more customers. Every engagement follows the same discipline. Every recommendation starts with a diagnosis.
           </p>
 
-          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'center', paddingBottom: '5rem' }}>
-            <Link href="#methodology" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.6rem', background: '#B8924A', color: '#F0EDE6', fontFamily: "'Inter', sans-serif", fontSize: '0.72rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', padding: '0.85rem 1.75rem', textDecoration: 'none', border: '1px solid #B8924A', transition: 'background 0.2s', cursor: 'pointer' }} onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = '#a07e40'; }} onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = '#B8924A'; }}>
+          <div style={{ display: 'flex', gap: '0.85rem', alignItems: 'center', flexWrap: 'wrap' }}>
+            <Link href="#methodology" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.55rem', background: '#B8924A', border: '1px solid #B8924A', color: '#F0EDE6', fontFamily: "'Inter', sans-serif", fontSize: '0.67rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', padding: '0.85rem 1.6rem', textDecoration: 'none', transition: 'background 0.2s, border-color 0.2s', cursor: 'pointer' }} onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = '#a07e40'; (e.currentTarget as HTMLElement).style.borderColor = '#a07e40'; }} onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = '#B8924A'; (e.currentTarget as HTMLElement).style.borderColor = '#B8924A'; }}>
               See the Methodology
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <path d="M2 7h10M8 3l4 4-4 4"/>
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <path d="M1.5 6.5h10M8 2.5l4 4-4 4"/>
               </svg>
             </Link>
-            <Link href="/contact?type=audit" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.6rem', background: 'transparent', color: 'rgba(240,237,230,0.6)', fontFamily: "'Inter', sans-serif", fontSize: '0.72rem', fontWeight: 400, letterSpacing: '0.14em', textTransform: 'uppercase', padding: '0.85rem 1.75rem', textDecoration: 'none', border: '1px solid rgba(240,237,230,0.2)', transition: 'border-color 0.2s, color 0.2s', cursor: 'pointer' }} onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.borderColor = 'rgba(240,237,230,0.5)'; (e.currentTarget as HTMLElement).style.color = '#F0EDE6'; }} onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.borderColor = 'rgba(240,237,230,0.2)'; (e.currentTarget as HTMLElement).style.color = 'rgba(240,237,230,0.6)'; }}>
+            <Link href="/contact?type=audit" style={{ display: 'inline-flex', alignItems: 'center', background: 'transparent', border: '1px solid rgba(240,237,230,0.2)', color: 'rgba(240,237,230,0.55)', fontFamily: "'Inter', sans-serif", fontSize: '0.67rem', fontWeight: 400, letterSpacing: '0.14em', textTransform: 'uppercase', padding: '0.85rem 1.6rem', textDecoration: 'none', transition: 'border-color 0.2s, color 0.2s', cursor: 'pointer' }} onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.borderColor = 'rgba(240,237,230,0.5)'; (e.currentTarget as HTMLElement).style.color = '#F0EDE6'; }} onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.borderColor = 'rgba(240,237,230,0.2)'; (e.currentTarget as HTMLElement).style.color = 'rgba(240,237,230,0.55)'; }}>
               Run the Revenue Leak Audit
             </Link>
           </div>
         </div>
 
-        {/* TICKER */}
-        <div style={{ borderTop: '1px solid rgba(240,237,230,0.08)', padding: '1.25rem 0', overflow: 'hidden', position: 'relative' }}>
+        {/* RIGHT: Logo - oversized, bleeding off edge */}
+        <div style={{ position: 'relative', overflow: 'hidden', height: '100%', minHeight: '400px' }}>
+          <div style={{ position: 'absolute', width: '115%', right: '-14%', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none', zIndex: 0 }}>
+            <svg viewBox="0 0 500 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Aperture logo mark" style={{ width: '100%', height: 'auto', display: 'block' }}>
+              <title>Aperture logo</title>
+              {/* Crosshair guide lines */}
+              <line x1="250" y1="12" x2="250" y2="500" stroke="#F0EDE6" strokeWidth="0.4" opacity="0.08"/>
+              <line x1="12" y1="250" x2="488" y2="250" stroke="#F0EDE6" strokeWidth="0.4" opacity="0.08"/>
+              {/* Outer ghost ring */}
+              <circle cx="250" cy="250" r="228" fill="none" stroke="#F0EDE6" strokeWidth="0.5" opacity="0.09"/>
+              {/* Main ring */}
+              <circle cx="250" cy="250" r="160" fill="none" stroke="#F0EDE6" strokeWidth="1" opacity="0.72"/>
+              {/* Inner ghost ring */}
+              <circle cx="250" cy="250" r="96" fill="none" stroke="#F0EDE6" strokeWidth="0.5" opacity="0.09"/>
+              {/* Brass arc: 12 o'clock (250, 22) to 3 o'clock (478, 250) */}
+              <path d="M 250 22 A 228 228 0 0 1 478 250" fill="none" stroke="#B8924A" strokeWidth="15" strokeLinecap="round" opacity="0.95"/>
+              {/* Brass arc shadow */}
+              <path d="M 250 26 A 224 224 0 0 1 474 250" fill="none" stroke="#7A5C28" strokeWidth="2" strokeLinecap="round" opacity="0.28"/>
+              {/* Centre dot */}
+              <circle cx="250" cy="250" r="5.5" fill="#B8924A" opacity="0.72"/>
+              {/* APERTURE wordmark */}
+              <text x="250" y="520" fontFamily="Inter, system-ui, sans-serif" fontWeight="300" fontSize="28" fill="#F0EDE6" textAnchor="middle" letterSpacing="14" opacity="0.88">APERTURE</text>
+            </svg>
+          </div>
+        </div>
+
+        {/* Ticker at bottom */}
+        <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, borderTop: '1px solid rgba(240,237,230,0.08)', padding: '1.25rem 0', overflow: 'hidden', zIndex: 1 }}>
           <div style={{ display: 'flex', gap: '4rem', whiteSpace: 'nowrap', animation: 'ticker 28s linear infinite' }}>
-            <span style={{ fontSize: '0.65rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(240,237,230,0.25)', fontWeight: 400, flexShrink: 0 }}>
+            <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.65rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(240,237,230,0.25)', fontWeight: 400, flexShrink: 0 }}>
               Awareness <span style={{ color: 'rgba(184,146,74,0.5)', margin: '0 1.5rem' }}>→</span> Acquisition <span style={{ color: 'rgba(184,146,74,0.5)', margin: '0 1.5rem' }}>→</span> Activation <span style={{ color: 'rgba(184,146,74,0.5)', margin: '0 1.5rem' }}>→</span> Amplification
             </span>
-            <span style={{ fontSize: '0.65rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(240,237,230,0.25)', fontWeight: 400, flexShrink: 0 }}>
+            <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.65rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'rgba(240,237,230,0.25)', fontWeight: 400, flexShrink: 0 }}>
               Prospect <span style={{ color: 'rgba(184,146,74,0.5)', margin: '0 1.5rem' }}>→</span> Visitor <span style={{ color: 'rgba(184,146,74,0.5)', margin: '0 1.5rem' }}>→</span> Lead <span style={{ color: 'rgba(184,146,74,0.5)', margin: '0 1.5rem' }}>→</span> Customer <span style={{ color: 'rgba(184,146,74,0.5)', margin: '0 1.5rem' }}>→</span> Promoter
             </span>
           </div>
-          <style>{`@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }`}</style>
         </div>
       </section>
 
