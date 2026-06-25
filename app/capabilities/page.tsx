@@ -102,8 +102,8 @@ export default function CapabilitiesPage() {
             <span style={{ fontSize: '0.68rem', fontWeight: 500, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#B8924A' }}>Capabilities</span>
           </div>
 
-          <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 300, fontSize: 'clamp(2.8rem, 6vw, 5.2rem)', lineHeight: 1.05, color: '#F0EDE6', maxWidth: '16ch', marginBottom: '1.75rem', letterSpacing: '-0.01em' }}>
-            Stop Buying Tactics. Start<br/>Building <em style={{ fontStyle: 'italic', color: '#B8924A' }}>A System.</em>
+          <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 300, fontSize: 'clamp(2.8rem, 6vw, 5.2rem)', lineHeight: 1.05, color: '#F0EDE6', maxWidth: '20ch', marginBottom: '1.75rem', letterSpacing: '-0.01em' }}>
+            Stop Buying Tactics. Start Building<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>A System.</em>
           </h1>
 
           <p style={{ fontSize: '1rem', lineHeight: 1.7, color: '#F0EDE6', maxWidth: '52ch', marginBottom: '3rem', fontWeight: 300 }}>
