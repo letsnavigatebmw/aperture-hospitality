@@ -7,7 +7,7 @@ export default function Nav() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
-    { label: 'How We Work', href: '/how-we-work' },
+    { label: 'Approach', href: '/how-we-work' },
     { label: 'Capabilities', href: '/capabilities' },
     { label: 'AI Solutions', href: '/ai-solutions' },
     { label: 'Intelligence', href: '/data-intelligence' },

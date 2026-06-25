@@ -1,5 +1,6 @@
 'use client'
 
+import Nav from '@/components/Nav'
 import { useState } from 'react'
 
 export default function WorkplaceKitPage() {
@@ -34,6 +35,7 @@ export default function WorkplaceKitPage() {
 
   return (
     <>
+      <Nav />
       <style>{`
         :root {
           --ink: #1C1A17; --parchment: #F0EDE6; --parchment2: #E8E4DB;
@@ -92,7 +94,7 @@ export default function WorkplaceKitPage() {
               <a href="/contact?product=workspace-kit" style={{ display: 'block', textAlign: 'center', padding: '1.5rem 2rem', background: '#1C1A17', color: '#FFFFFF', border: '1.5px solid #B8924A', width: '100%', boxSizing: 'border-box', borderRadius: '8px', textDecoration: 'none', transition: 'all 0.3s', marginBottom: '1rem', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#B8924A'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#1C1A17'; }}>
                 <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', lineHeight: 1.2 }}>Get The Workspace Kit - $1,497</div>
               </a>
-              <a href="/contact?product=foundation-library" style={{ display: 'block', textAlign: 'center', padding: '1.5rem 1.5rem', background: 'transparent', color: 'var(--muted)', border: '2px solid #3a3733', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = 'var(--dark2)'; e.currentTarget.style.color = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = 'var(--muted)'; }}>
+              <a href="https://revenuefactory.com/ai-marketing-workspace" target="_blank" rel="noopener noreferrer" style={{ display: 'block', textAlign: 'center', padding: '1.5rem 1.5rem', background: 'transparent', color: 'var(--muted)', border: '2px solid #3a3733', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = 'var(--dark2)'; e.currentTarget.style.color = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = 'var(--muted)'; }}>
                 Start with Foundation Library only — $297
               </a>
             </div>
@@ -218,29 +220,22 @@ export default function WorkplaceKitPage() {
         </div>
       </section>
 
-      {/* FINAL CTA */}
-      <section style={{ padding: 'clamp(5rem,10vw,8rem) 0', background: 'var(--ink)', borderBottom: '2px solid #3a3733' }}>
-        <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'center' }}>
-            <div>
-              <h2 style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: 'clamp(1.75rem,3vw,2.75rem)', fontWeight: 300, lineHeight: 1.15, color: '#F0EDE6', marginBottom: '1.5rem' }}>
-                Stop Rebuilding From Scratch. Start<br/><em style={{ fontStyle: 'italic', color: 'var(--brass)' }}>Running A System.</em>
-              </h2>
-              <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6' }}>
-                Every week you operate without a marketing foundation, the leak gets bigger. The Hospitality Marketing Workspace Kit fixes the foundation — one time.
-              </p>
-            </div>
-            <div style={{ background: 'var(--dark2)', border: '1px solid #3a3733', padding: '3rem' }}>
-              <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--brass)', marginBottom: '1.5rem' }}>Hospitality Marketing Workspace Kit</div>
-              <div style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: '3rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1, marginBottom: '0.25rem' }}>$1,497</div>
-              <div style={{ fontSize: '0.8125rem', fontWeight: 300, color: 'var(--muted)', marginBottom: '2rem', paddingBottom: '2rem', borderBottom: '2px solid #3a3733' }}>One-time setup fee. No subscription. No monthly retainer.</div>
-              <a href="https://request.revenuefactory.com/widget/bookings/ai-employee-convo" target="_blank" rel="noopener noreferrer" style={{ display: 'block', textAlign: 'center', padding: '1.5rem 2rem', background: '#1C1A17', color: '#FFFFFF', border: '1.5px solid #B8924A', width: '100%', boxSizing: 'border-box', borderRadius: '8px', textDecoration: 'none', transition: 'all 0.3s', marginBottom: '1rem', cursor: 'pointer' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#B8924A'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#1C1A17'; }}>
-                <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', lineHeight: 1.2 }}>Get The Workspace Kit - $1,497</div>
-              </a>
-              <a href="/contact?product=foundation-library" style={{ display: 'block', textAlign: 'center', padding: '1.5rem 1.5rem', background: 'transparent', color: 'var(--muted)', border: '2px solid #3a3733', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', textDecoration: 'none', cursor: 'pointer', borderRadius: '8px' }} onMouseEnter={(e) => { e.currentTarget.style.background = 'var(--dark2)'; e.currentTarget.style.color = '#F0EDE6'; }} onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = 'var(--muted)'; }}>
-                Start with Foundation Library only — $297
-              </a>
-            </div>
+      {/* PRICING FOOTER */}
+      <section style={{ padding: 'clamp(4rem,8vw,6rem) clamp(1.5rem, 5vw, 4rem)', background: '#1C1A17', borderTop: '2px solid #3a3733' }}>
+        <div style={{ maxWidth: '1140px', margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+          <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--brass)', marginBottom: '2rem' }}>Hospitality Marketing Workspace Kit</div>
+          
+          <div style={{ fontFamily: "'Cormorant Garamond',Georgia,serif", fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 300, color: '#F0EDE6', lineHeight: 1, marginBottom: '0.75rem' }}>$1,497</div>
+          
+          <div style={{ fontSize: '0.875rem', fontWeight: 300, color: 'var(--muted)', marginBottom: '3rem' }}>One-time setup fee. No subscription. No monthly retainer.</div>
+          
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', maxWidth: '320px', width: '100%' }}>
+            <a href="https://request.revenuefactory.com/widget/bookings/ai-employee-convo" target="_blank" rel="noopener noreferrer" style={{ display: 'block', textAlign: 'center', padding: '1.5rem 2rem', background: 'transparent', color: '#B8924A', border: '1.5px solid #B8924A', width: '100%', boxSizing: 'border-box', borderRadius: '0px', textDecoration: 'none', transition: 'all 0.3s', cursor: 'pointer', fontFamily: "'Inter', sans-serif", fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.16em', textTransform: 'uppercase', lineHeight: 1.2 }} onMouseEnter={(e) => { e.currentTarget.style.background = '#B8924A'; e.currentTarget.style.color = '#1C1A17'; }} onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#B8924A'; }}>
+              Get The Workspace Kit - $1,497
+            </a>
+            <a href="https://revenuefactory.com/ai-marketing-workspace" target="_blank" rel="noopener noreferrer" style={{ display: 'block', textAlign: 'center', padding: '1.5rem 2rem', background: 'transparent', color: 'var(--muted)', border: '1.5px solid #3a3733', width: '100%', boxSizing: 'border-box', borderRadius: '0px', textDecoration: 'none', cursor: 'pointer', fontFamily: "'Inter', sans-serif", fontSize: '0.7rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', lineHeight: 1.2, transition: 'all 0.3s' }} onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#B8924A'; e.currentTarget.style.color = '#B8924A'; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#3a3733'; e.currentTarget.style.color = 'var(--muted)'; }}>
+              Start With Foundation Library Only — $297
+            </a>
           </div>
         </div>
       </section>

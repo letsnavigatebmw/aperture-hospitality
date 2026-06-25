@@ -157,6 +157,22 @@ export default function InsightsPage() {
           {/* Divider */}
           <div style={{ width: '100%', height: '1px', background: 'rgba(184,146,74,0.2)', marginBottom: '3rem' }} />
 
+          {/* Opening Quote */}
+          <div style={{ marginBottom: '5rem', paddingBottom: '4rem', borderBottom: '1px solid rgba(184,146,74,0.2)' }}>
+            <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)', fontWeight: 300, lineHeight: 1.7, color: '#F0EDE6', marginBottom: '1.25rem' }}>
+              The defining challenge of the Industrial Age was efficiency.
+            </p>
+            <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)', fontWeight: 300, lineHeight: 1.7, color: '#F0EDE6', marginBottom: '1.25rem' }}>
+              The defining challenge of the Information Age was access to knowledge.
+            </p>
+            <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)', fontWeight: 300, lineHeight: 1.7, color: '#F0EDE6', marginBottom: '1.25rem' }}>
+              The defining challenge of the AI Age will be <em style={{ fontStyle: 'italic', color: '#B8924A' }}>organizational intelligence.</em>
+            </p>
+            <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)', fontWeight: 300, lineHeight: 1.7, color: '#F0EDE6', marginTop: '2rem' }}>
+              The companies that thrive will not be those with the most data or the most AI. They will be the ones best designed to sense, decide, align, execute, and learn as a single intelligent system.
+            </p>
+          </div>
+
           {/* Sales Strategy */}
           <div style={{ marginBottom: '5rem' }}>
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 300, color: '#F0EDE6', marginBottom: '2rem' }}>

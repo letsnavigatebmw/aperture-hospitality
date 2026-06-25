@@ -523,7 +523,7 @@ export default function AISolutionsPage() {
                 Ready to Install the Fix?
               </div>
               <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, color: '#F0EDE6', marginBottom: '1.5rem' }}>
-                Stop Rebuilding From Scratch. Start<br/>Running A <em style={{ fontStyle: 'italic', color: '#B8924A' }}>System.</em>
+                Stop Rebuilding From Scratch.<br/>Start Running A <em style={{ fontStyle: 'italic', color: '#B8924A' }}>System.</em>
               </h2>
               <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '1.5rem' }}>
                 Every week you operate without a marketing foundation, the leak gets bigger. Standards stay in your head. New content starts from zero. AI tools produce output that sounds like everyone else's property. Team members guess. Deals slip through because the follow-up copy wasn't ready.
