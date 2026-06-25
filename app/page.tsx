@@ -125,28 +125,30 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* RIGHT: Logo centered */}
-        <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-          <svg viewBox="0 0 380 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Aperture logo mark" style={{ width: '100%', maxWidth: '380px', display: 'block' }}>
-            <title>Aperture logo</title>
-            {/* Crosshair guide lines */}
-            <line x1="190" y1="12" x2="190" y2="345" stroke="#F0EDE6" strokeWidth="0.4" opacity="0.08"/>
-            <line x1="12" y1="190" x2="368" y2="190" stroke="#F0EDE6" strokeWidth="0.4" opacity="0.08"/>
-            {/* Outer ghost ring */}
-            <circle cx="190" cy="190" r="172" fill="none" stroke="#F0EDE6" strokeWidth="0.5" opacity="0.09"/>
-            {/* Main ring */}
-            <circle cx="190" cy="190" r="120" fill="none" stroke="#F0EDE6" strokeWidth="1" opacity="0.72"/>
-            {/* Inner ghost ring */}
-            <circle cx="190" cy="190" r="72" fill="none" stroke="#F0EDE6" strokeWidth="0.5" opacity="0.09"/>
-            {/* Brass arc */}
-            <path d="M 190 18 A 172 172 0 0 1 362 190" fill="none" stroke="#B8924A" strokeWidth="11" strokeLinecap="round" opacity="0.95"/>
-            {/* Brass arc shadow */}
-            <path d="M 190 22 A 168 168 0 0 1 358 190" fill="none" stroke="#7A5C28" strokeWidth="1.5" strokeLinecap="round" opacity="0.28"/>
-            {/* Centre dot */}
-            <circle cx="190" cy="190" r="4" fill="#B8924A" opacity="0.72"/>
-            {/* APERTURE wordmark */}
-            <text x="190" y="376" fontFamily="Inter, system-ui, sans-serif" fontWeight="300" fontSize="22" fill="#F0EDE6" textAnchor="middle" letterSpacing="10" opacity="0.88">APERTURE</text>
-          </svg>
+        {/* RIGHT: Logo - oversized, bleeding off edge */}
+        <div style={{ position: 'relative', overflow: 'hidden', height: '100%', minHeight: '400px' }}>
+          <div style={{ position: 'absolute', width: '115%', right: '-14%', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none', zIndex: 0 }}>
+            <svg viewBox="0 0 500 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Aperture logo mark" style={{ width: '100%', height: 'auto', display: 'block' }}>
+              <title>Aperture logo</title>
+              {/* Crosshair guide lines */}
+              <line x1="250" y1="15" x2="250" y2="475" stroke="#F0EDE6" strokeWidth="0.5" opacity="0.07"/>
+              <line x1="15" y1="250" x2="485" y2="250" stroke="#F0EDE6" strokeWidth="0.5" opacity="0.07"/>
+              {/* Outer ghost ring */}
+              <circle cx="250" cy="250" r="228" fill="none" stroke="#F0EDE6" strokeWidth="0.6" opacity="0.08"/>
+              {/* Main ring */}
+              <circle cx="250" cy="250" r="160" fill="none" stroke="#F0EDE6" strokeWidth="1.1" opacity="0.68"/>
+              {/* Inner ghost ring */}
+              <circle cx="250" cy="250" r="96" fill="none" stroke="#F0EDE6" strokeWidth="0.5" opacity="0.08"/>
+              {/* Brass arc: 12 o'clock (250, 22) to 3 o'clock (478, 250) */}
+              <path d="M 250 22 A 228 228 0 0 1 478 250" fill="none" stroke="#B8924A" strokeWidth="14" strokeLinecap="round" opacity="0.95"/>
+              {/* Brass arc shadow */}
+              <path d="M 250 27 A 223 223 0 0 1 473 250" fill="none" stroke="#7A5C28" strokeWidth="2" strokeLinecap="round" opacity="0.25"/>
+              {/* Centre dot */}
+              <circle cx="250" cy="250" r="5" fill="#B8924A" opacity="0.7"/>
+              {/* APERTURE wordmark */}
+              <text x="250" y="516" fontFamily="Inter, system-ui, sans-serif" fontWeight="300" fontSize="26" fill="#F0EDE6" textAnchor="middle" letterSpacing="12" opacity="0.85">APERTURE</text>
+            </svg>
+          </div>
         </div>
 
         {/* Ticker at bottom */}
