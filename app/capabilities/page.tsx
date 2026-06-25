@@ -83,26 +83,15 @@ export default function CapabilitiesPage() {
       <style>{mobileStyles}</style>
       <Nav />
 
-      {/* HERO */}
-      <section style={{ background: '#1C1A17', padding: 'clamp(7rem, 10vw, 8rem) clamp(1.5rem, 5vw, 4rem)', position: 'relative', overflow: 'hidden' }}>
-        {/* Aperture Logo */}
-        <div style={{ position: 'absolute', top: '100px', left: '50%', transform: 'translateX(-50%)', width: '240px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none', zIndex: 0 }}>
-          <div style={{ width: '240px', height: '240px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.5rem' }}>
-            <svg viewBox="0 0 200 200" width="240" height="240" fill="none" xmlns="http://www.w3.org/2000/svg">
-              {/* Main circle */}
-              <circle cx="100" cy="100" r="80" stroke="rgba(184,146,74,0.3)" strokeWidth="2"/>
-              {/* Brass accent arc - flowing curve on right side */}
-              <path d="M 150 40 A 85 85 0 0 1 160 160" stroke="#B8924A" strokeWidth="7" strokeLinecap="round" fill="none"/>
-              {/* Center dot */}
-              <circle cx="100" cy="100" r="2.5" fill="#B8924A"/>
-            </svg>
-          </div>
-          <div style={{ fontSize: '0.5rem', fontWeight: 400, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'rgba(240,237,230,0.35)', textAlign: 'center' }}>
-            Aperture
-          </div>
-        </div>
+      <style>{`@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }`}</style>
 
-        <div style={{ maxWidth: '1140px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
+      {/* HERO */}
+      <section style={{ background: '#1C1A17', minHeight: '100vh', display: 'grid', gridTemplateColumns: '1fr 1fr', alignItems: 'center', padding: 'clamp(5rem, 8vw, 7rem) clamp(1.5rem, 5vw, 4rem)', gap: '3rem', position: 'relative', overflow: 'hidden' }}>
+        {/* Subtle outer arc watermark */}
+        <div style={{ position: 'absolute', top: '-200px', right: '-200px', width: '600px', height: '600px', borderRadius: '50%', border: '1px solid rgba(184,146,74,0.07)', pointerEvents: 'none' }}></div>
+
+        {/* LEFT: Copy */}
+        <div style={{ position: 'relative', zIndex: 1 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '2rem' }}>
             <div style={{ width: '2px', height: '1.25rem', background: '#B8924A', flexShrink: 0 }}></div>
             <span style={{ fontSize: '0.68rem', fontWeight: 500, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#B8924A' }}>Capabilities</span>
@@ -126,6 +115,32 @@ export default function CapabilitiesPage() {
             <a href="#engines" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.6rem', background: 'transparent', color: 'rgba(240,237,230,0.6)', fontFamily: "'Inter', sans-serif", fontSize: '0.72rem', fontWeight: 400, letterSpacing: '0.14em', textTransform: 'uppercase', padding: '0.85rem 1.75rem', textDecoration: 'none', border: '1px solid rgba(240,237,230,0.2)', transition: 'border-color 0.2s, color 0.2s', cursor: 'pointer' }} onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.borderColor = 'rgba(240,237,230,0.5)'; (e.currentTarget as HTMLElement).style.color = '#F0EDE6'; }} onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.borderColor = 'rgba(240,237,230,0.2)'; (e.currentTarget as HTMLElement).style.color = 'rgba(240,237,230,0.6)'; }}>
               See the Four Engines
             </a>
+          </div>
+        </div>
+
+        {/* RIGHT: Logo - oversized, bleeding off edge */}
+        <div style={{ position: 'relative', overflow: 'hidden', height: '100%', minHeight: '400px' }}>
+          <div style={{ position: 'absolute', width: '115%', right: '-14%', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none', zIndex: 0 }}>
+            <svg viewBox="0 0 500 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Aperture logo mark" style={{ width: '100%', height: 'auto', display: 'block' }}>
+              <title>Aperture logo</title>
+              {/* Crosshair guide lines */}
+              <line x1="250" y1="12" x2="250" y2="500" stroke="#F0EDE6" strokeWidth="0.4" opacity="0.08"/>
+              <line x1="12" y1="250" x2="488" y2="250" stroke="#F0EDE6" strokeWidth="0.4" opacity="0.08"/>
+              {/* Outer ghost ring */}
+              <circle cx="250" cy="250" r="228" fill="none" stroke="#F0EDE6" strokeWidth="0.5" opacity="0.09"/>
+              {/* Main ring */}
+              <circle cx="250" cy="250" r="160" fill="none" stroke="#F0EDE6" strokeWidth="1" opacity="0.72"/>
+              {/* Inner ghost ring */}
+              <circle cx="250" cy="250" r="96" fill="none" stroke="#F0EDE6" strokeWidth="0.5" opacity="0.09"/>
+              {/* Brass arc: 12 o'clock (250, 22) to 3 o'clock (478, 250) */}
+              <path d="M 250 22 A 228 228 0 0 1 478 250" fill="none" stroke="#B8924A" strokeWidth="15" strokeLinecap="round" opacity="0.95"/>
+              {/* Brass arc shadow */}
+              <path d="M 250 26 A 224 224 0 0 1 474 250" fill="none" stroke="#7A5C28" strokeWidth="2" strokeLinecap="round" opacity="0.28"/>
+              {/* Centre dot */}
+              <circle cx="250" cy="250" r="5.5" fill="#B8924A" opacity="0.72"/>
+              {/* APERTURE wordmark */}
+              <text x="250" y="520" fontFamily="Inter, system-ui, sans-serif" fontWeight="300" fontSize="28" fill="#F0EDE6" textAnchor="middle" letterSpacing="14" opacity="0.88">APERTURE</text>
+            </svg>
           </div>
         </div>
       </section>
