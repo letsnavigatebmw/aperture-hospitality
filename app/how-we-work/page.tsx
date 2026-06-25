@@ -270,7 +270,7 @@ export default function HowWeWorkPage() {
               The Thinking
             </div>
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 300, color: '#1C1A17', lineHeight: 1.1, marginBottom: '1.5rem' }}>
-              Why Most<br/>Marketing<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Does not Work.</em>
+              Why Most Marketing<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Does not Work.</em>
             </h2>
             <p style={{ fontSize: '0.9rem', color: '#6B6760', lineHeight: 1.8, fontWeight: 300 }}>
               The problem is not that small businesses do not try. It is that they buy tactics individually and expect them to work collectively. An ad here, a landing page there, an email tool they barely use. None of it connects. None of it compounds.
@@ -461,7 +461,7 @@ export default function HowWeWorkPage() {
               Ready When You Are
             </div>
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.2rem, 4vw, 3.6rem)', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.1, marginBottom: '1.25rem' }}>
-              Start With<br/>the <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Audit.</em>
+              Start With the <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Audit.</em>
             </h2>
             <p style={{ fontSize: '0.9rem', color: 'rgba(240,237,230,0.5)', lineHeight: 1.75, fontWeight: 300, marginBottom: '1rem' }}>
               The Revenue Leak Audit is how every Aperture engagement begins. It takes an hour. It is free for qualified businesses. You will leave with a clear diagnosis of where your acquisition engine is breaking and which machine to build first.

@@ -155,7 +155,7 @@ export default function CapabilitiesPage() {
         <div style={{ maxWidth: '1140px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'start' }} className="problem-inner">
           <div>
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.15, marginBottom: '1.25rem' }}>
-              You Have<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Tactics.</em> You<br/>Need a System.
+              You Have <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Tactics.</em> You Need<br/>a System.
             </h2>
             <p style={{ color: '#F0EDE6', fontSize: '0.95rem', lineHeight: 1.75, fontWeight: 300, marginTop: '1.5rem' }}>
               Tactics are the things you buy hoping something will move. A system is what makes everything move together. The difference between the two is not effort. It is architecture.
@@ -181,7 +181,7 @@ export default function CapabilitiesPage() {
               The Framework
             </span>
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3.4rem)', fontWeight: 300, color: '#1C1A17', lineHeight: 1.1, marginBottom: '1rem', marginTop: '1rem' }}>
-              Every Business Runs<br/>the <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Same Sequence.</em>
+              Every Business Runs the <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Same Sequence.</em>
             </h2>
             <p style={{ fontSize: '0.95rem', color: '#6B6760', maxWidth: '54ch', margin: '0 auto', lineHeight: 1.7, fontWeight: 300 }}>
               The question is whether yours does it on purpose or by accident. Aperture maps your customer journey, finds where it breaks, and builds the system to move people through it.
@@ -220,7 +220,7 @@ export default function CapabilitiesPage() {
               The Four Engines
             </span>
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3.2rem)', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.1 }}>
-              Four Machines.<br/>One <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Acquisition</em><br/>Engine.
+              Four Machines. One<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Acquisition</em> Engine.
             </h2>
           </div>
 
@@ -264,7 +264,7 @@ export default function CapabilitiesPage() {
               How It Works
             </span>
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3.2rem)', fontWeight: 300, color: '#1C1A17', lineHeight: 1.1, marginTop: '1rem' }}>
-              Audit First.<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Recommendations</em><br/>Second. Build Third.
+              <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Audit</em> First. <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Recommendations</em> Second.<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Build</em> Third.
             </h2>
           </div>
 
