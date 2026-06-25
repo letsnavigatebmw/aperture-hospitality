@@ -92,6 +92,11 @@ export default function CapabilitiesPage() {
 
         {/* LEFT: Copy */}
         <div style={{ position: 'relative', zIndex: 1 }}>
+          {/* APERTURE wordmark at top with extended letter-spacing */}
+          <div style={{ marginBottom: '4.5rem' }}>
+            <span style={{ fontFamily: "'Inter', system-ui, sans-serif", fontSize: '2.2rem', fontWeight: 300, letterSpacing: '0.42em', textTransform: 'uppercase', color: '#F0EDE6', display: 'block', lineHeight: 1.2 }}>Aperture</span>
+          </div>
+
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '2rem' }}>
             <div style={{ width: '2px', height: '1.25rem', background: '#B8924A', flexShrink: 0 }}></div>
             <span style={{ fontSize: '0.68rem', fontWeight: 500, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#B8924A' }}>Capabilities</span>
