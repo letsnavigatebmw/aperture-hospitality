@@ -97,6 +97,11 @@ export default function HomePage() {
 
         {/* LEFT: Copy */}
         <div style={{ position: 'relative', zIndex: 1 }}>
+          {/* APERTURE wordmark at top with extended letter-spacing */}
+          <div style={{ marginBottom: '3.5rem' }}>
+            <span style={{ fontFamily: "'Inter', system-ui, sans-serif", fontSize: '0.85rem', fontWeight: 300, letterSpacing: '0.45em', textTransform: 'uppercase', color: '#F0EDE6', display: 'block', tracking: 'wider' }}>Aperture</span>
+          </div>
+
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '2rem' }}>
             <div style={{ width: '2rem', height: '1px', background: '#B8924A', flexShrink: 0 }}></div>
             <span style={{ fontFamily: "'Inter', system-ui, sans-serif", fontSize: '0.62rem', fontWeight: 400, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#B8924A' }}>Strategy. Intelligence. Automation.</span>
@@ -145,8 +150,6 @@ export default function HomePage() {
               <path d="M 250 27 A 223 223 0 0 1 473 250" fill="none" stroke="#7A5C28" strokeWidth="2" strokeLinecap="round" opacity="0.25"/>
               {/* Centre dot */}
               <circle cx="250" cy="250" r="5" fill="#B8924A" opacity="0.7"/>
-              {/* APERTURE wordmark */}
-              <text x="250" y="516" fontFamily="Inter, system-ui, sans-serif" fontWeight="300" fontSize="26" fill="#F0EDE6" textAnchor="middle" letterSpacing="12" opacity="0.85">APERTURE</text>
             </svg>
           </div>
         </div>
