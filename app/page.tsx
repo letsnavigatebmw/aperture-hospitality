@@ -99,7 +99,7 @@ export default function HomePage() {
         <div style={{ position: 'relative', zIndex: 1 }}>
           {/* APERTURE wordmark at top with extended letter-spacing */}
           <div style={{ marginBottom: '3.5rem' }}>
-            <span style={{ fontFamily: "'Inter', system-ui, sans-serif", fontSize: '0.85rem', fontWeight: 300, letterSpacing: '0.45em', textTransform: 'uppercase', color: '#F0EDE6', display: 'block', tracking: 'wider' }}>Aperture</span>
+            <span style={{ fontFamily: "'Inter', system-ui, sans-serif", fontSize: '0.85rem', fontWeight: 300, letterSpacing: '0.45em', textTransform: 'uppercase', color: '#F0EDE6', display: 'block' }}>Aperture</span>
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '2rem' }}>
