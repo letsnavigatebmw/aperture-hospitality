@@ -257,7 +257,7 @@ export default function PhilosophyPage() {
             
             <div style={{ padding: 'clamp(2.5rem, 5vw, 4rem)', background: '#2e2b26', borderRight: '1px solid #B8924A', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
               <div>
-                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(4rem, 8vw, 6rem)', fontWeight: 300, color: '#B8924A', lineHeight: 1, marginBottom: '2rem', opacity: 0.3 }}>01</div>
+                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.5rem, 4vw, 3rem)', fontWeight: 300, color: '#B8924A', lineHeight: 1, marginBottom: '2rem' }}>Chapter 1</div>
                 <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.5rem, 2vw, 1.875rem)', fontWeight: 300, lineHeight: 1.3, color: '#F0EDE6', marginBottom: '1.5rem' }}>
                   Every Organization Is Intelligent. Very Few Are Designed <span style={{ color: '#B8924A', fontStyle: 'italic' }}>to Think.</span>
                 </h3>
