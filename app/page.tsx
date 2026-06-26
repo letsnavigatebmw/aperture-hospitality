@@ -183,7 +183,7 @@ export default function HomePage() {
               The Challenge
             </div>
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.1, marginBottom: '1.5rem' }}>
-              The Problem<br/>Is not <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Data.</em><br/>It is Clarity.
+              The Problem Is not <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Data.</em> It is Clarity.
             </h2>
             <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.15rem', fontStyle: 'italic', color: 'rgba(240,237,230,0.5)', fontWeight: 300, lineHeight: 1.6, marginBottom: '1.25rem' }}>
               Most companies are not suffering from a lack of data. They are suffering from a lack of clarity.
@@ -222,7 +222,7 @@ export default function HomePage() {
               Industries We Serve
             </div>
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 300, color: '#1C1A17', lineHeight: 1.1, marginBottom: '0.75rem' }}>
-              Built for<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Your Industry.</em>
+              Built for <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Your Industry.</em>
             </h2>
             <p style={{ fontSize: '0.875rem', color: '#6B6760', maxWidth: '48ch', margin: '0 auto', lineHeight: 1.7, fontWeight: 300 }}>
               Aperture brings domain expertise across the sectors where data, strategy, and commercial performance intersect most directly.
@@ -273,7 +273,7 @@ export default function HomePage() {
                 What We Do
               </div>
               <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3.2rem)', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.1 }}>
-                Four Practice<br/>Areas. One<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Connected System.</em>
+                Four Practice Areas. One <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Connected System.</em>
               </h2>
             </div>
             <p style={{ fontSize: '0.875rem', color: 'rgba(240,237,230,0.4)', lineHeight: 1.8, fontWeight: 300 }}>
@@ -313,7 +313,7 @@ export default function HomePage() {
                 What Clients Say
               </div>
               <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 300, color: '#1C1A17', lineHeight: 1.1 }}>
-                Results,<br/>Not a <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Deck.</em>
+                Results, Not a <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Deck.</em>
               </h2>
             </div>
             <p style={{ fontSize: '0.875rem', color: '#6B6760', lineHeight: 1.8, fontWeight: 300 }}>
@@ -373,7 +373,7 @@ export default function HomePage() {
           <div>
             <div style={{ fontSize: '0.67rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#6B6760', marginBottom: '2rem' }}>Contact</div>
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', fontWeight: 300, color: '#1C1A17', lineHeight: 1.1, marginBottom: '1.5rem' }}>
-              Let us Talk About<br/>Your <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Business.</em>
+              Let us Talk About Your <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Business.</em>
             </h2>
             <p style={{ fontSize: '0.875rem', color: '#6B6760', lineHeight: 1.8, fontWeight: 300, marginBottom: '2.5rem' }}>
               Tell us a little about where you are and what you are working on. Brandon reviews every submission personally and follows up within one business day.
