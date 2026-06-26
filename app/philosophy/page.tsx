@@ -74,28 +74,20 @@ export default function PhilosophyPage() {
             </h2>
           </div>
 
-          <div>
-            <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.25rem, 2vw, 1.625rem)', fontWeight: 300, lineHeight: 1.45, color: '#1C1A17', fontStyle: 'italic', marginBottom: '1.5rem' }} className="reveal">
-              Twenty years ago, I believed businesses succeeded because they had better products, better marketing, or better leaders.
-            </p>
-            <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.85, color: '#1C1A17', marginBottom: '1.5rem' }} className="reveal reveal-delay-1">
-              Over the course of my career, I had the opportunity to work inside luxury hospitality companies, global consumer brands, technology startups, and real estate platforms. Every industry looked different. Every balance sheet looked different. Every customer looked different.
-            </p>
-            <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.85, color: '#1C1A17', marginBottom: '1.5rem' }} className="reveal reveal-delay-1">
-              Yet I kept encountering the same problem.
-            </p>
-            <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.85, color: '#1C1A17', marginBottom: '1.5rem' }} className="reveal reveal-delay-2">
-              Brilliant people. Good intentions. Endless effort.
-            </p>
-            <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.85, color: '#1C1A17', marginBottom: '1.5rem' }} className="reveal reveal-delay-2">
-              And organizations that somehow struggled to translate intelligence into coordinated action.
-            </p>
-            <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.85, color: '#1C1A17', marginBottom: '1.5rem' }} className="reveal reveal-delay-3">
-              At first, I thought these were isolated management problems — edge cases specific to a particular leader, a particular market, a particular moment in time.
-            </p>
-            <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.85, color: '#1C1A17' }} className="reveal reveal-delay-3">
-              Eventually, I realized I was looking at the same phenomenon wearing different clothes.
-            </p>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1.5rem' }}>
+            {[
+              'Twenty years ago, I believed businesses succeeded because they had better products, better marketing, or better leaders.',
+              'Over the course of my career, I had the opportunity to work inside luxury hospitality companies, global consumer brands, technology startups, and real estate platforms. Every industry looked different. Every balance sheet looked different. Every customer looked different.',
+              'Yet I kept encountering the same problem.',
+              'Brilliant people. Good intentions. Endless effort.',
+              'And organizations that somehow struggled to translate intelligence into coordinated action.',
+              'At first, I thought these were isolated management problems — edge cases specific to a particular leader, a particular market, a particular moment in time.',
+              'Eventually, I realized I was looking at the same phenomenon wearing different clothes.'
+            ].map((text, i) => (
+              <p key={i} style={{ fontSize: i === 0 ? 'clamp(1.25rem, 2vw, 1.625rem)' : '1.0625rem', fontWeight: 300, lineHeight: 1.85, color: '#1C1A17', margin: 0, fontStyle: i === 0 ? 'italic' : 'normal' }} className={`reveal ${i === 0 ? '' : `reveal-delay-${Math.min(i - 1, 3)}`}`}>
+                {text}
+              </p>
+            ))}
           </div>
         </div>
       </section>
@@ -110,7 +102,7 @@ export default function PhilosophyPage() {
 
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'start' }}>
             <div>
-              <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 300, lineHeight: 1.1, color: '#F0EDE6' }} className="reveal">
+              <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 300, lineHeight: 1.1, color: '#F0EDE6', margin: 0 }} className="reveal">
                 Organizational<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Intelligence.</em><br/>
                 <span style={{ fontSize: 'clamp(1rem, 1.5vw, 1.375rem)', fontStyle: 'normal', color: '#6B6760', fontWeight: 300, fontFamily: "'Inter', sans-serif", letterSpacing: 0, lineHeight: 1.5 }}>A new management philosophy<br/>for the AI era.</span>
               </h2>
@@ -128,28 +120,14 @@ export default function PhilosophyPage() {
                 Yet leaders consistently describe the same frustrations:
               </p>
               <ul style={{ margin: '2rem 0', borderTop: '1px solid #2e2b26', listStyle: 'none', paddingLeft: 0 }} className="reveal">
-                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '0.875rem 0', borderBottom: '1px solid #2e2b26', fontSize: '0.9375rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.5 }}>
-                  <span style={{ color: '#B8924A', flexShrink: 0, fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.125rem' }}>—</span>
-                  <span>We're not aligned.</span>
-                </li>
-                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '0.875rem 0', borderBottom: '1px solid #2e2b26', fontSize: '0.9375rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.5 }}>
-                  <span style={{ color: '#B8924A', flexShrink: 0, fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.125rem' }}>—</span>
-                  <span>Execution is inconsistent.</span>
-                </li>
-                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '0.875rem 0', borderBottom: '1px solid #2e2b26', fontSize: '0.9375rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.5 }}>
-                  <span style={{ color: '#B8924A', flexShrink: 0, fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.125rem' }}>—</span>
-                  <span>Everyone is busy, but progress feels slow.</span>
-                </li>
-                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '0.875rem 0', borderBottom: '1px solid #2e2b26', fontSize: '0.9375rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.5 }}>
-                  <span style={{ color: '#B8924A', flexShrink: 0, fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.125rem' }}>—</span>
-                  <span>Marketing and sales aren't on the same page.</span>
-                </li>
-                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '0.875rem 0', fontSize: '0.9375rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.5 }}>
-                  <span style={{ color: '#B8924A', flexShrink: 0, fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.125rem' }}>—</span>
-                  <span>We keep having the same conversations.</span>
-                </li>
+                {['We're not aligned.', 'Execution is inconsistent.', 'Everyone is busy, but progress feels slow.', 'Marketing and sales aren't on the same page.', 'We keep having the same conversations.'].map((item, i) => (
+                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '0.875rem 0', borderBottom: '1px solid #2e2b26', fontSize: '0.9375rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.5 }}>
+                    <span style={{ color: '#B8924A', flexShrink: 0, fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.125rem' }}>—</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
               </ul>
-              <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.125rem, 1.75vw, 1.375rem)', fontWeight: 300, lineHeight: 1.5, color: '#F0EDE6', fontStyle: 'italic', paddingTop: '1.5rem', borderTop: '1px solid #2e2b26', marginTop: '0.5rem' }} className="reveal">
+              <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.125rem, 1.75vw, 1.375rem)', fontWeight: 300, lineHeight: 1.5, color: '#F0EDE6', fontStyle: 'italic', paddingTop: '1.5rem', borderTop: '1px solid #2e2b26', marginTop: '0.5rem', margin: 0 }} className="reveal">
                 This is the paradox of modern organizations. As intelligence has increased, coordination has not kept pace. The defining constraint of the AI era is no longer access to information. It is the ability to transform distributed intelligence into <em style={{ fontStyle: 'normal', color: '#B8924A' }}>coordinated action.</em>
               </p>
             </div>
@@ -171,28 +149,20 @@ export default function PhilosophyPage() {
             </h2>
           </div>
 
-          <div>
-            <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.25rem, 2vw, 1.625rem)', fontWeight: 300, lineHeight: 1.45, color: '#1C1A17', fontStyle: 'italic', marginBottom: '2rem' }} className="reveal">
-              Most organizations aren't failing because they lack intelligence. They're failing because they can't coordinate it.
-            </p>
-            <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.85, color: '#1C1A17', marginBottom: '1.5rem' }} className="reveal reveal-delay-1">
-              The leaders I've worked with across hospitality, consumer brands, technology, and real estate are, almost without exception, intelligent, capable, and committed. They understand their markets. They've read the strategy books. They have opinions, data, and frameworks for everything.
-            </p>
-            <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.85, color: '#1C1A17', marginBottom: '1.5rem' }} className="reveal reveal-delay-1">
-              And yet their organizations move slowly. Decisions get relitigated. Functions operate at cross-purposes. The gap between what leadership intends and what the organization actually executes is wider than anyone is comfortable admitting.
-            </p>
-            <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.85, color: '#1C1A17', marginBottom: '1.5rem' }} className="reveal reveal-delay-2">
-              This is not a talent problem. It is not a strategy problem. It is not even a communication problem — most organizations communicate constantly.
-            </p>
-            <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.85, color: '#1C1A17', marginBottom: '1.5rem' }} className="reveal reveal-delay-2">
-              It is a <strong>commercial architecture problem.</strong>
-            </p>
-            <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.85, color: '#1C1A17', marginBottom: '1.5rem' }} className="reveal reveal-delay-3">
-              The organizations that consistently outperform their peers are not necessarily the ones with the best strategies or the most talented teams. They are the ones that have built the underlying architecture — the plans, processes, rhythms, and decision frameworks — that allow intelligence to become coordinated action.
-            </p>
-            <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.85, color: '#6B6760' }} className="reveal reveal-delay-3">
-              That architecture is what Aperture exists to build.
-            </p>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1.5rem' }}>
+            {[
+              { text: 'Most organizations aren't failing because they lack intelligence. They're failing because they can't coordinate it.', large: true },
+              { text: 'The leaders I've worked with across hospitality, consumer brands, technology, and real estate are, almost without exception, intelligent, capable, and committed. They understand their markets. They've read the strategy books. They have opinions, data, and frameworks for everything.' },
+              { text: 'And yet their organizations move slowly. Decisions get relitigated. Functions operate at cross-purposes. The gap between what leadership intends and what the organization actually executes is wider than anyone is comfortable admitting.' },
+              { text: 'This is not a talent problem. It is not a strategy problem. It is not even a communication problem — most organizations communicate constantly.' },
+              { text: 'It is a commercial architecture problem.', strong: true },
+              { text: 'The organizations that consistently outperform their peers are not necessarily the ones with the best strategies or the most talented teams. They are the ones that have built the underlying architecture — the plans, processes, rhythms, and decision frameworks — that allow intelligence to become coordinated action.' },
+              { text: 'That architecture is what Aperture exists to build.', muted: true }
+            ].map((item, i) => (
+              <p key={i} style={{ fontSize: item.large ? 'clamp(1.25rem, 2vw, 1.625rem)' : '1.0625rem', fontWeight: item.strong ? 700 : 300, lineHeight: 1.85, color: item.muted ? '#6B6760' : '#1C1A17', margin: 0, fontStyle: item.large ? 'italic' : 'normal' }} className={`reveal ${i > 0 ? `reveal-delay-${Math.min(i - 1, 3)}` : ''}`}>
+                {item.text}
+              </p>
+            ))}
           </div>
         </div>
       </section>
@@ -211,23 +181,68 @@ export default function PhilosophyPage() {
           </div>
 
           <div>
-            <div style={{ borderTop: '1px solid #D4CFC6', paddingTop: '2rem', marginBottom: '2.5rem' }} className="reveal">
-              <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '0.75rem' }}>Conviction 01</div>
-              <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.25rem, 2vw, 1.625rem)', fontWeight: 300, lineHeight: 1.45, color: '#1C1A17', marginBottom: '0.875rem', fontStyle: 'italic' }}>Strategy without a plan is noise.</p>
-              <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.85, color: '#1C1A17' }}>Every organization has a strategy. Very few have the plans, calendars, briefs, and decision frameworks that translate that strategy into something every function can act on. We build the bridge between intention and execution — not by adding complexity, but by removing ambiguity.</p>
-            </div>
+            {[
+              { num: '01', title: 'Strategy without a plan is noise.', desc: 'Every organization has a strategy. Very few have the plans, calendars, briefs, and decision frameworks that translate that strategy into something every function can act on. We build the bridge between intention and execution — not by adding complexity, but by removing ambiguity.' },
+              { num: '02', title: 'Coordination is a competitive advantage.', desc: 'In a world where every competitor has access to the same data, the same software, and the same talent pool, the ability to coordinate faster and more effectively is one of the few genuine differentiators left. We treat organizational alignment not as a management hygiene issue but as a strategic capability worth building deliberately.' },
+              { num: '03', title: 'Systems outlast effort.', desc: 'Extraordinary individual effort can compensate for structural gaps for a while. Eventually it cannot. The organizations that scale sustainably are the ones that replace heroic execution with repeatable systems — plans, rhythms, and frameworks that produce consistent results regardless of who is in the room on any given day.' },
+            ].map((item, i) => (
+              <div key={i} style={{ borderTop: '1px solid #D4CFC6', paddingTop: '2rem', marginBottom: '2.5rem' }} className={`reveal ${i > 0 ? `reveal-delay-${i}` : ''}`}>
+                <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '0.75rem' }}>Conviction {item.num}</div>
+                <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.25rem, 2vw, 1.625rem)', fontWeight: 300, lineHeight: 1.45, color: '#1C1A17', marginBottom: '0.875rem', fontStyle: 'italic', margin: 0 }}>{item.title}</p>
+                <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.85, color: '#1C1A17', margin: 0 }}>{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-            <div style={{ borderTop: '1px solid #D4CFC6', paddingTop: '2rem', marginBottom: '2.5rem' }} className="reveal reveal-delay-1">
-              <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '0.75rem' }}>Conviction 02</div>
-              <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.25rem, 2vw, 1.625rem)', fontWeight: 300, lineHeight: 1.45, color: '#1C1A17', marginBottom: '0.875rem', fontStyle: 'italic' }}>Coordination is a competitive advantage.</p>
-              <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.85, color: '#1C1A17' }}>In a world where every competitor has access to the same data, the same software, and the same talent pool, the ability to coordinate faster and more effectively is one of the few genuine differentiators left. We treat organizational alignment not as a management hygiene issue but as a strategic capability worth building deliberately.</p>
+      {/* ══ FIVE LAWS ══ */}
+      <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #2e2b26' }}>
+        <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
+          {/* Header */}
+          <div style={{ marginBottom: '3.5rem' }} className="reveal">
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
+              <div style={{ width: '2px', height: '1.25rem', background: '#B8924A', flexShrink: 0 }}></div>
+              <span style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#F0EDE6' }}>The Framework</span>
             </div>
+          </div>
 
-            <div style={{ borderTop: '1px solid #D4CFC6', paddingTop: '2rem' }} className="reveal reveal-delay-2">
-              <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '0.75rem' }}>Conviction 03</div>
-              <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.25rem, 2vw, 1.625rem)', fontWeight: 300, lineHeight: 1.45, color: '#1C1A17', marginBottom: '0.875rem', fontStyle: 'italic' }}>Systems outlast effort.</p>
-              <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.85, color: '#1C1A17' }}>Extraordinary individual effort can compensate for structural gaps for a while. Eventually it cannot. The organizations that scale sustainably are the ones that replace heroic execution with repeatable systems — plans, rhythms, and frameworks that produce consistent results regardless of who is in the room on any given day.</p>
-            </div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'end', marginBottom: '4rem' }}>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 300, lineHeight: 1.1, color: '#F0EDE6', margin: 0 }} className="reveal">
+              The Five Laws of<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Organizational Intelligence.</em>
+            </h2>
+            <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#6B6760', margin: 0 }} className="reveal reveal-delay-1">
+              These are not principles we invented. They are patterns we observed — repeatedly, across industries, over two decades — until they became impossible to ignore.
+            </p>
+          </div>
+
+          {/* Laws */}
+          <div style={{ display: 'flex', flexDirection: 'column', borderTop: '1px solid #2e2b26' }}>
+            {[
+              { num: 'I', title: 'Organizations don't execute strategies. They execute systems.' },
+              { num: 'II', title: 'Alignment compounds. Misalignment compounds faster.' },
+              { num: 'III', title: 'AI amplifies organizations. It does not organize them.' },
+              { num: 'IV', title: 'Every organization is perfectly designed to produce its current results.', sub: 'An evolution of a classic systems thinking principle.' },
+              { num: 'V', title: 'The quality of an organization's decisions is limited by the quality of its connections.' },
+            ].map((law, i) => (
+              <div key={i} style={{ display: 'grid', gridTemplateColumns: '3rem 1fr', gap: '2.5rem', padding: '2.75rem 0', borderBottom: i < 4 ? '1px solid #2e2b26' : 'none', alignItems: 'start' }} className="reveal">
+                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '3rem', fontWeight: 300, color: '#2e2b26', lineHeight: 1, paddingTop: '0.25rem' }}>
+                  {law.num}
+                </div>
+                <div>
+                  <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '0.75rem' }}>Law {law.num.toLowerCase() === 'i' ? 'One' : law.num.toLowerCase() === 'ii' ? 'Two' : law.num.toLowerCase() === 'iii' ? 'Three' : law.num.toLowerCase() === 'iv' ? 'Four' : 'Five'}</div>
+                  <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.375rem, 2.25vw, 1.875rem)', fontWeight: 300, lineHeight: 1.3, color: '#F0EDE6', margin: 0 }}>
+                    {law.title.split('. ').map((part, j) => (
+                      <span key={j}>
+                        {part}{j === 0 && law.title.includes('. ') ? <em style={{ fontStyle: 'italic', color: '#B8924A' }}>.</em> : <em style={{ fontStyle: 'italic', color: '#B8924A' }}>.</em>}
+                        {j === 0 && law.title.split('. ')[1] && <br/>}
+                      </span>
+                    ))}
+                  </p>
+                  {law.sub && <p style={{ fontSize: '0.8125rem', fontWeight: 300, color: '#6B6760', lineHeight: 1.6, margin: '0.75rem 0 0 0', fontStyle: 'italic' }}>{law.sub}</p>}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -262,22 +277,12 @@ export default function PhilosophyPage() {
               <div>
                 <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#6B6760', marginBottom: '2rem' }}>Coming Next</div>
                 <ul style={{ listStyle: 'none', borderTop: '1px solid #D4CFC6', paddingLeft: 0, marginBottom: 0 }}>
-                  <li style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '1.25rem 0', borderBottom: '1px solid #D4CFC6', fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1rem', fontWeight: 300, color: '#6B6760', fontStyle: 'italic', gap: '1rem' }}>
-                    <span>The Coordination Gap</span>
-                    <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#D4CFC6', fontStyle: 'normal', whiteSpace: 'nowrap' }}>Coming Soon</span>
-                  </li>
-                  <li style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '1.25rem 0', borderBottom: '1px solid #D4CFC6', fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1rem', fontWeight: 300, color: '#6B6760', fontStyle: 'italic', gap: '1rem' }}>
-                    <span>Why Strategy Fails at Execution</span>
-                    <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#D4CFC6', fontStyle: 'normal', whiteSpace: 'nowrap' }}>Coming Soon</span>
-                  </li>
-                  <li style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '1.25rem 0', borderBottom: '1px solid #D4CFC6', fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1rem', fontWeight: 300, color: '#6B6760', fontStyle: 'italic', gap: '1rem' }}>
-                    <span>The Architecture of Commercial Systems</span>
-                    <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#D4CFC6', fontStyle: 'normal', whiteSpace: 'nowrap' }}>Coming Soon</span>
-                  </li>
-                  <li style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '1.25rem 0', fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1rem', fontWeight: 300, color: '#6B6760', fontStyle: 'italic', gap: '1rem' }}>
-                    <span>Intelligence in the Age of AI</span>
-                    <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#D4CFC6', fontStyle: 'normal', whiteSpace: 'nowrap' }}>Coming Soon</span>
-                  </li>
+                  {['The Coordination Gap', 'Why Strategy Fails at Execution', 'The Architecture of Commercial Systems', 'Intelligence in the Age of AI'].map((item, i) => (
+                    <li key={i} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '1.25rem 0', borderBottom: i < 3 ? '1px solid #D4CFC6' : 'none', fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1rem', fontWeight: 300, color: '#6B6760', fontStyle: 'italic', gap: '1rem' }}>
+                      <span>{item}</span>
+                      <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#D4CFC6', fontStyle: 'normal', whiteSpace: 'nowrap' }}>Coming Soon</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
 
@@ -290,78 +295,6 @@ export default function PhilosophyPage() {
               </div>
             </div>
           </Link>
-        </div>
-      </section>
-
-      {/* ══ INSIGHTS FOOTER ══ */}
-      <section style={{ background: '#2A2723', padding: 'clamp(3rem, 6vw, 5rem) clamp(1.5rem, 5vw, 4rem)' }}>
-        <div style={{ maxWidth: '1140px', margin: '0 auto' }}>
-          {/* Upper Section */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', paddingBottom: '3rem', borderBottom: '1px solid rgba(240,237,230,0.1)', marginBottom: '2.5rem' }}>
-            {/* Left Side - Tagline */}
-            <div>
-              <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.2rem, 2vw, 1.5rem)', fontWeight: 400, color: '#F0EDE6', lineHeight: 1.3, marginBottom: '1rem' }}>
-                Insights on hospitality, luxury, and <em style={{ fontStyle: 'italic', color: '#B8924A' }}>growth.</em>
-              </p>
-              <p style={{ fontSize: '0.82rem', color: 'rgba(240,237,230,0.5)', lineHeight: 1.75, fontWeight: 300 }}>
-                Practical thinking on marketing, commercial strategy, and what's actually working for boutique hospitality and luxury brands. No filler. Straight to the point.
-              </p>
-            </div>
-
-            {/* Right Side - Email Subscription */}
-            <div>
-              <div style={{ marginBottom: '0.75rem' }}>
-                <label style={{ display: 'block', fontSize: '0.65rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', fontWeight: 500, marginBottom: '0.75rem' }}>
-                  Subscribe to Aperture Insights
-                </label>
-              </div>
-              <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '0.75rem' }}>
-                <input
-                  type="email"
-                  placeholder="your@email.com"
-                  style={{ flex: 1, background: '#1C1A17', border: '1px solid rgba(240,237,230,0.1)', color: '#F0EDE6', padding: '0.85rem 1rem', fontSize: '0.85rem', borderRadius: 0, transition: 'border-color 0.2s' }}
-                  onFocus={(e) => (e.target.style.borderColor = 'rgba(184,146,74,0.3)')}
-                  onBlur={(e) => (e.target.style.borderColor = 'rgba(240,237,230,0.1)')}
-                />
-                <button style={{ background: '#B8924A', border: '1px solid #B8924A', color: '#F0EDE6', padding: '0.85rem 1.5rem', fontSize: '0.65rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', cursor: 'pointer', transition: 'background 0.2s, border-color 0.2s' }} onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = '#a07e40'; (e.currentTarget as HTMLElement).style.borderColor = '#a07e40'; }} onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = '#B8924A'; (e.currentTarget as HTMLElement).style.borderColor = '#B8924A'; }}>
-                  Subscribe
-                </button>
-              </div>
-              <p style={{ fontSize: '0.7rem', color: 'rgba(240,237,230,0.35)', fontWeight: 300, lineHeight: 1.4 }}>
-                No spam. Unsubscribe anytime. Brandon writes every issue personally.
-              </p>
-            </div>
-          </div>
-
-          {/* Lower Section - Footer Bar */}
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '2rem', flexWrap: 'wrap' }}>
-            {/* Logo + Branding */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexShrink: 0 }}>
-              <svg width="24" height="24" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="18" cy="18" r="15" stroke="#F0EDE6" strokeWidth="1"/>
-                <path d="M18 3 A15 15 0 0 1 33 18" stroke="#B8924A" strokeWidth="2.5" strokeLinecap="round"/>
-              </svg>
-              <span style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: '#F0EDE6', fontWeight: 500 }}>Aperture Hospitality</span>
-            </div>
-
-            {/* Links */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '2rem', fontSize: '0.65rem', letterSpacing: '0.15em', textTransform: 'uppercase', fontWeight: 500 }}>
-              <a href="mailto:inquiries@aperturehospitality.com" style={{ color: '#B8924A', textDecoration: 'underline', transition: 'color 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#D4A574')} onMouseLeave={(e) => (e.currentTarget.style.color = '#B8924A')}>
-                inquiries@aperturehospitality.com
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style={{ color: '#F0EDE6', textDecoration: 'none', transition: 'color 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#B8924A')} onMouseLeave={(e) => (e.currentTarget.style.color = '#F0EDE6')}>
-                LinkedIn
-              </a>
-              <a href="https://substack.com" target="_blank" rel="noopener noreferrer" style={{ color: '#F0EDE6', textDecoration: 'none', transition: 'color 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#B8924A')} onMouseLeave={(e) => (e.currentTarget.style.color = '#F0EDE6')}>
-                Follow Aperture on Substack
-              </a>
-            </div>
-
-            {/* Copyright */}
-            <div style={{ fontSize: '0.65rem', color: 'rgba(240,237,230,0.4)', fontWeight: 400, marginLeft: 'auto', whiteSpace: 'nowrap' }}>
-              © 2026 Aperture Hospitality. All rights reserved.
-            </div>
-          </div>
         </div>
       </section>
 
