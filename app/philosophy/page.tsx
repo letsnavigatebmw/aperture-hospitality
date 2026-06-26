@@ -64,7 +64,6 @@ export default function PhilosophyPage() {
             fontWeight: 300,
             lineHeight: 1.12,
             color: '#F0EDE6',
-            maxWidth: '18ch',
             margin: '0 0 3rem',
             fontStyle: 'italic'
           }} className="reveal reveal-delay-1">
