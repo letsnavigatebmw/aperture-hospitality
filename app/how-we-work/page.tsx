@@ -200,7 +200,7 @@ export default function HowWeWorkPage() {
             <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.62rem', fontWeight: 400, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#B8924A' }}>Our Approach</span>
           </div>
 
-          <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 300, fontSize: 'clamp(2.4rem, 4.5vw, 4rem)', lineHeight: 1.05, color: '#F0EDE6', letterSpacing: '-0.01em', marginBottom: '2rem' }}>
+          <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 300, fontSize: 'clamp(2.8rem, 5.2vw, 4.8rem)', lineHeight: 1.05, color: '#F0EDE6', letterSpacing: '-0.01em', marginBottom: '2rem' }}>
             A <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Methodology.</em><br/>Not a Menu of Services.
           </h1>
 
