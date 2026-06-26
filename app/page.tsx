@@ -317,7 +317,7 @@ export default function HomePage() {
               </h2>
             </div>
             <p style={{ fontSize: '0.875rem', color: '#6B6760', lineHeight: 1.8, fontWeight: 300 }}>
-              Brandon reviews every engagement personally. No account managers, no hand-offs. You work directly with the person who built the methodology and carries 30+ years of cross-industry experience.
+              Brandon reviews every engagement personally. No account managers, no hand-offs. You work directly with the person who built the methodology and carries 20+ years of cross-industry experience.
             </p>
           </div>
 
