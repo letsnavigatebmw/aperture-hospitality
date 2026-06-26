@@ -370,7 +370,7 @@ export default function HowWeWorkPage() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 0, borderTop: '1px solid #D4CFC6' }} className="engagement-steps">
             {engagementSteps.map((step, i) => (
-              <div key={i} style={{ padding: '2.5rem 2.5rem 2.5rem 0', borderRight: i < 3 ? '1px solid #D4CFC6' : 'none', ...(!i && {}) }} className="engagement-step">
+              <div key={i} style={{ padding: '2.5rem 2.5rem 2.5rem 0', ...(!i && {}) }} className="engagement-step">
                 <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '3.5rem', fontWeight: 300, color: '#D4CFC6', lineHeight: 1, marginBottom: '1.5rem' }}>{step.num}</div>
                 <div style={{ display: 'inline-block', fontSize: '0.6rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', fontWeight: 500, marginBottom: '0.6rem' }}>{step.badge}</div>
                 <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.2rem', fontWeight: 400, color: '#1C1A17', marginBottom: '0.75rem', lineHeight: 1.2 }}>{step.title}</h3>
