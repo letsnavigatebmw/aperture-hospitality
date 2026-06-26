@@ -172,7 +172,7 @@ export default function InsightsPage() {
 
           {/* Description before content */}
           <div style={{ marginBottom: '5rem', paddingBottom: '3rem', borderBottom: '1px solid rgba(184,146,74,0.2)' }}>
-            <p style={{ fontSize: '1.125rem', lineHeight: 1.8, color: '#F0EDE6', maxWidth: '60ch', fontWeight: 300 }}>
+            <p style={{ fontSize: 'clamp(1.25rem, 2vw, 1.5rem)', lineHeight: 1.4, color: '#F0EDE6', fontWeight: 300 }}>
               We write on building businesses at scale, commercial strategy, and leadership. Here's what we've learned.
             </p>
           </div>
