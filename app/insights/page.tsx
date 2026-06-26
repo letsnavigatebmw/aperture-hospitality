@@ -149,9 +149,6 @@ export default function InsightsPage() {
             <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 300, marginBottom: '1.5rem', color: '#F0EDE6', lineHeight: 1.1 }}>
               Thought <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Leadership</em>
             </h1>
-            <p style={{ fontSize: '1.125rem', lineHeight: 1.8, color: '#F0EDE6', maxWidth: '50ch', fontWeight: 300 }}>
-              We write on building businesses at scale, commercial strategy, and leadership. Here's what we've learned.
-            </p>
           </div>
 
           {/* Divider */}
@@ -170,6 +167,13 @@ export default function InsightsPage() {
             </p>
             <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)', fontWeight: 300, lineHeight: 1.7, color: '#F0EDE6', marginTop: '2rem' }}>
               The companies that thrive will not be those with the most data or the most AI. They will be the ones best designed to sense, decide, align, execute, and learn as a single intelligent system.
+            </p>
+          </div>
+
+          {/* Description before content */}
+          <div style={{ marginBottom: '5rem', paddingBottom: '3rem', borderBottom: '1px solid rgba(184,146,74,0.2)' }}>
+            <p style={{ fontSize: '1.125rem', lineHeight: 1.8, color: '#F0EDE6', maxWidth: '60ch', fontWeight: 300 }}>
+              We write on building businesses at scale, commercial strategy, and leadership. Here's what we've learned.
             </p>
           </div>
 
