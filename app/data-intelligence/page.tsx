@@ -145,11 +145,11 @@ export default function DataIntelligencePage() {
               {/* Heading */}
               <h2 style={{
                 fontFamily: "'Cormorant Garamond', Georgia, serif",
-                fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)',
+                fontSize: 'clamp(1.875rem, 2.75vw, 2.5rem)',
                 fontWeight: 300, lineHeight: 1.15,
                 color: '#1C1A17',
               }}>
-                Property Intelligence Built For How<br/>Operators<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Actually Work.</em>
+                Property Intelligence Built For How Operators<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Actually Work.</em>
               </h2>
 
             </div>
