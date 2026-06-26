@@ -41,11 +41,11 @@ export default function PhilosophyPage() {
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)', display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
           <div style={{ width: '2px', height: '2.5rem', background: '#B8924A', flexShrink: 0 }}></div>
           <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1rem, 1.5vw, 1.25rem)', fontWeight: 300, lineHeight: 1.5, color: '#F0EDE6' }}>
-            <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Organizational Intelligence</em>
-            <span style={{ color: '#6B6760' }}> is the ability of an organization to transform </span>
-            distributed intelligence
-            <span style={{ color: '#6B6760' }}> into </span>
-            coordinated action.
+            <em style={{ fontStyle: 'italic', textDecoration: 'underline', color: '#F0EDE6' }}>Organizational Intelligence</em>
+            <span style={{ color: '#F0EDE6' }}> is the ability of an organization to transform </span>
+            <em style={{ fontStyle: 'italic', textDecoration: 'underline', color: '#F0EDE6' }}>distributed intelligence</em>
+            <span style={{ color: '#F0EDE6' }}> into </span>
+            <em style={{ fontStyle: 'italic', textDecoration: 'underline', color: '#F0EDE6' }}>coordinated action.</em>
           </p>
         </div>
       </section>
