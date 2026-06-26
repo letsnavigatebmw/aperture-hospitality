@@ -278,7 +278,7 @@ export default function PhilosophyPage() {
                 <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.5rem, 2vw, 1.875rem)', fontWeight: 300, lineHeight: 1.3, color: '#F0EDE6', marginBottom: '1.5rem' }}>
                   Every Organization Is Intelligent. Very Few Are Designed <span style={{ color: '#B8924A', fontStyle: 'italic' }}>to Think.</span>
                 </h3>
-                <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.75, color: '#4a4845' }}>
+                <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.75, color: '#F0EDE6' }}>
                   On the difference between organizational intelligence and organizational thinking — and why most companies are sitting on more capability than they're using.
                 </p>
               </div>
@@ -290,19 +290,19 @@ export default function PhilosophyPage() {
 
             <div style={{ padding: 'clamp(2.5rem, 5vw, 4rem)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
               <div>
-                <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#4a4845', marginBottom: '2rem' }}>Coming Next</div>
+                <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#F0EDE6', marginBottom: '2rem' }}>Coming Next</div>
                 <ul style={{ listStyle: 'none', borderTop: '1px solid #2e2b26', paddingLeft: 0, marginBottom: 0 }}>
                   {['The Coordination Gap', 'Why Strategy Fails at Execution', 'The Architecture of Commercial Systems', 'Intelligence in the Age of AI'].map((item, i) => (
-                    <li key={i} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0.875rem 0', borderBottom: i < 3 ? '1px solid #2e2b26' : 'none', fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.0625rem', fontWeight: 300, color: '#4a4845', fontStyle: 'italic', gap: '1rem' }}>
+                    <li key={i} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0.875rem 0', borderBottom: i < 3 ? '1px solid #2e2b26' : 'none', fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.0625rem', fontWeight: 300, color: '#F0EDE6', fontStyle: 'italic', gap: '1rem' }}>
                       <span>{item}</span>
-                      <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#3a3733', fontStyle: 'normal', whiteSpace: 'nowrap' }}>Coming Soon</span>
+                      <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#F0EDE6', fontStyle: 'normal', whiteSpace: 'nowrap' }}>Coming Soon</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
               <div style={{ marginTop: '2.5rem' }}>
-                <p style={{ fontSize: '0.875rem', fontWeight: 300, color: '#4a4845', marginBottom: '1.5rem', lineHeight: 1.6 }}>New chapters published periodically. No cadence promised — only quality.</p>
+                <p style={{ fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6', marginBottom: '1.5rem', lineHeight: 1.6 }}>New chapters published periodically. No cadence promised — only quality.</p>
                 <div style={{ display: 'flex', gap: 0 }}>
                   <input type="email" placeholder="your@email.com" style={{ flex: 1, padding: '0.75rem 1rem', background: '#2e2b26', border: '1px solid #3a3733', borderRight: 'none', fontFamily: "'Inter', sans-serif", fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6', outline: 'none' }} />
                   <button style={{ padding: '0.75rem 1.5rem', background: '#B8924A', border: 'none', fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#F0EDE6', cursor: 'pointer', transition: 'background 0.2s', whiteSpace: 'nowrap' }} onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = '#9a7a3e'; }} onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = '#B8924A'; }}>Follow Along</button>
