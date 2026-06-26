@@ -598,7 +598,7 @@ export default function ApertureScorecardPage() {
             Identify which steps are costing you the most revenue, and let's build a plan to fix them.
           </p>
 
-          <Link href="/contact" style={{
+          <a href="https://request.revenuefactory.com/widget/bookings/ai-employee-convo" target="_blank" rel="noopener noreferrer" style={{
             display: 'inline-block',
             fontFamily: "'Inter', sans-serif",
             fontSize: '0.875rem',
@@ -609,14 +609,15 @@ export default function ApertureScorecardPage() {
             background: '#B8924A',
             padding: '0.875rem 2rem',
             textDecoration: 'none',
-            transition: 'all 0.3s ease'
+            transition: 'all 0.3s ease',
+            cursor: 'pointer'
           }} onMouseEnter={(e) => {
             (e.target as HTMLElement).style.background = '#9a7a3e'
           }} onMouseLeave={(e) => {
             (e.target as HTMLElement).style.background = '#B8924A'
           }}>
             Get Your Personal Audit
-          </Link>
+          </a>
         </div>
       </section>
 
