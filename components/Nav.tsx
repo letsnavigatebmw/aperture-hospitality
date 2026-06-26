@@ -11,6 +11,7 @@ export default function Nav() {
     { label: 'Capabilities', href: '/capabilities' },
     { label: 'AI Solutions', href: '/ai-solutions' },
     { label: 'Intelligence', href: '/data-intelligence' },
+    { label: 'Philosophy', href: '/philosophy' },
     { label: 'Insights', href: '/insights' },
     { label: 'About', href: '/about' },
   ]
