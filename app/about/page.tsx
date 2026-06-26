@@ -224,6 +224,41 @@ export default function About() {
         </div>
       </section>
 
+      {/* INSIGHTS FOOTER */}
+      <section style={{ background: '#2e2b26', padding: 'clamp(4rem, 8vw, 6rem) clamp(1.5rem, 5vw, 4rem)', borderTop: '1px solid #3a3733' }}>
+        <div style={{ maxWidth: '1140px', margin: '0 auto' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(3rem, 6vw, 5rem)', alignItems: 'start', marginBottom: '3rem' }}>
+            <div>
+              <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.125rem, 2vw, 1.5rem)', fontWeight: 300, color: '#F0EDE6', marginBottom: '0.75rem', lineHeight: 1.3 }}>
+                Insights on <em style={{ fontStyle: 'italic', color: '#B8924A' }}>hospitality, luxury,</em> and <em style={{ fontStyle: 'italic', color: '#B8924A' }}>growth.</em>
+              </p>
+              <p style={{ fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.75 }}>
+                Practical thinking on marketing, commercial strategy, and what's actually working for boutique hospitality and luxury brands. No fluff. No generic advice.
+              </p>
+            </div>
+            <div style={{ display: 'flex', gap: '0.5rem' }}>
+              <input type="email" placeholder="your@email.com" style={{ flex: 1, padding: '0.75rem 1rem', background: '#1C1A17', border: '1px solid #3a3733', fontFamily: "'Inter', sans-serif", fontSize: '0.875rem', fontWeight: 300, color: '#F0EDE6', outline: 'none' }} />
+              <button style={{ padding: '0.75rem 1.75rem', background: '#B8924A', border: 'none', fontFamily: "'Inter', sans-serif", fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#1C1A17', cursor: 'pointer', transition: 'background 0.2s', whiteSpace: 'nowrap' }} onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = '#9a7a3e'; }} onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = '#B8924A'; }}>Subscribe</button>
+            </div>
+          </div>
+
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '2rem', paddingTop: '2rem', borderTop: '1px solid #3a3733', fontSize: '0.75rem', color: '#F0EDE6' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B8924A" strokeWidth="1.5">
+                <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+              </svg>
+              <span style={{ fontWeight: 500, letterSpacing: '0.08em', textTransform: 'uppercase' }}>APERTURE</span>
+            </div>
+            <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', alignItems: 'center' }}>
+              <a href="mailto:inquiries@aperturehospitality.com" style={{ color: '#F0EDE6', textDecoration: 'none', transition: 'color 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#B8924A')} onMouseLeave={(e) => (e.currentTarget.style.color = '#F0EDE6')}>INQUIRIES@APERTUREHOSPITALITY.COM</a>
+              <a href="https://linkedin.com/company/aperture-hospitality" target="_blank" rel="noopener noreferrer" style={{ color: '#F0EDE6', textDecoration: 'none', transition: 'color 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#B8924A')} onMouseLeave={(e) => (e.currentTarget.style.color = '#F0EDE6')}>LINKEDIN</a>
+              <a href="https://substack.com/@expandyouraperture" target="_blank" rel="noopener noreferrer" style={{ color: '#F0EDE6', textDecoration: 'none', transition: 'color 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#B8924A')} onMouseLeave={(e) => (e.currentTarget.style.color = '#F0EDE6')}>FOLLOW APERTURE ON SUBSTACK</a>
+            </div>
+            <span style={{ width: '100%', textAlign: 'right', fontSize: '0.65rem', color: '#6B6760' }}>© 2026 Aperture Hospitality. All rights reserved.</span>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </>
   )
