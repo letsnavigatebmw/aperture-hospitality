@@ -38,7 +38,7 @@ export default function About() {
                 I've spent much of my life trying to answer a simple question: <strong>How do you build something that truly matters?</strong>
               </p>
               <p>
-                That journey has taken me from <strong>USC's Annenberg School of Communication</strong> to <strong>Harvard Kennedy School</strong> and <strong>Northwestern's Kellogg School of Management</strong>—each challenging me to think differently about how people, ideas, and opportunity intersect.
+                That journey has taken me from <strong>USC's Annenberg School of Communication</strong> to <strong>Kennedy School of Government</strong> and <strong>Northwestern's Kellogg School of Management</strong>—each challenging me to think differently about how people, ideas, and opportunity intersect.
               </p>
             </div>
 
@@ -51,8 +51,8 @@ export default function About() {
                   <p style={{ fontSize: '0.8125rem', color: '#B8924A' }}>MBA, Northwestern University</p>
                 </div>
                 <div>
-                  <p style={{ fontSize: '0.9375rem', fontWeight: 500, color: '#F0EDE6', marginBottom: '0.25rem' }}>Harvard Kennedy School</p>
-                  <p style={{ fontSize: '0.8125rem', color: '#B8924A' }}>Master in Public Administration</p>
+                  <p style={{ fontSize: '0.9375rem', fontWeight: 500, color: '#F0EDE6', marginBottom: '0.25rem' }}>Kennedy School of Government</p>
+                  <p style={{ fontSize: '0.8125rem', color: '#B8924A' }}>MPA, Harvard University</p>
                 </div>
                 <div>
                   <p style={{ fontSize: '0.9375rem', fontWeight: 500, color: '#F0EDE6', marginBottom: '0.25rem' }}>University of Southern California</p>
