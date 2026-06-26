@@ -242,7 +242,7 @@ export default function PhilosophyPage() {
               { num: 'V', title: "The quality of an organization's decisions is limited by the quality of its connections." },
             ].map((law, i) => (
               <div key={i} style={{ display: 'grid', gridTemplateColumns: '3rem 1fr', gap: '2.5rem', padding: '2.75rem 0', borderBottom: i < 4 ? '1px solid #2e2b26' : 'none', alignItems: 'start' }} className="reveal">
-                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '3rem', fontWeight: 300, color: '#2e2b26', lineHeight: 1, paddingTop: '0.25rem' }}>
+                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '3rem', fontWeight: 300, color: '#3a3733', lineHeight: 1, paddingTop: '0.25rem' }}>
                   {law.num}
                 </div>
                 <div>
