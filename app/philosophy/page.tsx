@@ -235,6 +235,78 @@ export default function PhilosophyPage() {
         </div>
       </section>
 
+      {/* INSIGHTS FOOTER */}
+      <section style={{ background: '#2A2723', padding: 'clamp(3rem, 6vw, 5rem) clamp(1.5rem, 5vw, 4rem)' }}>
+        <div style={{ maxWidth: '1140px', margin: '0 auto' }}>
+          {/* Upper Section */}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', paddingBottom: '3rem', borderBottom: '1px solid rgba(240,237,230,0.1)', marginBottom: '2.5rem' }}>
+            {/* Left Side - Tagline */}
+            <div>
+              <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.2rem, 2vw, 1.5rem)', fontWeight: 400, color: '#F0EDE6', lineHeight: 1.3, marginBottom: '1rem' }}>
+                Insights on hospitality, luxury, and <em style={{ fontStyle: 'italic', color: '#B8924A' }}>growth.</em>
+              </p>
+              <p style={{ fontSize: '0.82rem', color: 'rgba(240,237,230,0.5)', lineHeight: 1.75, fontWeight: 300 }}>
+                Practical thinking on marketing, commercial strategy, and what's actually working for boutique hospitality and luxury brands. No filler. Straight to the point.
+              </p>
+            </div>
+
+            {/* Right Side - Email Subscription */}
+            <div>
+              <div style={{ marginBottom: '0.75rem' }}>
+                <label style={{ display: 'block', fontSize: '0.65rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', fontWeight: 500, marginBottom: '0.75rem' }}>
+                  Subscribe to Aperture Insights
+                </label>
+              </div>
+              <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '0.75rem' }}>
+                <input
+                  type="email"
+                  placeholder="your@email.com"
+                  style={{ flex: 1, background: '#1C1A17', border: '1px solid rgba(240,237,230,0.1)', color: '#F0EDE6', padding: '0.85rem 1rem', fontSize: '0.85rem', borderRadius: 0, transition: 'border-color 0.2s' }}
+                  onFocus={(e) => (e.target.style.borderColor = 'rgba(184,146,74,0.3)')}
+                  onBlur={(e) => (e.target.style.borderColor = 'rgba(240,237,230,0.1)')}
+                />
+                <button style={{ background: '#B8924A', border: '1px solid #B8924A', color: '#F0EDE6', padding: '0.85rem 1.5rem', fontSize: '0.65rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', cursor: 'pointer', transition: 'background 0.2s, border-color 0.2s' }} onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = '#a07e40'; (e.currentTarget as HTMLElement).style.borderColor = '#a07e40'; }} onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = '#B8924A'; (e.currentTarget as HTMLElement).style.borderColor = '#B8924A'; }}>
+                  Subscribe
+                </button>
+              </div>
+              <p style={{ fontSize: '0.7rem', color: 'rgba(240,237,230,0.35)', fontWeight: 300, lineHeight: 1.4 }}>
+                No spam. Unsubscribe anytime. Brandon writes every issue personally.
+              </p>
+            </div>
+          </div>
+
+          {/* Lower Section - Footer Bar */}
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '2rem', flexWrap: 'wrap' }}>
+            {/* Logo + Branding */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexShrink: 0 }}>
+              <svg width="24" height="24" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="18" cy="18" r="15" stroke="#F0EDE6" strokeWidth="1"/>
+                <path d="M18 3 A15 15 0 0 1 33 18" stroke="#B8924A" strokeWidth="2.5" strokeLinecap="round"/>
+              </svg>
+              <span style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: '#F0EDE6', fontWeight: 500 }}>Aperture Hospitality</span>
+            </div>
+
+            {/* Links */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '2rem', fontSize: '0.65rem', letterSpacing: '0.15em', textTransform: 'uppercase', fontWeight: 500 }}>
+              <a href="mailto:inquiries@aperturehospitality.com" style={{ color: '#B8924A', textDecoration: 'underline', transition: 'color 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#D4A574')} onMouseLeave={(e) => (e.currentTarget.style.color = '#B8924A')}>
+                inquiries@aperturehospitality.com
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style={{ color: '#F0EDE6', textDecoration: 'none', transition: 'color 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#B8924A')} onMouseLeave={(e) => (e.currentTarget.style.color = '#F0EDE6')}>
+                LinkedIn
+              </a>
+              <a href="https://substack.com" target="_blank" rel="noopener noreferrer" style={{ color: '#F0EDE6', textDecoration: 'none', transition: 'color 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#B8924A')} onMouseLeave={(e) => (e.currentTarget.style.color = '#F0EDE6')}>
+                Follow Aperture on Substack
+              </a>
+            </div>
+
+            {/* Copyright */}
+            <div style={{ fontSize: '0.65rem', color: 'rgba(240,237,230,0.4)', fontWeight: 400, marginLeft: 'auto', whiteSpace: 'nowrap' }}>
+              © 2026 Aperture Hospitality. All rights reserved.
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </>
   )
