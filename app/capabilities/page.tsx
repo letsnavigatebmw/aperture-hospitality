@@ -328,19 +328,6 @@ export default function CapabilitiesPage() {
         </div>
       </section>
 
-      {/* TESTIMONIAL */}
-      <section style={{ padding: '6rem clamp(1.5rem, 5vw, 4rem)', background: '#F0EDE6' }}>
-        <div style={{ maxWidth: '680px', margin: '0 auto', textAlign: 'center' }}>
-          <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '5rem', color: '#D4CFC6', lineHeight: 0.7, marginBottom: '2rem', fontWeight: 300 }}>"</div>
-          <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.25rem, 2.5vw, 1.65rem)', fontWeight: 300, fontStyle: 'italic', color: '#1C1A17', lineHeight: 1.5, marginBottom: '2rem' }}>
-            What used to require constant monitoring, follow-up, and administrative effort now happens automatically and consistently. It created a better experience for both our agents and our clients by ensuring every inquiry received an immediate, professional response.
-          </p>
-          <div style={{ fontSize: '0.72rem', letterSpacing: '0.16em', textTransform: 'uppercase', color: '#6B6760', fontWeight: 400 }}>
-            <strong style={{ color: '#1C1A17', fontWeight: 500 }}>Brooke Winner</strong> &nbsp;·&nbsp; Founder &amp; CEO, Voyage Real Estate
-          </div>
-        </div>
-      </section>
-
       {/* FINAL CTA */}
       <section style={{ background: '#1C1A17', padding: '7rem clamp(1.5rem, 5vw, 4rem)', textAlign: 'center' }}>
         <div style={{ maxWidth: '640px', margin: '0 auto' }}>
