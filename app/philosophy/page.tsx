@@ -120,7 +120,7 @@ export default function PhilosophyPage() {
                 Yet leaders consistently describe the same frustrations:
               </p>
               <ul style={{ margin: '2rem 0', borderTop: '1px solid #2e2b26', listStyle: 'none', paddingLeft: 0 }} className="reveal">
-                {['We're not aligned.', 'Execution is inconsistent.', 'Everyone is busy, but progress feels slow.', 'Marketing and sales aren't on the same page.', 'We keep having the same conversations.'].map((item, i) => (
+                {["We're not aligned.", "Execution is inconsistent.", "Everyone is busy, but progress feels slow.", "Marketing and sales aren't on the same page.", "We keep having the same conversations."].map((item, i) => (
                   <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', padding: '0.875rem 0', borderBottom: '1px solid #2e2b26', fontSize: '0.9375rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.5 }}>
                     <span style={{ color: '#B8924A', flexShrink: 0, fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.125rem' }}>—</span>
                     <span>{item}</span>
@@ -151,13 +151,13 @@ export default function PhilosophyPage() {
 
           <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1.5rem' }}>
             {[
-              { text: 'Most organizations aren't failing because they lack intelligence. They're failing because they can't coordinate it.', large: true },
-              { text: 'The leaders I've worked with across hospitality, consumer brands, technology, and real estate are, almost without exception, intelligent, capable, and committed. They understand their markets. They've read the strategy books. They have opinions, data, and frameworks for everything.' },
-              { text: 'And yet their organizations move slowly. Decisions get relitigated. Functions operate at cross-purposes. The gap between what leadership intends and what the organization actually executes is wider than anyone is comfortable admitting.' },
-              { text: 'This is not a talent problem. It is not a strategy problem. It is not even a communication problem — most organizations communicate constantly.' },
-              { text: 'It is a commercial architecture problem.', strong: true },
-              { text: 'The organizations that consistently outperform their peers are not necessarily the ones with the best strategies or the most talented teams. They are the ones that have built the underlying architecture — the plans, processes, rhythms, and decision frameworks — that allow intelligence to become coordinated action.' },
-              { text: 'That architecture is what Aperture exists to build.', muted: true }
+              { text: "Most organizations aren't failing because they lack intelligence. They're failing because they can't coordinate it.", large: true },
+              { text: "The leaders I've worked with across hospitality, consumer brands, technology, and real estate are, almost without exception, intelligent, capable, and committed. They understand their markets. They've read the strategy books. They have opinions, data, and frameworks for everything." },
+              { text: "And yet their organizations move slowly. Decisions get relitigated. Functions operate at cross-purposes. The gap between what leadership intends and what the organization actually executes is wider than anyone is comfortable admitting." },
+              { text: "This is not a talent problem. It is not a strategy problem. It is not even a communication problem — most organizations communicate constantly." },
+              { text: "It is a commercial architecture problem.", strong: true },
+              { text: "The organizations that consistently outperform their peers are not necessarily the ones with the best strategies or the most talented teams. They are the ones that have built the underlying architecture — the plans, processes, rhythms, and decision frameworks — that allow intelligence to become coordinated action." },
+              { text: "That architecture is what Aperture exists to build.", muted: true }
             ].map((item, i) => (
               <p key={i} style={{ fontSize: item.large ? 'clamp(1.25rem, 2vw, 1.625rem)' : '1.0625rem', fontWeight: item.strong ? 700 : 300, lineHeight: 1.85, color: item.muted ? '#6B6760' : '#1C1A17', margin: 0, fontStyle: item.large ? 'italic' : 'normal' }} className={`reveal ${i > 0 ? `reveal-delay-${Math.min(i - 1, 3)}` : ''}`}>
                 {item.text}
@@ -219,11 +219,11 @@ export default function PhilosophyPage() {
           {/* Laws */}
           <div style={{ display: 'flex', flexDirection: 'column', borderTop: '1px solid #2e2b26' }}>
             {[
-              { num: 'I', title: 'Organizations don't execute strategies. They execute systems.' },
+              { num: 'I', title: "Organizations don't execute strategies. They execute systems." },
               { num: 'II', title: 'Alignment compounds. Misalignment compounds faster.' },
               { num: 'III', title: 'AI amplifies organizations. It does not organize them.' },
-              { num: 'IV', title: 'Every organization is perfectly designed to produce its current results.', sub: 'An evolution of a classic systems thinking principle.' },
-              { num: 'V', title: 'The quality of an organization's decisions is limited by the quality of its connections.' },
+              { num: 'IV', title: "Every organization is perfectly designed to produce its current results.", sub: 'An evolution of a classic systems thinking principle.' },
+              { num: 'V', title: "The quality of an organization's decisions is limited by the quality of its connections." },
             ].map((law, i) => (
               <div key={i} style={{ display: 'grid', gridTemplateColumns: '3rem 1fr', gap: '2.5rem', padding: '2.75rem 0', borderBottom: i < 4 ? '1px solid #2e2b26' : 'none', alignItems: 'start' }} className="reveal">
                 <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '3rem', fontWeight: 300, color: '#2e2b26', lineHeight: 1, paddingTop: '0.25rem' }}>
