@@ -82,7 +82,7 @@ export default function PhilosophyPage() {
       <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #2e2b26' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)', display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 'clamp(3rem, 6vw, 7rem)', alignItems: 'start' }}>
           <div className="reveal">
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.625rem', fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#4a4845', marginBottom: '0.75rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.625rem', fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#F0EDE6', marginBottom: '0.75rem' }}>
               <span style={{ width: '2px', height: '1rem', background: '#B8924A' }}></span>
               The Origin
             </div>
@@ -156,7 +156,7 @@ export default function PhilosophyPage() {
       <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #2e2b26' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)', display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 'clamp(3rem, 6vw, 7rem)', alignItems: 'start' }}>
           <div className="reveal">
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.625rem', fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#4a4845', marginBottom: '0.75rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.625rem', fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#F0EDE6', marginBottom: '0.75rem' }}>
               <span style={{ width: '2px', height: '1rem', background: '#B8924A' }}></span>
               The Implication
             </div>
@@ -188,7 +188,7 @@ export default function PhilosophyPage() {
       <section style={{ background: '#2e2b26', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ marginBottom: '4rem' }} className="reveal">
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#4a4845', marginBottom: '1.5rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#F0EDE6', marginBottom: '1.5rem' }}>
               <span style={{ width: '2px', height: '1rem', background: '#B8924A' }}></span>
               What We Believe
             </div>
@@ -265,7 +265,7 @@ export default function PhilosophyPage() {
       {/* ══ CHAPTER CTA ══ */}
       <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #2e2b26' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#4a4845', marginBottom: '2.5rem' }} className="reveal">
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#F0EDE6', marginBottom: '2.5rem' }} className="reveal">
             <span style={{ width: '2px', height: '1rem', background: '#B8924A' }}></span>
             The Philosophy — In Writing
           </div>
