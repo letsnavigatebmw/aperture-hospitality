@@ -492,6 +492,8 @@ export default function HowWeWorkPage() {
         </div>
       </section>
 
+      <IntakeForm />
+
       {/* INSIGHTS FOOTER */}
       <section style={{ background: '#2A2723', padding: 'clamp(3rem, 6vw, 5rem) clamp(1.5rem, 5vw, 4rem)' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto' }}>
@@ -564,7 +566,6 @@ export default function HowWeWorkPage() {
         </div>
       </section>
 
-      <IntakeForm />
       <Footer />
     </>
   )
