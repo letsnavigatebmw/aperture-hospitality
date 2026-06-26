@@ -292,8 +292,8 @@ export default function CapabilitiesPage() {
               <span style={{ width: '2rem', height: '1px', background: '#B8924A' }}></span>
               Start Here
             </div>
-            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.1, marginBottom: '1.25rem' }}>
-              Find Out<br/>Where Your<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Revenue Leaks.</em>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.5rem, 2.5vw, 2.2rem)', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.1, marginBottom: '1.25rem' }}>
+              Find Out Where Your <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Revenue Leaks.</em>
             </h2>
             <p style={{ fontSize: '0.9rem', color: '#F0EDE6', lineHeight: 1.75, fontWeight: 300, marginBottom: '1rem' }}>
               Most businesses do not have a marketing problem. They have a system problem. The Revenue Leak Audit maps your current customer journey, finds the gaps, and tells you which engine to build first. It is the only honest place to start.
