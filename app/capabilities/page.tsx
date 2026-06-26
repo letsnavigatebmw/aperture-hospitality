@@ -155,7 +155,7 @@ export default function CapabilitiesPage() {
         <div style={{ maxWidth: '1140px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'start' }} className="problem-inner">
           <div>
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.15, marginBottom: '1.25rem' }}>
-              You Have <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Tactics.</em> You Need<br/>a System.
+              You Don't Need More <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Tactics.</em><br/>You Need A System
             </h2>
             <p style={{ color: '#F0EDE6', fontSize: '0.95rem', lineHeight: 1.75, fontWeight: 300, marginTop: '1.5rem' }}>
               Tactics are the things you buy hoping something will move. A system is what makes everything move together. The difference between the two is not effort. It is architecture.
