@@ -264,7 +264,7 @@ export default function CapabilitiesPage() {
               How It Works
             </span>
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3.2rem)', fontWeight: 300, color: '#1C1A17', lineHeight: 1.1, marginTop: '1rem' }}>
-              <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Audit</em> First. <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Recommendations</em> Second.<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Build</em> Third.
+              <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Audit</em> First.<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Recommendations</em> Second.<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Build</em> Third.
             </h2>
           </div>
 
