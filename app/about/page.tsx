@@ -197,7 +197,7 @@ export default function About() {
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 300, lineHeight: 1.15, color: '#F0EDE6', marginBottom: '1.5rem' }}>
               Companies I've Led
             </h2>
-            <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.75, color: '#F0EDE6', maxWidth: '600px' }}>
+            <p style={{ fontSize: '0.875rem', fontWeight: 300, lineHeight: 1.75, color: '#F0EDE6' }}>
               Across luxury, hospitality, technology, and real estate, driving revenue growth, launching new business units, and managing $750M+ in P&L responsibility.
             </p>
           </div>
