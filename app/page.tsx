@@ -325,13 +325,13 @@ export default function HomePage() {
             <div style={{ background: '#F0EDE6', padding: '3rem' }}>
               <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '3rem', color: '#D4CFC6', lineHeight: 0.8, marginBottom: '1.5rem', fontWeight: 300 }}>"</div>
               <blockquote style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1rem, 1.8vw, 1.2rem)', fontWeight: 300, fontStyle: 'italic', color: '#1C1A17', lineHeight: 1.6, marginBottom: '2rem' }}>
-                What used to require constant monitoring, follow-up, and administrative effort now happens automatically and consistently. It created a better experience for both our agents and our clients by ensuring every inquiry received an immediate, professional response.
+                Brandon has a unique ability to connect strategy with execution. During our growth initiatives, he consistently identified opportunities others missed, built alignment across teams, and helped us accelerate expansion while maintaining a strong focus on agent success. His combination of commercial acumen, relationship-building, and operational discipline makes him an invaluable partner.
               </blockquote>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                <div style={{ width: '36px', height: '36px', borderRadius: '50%', border: '1px solid #D4CFC6', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.62rem', fontWeight: 500, color: '#6B6760', flexShrink: 0 }}>BW</div>
+                <div style={{ width: '36px', height: '36px', borderRadius: '50%', border: '1px solid #D4CFC6', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.62rem', fontWeight: 500, color: '#6B6760', flexShrink: 0 }}>AA</div>
                 <div>
-                  <div style={{ fontSize: '0.8rem', fontWeight: 500, color: '#1C1A17', letterSpacing: '0.02em' }}>Brooke Winner</div>
-                  <div style={{ fontSize: '0.72rem', color: '#6B6760', fontWeight: 300 }}>Founder & CEO, Voyage Real Estate</div>
+                  <div style={{ fontSize: '0.8rem', fontWeight: 500, color: '#1C1A17', letterSpacing: '0.02em' }}>Ari Afshar</div>
+                  <div style={{ fontSize: '0.72rem', color: '#6B6760', fontWeight: 300 }}>Founder, Voyage Real Estate</div>
                 </div>
               </div>
             </div>
