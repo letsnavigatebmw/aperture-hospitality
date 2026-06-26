@@ -273,7 +273,7 @@ export default function HomePage() {
                 What We Do
               </div>
               <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3.2rem)', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.1 }}>
-                Four Practice Areas. One <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Connected System.</em>
+                Four Practice Areas.<br/>One <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Connected System.</em>
               </h2>
             </div>
             <p style={{ fontSize: '0.875rem', color: 'rgba(240,237,230,0.4)', lineHeight: 1.8, fontWeight: 300 }}>
