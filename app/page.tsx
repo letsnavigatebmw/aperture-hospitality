@@ -183,7 +183,7 @@ export default function HomePage() {
               The Challenge
             </div>
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.1, marginBottom: '1.5rem' }}>
-              The Problem Is not <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Data.</em> It is Clarity.
+              The Problem isn't <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Data.</em><br/>It's Clarity.
             </h2>
             <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.15rem', fontStyle: 'italic', color: 'rgba(240,237,230,0.5)', fontWeight: 300, lineHeight: 1.6, marginBottom: '1.25rem' }}>
               Most companies are not suffering from a lack of data. They are suffering from a lack of clarity.
