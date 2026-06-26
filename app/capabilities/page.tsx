@@ -220,7 +220,7 @@ export default function CapabilitiesPage() {
               The Four Engines
             </span>
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3.2rem)', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.1 }}>
-              Four Machines. One<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Acquisition</em> Engine.
+              Four Machines.<br/>One <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Acquisition</em> Engine.
             </h2>
           </div>
 
