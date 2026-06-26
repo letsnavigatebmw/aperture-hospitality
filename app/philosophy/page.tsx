@@ -55,7 +55,7 @@ export default function PhilosophyPage() {
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '3rem' }} className="reveal">
             <div style={{ width: '2px', height: '1rem', background: '#B8924A', flexShrink: 0 }}></div>
-            <span style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#6B6760' }}>The Founding Principle</span>
+            <span style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#F0EDE6' }}>The Founding Principle</span>
           </div>
 
           <blockquote style={{
@@ -73,7 +73,7 @@ export default function PhilosophyPage() {
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }} className="reveal reveal-delay-2">
             <div style={{ width: '3.5rem', height: '1px', background: '#B8924A' }}></div>
-            <span style={{ fontSize: '0.75rem', fontWeight: 300, color: '#6B6760', letterSpacing: '0.08em' }}>Brandon M. Weaver — Founder, Aperture</span>
+            <span style={{ fontSize: '0.75rem', fontWeight: 300, color: '#F0EDE6', letterSpacing: '0.08em' }}>Brandon M. Weaver — Founder, Aperture</span>
           </div>
         </div>
       </section>
@@ -121,7 +121,7 @@ export default function PhilosophyPage() {
             <div>
               <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 300, lineHeight: 1.1, color: '#F0EDE6', margin: 0 }} className="reveal">
                 Organizational<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Intelligence.</em><br/>
-                <span style={{ fontSize: 'clamp(1rem, 1.5vw, 1.375rem)', fontStyle: 'normal', color: '#6B6760', fontWeight: 300, fontFamily: "'Inter', sans-serif", letterSpacing: 0, lineHeight: 1.5 }}>A new management philosophy<br/>for the AI era.</span>
+                <span style={{ fontSize: 'clamp(1rem, 1.5vw, 1.375rem)', fontStyle: 'normal', color: '#F0EDE6', fontWeight: 300, fontFamily: "'Inter', sans-serif", letterSpacing: 0, lineHeight: 1.5 }}>A new management philosophy<br/>for the AI era.</span>
               </h2>
             </div>
 
