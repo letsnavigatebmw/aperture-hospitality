@@ -227,7 +227,7 @@ export default function PhilosophyPage() {
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 300, lineHeight: 1.1, color: '#F0EDE6', margin: 0 }} className="reveal">
               The Five Laws of<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Organizational Intelligence.</em>
             </h2>
-            <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#6B6760', margin: 0 }} className="reveal reveal-delay-1">
+            <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', margin: 0 }} className="reveal reveal-delay-1">
               These are not principles we invented. They are patterns we observed — repeatedly, across industries, over two decades — until they became impossible to ignore.
             </p>
           </div>
@@ -254,7 +254,7 @@ export default function PhilosophyPage() {
                       </span>
                     ))}
                   </p>
-                  {law.sub && <p style={{ fontSize: '0.8125rem', fontWeight: 300, color: '#6B6760', lineHeight: 1.6, margin: '0.75rem 0 0 0', fontStyle: 'italic' }}>{law.sub}</p>}
+                  {law.sub && <p style={{ fontSize: '0.8125rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1.6, margin: '0.75rem 0 0 0', fontStyle: 'italic' }}>{law.sub}</p>}
                 </div>
               </div>
             ))}
