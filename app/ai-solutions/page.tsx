@@ -440,7 +440,7 @@ export default function AISolutionsPage() {
           {/* Testimonial */}
           <div style={{ paddingTop: '3rem', borderTop: '2px solid #B8924A' }}>
             <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.25rem, 2vw, 1.5625rem)', fontWeight: 300, fontStyle: 'italic', lineHeight: 1.75, color: '#1C1A17', marginBottom: '2.5rem', margin: '0 0 2.5rem 0' }}>
-              "Implementing Navigate's AI Agent technology fundamentally changed how our team manages inbound opportunities. What used to require constant monitoring, follow-up, and administrative effort now happens automatically and consistently. The result wasn't just greater efficiency—it created a better experience for both our agents and our clients by ensuring every inquiry received an immediate, professional response. It's become an important part of how we scale service without sacrificing quality."
+              "Implementing Aperture's AI Agent technology fundamentally changed how our team manages inbound opportunities. What used to require constant monitoring, follow-up, and administrative effort now happens automatically and consistently. The result wasn't just greater efficiency—it created a better experience for both our agents and our clients by ensuring every inquiry received an immediate, professional response. It's become an important part of how we scale service without sacrificing quality."
             </p>
             <div style={{ fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#6B6760' }}>
               — Brooke Winner, Founder &amp; CEO · Voyage Real Estate
