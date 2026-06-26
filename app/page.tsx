@@ -372,7 +372,7 @@ export default function HomePage() {
           {/* Left Column */}
           <div>
             <div style={{ fontSize: '0.67rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#6B6760', marginBottom: '2rem' }}>Contact</div>
-            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', fontWeight: 300, color: '#1C1A17', lineHeight: 1.1, marginBottom: '1.5rem' }}>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', fontWeight: 300, color: '#1C1A17', lineHeight: 1.1, marginBottom: '1.5rem' }}>
               Let us Talk About Your <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Business.</em>
             </h2>
             <p style={{ fontSize: '0.875rem', color: '#6B6760', lineHeight: 1.8, fontWeight: 300, marginBottom: '2.5rem' }}>
