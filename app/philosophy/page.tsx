@@ -28,6 +28,48 @@ export default function PhilosophyPage() {
     .reveal-delay-1 { transition-delay: 0.1s; }
     .reveal-delay-2 { transition-delay: 0.2s; }
     .reveal-delay-3 { transition-delay: 0.3s; }
+    
+    /* Philosophy Page Mobile Optimization */
+    
+    /* Tablet & Below: 900px */
+    @media (max-width: 900px) {
+      .phil-origin-grid { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
+      .phil-framework-grid { grid-template-columns: 1fr !important; gap: 3rem !important; }
+      .phil-principles-card { gap: 1.5rem !important; }
+      .phil-chapter-grid { grid-template-columns: 1fr !important; }
+      .phil-footer-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
+    }
+    
+    /* Mobile: 640px and below */
+    @media (max-width: 640px) {
+      .phil-origin-grid { grid-template-columns: 1fr !important; gap: 1.5rem !important; padding: 0 1rem !important; }
+      .phil-origin-heading h2 { font-size: 1.25rem !important; }
+      .phil-origin-text { font-size: 0.9rem !important; }
+      .phil-origin-text > p:first-child { font-size: 1rem !important; }
+      
+      .phil-framework-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
+      .phil-framework-heading h2 { font-size: 1.5rem !important; }
+      .phil-framework-content p { font-size: 0.9rem !important; }
+      
+      .phil-principles-card { grid-template-columns: 1fr !important; gap: 1rem !important; padding: 1.5rem 0 !important; }
+      .phil-principles-icon { width: 2rem !important; }
+      
+      .phil-chapter-grid { grid-template-columns: 1fr !important; }
+      .phil-chapter-left { padding: 1.5rem !important; }
+      .phil-chapter-right { padding: 1.5rem !important; }
+      .phil-chapter-heading { font-size: 1.25rem !important; }
+      
+      .phil-footer-grid { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
+      .phil-footer-grid h2 { font-size: 1.5rem !important; }
+    }
+    
+    /* Small phones: 480px and below */
+    @media (max-width: 480px) {
+      .phil-origin-grid { padding: 0 0.75rem !important; }
+      .phil-origin-heading h2 { font-size: 1.1rem !important; line-height: 1.3 !important; }
+      .phil-framework-heading h2 { font-size: 1.25rem !important; }
+      .phil-chapter-heading { font-size: 1.1rem !important; }
+    }
   `;
 
   return (
@@ -80,8 +122,8 @@ export default function PhilosophyPage() {
 
       {/* ══ ESSAY: ORIGIN ══ */}
       <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #2e2b26' }}>
-        <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)', display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 'clamp(3rem, 6vw, 7rem)', alignItems: 'start' }}>
-          <div className="reveal">
+        <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)', display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 'clamp(3rem, 6vw, 7rem)', alignItems: 'start' }} className="phil-origin-grid">
+          <div className="reveal phil-origin-heading">
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.625rem', fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#F0EDE6', marginBottom: '0.75rem' }}>
               <span style={{ width: '2px', height: '1rem', background: '#B8924A' }}></span>
               The Origin
@@ -91,7 +133,7 @@ export default function PhilosophyPage() {
             </h2>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1.5rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1.5rem' }} className="phil-origin-text">
             {[
               'Twenty years ago, I believed businesses succeeded because they had better products, better marketing, or better leaders.',
               'Over the course of my career, I had the opportunity to work inside luxury hospitality companies, global consumer brands, technology startups, and real estate platforms. Every industry looked different. Every balance sheet looked different. Every customer looked different.',
@@ -117,15 +159,15 @@ export default function PhilosophyPage() {
             The Framework
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'start' }}>
-            <div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'start' }} className="phil-framework-grid">
+            <div className="phil-framework-heading">
               <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 300, lineHeight: 1.1, color: '#F0EDE6', margin: 0 }} className="reveal">
                 Organizational<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Intelligence.</em><br/>
                 <span style={{ fontSize: 'clamp(1rem, 1.5vw, 1.375rem)', fontStyle: 'normal', color: '#F0EDE6', fontWeight: 300, fontFamily: "'Inter', sans-serif", letterSpacing: 0, lineHeight: 1.5 }}>A new management philosophy<br/>for the AI era.</span>
               </h2>
             </div>
 
-            <div>
+            <div className="phil-framework-content">
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.625rem', fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#F0EDE6', marginBottom: '2rem' }} className="reveal">
                 <span style={{ width: '2px', height: '1rem', background: '#B8924A' }}></span>
                 The Coordination Paradox
@@ -154,8 +196,8 @@ export default function PhilosophyPage() {
 
       {/* ══ ESSAY: WHAT THIS MEANS ══ */}
       <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '1px solid #2e2b26' }}>
-        <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)', display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 'clamp(3rem, 6vw, 7rem)', alignItems: 'start' }}>
-          <div className="reveal">
+        <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)', display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 'clamp(3rem, 6vw, 7rem)', alignItems: 'start' }} className="phil-origin-grid">
+          <div className="reveal phil-origin-heading">
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.625rem', fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#F0EDE6', marginBottom: '0.75rem' }}>
               <span style={{ width: '2px', height: '1rem', background: '#B8924A' }}></span>
               The Implication
@@ -166,7 +208,7 @@ export default function PhilosophyPage() {
             </h2>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1.5rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1.5rem' }} className="phil-origin-text">
             {[
               { text: "Most organizations aren't failing because they lack intelligence. They're failing because they can't coordinate it.", large: true },
               { text: "The leaders I've worked with across hospitality, consumer brands, technology, and real estate are, almost without exception, intelligent, capable, and committed. They understand their markets. They've read the strategy books. They have opinions, data, and frameworks for everything." },
@@ -240,7 +282,7 @@ export default function PhilosophyPage() {
               { num: 'IV', title: "Every organization is perfectly designed to produce its current results.", sub: 'An evolution of a classic systems thinking principle.' },
               { num: 'V', title: "The quality of an organization's decisions is limited by the quality of its connections." },
             ].map((law, i) => (
-              <div key={i} style={{ display: 'grid', gridTemplateColumns: '3rem 1fr', gap: '2.5rem', padding: '2.75rem 0', borderBottom: i < 4 ? '1px solid #2e2b26' : 'none', alignItems: 'start' }} className="reveal">
+              <div key={i} style={{ display: 'grid', gridTemplateColumns: '3rem 1fr', gap: '2.5rem', padding: '2.75rem 0', borderBottom: i < 4 ? '1px solid #2e2b26' : 'none', alignItems: 'start' }} className="reveal phil-principles-card">
                 <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '3rem', fontWeight: 300, color: '#3a3733', lineHeight: 1, paddingTop: '0.25rem' }}>
                   {law.num}
                 </div>
@@ -270,12 +312,12 @@ export default function PhilosophyPage() {
             The Philosophy — In Writing
           </div>
 
-          <Link href="/philosophy/chapter1" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 0, border: '1px solid #2e2b26', textDecoration: 'none', transition: 'all 0.3s' }} className="reveal reveal-delay-1" onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 12px rgba(184,146,74,0.2)'; }} onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.boxShadow = 'none'; }}>
+          <Link href="/philosophy/chapter1" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 0, border: '1px solid #2e2b26', textDecoration: 'none', transition: 'all 0.3s' }} className="reveal reveal-delay-1 phil-chapter-grid" onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 12px rgba(184,146,74,0.2)'; }} onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.boxShadow = 'none'; }}>
             
-            <div style={{ padding: 'clamp(2.5rem, 5vw, 4rem)', background: '#2e2b26', borderRight: '1px solid #3a3733', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+            <div style={{ padding: 'clamp(2.5rem, 5vw, 4rem)', background: '#2e2b26', borderRight: '1px solid #3a3733', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }} className="phil-chapter-left">
               <div>
                 <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.5rem, 4vw, 3rem)', fontWeight: 300, color: '#B8924A', lineHeight: 1, marginBottom: '2rem' }}>Chapter 1</div>
-                <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.5rem, 2vw, 1.875rem)', fontWeight: 300, lineHeight: 1.3, color: '#F0EDE6', marginBottom: '1.5rem' }}>
+                <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.5rem, 2vw, 1.875rem)', fontWeight: 300, lineHeight: 1.3, color: '#F0EDE6', marginBottom: '1.5rem' }} className="phil-chapter-heading">
                   Every Organization Is Intelligent. Very Few Are Designed <span style={{ color: '#B8924A', fontStyle: 'italic' }}>to Think.</span>
                 </h3>
                 <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.75, color: '#F0EDE6' }}>
@@ -288,7 +330,7 @@ export default function PhilosophyPage() {
               </div>
             </div>
 
-            <div style={{ padding: 'clamp(2.5rem, 5vw, 4rem)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+            <div style={{ padding: 'clamp(2.5rem, 5vw, 4rem)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }} className="phil-chapter-right">
               <div>
                 <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#F0EDE6', marginBottom: '2rem' }}>Coming Next</div>
                 <ul style={{ listStyle: 'none', borderTop: '1px solid #2e2b26', paddingLeft: 0, marginBottom: 0 }}>
@@ -316,7 +358,7 @@ export default function PhilosophyPage() {
       {/* INSIGHTS FOOTER */}
       <section style={{ background: '#2e2b26', padding: 'clamp(4rem, 8vw, 6rem) clamp(1.5rem, 5vw, 4rem)', borderTop: '1px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(3rem, 6vw, 5rem)', alignItems: 'start', marginBottom: '3rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(3rem, 6vw, 5rem)', alignItems: 'start', marginBottom: '3rem' }} className="phil-footer-grid">
             <div>
               <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.125rem, 2vw, 1.5rem)', fontWeight: 300, color: '#F0EDE6', marginBottom: '0.75rem', lineHeight: 1.3 }}>
                 Insights on <em style={{ fontStyle: 'italic', color: '#B8924A' }}>hospitality, luxury,</em> and <em style={{ fontStyle: 'italic', color: '#B8924A' }}>growth.</em>
