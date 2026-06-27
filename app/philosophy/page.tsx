@@ -37,6 +37,8 @@ export default function PhilosophyPage() {
       .phil-framework-grid { grid-template-columns: 1fr !important; gap: 3rem !important; }
       .phil-principles-card { gap: 1.5rem !important; }
       .phil-chapter-grid { grid-template-columns: 1fr !important; }
+      .phil-chapter-left { border-right: none !important; border-bottom: 1px solid #3a3733 !important; }
+      .phil-chapter-right { border-left: none !important; }
       .phil-footer-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
     }
     
@@ -55,9 +57,12 @@ export default function PhilosophyPage() {
       .phil-principles-icon { width: 2rem !important; }
       
       .phil-chapter-grid { grid-template-columns: 1fr !important; }
-      .phil-chapter-left { padding: 1.5rem !important; }
+      .phil-chapter-left { padding: 1.5rem !important; border-right: none !important; border-bottom: 1px solid #3a3733 !important; }
       .phil-chapter-right { padding: 1.5rem !important; }
       .phil-chapter-heading { font-size: 1.25rem !important; }
+      .phil-coming-next-list { display: flex !important; flex-direction: column !important; }
+      .phil-coming-next-item { flex-direction: column !important; align-items: flex-start !important; gap: 0.5rem !important; }
+      .phil-coming-next-label { margin-top: 0.25rem !important; }
       
       .phil-footer-grid { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
       .phil-footer-grid h2 { font-size: 1.5rem !important; }
@@ -333,11 +338,11 @@ export default function PhilosophyPage() {
             <div style={{ padding: 'clamp(2.5rem, 5vw, 4rem)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }} className="phil-chapter-right">
               <div>
                 <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#F0EDE6', marginBottom: '2rem' }}>Coming Next</div>
-                <ul style={{ listStyle: 'none', borderTop: '1px solid #2e2b26', paddingLeft: 0, marginBottom: 0 }}>
+                <ul style={{ listStyle: 'none', borderTop: '1px solid #2e2b26', paddingLeft: 0, marginBottom: 0 }} className="phil-coming-next-list">
                   {['The Coordination Gap', 'Why Strategy Fails at Execution', 'The Architecture of Commercial Systems', 'Intelligence in the Age of AI'].map((item, i) => (
-                    <li key={i} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0.875rem 0', borderBottom: i < 3 ? '1px solid #2e2b26' : 'none', fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.0625rem', fontWeight: 300, color: '#F0EDE6', fontStyle: 'italic', gap: '1rem' }}>
+                    <li key={i} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0.875rem 0', borderBottom: i < 3 ? '1px solid #2e2b26' : 'none', fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.0625rem', fontWeight: 300, color: '#F0EDE6', fontStyle: 'italic', gap: '1rem' }} className="phil-coming-next-item">
                       <span>{item}</span>
-                      <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#F0EDE6', fontStyle: 'normal', whiteSpace: 'nowrap' }}>Coming Soon</span>
+                      <span style={{ fontFamily: "'Inter', sans-serif", fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#F0EDE6', fontStyle: 'normal', whiteSpace: 'nowrap' }} className="phil-coming-next-label">Coming Soon</span>
                     </li>
                   ))}
                 </ul>
