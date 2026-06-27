@@ -7,13 +7,62 @@ import Footer from '@/components/Footer'
 export default function About() {
   return (
     <>
+      <style>{`
+        /* About Page Mobile Optimization */
+        
+        /* Tablet & Below: 900px */
+        @media (max-width: 900px) {
+          .about-hero-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
+          .about-hero-img { max-height: 400px !important; }
+          .about-story-grid { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
+          .about-story-heading { max-width: 100% !important; }
+          .about-competencies { grid-template-columns: 1fr !important; gap: 2rem !important; }
+          .about-values-grid { grid-template-columns: 1fr !important; gap: 0 !important; }
+          .about-values-card { border-right: none !important; border-bottom: 1px solid #B8924A !important; padding: 2rem !important; }
+          .about-values-card:last-child { border-bottom: none !important; }
+          .about-approach { grid-template-columns: 1fr !important; gap: 2rem !important; }
+          .about-team-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
+        }
+        
+        /* Mobile: 640px and below */
+        @media (max-width: 640px) {
+          .about-hero-grid { grid-template-columns: 1fr !important; gap: 1.5rem !important; padding: 0 1rem !important; }
+          .about-hero-img { max-height: 300px !important; object-fit: cover !important; }
+          .about-hero-content h1 { font-size: 1.75rem !important; }
+          .about-hero-content p { font-size: 0.9rem !important; }
+          .about-story-grid { grid-template-columns: 1fr !important; gap: 2rem !important; padding: 0 1rem !important; }
+          .about-story-heading { font-size: 1.25rem !important; }
+          .about-story-text { font-size: 0.9rem !important; line-height: 1.6 !important; }
+          .about-competencies { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
+          .about-competencies > div h3 { font-size: 1.1rem !important; }
+          .about-values-grid { grid-template-columns: 1fr !important; }
+          .about-values-card { padding: 1.5rem !important; }
+          .about-values-card h3 { font-size: 1.1rem !important; }
+          .about-values-card p { font-size: 0.85rem !important; }
+          .about-approach { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
+          .about-approach-heading { font-size: 1.5rem !important; }
+          .about-team-grid { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
+          .about-team-card { padding: 1.5rem !important; }
+          .about-team-card h3 { font-size: 1rem !important; }
+        }
+        
+        /* Small phones: 480px and below */
+        @media (max-width: 480px) {
+          .about-hero-grid { padding: 0 0.75rem !important; }
+          .about-hero-content h1 { font-size: 1.5rem !important; }
+          .about-story-heading { font-size: 1.1rem !important; }
+          .about-competencies > div h3 { font-size: 1rem !important; }
+          .about-values-card h3 { font-size: 1rem !important; }
+          .about-approach-heading { font-size: 1.25rem !important; }
+        }
+      `}</style>
       <Nav />
       
       {/* HERO - DARK BG */}
       <section style={{ background: '#1C1A17', color: '#F0EDE6', borderBottom: '1px solid #2e2b26', padding: 'clamp(4rem, 8vw, 6rem) 0' }}>
-        <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(3rem, 6vw, 6rem)', alignItems: 'start' }}>
+        <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(3rem, 6vw, 6rem)', alignItems: 'start' }} className="about-hero-grid">
           {/* Left: Photo */}
-          <div style={{ overflow: 'hidden', borderRadius: '2px' }}>
+          <div style={{ overflow: 'hidden', borderRadius: '2px' }} className="about-hero-img">
             <img 
               src="/brandon-headshot.jpg" 
               alt="Brandon M. Weaver" 
@@ -22,7 +71,7 @@ export default function About() {
           </div>
 
           {/* Right: Bio */}
-          <div>
+          <div className="about-hero-content">
             <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.5rem, 4vw, 3.5rem)', fontWeight: 300, lineHeight: 1.2, marginBottom: '0.5rem', color: '#F0EDE6' }}>
               Brandon M. Weaver
             </h1>
@@ -77,8 +126,8 @@ export default function About() {
       {/* THE STORY - DARK BG */}
       <section style={{ background: '#1C1A17', borderBottom: '1px solid #2e2b26', padding: 'clamp(4rem, 8vw, 6rem) 0' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 'clamp(3rem, 6vw, 7rem)', alignItems: 'start' }}>
-            <div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 'clamp(3rem, 6vw, 7rem)', alignItems: 'start' }} className="about-story-grid">
+            <div className="about-story-heading">
               <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.625rem' }}>
                 <span style={{ width: '2px', height: '1rem', background: '#B8924A' }}></span>
                 The Arc
@@ -88,7 +137,7 @@ export default function About() {
               </h2>
             </div>
 
-            <div style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.85, color: '#F0EDE6', display: 'grid', gridTemplateColumns: '1fr', gap: '1.5rem' }}>
+            <div style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.85, color: '#F0EDE6', display: 'grid', gridTemplateColumns: '1fr', gap: '1.5rem' }} className="about-story-text">
               <p>
                 Growing up in Los Angeles surrounded by successful people, I learned early that success doesn't come from following a predetermined path. I chose differently—and that choice shaped everything that followed.
               </p>
@@ -130,7 +179,7 @@ export default function About() {
           </div>
 
           {/* Competencies Grid - 3 columns */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem', marginBottom: '4rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem', marginBottom: '4rem' }} className="about-competencies">
             {[
               { title: 'P&L Management', desc: 'Full P&L ownership across pricing strategy, unit economics, and financial modeling. Reduced data enrichment costs by 25% through vendor negotiation and demand-based optimization.' },
               { title: 'Go-to-Market Strategy', desc: 'GTM execution, demand generation, and sales leadership. Built Compass partnership driving +75% trial participation and 90% trial-to-paid conversion.' },
@@ -158,14 +207,14 @@ export default function About() {
           </div>
 
           {/* Stats Grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 0, border: '2px solid #B8924A', marginBottom: '3rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 0, border: '2px solid #B8924A', marginBottom: '3rem' }} className="about-values-grid">
             {[
               { num: '8+', label: 'B2C & B2B Brands Launched & Scaled' },
               { num: '$10M+', label: 'Capital Raised Across Ventures' },
               { num: '20+', label: 'Years Across Hospitality, Tech, Real Estate & Finance' },
               { num: '$750M+', label: 'P&L Management' },
             ].map((stat, i) => (
-              <div key={i} style={{ padding: '3rem', borderRight: i % 2 === 0 ? '2px solid #B8924A' : 'none', borderBottom: i < 2 ? '2px solid #B8924A' : 'none' }}>
+              <div key={i} style={{ padding: '3rem', borderRight: i % 2 === 0 ? '2px solid #B8924A' : 'none', borderBottom: i < 2 ? '2px solid #B8924A' : 'none' }} className="about-values-card">
                 <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.5rem, 5vw, 3.5rem)', fontWeight: 300, color: '#B8924A', marginBottom: '1rem', lineHeight: 1 }}>
                   {stat.num}
                 </div>
@@ -202,7 +251,7 @@ export default function About() {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2.5rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2.5rem' }} className="about-approach">
             {[
               { name: 'Diageo', role: 'Marketing Leadership, Reserve Portfolio' },
               { name: 'Lacure', role: 'Chief Commercial Officer · 65-person org' },
@@ -211,7 +260,7 @@ export default function About() {
               { name: 'General Electric', role: 'Sales Leadership, Consumer Finance' },
               { name: 'Navigate', role: 'Founder & CEO' },
             ].map((company, i) => (
-              <div key={i}>
+              <div key={i} className="about-approach-heading">
                 <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.375rem', fontWeight: 300, color: '#F0EDE6', marginBottom: '0.5rem', lineHeight: 1.2 }}>
                   {company.name}
                 </h3>
@@ -227,7 +276,7 @@ export default function About() {
       {/* INSIGHTS FOOTER */}
       <section style={{ background: '#2e2b26', padding: 'clamp(4rem, 8vw, 6rem) clamp(1.5rem, 5vw, 4rem)', borderTop: '1px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(3rem, 6vw, 5rem)', alignItems: 'start', marginBottom: '3rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(3rem, 6vw, 5rem)', alignItems: 'start', marginBottom: '3rem' }} className="about-team-grid">
             <div>
               <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.125rem, 2vw, 1.5rem)', fontWeight: 300, color: '#F0EDE6', marginBottom: '0.75rem', lineHeight: 1.3 }}>
                 Insights on <em style={{ fontStyle: 'italic', color: '#B8924A' }}>hospitality, luxury,</em> and <em style={{ fontStyle: 'italic', color: '#B8924A' }}>growth.</em>
