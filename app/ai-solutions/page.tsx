@@ -24,13 +24,59 @@ export default function AISolutionsPage() {
       <style>{`
         /* AI Solutions - Dark background text to white */
         .ai-solutions-dark-text { color: #F0EDE6 !important; }
+        
+        /* Tablet & Below: 900px */
+        @media (max-width: 900px) {
+          .ai-hero-grid { grid-template-columns: 1fr !important; gap: 3rem !important; }
+          .ai-problem-grid { grid-template-columns: 1fr !important; gap: 4rem !important; }
+          .ai-tools-header { grid-template-columns: 1fr !important; gap: 3rem !important; }
+          .ai-tools-grid { grid-template-columns: 1fr 1fr !important; gap: 2rem !important; }
+          .ai-what-does-grid { grid-template-columns: repeat(3, 1fr) !important; gap: 1.5rem !important; }
+          .funnel-stage { padding: 1rem !important; }
+          .ai-how-it-works-grid { grid-template-columns: 1fr !important; gap: 3rem !important; }
+          .ai-pricing-grid { grid-template-columns: 1fr !important; gap: 0 !important; }
+          .ai-pricing-card { border-right: none !important; border-bottom: 1px solid #3a3733 !important; padding: 2.5rem 0 !important; }
+          .ai-cta-grid { grid-template-columns: 1fr !important; gap: 3rem !important; }
+          .ai-hero-box { padding: 2rem !important; }
+        }
+        
+        /* Mobile: 640px and below */
+        @media (max-width: 640px) {
+          .ai-hero-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
+          .ai-tools-grid { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
+          .ai-tool-card { padding: 1.5rem 0 !important; }
+          .ai-tool-card h3 { font-size: 1.25rem !important; }
+          .ai-what-does-grid { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
+          .funnel-stage { padding: 0.75rem !important; }
+          .ai-what-does-item { padding: 1.5rem 0 !important; }
+          .ai-what-does-item h3 { font-size: 1.1rem !important; }
+          .ai-what-does-item p { font-size: 0.8rem !important; }
+          .ai-pricing-grid { grid-template-columns: 1fr !important; }
+          .ai-pricing-card { padding: 2rem 0 !important; border-right: none !important; }
+          .ai-pricing-card:not(:last-child) { border-bottom: 1px solid #3a3733 !important; }
+          .ai-pricing-card h3 { font-size: 1.25rem !important; }
+          .ai-cta-grid { grid-template-columns: 1fr !important; }
+          .ai-cta-box { padding: 1.5rem !important; }
+        }
+        
+        /* Small phones: 480px and below */
+        @media (max-width: 480px) {
+          .ai-hero-box { padding: 1.5rem !important; }
+          .ai-hero-grid { padding: 0 1rem !important; }
+          .ai-tools-grid { grid-template-columns: 1fr !important; gap: 1rem !important; }
+          .ai-tool-card h3 { font-size: 1rem !important; }
+          .ai-tool-card p { font-size: 0.8rem !important; line-height: 1.5 !important; }
+          .ai-what-does-stat { font-size: 2rem !important; }
+          .ai-pricing-card h3 { font-size: 1.1rem !important; }
+          .ai-pricing-stat { font-size: 2rem !important; }
+        }
       `}</style>
       <Nav />
 
       {/* HERO */}
       <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 8rem) 0 clamp(4rem, 8vw, 7rem)', borderBottom: '2px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1.1fr 1fr', gap: '5rem', alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1.1fr 1fr', gap: '5rem', alignItems: 'center' }} className="ai-hero-grid">
             <div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#F0EDE6', marginBottom: '2rem' }}>
                 <div style={{ width: '2px', height: '1.25rem', background: '#B8924A', flexShrink: 0 }}></div>
@@ -89,7 +135,7 @@ export default function AISolutionsPage() {
       {/* PROBLEM */}
       <section style={{ padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #B8924A' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6rem', alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6rem', alignItems: 'center' }} className="ai-problem-grid">
             <div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#6B6760', marginBottom: '2rem' }}>
                 <div style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></div>
@@ -122,7 +168,7 @@ export default function AISolutionsPage() {
       {/* THREE AI TOOLS */}
       <section id="tools" style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 9rem) 0', borderBottom: '2px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'end', marginBottom: '4rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'end', marginBottom: '4rem' }} className="ai-tools-header">
             <div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#4a4845', marginBottom: '2rem' }}>
                 <div style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></div>
@@ -137,13 +183,13 @@ export default function AISolutionsPage() {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '3rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '3rem' }} className="ai-tools-grid">
             {[
               { number: '01', name: 'Voice AI', desc: 'Answers your phone 24/7, qualifies callers, captures information, and books appointments — in your brand\'s voice. Never miss a call again.', features: ['Answers inbound calls around the clock', 'Qualifies leads and captures contact details', 'Books appointments directly into your calendar', 'Sends SMS confirmation and reminders', 'Trained on your specific services and tone'] },
               { number: '02', name: 'Conversation AI', desc: 'Handles multiple text conversations simultaneously — across your website, social channels, and mobile — so no inquiry goes cold while your team is busy.', features: ['Web chat, SMS, Facebook, Instagram, Google', 'Books appointments with instant confirmations', 'Sends automated follow-ups to reduce no-shows', 'Escalates complex queries to your team', 'Fully customizable responses and tone'] },
               { number: '03', name: 'Reviews AI', desc: 'Automatically requests reviews from satisfied guests and responds to existing reviews across Google and Facebook — protecting and building your reputation without manual effort.', features: ['Automated review requests post-stay or post-visit', 'Responds to Google and Facebook reviews', 'Maintains consistent brand voice in responses', 'Surfaces negative feedback before it goes public', 'Reputation dashboard for at-a-glance monitoring'] }
             ].map((tool, i) => (
-              <div key={i} style={{ padding: '0' }}>
+              <div key={i} style={{ padding: '0' }} className="ai-tool-card">
                 <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1.5rem' }}>{tool.number}</div>
                 <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.625rem', fontWeight: 400, color: '#F0EDE6', lineHeight: 1.2, marginBottom: '1rem' }}>{tool.name}</h3>
                 <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#F0EDE6', marginBottom: '1.75rem' }}>{tool.desc}</p>
@@ -286,9 +332,9 @@ export default function AISolutionsPage() {
             }
           `}</style>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '0', marginBottom: '3rem', position: 'relative', alignItems: 'start' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '0', marginBottom: '3rem', position: 'relative', alignItems: 'start' }} className="ai-what-does-grid">
             {/* 01 Sales Page */}
-            <div className="funnel-stage" style={{ textAlign: 'center' }}>
+            <div className="funnel-stage ai-what-does-item" style={{ textAlign: 'center' }}>
               <div style={{ background: '#1C1A17', border: '1px solid rgba(184,146,74,0.4)', borderRadius: '0.3rem', padding: '0.5rem', marginBottom: '1rem', minHeight: '140px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                 <div style={{ background: '#2A2720', borderRadius: '2px', padding: '0.35rem', display: 'flex', gap: '0.3rem', fontSize: '0.8rem' }}>
                   <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: '#E05555', opacity: 0.7 }}></span>
@@ -467,9 +513,9 @@ export default function AISolutionsPage() {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '0' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '0' }} className="ai-pricing-grid">
             {/* Monthly */}
-            <div style={{ padding: '3.5rem', border: '2px solid #B8924A', borderRight: 'none' }}>
+            <div style={{ padding: '3.5rem', border: '2px solid #B8924A', borderRight: 'none' }} className="ai-pricing-card">
               <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1rem' }}>Monthly</div>
               <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.875rem', fontWeight: 300, color: '#1C1A17', marginBottom: '0.5rem', lineHeight: 1.1 }}>AI Employee</h3>
               <p style={{ fontSize: '0.875rem', fontWeight: 300, color: '#6B6760', marginBottom: '2rem', lineHeight: 1.6 }}>All three tools. Full access. Month to month.</p>
@@ -490,7 +536,7 @@ export default function AISolutionsPage() {
             </div>
 
             {/* Annual */}
-            <div style={{ padding: '3.5rem', background: '#1C1A17', border: '1px solid #1C1A17', borderRight: '2px solid #B8924A' }}>
+            <div style={{ padding: '3.5rem', background: '#1C1A17', border: '1px solid #1C1A17', borderRight: '2px solid #B8924A' }} className="ai-pricing-card">
               <div style={{ fontSize: '0.625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1rem' }}>Annual · Best Value</div>
               <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.875rem', fontWeight: 300, color: '#F0EDE6', marginBottom: '0.5rem', lineHeight: 1.1 }}>AI Employee</h3>
               <p style={{ fontSize: '0.875rem', fontWeight: 300, color: '#4a4845', marginBottom: '2rem', lineHeight: 1.6 }}>Two months free when you commit to a year.</p>
