@@ -5,6 +5,13 @@
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-width: 320px;
+  touch-action: manipulation;
 }
 
 /* Custom utilities */
@@ -19,15 +26,41 @@ html {
   }
 
   .btn-primary {
-    @apply inline-flex items-center gap-2 px-8 py-3.5 bg-ink text-parchment font-medium text-xs tracking-wider uppercase hover:bg-opacity-90 transition-all;
+    @apply inline-flex items-center gap-2 px-8 py-3.5 bg-ink text-parchment font-medium text-xs tracking-wider uppercase hover:bg-opacity-90 transition-all min-h-[44px];
   }
 
   .btn-ghost {
-    @apply text-xs font-medium tracking-wider uppercase text-muted border-b border-rule pb-0.5 hover:text-ink hover:border-ink transition-colors;
+    @apply text-xs font-medium tracking-wider uppercase text-muted border-b border-rule pb-0.5 hover:text-ink hover:border-ink transition-colors min-h-[44px] inline-flex items-center;
+  }
+
+  a, button {
+    /* Ensure touch targets are at least 44x44px */
+    min-width: 44px;
   }
 
   .container-max {
-    @apply max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-16;
+    @apply max-w-[1140px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16;
+  }
+
+  /* Mobile-first responsive text scaling */
+  @media (max-width: 640px) {
+    h1 { font-size: clamp(1.875rem, 5vw, 3rem); }
+    h2 { font-size: clamp(1.5rem, 4vw, 2.25rem); }
+    h3 { font-size: clamp(1.25rem, 3vw, 1.875rem); }
+    body { font-size: 16px; } /* Prevent zoom on iOS */
+  }
+}
+
+/* Mobile form input optimization */
+@media (max-width: 768px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea,
+  select {
+    font-size: 16px !important; /* Prevent iOS zoom on input focus */
+    min-height: 48px;
+    padding: 12px 16px !important;
   }
 }
 
