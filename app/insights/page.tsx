@@ -11,13 +11,14 @@ interface InsightCard {
 }
 
 const ContentGrid = ({ items }: { items: InsightCard[] }) => (
-  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20 insights-grid">
     {items.map((item, index) => (
       <a
         key={index}
         href={item.link}
         target="_blank"
         rel="noopener noreferrer"
+        className="insights-card"
         style={{ display: 'block', border: '1px solid rgba(184,146,74,0.3)', borderRadius: '0.5rem', padding: '1.5rem', background: '#232118', color: '#F0EDE6', transition: 'all 0.3s' }}
         onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#B8924A'; e.currentTarget.style.background = '#2a2520'; }}
         onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'rgba(184,146,74,0.3)'; e.currentTarget.style.background = '#232118'; }}
@@ -37,6 +38,45 @@ const ContentGrid = ({ items }: { items: InsightCard[] }) => (
 )
 
 export default function InsightsPage() {
+  const mobileStyles = `
+    /* Insights Page Mobile Optimization */
+    
+    /* Tablet & Below: 900px */
+    @media (max-width: 900px) {
+      .insights-grid { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
+      .insights-header { max-width: 100% !important; }
+      .insights-intro { grid-template-columns: 1fr !important; gap: 2rem !important; }
+      .insights-section-heading h2 { font-size: 1.75rem !important; }
+      .insights-newsletter { grid-template-columns: 1fr !important; gap: 2rem !important; }
+    }
+    
+    /* Mobile: 640px and below */
+    @media (max-width: 640px) {
+      .insights-grid { grid-template-columns: 1fr !important; gap: 1rem !important; }
+      .insights-card { padding: 1rem !important; }
+      .insights-card h3 { font-size: 0.95rem !important; }
+      .insights-header { padding: 0 1rem !important; }
+      .insights-header h1 { font-size: 1.75rem !important; }
+      .insights-intro { grid-template-columns: 1fr !important; gap: 1.5rem !important; padding: 0 1rem !important; }
+      .insights-intro p { font-size: 0.9rem !important; }
+      .insights-section { padding: 2rem 1rem !important; }
+      .insights-section-heading { margin-bottom: 1.5rem !important; }
+      .insights-section-heading h2 { font-size: 1.5rem !important; }
+      .insights-newsletter { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
+      .insights-newsletter-form { flex-direction: column !important; }
+      .insights-newsletter-form input { width: 100% !important; }
+      .insights-newsletter-form button { width: 100% !important; }
+    }
+    
+    /* Small phones: 480px and below */
+    @media (max-width: 480px) {
+      .insights-header h1 { font-size: 1.5rem !important; line-height: 1.2 !important; }
+      .insights-section-heading h2 { font-size: 1.25rem !important; }
+      .insights-card { padding: 0.75rem !important; }
+      .insights-card h3 { font-size: 0.9rem !important; }
+    }
+  `;
+
   const salesStrategy = [
     {
       title: 'How to Unlock New Growth Verticals in Mature Companies',
@@ -139,10 +179,11 @@ export default function InsightsPage() {
 
   return (
     <>
+      <style>{mobileStyles}</style>
       <Nav />
       
       <section style={{ background: '#1C1A17', borderBottom: '1px solid rgba(184,146,74,0.2)' }}>
-        <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)', paddingTop: 'clamp(4rem, 8vw, 6rem)', paddingBottom: 'clamp(4rem, 8vw, 6rem)' }}>
+        <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)', paddingTop: 'clamp(4rem, 8vw, 6rem)', paddingBottom: 'clamp(4rem, 8vw, 6rem)' }} className="insights-header">
           {/* Header */}
           <div style={{ marginBottom: '3rem' }}>
             <div style={{ fontSize: '0.65rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1rem' }}>Insights & Expertise</div>
@@ -178,40 +219,40 @@ export default function InsightsPage() {
           </div>
 
           {/* Sales Strategy */}
-          <div style={{ marginBottom: '5rem' }}>
-            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 300, color: '#F0EDE6', marginBottom: '2rem' }}>
+          <div style={{ marginBottom: '5rem' }} className="insights-section">
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 300, color: '#F0EDE6', marginBottom: '2rem' }} className="insights-section-heading">
               Sales Strategy
             </h2>
             <ContentGrid items={salesStrategy} />
           </div>
 
           {/* Commercial Strategy */}
-          <div style={{ marginBottom: '5rem' }}>
-            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 300, color: '#F0EDE6', marginBottom: '2rem' }}>
+          <div style={{ marginBottom: '5rem' }} className="insights-section">
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 300, color: '#F0EDE6', marginBottom: '2rem' }} className="insights-section-heading">
               Commercial Strategy
             </h2>
             <ContentGrid items={commercialStrategy} />
           </div>
 
           {/* Lessons in Luxury */}
-          <div style={{ marginBottom: '5rem' }}>
-            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 300, color: '#F0EDE6', marginBottom: '2rem' }}>
+          <div style={{ marginBottom: '5rem' }} className="insights-section">
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 300, color: '#F0EDE6', marginBottom: '2rem' }} className="insights-section-heading">
               Lessons in <em style={{ fontStyle: 'italic' }}>Luxury</em>
             </h2>
             <ContentGrid items={lessonsInLuxury} />
           </div>
 
           {/* Marketing Strategy */}
-          <div style={{ marginBottom: '5rem' }}>
-            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 300, color: '#F0EDE6', marginBottom: '2rem' }}>
+          <div style={{ marginBottom: '5rem' }} className="insights-section">
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 300, color: '#F0EDE6', marginBottom: '2rem' }} className="insights-section-heading">
               Marketing Strategy
             </h2>
             <ContentGrid items={marketingStrategy} />
           </div>
 
           {/* Lessons in Leadership */}
-          <div>
-            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 300, color: '#F0EDE6', marginBottom: '2rem' }}>
+          <div className="insights-section">
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 300, color: '#F0EDE6', marginBottom: '2rem' }} className="insights-section-heading">
               Lessons in <em style={{ fontStyle: 'italic' }}>Leadership</em>
             </h2>
             <ContentGrid items={lessonsInLeadership} />
