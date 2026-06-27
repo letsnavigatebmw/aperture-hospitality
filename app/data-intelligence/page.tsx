@@ -48,6 +48,52 @@ export default function DataIntelligencePage() {
         .pillar-features li { color: #F0EDE6 !important; }
         .faq-a              { color: #F0EDE6 !important; }
         .hero-stat-desc     { color: #F0EDE6 !important; }
+        
+        /* Data Intelligence Mobile Optimization */
+        
+        /* Tablet & Below: 900px */
+        @media (max-width: 900px) {
+          .data-hero-grid { grid-template-columns: 1fr !important; gap: 3rem !important; }
+          .data-pillars-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
+          .data-pillars-items { grid-template-columns: 1fr 1fr !important; }
+          .data-features-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 2rem !important; }
+          .data-cta-grid { grid-template-columns: 1fr !important; gap: 3rem !important; }
+          .data-stats-grid { grid-template-columns: 1fr 1fr !important; }
+        }
+        
+        /* Mobile: 640px and below */
+        @media (max-width: 640px) {
+          .data-hero-grid { grid-template-columns: 1fr !important; gap: 2rem !important; padding: 0 1rem !important; }
+          .data-hero-h1 { font-size: 2.5rem !important; }
+          .data-hero-ctas { max-width: 100% !important; }
+          
+          .data-pillars-grid { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
+          .data-pillars-heading h2 { font-size: 1.5rem !important; }
+          .data-pillars-items { grid-template-columns: 1fr !important; }
+          .data-pillar-item { padding: 1.5rem 0 !important; }
+          .data-pillar-item h3 { font-size: 1.1rem !important; }
+          
+          .data-features-grid { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
+          .data-feature-item { padding: 1.5rem 0 !important; }
+          .data-feature-item h3 { font-size: 1.1rem !important; }
+          
+          .data-cta-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
+          .data-cta-heading h2 { font-size: 1.5rem !important; }
+          
+          .data-stats-grid { grid-template-columns: 1fr !important; }
+          .data-stat-item { padding: 1.5rem 0 !important; border-right: none !important; border-bottom: 1px solid #3a3733 !important; }
+          .data-stat-item:last-child { border-bottom: none !important; }
+          .data-stat-item h3 { font-size: 1rem !important; }
+        }
+        
+        /* Small phones: 480px and below */
+        @media (max-width: 480px) {
+          .data-hero-grid { padding: 0 0.75rem !important; }
+          .data-hero-h1 { font-size: 2rem !important; line-height: 1.2 !important; }
+          .data-pillars-heading h2 { font-size: 1.25rem !important; }
+          .data-feature-item h3 { font-size: 1rem !important; }
+          .data-cta-heading h2 { font-size: 1.25rem !important; }
+        }
       `}</style>
       <Nav />
 
@@ -55,9 +101,9 @@ export default function DataIntelligencePage() {
       <section style={{ background: '#1C1A17', padding: 'clamp(5rem, 10vw, 8rem) 0', borderBottom: '2px solid #3a3733' }}>
         <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 clamp(1.5rem, 5vw, 4rem)' }}>
           {/* Top row: Left content + Right features */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '5rem', alignItems: 'flex-start', marginBottom: '4rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '5rem', alignItems: 'flex-start', marginBottom: '4rem' }} className="data-hero-grid">
             {/* Left: Headline + Copy + CTAs */}
-            <div>
+            <div className="data-hero-content">
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#F0EDE6', marginBottom: '2rem' }}>
                 <span style={{ width: '2px', height: '1.25rem', background: '#B8924A', display: 'block' }}></span>
                 Data & Intelligence
@@ -297,7 +343,7 @@ export default function DataIntelligencePage() {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0', borderTop: '2px solid #3a3733' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0', borderTop: '2px solid #3a3733' }} className="data-pillars-items">
             {[
               {
                 num: '01',
@@ -349,10 +395,10 @@ export default function DataIntelligencePage() {
             <span style={{ width: '2px', height: '1.25rem', background: '#B8924A' }}></span>
             Approach
           </div>
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, marginBottom: '3.5rem' }}>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.25rem, 3.5vw, 3.25rem)', fontWeight: 300, lineHeight: 1.15, marginBottom: '3.5rem' }} className="data-features-heading">
             From Search To <em style={{ fontStyle: 'italic', color: '#B8924A' }}>Outreach In Minutes.</em>
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '3rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '3rem' }} className="data-features-grid">
             {[
               { num: '01', title: 'Choose Your Market', desc: 'Draw your territory, set your filters, and define your ideal property and owner criteria. No technical setup required.' },
               { num: '02', title: 'Access Verified Data', desc: 'Instantly surface owner contact information, property details, and market activity — accurate and ready to act on.' },
