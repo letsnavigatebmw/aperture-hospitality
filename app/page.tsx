@@ -8,27 +8,45 @@ export default function HomePage() {
   const mobileStyles = `
     @keyframes tick { from { transform: translateX(0); } to { transform: translateX(-50%); } }
     @media (prefers-reduced-motion: reduce) { .ticker-track { animation: none; } }
-    @media (max-width: 960px) {
+    
+    /* Tablet & Below: 768px */
+    @media (max-width: 768px) {
       .hero-foot { grid-template-columns: 1fr; gap: 2rem; }
       .hero-ctas { justify-content: flex-start; }
-      .challenge-inner { grid-template-columns: 1fr; gap: 3rem; }
-      .industry-grid { grid-template-columns: 1fr 1fr; }
-      .industry-card:nth-child(2) { border-right: none; }
-      .industry-card { border-bottom: 1px solid #D4CFC6; }
+      .challenge-inner { grid-template-columns: 1fr !important; gap: 3rem; }
+      .industry-grid { grid-template-columns: 1fr 1fr !important; gap: 0; }
+      .industry-card { border-right: none !important; border-bottom: 1px solid #D4CFC6 !important; padding: 2rem 1.5rem !important; }
+      .industry-card:nth-child(2n) { border-right: 1px solid #D4CFC6 !important; }
+      .industry-card:nth-child(2) { border-right: 1px solid #D4CFC6 !important; }
       .services-header { grid-template-columns: 1fr; gap: 2rem; }
       .service-grid { grid-template-columns: 1fr; }
       .proof-header { grid-template-columns: 1fr; gap: 2rem; }
       .testimonials { grid-template-columns: 1fr; }
       .clients-row { flex-wrap: wrap; }
-      .client { min-width: 33%; border-bottom: 1px solid #D4CFC6; }
+      .client { min-width: 50%; border-bottom: 1px solid #D4CFC6; }
       .final-inner { grid-template-columns: 1fr; gap: 3rem; }
       .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
       .nav-links { display: none; }
     }
-    @media (max-width: 560px) {
-      .industry-grid { grid-template-columns: 1fr; }
-      .industry-card { border-right: none; }
-      .hero h1 { font-size: 3rem; }
+    
+    /* Mobile: 640px and below */
+    @media (max-width: 640px) {
+      .industry-grid { grid-template-columns: 1fr !important; }
+      .industry-card { border-right: none !important; border-bottom: 1px solid #D4CFC6; padding: 2rem 1.5rem !important; }
+      .industry-card h3 { font-size: 1rem !important; }
+      .industry-card p { font-size: 0.75rem !important; line-height: 1.5 !important; }
+      .hero h1 { font-size: 2.5rem; }
+      .service-grid { grid-template-columns: 1fr; }
+      .clients-row { flex-direction: column; }
+      .client { min-width: 100%; border-bottom: 1px solid #D4CFC6; }
+    }
+    
+    /* Small phones: 480px and below */
+    @media (max-width: 480px) {
+      .industry-grid { grid-template-columns: 1fr !important; }
+      .industry-card { padding: 1.5rem 1rem !important; }
+      .industry-card h3 { font-size: 0.9rem !important; margin-bottom: 0.5rem !important; }
+      .industry-card p { font-size: 0.7rem !important; }
     }
   `
 
@@ -231,16 +249,16 @@ export default function HomePage() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 0, background: '#D4CFC6', border: '1px solid #D4CFC6' }} className="industry-grid">
             {industries.map((ind, i) => (
-              <div key={i} style={{ background: '#F0EDE6', padding: '2.5rem 2rem', transition: 'background 0.2s', cursor: 'default', borderRight: i < 3 ? '1px solid #D4CFC6' : 'none', position: 'relative', overflow: 'hidden' }} className="industry-card" onMouseEnter={(e) => (e.currentTarget.style.background = 'rgba(184,146,74,0.03)')} onMouseLeave={(e) => (e.currentTarget.style.background = '#F0EDE6')}>
-                <div style={{ width: '36px', height: '36px', borderRadius: '50%', border: '1px solid #D4CFC6', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem' }}>
+              <div key={i} style={{ background: '#F0EDE6', padding: '2.5rem 2rem', transition: 'background 0.2s', cursor: 'default', borderRight: i < 3 ? '1px solid #D4CFC6' : 'none', position: 'relative', overflow: 'visible', wordWrap: 'break-word', overflowWrap: 'break-word' }} className="industry-card" onMouseEnter={(e) => (e.currentTarget.style.background = 'rgba(184,146,74,0.03)')} onMouseLeave={(e) => (e.currentTarget.style.background = '#F0EDE6')}>
+                <div style={{ width: '36px', height: '36px', borderRadius: '50%', border: '1px solid #D4CFC6', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem', flexShrink: 0 }}>
                   <svg width="16" height="16" viewBox="0 0 16 16" stroke="#6B6760" fill="none" strokeWidth="1.25">
                     {ind.icon === 'building' && <><path d="M1 14V7l7-5 7 5v7"/><rect x="5" y="9" width="2" height="5"/><rect x="9" y="9" width="2" height="5"/></> }
                     {ind.icon === 'clock' && <><circle cx="8" cy="8" r="6"/><path d="M8 4v4l3 2"/></> }
                     {ind.icon === 'monitor' && <><rect x="2" y="3" width="12" height="9" rx="1"/><path d="M6 14h4M8 12v2"/></> }
                   </svg>
                 </div>
-                <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.15rem', fontWeight: 400, color: '#1C1A17', marginBottom: '0.6rem', lineHeight: 1.2 }}>{ind.title}</h3>
-                <p style={{ fontSize: '0.82rem', color: '#6B6760', lineHeight: 1.65, fontWeight: 300 }}>{ind.desc}</p>
+                <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(0.9rem, 2.5vw, 1.15rem)', fontWeight: 400, color: '#1C1A17', marginBottom: '0.6rem', lineHeight: 1.2, wordWrap: 'break-word', overflowWrap: 'break-word' }}>{ind.title}</h3>
+                <p style={{ fontSize: 'clamp(0.75rem, 1.8vw, 0.82rem)', color: '#6B6760', lineHeight: 1.65, fontWeight: 300, wordWrap: 'break-word', overflowWrap: 'break-word' }}>{ind.desc}</p>
               </div>
             ))}
           </div>
