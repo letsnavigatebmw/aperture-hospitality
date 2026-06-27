@@ -6,8 +6,46 @@ interface NewsletterSectionProps {
 
 export default function NewsletterSection({ inputId = 'newsletter-email' }: NewsletterSectionProps) {
   return (
-    <section style={{ background: '#1C1A17', padding: 'clamp(2.5rem, 5vw, 3.5rem) clamp(1.5rem, 5vw, 4rem)' }}>
-      <div style={{ maxWidth: '1140px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', alignItems: 'center' }}>
+    <>
+      <style>{`
+        /* Newsletter Section Mobile Optimization */
+        .newsletter-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 3rem;
+          align-items: center;
+        }
+        
+        @media (max-width: 900px) {
+          .newsletter-grid {
+            grid-template-columns: 1fr !important;
+            gap: 2rem !important;
+          }
+        }
+        
+        @media (max-width: 640px) {
+          .newsletter-grid {
+            grid-template-columns: 1fr !important;
+            gap: 1.5rem !important;
+          }
+          .newsletter-form {
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 0 !important;
+          }
+          .newsletter-input {
+            border-right: 1px solid #3a3733 !important;
+            border-bottom: none !important;
+            width: 100% !important;
+          }
+          .newsletter-button {
+            width: 100% !important;
+            padding: 0.875rem 1rem !important;
+          }
+        }
+      `}</style>
+      <section style={{ background: '#1C1A17', padding: 'clamp(2.5rem, 5vw, 3.5rem) clamp(1.5rem, 5vw, 4rem)' }}>
+      <div style={{ maxWidth: '1140px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', alignItems: 'center' }} className="newsletter-grid">
         {/* Left: copy */}
         <div>
           <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(0.875rem, 1.5vw, 1.1rem)', fontWeight: 300, lineHeight: 1.2, color: '#F0EDE6', marginBottom: '0.875rem', margin: 0, whiteSpace: 'nowrap' }}>
@@ -23,11 +61,12 @@ export default function NewsletterSection({ inputId = 'newsletter-email' }: News
           <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#4a4845', marginBottom: '0.75rem' }}>
             Subscribe to Aperture Insights
           </div>
-          <div style={{ display: 'flex', gap: '0', marginBottom: '0.75rem' }}>
+          <div style={{ display: 'flex', gap: '0', marginBottom: '0.75rem' }} className="newsletter-form">
             <input
               type="email"
               id={inputId}
               placeholder="your@email.com"
+              className="newsletter-input"
               style={{
                 flex: 1,
                 padding: '0.875rem 1rem',
@@ -53,6 +92,7 @@ export default function NewsletterSection({ inputId = 'newsletter-email' }: News
                 }
                 alert('Thanks for subscribing. You\'ll hear from us soon.');
               }}
+              className="newsletter-button"
               style={{
                 padding: '0.875rem 1.5rem',
                 background: '#B8924A',
@@ -77,5 +117,6 @@ export default function NewsletterSection({ inputId = 'newsletter-email' }: News
         </div>
       </div>
     </section>
+    </>
   )
 }
