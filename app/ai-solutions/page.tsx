@@ -46,8 +46,8 @@ export default function AISolutionsPage() {
           .ai-tools-grid { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
           .ai-tool-card { padding: 1.5rem 0 !important; }
           .ai-tool-card h3 { font-size: 1.25rem !important; }
-          .ai-what-does-grid { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
-          .funnel-stage { padding: 0.75rem !important; }
+          .ai-what-does-grid { grid-template-columns: 1fr !important; gap: 1.5rem !important; max-width: 100% !important; width: 100% !important; margin: 0 !important; }
+          .funnel-stage { padding: 0.75rem !important; text-align: center !important; }
           .ai-what-does-item { padding: 1.5rem 0 !important; }
           .ai-what-does-item h3 { font-size: 1.1rem !important; }
           .ai-what-does-item p { font-size: 0.8rem !important; }
@@ -66,6 +66,7 @@ export default function AISolutionsPage() {
           .ai-tools-grid { grid-template-columns: 1fr !important; gap: 1rem !important; }
           .ai-tool-card h3 { font-size: 1rem !important; }
           .ai-tool-card p { font-size: 0.8rem !important; line-height: 1.5 !important; }
+          .ai-what-does-grid { display: flex !important; flex-direction: column !important; gap: 1rem !important; }
           .ai-what-does-stat { font-size: 2rem !important; }
           .ai-pricing-card h3 { font-size: 1.1rem !important; }
           .ai-pricing-stat { font-size: 2rem !important; }
