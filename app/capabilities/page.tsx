@@ -61,20 +61,40 @@ export default function CapabilitiesPage() {
   ]
 
   const mobileStyles = `
+    /* Tablet & Below: 900px */
     @media (max-width: 900px) {
       .problem-inner { grid-template-columns: 1fr; gap: 3rem; }
       .audit-inner { grid-template-columns: 1fr; gap: 3rem; }
-      .engines-grid { grid-template-columns: 1fr; }
-      .process-steps { grid-template-columns: 1fr; }
-      .process-step { border-right: none; border-bottom: 1px solid #D4CFC6; padding: 2rem 0; }
+      .engines-grid { grid-template-columns: 1fr !important; }
+      .process-steps { grid-template-columns: 1fr !important; }
+      .process-step { border-right: none; border-bottom: 1px solid #D4CFC6; padding: 2rem 0 !important; }
       .process-step:last-child { border-bottom: none; }
-      .process-step:not(:first-child) { padding-left: 0; }
-      .pipeline-track { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+      .process-step:not(:first-child) { padding-left: 0 !important; }
+      .pipeline-track { grid-template-columns: repeat(3, 1fr) !important; gap: 1.5rem; }
       .pipeline-track::before { display: none; }
     }
-    @media (max-width: 560px) {
-      .pipeline-track { grid-template-columns: 1fr 1fr; }
-      .engine-card { padding: 2rem; }
+    
+    /* Mobile: 640px and below */
+    @media (max-width: 640px) {
+      .pipeline-track { grid-template-columns: repeat(2, 1fr) !important; gap: 1rem !important; }
+      .pipeline-track > div { padding: 0 0.5rem; }
+      .pipeline-track > div div:first-child { width: 4.5rem !important; height: 4.5rem !important; }
+      .engines-grid { grid-template-columns: 1fr !important; }
+      .engine-card { padding: 2rem 1.5rem !important; }
+      .engine-card h3 { font-size: 1.2rem !important; }
+      .process-steps { grid-template-columns: 1fr !important; }
+      .process-step { padding: 1.5rem 0 !important; }
+    }
+    
+    /* Small phones: 480px and below */
+    @media (max-width: 480px) {
+      .pipeline-track { grid-template-columns: 1fr !important; gap: 1rem; }
+      .pipeline-track > div { padding: 0; }
+      .pipeline-track > div div:first-child { width: 4rem !important; height: 4rem !important; font-size: 0.5rem !important; }
+      .engine-card { padding: 1.5rem 1rem !important; }
+      .engine-card h3 { font-size: 1rem !important; }
+      .pipeline-track > div div:nth-child(2) { font-size: 0.85rem; }
+      .pipeline-track > div div:nth-child(3) { font-size: 0.6rem; }
     }
   `
 
@@ -224,7 +244,7 @@ export default function CapabilitiesPage() {
             </h2>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1px', background: 'rgba(240,237,230,0.08)' }} className="engines-grid">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1px', background: 'rgba(240,237,230,0.08)' }} className="engines-grid">
             {engines.map((engine, i) => (
               <div key={i} style={{ background: '#1C1A17', padding: '3rem', position: 'relative', transition: 'background 0.25s' }} className="engine-card" onMouseEnter={(e) => (e.currentTarget.style.background = '#232118')} onMouseLeave={(e) => (e.currentTarget.style.background = '#1C1A17')}>
                 <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '4rem', fontWeight: 300, color: 'rgba(184,146,74,0.15)', lineHeight: 1, marginBottom: '1.5rem', letterSpacing: '-0.02em' }}>{engine.number}</div>

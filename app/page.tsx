@@ -19,9 +19,10 @@ export default function HomePage() {
       .industry-card:nth-child(2n) { border-right: 1px solid #D4CFC6 !important; }
       .industry-card:nth-child(2) { border-right: 1px solid #D4CFC6 !important; }
       .services-header { grid-template-columns: 1fr; gap: 2rem; }
-      .service-grid { grid-template-columns: 1fr; }
+      .service-grid { grid-template-columns: 1fr !important; gap: 1px; }
+      .service-card { padding: 2.5rem 1.5rem !important; }
       .proof-header { grid-template-columns: 1fr; gap: 2rem; }
-      .testimonials { grid-template-columns: 1fr; }
+      .testimonials { grid-template-columns: 1fr !important; gap: 1px; }
       .clients-row { flex-wrap: wrap; }
       .client { min-width: 50%; border-bottom: 1px solid #D4CFC6; }
       .final-inner { grid-template-columns: 1fr; gap: 3rem; }
@@ -36,7 +37,10 @@ export default function HomePage() {
       .industry-card h3 { font-size: 1rem !important; }
       .industry-card p { font-size: 0.75rem !important; line-height: 1.5 !important; }
       .hero h1 { font-size: 2.5rem; }
-      .service-grid { grid-template-columns: 1fr; }
+      .service-grid { grid-template-columns: 1fr !important; gap: 1px; }
+      .service-card { padding: 2rem 1.5rem !important; }
+      .service-card h3 { font-size: 1.2rem !important; }
+      .testimonials { grid-template-columns: 1fr !important; gap: 1px; }
       .clients-row { flex-direction: column; }
       .client { min-width: 100%; border-bottom: 1px solid #D4CFC6; }
     }
@@ -47,6 +51,9 @@ export default function HomePage() {
       .industry-card { padding: 1.5rem 1rem !important; }
       .industry-card h3 { font-size: 0.9rem !important; margin-bottom: 0.5rem !important; }
       .industry-card p { font-size: 0.7rem !important; }
+      .service-grid { grid-template-columns: 1fr !important; gap: 1px; }
+      .service-card { padding: 1.5rem 1rem !important; }
+      .service-card > div:first-child { font-size: 2.5rem !important; }
     }
   `
 
@@ -299,7 +306,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1px', background: 'rgba(240,237,230,0.06)' }} className="service-grid">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1px', background: 'rgba(240,237,230,0.06)' }} className="service-grid">
             {services.map((service, i) => (
               <div key={i} style={{ background: '#1C1A17', padding: '3rem', transition: 'background 0.2s', cursor: 'default' }} className="service-card" onMouseEnter={(e) => (e.currentTarget.style.background = '#232118')} onMouseLeave={(e) => (e.currentTarget.style.background = '#1C1A17')}>
                 <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '3.5rem', fontWeight: 300, color: 'rgba(184,146,74,0.1)', lineHeight: 1, marginBottom: '1.5rem' }}>{service.num}</div>
