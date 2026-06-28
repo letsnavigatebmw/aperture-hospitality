@@ -36,9 +36,9 @@ export default function PhilosophyPage() {
       .phil-origin-grid { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
       .phil-framework-grid { grid-template-columns: 1fr !important; gap: 3rem !important; }
       .phil-principles-card { gap: 1.5rem !important; }
-      .phil-chapter-grid { grid-template-columns: 1fr !important; }
+      .phil-chapter-grid { grid-template-columns: 1fr !important; gap: 0 !important; }
       .phil-chapter-left { border-right: none !important; border-bottom: 1px solid #3a3733 !important; }
-      .phil-chapter-right { border-left: none !important; }
+      .phil-chapter-right { border-left: none !important; padding: 2.5rem !important; }
       .phil-footer-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
     }
     
@@ -56,9 +56,9 @@ export default function PhilosophyPage() {
       .phil-principles-card { grid-template-columns: 1fr !important; gap: 1rem !important; padding: 1.5rem 0 !important; }
       .phil-principles-icon { width: 2rem !important; }
       
-      .phil-chapter-grid { grid-template-columns: 1fr !important; }
-      .phil-chapter-left { padding: 1.5rem !important; border-right: none !important; border-bottom: 1px solid #3a3733 !important; }
-      .phil-chapter-right { padding: 1.5rem !important; }
+      .phil-chapter-grid { grid-template-columns: 1fr !important; gap: 0 !important; border: 1px solid #2e2b26 !important; }
+      .phil-chapter-left { padding: 1.5rem !important; border-right: none !important; border-bottom: 1px solid #2e2b26 !important; background: #2e2b26 !important; }
+      .phil-chapter-right { padding: 1.5rem !important; background: #1C1A17 !important; border-left: none !important; }
       .phil-chapter-heading { font-size: 1.25rem !important; }
       .phil-coming-next-list { display: flex !important; flex-direction: column !important; }
       .phil-coming-next-item { flex-direction: column !important; align-items: flex-start !important; gap: 0.5rem !important; }
