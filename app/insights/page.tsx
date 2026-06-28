@@ -372,8 +372,44 @@ export default function InsightsPage() {
       </section>
 
       {/* NEWSLETTER SECTION */}
+      <style>{`
+        .insights-newsletter-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 3rem;
+          align-items: center;
+          max-width: 1140px;
+          margin: 0 auto;
+        }
+        
+        @media (max-width: 900px) {
+          .insights-newsletter-grid {
+            grid-template-columns: 1fr !important;
+            gap: 2rem !important;
+          }
+        }
+        
+        @media (max-width: 640px) {
+          .insights-newsletter-grid {
+            grid-template-columns: 1fr !important;
+            gap: 1.5rem !important;
+          }
+          .insights-newsletter-form {
+            display: flex !important;
+            flex-direction: column !important;
+          }
+          .insights-newsletter-input {
+            border-right: 1px solid #3a3733 !important;
+            border-bottom: none !important;
+            width: 100% !important;
+          }
+          .insights-newsletter-button {
+            width: 100% !important;
+          }
+        }
+      `}</style>
       <section style={{ background: '#1C1A17', padding: 'clamp(2.5rem, 5vw, 3.5rem) clamp(1.5rem, 5vw, 4rem)' }}>
-        <div style={{ maxWidth: '1140px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', alignItems: 'center' }}>
+        <div style={{ maxWidth: '1140px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', alignItems: 'center' }} className="insights-newsletter-grid">
           {/* Left: copy */}
           <div>
             <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.25rem, 2vw, 1.625rem)', fontWeight: 300, lineHeight: 1.2, color: '#F0EDE6', marginBottom: '0.875rem', margin: 0 }}>
@@ -389,11 +425,12 @@ export default function InsightsPage() {
             <div style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#4a4845', marginBottom: '0.75rem' }}>
               Subscribe to Aperture Insights
             </div>
-            <div style={{ display: 'flex', gap: '0', marginBottom: '0.75rem' }}>
+            <div style={{ display: 'flex', gap: '0', marginBottom: '0.75rem' }} className="insights-newsletter-form">
               <input
                 type="email"
                 id="newsletter-email-insights"
                 placeholder="your@email.com"
+                className="insights-newsletter-input"
                 style={{
                   flex: 1,
                   padding: '0.875rem 1rem',
@@ -419,6 +456,7 @@ export default function InsightsPage() {
                   }
                   alert('Thanks for subscribing. You\'ll hear from us soon.');
                 }}
+                className="insights-newsletter-button"
                 style={{
                   padding: '0.875rem 1.5rem',
                   background: '#B8924A',
