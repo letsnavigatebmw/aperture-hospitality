@@ -109,8 +109,10 @@ export default function HomePage() {
       <Nav />
 
       <style>{`
+        .hero-logo { display: block; }
         @media (max-width: 860px) {
           .hero-grid { grid-template-columns: 1fr !important; padding: 4rem 2.5rem 6rem !important; min-height: auto !important; }
+          .hero-logo { display: none !important; }
         }
         @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
       `}</style>
@@ -156,7 +158,7 @@ export default function HomePage() {
         </div>
 
         {/* RIGHT: Logo - oversized, bleeding off edge */}
-        <div style={{ position: 'relative', overflow: 'hidden', height: '100%', minHeight: '400px' }}>
+        <div style={{ position: 'relative', overflow: 'hidden', height: '100%', minHeight: '400px' }} className="hero-logo">
           <div style={{ position: 'absolute', width: '115%', right: '-14%', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none', zIndex: 0 }}>
             <svg viewBox="0 0 500 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Aperture logo mark" style={{ width: '100%', height: 'auto', display: 'block' }}>
               <title>Aperture logo</title>

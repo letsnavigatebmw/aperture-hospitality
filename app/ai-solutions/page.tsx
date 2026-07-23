@@ -89,11 +89,11 @@ export default function AISolutionsPage() {
               <p style={{ fontSize: '1.0625rem', fontWeight: 300, lineHeight: 1.8, color: '#F0EDE6', marginBottom: '2.5rem', maxWidth: '44ch' }}>
                 Boutique hotels, luxury spirits brands, and independent operators lose bookings and leads every day to missed calls, slow follow-ups, and unmanaged inquiries. Aperture's AI Employee works around the clock so your team doesn't have to.
               </p>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.875rem', maxWidth: '280px' }}>
-                <a href="https://offer.revenuefactory.com/buy-ai-employee-a" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: '#B8924A', color: '#F0EDE6', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', border: 'none', cursor: 'pointer', textDecoration: 'none' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.875rem', maxWidth: '100%', width: '100%' }} className="ai-hero-buttons">
+                <a href="https://offer.revenuefactory.com/buy-ai-employee-a" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 1.5rem', background: '#B8924A', color: '#F0EDE6', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', border: 'none', cursor: 'pointer', textDecoration: 'none', whiteSpace: 'nowrap', minWidth: '0' }}>
                   Buy Now - $297/Month
                 </a>
-                <a href="tel:786-706-8231" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 2.25rem', background: 'transparent', color: '#F0EDE6', border: '1px solid #4a4845', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', cursor: 'pointer', textDecoration: 'none' }}>
+                <a href="tel:786-706-8231" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 1.5rem', background: 'transparent', color: '#F0EDE6', border: '1px solid #4a4845', fontSize: '0.6875rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', cursor: 'pointer', textDecoration: 'none', whiteSpace: 'nowrap', minWidth: '0' }}>
                   Try Now: 786-706-8231
                 </a>
               </div>

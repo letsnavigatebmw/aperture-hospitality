@@ -6,29 +6,41 @@ import Link from 'next/link'
 
 export default function HowWeWorkPage() {
   const mobileStyles = `
+    * { box-sizing: border-box; }
     @media (max-width: 960px) {
       .philosophy-inner { grid-template-columns: 1fr; gap: 3rem; }
-      .methodology-header { grid-template-columns: 1fr; gap: 2rem; }
+      .methodology-header { grid-template-columns: 1fr; gap: 2rem; width: 100%; }
       .engagement-header { grid-template-columns: 1fr; gap: 2rem; }
       .engagement-steps { grid-template-columns: 1fr 1fr; }
       .data-inner { grid-template-columns: 1fr; gap: 3rem; }
       .who-grid { grid-template-columns: 1fr; }
       .final-cta-inner { grid-template-columns: 1fr; gap: 3rem; }
-      .journey { grid-template-columns: repeat(3, 1fr); row-gap: 2rem; }
+      .journey { grid-template-columns: repeat(3, 1fr) !important; row-gap: 2rem; column-gap: 0.5rem; width: 100%; }
       .journey::before { display: none; }
-      .engine-map { grid-template-columns: 1fr 1fr; }
+      .engine-map { grid-template-columns: repeat(2, 1fr) !important; width: 100%; }
       .engine-map-spacer { display: none; }
       .footer-inner { flex-direction: column; gap: 1rem; text-align: center; }
       .nav-links { display: none; }
     }
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
+      .journey { grid-template-columns: repeat(2, 1fr) !important; row-gap: 1.5rem !important; column-gap: 0.5rem !important; width: 100%; }
+      .engine-map { grid-template-columns: 1fr !important; }
+    }
+    @media (max-width: 640px) {
       .engagement-steps { grid-template-columns: 1fr; }
       .engagement-step { border-right: none; border-bottom: 1px solid #D4CFC6; padding: 2rem 0; }
       .engagement-step:last-child { border-bottom: none; }
       .engagement-step:not(:first-child) { padding-left: 0; }
       .data-right { grid-template-columns: 1fr; }
-      .journey { grid-template-columns: 1fr 1fr; }
-      .engine-map { grid-template-columns: 1fr; }
+      .journey { grid-template-columns: repeat(2, 1fr) !important; row-gap: 1rem !important; column-gap: 0.5rem !important; width: 100%; }
+      .journey > div { padding: 0 0.25rem !important; min-width: 0; width: 100%; }
+      .engine-map { grid-template-columns: 1fr !important; width: 100%; }
+      .engine-map > div { min-width: 0; }
+    }
+    @media (max-width: 480px) {
+      .journey { grid-template-columns: 1fr !important; row-gap: 0.75rem !important; width: 100%; }
+      .journey > div { width: 100% !important; padding: 0 !important; }
+      .engine-map { grid-template-columns: 1fr !important; width: 100%; }
     }
   `
 
@@ -294,9 +306,9 @@ export default function HowWeWorkPage() {
       </section>
 
       {/* METHODOLOGY */}
-      <section style={{ background: '#1C1A17', padding: '7rem clamp(1.5rem, 5vw, 4rem)' }} id="methodology">
-        <div style={{ maxWidth: '1140px', margin: '0 auto' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', marginBottom: '5rem', alignItems: 'end' }} className="methodology-header">
+      <section style={{ background: '#1C1A17', padding: '7rem clamp(1.5rem, 5vw, 4rem)', overflow: 'hidden' }} id="methodology">
+        <div style={{ maxWidth: '1140px', margin: '0 auto', width: '100%', boxSizing: 'border-box' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', marginBottom: '5rem', alignItems: 'end', width: '100%', overflow: 'hidden' }} className="methodology-header">
             <div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.68rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1.25rem' }}>
                 <span style={{ width: '2rem', height: '1px', background: '#B8924A' }}></span>
@@ -312,10 +324,10 @@ export default function HowWeWorkPage() {
           </div>
 
           {/* Journey */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', position: 'relative', marginBottom: '4rem' }} className="journey">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', position: 'relative', marginBottom: '4rem', width: '100%', overflow: 'hidden' }} className="journey">
             {journeyNodes.map((node, i) => (
-              <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', position: 'relative', zIndex: 1, padding: '0 0.5rem' }} className={`node-${node.level}`}>
-                <div style={{ width: '6.5rem', height: '6.5rem', borderRadius: '50%', border: node.level === 'hi' ? '1px solid rgba(184,146,74,0.5)' : node.level === 'mid' ? '1px solid rgba(184,146,74,0.25)' : '1px solid rgba(240,237,230,0.1)', background: node.level === 'hi' ? 'rgba(184,146,74,0.08)' : node.level === 'mid' ? 'rgba(184,146,74,0.05)' : '#1C1A17', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginBottom: '1.25rem', gap: '0.15rem', transition: 'border-color 0.2s' }} onMouseEnter={(e) => { if (node.level !== 'hi') (e.currentTarget as HTMLElement).style.borderColor = 'rgba(184,146,74,0.4)'; }} onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.borderColor = node.level === 'hi' ? 'rgba(184,146,74,0.5)' : node.level === 'mid' ? 'rgba(184,146,74,0.25)' : 'rgba(240,237,230,0.1)'; }}>
+              <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', position: 'relative', zIndex: 1, padding: '0 0.25rem', minWidth: 0, width: '100%' }} className={`node-${node.level}`}>
+                <div style={{ width: 'clamp(4rem, 80px, 6.5rem)', height: 'clamp(4rem, 80px, 6.5rem)', borderRadius: '50%', border: node.level === 'hi' ? '1px solid rgba(184,146,74,0.5)' : node.level === 'mid' ? '1px solid rgba(184,146,74,0.25)' : '1px solid rgba(240,237,230,0.1)', background: node.level === 'hi' ? 'rgba(184,146,74,0.08)' : node.level === 'mid' ? 'rgba(184,146,74,0.05)' : '#1C1A17', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginBottom: '1.25rem', gap: '0.15rem', transition: 'border-color 0.2s', flexShrink: 0 }} onMouseEnter={(e) => { if (node.level !== 'hi') (e.currentTarget as HTMLElement).style.borderColor = 'rgba(184,146,74,0.4)'; }} onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.borderColor = node.level === 'hi' ? 'rgba(184,146,74,0.5)' : node.level === 'mid' ? 'rgba(184,146,74,0.25)' : 'rgba(240,237,230,0.1)'; }}>
                   <svg width="18" height="18" viewBox="0 0 18 18" stroke={node.level === 'hi' ? '#B8924A' : node.level === 'mid' ? '#B8924A' : 'rgba(240,237,230,0.15)'} fill="none" strokeWidth="1">
                     {node.icon === 'person' && <><circle cx="9" cy="6" r="3"/><path d="M3 16c0-3.3 2.7-6 6-6s6 2.7 6 6"/></>}
                     {node.icon === 'star' && <path d="M9 2L11.5 7H17l-4.5 3.5L14 16 9 12.5 4 16l1.5-5.5L1 7h5.5z"/>}
@@ -331,7 +343,7 @@ export default function HowWeWorkPage() {
           </div>
 
           {/* Engine Map */}
-          <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr', gap: '1px', background: 'rgba(240,237,230,0.06)' }} className="engine-map">
+          <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr', gap: '1px', background: 'rgba(240,237,230,0.06)', width: '100%', overflow: 'hidden' }} className="engine-map">
             <div style={{ background: '#1C1A17', padding: '1.5rem 1.5rem 1.5rem 0' }}>
               <div style={{ fontSize: '0.62rem', letterSpacing: '0.16em', textTransform: 'uppercase', color: 'rgba(240,237,230,0.2)', fontWeight: 400, lineHeight: 1.6 }}>
                 Each engine owns a<br/>stage of the journey.

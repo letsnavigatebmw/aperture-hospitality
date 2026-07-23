@@ -72,6 +72,7 @@ export default function CapabilitiesPage() {
       .process-step:not(:first-child) { padding-left: 0 !important; }
       .pipeline-track { grid-template-columns: repeat(3, 1fr) !important; gap: 1.5rem; }
       .pipeline-track::before { display: none; }
+      .cheatsheet-cta { grid-template-columns: 1fr !important; gap: 3rem !important; }
     }
     
     /* Mobile: 640px and below */
@@ -82,6 +83,7 @@ export default function CapabilitiesPage() {
       .engines-grid { grid-template-columns: 1fr !important; }
       .engine-card { padding: 2rem 1.5rem !important; }
       .engine-card h3 { font-size: 1.2rem !important; }
+      .cheatsheet-cta { grid-template-columns: 1fr !important; }
       .process-steps { grid-template-columns: 1fr !important; }
       .process-step { padding: 1.5rem 0 !important; }
     }
@@ -271,6 +273,77 @@ export default function CapabilitiesPage() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* ACQUISITION BLUEPRINT CTA - Flush with grid above, no visual break */}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 240px', gap: 0, background: 'rgba(240,237,230,0.08)', borderTop: '1px solid rgba(240,237,230,0.08)' }} className="cheatsheet-cta">
+            {/* Left: Copy + Preview Cards */}
+            <div style={{ background: '#1C1A17', padding: '2.25rem 2.5rem', borderRight: '1px solid #2e2b26' }}>
+              {/* Eyebrow */}
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', marginBottom: '1rem' }}>
+                <div style={{ width: '2px', height: '0.75rem', background: '#B8924A', flexShrink: 0 }}></div>
+                Free Download
+              </div>
+
+              {/* Headline */}
+              <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.25rem, 2vw, 1.625rem)', fontWeight: 300, lineHeight: 1.2, color: '#F0EDE6', marginBottom: '0.75rem' }}>
+                See the full build sequence.<br/>
+                <em style={{ fontStyle: 'italic', color: '#B8924A' }}>One page. Every step in order.</em>
+              </h3>
+
+              {/* Body */}
+              <p style={{ fontSize: '0.9375rem', fontWeight: 300, lineHeight: 1.7, color: '#6B6760', maxWidth: '56ch', marginBottom: '1.5rem' }}>
+                The Acquisition Blueprint lays out all four phases — Foundation, Acquisition Engine, Conversion System, and Launch &amp; Scale — as a sequential checklist your team can act on immediately. Download the cheat sheet free. The full 6-page guide is one step away.
+              </p>
+
+              {/* Preview Cards */}
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.875rem', flexWrap: 'wrap' }}>
+                {[
+                  { label: 'Cheat Sheet', meta: 'Free · 1 page · PDF', icon: true },
+                  { label: 'Full Guide', meta: 'Intake required · 6 pages · PDF', icon: false }
+                ].map((card, i) => (
+                  <div key={i} style={{ background: '#2e2b26', border: '1px solid #3a3733', padding: '0.5rem 0.875rem', display: 'flex', alignItems: 'center', gap: '0.625rem' }}>
+                    <div style={{ width: '26px', height: '32px', background: '#1C1A17', border: card.icon ? '1px solid #B8924A' : '1px solid #3a3733', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                      <svg width="12" height="14" viewBox="0 0 12 14" fill="none" stroke={card.icon ? '#B8924A' : '#4a4845'} strokeWidth="0.75">
+                        <rect x="1" y="1" width="10" height="12" rx="0"/>
+                        <line x1="3" y1="4.5" x2="9" y2="4.5" strokeWidth="0.6"/>
+                        <line x1="3" y1="7" x2="9" y2="7" strokeWidth="0.6"/>
+                        <line x1="3" y1="9.5" x2="7" y2="9.5" strokeWidth="0.6"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <div style={{ fontSize: '0.6875rem', fontWeight: 400, color: card.icon ? '#F0EDE6' : '#6B6760', lineHeight: 1.2 }}>{card.label}</div>
+                      <div style={{ fontSize: '0.5625rem', fontWeight: 300, color: card.icon ? '#6B6760' : '#4a4845', letterSpacing: '0.06em' }}>{card.meta}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Right: Actions */}
+            <div style={{ background: '#252320', padding: '2.25rem 1.75rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'center', gap: '0.75rem' }}>
+              {/* Stat */}
+              <div style={{ paddingBottom: '1.25rem', borderBottom: '1px solid #2e2b26', width: '100%', marginBottom: '0.25rem' }}>
+                <span style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '2.625rem', fontWeight: 300, color: '#B8924A', lineHeight: 1, display: 'block' }}>20</span>
+                <span style={{ fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6B6760', display: 'block', marginTop: '0.3125rem', lineHeight: 1.5 }}>Numbered deliverables<br/>across 4 phases</span>
+              </div>
+
+              {/* Primary CTA */}
+              <a href="/download/acquisition-blueprint" style={{ width: '100%', padding: '0.875rem 0.5rem', background: '#B8924A', border: 'none', cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.1875rem', textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.background = '#a07e40')} onMouseLeave={(e) => (e.currentTarget.style.background = '#B8924A')}>
+                <span style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1rem', fontWeight: 300, color: '#F0EDE6', lineHeight: 1 }}>Download Free Cheat Sheet</span>
+                <span style={{ fontSize: '0.5rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(240,237,230,0.55)' }}>PDF · No credit card →</span>
+              </a>
+
+              {/* Secondary CTA */}
+              <Link href="/contact" style={{ width: '100%', padding: '0.75rem 0.5rem', background: 'transparent', border: '1px solid #2e2b26', cursor: 'pointer', fontFamily: "'Inter', sans-serif", fontSize: '0.5625rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#6B6760', textAlign: 'center', textDecoration: 'none', display: 'block', transition: 'border-color 0.2s, color 0.2s' }} onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.borderColor = '#B8924A'; (e.currentTarget as HTMLElement).style.color = '#B8924A'; }} onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.borderColor = '#2e2b26'; (e.currentTarget as HTMLElement).style.color = '#6B6760'; }}>
+                Build this with Aperture
+              </Link>
+
+              {/* Fine Print */}
+              <p style={{ fontSize: '0.5625rem', fontWeight: 300, color: '#4a4845', textAlign: 'center', width: '100%', lineHeight: 1.6, marginTop: '0.25rem' }}>
+                Free to download.<br/>Full guide unlocks on the next step.
+              </p>
+            </div>
           </div>
         </div>
       </section>

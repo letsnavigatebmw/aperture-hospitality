@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 interface InsightCard {
   title: string
-  type: 'Article' | 'Guide' | 'E-Book' | 'Playbook'
+  type: 'Article' | 'Guide' | 'E-Book' | 'Playbook' | 'White Paper'
   link: string
 }
 
@@ -82,6 +82,11 @@ export default function Insights() {
       title: 'Brand-to-Demand: How Luxury Brand Thinking Makes Performance Marketing Better',
       type: 'Guide' as const,
       link: 'https://drive.google.com/file/d/1pLur9KDw4xYY239aYOrxdXjsAd6iYjma/view?usp=drive_link',
+    },
+    {
+      title: '"Beyond the Room Rate" What Ultra Wealthy Spending Patterns Mean for Luxury Hospitality',
+      type: 'White Paper' as const,
+      link: 'https://drive.google.com/file/d/10LaWoO6VXE5UkuNQSPx_wpOk56NnoMI_/view?usp=drive_link',
     },
   ]
 

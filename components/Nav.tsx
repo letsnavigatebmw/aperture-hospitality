@@ -20,12 +20,13 @@ export default function Nav() {
     <nav className="sticky top-0 z-50 bg-parchment border-b border-rule">
       <div className="container-max h-16 flex items-center justify-between">
         {/* Logo + Wordmark */}
-        <Link href="/" className="flex items-center gap-2 flex-shrink-0" onClick={() => setIsOpen(false)}>
+        <Link href="/" className="flex items-center gap-2 flex-shrink-0 min-w-0" onClick={() => setIsOpen(false)}>
           <svg width="28" height="28" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
             <circle cx="18" cy="18" r="15" stroke="#1C1A17" strokeWidth="1.2"/>
             <path d="M18 3 A15 15 0 0 1 33 18" stroke="#B8924A" strokeWidth="2.5" strokeLinecap="round"/>
           </svg>
-          <span className="text-xs font-medium tracking-wider uppercase text-ink">Aperture Hospitality</span>
+          <span className="hidden sm:inline text-xs font-medium tracking-wider uppercase text-ink whitespace-nowrap">Aperture Hospitality</span>
+          <span className="sm:hidden text-xs font-medium tracking-wider uppercase text-ink whitespace-nowrap">Aperture</span>
         </Link>
 
         {/* Desktop Navigation */}
