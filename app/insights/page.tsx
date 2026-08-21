@@ -177,6 +177,14 @@ export default function InsightsPage() {
     },
   ]
 
+  const operationsStrategy = [
+    {
+      title: 'The Architecture of Luxury Hotel Opening | A Practioner\'s Playbook for Systems, People and Sequence',
+      type: 'Playbook' as const,
+      link: 'https://drive.google.com/file/d/1dkeh3c4sxKWCw7aOYOXpGbOJB9CPxJEj/view?usp=sharing',
+    },
+  ]
+
   return (
     <>
       <style>{mobileStyles}</style>
@@ -256,6 +264,14 @@ export default function InsightsPage() {
               Lessons in <em style={{ fontStyle: 'italic' }}>Leadership</em>
             </h2>
             <ContentGrid items={lessonsInLeadership} />
+          </div>
+
+          {/* Operations Strategy */}
+          <div style={{ marginBottom: '5rem' }} className="insights-section">
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 300, color: '#F0EDE6', marginBottom: '2rem' }} className="insights-section-heading">
+              Operations Strategy
+            </h2>
+            <ContentGrid items={operationsStrategy} />
           </div>
         </div>
       </section>
