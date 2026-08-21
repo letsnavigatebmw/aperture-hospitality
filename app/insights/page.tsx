@@ -242,6 +242,14 @@ export default function InsightsPage() {
             <ContentGrid items={commercialStrategy} />
           </div>
 
+          {/* Operations Strategy */}
+          <div style={{ marginBottom: '5rem' }} className="insights-section">
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 300, color: '#F0EDE6', marginBottom: '2rem' }} className="insights-section-heading">
+              Operations Strategy
+            </h2>
+            <ContentGrid items={operationsStrategy} />
+          </div>
+
           {/* Lessons in Luxury */}
           <div style={{ marginBottom: '5rem' }} className="insights-section">
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 300, color: '#F0EDE6', marginBottom: '2rem' }} className="insights-section-heading">
@@ -264,14 +272,6 @@ export default function InsightsPage() {
               Lessons in <em style={{ fontStyle: 'italic' }}>Leadership</em>
             </h2>
             <ContentGrid items={lessonsInLeadership} />
-          </div>
-
-          {/* Operations Strategy */}
-          <div style={{ marginBottom: '5rem' }} className="insights-section">
-            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 300, color: '#F0EDE6', marginBottom: '2rem' }} className="insights-section-heading">
-              Operations Strategy
-            </h2>
-            <ContentGrid items={operationsStrategy} />
           </div>
         </div>
       </section>
