@@ -441,7 +441,7 @@ export default function HowWeWorkPage() {
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 300, color: '#1C1A17', lineHeight: 1.1, marginBottom: '0.75rem' }}>
               Built for Businesses<br/><em style={{ fontStyle: 'italic', color: '#B8924A' }}>Ready to Build a System.</em>
             </h2>
-            <p style={{ fontSize: '0.875rem', color: '#6B6760', maxWidth: '50ch', margin: '0 auto', lineHeight: 1.7, fontWeight: 300 }}>
+            <p style={{ fontSize: '0.875rem', color: '#1C1A17', maxWidth: '50ch', margin: '0 auto', lineHeight: 1.7, fontWeight: 400 }}>
               Aperture works best with owners and operators who have something that works and need the system to scale it, not with businesses still searching for product-market fit.
             </p>
           </div>
@@ -451,10 +451,10 @@ export default function HowWeWorkPage() {
               <div key={i} style={{ background: '#F0EDE6', padding: '2.5rem' }}>
                 <div style={{ fontSize: '0.62rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', fontWeight: 500, marginBottom: '0.75rem' }}>{card.label}</div>
                 <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.2rem', fontWeight: 400, color: '#1C1A17', marginBottom: '0.75rem', lineHeight: 1.2 }}>{card.title}</h3>
-                <p style={{ fontSize: '0.82rem', color: '#6B6760', lineHeight: 1.7, fontWeight: 300, marginBottom: '1.25rem' }}>{card.desc}</p>
+                <p style={{ fontSize: '0.82rem', color: '#1C1A17', lineHeight: 1.7, fontWeight: 400, marginBottom: '1.25rem' }}>{card.desc}</p>
                 <ul style={{ listStyle: 'none' }}>
                   {card.items.map((item, j) => (
-                    <li key={j} style={{ fontSize: '0.78rem', color: '#6B6760', padding: '0.45rem 0', borderBottom: '1px solid #D4CFC6', display: 'flex', alignItems: 'flex-start', gap: '0.6rem', fontWeight: 300, lineHeight: 1.4 }}>
+                    <li key={j} style={{ fontSize: '0.78rem', color: '#1C1A17', padding: '0.45rem 0', borderBottom: '1px solid #D4CFC6', display: 'flex', alignItems: 'flex-start', gap: '0.6rem', fontWeight: 400, lineHeight: 1.4 }}>
                       <span style={{ display: 'block', width: '3px', height: '3px', borderRadius: '50%', background: '#B8924A', flexShrink: 0, marginTop: '0.5rem' }}></span>
                       {item}
                     </li>
@@ -470,7 +470,7 @@ export default function HowWeWorkPage() {
               <div>
                 <div style={{ fontSize: '0.62rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', fontWeight: 500, marginBottom: '0.3rem' }}>Also</div>
                 <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1rem', fontWeight: 400, color: '#1C1A17' }}>Executive Advisory</div>
-                <div style={{ fontSize: '0.82rem', color: '#6B6760', fontWeight: 300, marginTop: '0.2rem' }}>Fractional commercial leadership for growth-stage companies.</div>
+                <div style={{ fontSize: '0.82rem', color: '#1C1A17', fontWeight: 400, marginTop: '0.2rem' }}>Fractional commercial leadership for growth-stage companies.</div>
               </div>
               <Link href="/executive-advisory" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.6rem', background: '#B8924A', color: '#F0EDE6', fontSize: '0.72rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', padding: '1rem 1.95rem', border: '1px solid #B8924A', transition: 'background 0.2s, border-color 0.2s', textDecoration: 'none', cursor: 'pointer' }} onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = '#a07e40'; (e.currentTarget as HTMLElement).style.borderColor = '#a07e40'; }} onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = '#B8924A'; (e.currentTarget as HTMLElement).style.borderColor = '#B8924A'; }}>
                 Learn About Executive Advisory
