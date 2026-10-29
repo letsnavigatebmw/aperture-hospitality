@@ -6,7 +6,7 @@ import Footer from '@/components/Footer'
 
 interface InsightCard {
   title: string
-  type: 'Article' | 'Guide' | 'E-Book' | 'Playbook'
+  type: 'Article' | 'Guide' | 'E-Book' | 'Playbook' | 'White Paper'
   link: string
 }
 
@@ -96,6 +96,11 @@ export default function InsightsPage() {
   ]
 
   const commercialStrategy = [
+    {
+      title: 'The Hotel Exists Before The Opening',
+      type: 'White Paper' as const,
+      link: 'https://drive.google.com/file/d/1pWp7AO27qvfaEKEBtS3MtJ4TO5Um5yBl/view?usp=sharing',
+    },
     {
       title: 'The Authorization Illusion',
       type: 'E-Book' as const,

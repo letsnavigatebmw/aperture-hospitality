@@ -324,6 +324,16 @@ export default function HomePage() {
                     </li>
                   ))}
                 </ul>
+                {service.label === 'Executive Advisory' && (
+                  <div style={{ marginTop: '1.5rem', paddingTop: '1.5rem', borderTop: '1px solid rgba(184,146,74,0.25)' }}>
+                    <Link href="/executive-advisory" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: '#B8924A', fontSize: '0.75rem', fontWeight: 400, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none', transition: 'color 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#D4A574')} onMouseLeave={(e) => (e.currentTarget.style.color = '#B8924A')}>
+                      Learn More
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5">
+                        <path d="M2 6h8M7 2l4 4-4 4"/>
+                      </svg>
+                    </Link>
+                  </div>
+                )}
               </div>
             ))}
           </div>

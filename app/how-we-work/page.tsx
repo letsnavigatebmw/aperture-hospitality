@@ -463,6 +463,23 @@ export default function HowWeWorkPage() {
               </div>
             ))}
           </div>
+
+          {/* Executive Advisory CTA */}
+          <div style={{ border: '1px solid #D4CFC6', borderTop: 'none', padding: '2.5rem', background: 'rgba(184,146,74,0.03)' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '2rem', flexWrap: 'wrap' }}>
+              <div>
+                <div style={{ fontSize: '0.62rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: '#B8924A', fontWeight: 500, marginBottom: '0.3rem' }}>Also</div>
+                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1rem', fontWeight: 400, color: '#1C1A17' }}>Executive Advisory</div>
+                <div style={{ fontSize: '0.82rem', color: '#6B6760', fontWeight: 300, marginTop: '0.2rem' }}>Fractional commercial leadership for growth-stage companies.</div>
+              </div>
+              <Link href="/executive-advisory" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.6rem', background: 'transparent', color: '#6B6760', fontSize: '0.72rem', fontWeight: 400, letterSpacing: '0.14em', textTransform: 'uppercase', padding: '0.9rem 1.85rem', border: '1px solid #D4CFC6', transition: 'border-color 0.2s, color 0.2s', textDecoration: 'none', cursor: 'pointer' }} onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.borderColor = '#1C1A17'; (e.currentTarget as HTMLElement).style.color = '#1C1A17'; }} onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.borderColor = '#D4CFC6'; (e.currentTarget as HTMLElement).style.color = '#6B6760'; }}>
+                Learn About Executive Advisory
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <path d="M2 7h10M8 3l4 4-4 4"/>
+                </svg>
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
