@@ -326,7 +326,7 @@ export default function HomePage() {
                 </ul>
                 {service.label === 'Executive Advisory' && (
                   <div style={{ marginTop: '1.5rem', paddingTop: '1.5rem', borderTop: '1px solid rgba(184,146,74,0.25)' }}>
-                    <Link href="/executive-advisory" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: '#B8924A', fontSize: '0.75rem', fontWeight: 400, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none', transition: 'color 0.2s' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#D4A574')} onMouseLeave={(e) => (e.currentTarget.style.color = '#B8924A')}>
+                    <Link href="/executive-advisory" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: '#B8924A', color: '#1C1A17', fontSize: '0.7rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', textDecoration: 'none', padding: '0.65rem 1.2rem', border: '1px solid #B8924A', borderRadius: '3px', transition: 'background 0.2s, border-color 0.2s' }} onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = '#a07e40'; (e.currentTarget as HTMLElement).style.borderColor = '#a07e40'; }} onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = '#B8924A'; (e.currentTarget as HTMLElement).style.borderColor = '#B8924A'; }}>
                       Learn More
                       <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5">
                         <path d="M2 6h8M7 2l4 4-4 4"/>
