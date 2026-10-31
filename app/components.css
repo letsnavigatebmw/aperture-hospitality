@@ -136,3 +136,8 @@
 .feature__copy{display:grid;gap:.75rem;align-content:center}
 .feature__copy p{margin:0}
 .feature__copy .tl__role{margin:0}
+.feature+.feature{margin-top:clamp(3rem,6vw,5rem);padding-top:clamp(3rem,6vw,5rem);border-top:1px solid var(--rule)}
+.feature--tall .feature__img{display:flex;justify-content:center}
+.feature--tall .feature__img img{width:auto;max-height:520px}
+@media (max-width:899px){.feature--tall .feature__img img{max-height:380px}}
+@media (min-width:900px){.feature--tall{grid-template-columns:5fr 7fr}.feature--tall .feature__img{order:2}}

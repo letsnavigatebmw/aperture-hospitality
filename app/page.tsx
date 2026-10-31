@@ -47,6 +47,34 @@ const clients = [
   { n: 'Boatsetter', f: 'boatsetter', h: 30 },
 ]
 
+// Featured engagements. Copy describes role and scope only: no fees, targets,
+// distributor, account names or fundraising detail (client-confidential).
+// TODO(Brandon): confirm both descriptions and image permissions before production.
+const features = [
+  {
+    name: 'Perro Verde Mezcal',
+    label: 'Current engagement',
+    role: 'Marketing & Key Accounts, California',
+    body: 'Building California for an artisanal Oaxacan mezcal, account by account. I lead marketing and key accounts: the playbook and sales tools the reps sell with, the brand story told for distributors, buyers and bartenders, store execution, events built to convert into accounts, and introductions into luxury hotels and fine dining across Southern California.',
+    img: '/logos/clients/perro-verde-bottle.webp',
+    alt: 'Perro Verde Espadín mezcal bottle',
+    w: 430,
+    h: 1098,
+    tall: true,
+  },
+  {
+    name: 'WES Brands',
+    label: 'Featured engagement',
+    role: 'Strategic Advisor, 2021 to 2023',
+    body: 'Advised a multi-brand spirits portfolio spanning tequila, whiskey and vodka on route to market and retail growth across grocery, independent and large-format accounts.',
+    img: '/logos/clients/wes-portfolio.webp',
+    alt: 'Bottles from the WES Brands spirits portfolio: tequila, whiskey, vodka and a flavored whiskey',
+    w: 1468,
+    h: 1272,
+    tall: false,
+  },
+]
+
 const quotes = [
   { q: 'Brandon has a unique ability to connect strategy with execution. He consistently identified opportunities others missed, built alignment across teams, and helped us accelerate expansion.', n: 'Ari Afshar', t: 'Founder & CEO, Voyage Real Estate' },
   { q: 'Working with Brandon felt like having a true strategic partner rather than an outside advisor. He challenged our assumptions in the right ways and translated complex growth objectives into practical, measurable actions.', n: 'Michael Silver', t: 'President, Foto Comercio' },
@@ -176,21 +204,19 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-            {/* TODO(Brandon): confirm this description and that WES is happy for the product shot to be used. */}
-            <figure className="feature reveal">
-              <div className="feature__img">
-                <img src="/logos/clients/wes-portfolio.webp" alt="Bottles from the WES Brands spirits portfolio: tequila, whiskey, vodka and a flavored whiskey" width={1468} height={1272} loading="lazy" />
-              </div>
-              <figcaption className="feature__copy">
-                <span className="label label--accent">Featured engagement</span>
-                <p className="card__title">WES Brands</p>
-                <p className="tl__role">Strategic Advisor, 2021 to 2023</p>
-                <p>
-                  Advised a multi-brand spirits portfolio spanning tequila, whiskey and vodka on route to market and
-                  retail growth across grocery, independent and large-format accounts.
-                </p>
-              </figcaption>
-            </figure>
+            {features.map((f) => (
+              <figure className={`feature reveal${f.tall ? ' feature--tall' : ''}`} key={f.name}>
+                <div className="feature__img">
+                  <img src={f.img} alt={f.alt} width={f.w} height={f.h} loading="lazy" />
+                </div>
+                <figcaption className="feature__copy">
+                  <span className="label label--accent">{f.label}</span>
+                  <p className="card__title">{f.name}</p>
+                  <p className="tl__role">{f.role}</p>
+                  <p>{f.body}</p>
+                </figcaption>
+              </figure>
+            ))}
             <div className="reveal sec-head sec-head--quotes">
               <span className="eyebrow">Client Testimonials</span>
               <h2 className="h2">What Clients Say</h2>
