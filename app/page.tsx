@@ -61,6 +61,7 @@ const features = [
     w: 430,
     h: 1098,
     tall: true,
+    flip: true,
   },
   {
     name: 'WES Brands',
@@ -72,6 +73,23 @@ const features = [
     w: 1468,
     h: 1272,
     tall: false,
+  },
+  {
+    name: 'Voyage Real Estate',
+    label: 'Featured engagement',
+    role: 'Strategic Advisor to Executive Leadership',
+    body: 'Advised executive leadership on enterprise growth, strategic partnerships, organizational design and multi-market expansion for a luxury real estate platform operating within the Compass ecosystem.',
+    points: [
+      ['Market expansion & business development', 'Evaluated growth opportunities, partnership structures and market-entry priorities, aligning commercial initiatives with organizational capabilities.'],
+      ['Strategic advisory & commercial innovation', 'Developed adjacent service and partnership strategies to expand the company’s commercial ecosystem and strengthen its value proposition for clients and agents.'],
+    ],
+    img: '/logos/clients/voyage.png',
+    alt: 'Voyage Real Estate',
+    w: 386,
+    h: 86,
+    tall: false,
+    flip: true,
+    panel: true,
   },
 ]
 
@@ -205,7 +223,7 @@ export default function Home() {
               ))}
             </ul>
             {features.map((f) => (
-              <figure className={`feature reveal${f.tall ? ' feature--tall' : ''}`} key={f.name}>
+              <figure className={`feature reveal${f.tall ? ' feature--tall' : ''}${'flip' in f && f.flip ? ' feature--flip' : ''}${'panel' in f && f.panel ? ' feature--panel' : ''}`} key={f.name}>
                 <div className="feature__img">
                   <img src={f.img} alt={f.alt} width={f.w} height={f.h} loading="lazy" />
                 </div>
@@ -214,6 +232,15 @@ export default function Home() {
                   <p className="card__title">{f.name}</p>
                   <p className="tl__role">{f.role}</p>
                   <p>{f.body}</p>
+                  {'points' in f && f.points && (
+                    <ul className="feature__points">
+                      {f.points.map(([t, d]) => (
+                        <li key={t}>
+                          <strong>{t}.</strong> {d}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </figcaption>
               </figure>
             ))}
