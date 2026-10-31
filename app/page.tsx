@@ -35,14 +35,16 @@ const record = [
   { co: 'Navigate', role: 'Founder', line: 'Built an AI-native data platform; reached 60% trial-to-paid conversion.' },
 ]
 
-// TODO(Brandon): confirm each client is happy to be named before production.
+// Monochrome logos in public/logos/clients, sized by eye for optical balance.
 const clients = [
-  { n: 'Swarm', note: 'Supported a $3M seed raise' },
-  { n: 'Voyage Real Estate' },
-  { n: 'Perro Verde' },
-  { n: 'Beverly Spirits' },
-  { n: 'Wilbur Labs' },
-  { n: 'Boatsetter' },
+  { n: 'Swarm', f: 'swarm', h: 56 },
+  { n: 'Voyage Real Estate', f: 'voyage', h: 22 },
+  { n: 'Beverly Spirits', f: 'beverly-spirits', h: 50 },
+  { n: 'Perro Verde', f: 'perro-verde', h: 56 },
+  { n: 'WES Brands', f: 'wes-brands', h: 48 },
+  { n: 'All World Communications Group', f: 'all-world', h: 50 },
+  { n: 'Wilbur Labs', f: 'wilbur-labs', h: 24 },
+  { n: 'Boatsetter', f: 'boatsetter', h: 30 },
 ]
 
 const quotes = [
@@ -167,14 +169,28 @@ export default function Home() {
               <span className="eyebrow">Advisory Clients</span>
               <h2 id="clients-h" className="h2">Who I’m working with</h2>
             </div>
-            <ul className="wordrow reveal">
+            <ul className="creds__logos reveal">
               {clients.map((c) => (
-                <li key={c.n}>
-                  <span className="wordmark">{c.n}</span>
-                  {c.note && <span className="wordrow__note">{c.note}</span>}
+                <li key={c.f}>
+                  <img src={`/logos/clients/${c.f}.png`} alt={c.n} style={{ height: c.h }} loading="lazy" />
                 </li>
               ))}
             </ul>
+            {/* TODO(Brandon): confirm this description and that WES is happy for the product shot to be used. */}
+            <figure className="feature reveal">
+              <div className="feature__img">
+                <img src="/logos/clients/wes-portfolio.webp" alt="Bottles from the WES Brands spirits portfolio: tequila, whiskey, vodka and a flavored whiskey" width={1468} height={1272} loading="lazy" />
+              </div>
+              <figcaption className="feature__copy">
+                <span className="label label--accent">Featured engagement</span>
+                <p className="card__title">WES Brands</p>
+                <p className="tl__role">Strategic Advisor, 2021 to 2023</p>
+                <p>
+                  Advised a multi-brand spirits portfolio spanning tequila, whiskey and vodka on route to market and
+                  retail growth across grocery, independent and large-format accounts.
+                </p>
+              </figcaption>
+            </figure>
             <div className="reveal sec-head sec-head--quotes">
               <span className="eyebrow">Client Testimonials</span>
               <h2 className="h2">What Clients Say</h2>

@@ -68,6 +68,12 @@
 .tl__line{margin:0;font-size:1rem}
 
 /* Logo and wordmark rows */
+.creds__logos{border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);margin:0;padding:.5rem 0;list-style:none;grid-template-columns:repeat(2,1fr);gap:0;display:grid}
+@media (min-width:640px){.creds__logos{grid-template-columns:repeat(4,1fr)}}
+.creds__logos li{justify-content:center;align-items:center;min-height:112px;padding:0 .75rem;display:flex}
+.creds__logos img{object-fit:contain;opacity:.78;width:auto;max-width:170px;transition:opacity .2s}
+.creds__logos img:hover{opacity:1}
+:root[data-theme=dark] .creds__logos img{filter:invert(1)}
 .creds__title{font-family:var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin:0;font-size:.9375rem;font-weight:700}
 .wordrow{border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(2,1fr)}
 @media (min-width:640px){.wordrow{grid-template-columns:repeat(3,1fr)}}
@@ -121,3 +127,12 @@
 
 /* 404 */
 .notfound{min-height:60vh;display:grid;align-content:center}
+
+/* Aperture: featured engagement (product shot on white, multiplied into the paper tone) */
+.feature{margin:clamp(3rem,6vw,4.5rem) 0 0;gap:2rem;align-items:center;display:grid}
+@media (min-width:900px){.feature{grid-template-columns:7fr 5fr;gap:4rem}}
+.feature__img img{width:100%;height:auto;mix-blend-mode:multiply}
+:root[data-theme=dark] .feature__img{background:#fff;border-radius:2px;padding:1rem}
+.feature__copy{display:grid;gap:.75rem;align-content:center}
+.feature__copy p{margin:0}
+.feature__copy .tl__role{margin:0}
