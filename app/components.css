@@ -141,9 +141,8 @@
 .feature--tall .feature__img img{width:auto;max-height:520px}
 @media (max-width:899px){.feature--tall .feature__img img{max-height:380px}}
 @media (min-width:900px){.feature--flip{grid-template-columns:5fr 7fr}.feature--flip .feature__img{order:2}}
-.feature--panel .feature__img{background:var(--paper-2);border-radius:2px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center}
+.feature--panel .feature__img{display:flex;align-items:center;justify-content:center;padding:2rem 0}
 .feature--panel .feature__img img{mix-blend-mode:normal;width:52%;height:auto;opacity:.85}
-:root[data-theme=dark] .feature--panel .feature__img{padding:0}
 :root[data-theme=dark] .feature--panel .feature__img img{filter:invert(1)}
 .feature__points{list-style:none;margin:.25rem 0 0;padding:0;display:grid;gap:.75rem;border-top:1px solid var(--rule);padding-top:1rem}
 .feature__points li{font-size:1rem}
