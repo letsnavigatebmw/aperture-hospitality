@@ -1,50 +1,65 @@
 import type { Metadata, Viewport } from 'next'
-import { Cormorant_Garamond, Inter } from 'next/font/google'
 import './globals.css'
-
-const cormorant = Cormorant_Garamond({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600'],
-  variable: '--font-cormorant',
-})
-
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['300', '400', '500'],
-  variable: '--font-inter',
-})
+import './tokens.css'
+import './components.css'
+import Reveal from '@/components/Reveal'
+import { site } from '@/lib/site'
 
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  maximumScale: 5,
-  userScalable: true,
+  themeColor: '#f5f1ea',
 }
 
 export const metadata: Metadata = {
-  title: 'Aperture Hospitality',
-  description: 'Boutique hospitality consulting for owners, investors, and operators who need results, not a deck.',
-  metadataBase: new URL('https://aperturehospitality.com'),
+  metadataBase: new URL(site.url),
+  title: { default: site.title, template: '%s | Aperture Hospitality' },
+  description: site.description,
+  alternates: { canonical: '/' },
   openGraph: {
-    title: 'Aperture Hospitality',
-    description: 'Boutique hospitality consulting for owners, investors, and operators who need results, not a deck.',
+    title: site.title,
+    description: site.description,
+    url: site.url,
+    siteName: site.name,
     type: 'website',
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Aperture Hospitality' }],
   },
-  robots: 'index, follow',
+  twitter: { card: 'summary_large_image', title: site.title, description: site.description, images: ['/og.png'] },
+  icons: { icon: '/favicon.svg' },
+  robots: { index: true, follow: true },
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  name: site.name,
+  url: site.url,
+  email: site.email,
+  description: site.description,
+  areaServed: 'US',
+  address: { '@type': 'PostalAddress', addressLocality: 'Los Angeles', addressRegion: 'CA', addressCountry: 'US' },
+  founder: {
+    '@type': 'Person',
+    name: 'Brandon M. Weaver',
+    jobTitle: 'Founder & Principal',
+    url: site.personal,
+    sameAs: [site.personal, 'https://www.linkedin.com/in/brandonmweaver'],
+  },
+  sameAs: [site.linkedin, site.substack],
+}
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
+    <html lang="en" className="no-js">
       <head>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%23B8924A'>A</text></svg>" />
+        <link rel="preload" href="/fonts/newsreader-latin-standard-normal.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>
-      <body className="bg-parchment text-ink font-body antialiased">
+      <body>
+        <a className="skip" href="#main">Skip to content</a>
         {children}
+        <Reveal />
       </body>
     </html>
   )
