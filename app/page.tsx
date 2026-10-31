@@ -133,7 +133,7 @@ export default function Home() {
           <div className="container">
             <div className="reveal sec-head">
               <span className="eyebrow">Who I Work With</span>
-              <h2 id="who-h" className="h2">Built for operators and the brands they run</h2>
+              <h2 id="who-h" className="h2">Built for Operators and the Brands They Run</h2>
             </div>
             <ul className="principles reveal">
               {who.map((w, i) => (
@@ -171,7 +171,7 @@ export default function Home() {
           <div className="container">
             <div className="reveal sec-head">
               <span className="eyebrow">By the Numbers</span>
-              <h2 id="results-h" className="h2">Results, not a deck</h2>
+              <h2 id="results-h" className="h2">Results, Not a Deck</h2>
             </div>
             <dl className="stats reveal">
               {stats.map((s) => (
@@ -185,7 +185,7 @@ export default function Home() {
           <div className="container rail" style={{ marginTop: 'clamp(4rem, 8vw, 6rem)' }}>
             <div className="rail__head reveal">
               <span className="eyebrow">Selected Results</span>
-              <h2 className="h2">Operating roles, measurable outcomes</h2>
+              <h2 className="h2">Operating Roles, Measurable Outcomes</h2>
               <p className="lede" style={{ marginTop: '1.25rem' }}>I’ve run the P&amp;L, not just advised on it.</p>
             </div>
             <div className="reveal">
@@ -213,7 +213,7 @@ export default function Home() {
           <div className="container">
             <div className="reveal sec-head">
               <span className="eyebrow">Advisory Clients</span>
-              <h2 id="clients-h" className="h2">Who I’m working with</h2>
+              <h2 id="clients-h" className="h2">Who I’m Working With</h2>
             </div>
             <ul className="creds__logos reveal">
               {clients.map((c) => (
@@ -287,7 +287,7 @@ export default function Home() {
           <div className="container">
             <div className="reveal sec-head">
               <span className="eyebrow">Background</span>
-              <h2 id="bg-h" className="h2">Operator first, trained in finance and policy</h2>
+              <h2 id="bg-h" className="h2">Operator First, Trained in Finance and Policy</h2>
             </div>
             <div className="reveal">
               <ul className="creds__schools">
@@ -345,7 +345,7 @@ export default function Home() {
           <div className="container rail">
             <div className="rail__head reveal">
               <span className="eyebrow">Contact</span>
-              <h2 id="contact-h" className="h2">Let’s talk about your growth plan</h2>
+              <h2 id="contact-h" className="h2">Let’s Talk About Your Growth Plan</h2>
               <p className="lede" style={{ marginTop: '1.25rem' }}>
                 Tell me where growth is stuck. I read every message personally and reply within one business day.
               </p>

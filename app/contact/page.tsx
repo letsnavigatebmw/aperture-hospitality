@@ -20,7 +20,7 @@ export default function Contact() {
           <div className="container rail">
             <div className="rail__head">
               <p className="label label--accent" style={{ letterSpacing: '.16em', margin: '0 0 2rem' }}>Contact</p>
-              <h1 className="h2">Let’s talk about your <em>growth plan</em></h1>
+              <h1 className="h2">Let’s Talk About Your <em>Growth Plan</em></h1>
               <p className="lede" style={{ marginTop: '1.25rem' }}>
                 Tell me where growth is stuck. I read every message personally and reply within one business day.
               </p>
