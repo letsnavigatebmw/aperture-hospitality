@@ -15,7 +15,7 @@
 /* Section heads */
 .sec-head{margin-bottom:2.5rem}
 .sec-head--quotes{margin-top:clamp(4rem,8vw,6rem)}
-.sec-sub{max-width:40rem;margin:1.25rem 0 0}
+.sec-sub{max-width:none;margin:1.25rem 0 0}
 
 /* Stats */
 .stats{border-top:1px solid var(--ink);grid-template-columns:1fr 1fr;column-gap:1.25rem;margin:0;display:grid}
