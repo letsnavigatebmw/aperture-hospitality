@@ -153,7 +153,7 @@ export default function Spirits() {
             <div className="reveal">
               <span className="eyebrow">Contact</span>
               <h2 id="cta-h" className="h2">Let’s Talk About Your <em>Brand</em></h2>
-              <p className="lede sec-sub">Tell me where the brand is today and where it needs to be. I reply within one business day.</p>
+              <p className="lede sec-sub">Tell us where the brand is today and where it needs to be. I reply within one business day.</p>
               <div className="hero__cta" style={{ marginTop: '2rem' }}>
                 <Link className="btn" href="/contact">Let’s Talk</Link>
               </div>

@@ -7,7 +7,7 @@ import DirectLinks from '@/components/DirectLinks'
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: 'Tell me where growth is stuck. I read every message personally and reply within one business day.',
+  description: 'Tell us where growth is stuck. I read every message personally and reply within one business day.',
   alternates: { canonical: '/contact' },
 }
 
@@ -22,7 +22,7 @@ export default function Contact() {
               <p className="label label--accent" style={{ letterSpacing: '.16em', margin: '0 0 2rem' }}>Contact</p>
               <h1 className="h2">Let’s Talk About Your <em>Growth Plan</em></h1>
               <p className="lede" style={{ marginTop: '1.25rem' }}>
-                Tell me where growth is stuck. I read every message personally and reply within one business day.
+                Tell us where growth is stuck. I read every message personally and reply within one business day.
               </p>
               <DirectLinks showLocation />
             </div>

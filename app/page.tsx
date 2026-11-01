@@ -127,9 +127,10 @@ export default function Home() {
                 Senior Commercial Leadership, <em>Without</em> the Full&#8209;Time Hire.
               </h1>
               <p className="hero__sub">
-                I work with CEOs, founders and boards as a fractional Chief Commercial or Marketing Officer, bringing the
-                operating experience of a former COO, CCO and GM to growth, go-to-market and turnaround challenges. I
-                don’t hand over a deck and leave. I build the plan, lead the team through it and measure the result.
+                Aperture works with CEOs, founders and boards as a fractional Chief Commercial or Marketing Officer,
+                bringing the operating experience of a former COO, CCO and GM to growth, go-to-market and turnaround
+                challenges. We don’t hand over a deck and leave. I build the plan, lead the team through it and measure
+                the result.
               </p>
               <div className="hero__cta">
                 <Link className="btn" href="/contact">Start a conversation</Link>
@@ -142,11 +143,11 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Who I work with */}
+        {/* Who we work with */}
         <section className="section" id="who" aria-labelledby="who-h">
           <div className="container">
             <div className="reveal sec-head">
-              <span className="eyebrow">Who I Work With</span>
+              <span className="eyebrow">Who We Work With</span>
               <h2 id="who-h" className="h2">Built for Operators and the Brands They Run</h2>
             </div>
             <ul className="principles reveal">
@@ -166,7 +167,7 @@ export default function Home() {
           <div className="container rail">
             <div className="rail__head reveal">
               <span className="eyebrow">Services</span>
-              <h2 id="services-h" className="h2">What I Do</h2>
+              <h2 id="services-h" className="h2">What We Do</h2>
               <p className="lede" style={{ marginTop: '1.25rem' }}>Hands on the plan, the team and the number.</p>
             </div>
             <ul className="caps reveal">
@@ -227,8 +228,8 @@ export default function Home() {
         <section className="section" id="clients" aria-labelledby="clients-h">
           <div className="container">
             <div className="reveal sec-head">
-              <span className="eyebrow">Advisory Clients</span>
-              <h2 id="clients-h" className="h2">Who I’m Working With</h2>
+              <span className="eyebrow">Selected Engagements</span>
+              <h2 id="clients-h" className="h2">Who I’ve Worked With</h2>
             </div>
             <ul className="creds__logos reveal">
               {clients.map((c) => (
@@ -418,7 +419,7 @@ export default function Home() {
               <span className="eyebrow">Contact</span>
               <h2 id="contact-h" className="h2">Let’s Talk About Your Growth Plan</h2>
               <p className="lede" style={{ marginTop: '1.25rem' }}>
-                Tell me where growth is stuck. I read every message personally and reply within one business day.
+                Tell us where growth is stuck. I read every message personally and reply within one business day.
               </p>
               <DirectLinks />
             </div>
