@@ -235,7 +235,7 @@ export default function Home() {
           <div className="container">
             <div className="reveal sec-head">
               <span className="eyebrow">Selected Engagements</span>
-              <h2 id="clients-h" className="h2">Who I’ve Worked With</h2>
+              <h2 id="clients-h" className="h2">Aperture Clients</h2>
             </div>
             <ul className="creds__logos reveal">
               {clients.map((c) => (
