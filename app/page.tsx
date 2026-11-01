@@ -387,7 +387,7 @@ export default function Home() {
           </div>
           <div className="container rail" style={{ marginTop: 'clamp(4rem, 8vw, 6rem)' }}>
             <div className="rail__head reveal">
-              <span className="eyebrow">Recent Writing</span>
+              <span className="eyebrow">Thought Leadership</span>
               <h2 className="h2">On the Record</h2>
               <p className="lede" style={{ marginTop: '1.25rem' }}>
                 White papers, playbooks and essays on commercial strategy, luxury and operations.
