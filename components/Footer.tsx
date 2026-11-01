@@ -7,6 +7,7 @@ export default function Footer() {
       <div className="container foot__inner">
         <div>
           <BrandMark />
+          <p className="foot__tagline">Let’s expand your aperture.</p>
           <p className="foot__sub">Los Angeles · Fractional commercial leadership for hospitality, travel and consumer brands</p>
         </div>
         <ul className="foot__links">
