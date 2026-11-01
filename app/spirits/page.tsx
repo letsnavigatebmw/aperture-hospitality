@@ -43,13 +43,13 @@ export default function Spirits() {
             <p className="label label--accent" style={{ letterSpacing: '.16em', margin: '0 0 2rem' }}>
               Early-Stage Spirits Brands
             </p>
-            <h1 className="display" style={{ maxWidth: '18ch' }}>
-              From great liquid to a brand that <em>moves</em>.
+            <h1 className="display" style={{ maxWidth: '20ch' }}>
+              Brands Need More Than a Good Story. They Need a Sound <em>Strategy</em>.
             </h1>
             <p className="hero__sub">
-              Most early-stage spirits brands don’t fail on the liquid. They stall between the bottle and the shelf.
-              Aperture builds the brand, the plan and the numbers, and through our partner ecosystem puts experienced
-              sales execution behind them.
+              Aperture, in partnership with MJR Adventures, designs customized and coordinated sales and marketing
+              solutions that deliver results. We focus on the tactics, assets and execution principles that drive
+              awareness, build affinity and improve sales velocity, on premise and off.
             </p>
             <div className="hero__cta">
               <Link className="btn" href="/contact">Let’s Talk</Link>
