@@ -48,6 +48,13 @@ const clients = [
   { n: 'Boatsetter', f: 'boatsetter', h: 30 },
 ]
 
+// Brandon's stated principles, shared with brandonmweaver.com ("How I Operate").
+const principles = [
+  { t: 'Connectivity Is the Advantage', d: 'Most operators see their function in isolation. I connect revenue, operations and strategy. The edge is never in one thing. It is in how the pieces fit.' },
+  { t: 'Alignment Creates Scale', d: 'You can’t scale misalignment. Unit economics, go-to-market and operations only compound when they pull in the same direction.' },
+  { t: 'Results Over Storytelling', d: 'I optimize for what works, not what looks good in a deck. Data over narrative. Efficiency over elegance.' },
+]
+
 // Featured engagements. Copy describes role and scope only: no fees, targets,
 // distributor, account names or fundraising detail (client-confidential).
 // TODO(Brandon): confirm both descriptions and image permissions before production.
@@ -310,18 +317,41 @@ export default function Home() {
                 </li>
               </ul>
               <p className="edu">
-                Board Member &amp; Strategic Advisor, Dowling Street · Publisher, <em>Expand Your Aperture</em> on Substack
+                Board Member &amp; Strategic Advisor, Dowling Street
               </p>
             </div>
           </div>
         </section>
 
-        {/* Insights */}
-        <section className="section" id="insights" aria-labelledby="ins-h">
-          <div className="container rail">
+        {/* Point of view */}
+        <section className="section" id="insights" aria-labelledby="pov-h">
+          <div className="container">
+            <div className="reveal sec-head">
+              <span className="eyebrow">Point of View</span>
+              <h2 id="pov-h" className="h2">Expand Your <em>Aperture</em></h2>
+              <p className="lede sec-sub">
+                My newsletter on AI, organizational intelligence and business transformation. Written for operators who
+                have to make it work on Monday morning.
+              </p>
+              <div className="hero__cta" style={{ marginTop: '2rem' }}>
+                <a className="btn" href={site.substack} target="_blank" rel="noopener">Subscribe on Substack</a>
+                <a className="link" href={`${site.substack}archive`} target="_blank" rel="noopener">Read the archive</a>
+              </div>
+            </div>
+            <ul className="principles reveal">
+              {principles.map((pr, i) => (
+                <li key={pr.t}>
+                  <span className="label num">0{i + 1}</span>
+                  <h3 className="h3">{pr.t}</h3>
+                  <p>{pr.d}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="container rail" style={{ marginTop: 'clamp(4rem, 8vw, 6rem)' }}>
             <div className="rail__head reveal">
-              <span className="eyebrow">Insights</span>
-              <h2 id="ins-h" className="h2">On the Record</h2>
+              <span className="eyebrow">Recent Writing</span>
+              <h2 className="h2">On the Record</h2>
               <p className="lede" style={{ marginTop: '1.25rem' }}>
                 White papers, playbooks and essays on commercial strategy, luxury and operations.
               </p>
@@ -337,10 +367,7 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <div className="links">
-                <Link className="link" href="/insights">All insights</Link>
-                <a className="link" href={site.substack} target="_blank" rel="noopener">Subscribe on Substack</a>
-              </div>
+              <Link className="link" href="/insights">All insights</Link>
             </div>
           </div>
         </section>
