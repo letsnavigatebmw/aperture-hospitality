@@ -326,18 +326,36 @@ export default function Home() {
         {/* Point of view */}
         <section className="section" id="insights" aria-labelledby="pov-h">
           <div className="container">
-            <div className="reveal sec-head">
-              <span className="eyebrow">Point of View</span>
-              <h2 id="pov-h" className="h2">Expand Your <em>Aperture</em></h2>
-              <p className="lede sec-sub">
-                My newsletter on AI, organizational intelligence and business transformation. Written for operators who
-                have to make it work on Monday morning.
-              </p>
-              <div className="hero__cta" style={{ marginTop: '2rem' }}>
-                <a className="btn" href={site.substack} target="_blank" rel="noopener">Subscribe on Substack</a>
-                <a className="link" href={`${site.substack}archive`} target="_blank" rel="noopener">Read the archive</a>
+            <div className="rail">
+              <div className="rail__head reveal">
+                <span className="eyebrow">Point of View</span>
+                <h2 id="pov-h" className="h2">The <em>Aperture</em> Papers</h2>
+                <div className="pov__cta">
+                  <a className="btn" href={site.substack} target="_blank" rel="noopener">Subscribe on Substack</a>
+                  <a className="link" href={`${site.substack}archive`} target="_blank" rel="noopener">Read the archive</a>
+                </div>
+              </div>
+              <div className="pov reveal">
+                <p className="lede">
+                  I created The Aperture Papers to explore the forces reshaping how businesses compete, operate and grow.
+                </p>
+                <p>
+                  Drawing on my experience as an operator, entrepreneur and strategic advisor, I examine the intersection
+                  of artificial intelligence, human capital, emerging technologies and business strategy, connecting
+                  technological innovation to its real-world commercial implications.
+                </p>
+                <blockquote className="pov__quote">
+                  Technology alone doesn’t create competitive advantage. It’s how organizations combine intelligence,
+                  institutional knowledge and human judgment to unlock economic value.
+                </blockquote>
+                <p>
+                  At a time when innovation is accelerating faster than many businesses can adapt, The Aperture Papers
+                  offers a practical, forward-looking perspective on the opportunities, challenges and strategic decisions
+                  defining the next era of business.
+                </p>
               </div>
             </div>
+            <span className="eyebrow reveal" style={{ marginTop: 'clamp(3.5rem, 7vw, 5rem)' }}>How I Operate</span>
             <ul className="principles reveal">
               {principles.map((pr, i) => (
                 <li key={pr.t}>
