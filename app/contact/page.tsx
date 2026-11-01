@@ -3,7 +3,7 @@ import { Suspense } from 'react'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import IntakeForm from '@/components/IntakeForm'
-import { site } from '@/lib/site'
+import DirectLinks from '@/components/DirectLinks'
 
 export const metadata: Metadata = {
   title: 'Contact',
@@ -24,20 +24,7 @@ export default function Contact() {
               <p className="lede" style={{ marginTop: '1.25rem' }}>
                 Tell me where growth is stuck. I read every message personally and reply within one business day.
               </p>
-              <ul className="direct">
-                <li>
-                  <span className="label">Book a time</span>
-                  <a className="link link--plain" href={site.bookingUrl} target="_blank" rel="noopener">Pick a slot on my calendar</a>
-                </li>
-                <li>
-                  <span className="label">Email</span>
-                  <a className="link link--plain" href={`mailto:${site.email}`}>{site.email}</a>
-                </li>
-                <li>
-                  <span className="label">Based in</span>
-                  <span style={{ color: 'var(--ink)' }}>Los Angeles</span>
-                </li>
-              </ul>
+              <DirectLinks showLocation />
             </div>
             <Suspense>
               <IntakeForm />

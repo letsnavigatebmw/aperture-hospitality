@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import IntakeForm from '@/components/IntakeForm'
+import DirectLinks from '@/components/DirectLinks'
 import { engagements, featuredInsights, site } from '@/lib/site'
 
 const who = [
@@ -288,6 +289,10 @@ export default function Home() {
             <div className="reveal sec-head">
               <span className="eyebrow">Background</span>
               <h2 id="bg-h" className="h2">Seasoned Operator Who Understands the Public &amp; Private Sectors</h2>
+              <p className="lede sec-sub">
+                Growth decisions don’t stop at the P&amp;L. They land on guests, employees, partners, regulators and the
+                community around the business. I lead with all of those constituents in view.
+              </p>
             </div>
             <div className="reveal">
               <ul className="creds__schools">
@@ -349,16 +354,7 @@ export default function Home() {
               <p className="lede" style={{ marginTop: '1.25rem' }}>
                 Tell me where growth is stuck. I read every message personally and reply within one business day.
               </p>
-              <ul className="direct">
-                <li>
-                  <span className="label">Book a time</span>
-                  <a className="link link--plain" href={site.bookingUrl} target="_blank" rel="noopener">Pick a slot on my calendar</a>
-                </li>
-                <li>
-                  <span className="label">Email</span>
-                  <a className="link link--plain" href={`mailto:${site.email}`}>{site.email}</a>
-                </li>
-              </ul>
+              <DirectLinks />
             </div>
             <div className="reveal">
               <IntakeForm />

@@ -4,8 +4,8 @@ export const site = {
   // TODO(Brandon): confirm one address everywhere (one-pager uses brandon@, old site used inquiries@)
   email: 'brandon@aperturehospitality.com',
   bookingUrl: 'https://calendar.app.google/Z5iZP6bsn5Xze1QN8',
-  linkedin: 'https://www.linkedin.com/company/aperture-hospitality',
-  substack: 'https://expandyouraperture.substack.com',
+  linkedin: 'https://www.linkedin.com/company/aperture-hospitality/',
+  substack: 'https://expandyouraperture.substack.com/',
   personal: 'https://www.brandonmweaver.com',
   title: 'Aperture Hospitality | Fractional Commercial Leadership',
   description:
