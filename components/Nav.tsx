@@ -46,7 +46,7 @@ export default function Nav() {
               </li>
             ))}
             <li>
-              <a href={site.substack} target="_blank" rel="noopener" title="The Aperture Papers on Substack">
+              <a href={site.substack} target="_blank" rel="noopener" title="The Aperture Papers, on Expand Your Aperture">
                 Substack
               </a>
             </li>

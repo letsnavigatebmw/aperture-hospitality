@@ -330,9 +330,10 @@ export default function Home() {
               <div className="rail__head reveal">
                 <span className="eyebrow">Point of View</span>
                 <h2 id="pov-h" className="h2">The <em>Aperture</em> Papers</h2>
+                <p className="lede" style={{ marginTop: '1rem' }}>Published on <em>Expand Your Aperture</em>, my Substack.</p>
                 <div className="pov__cta">
-                  <a className="btn" href={site.substack} target="_blank" rel="noopener">Subscribe on Substack</a>
-                  <a className="link" href={`${site.substack}archive`} target="_blank" rel="noopener">Read the archive</a>
+                  <a className="btn" href={site.substack} target="_blank" rel="noopener">Subscribe</a>
+                  <a className="link" href={`${site.substack}archive`} target="_blank" rel="noopener">Read the Papers</a>
                 </div>
               </div>
               <div className="pov reveal">
