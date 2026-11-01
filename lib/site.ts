@@ -1,7 +1,6 @@
 export const site = {
   name: 'Aperture Hospitality',
   url: 'https://www.aperturehospitality.com',
-  // TODO(Brandon): confirm one address everywhere (one-pager uses brandon@, old site used inquiries@)
   email: 'brandon@aperturehospitality.com',
   bookingUrl: 'https://calendar.app.google/Z5iZP6bsn5Xze1QN8',
   linkedin: 'https://www.linkedin.com/company/aperture-hospitality/',

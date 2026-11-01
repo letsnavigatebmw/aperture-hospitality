@@ -1,6 +1,0 @@
-/* Tailwind stays only for the legacy resource pages (frameworks, scorecard, kits).
-   New pages use the ported design system in tokens.css and components.css,
-   imported after this file in app/layout.tsx. */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

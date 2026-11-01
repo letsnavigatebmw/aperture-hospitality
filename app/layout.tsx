@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from 'next'
-import './globals.css'
 import './tokens.css'
 import './components.css'
 import Reveal from '@/components/Reveal'

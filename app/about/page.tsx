@@ -78,7 +78,7 @@ export default function About() {
               <p>
                 My career has taken me across industries, continents and cultures: from{' '}
                 <strong>Diageo’s luxury portfolio in Africa</strong> to scaling and eventually selling a PE-backed
-                hospitality platform. I’ve managed <strong>$750M+ in P&amp;L responsibility</strong>, launched{' '}
+                hospitality platform. I’ve led <strong>brands and businesses representing $750M+ in revenue</strong>, launched{' '}
                 <strong>8+ B2C and B2B brands</strong>, and raised <strong>$10M+ across ventures</strong>.
               </p>
               <p>

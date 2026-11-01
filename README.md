@@ -19,8 +19,8 @@ Change tokens here and on the personal site together. A shared package is the lo
 - `/` single long-scroll homepage (`app/page.tsx`)
 - `/insights` article index, data in `lib/site.ts`
 - `/contact` booking link plus the six-field form (`components/IntakeForm.tsx` posts to `app/api/contact`, sent with Resend)
-- Retired pages redirect permanently, see `next.config.ts`
-- Legacy resource pages (frameworks, scorecard, kits, downloads) are still live but unlinked; Tailwind remains only for them
+- `/about`, `/papers` (The Aperture Papers), `/spirits` (early-stage spirits, with MJR Adventures)
+- Retired pages and legacy resources redirect permanently, see `next.config.ts`
 
 ## Environment
 

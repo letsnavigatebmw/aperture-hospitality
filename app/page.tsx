@@ -31,7 +31,6 @@ const record = [
   { co: 'Lacure Villas', role: 'Chief Commercial Officer', line: 'Led a 65-person organization; grew GBV 13.2%; launched programs with American Express Platinum, Visa and NetJets.' },
   { co: 'Sonder', role: 'Area General Manager, California', line: 'Built the region from one person to seven properties (700+ rooms); led the portfolio through COVID-19 at a 240 RevPAR Index.' },
   { co: 'Stillhouse Spirits', note: 'Bacardi-backed', role: 'General Manager & Head of Marketing', line: 'Reset the 2019 brand plan; depletions up 7.5% in Q1 2019; launched Stillhouse Classic Vodka.' },
-  // TODO(Brandon): one-pager says ~$35M a year in Captain Morgan media; other materials say ~$30M. Add the confirmed figure here.
   { co: 'Diageo', role: 'Regional Marketing Manager', line: 'Launched Captain Morgan Black Spiced and Sherry Spice in the U.S.; managed Johnnie Walker and the Reserve portfolio across Africa.' },
   { co: 'BLKBOX', role: 'Managing Director', line: 'Won a Mondelēz Brand Accelerator engagement; raised a $1.5M growth round.' },
   { co: 'Navigate', role: 'Founder', line: 'Built an AI-native data platform; reached 60% trial-to-paid conversion.' },
@@ -58,7 +57,6 @@ const principles = [
 
 // Featured engagements. Copy describes role and scope only: no fees, targets,
 // distributor, account names or fundraising detail (client-confidential).
-// TODO(Brandon): confirm both descriptions and image permissions before production.
 const features = [
   {
     name: 'Perro Verde Mezcal',

@@ -10,6 +10,14 @@ const retired: [string, string][] = [
   ['/solutions', '/'],
   ['/philosophy', '/'],
   ['/philosophy/:path*', '/'],
+  ['/apertureframeworks', '/insights'],
+  ['/apertureframeworks/:path*', '/insights'],
+  ['/aperture-scorecard', '/contact'],
+  ['/workplacekit', '/'],
+  ['/trafficsystem', '/'],
+  ['/resources/:path*', '/insights'],
+  ['/download/:path*', '/insights'],
+  ['/downloads/:path*', '/insights'],
 ]
 
 const nextConfig: NextConfig = {
