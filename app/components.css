@@ -159,3 +159,20 @@
 .bottles{display:flex;justify-content:center;align-items:flex-end;gap:clamp(1.25rem,3vw,2.5rem);width:100%}
 .bottles img{height:clamp(240px,34vw,460px);width:auto;max-width:none;mix-blend-mode:multiply}
 :root[data-theme=dark] .bottles{background:#fff;border-radius:2px;padding:1rem}
+
+/* Aperture: About */
+.about-hero{display:grid;gap:2.5rem;align-items:start}
+@media (min-width:900px){.about-hero{grid-template-columns:5fr 7fr;gap:4.5rem}}
+.about-hero__photo{max-width:480px;margin:0}
+.about-hero__photo img{width:100%;height:auto}
+:root[data-theme=dark] .about-hero__photo img{border-radius:2px}
+@media (max-width:899px){.about-hero__photo{max-width:380px}}
+.about-copy p{font-size:1.125rem;margin:0 0 1.25rem}
+.about-copy strong{color:var(--ink);font-weight:550}
+.about-copy--long{max-width:46rem}
+.about-copy--long .pov__quote{margin-top:2.25rem}
+.about-edu{border-top:1px solid var(--rule);margin-top:2rem;padding-top:1.75rem}
+.about-edu ul{list-style:none;margin:0;padding:0;display:grid;gap:1.1rem}
+.about-edu li{display:grid;gap:.1rem}
+.about-edu strong{font-family:var(--serif);color:var(--ink);font-size:1.25rem;font-weight:450}
+.about-edu span{color:var(--ink-3);font-size:.9375rem}

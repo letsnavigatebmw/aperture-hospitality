@@ -11,6 +11,7 @@ const items = [
   { label: 'Results', href: '/#results' },
   { label: 'Engagements', href: '/#engagements' },
   { label: 'Insights', href: '/insights' },
+  { label: 'About', href: '/about' },
 ]
 
 export default function Nav() {

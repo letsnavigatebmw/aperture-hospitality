@@ -10,7 +10,6 @@ const retired: [string, string][] = [
   ['/solutions', '/'],
   ['/philosophy', '/'],
   ['/philosophy/:path*', '/'],
-  ['/about', '/#background'],
 ]
 
 const nextConfig: NextConfig = {
