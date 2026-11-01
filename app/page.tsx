@@ -337,9 +337,6 @@ export default function Home() {
                   <span className="creds__sub">BA, Communication</span>
                 </li>
               </ul>
-              <p className="edu">
-                Board Member &amp; Strategic Advisor, Dowling Street
-              </p>
             </div>
           </div>
         </section>
