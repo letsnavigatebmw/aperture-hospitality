@@ -29,7 +29,7 @@ export default function IntakeForm({ preselect }: { preselect?: string }) {
     })
     if (!ok) return setState('invalid')
 
-    const data = Object.fromEntries(new FormData(form).entries())
+    const data: Record<string, FormDataEntryValue> = { ...Object.fromEntries(new FormData(form).entries()), page: window.location.pathname }
     if (data._gotcha) return setState('sent')
     setState('sending')
     try {
