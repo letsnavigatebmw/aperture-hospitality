@@ -124,7 +124,7 @@ export default function Home() {
             <div className="hero__copy">
               <p className="label label--accent">Fractional Commercial Leadership · Hospitality, Travel &amp; Consumer Brands</p>
               <h1 className="display">
-                Senior commercial leadership, <em>without</em> the full&#8209;time hire.
+                Senior Commercial Leadership, <em>Without</em> the Full&#8209;Time Hire.
               </h1>
               <p className="hero__sub">
                 I work with CEOs, founders and boards as a fractional Chief Commercial or Marketing Officer, bringing the
