@@ -74,7 +74,7 @@ const features = [
     ],
     tall: true,
     flip: true,
-    more: { href: '/spirits', label: 'Learn More About How Aperture Helps Early\u2011Stage Spirits Brands' },
+    more: { href: '/spirits', label: 'Learn More About How Aperture Helps Early-Stage Spirits Brands' },
   },
   {
     name: 'WES Brands',
@@ -123,7 +123,7 @@ export default function Home() {
             <div className="hero__copy">
               <p className="label label--accent">Fractional Commercial Leadership · Hospitality, Travel &amp; Consumer Brands</p>
               <h1 className="display">
-                Senior Commercial Leadership, <em>Without</em> the Full&#8209;Time Hire.
+                Senior Commercial Leadership, <em>Without</em> the <span style={{ whiteSpace: 'nowrap' }}>Full-Time</span> Hire.
               </h1>
               <p className="hero__sub">
                 Aperture works with CEOs, founders and boards as a fractional Chief Commercial or Marketing Officer,
