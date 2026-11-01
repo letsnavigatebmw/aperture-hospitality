@@ -185,7 +185,7 @@ export default function Home() {
           <div className="container">
             <div className="reveal sec-head">
               <span className="eyebrow">By the Numbers</span>
-              <h2 id="results-h" className="h2">Results, Not a Deck</h2>
+              <h2 id="results-h" className="h2">Proven Results, Not Just a Pretty Deck</h2>
             </div>
             <dl className="stats reveal">
               {stats.map((s) => (
