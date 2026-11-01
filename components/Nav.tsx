@@ -4,7 +4,6 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import BrandMark from './BrandMark'
-import { site } from '@/lib/site'
 
 const items = [
   { label: 'Services', href: '/#services' },
@@ -12,6 +11,7 @@ const items = [
   { label: 'Engagements', href: '/#engagements' },
   { label: 'Insights', href: '/insights' },
   { label: 'About', href: '/about' },
+  { label: 'Substack', href: '/papers' },
 ]
 
 export default function Nav() {
@@ -46,11 +46,6 @@ export default function Nav() {
                 </Link>
               </li>
             ))}
-            <li>
-              <a href={site.substack} target="_blank" rel="noopener" title="The Aperture Papers, on Expand Your Aperture">
-                Substack
-              </a>
-            </li>
             <li>
               <Link href="/contact" className="btn nav__cta" aria-current={pathname === '/contact' ? 'page' : undefined}>
                 Contact
