@@ -75,6 +75,7 @@ const features = [
     ],
     tall: true,
     flip: true,
+    more: { href: '/spirits', label: 'Learn More About How Aperture Helps Early\u2011Stage Spirits Brands' },
   },
   {
     name: 'WES Brands',
@@ -253,6 +254,11 @@ export default function Home() {
                   <p className="card__title">{f.name}</p>
                   <p className="tl__role">{f.role}</p>
                   <p>{f.body}</p>
+                  {'more' in f && f.more && (
+                    <Link className="link" href={f.more.href} style={{ alignSelf: 'start', marginTop: '.5rem' }}>
+                      {f.more.label}
+                    </Link>
+                  )}
                   {'points' in f && f.points && (
                     <ul className="feature__points">
                       {f.points.map(([t, d]) => (
@@ -296,7 +302,7 @@ export default function Home() {
                   <p className="card__title">{e.title}</p>
                   <p className="label">{e.format}</p>
                   <p>{e.body}</p>
-                  <Link className="link" href={`/contact?engagement=${e.id}`}>Discuss this</Link>
+                  <Link className="link" href={`/contact?engagement=${e.id}`}>Let’s Talk</Link>
                 </article>
               ))}
             </div>
