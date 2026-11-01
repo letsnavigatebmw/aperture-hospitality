@@ -287,7 +287,7 @@ export default function Home() {
           <div className="container">
             <div className="reveal sec-head">
               <span className="eyebrow">Background</span>
-              <h2 id="bg-h" className="h2">Operator First, Trained in Finance and Policy</h2>
+              <h2 id="bg-h" className="h2">Seasoned Operator Who Understands the Public &amp; Private Sectors</h2>
             </div>
             <div className="reveal">
               <ul className="creds__schools">
