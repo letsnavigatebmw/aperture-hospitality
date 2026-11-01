@@ -203,6 +203,7 @@ export default function Home() {
               <p className="lede" style={{ marginTop: '1.25rem' }}>I’ve run the P&amp;L, not just advised on it.</p>
             </div>
             <div className="reveal">
+              <span className="eyebrow">Professional Experience</span>
               <ul className="tl">
                 {record.map((r) => (
                   <li className="tl__row" key={r.co}>
