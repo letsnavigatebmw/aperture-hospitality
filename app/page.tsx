@@ -31,21 +31,21 @@ const record = [
   { co: 'Sonder', role: 'Area General Manager, California', line: 'Built the region from one person to seven properties (700+ rooms); led the portfolio through COVID-19 at a 240 RevPAR Index.' },
   { co: 'Stillhouse Spirits', note: 'Bacardi-backed', role: 'General Manager & Head of Marketing', line: 'Reset the 2019 brand plan; depletions up 7.5% in Q1 2019; launched Stillhouse Classic Vodka.' },
   // TODO(Brandon): one-pager says ~$35M a year in Captain Morgan media; other materials say ~$30M. Add the confirmed figure here.
-  { co: 'Diageo', role: 'Regional Marketing Manager', line: 'Oversaw Captain Morgan national media and Johnnie Walker’s integrated campaigns in South Africa.' },
+  { co: 'Diageo', role: 'Regional Marketing Manager', line: 'Launched Captain Morgan Black Spiced and Sherry Spice in the U.S.; managed Johnnie Walker and the Reserve portfolio across Africa.' },
   { co: 'BLKBOX', role: 'Managing Director', line: 'Won a Mondelēz Brand Accelerator engagement; raised a $1.5M growth round.' },
   { co: 'Navigate', role: 'Founder', line: 'Built an AI-native data platform; reached 60% trial-to-paid conversion.' },
 ]
 
 // Monochrome logos in public/logos/clients, sized by eye for optical balance.
 const clients = [
-  { n: 'Swarm', f: 'swarm', h: 56 },
-  { n: 'Voyage Real Estate', f: 'voyage', h: 22 },
-  { n: 'Beverly Spirits', f: 'beverly-spirits', h: 50 },
-  { n: 'Perro Verde', f: 'perro-verde', h: 56 },
-  { n: 'WES Brands', f: 'wes-brands', h: 48 },
-  { n: 'All World Communications Group', f: 'all-world', h: 50 },
-  { n: 'Wilbur Labs', f: 'wilbur-labs', h: 24 },
-  { n: 'Boatsetter', f: 'boatsetter', h: 30 },
+  { n: 'Swarm', f: 'swarm', h: 56, w: 280, ih: 300 },
+  { n: 'Voyage Real Estate', f: 'voyage', h: 22, w: 386, ih: 86 },
+  { n: 'Beverly Spirits', f: 'beverly-spirits', h: 50, w: 424, ih: 223 },
+  { n: 'Perro Verde', f: 'perro-verde', h: 56, w: 359, ih: 264 },
+  { n: 'WES Brands', f: 'wes-brands', h: 48, w: 181, ih: 138 },
+  { n: 'All World Communications Group', f: 'all-world', h: 50, w: 520, ih: 235 },
+  { n: 'Wilbur Labs', f: 'wilbur-labs', h: 24, w: 520, ih: 77 },
+  { n: 'Boatsetter', f: 'boatsetter', h: 30, w: 520, ih: 117 },
 ]
 
 // Brandon's stated principles, shared with brandonmweaver.com ("How I Operate").
@@ -138,7 +138,7 @@ export default function Home() {
               </div>
             </div>
             <figure className="hero__photo">
-              <img src="/brandon-hero.webp" alt="Brandon M. Weaver, Founder & Principal of Aperture Hospitality" width={1717} height={2576} fetchPriority="high" />
+              <img src="/brandon-hero.webp" srcSet="/brandon-hero-480.webp 480w, /brandon-hero-720.webp 720w, /brandon-hero.webp 1100w" sizes="(min-width: 900px) 40vw, 90vw" alt="Brandon M. Weaver, Founder & Principal of Aperture Hospitality" width={1100} height={1650} fetchPriority="high" />
             </figure>
           </div>
         </section>
@@ -234,7 +234,7 @@ export default function Home() {
             <ul className="creds__logos reveal">
               {clients.map((c) => (
                 <li key={c.f}>
-                  <img src={`/logos/clients/${c.f}.png`} alt={c.n} style={{ height: c.h }} loading="lazy" />
+                  <img src={`/logos/clients/${c.f}.png`} alt={c.n} width={c.w} height={c.ih} style={{ height: c.h, width: 'auto' }} loading="lazy" decoding="async" />
                 </li>
               ))}
             </ul>
@@ -319,7 +319,9 @@ export default function Home() {
               <h2 id="bg-h" className="h2">Seasoned Operator Who Understands the Public &amp; Private Sectors</h2>
               <p className="lede sec-sub">
                 Growth decisions don’t stop at the P&amp;L. They land on guests, employees, partners, regulators and the
-                community around the business. I lead with all of those constituents in view.
+                community around the business.
+                <br />
+                I lead with all of those constituents and stakeholders in mind.
               </p>
             </div>
             <div className="reveal">

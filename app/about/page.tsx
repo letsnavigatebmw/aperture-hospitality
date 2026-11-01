@@ -26,7 +26,7 @@ export default function About() {
         <section className="hero">
           <div className="container about-hero">
             <figure className="about-hero__photo">
-              <img src="/brandon-about.webp" alt="Brandon M. Weaver" width={804} height={936} fetchPriority="high" />
+              <img src="/brandon-about.webp" srcSet="/brandon-about-480.webp 480w, /brandon-about.webp 804w" sizes="(min-width: 900px) 480px, 90vw" alt="Brandon M. Weaver" width={804} height={936} fetchPriority="high" />
             </figure>
             <div>
               <p className="label label--accent" style={{ letterSpacing: '.16em', margin: '0 0 1.5rem' }}>Founder &amp; CEO</p>

@@ -68,10 +68,10 @@
 .tl__line{margin:0;font-size:1rem}
 
 /* Logo and wordmark rows */
-.creds__logos{border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);margin:0;padding:.5rem 0;list-style:none;grid-template-columns:repeat(2,1fr);gap:0;display:grid}
-@media (min-width:640px){.creds__logos{grid-template-columns:repeat(4,1fr)}}
+.creds__logos{border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);margin:0;padding:.5rem 0;list-style:none;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;display:grid}
+@media (min-width:640px){.creds__logos{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .creds__logos li{justify-content:center;align-items:center;min-height:112px;padding:0 .75rem;display:flex}
-.creds__logos img{object-fit:contain;opacity:.78;width:auto;max-width:170px;transition:opacity .2s}
+.creds__logos img{object-fit:contain;opacity:.78;width:auto;max-width:min(170px,100%);transition:opacity .2s}
 .creds__logos img:hover{opacity:1}
 :root[data-theme=dark] .creds__logos img{filter:invert(1)}
 .creds__title{font-family:var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin:0;font-size:.9375rem;font-weight:700}
@@ -176,3 +176,17 @@
 .about-edu li{display:grid;gap:.1rem}
 .about-edu strong{font-family:var(--serif);color:var(--ink);font-size:1.25rem;font-weight:450}
 .about-edu span{color:var(--ink-3);font-size:.9375rem}
+
+/* Mobile: comfortable touch targets (44px) without changing the desktop look */
+@media (pointer:coarse){
+  .link{padding-top:.6rem;padding-bottom:.55rem}
+  .link--plain{padding-top:.55rem;padding-bottom:.5rem}
+  .brand{min-height:44px}
+  .direct{gap:.6rem}
+}
+@media (max-width:639px){
+  .creds__logos li{min-height:96px;padding:0 .5rem}
+  .wordrow{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pov__quote{padding-left:1.1rem}
+  .feature{gap:1.5rem}
+}
