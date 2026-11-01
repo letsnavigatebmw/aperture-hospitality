@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
-import { featuredInsights, site } from '@/lib/site'
+import ContactCTA from '@/components/ContactCTA'
+import { site } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'The Aperture Papers',
@@ -53,33 +53,7 @@ export default function Papers() {
           </div>
         </section>
 
-        <section className="section" aria-labelledby="more-h">
-          <div className="container rail">
-            <div className="rail__head reveal">
-              <span className="eyebrow">Thought Leadership</span>
-              <h2 id="more-h" className="h2">More From the Record</h2>
-              <p className="lede" style={{ marginTop: '1.25rem' }}>
-                White papers, playbooks and essays on commercial strategy, luxury and operations.
-              </p>
-            </div>
-            <div className="reveal">
-              <ul className="pieces">
-                {featuredInsights.map((p) => (
-                  <li key={p.title}>
-                    <a href={p.link} target="_blank" rel="noopener">
-                      <span className="label">{p.type} · {p.topic}</span>
-                      <span className="pieces__t">{p.title}</span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-              <div className="links">
-                <Link className="link" href="/insights">All insights</Link>
-                <a className="link" href={site.substack} target="_blank" rel="noopener">Subscribe on Substack</a>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ContactCTA />
       </main>
       <Footer />
     </>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+import ContactCTA from '@/components/ContactCTA'
 import { site } from '@/lib/site'
 
 export const metadata: Metadata = {
@@ -100,6 +101,7 @@ export default function About() {
             </div>
           </div>
         </section>
+        <ContactCTA />
       </main>
       <Footer />
     </>

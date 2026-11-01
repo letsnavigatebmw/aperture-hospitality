@@ -190,3 +190,6 @@
   .pov__quote{padding-left:1.1rem}
   .feature{gap:1.5rem}
 }
+
+/* Headline kept to one line on wider screens */
+@media (min-width:900px){.display.one-line{white-space:nowrap;font-size:clamp(3rem,5.2vw,4.75rem)}}

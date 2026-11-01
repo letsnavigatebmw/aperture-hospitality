@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+import ContactCTA from '@/components/ContactCTA'
 import { insightGroups } from '@/lib/site'
 
 export const metadata: Metadata = {
@@ -17,8 +18,8 @@ export default function Insights() {
         <section className="hero">
           <div className="container">
             <p className="label label--accent" style={{ letterSpacing: '.16em', margin: '0 0 2rem' }}>Insights</p>
-            <h1 className="display" style={{ maxWidth: '18ch' }}>Aperture <em>Thought Leadership</em></h1>
-            <p className="lede" style={{ maxWidth: '44rem', marginTop: '2rem' }}>
+            <h1 className="display one-line">Aperture <em>Thought Leadership</em></h1>
+            <p className="lede" style={{ marginTop: '2rem' }}>
               White papers, playbooks and essays on commercial strategy, luxury and operations, drawn from two decades
               of launching brands, opening properties and leading commercial teams across spirits, hospitality, travel
               and real estate. Each piece is written to be used: practical frameworks and hard-won lessons for operators,
@@ -47,6 +48,7 @@ export default function Insights() {
             ))}
           </div>
         </section>
+        <ContactCTA />
       </main>
       <Footer />
     </>

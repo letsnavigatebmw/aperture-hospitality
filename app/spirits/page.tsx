@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+import ContactCTA from '@/components/ContactCTA'
 
 export const metadata: Metadata = {
   title: 'Early-Stage Spirits Brands',
@@ -148,18 +149,14 @@ export default function Spirits() {
           </div>
         </section>
 
-        <section className="section" aria-labelledby="cta-h">
-          <div className="container">
-            <div className="reveal">
-              <span className="eyebrow">Contact</span>
-              <h2 id="cta-h" className="h2">Let’s Talk About Your <em>Brand</em></h2>
-              <p className="lede sec-sub">Tell us where the brand is today and where it needs to be. I reply within one business day.</p>
-              <div className="hero__cta" style={{ marginTop: '2rem' }}>
-                <Link className="btn" href="/contact">Let’s Talk</Link>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ContactCTA
+          title={
+            <>
+              Let’s Talk About Your <em>Brand</em>
+            </>
+          }
+          body="Tell us where the brand is today and where it needs to be. I reply within one business day."
+        />
       </main>
       <Footer />
     </>
