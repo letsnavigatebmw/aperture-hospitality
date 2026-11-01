@@ -3,7 +3,7 @@ import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import IntakeForm from '@/components/IntakeForm'
 import DirectLinks from '@/components/DirectLinks'
-import { engagements, featuredInsights, site } from '@/lib/site'
+import { engagements, site } from '@/lib/site'
 
 const who = [
   { t: 'Hospitality & Travel', d: 'Hotels, luxury rentals, travel distribution and experiences, especially growth-stage and PE-backed.' },
@@ -359,28 +359,6 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-          </div>
-          <div className="container rail" style={{ marginTop: 'clamp(4rem, 8vw, 6rem)' }}>
-            <div className="rail__head reveal">
-              <span className="eyebrow">Thought Leadership</span>
-              <h2 className="h2">On the Record</h2>
-              <p className="lede" style={{ marginTop: '1.25rem' }}>
-                White papers, playbooks and essays on commercial strategy, luxury and operations.
-              </p>
-            </div>
-            <div className="reveal">
-              <ul className="pieces">
-                {featuredInsights.map((p) => (
-                  <li key={p.title}>
-                    <a href={p.link} target="_blank" rel="noopener">
-                      <span className="label">{p.type} · {p.topic}</span>
-                      <span className="pieces__t">{p.title}</span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-              <Link className="link" href="/insights">All insights</Link>
-            </div>
           </div>
         </section>
 

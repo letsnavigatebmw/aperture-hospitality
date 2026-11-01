@@ -7,8 +7,6 @@ import BrandMark from './BrandMark'
 
 const items = [
   { label: 'Services', href: '/#services' },
-  { label: 'Results', href: '/#results' },
-  { label: 'Engagements', href: '/#engagements' },
   { label: 'Insights', href: '/insights' },
   { label: 'About', href: '/about' },
   { label: 'Substack', href: '/papers' },

@@ -68,7 +68,7 @@ p{margin:0 0 1em}
 .nav__cta{min-height:44px;padding:0 1.25rem;font-weight:600}
 .nav__toggle{display:none}
 .sr{clip:rect(0 0 0 0);width:1px;height:1px;position:absolute;overflow:hidden}
-@media (max-width:1099px){
+@media (max-width:899px){
   .nav__toggle{cursor:pointer;width:44px;height:44px;color:var(--ink);background:0 0;border:0;place-items:center;margin-right:-10px;display:grid}
   .nav__bars,.nav__bars:before,.nav__bars:after{background:currentColor;width:20px;height:1.5px;transition:transform .2s,opacity .2s;display:block;position:relative}
   .nav__bars:before,.nav__bars:after{content:"";position:absolute;left:0}
