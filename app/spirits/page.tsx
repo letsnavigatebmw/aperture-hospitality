@@ -53,7 +53,7 @@ export default function Spirits() {
             </p>
             <div className="hero__cta">
               <Link className="btn" href="/contact">Let’s Talk</Link>
-              <a className="link" href="#partners">Our partner ecosystem</a>
+              <a className="link" href="#partners">Aperture &amp; MJR Adventures</a>
             </div>
           </div>
         </section>
