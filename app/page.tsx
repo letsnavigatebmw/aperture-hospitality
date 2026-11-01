@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import IntakeForm from '@/components/IntakeForm'
+import BrandMarquee from '@/components/BrandMarquee'
 import DirectLinks from '@/components/DirectLinks'
 import { engagements, site } from '@/lib/site'
 
@@ -196,6 +197,13 @@ export default function Home() {
                 </div>
               ))}
             </dl>
+          </div>
+          <div className="container" style={{ marginTop: 'clamp(4rem, 8vw, 6rem)' }}>
+            <div className="reveal">
+              <span className="eyebrow">Brands</span>
+              <h2 className="h2">Brands I’ve Worked With</h2>
+            </div>
+            <BrandMarquee />
           </div>
           <div className="container rail" style={{ marginTop: 'clamp(4rem, 8vw, 6rem)' }}>
             <div className="rail__head reveal">

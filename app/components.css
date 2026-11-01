@@ -193,3 +193,16 @@
 
 /* Headline kept to one line on wider screens */
 @media (min-width:900px){.display.one-line{white-space:nowrap;font-size:clamp(3rem,5.2vw,4.75rem)}}
+
+/* Brand carousel, ported from brandonmweaver.com */
+.marquee-wrap{border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);margin-top:2.75rem}
+.marquee{padding:1.25rem 0;display:flex;position:relative;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,#0000,#000 6% 94%,#0000);mask-image:linear-gradient(90deg,#0000,#000 6% 94%,#0000)}
+.marquee__track{flex-shrink:0;align-items:center;gap:4rem;margin:0;padding:0 4rem 0 0;list-style:none;animation:130s linear infinite marquee;display:flex}
+.marquee:hover .marquee__track{animation-play-state:paused}
+.marquee__track li{flex-shrink:0;align-items:center;min-height:88px;display:flex}
+.marquee__track img{object-fit:contain;opacity:.8;max-width:220px}
+.marquee__name{font-family:var(--serif);color:var(--ink);opacity:.8;font-variant:small-caps;letter-spacing:.02em;white-space:nowrap;font-size:1.5rem;line-height:1}
+:root[data-theme=dark] .marquee__track img{filter:invert(1)}
+@keyframes marquee{to{transform:translate(-100%)}}
+@media (max-width:639px){.marquee__track{gap:2.5rem;padding-right:2.5rem}.marquee__track img{max-width:160px;transform:scale(.8)}}
+@media (prefers-reduced-motion:reduce){.marquee{flex-wrap:wrap;-webkit-mask-image:none;mask-image:none}.marquee__track{flex-wrap:wrap;flex-shrink:1;gap:1.5rem 3rem;animation:none}.marquee__track[aria-hidden]{display:none}}
