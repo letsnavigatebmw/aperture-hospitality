@@ -1,66 +1,49 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+const clean = (v: unknown) => String(v ?? '').trim().slice(0, 5000)
 
 export async function POST(request: NextRequest) {
   try {
-    const formData = await request.json()
+    const body = await request.json()
+    const name = clean(body.name)
+    const email = clean(body.email)
+    const company = clean(body.company)
+    const role = clean(body.role)
+    const engagement = clean(body.engagement)
+    const message = clean(body.message)
 
-    // Validate required fields
-    const { first_name, last_name, email, business_name } = formData
-    if (!first_name || !last_name || !email || !business_name) {
-      return NextResponse.json(
-        { error: 'Missing required fields' },
-        { status: 400 }
-      )
+    if (!name || !email || !company || !engagement || !message || !/^\S+@\S+\.\S+$/.test(email)) {
+      return NextResponse.json({ error: 'Missing required fields' }, { status: 400 })
     }
 
-    // Format the email content
-    const emailBody = `
-New Intake Form Submission
+    const text = `New inquiry from aperturehospitality.com
 
-PERSONAL INFORMATION:
-Name: ${first_name} ${last_name}
+Name: ${name}
 Email: ${email}
-Phone: ${formData.phone || 'Not provided'}
+Company: ${company}
+Role: ${role || 'Not provided'}
+Engagement of interest: ${engagement}
 
-BUSINESS INFORMATION:
-Business Name: ${business_name}
-Business Type: ${formData.business_type || 'Not specified'}
-Industry: ${formData.industry || 'Not specified'}
-Location: ${formData.location || 'Not specified'}
-Annual Revenue: ${formData.revenue || 'Not specified'}
-Number of Employees: ${formData.employees || 'Not specified'}
+Where is growth stuck?
+${message}`
 
-INTEREST:
-Interested In: ${formData.interested_in || 'Not specified'}
+    const escaped = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 
----
-This submission came from aperturehospitality.com intake form.
-    `.trim()
-
-    // Send with Resend
+    const resend = new Resend(process.env.RESEND_API_KEY)
     const response = await resend.emails.send({
       from: 'onboarding@resend.dev',
       to: 'brandon@aperturehospitality.com',
       replyTo: email,
-      subject: `New Inquiry from ${first_name} ${last_name}`,
-      text: emailBody,
-      html: `<pre style="font-family: monospace; white-space: pre-wrap;">${emailBody}</pre>`
+      subject: `New inquiry: ${name}, ${company} (${engagement})`,
+      text,
+      html: `<pre style="font-family: monospace; white-space: pre-wrap;">${escaped}</pre>`,
     })
 
-    if (response.error) {
-      throw new Error(response.error.message)
-    }
-
+    if (response.error) throw new Error(response.error.message)
     return NextResponse.json({ success: true })
-
   } catch (error) {
     console.error('Contact form error:', error)
-    return NextResponse.json(
-      { error: 'Failed to submit form' },
-      { status: 500 }
-    )
+    return NextResponse.json({ error: 'Failed to submit form' }, { status: 500 })
   }
 }
