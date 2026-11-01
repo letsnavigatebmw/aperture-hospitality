@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
-import { insightGroups, site } from '@/lib/site'
+import { insightGroups } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Insights',
@@ -17,14 +17,13 @@ export default function Insights() {
         <section className="hero">
           <div className="container">
             <p className="label label--accent" style={{ letterSpacing: '.16em', margin: '0 0 2rem' }}>Insights</p>
-            <h1 className="display" style={{ maxWidth: '16ch' }}>On the <em>Record</em></h1>
-            <p className="hero__sub">
-              I write on building businesses at scale, commercial strategy and leadership, for operators who have to
-              make it work on Monday morning.
+            <h1 className="display" style={{ maxWidth: '18ch' }}>Aperture <em>Thought Leadership</em></h1>
+            <p className="lede" style={{ maxWidth: '44rem', marginTop: '2rem' }}>
+              White papers, playbooks and essays on commercial strategy, luxury and operations, drawn from two decades
+              of launching brands, opening properties and leading commercial teams across spirits, hospitality, travel
+              and real estate. Each piece is written to be used: practical frameworks and hard-won lessons for operators,
+              not theory.
             </p>
-            <div className="hero__cta">
-              <a className="btn" href={site.substack} target="_blank" rel="noopener">Subscribe on Substack</a>
-            </div>
           </div>
         </section>
         <section className="section">
