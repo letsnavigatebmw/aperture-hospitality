@@ -62,12 +62,17 @@ const features = [
   {
     name: 'Perro Verde Mezcal',
     label: 'Current engagement',
-    role: 'Marketing & Key Accounts, California',
-    body: 'Building California for an artisanal Oaxacan mezcal, account by account. I lead marketing and key accounts: the playbook and sales tools the reps sell with, the brand story told for distributors, buyers and bartenders, store execution, events built to convert into accounts, and introductions into luxury hotels and fine dining across Southern California.',
-    img: '/logos/clients/perro-verde-bottle.webp',
+    role: 'Marketing & Commercial Strategy, California',
+    body: 'Building California for an artisanal Oaxacan mezcal, account by account. My remit covers marketing, commercial strategy and key accounts: the playbook and sales tools the reps sell with, the brand story told for distributors, buyers and bartenders, store execution, events built to convert into accounts, and introductions into luxury hotels and fine dining across Southern California.',
+    img: '/logos/clients/perro-verde-espadin.webp',
     alt: 'Perro Verde Espadín mezcal bottle',
-    w: 430,
-    h: 1098,
+    w: 331,
+    h: 944,
+    bottles: [
+      { src: '/logos/clients/perro-verde-espadin.webp', alt: 'Perro Verde Espadín mezcal', w: 331, h: 944 },
+      { src: '/logos/clients/perro-verde-ensamble.webp', alt: 'Perro Verde Ensamble mezcal', w: 578, h: 1623 },
+      { src: '/logos/clients/perro-verde-tobasiche.webp', alt: 'Perro Verde Tobasiche mezcal', w: 494, h: 1390 },
+    ],
     tall: true,
     flip: true,
   },
@@ -131,7 +136,7 @@ export default function Home() {
               </div>
             </div>
             <figure className="hero__photo">
-              <img src="/brandon-cutout.webp" alt="Brandon M. Weaver, Founder & Principal of Aperture Hospitality" width={1024} height={1536} fetchPriority="high" />
+              <img src="/brandon-hero.webp" alt="Brandon M. Weaver, Founder & Principal of Aperture Hospitality" width={1717} height={2576} fetchPriority="high" />
             </figure>
           </div>
         </section>
@@ -233,7 +238,15 @@ export default function Home() {
             {features.map((f) => (
               <figure className={`feature reveal${f.tall ? ' feature--tall' : ''}${'flip' in f && f.flip ? ' feature--flip' : ''}${'panel' in f && f.panel ? ' feature--panel' : ''}`} key={f.name}>
                 <div className="feature__img">
-                  <img src={f.img} alt={f.alt} width={f.w} height={f.h} loading="lazy" />
+                  {'bottles' in f && f.bottles ? (
+                    <div className="bottles">
+                      {f.bottles.map((bt) => (
+                        <img key={bt.src} src={bt.src} alt={bt.alt} width={bt.w} height={bt.h} loading="lazy" />
+                      ))}
+                    </div>
+                  ) : (
+                    <img src={f.img} alt={f.alt} width={f.w} height={f.h} loading="lazy" />
+                  )}
                 </div>
                 <figcaption className="feature__copy">
                   <span className="label label--accent">{f.label}</span>
