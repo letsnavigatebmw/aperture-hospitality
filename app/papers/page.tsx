@@ -32,7 +32,7 @@ export default function Papers() {
               </div>
             </div>
             <div className="pov">
-              <p className="lede">
+              <p>
                 I created The Aperture Papers to explore the forces reshaping how businesses compete, operate and grow.
               </p>
               <p>
