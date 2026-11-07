@@ -39,6 +39,7 @@
 .caps{border-top:1px solid var(--ink);margin:0;padding:0;list-style:none;display:grid}
 @media (min-width:700px){.caps{grid-template-columns:1fr 1fr;column-gap:2.5rem}}
 .caps li{border-bottom:1px solid var(--rule);padding:1.5rem 0}
+@media (min-width:700px){.caps li:last-child:nth-child(odd){grid-column:1/-1}}
 .caps__t{font-family:var(--serif);margin:0 0 .5rem;font-size:1.3rem;font-weight:450;line-height:1.2}
 .caps p{margin:0;font-size:1rem}
 
@@ -238,3 +239,26 @@
 @media (max-width:699px){.paths__head .label:last-child{display:none}.path{grid-template-columns:1fr auto;gap:1rem}.path__meta{grid-column:1;grid-row:2}.path__go{grid-column:2;grid-row:1/span 2;width:44px;height:44px}}
 
 .hero__grid--brand .hero__sub{max-width:40rem}
+
+/* Aperture: method steps */
+.steps{border-top:1px solid var(--ink);margin:0;padding:0;list-style:none;display:grid;counter-reset:none}
+.steps li{border-bottom:1px solid var(--rule)}
+.steps a{display:grid;gap:.35rem;padding:1.25rem 0;text-decoration:none;color:inherit}
+.steps__t{font-family:var(--serif);color:var(--ink);font-size:1.4rem;line-height:1.15;transition:color .2s}
+.steps__d{color:var(--ink-2);font-size:.9375rem}
+.steps a:hover .steps__t{color:var(--accent)}
+@media (min-width:1000px){.steps{grid-template-columns:repeat(5,1fr)}.steps li{border-bottom:0;padding:0 1.5rem 0 0}.steps li+li{border-left:1px solid var(--rule);padding-left:1.5rem}.steps a{padding:1.75rem 0 .5rem}}
+.steps--index{margin-top:2.5rem}
+.steps--index a{padding:1rem 0}
+.mstep__why{font-size:1.125rem;color:var(--ink-2);margin:0 0 2rem;max-width:44rem}
+.mstep__grid{display:grid;gap:2rem;border-top:1px solid var(--ink);padding-top:1.5rem}
+@media (min-width:800px){.mstep__grid{grid-template-columns:1fr 1fr;gap:3rem}}
+.mstep__grid ul{margin:.9rem 0 0;padding:0;list-style:none;display:grid;gap:.55rem}
+.mstep__grid li{padding-left:1.1rem;position:relative}
+.mstep__grid li:before{content:"";position:absolute;left:0;top:.7em;width:.45rem;height:1px;background:var(--accent)}
+.mstep__get{background:var(--paper-2);padding:1.25rem 1.4rem;border-radius:2px;align-self:start}
+.mstep__get p{margin:.6rem 0 0;font-family:var(--serif);font-size:1.25rem;line-height:1.35;color:var(--ink)}
+
+@media (max-width:639px){.hero__br{display:none}}
+@media (min-width:640px){.hero__keep{white-space:nowrap}}
+@media (min-width:900px){.hero__h1{font-size:clamp(3rem,4.9vw,4.1rem)}}

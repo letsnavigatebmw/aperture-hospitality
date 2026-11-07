@@ -6,9 +6,9 @@ export const site = {
   linkedin: 'https://www.linkedin.com/company/aperture-hospitality/',
   substack: 'https://expandyouraperture.substack.com/',
   personal: 'https://www.brandonmweaver.com',
-  title: 'Aperture Hospitality | Fractional Commercial Leadership',
+  title: 'Aperture Hospitality | Fractional Executive Leadership',
   description:
-    'Fractional Chief Commercial and Marketing Officer for hospitality, travel and consumer brands. Senior commercial leadership, without the full-time hire.',
+    'Fractional Chief Commercial and Marketing Officer for hospitality, travel and consumer brands. Executive leadership, without the full-time hire.',
 }
 
 export const engagements = [
@@ -19,10 +19,16 @@ export const engagements = [
     body: 'A clear read on where growth is stuck, the three priorities that matter and a 90-day action plan.',
   },
   {
+    id: 'brand',
+    title: 'Brand & Marketing Diagnostic',
+    format: '4 to 6 weeks · Fixed fee',
+    body: 'Why the brand isn’t connecting: positioning, audience and message, tested against what customers actually do, with a 90-day marketing plan.',
+  },
+  {
     id: 'fractional',
     title: 'Fractional CCO / CMO',
     format: '1 to 3 days a week · Monthly retainer',
-    body: 'Hands-on leadership of the commercial team, GTM execution, partner deals and board-level reporting.',
+    body: 'Hands-on leadership of sales or marketing: the team, GTM execution, partner deals and board-level reporting.',
   },
   {
     id: 'sprint',
