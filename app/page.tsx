@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 import IntakeForm from '@/components/IntakeForm'
 import BrandMarquee from '@/components/BrandMarquee'
 import DirectLinks from '@/components/DirectLinks'
-import { engagements, site } from '@/lib/site'
+import { site } from '@/lib/site'
 
 const who = [
   { t: 'Hospitality & Travel', d: 'Hotels, luxury rentals, travel distribution and experiences, especially growth-stage and PE-backed.' },
@@ -106,6 +106,14 @@ const features = [
   },
 ]
 
+// Entry paths shown under the hero. Each preselects the matching option on the contact form.
+const paths = [
+  { lead: 'I need a clear read on', em: 'where growth is stuck.', d: 'A Commercial Diagnostic: the three priorities that matter and a 90-day action plan.', meta: '4–6 weeks · Fixed fee', href: '/contact?engagement=diagnostic' },
+  { lead: 'I need senior leadership', em: 'running commercial.', d: 'A fractional CCO or CMO leading the team, GTM, partner deals and board reporting.', meta: '1–3 days a week · Retainer', href: '/contact?engagement=fractional' },
+  { lead: 'I have one outcome', em: 'to deliver, fast.', d: 'A Revenue Sprint: a pricing reset, launch, partnership program or turnaround plan.', meta: '8–12 weeks · Project fee', href: '/contact?engagement=sprint' },
+  { lead: 'I’m not sure yet.', em: 'Help me figure it out.', d: 'Tell us where things stand and we’ll recommend the right place to start.', meta: 'Start a conversation', href: '/contact' },
+]
+
 const quotes = [
   { q: 'Brandon has a unique ability to connect strategy with execution. He consistently identified opportunities others missed, built alignment across teams, and helped us accelerate expansion.', n: 'Ari Afshar', t: 'Founder & CEO, Voyage Real Estate' },
   { q: 'Working with Brandon felt like having a true strategic partner rather than an outside advisor. He challenged our assumptions in the right ways and translated complex growth objectives into practical, measurable actions.', n: 'Michael Silver', t: 'President, Foto Comercio' },
@@ -119,7 +127,7 @@ export default function Home() {
       <main id="main">
         {/* Hero */}
         <section className="hero">
-          <div className="container hero__grid">
+          <div className="container hero__grid hero__grid--brand">
             <div className="hero__copy">
               <p className="label label--accent">Fractional Commercial Leadership · Hospitality, Travel &amp; Consumer Brands</p>
               <h1 className="display">
@@ -133,12 +141,41 @@ export default function Home() {
               </p>
               <div className="hero__cta">
                 <Link className="btn" href="/contact">Start a conversation</Link>
-                <a className="link" href="#results">See the results</a>
+                <a className="link" href="#start">Choose where to start</a>
               </div>
             </div>
-            <figure className="hero__photo">
-              <img src="/brandon-hero.webp" srcSet="/brandon-hero-480.webp 480w, /brandon-hero-720.webp 720w, /brandon-hero.webp 1100w" sizes="(min-width: 900px) 40vw, 90vw" alt="Brandon M. Weaver, Founder & Principal of Aperture Hospitality" width={1100} height={1650} fetchPriority="high" />
-            </figure>
+            <div className="hero__mark" aria-hidden="true">
+              <svg viewBox="0 0 40 40">
+                <circle cx="20" cy="20" r="15" fill="none" stroke="var(--ink)" strokeOpacity=".28" strokeWidth=".6" />
+                <path d="M20 5 A15 15 0 0 1 35 20" fill="none" stroke="var(--accent)" strokeWidth="1.3" strokeLinecap="round" />
+              </svg>
+              <span className="hero__mark-word">APERTURE</span>
+              <span className="hero__mark-sub">HOSPITALITY</span>
+            </div>
+          </div>
+          <div className="container">
+            <nav className="paths" id="start" aria-labelledby="paths-h">
+              <div className="paths__head">
+                <span id="paths-h" className="label label--accent">Where do you want to start?</span>
+                <span className="label">Choose your path</span>
+              </div>
+              <ul>
+                {paths.map((p) => (
+                  <li key={p.href}>
+                    <Link className="path" href={p.href}>
+                      <span className="path__text">
+                        <span className="path__t">
+                          {p.lead} <em>{p.em}</em>
+                        </span>
+                        <span className="path__d">{p.d}</span>
+                      </span>
+                      <span className="path__meta">{p.meta}</span>
+                      <span className="path__go" aria-hidden="true">→</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
           </div>
         </section>
 
@@ -297,25 +334,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Engagements */}
-        <section className="section" id="engagements" aria-labelledby="eng-h">
-          <div className="container">
-            <div className="reveal sec-head">
-              <span className="eyebrow">Engagements</span>
-              <h2 id="eng-h" className="h2">How We Work Together</h2>
-            </div>
-            <div className="now now--3 reveal">
-              {engagements.map((e) => (
-                <article className="card" key={e.id}>
-                  <p className="card__title">{e.title}</p>
-                  <p className="label">{e.format}</p>
-                  <p>{e.body}</p>
-                  <Link className="link" href={`/contact?engagement=${e.id}`}>Let’s Talk</Link>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* Background */}
         <section className="section" id="background" aria-labelledby="bg-h">

@@ -2,7 +2,7 @@ import type { NextConfig } from 'next'
 
 // Pages retired in the one-pager redesign. Permanent (308) so search engines move their equity.
 const retired: [string, string][] = [
-  ['/how-we-work', '/#engagements'],
+  ['/how-we-work', '/#start'],
   ['/capabilities', '/#services'],
   ['/executive-advisory', '/#services'],
   ['/ai-solutions', '/'],

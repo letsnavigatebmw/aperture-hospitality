@@ -212,3 +212,29 @@
 
 /* Footer tagline */
 .foot__tagline{font-family:var(--serif);font-style:italic;color:var(--ink-2);font-size:1.25rem;line-height:1.3;margin:1.1rem 0 .25rem}
+
+/* Aperture: hero brand mark (replaces the portrait) */
+.hero__mark{display:flex;flex-direction:column;align-items:center;justify-self:end;color:var(--ink)}
+@media (min-width:900px){.hero__grid--brand{grid-template-columns:minmax(0,9fr) minmax(0,3fr);gap:3rem}}
+.hero__mark svg{width:clamp(170px,15vw,220px);height:auto}
+.hero__mark-word{font-family:var(--sans);font-size:1.3rem;letter-spacing:.42em;margin-right:-.42em;line-height:1;margin-top:1.75rem}
+.hero__mark-sub{font-family:var(--sans);font-size:.72rem;font-weight:500;letter-spacing:.82em;margin-right:-.82em;line-height:1;color:var(--ink-3);margin-top:.6rem}
+@media (max-width:899px){.hero__mark{display:none}}
+
+/* Aperture: entry paths ("Where do you want to start?") */
+.paths{margin-top:clamp(3rem,6vw,4.5rem);border:1px solid var(--rule);border-radius:2px;padding:1.5rem clamp(1.25rem,3vw,2.25rem) .5rem;background:color-mix(in srgb,var(--paper-2) 45%,transparent)}
+.paths__head{display:flex;justify-content:space-between;gap:1rem;padding-bottom:1.1rem;border-bottom:1px solid var(--ink)}
+.paths ul{list-style:none;margin:0;padding:0}
+.paths li+li{border-top:1px solid var(--rule)}
+.path{display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:1.5rem;padding:1.6rem 0;text-decoration:none;color:inherit}
+.path__text{display:grid;gap:.4rem}
+.path__t{font-family:var(--serif);color:var(--ink);font-size:clamp(1.5rem,2.6vw,2.25rem);line-height:1.15;letter-spacing:-.012em}
+.path__t em{color:var(--accent);font-style:italic}
+.path__d{color:var(--ink-2);font-size:1rem}
+.path__meta{font-family:var(--sans);font-size:.75rem;font-weight:550;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);white-space:nowrap}
+.path__go{width:48px;height:48px;border:1px solid var(--ink-3);border-radius:50%;display:grid;place-items:center;color:var(--ink);font-size:1.1rem;transition:background-color .2s,border-color .2s,color .2s,transform .2s}
+.path:hover .path__go,.path:focus-visible .path__go{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);transform:translateX(3px)}
+.path:hover .path__t{color:var(--ink)}
+@media (max-width:699px){.paths__head .label:last-child{display:none}.path{grid-template-columns:1fr auto;gap:1rem}.path__meta{grid-column:1;grid-row:2}.path__go{grid-column:2;grid-row:1/span 2;width:44px;height:44px}}
+
+.hero__grid--brand .hero__sub{max-width:40rem}
