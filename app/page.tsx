@@ -144,7 +144,7 @@ export default function Home() {
               </p>
               <div className="hero__cta">
                 <Link className="btn" href="/contact">Start a conversation</Link>
-                <a className="link" href="#start">Choose where to start</a>
+                <a className="link link--down" href="#start">Choose where to start</a>
               </div>
             </div>
             <div className="hero__mark" aria-hidden="true">

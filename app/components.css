@@ -216,7 +216,9 @@
 
 /* Aperture: hero brand mark (replaces the portrait) */
 .hero__mark{display:flex;flex-direction:column;align-items:center;justify-self:center;align-self:center;color:var(--ink)}
-@media (min-width:900px){.hero__grid--brand{grid-template-columns:minmax(0,1fr) auto;gap:clamp(2rem,4vw,4rem)}}
+.link--down:after{content:" ↓"}
+.link--down:hover:after{transform:translateY(3px)}
+@media (min-width:900px){.hero__grid--brand{grid-template-columns:fit-content(max(66%,36rem)) minmax(0,1fr);gap:clamp(2rem,4vw,4rem)}}
 .hero__mark svg{width:clamp(190px,21vw,300px);height:auto}
 .hero__mark-word{font-family:var(--sans);font-size:clamp(1.4rem,1.7vw,1.75rem);letter-spacing:.42em;margin-right:-.42em;line-height:1;margin-top:2rem}
 .hero__mark-sub{font-family:var(--sans);font-size:clamp(.8rem,1vw,1rem);font-weight:500;letter-spacing:.82em;margin-right:-.82em;line-height:1;color:var(--ink-3);margin-top:.8rem}
