@@ -274,3 +274,5 @@
 .card.res{display:flex;flex-direction:column}
 .card.res .card__title{margin-top:.5rem}
 .res__link{margin-top:auto;align-self:flex-start;padding-top:1.25rem;font-size:1rem}
+.res__links{margin-top:auto;padding-top:1.25rem;display:flex;flex-wrap:wrap;gap:.75rem 1.75rem}
+.res__links .link{font-size:1rem}

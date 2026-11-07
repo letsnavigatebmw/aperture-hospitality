@@ -156,19 +156,22 @@ export default function Spirits() {
               <span className="eyebrow">Tools &amp; Resources</span>
               <h2 id="res-h" className="h2">Run the Numbers, <em>Then</em> Run the Field</h2>
               <p className="lede sec-sub">
-                Two working tools from our engagements, free to use. One tests whether the price works for the brand.
-                The other tests whether the field team is doing the work that moves cases.
+                Working tools from our engagements, free to use. The calculator and template test whether the price works for the brand.
+                The framework tests whether the field team is doing the work that moves cases.
               </p>
             </div>
             <div className="now reveal">
               <article className="card res">
-                <p className="label">Interactive calculator</p>
+                <p className="label">Interactive calculator · Sheet template</p>
                 <p className="card__title">Brand Profitability Calculator</p>
                 <p>
                   Work back from the shelf price through the retailer and distributor to the FOB you must charge. See
-                  what the brand keeps per case, what a price cut really costs and how many cases it takes to break even.
+                  what the brand keeps per case, what a price cut really costs and how many cases it takes to break even. Ready to plug in your own COGS and margins? Copy the full template, SKU by SKU.
                 </p>
-                <a className="link res__link" href="/tools/spirits-profitability">Open the Calculator</a>
+                <div className="res__links">
+                  <a className="link" href="/tools/spirits-profitability">Open the Calculator</a>
+                  <a className="link" href="https://docs.google.com/spreadsheets/d/1QgcdvK_enK6I_utTBFVNAKA7M4OUAZdLdvXTFDSagNI/copy" target="_blank" rel="noopener">Copy the Google Sheet Template</a>
+                </div>
               </article>
               <article className="card res">
                 <p className="label">Framework · PDF, 4 pages</p>
