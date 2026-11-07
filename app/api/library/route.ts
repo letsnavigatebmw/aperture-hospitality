@@ -1,23 +1,10 @@
-import { createHmac, timingSafeEqual } from 'node:crypto'
 import { NextRequest, NextResponse } from 'next/server'
 import { clean, deliverInquiry } from '@/lib/inquiry'
 import { libraryLinks } from '@/lib/library-links'
+import { COOKIE, MAX_AGE, issue, valid } from '@/lib/library-auth'
 
 // Gate for the real estate library. A completed form logs the lead (sheet + email) and sets a
 // signed cookie; the links are only ever returned by this route, never rendered into the page.
-const COOKIE = 'ah_library'
-const MAX_AGE = 60 * 60 * 24 * 180 // 180 days
-const secret = () => process.env.LIBRARY_SECRET || process.env.INQUIRY_WEBHOOK_SECRET || 'dev-only-secret'
-const sign = (v: string) => createHmac('sha256', secret()).update(v).digest('base64url')
-
-function valid(token?: string) {
-  if (!token) return false
-  const i = token.lastIndexOf('.')
-  if (i < 1) return false
-  const a = Buffer.from(sign(token.slice(0, i)))
-  const b = Buffer.from(token.slice(i + 1))
-  return a.length === b.length && timingSafeEqual(a, b)
-}
 
 export async function GET(request: NextRequest) {
   if (!valid(request.cookies.get(COOKIE)?.value)) return NextResponse.json({ unlocked: false })
@@ -47,9 +34,8 @@ export async function POST(request: NextRequest) {
     const delivered = await deliverInquiry(data)
     if (!delivered) console.error('Library lead not delivered:', data.email)
 
-    const payload = Buffer.from(`${data.email}|${Date.now()}`).toString('base64url')
     const res = NextResponse.json({ unlocked: true, links: libraryLinks })
-    res.cookies.set(COOKIE, `${payload}.${sign(payload)}`, {
+    res.cookies.set(COOKIE, issue(data.email), {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
       sameSite: 'lax',

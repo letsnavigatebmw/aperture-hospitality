@@ -4,11 +4,11 @@ import { useEffect, useRef, useState } from 'react'
 import { site } from '@/lib/site'
 import { library, topics, type Session } from '@/lib/library'
 
-type Links = Record<string, { deck?: string; video?: string }>
+type Links = Record<string, { deck: string }>
 
 /**
- * Real estate library: every session is listed with its preview; the deck and recording links
- * come from /api/library only after the visitor completes the form (one form unlocks everything).
+ * Real estate library: every session is listed with its preview; the deck links come from
+ * /api/library only after the visitor completes the form (one form unlocks everything).
  */
 export default function LibraryGate() {
   const [links, setLinks] = useState<Links | null>(null)
@@ -65,7 +65,7 @@ export default function LibraryGate() {
             <h2 id="unlock-h" className="h2">
               {links ? (
                 <>
-                  Every Deck and Recording, <em>Open</em>
+                  Every Deck, <em>Open</em>
                 </>
               ) : (
                 <>
@@ -75,8 +75,8 @@ export default function LibraryGate() {
             </h2>
             <p className="lede sec-sub">
               {links
-                ? 'Thank you. The deck and recording links are live on every session below, and they’ll stay open on this browser.'
-                : `Tell us who you are and the full library opens: ${library.filter((s) => s.deck).length} decks and ${library.length} recordings. No drip sequence, no sales calls you didn't ask for.`}
+                ? 'Thank you. Every deck below is open, and it’ll stay open on this browser.'
+                : `Tell us who you are and all ${library.length} decks open. No drip sequence, no sales calls you didn't ask for.`}
             </p>
           </div>
           {links ? (
@@ -171,7 +171,7 @@ export default function LibraryGate() {
                         <div className="lib-card__meta">
                           <span className="label">{s.date}</span>
                           <span className="label">{s.speaker}</span>
-                          <span className="label lib-card__fmt">{[s.deck && 'Deck', 'Recording'].filter(Boolean).join(' + ')}</span>
+                          <span className="label lib-card__fmt">Deck · {s.pages} pages</span>
                         </div>
                         <h4 className="lib-card__t">{s.title}</h4>
                         <p className="lib-card__p">{s.preview}</p>
@@ -184,25 +184,16 @@ export default function LibraryGate() {
                         )}
                         <div className="lib-card__cta">
                           {l ? (
-                            <>
-                              {l.deck && (
-                                <a className="link" href={l.deck} target="_blank" rel="noopener">
-                                  View the Deck
-                                </a>
-                              )}
-                              {l.video && (
-                                <a className="link" href={l.video} target="_blank" rel="noopener">
-                                  Watch the Recording
-                                </a>
-                              )}
-                            </>
+                            <a className="link" href={l.deck} target="_blank" rel="noopener">
+                              View the Deck
+                            </a>
                           ) : (
                             <button type="button" className="lib-lock" onClick={() => ask(s)}>
                               <svg viewBox="0 0 16 16" aria-hidden="true">
                                 <rect x="3" y="7" width="10" height="7" rx="1" fill="none" stroke="currentColor" strokeWidth="1.3" />
                                 <path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2" fill="none" stroke="currentColor" strokeWidth="1.3" />
                               </svg>
-                              Unlock {s.deck ? 'deck and recording' : 'recording'}
+                              Unlock the deck
                             </button>
                           )}
                         </div>

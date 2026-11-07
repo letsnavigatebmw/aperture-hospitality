@@ -8,7 +8,7 @@ import { library } from '@/lib/library'
 export const metadata: Metadata = {
   title: 'Residential Real Estate & PropTech',
   description:
-    'Agent prospecting coaching from Navigate, the AI-native prospecting and property intelligence platform Brandon Weaver founded: a free library of decks and recordings, organized by topic.',
+    'Agent prospecting coaching from Navigate, the AI-native prospecting and property intelligence platform Brandon Weaver founded: a free library of session decks, organized by topic.',
   alternates: { canonical: '/real-estate' },
 }
 
@@ -43,7 +43,7 @@ export default function RealEstate() {
             <p className="hero__sub" style={{ maxWidth: '42rem' }}>
               I founded Navigate, an AI-native prospecting and property intelligence platform for real estate agents. In
               2025 I led a weekly prospecting track for agents in a national coaching program, with guest sessions from
-              Tony Dicks, on how to find, reach and convert the right homeowners. The full library is here:{' '}
+              Tony Dicks, on how to find, reach and convert the right homeowners. The decks are here:{' '}
               {library.length} sessions, organized by topic, free with one short form.
             </p>
             <div className="hero__cta">
