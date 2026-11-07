@@ -110,11 +110,11 @@ const features = [
 
 // Entry paths shown under the hero. Each preselects the matching option on the contact form.
 const paths = [
-  { lead: 'I need a senior leader', em: 'running marketing.', d: 'A fractional CMO: brand, demand and the marketing team, owned and measured against revenue.', meta: 'Fractional CMO · Retainer', href: '/contact?engagement=fractional' },
-  { lead: 'I need a senior leader', em: 'running sales.', d: 'A fractional CCO: sales, channels, partnerships and pipeline, with board-level reporting.', meta: 'Fractional CCO · Retainer', href: '/contact?engagement=fractional' },
+  { lead: 'I need a senior leader', em: 'running marketing.', d: 'A fractional CMO: brand, demand and the marketing team, owned and measured against revenue.', meta: 'Fractional CMO · Retainer', href: '/contact?engagement=cmo' },
+  { lead: 'I need a senior leader', em: 'running sales.', d: 'A fractional CCO: sales, channels, partnerships and pipeline, with board-level reporting.', meta: 'Fractional CCO · Retainer', href: '/contact?engagement=cco' },
   { lead: 'I need to understand why', em: 'my business stopped growing.', d: 'A Commercial Diagnostic: where growth is stuck, the three priorities that matter and a 90-day plan.', meta: '4–6 weeks · Fixed fee', href: '/contact?engagement=diagnostic' },
   { lead: 'I need to understand why my brand', em: 'isn’t connecting with consumers.', d: 'A Brand & Marketing Diagnostic: positioning, audience and message, tested against what customers actually do.', meta: '4–6 weeks · Fixed fee', href: '/contact?engagement=brand' },
-  { lead: 'I’m not sure yet.', em: 'Help me figure it out.', d: 'Tell us where things stand and we’ll recommend the right place to start.', meta: 'Start a conversation', href: '/contact' },
+  { lead: 'I’m not sure yet.', em: 'Help me figure it out.', d: 'Tell us where things stand and we’ll recommend the right place to start.', meta: 'Start a conversation', href: '/contact?engagement=unsure' },
 ]
 
 const quotes = [
@@ -134,7 +134,7 @@ export default function Home() {
             <div className="hero__copy">
               <p className="label label--accent">Fractional Sales &amp; Marketing Leadership · Hospitality, Travel &amp; Consumer Brands</p>
               <h1 className="display hero__h1">
-                <span className="hero__keep">Executive Leadership,</span> <br className="hero__br" /><em>Without</em> the <span style={{ whiteSpace: 'nowrap' }}>Full-Time</span> Hire.
+                <span className="hero__keep">Executive Leadership,</span> <br className="hero__br" /><em>Without</em> the <span style={{ whiteSpace: 'nowrap' }}>Full-Time Hire.</span>
               </h1>
               <p className="hero__sub">
                 Aperture works with CEOs, founders and boards as a fractional Chief Commercial or Marketing Officer,

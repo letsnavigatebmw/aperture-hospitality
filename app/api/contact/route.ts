@@ -20,6 +20,7 @@ export async function POST(request: NextRequest) {
       engagement: clean(body.engagement, 200),
       message: clean(body.message),
       page: clean(body.page, 200),
+      question: clean(body.question, 200),
     }
     if (!data.name || !data.email || !data.company || !data.engagement || !data.message || !/^\S+@\S+\.\S+$/.test(data.email)) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 })
@@ -33,7 +34,8 @@ export async function POST(request: NextRequest) {
         const res = await fetch(hook, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ ...data, secret }),
+          // The sheet and email show the question the visitor answered above their reply.
+          body: JSON.stringify({ ...data, message: data.question ? `${data.question}\n\n${data.message}` : data.message, secret }),
           redirect: 'follow',
           cache: 'no-store',
         })
@@ -56,7 +58,7 @@ Role: ${data.role || 'Not provided'}
 Engagement of interest: ${data.engagement}
 Page: ${data.page || '/'}
 
-Where is growth stuck?
+${data.question || 'Message'}
 ${data.message}`
       const resend = new Resend(process.env.RESEND_API_KEY)
       const r = await resend.emails.send({
