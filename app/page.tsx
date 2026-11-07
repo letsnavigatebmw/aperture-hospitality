@@ -8,8 +8,8 @@ import { site } from '@/lib/site'
 import { method } from '@/lib/method'
 
 const who = [
-  { t: 'Hospitality & Travel', d: 'Hotels, luxury rentals, travel distribution and experiences, especially growth-stage and PE-backed.' },
-  { t: 'Luxury, Lifestyle & Spirits', d: 'Positioning, distribution, retail and partnership growth.' },
+  { t: 'Hospitality & Travel', d: 'Hotels, luxury rentals, travel distribution and experiences, especially growth-stage and PE-backed.', more: { href: '/tools/revpar', label: 'Try the RevPAR Scenario Calculator' } },
+  { t: 'Luxury, Lifestyle & Spirits', d: 'Positioning, distribution, retail and partnership growth.', more: { href: '/spirits', label: 'How We Help Spirits Brands' } },
   { t: 'Travel-Tech & Proptech', d: 'Scaling go-to-market, pricing and partnerships with hospitality and real estate buyers.' },
 ]
 
@@ -195,6 +195,11 @@ export default function Home() {
                   <span className="label num">0{i + 1}</span>
                   <h3 className="h3">{w.t}</h3>
                   <p>{w.d}</p>
+                  {'more' in w && w.more && (
+                    <a className="link principles__more" href={w.more.href}>
+                      {w.more.label}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>

@@ -24,6 +24,10 @@ const nextConfig: NextConfig = {
   pageExtensions: ['ts', 'tsx', 'js', 'jsx'],
   output: 'standalone',
   outputFileTracingRoot: __dirname,
+  async rewrites() {
+    // Standalone client tools live in /public/tools as self-contained HTML.
+    return [{ source: '/tools/revpar', destination: '/tools/revpar.html' }]
+  },
   async redirects() {
     return retired.map(([source, destination]) => ({ source, destination, permanent: true }))
   },
