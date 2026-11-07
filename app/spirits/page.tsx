@@ -54,7 +54,8 @@ export default function Spirits() {
             </p>
             <div className="hero__cta">
               <Link className="btn" href="/contact">Let’s Talk</Link>
-              <a className="link" href="#partners">Aperture &amp; MJR Adventures</a>
+              <a className="link link--down" href="#partners">Aperture &amp; MJR Adventures</a>
+              <a className="link link--down" href="#resources">Tools &amp; Resources</a>
             </div>
           </div>
         </section>
@@ -144,6 +145,39 @@ export default function Spirits() {
                   Distributor selection and management, reps in market and account development, so the plan shows up
                   as depletions and reorders.
                 </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section className="section" id="resources" aria-labelledby="res-h">
+          <div className="container">
+            <div className="reveal sec-head">
+              <span className="eyebrow">Tools &amp; Resources</span>
+              <h2 id="res-h" className="h2">Run the Numbers, <em>Then</em> Run the Field</h2>
+              <p className="lede sec-sub">
+                Two working tools from our engagements, free to use. One tests whether the price works for the brand.
+                The other tests whether the field team is doing the work that moves cases.
+              </p>
+            </div>
+            <div className="now reveal">
+              <article className="card res">
+                <p className="label">Interactive calculator</p>
+                <p className="card__title">Brand Profitability Calculator</p>
+                <p>
+                  Work back from the shelf price through the retailer and distributor to the FOB you must charge. See
+                  what the brand keeps per case, what a price cut really costs and how many cases it takes to break even.
+                </p>
+                <a className="link res__link" href="/tools/spirits-profitability">Open the Calculator</a>
+              </article>
+              <article className="card res">
+                <p className="label">Framework · PDF, 4 pages</p>
+                <p className="card__title">Measure the Work, Not Just the Cases</p>
+                <p>
+                  A field sales effectiveness framework for spirits, wine and consumer brands: the on- and off-premise
+                  activities to track, how to tie them to depletions and the weekly cadence that shows what moves product.
+                </p>
+                <a className="link res__link" href="/guides/field-sales-effectiveness.pdf" target="_blank" rel="noopener">Read the Framework</a>
               </article>
             </div>
           </div>

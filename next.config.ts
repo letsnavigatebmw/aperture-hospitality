@@ -26,7 +26,10 @@ const nextConfig: NextConfig = {
   outputFileTracingRoot: __dirname,
   async rewrites() {
     // Standalone client tools live in /public/tools as self-contained HTML.
-    return [{ source: '/tools/revpar', destination: '/tools/revpar.html' }]
+    return [
+      { source: '/tools/revpar', destination: '/tools/revpar.html' },
+      { source: '/tools/spirits-profitability', destination: '/tools/spirits-profitability.html' },
+    ]
   },
   async redirects() {
     return retired.map(([source, destination]) => ({ source, destination, permanent: true }))
