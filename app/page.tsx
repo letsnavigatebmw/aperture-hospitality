@@ -5,6 +5,7 @@ import IntakeForm from '@/components/IntakeForm'
 import BrandMarquee from '@/components/BrandMarquee'
 import DirectLinks from '@/components/DirectLinks'
 import { site } from '@/lib/site'
+import { method } from '@/lib/method'
 
 const who = [
   { t: 'Hospitality & Travel', d: 'Hotels, luxury rentals, travel distribution and experiences, especially growth-stage and PE-backed.' },
@@ -14,6 +15,7 @@ const who = [
 
 const services = [
   { t: 'Commercial Strategy & GTM', d: 'Positioning, segmentation, channel and distribution strategy, pricing architecture, launch plans.' },
+  { t: 'Brand & Marketing Leadership', d: 'Positioning, brand building, demand generation, agency management and the marketing team, measured against revenue.' },
   { t: 'Revenue & Performance Turnarounds', d: 'Commercial diagnostics, market share and RevPAR gaps, unit economics, P&L and operating cadences.' },
   { t: 'Partnerships & Distribution', d: 'Co-branded and brand-funded programs, retail and trade activation, strategic alliances.' },
   { t: 'Models & Investor Readiness', d: 'Business cases, valuations, scenario models, fundraising and board materials, AI-enabled analytics.' },
@@ -111,7 +113,7 @@ const paths = [
   { lead: 'I need a senior leader', em: 'running marketing.', d: 'A fractional CMO: brand, demand and the marketing team, owned and measured against revenue.', meta: 'Fractional CMO · Retainer', href: '/contact?engagement=fractional' },
   { lead: 'I need a senior leader', em: 'running sales.', d: 'A fractional CCO: sales, channels, partnerships and pipeline, with board-level reporting.', meta: 'Fractional CCO · Retainer', href: '/contact?engagement=fractional' },
   { lead: 'I need to understand why', em: 'my business stopped growing.', d: 'A Commercial Diagnostic: where growth is stuck, the three priorities that matter and a 90-day plan.', meta: '4–6 weeks · Fixed fee', href: '/contact?engagement=diagnostic' },
-  { lead: 'I need to understand why my brand', em: 'isn’t connecting with consumers.', d: 'A Brand & Marketing Diagnostic: positioning, audience and message, tested against what customers actually do.', meta: '4–6 weeks · Fixed fee', href: '/contact?engagement=diagnostic' },
+  { lead: 'I need to understand why my brand', em: 'isn’t connecting with consumers.', d: 'A Brand & Marketing Diagnostic: positioning, audience and message, tested against what customers actually do.', meta: '4–6 weeks · Fixed fee', href: '/contact?engagement=brand' },
   { lead: 'I’m not sure yet.', em: 'Help me figure it out.', d: 'Tell us where things stand and we’ll recommend the right place to start.', meta: 'Start a conversation', href: '/contact' },
 ]
 
@@ -130,9 +132,9 @@ export default function Home() {
         <section className="hero">
           <div className="container hero__grid hero__grid--brand">
             <div className="hero__copy">
-              <p className="label label--accent">Fractional Commercial Leadership · Hospitality, Travel &amp; Consumer Brands</p>
-              <h1 className="display">
-                Senior Commercial Leadership, <em>Without</em> the <span style={{ whiteSpace: 'nowrap' }}>Full-Time</span> Hire.
+              <p className="label label--accent">Fractional Sales &amp; Marketing Leadership · Hospitality, Travel &amp; Consumer Brands</p>
+              <h1 className="display hero__h1">
+                <span className="hero__keep">Executive Leadership,</span> <br className="hero__br" /><em>Without</em> the <span style={{ whiteSpace: 'nowrap' }}>Full-Time</span> Hire.
               </h1>
               <p className="hero__sub">
                 Aperture works with CEOs, founders and boards as a fractional Chief Commercial or Marketing Officer,
@@ -215,6 +217,34 @@ export default function Home() {
                 </li>
               ))}
             </ul>
+          </div>
+        </section>
+
+        {/* Method */}
+        <section className="section" id="method" aria-labelledby="method-h">
+          <div className="container">
+            <div className="reveal sec-head">
+              <span className="eyebrow">Our Method</span>
+              <h2 id="method-h" className="h2">Diagnosis Before <em>Deliverable</em></h2>
+              <p className="lede sec-sub">
+                Five steps, in order: find the real problem, build the brand before the marketing plan and the marketing
+                plan before the sales targets, then run it on a weekly rhythm.
+              </p>
+            </div>
+            <ol className="steps reveal">
+              {method.map((m) => (
+                <li key={m.n}>
+                  <Link href={`/method#step-${m.n}`}>
+                    <span className="label num">{m.n}</span>
+                    <span className="steps__t">{m.t}</span>
+                    <span className="steps__d">{m.short}</span>
+                  </Link>
+                </li>
+              ))}
+            </ol>
+            <div className="reveal" style={{ marginTop: '2.25rem' }}>
+              <Link className="link" href="/method">See the full method</Link>
+            </div>
           </div>
         </section>
 
