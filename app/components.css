@@ -276,3 +276,32 @@
 .res__link{margin-top:auto;align-self:flex-start;padding-top:1.25rem;font-size:1rem}
 .res__links{margin-top:auto;padding-top:1.25rem;display:flex;flex-wrap:wrap;gap:.75rem 1.75rem}
 .res__links .link{font-size:1rem}
+
+/* Real estate library */
+.lib-unlock{background:color-mix(in srgb,var(--paper-2) 60%,transparent);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.lib-unlock__grid{display:grid;gap:2.5rem;align-items:start}
+@media (min-width:900px){.lib-unlock__grid{grid-template-columns:5fr 6fr;gap:4.5rem}}
+.lib-form__req{margin:0;font-size:.9375rem;color:var(--ink-2)}
+.lib-unlock__done{display:grid;gap:1rem;justify-items:start;border-top:1px solid var(--ink);padding-top:1.5rem}
+.lib-unlock__done p{margin:0}
+.lib-topics{display:flex;flex-wrap:wrap;gap:.6rem;margin:0 0 3rem}
+.lib-topics a{border:1px solid var(--rule);border-radius:999px;padding:.45rem .95rem;font-size:.875rem;font-weight:550;text-decoration:none;color:var(--ink);transition:border-color .2s,color .2s}
+.lib-topics a:hover{border-color:var(--accent);color:var(--accent)}
+.lib-topics .num{color:var(--ink-3);margin-left:.3rem;font-weight:500}
+.lib-topic{border-top:1px solid var(--ink);padding-top:1.75rem;margin-top:3.5rem;display:grid;gap:1.75rem;scroll-margin-top:110px}
+.lib-topic:first-of-type{margin-top:0}
+@media (min-width:900px){.lib-topic{grid-template-columns:4fr 8fr;gap:3rem}}
+.lib-topic__head p{margin:.75rem 0 0;color:var(--ink-2)}
+.lib-list{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.lib-card{border-bottom:1px solid var(--rule);padding:0 0 1.75rem;margin-bottom:1.75rem;display:grid;gap:.6rem}
+.lib-card:last-child{margin-bottom:0}
+.lib-card__meta{display:flex;flex-wrap:wrap;gap:.35rem 1.25rem}
+.lib-card__fmt{color:var(--accent)}
+.lib-card__t{font-family:var(--serif);font-weight:400;font-size:clamp(1.35rem,2.2vw,1.6rem);line-height:1.2;margin:0;color:var(--ink)}
+.lib-card__p{margin:0;color:var(--ink-2);max-width:62ch}
+.lib-card__pts{margin:.25rem 0 0;padding-left:1.1rem;color:var(--ink-2);font-size:.9375rem;display:grid;gap:.2rem}
+.lib-card__cta{display:flex;flex-wrap:wrap;gap:.75rem 1.75rem;margin-top:.5rem}
+.lib-card__cta .link{font-size:1rem}
+.lib-lock{display:inline-flex;align-items:center;gap:.5rem;background:none;border:1px solid var(--ink-3);border-radius:2px;padding:.55rem .9rem;font:550 .875rem/1 var(--sans);color:var(--ink);cursor:pointer;transition:border-color .2s,color .2s}
+.lib-lock:hover{border-color:var(--accent);color:var(--accent)}
+.lib-lock svg{width:15px;height:15px}

@@ -24,6 +24,8 @@ const nextConfig: NextConfig = {
   pageExtensions: ['ts', 'tsx', 'js', 'jsx'],
   output: 'standalone',
   outputFileTracingRoot: __dirname,
+  // Gated library decks are read from disk by /api/library/deck/[id].
+  outputFileTracingIncludes: { '/api/library/deck/[id]': ['./content/library/**/*'] },
   async rewrites() {
     // Standalone client tools live in /public/tools as self-contained HTML.
     return [
