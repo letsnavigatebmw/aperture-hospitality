@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Brand Profitability Calculator | Aperture Hospitality</title>
+<meta name="description" content="Work back from the shelf price to the FOB a spirits brand must charge, see what the brand keeps per case, and model what a price move costs. A free tool from Aperture Hospitality.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://aperturehospitality.com/tools/spirits-profitability">
+<meta property="og:title" content="Brand Profitability Calculator | Aperture Hospitality">
+<meta property="og:description" content="What your spirits brand keeps from every bottle on the shelf, and what a price move really costs.">
+<meta property="og:image" content="https://aperturehospitality.com/og.png">
+<style>
+@font-face{font-family:"Newsreader Variable";font-style:normal;font-display:swap;font-weight:200 800;src:url(/fonts/newsreader-latin-standard-normal.woff2) format("woff2-variations")}
+@font-face{font-family:"Newsreader Variable";font-style:italic;font-display:swap;font-weight:200 800;src:url(/fonts/newsreader-latin-standard-italic.woff2) format("woff2-variations")}
+@font-face{font-family:"Inter Variable";font-style:normal;font-display:swap;font-weight:100 900;src:url(/fonts/inter-latin-wght-normal.woff2) format("woff2-variations")}
+
+/* Aperture brand tokens (match app/tokens.css) */
+:root {
+  --bg: #f5f1ea; --surface: #fbf9f5; --ink: #15130f; --muted: #645d53; --line: #d9d1c3;
+  --accent: #7a2e22; --accent-ink: #f5f1ea; --accent-soft: #efe5dd; --up: #2f6b45; --down: #a8322a;
+  --font-display: "Newsreader Variable", Georgia, "Times New Roman", serif;
+  --font-body: "Inter Variable", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-data: "Inter Variable", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e0d0b; --surface: #191714; --ink: #f2ede4; --muted: #8c857a; --line: #2c2925;
+    --accent: #c8b99a; --accent-ink: #0e0d0b; --accent-soft: #2a2620; --up: #7cc49a; --down: #e58a7f; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e0d0b; --surface: #191714; --ink: #f2ede4; --muted: #8c857a; --line: #2c2925;
+  --accent: #c8b99a; --accent-ink: #0e0d0b; --accent-soft: #2a2620; --up: #7cc49a; --down: #e58a7f; color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.55; }
+a { color: inherit; }
+
+/* Site bar */
+.bar { border-bottom: 1px solid var(--line); }
+.bar__inner { max-width: 1200px; margin: 0 auto; padding: 18px max(16px, env(safe-area-inset-left, 0px)); display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); }
+.brand svg { width: 28px; height: 28px; flex: none; }
+.brand__text { display: inline-flex; flex-direction: column; }
+.brand__word { font-size: 1.0625rem; letter-spacing: .42em; margin-right: -.42em; line-height: 1; }
+.brand__sub { font-size: .59rem; font-weight: 500; letter-spacing: .82em; margin-right: -.82em; line-height: 1; color: var(--muted); margin-top: .45rem; }
+.btn { display: inline-flex; align-items: center; min-height: 44px; padding: 0 1.25rem; background: var(--accent); color: var(--accent-ink); border: 1px solid var(--accent); border-radius: 2px; text-decoration: none; font-weight: 550; font-size: .9375rem; white-space: nowrap; }
+.btn:hover { background: transparent; color: var(--accent); }
+
+.wrap {
+  max-width: 1200px; margin: 0 auto;
+  padding-block: 48px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 28px;
+}
+.num, input[type="number"], .data { font-family: var(--font-data); font-variant-numeric: tabular-nums; }
+
+header.intro { display: grid; gap: 14px; }
+.eyebrow { font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+h1 { font-family: var(--font-display); font-weight: 400; font-size: clamp(36px, 5vw, 60px); line-height: 1.04; margin: 0; letter-spacing: -0.02em; text-wrap: balance; }
+h1 em { color: var(--accent); }
+h2 { font-family: var(--font-display); font-weight: 400; font-size: 24px; margin: 0; text-wrap: balance; letter-spacing: -0.01em; }
+h3 { font-family: var(--font-display); font-weight: 500; font-size: 18px; margin: 0; }
+.lede { color: var(--muted); max-width: 65ch; margin: 0; font-size: 17px; }
+.formula { font-family: var(--font-data); font-size: 14px; color: var(--ink); background: var(--accent-soft); padding: 2px 8px; border-radius: 2px; white-space: nowrap; }
+
+/* Guide */
+.guide { background: var(--surface); border: 1px solid var(--line); border-radius: 2px; }
+.guide > summary { list-style: none; cursor: pointer; padding: 16px 20px; display: flex; align-items: center; gap: 12px; justify-content: space-between; }
+.guide > summary::-webkit-details-marker { display: none; }
+.guide > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.guide > summary .sum-left { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; min-width: 0; }
+.guide > summary .sum-sub { font-size: 13px; color: var(--muted); }
+.chev { flex: none; width: 10px; height: 10px; border-right: 1.5px solid var(--accent); border-bottom: 1.5px solid var(--accent); transform: rotate(45deg); transition: transform .2s ease; margin-right: 4px; }
+.guide[open] > summary .chev { transform: rotate(-135deg); }
+.guide-body { border-top: 1px solid var(--line); padding: 20px; display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 28px; }
+@media (max-width: 860px) { .guide-body { grid-template-columns: minmax(0, 1fr); } }
+.guide-col { display: grid; gap: 22px; align-content: start; min-width: 0; }
+.guide-block { display: grid; gap: 12px; }
+.steps { list-style: none; counter-reset: step; margin: 0; padding: 0; display: grid; gap: 12px; }
+.steps li { counter-increment: step; display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 10px; font-size: 14px; }
+.steps li::before { content: counter(step); font-size: 12px; font-weight: 600; width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; border: 1px solid var(--accent); color: var(--accent); }
+.steps strong, .defs dt { font-weight: 600; }
+.defs { margin: 0; display: grid; gap: 10px; font-size: 14px; }
+.defs div { display: grid; gap: 2px; }
+.defs dd { margin: 0; color: var(--muted); }
+.swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 4px; }
+.swatch.up { background: var(--up); }
+.swatch.down { background: var(--down); }
+.caveats { margin: 0; padding-left: 18px; display: grid; gap: 8px; font-size: 14px; color: var(--muted); }
+.caveats strong { color: var(--ink); font-weight: 600; }
+
+/* Property bar */
+.property { display: flex; flex-wrap: wrap; gap: 16px 20px; align-items: flex-end; padding-block: 18px; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--line); }
+.field { display: grid; gap: 4px; min-width: 0; }
+.field label, .label { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.field.grow { flex: 1 1 220px; }
+input, select, button { font: inherit; color: inherit; }
+input[type="text"], input[type="number"], select { background: var(--surface); border: 1px solid var(--line); border-radius: 2px; padding: 8px 10px; width: 100%; min-width: 0; }
+input:focus-visible, select:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.actions { display: flex; gap: 8px; flex-wrap: wrap; }
+button { border: 1px solid var(--line); background: var(--surface); border-radius: 2px; padding: 9px 16px; cursor: pointer; font-weight: 550; }
+button:hover { border-color: var(--accent); color: var(--accent); }
+button.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+button.primary:hover { background: transparent; color: var(--accent); }
+.status { font-size: 13px; color: var(--muted); min-height: 1.5em; }
+
+/* Scenarios */
+.scenarios { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 2px; padding: 20px; display: grid; gap: 16px; align-content: start; min-width: 0; }
+.card.base { border-color: var(--accent); }
+.card-head { display: flex; align-items: center; gap: 10px; }
+.card-head input { font-family: var(--font-display); font-size: 22px; font-weight: 400; border: 1px solid transparent; background: transparent; padding: 2px 6px; margin-left: -6px; flex: 1; }
+.card-head input:hover, .card-head input:focus { border-color: var(--line); }
+.tag { font-size: 10px; letter-spacing: .12em; text-transform: uppercase; font-weight: 600; padding: 3px 8px; border-radius: 2px; background: var(--accent-soft); color: var(--accent); white-space: nowrap; }
+.inputs { display: grid; gap: 12px; }
+.input-row { display: grid; gap: 4px; }
+.input-row .top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.input-row .top input { width: 120px; text-align: right; }
+input[type="range"] { width: 100%; accent-color: var(--accent); margin: 0; }
+
+.result { border-top: 1px solid var(--line); padding-top: 14px; display: grid; gap: 10px; }
+.revpar { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.revpar .big { font-family: var(--font-display); font-size: 36px; font-weight: 400; letter-spacing: -0.02em; font-variant-numeric: tabular-nums lining-nums; }
+.delta { font-family: var(--font-data); font-size: 13px; font-variant-numeric: tabular-nums; padding: 2px 8px; border-radius: 2px; white-space: nowrap; }
+.delta.up { color: var(--up); background: color-mix(in srgb, var(--up) 12%, transparent); }
+.delta.down { color: var(--down); background: color-mix(in srgb, var(--down) 12%, transparent); }
+.delta.flat { color: var(--muted); background: var(--accent-soft); }
+dl.kv { margin: 0; display: grid; grid-template-columns: 1fr auto; gap: 6px 12px; font-size: 14px; }
+dl.kv dt { color: var(--muted); }
+dl.kv dd { margin: 0; text-align: right; font-family: var(--font-data); font-variant-numeric: tabular-nums; }
+
+/* Lower panels */
+.panels { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 16px; }
+@media (max-width: 860px) { .panels { grid-template-columns: minmax(0, 1fr); } }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 2px; padding: 20px; display: grid; gap: 14px; align-content: start; min-width: 0; }
+.panel-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.panel-head select { width: auto; }
+.hint { font-size: 13px; color: var(--muted); margin: 0; }
+.bars { display: grid; gap: 12px; }
+.bar-row { display: grid; gap: 4px; }
+.bar-row .meta { display: flex; justify-content: space-between; gap: 8px; font-size: 14px; }
+.bar-row .meta span:last-child { font-variant-numeric: tabular-nums; }
+.track { height: 10px; background: var(--accent-soft); border-radius: 1px; overflow: hidden; }
+.fill { height: 100%; background: var(--accent); transition: width .25s ease; }
+.fill.alt { background: color-mix(in srgb, var(--accent) 55%, var(--surface)); }
+.insights { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.insights li { font-size: 14px; padding-top: 10px; border-top: 1px solid var(--line); }
+.insights strong { font-weight: 600; }
+.grid-scroll { overflow-x: auto; }
+table.sens { border-collapse: separate; border-spacing: 3px; width: 100%; font-variant-numeric: tabular-nums; font-size: 13px; }
+table.sens th { font-weight: 500; color: var(--muted); padding: 4px 6px; white-space: nowrap; }
+table.sens thead th { text-align: center; }
+table.sens tbody th { text-align: right; }
+table.sens td { text-align: center; padding: 8px 6px; border-radius: 2px; white-space: nowrap; }
+table.sens td.center { outline: 2px solid var(--accent); outline-offset: -2px; font-weight: 600; }
+.axis-note { font-size: 12px; color: var(--muted); display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+
+/* Closing CTA */
+.cta { border-top: 1px solid var(--ink); padding-top: 28px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 20px 32px; align-items: center; }
+@media (max-width: 700px) { .cta { grid-template-columns: minmax(0, 1fr); } }
+.cta p { margin: 8px 0 0; color: var(--muted); max-width: 60ch; }
+footer { font-size: 13px; color: var(--muted); }
+
+@media (max-width: 520px) { .bar .btn { display: none; } }
+@media (prefers-reduced-motion: reduce) { .fill, .chev { transition: none; } }
+
+:root { --c-ret:#c9b8a6; --c-dist:#a8927d; --c-frt:#8a7c6c; --c-exc:#6e655b; --c-cogs:#3f3a34; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --c-ret:#4a443c; --c-dist:#5e564c; --c-frt:#766c60; --c-exc:#8e8475; --c-cogs:#b1a796; } }
+:root[data-theme="dark"] { --c-ret:#4a443c; --c-dist:#5e564c; --c-frt:#766c60; --c-exc:#8e8475; --c-cogs:#b1a796; }
+.property .field.sm { flex: 0 1 130px; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 16px 20px; align-items: flex-end; justify-content: space-between; }
+.toolbar .field { flex: 0 1 380px; }
+.panel-ctrls { display: flex; gap: 8px; flex-wrap: wrap; }
+.panel-ctrls select { width: auto; }
+.stack { display: flex; height: 14px; border-radius: 1px; overflow: hidden; background: var(--accent-soft); }
+.stack span { height: 100%; transition: width .25s ease; }
+.stack-legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12px; color: var(--muted); }
+.stack-legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+.wrap { grid-template-columns: minmax(0, 1fr); }
+.lede .formula { white-space: normal; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.cta__links { display: grid; gap: 12px; justify-items: start; }
+.txtlink { font-weight: 600; font-size: .9375rem; text-decoration: none; border-bottom: 1px solid var(--line); padding-bottom: 3px; }
+.txtlink:hover { color: var(--accent); border-color: var(--accent); }
+@media (prefers-reduced-motion: reduce) { .stack span { transition: none; } }
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <div class="bar__inner">
+    <a class="brand" href="/" aria-label="Aperture Hospitality home">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="15" fill="none" stroke="currentColor" stroke-opacity=".28" stroke-width="1.6"/><path d="M20 5 A15 15 0 0 1 35 20" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/></svg>
+      <span class="brand__text"><span class="brand__word">APERTURE</span><span class="brand__sub">HOSPITALITY</span></span>
+    </a>
+    <a class="btn" href="/contact?engagement=diagnostic">Talk to Aperture</a>
+  </div>
+</div>
+
+<main class="wrap">
+  <header class="intro">
+    <span class="eyebrow">Aperture Hospitality · Spirits Tools</span>
+    <h1>Brand Profitability <em>Calculator</em></h1>
+    <p class="lede">See what your brand keeps from every bottle on the shelf, and what a price move really costs you. Work back from the shelf price through the retailer and distributor to the FOB you must charge: <span class="formula">FOB = Shelf × (1 − Retail %) × (1 − Distributor %) − Freight &amp; tax</span>. The figures loaded below are a fictitious example; replace them with your own.</p>
+  </header>
+
+  <details class="guide" id="guide" open>
+    <summary>
+      <span class="sum-left"><h2>How to use this calculator</h2><span class="sum-sub">Ten minutes from blank to a pricing decision you can defend</span></span>
+      <span class="chev" aria-hidden="true"></span>
+    </summary>
+    <div class="guide-body">
+      <div class="guide-col">
+        <div class="guide-block">
+          <h3>Build a comparison</h3>
+          <ol class="steps">
+            <li><span><strong>Set up the SKU.</strong> Name the product, then enter bottles per case and your landed cost of goods per bottle: liquid, glass, closure, labels, bottling and freight to the U.S.</span></li>
+            <li><span><strong>Enter the route to market.</strong> Distributor margin is a share of the price to retail; retailer margin is a share of the shelf price. Add freight and state taxes between your FOB and the distributor's landed cost, and the federal excise you pay.</span></li>
+            <li><span><strong>Enter today's shelf price and volume.</strong> The first card is your current position: the shelf price consumers see and the cases you expect to sell in a year.</span></li>
+            <li><span><strong>Model two alternatives.</strong> Scenario A and Scenario B are your what-ifs, for example a promotional price that should lift volume, or a premium repositioning that trades cases for margin. Click a card's title to rename it.</span></li>
+            <li><span><strong>Choose how partners react.</strong> Most distributors and retailers hold their margin percentage, so you fund about half of any price cut. If they hold their dollar margin instead, you fund all of it. Switch between the two above the cards.</span></li>
+            <li><span><strong>Stress-test and share.</strong> Use the sensitivity grid to see how gross profit moves if COGS or the shelf price lands off plan, then click <strong>Copy summary</strong> for a plain-text recap.</span></li>
+          </ol>
+        </div>
+      </div>
+      <div class="guide-col">
+        <div class="guide-block">
+          <h3>Read the results</h3>
+          <dl class="defs">
+            <div><dt>FOB required</dt><dd>The price per case you must charge the distributor for this shelf price to hold, given partner margins and freight.</dd></div>
+            <div><dt>Gross profit and the change chip</dt><dd>Your gross profit per case after excise and COGS, and its change against current. <span class="swatch up"></span>Green beats current; <span class="swatch down"></span>red falls short.</dd></div>
+            <div><dt>Break-even cases</dt><dd>The annual volume a scenario needs to earn the same total gross profit as today. Compare it with the volume you modeled to see the cushion or shortfall.</dd></div>
+            <div><dt>Where the shelf dollar goes</dt><dd>Each bar splits the shelf price into retailer, distributor, freight and tax, excise, COGS and what the brand keeps.</dd></div>
+            <div><dt>Sensitivity grid</dt><dd>Rows move COGS per bottle; columns move the shelf price. The outlined cell is the scenario itself. Use the menu to switch between gross profit per case and break-even cases.</dd></div>
+          </dl>
+        </div>
+        <div class="guide-block">
+          <h3>Before you decide</h3>
+          <ul class="caveats">
+            <li><strong>Margins vary by state and account.</strong> Use the margins your distributor actually applies in the market you're pricing, and check control-state rules separately.</li>
+            <li><strong>Gross profit isn't the whole cost of a deal.</strong> Depletion allowances, sampling, slotting and marketing tied to a price move all raise the volume you need.</li>
+            <li><strong>Your inputs stay in this browser.</strong> Nothing is sent to Aperture, and anyone else who opens the link sees the example figures. Use Copy summary to share your numbers.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </details>
+
+  <section class="property" aria-label="Product and route-to-market settings">
+    <div class="field grow">
+      <label for="sku">Brand / SKU</label>
+      <input type="text" id="sku" placeholder="e.g. Ridgeline Reposado 750ml">
+    </div>
+    <div class="field sm"><label for="pack">Bottles / case</label><input type="number" id="pack" min="1" step="1" inputmode="numeric"></div>
+    <div class="field sm"><label for="cogs">COGS / bottle</label><input type="number" id="cogs" min="0" step="0.01" inputmode="decimal"></div>
+    <div class="field sm"><label for="dist">Distributor %</label><input type="number" id="dist" min="0" max="90" step="0.1" inputmode="decimal"></div>
+    <div class="field sm"><label for="ret">Retailer %</label><input type="number" id="ret" min="0" max="90" step="0.1" inputmode="decimal"></div>
+    <div class="field sm"><label for="freight">Freight &amp; tax / case</label><input type="number" id="freight" min="0" step="0.01" inputmode="decimal"></div>
+    <div class="field sm"><label for="excise">Excise / case</label><input type="number" id="excise" min="0" step="0.01" inputmode="decimal"></div>
+  </section>
+  <div class="toolbar">
+    <div class="field">
+      <label for="mode">When the shelf price moves, partners hold</label>
+      <select id="mode">
+        <option value="pct">Their margin % (you fund part of the change)</option>
+        <option value="usd">Their dollar margin (you fund all of it)</option>
+      </select>
+    </div>
+    <div class="actions">
+      <button type="button" class="primary" id="copy">Copy summary</button>
+      <button type="button" id="reset">Reset to example</button>
+    </div>
+  </div>
+  <div class="status" id="status" role="status" aria-live="polite"></div>
+
+  <section class="scenarios" id="scenarios" aria-label="Scenarios"></section>
+
+  <section class="panels">
+    <div class="panel">
+      <div class="panel-head"><h2>Where the shelf dollar goes</h2></div>
+      <div class="stack-legend" id="legend"></div>
+      <div class="bars" id="bars"></div>
+      <ul class="insights" id="insights"></ul>
+    </div>
+    <div class="panel">
+      <div class="panel-head">
+        <h2>Sensitivity grid</h2>
+        <div class="panel-ctrls">
+          <select id="gridMetric" aria-label="Grid metric">
+            <option value="gp">Gross profit / case</option>
+            <option value="be">Break-even cases</option>
+          </select>
+          <select id="gridBase" aria-label="Center grid on scenario"></select>
+        </div>
+      </div>
+      <p class="hint" id="gridHint"></p>
+      <div class="grid-scroll"><table class="sens" id="sens"></table></div>
+      <div class="axis-note"><span>Rows: COGS per bottle</span><span>Columns: shelf price per bottle</span></div>
+    </div>
+  </section>
+
+  <section class="cta" aria-labelledby="cta-h">
+    <div>
+      <span class="eyebrow">Beyond the Model</span>
+      <h2 id="cta-h" style="margin-top:8px">The margin works on paper. Does it work on the shelf?</h2>
+      <p>Pricing is one lever. Distribution, account selection and how the brand shows up at the shelf decide whether the volume arrives. Aperture and MJR Adventures build the plan and the sales execution behind it.</p>
+    </div>
+    <div class="cta__links">
+      <a class="btn" href="/contact?engagement=diagnostic">Start a conversation</a>
+      <a class="txtlink" href="/spirits">How we help spirits brands →</a>
+    </div>
+  </section>
+
+  <footer>Inputs are kept in this browser only. Example figures are fictitious. Margins and taxes vary by state, channel and account; this tool models gross profit before marketing and trade spend. © Aperture Hospitality.</footer>
+</main>
+
+<script>
+(function () {
+  const KEY = "aperture-spirits-pl-v1";
+  const GUIDE_KEY = "aperture-spirits-pl-guide";
+  const EXAMPLE = {
+    sku: "Example: Ridgeline Reposado 750ml",
+    pack: 6, cogs: 9.5, dist: 28, ret: 30, freight: 6, excise: 2.6,
+    mode: "pct", gridBase: 0, gridMetric: "gp",
+    scenarios: [
+      { name: "Current", srp: 49.99, cases: 400 },
+      { name: "Promo price", srp: 44.99, cases: 480 },
+      { name: "Premium move", srp: 54.99, cases: 360 }
+    ]
+  };
+
+  const guide = document.getElementById("guide");
+  try { if (localStorage.getItem(GUIDE_KEY) === "closed") guide.open = false; } catch (e) {}
+  guide.addEventListener("toggle", () => {
+    try { localStorage.setItem(GUIDE_KEY, guide.open ? "open" : "closed"); } catch (e) {}
+  });
+
+  let state = load() || clone(EXAMPLE);
+  function clone(o) { return JSON.parse(JSON.stringify(o)); }
+  function load() {
+    try {
+      const s = JSON.parse(localStorage.getItem(KEY) || "null");
+      return s && Array.isArray(s.scenarios) && s.scenarios.length === 3 ? s : null;
+    } catch (e) { return null; }
+  }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
+
+  const $ = (id) => document.getElementById(id);
+  const fmt = (v, d = 2) => new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", minimumFractionDigits: d, maximumFractionDigits: d }).format(v);
+  const int = (v) => new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 }).format(v);
+  const one = (v) => new Intl.NumberFormat("en-US", { minimumFractionDigits: 1, maximumFractionDigits: 1 }).format(v);
+  const sign = (v) => (v > 0 ? "+" : v < 0 ? "−" : "±");
+  const num = (v, lo = 0, hi = Infinity) => Math.min(hi, Math.max(lo, +v || 0));
+  const esc = (t) => String(t).replace(/[&<>"]/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]));
+
+  // Per-case price waterfall for a shelf price per bottle.
+  function waterfall(srp, cogsBottle) {
+    const n = Math.max(1, Math.round(num(state.pack, 1)));
+    const r = num(state.ret, 0, 95) / 100, d = num(state.dist, 0, 95) / 100;
+    const freight = num(state.freight), excise = num(state.excise);
+    const cogs = (cogsBottle === undefined ? num(state.cogs) : cogsBottle) * n;
+    const shelf = num(srp) * n;
+    let retM, distM;
+    if (state.mode === "usd") {
+      // Partners keep the dollar margin they earn at the current shelf price.
+      const base = num(state.scenarios[0].srp) * n;
+      retM = base * r; distM = base * (1 - r) * d;
+    } else {
+      retM = shelf * r; distM = shelf * (1 - r) * d;
+    }
+    const ptr = shelf - retM;
+    const landed = ptr - distM;
+    const fob = landed - freight;
+    const net = fob - excise;
+    const gp = net - cogs;
+    return { n, shelf, retM, distM, ptr, landed, fob, freight, excise, net, cogs, gp, gm: fob > 0 ? gp / fob : 0 };
+  }
+
+  function calc(i, srpOverride, cogsOverride) {
+    const s = state.scenarios[i];
+    const w = waterfall(srpOverride === undefined ? s.srp : srpOverride, cogsOverride);
+    w.cases = num(s.cases);
+    w.annualGP = w.gp * w.cases;
+    w.annualFOB = w.fob * w.cases;
+    return w;
+  }
+
+  function deltaHTML(diff, pct, f) {
+    if (!isFinite(pct)) pct = 0;
+    const cls = Math.abs(diff) < 0.005 ? "flat" : diff > 0 ? "up" : "down";
+    return `<span class="delta ${cls}">${sign(diff)}${f(Math.abs(diff))} (${sign(pct)}${one(Math.abs(pct))}%)</span>`;
+  }
+
+  function buildCards() {
+    const host = $("scenarios");
+    host.innerHTML = "";
+    state.scenarios.forEach((s, i) => {
+      const card = document.createElement("article");
+      card.className = "card" + (i === 0 ? " base" : "");
+      card.innerHTML = `
+        <div class="card-head">
+          <input type="text" id="s${i}-name" aria-label="Scenario name">
+          <span class="tag">${i === 0 ? "Current" : "Scenario " + "AB"[i - 1]}</span>
+        </div>
+        <div class="inputs">
+          <div class="input-row">
+            <div class="top"><label class="label" for="s${i}-srp">Shelf price / bottle</label><input type="number" id="s${i}-srp" min="0" step="0.01" inputmode="decimal"></div>
+            <input type="range" id="s${i}-srp-r" min="15" max="200" step="0.5" aria-label="Shelf price slider">
+          </div>
+          <div class="input-row">
+            <div class="top"><label class="label" for="s${i}-cases">Annual cases</label><input type="number" id="s${i}-cases" min="0" step="1" inputmode="numeric"></div>
+            <input type="range" id="s${i}-cases-r" min="0" max="5000" step="10" aria-label="Annual cases slider">
+          </div>
+        </div>
+        <div class="result">
+          <div class="revpar"><div><div class="label">Gross profit / case</div><div class="big" id="s${i}-gp"></div></div><div id="s${i}-delta"></div></div>
+          <dl class="kv">
+            <dt>Shelf price / case</dt><dd id="s${i}-shelf"></dd>
+            <dt>Retailer margin</dt><dd id="s${i}-retm"></dd>
+            <dt>Distributor margin</dt><dd id="s${i}-distm"></dd>
+            <dt>FOB required / case</dt><dd id="s${i}-fob"></dd>
+            <dt>Gross margin (of FOB)</dt><dd id="s${i}-gm"></dd>
+            <dt>Annual gross profit</dt><dd id="s${i}-agp"></dd>
+            ${i === 0 ? "" : `<dt>Annual GP vs current</dt><dd id="s${i}-agpd"></dd><dt>Break-even cases</dt><dd id="s${i}-be"></dd>`}
+          </dl>
+        </div>`;
+      host.appendChild(card);
+
+      const bind = (field, lo, hi) => {
+        const box = $(`s${i}-${field}`), rng = $(`s${i}-${field}-r`);
+        box.value = s[field]; rng.value = s[field];
+        box.addEventListener("input", () => { s[field] = box.value; rng.value = box.value; update(); });
+        rng.addEventListener("input", () => { s[field] = rng.value; box.value = rng.value; update(); });
+        box.addEventListener("change", () => { const v = num(box.value, lo, hi); box.value = v; s[field] = v; rng.value = v; update(); });
+      };
+      $(`s${i}-name`).value = s.name;
+      $(`s${i}-name`).addEventListener("input", (e) => { s.name = e.target.value || (i ? `Scenario ${"AB"[i - 1]}` : "Current"); update(); });
+      bind("srp", 0, 10000);
+      bind("cases", 0, 1e7);
+    });
+  }
+
+  const PARTS = [
+    { k: "retM", l: "Retailer", c: "var(--c-ret)" },
+    { k: "distM", l: "Distributor", c: "var(--c-dist)" },
+    { k: "freight", l: "Freight & tax", c: "var(--c-frt)" },
+    { k: "excise", l: "Excise", c: "var(--c-exc)" },
+    { k: "cogs", l: "COGS", c: "var(--c-cogs)" },
+    { k: "gp", l: "Brand gross profit", c: "var(--accent)" }
+  ];
+
+  function update() {
+    const r = state.scenarios.map((_, i) => calc(i));
+    const base = r[0];
+
+    r.forEach((x, i) => {
+      $(`s${i}-gp`).textContent = fmt(x.gp);
+      $(`s${i}-shelf`).textContent = fmt(x.shelf);
+      $(`s${i}-retm`).textContent = fmt(x.retM);
+      $(`s${i}-distm`).textContent = fmt(x.distM);
+      $(`s${i}-fob`).textContent = fmt(x.fob);
+      $(`s${i}-gm`).textContent = one(x.gm * 100) + "%";
+      $(`s${i}-agp`).textContent = fmt(x.annualGP, 0);
+      if (i === 0) {
+        $("s0-delta").innerHTML = `<span class="delta flat">reference</span>`;
+      } else {
+        $(`s${i}-delta`).innerHTML = deltaHTML(x.gp - base.gp, base.gp ? (x.gp / base.gp - 1) * 100 : 0, fmt);
+        $(`s${i}-agpd`).innerHTML = deltaHTML(x.annualGP - base.annualGP, base.annualGP ? (x.annualGP / base.annualGP - 1) * 100 : 0, (v) => fmt(v, 0));
+        $(`s${i}-be`).textContent = x.gp > 0 ? one(base.annualGP / x.gp) : "n/a";
+      }
+    });
+
+    $("legend").innerHTML = PARTS.map((p) => `<span><i style="background:${p.c}"></i>${p.l}</span>`).join("");
+    $("bars").innerHTML = r.map((x, i) => {
+      const segs = PARTS.map((p) => {
+        const v = Math.max(0, x[p.k]);
+        const w = x.shelf > 0 ? v / x.shelf * 100 : 0;
+        return `<span style="width:${w.toFixed(2)}%;background:${p.c}" title="${p.l}: ${fmt(v)} per case (${one(w)}%)"></span>`;
+      }).join("");
+      const keep = x.shelf > 0 ? x.gp / x.shelf * 100 : 0;
+      return `<div class="bar-row">
+        <div class="meta"><span>${esc(state.scenarios[i].name)}</span><span>Brand keeps ${one(keep)}% · ${fmt(x.gp / x.n)} / bottle</span></div>
+        <div class="stack">${segs}</div>
+      </div>`;
+    }).join("");
+
+    $("insights").innerHTML = r.slice(1).map((x, j) => {
+      const s = state.scenarios[j + 1];
+      const shelfMove = x.shelf - base.shelf;
+      const fobMove = x.fob - base.fob;
+      const diff = x.annualGP - base.annualGP;
+      let share = "";
+      if (Math.abs(shelfMove) > 0.005) {
+        const pct = fobMove / shelfMove * 100;
+        share = shelfMove < 0
+          ? ` You fund <strong>${one(pct)}%</strong> of the shelf cut (${fmt(-fobMove)} per case)${pct < 99.95 ? "; partners absorb the rest" : ", because partners keep their dollar margin"}.`
+          : ` You capture <strong>${one(pct)}%</strong> of the shelf increase (${fmt(fobMove)} per case).`;
+      }
+      let be = "";
+      if (x.gp <= 0) be = " At this price the brand loses money on every case.";
+      else {
+        const need = base.annualGP / x.gp, gap = x.cases - need;
+        be = ` Matching today's gross profit needs <strong>${int(Math.ceil(need))}</strong> cases; this scenario models ${int(x.cases)}, ${gap >= 0 ? int(gap) + " cases of cushion" : int(-gap) + " cases short"}.`;
+      }
+      return `<li><strong>${esc(s.name)}:</strong> ${diff >= 0 ? "adds" : "loses"} ${fmt(Math.abs(diff), 0)} in annual gross profit vs ${esc(state.scenarios[0].name)}.${share}${be}</li>`;
+    }).join("");
+
+    const gb = $("gridBase");
+    const sel = +state.gridBase || 0;
+    gb.innerHTML = state.scenarios.map((s, i) => `<option value="${i}">Center on ${esc(s.name)}</option>`).join("");
+    gb.value = sel;
+    $("gridMetric").value = state.gridMetric;
+    renderGrid(sel, base);
+    save();
+  }
+
+  function renderGrid(i, base) {
+    const s = state.scenarios[i];
+    const srp0 = num(s.srp), cogs0 = num(state.cogs);
+    const srpSteps = [-10, -5, -2.5, 0, 2.5, 5, 10];
+    const cogsSteps = [-2, -1, 0, 1, 2];
+    const metric = state.gridMetric;
+    const center = calc(i);
+    const val = (x) => metric === "gp" ? x.gp : (x.gp > 0 ? base.annualGP / x.gp : Infinity);
+    const c0 = val(center);
+    $("gridHint").textContent = metric === "gp"
+      ? "Brand gross profit per case as COGS and the shelf price move around the selected scenario. Green cells beat it, red cells fall short."
+      : "Annual cases needed to match current gross profit. Green cells need fewer cases than the selected scenario, red cells need more.";
+    let html = `<thead><tr><th></th>${srpSteps.map((p) => `<th>${fmt(Math.max(0, srp0 + p))}</th>`).join("")}</tr></thead><tbody>`;
+    cogsSteps.forEach((dc) => {
+      const cogs = Math.max(0, cogs0 + dc);
+      html += `<tr><th>${fmt(cogs)}</th>`;
+      srpSteps.forEach((ds) => {
+        const x = calc(i, Math.max(0, srp0 + ds), cogs);
+        const v = val(x);
+        let d = c0 && isFinite(v) && isFinite(c0) ? v / c0 - 1 : 0;
+        if (metric === "be") d = -d;
+        const strength = Math.min(42, Math.abs(d) * 160);
+        const tone = !isFinite(v) ? "color-mix(in srgb, var(--down) 42%, transparent)" : Math.abs(d) < 0.0005 ? "transparent" : `color-mix(in srgb, var(${d > 0 ? "--up" : "--down"}) ${strength.toFixed(0)}%, transparent)`;
+        const txt = metric === "gp" ? fmt(v) : (isFinite(v) ? int(Math.ceil(v)) : "n/a");
+        html += `<td class="${dc === 0 && ds === 0 ? "center" : ""}" style="background:${tone}" title="Shelf ${fmt(srp0 + ds)}, COGS ${fmt(cogs)} per bottle">${txt}</td>`;
+      });
+      html += `</tr>`;
+    });
+    $("sens").innerHTML = html + "</tbody>";
+  }
+
+  function summary() {
+    const r = state.scenarios.map((_, i) => calc(i));
+    const lines = [
+      `Brand profitability: ${state.sku || "SKU"}`,
+      `${state.pack} bottles/case · COGS ${fmt(num(state.cogs))}/bottle · distributor ${one(num(state.dist))}% · retailer ${one(num(state.ret))}% · freight & tax ${fmt(num(state.freight))}/case · excise ${fmt(num(state.excise))}/case`,
+      `Partners hold ${state.mode === "usd" ? "dollar margin" : "margin %"} when price moves`,
+      ""
+    ];
+    r.forEach((x, i) => {
+      const s = state.scenarios[i];
+      lines.push(`${s.name}: shelf ${fmt(num(s.srp))} → FOB ${fmt(x.fob)}/case, gross profit ${fmt(x.gp)}/case (${one(x.gm * 100)}%), ${int(x.cases)} cases → ${fmt(x.annualGP, 0)} annual GP`);
+    });
+    lines.push("", "Modeled with the Aperture Hospitality Brand Profitability Calculator: aperturehospitality.com/tools/spirits-profitability");
+    return lines.join("\n");
+  }
+
+  const shared = [["sku", null], ["pack", [1, 48]], ["cogs", [0, 1e5]], ["dist", [0, 90]], ["ret", [0, 90]], ["freight", [0, 1e5]], ["excise", [0, 1e5]]];
+  function fillShared() {
+    shared.forEach(([k]) => { $(k).value = state[k]; });
+    $("mode").value = state.mode;
+  }
+  shared.forEach(([k, lim]) => {
+    $(k).addEventListener("input", (e) => { state[k] = e.target.value; k === "sku" ? save() : update(); });
+    if (lim) $(k).addEventListener("change", (e) => { const v = num(e.target.value, lim[0], lim[1]); e.target.value = v; state[k] = v; update(); });
+  });
+  $("mode").addEventListener("change", (e) => { state.mode = e.target.value; update(); });
+  $("gridBase").addEventListener("change", (e) => { state.gridBase = +e.target.value; update(); });
+  $("gridMetric").addEventListener("change", (e) => { state.gridMetric = e.target.value; update(); });
+
+  let statusTimer;
+  function flash(msg) {
+    $("status").textContent = msg;
+    clearTimeout(statusTimer);
+    statusTimer = setTimeout(() => { $("status").textContent = ""; }, 3000);
+  }
+  $("copy").addEventListener("click", () => {
+    const text = summary();
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(() => flash("Summary copied."), () => fallbackCopy(text));
+    } else fallbackCopy(text);
+  });
+  function fallbackCopy(text) {
+    $("status").innerHTML = "";
+    const ta = document.createElement("textarea");
+    ta.value = text; ta.rows = 6; ta.readOnly = true;
+    ta.style.cssText = "width:100%;font-size:12px;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:2px;padding:8px";
+    $("status").append("Copy blocked by the browser. Select the text below and copy it:", ta);
+    ta.focus(); ta.select();
+  }
+  $("reset").addEventListener("click", () => {
+    state = clone(EXAMPLE);
+    fillShared(); buildCards(); update();
+    flash("Example figures restored.");
+  });
+
+  fillShared();
+  buildCards();
+  update();
+})();
+</script>
+</body>
+</html>

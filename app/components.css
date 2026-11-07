@@ -269,3 +269,8 @@
 #who .principles li{display:flex;flex-direction:column}
 .principles li:has(.principles__more) p{margin-bottom:1.5rem}
 .principles__more{margin-top:auto;align-self:flex-start;font-size:.9375rem}
+
+/* Spirits: tools & resources cards, link pinned to the bottom */
+.card.res{display:flex;flex-direction:column}
+.card.res .card__title{margin-top:.5rem}
+.res__link{margin-top:auto;align-self:flex-start;padding-top:1.25rem;font-size:1rem}
