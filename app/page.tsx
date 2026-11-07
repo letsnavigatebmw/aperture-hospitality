@@ -8,9 +8,9 @@ import { site } from '@/lib/site'
 import { method } from '@/lib/method'
 
 const who = [
-  { t: 'Hospitality & Travel', d: 'Hotels, luxury rentals, travel distribution and experiences, especially growth-stage and PE-backed.', more: { href: '/tools/revpar', label: 'Try the RevPAR Scenario Calculator' } },
+  { t: 'Hospitality & Travel', d: 'Hotels, luxury rentals, travel distribution, travel-tech and experiences, especially growth-stage and PE-backed.', more: { href: '/tools/revpar', label: 'Try the RevPAR Scenario Calculator' } },
   { t: 'Luxury, Lifestyle & Spirits', d: 'Positioning, distribution, retail and partnership growth.', more: { href: '/spirits', label: 'How We Help Spirits Brands' } },
-  { t: 'Travel-Tech & Proptech', d: 'Scaling go-to-market, pricing and partnerships with hospitality and real estate buyers.' },
+  { t: 'Residential Real Estate & PropTech', d: 'Prospecting systems for brokerages and teams, and go-to-market for platforms that sell to agents and homeowners.', more: { href: '/real-estate', label: 'Explore the Agent Prospecting Library' } },
 ]
 
 const services = [
