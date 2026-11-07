@@ -1,21 +1,32 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import { engagements, site } from '@/lib/site'
+import { site } from '@/lib/site'
 
-const options = [...engagements.map((e) => e.title), 'Not sure yet']
+// Each option asks its own question, so the message field matches the path the visitor chose.
+const options = [
+  { id: 'cmo', label: 'Fractional CMO (marketing)', q: 'What does marketing need to deliver over the next 12 months?', ph: 'Where the brand and demand stand today, the team you have and what isn’t working.' },
+  { id: 'cco', label: 'Fractional CCO (sales)', q: 'What does sales need to deliver over the next 12 months?', ph: 'Your targets, channels and team today, and where deals are stalling.' },
+  { id: 'diagnostic', label: 'Commercial Diagnostic', q: 'Where has growth stalled?', ph: 'What changed, when it started and what you’ve tried so far.' },
+  { id: 'brand', label: 'Brand & Marketing Diagnostic', q: 'Where is the brand not connecting with consumers?', ph: 'Who you’re trying to reach, what you’re hearing from them and what you’ve tried.' },
+  { id: 'sprint', label: 'Revenue Sprint', q: 'What’s the one outcome you need, and by when?', ph: 'A pricing reset, a launch, a partnership program or a turnaround plan.' },
+  { id: 'unsure', label: 'Not sure yet', q: 'Tell us where things stand.', ph: 'Your business, what you’re trying to achieve and what’s getting in the way.' },
+] as const
+const fallback = { q: 'What would you like help with?', ph: 'A few lines on your business and what you’re trying to achieve.' }
+const alias: Record<string, string> = { fractional: 'cmo' }
 
 /** Simplified contact form: six fields, posts to /api/contact (Resend). */
 export default function IntakeForm({ preselect }: { preselect?: string }) {
   const formRef = useRef<HTMLFormElement>(null)
   const [state, setState] = useState<'idle' | 'sending' | 'sent' | 'error' | 'invalid'>('idle')
+  const [choice, setChoice] = useState('')
+  const current = options.find((o) => o.label === choice) ?? fallback
 
   useEffect(() => {
-    // /contact?engagement=diagnostic|fractional|sprint preselects the dropdown
-    const key = preselect ?? new URLSearchParams(window.location.search).get('engagement')
-    const match = engagements.find((e) => e.id === key)
-    const sel = formRef.current?.elements.namedItem('engagement') as HTMLSelectElement | null
-    if (match && sel) sel.value = match.title
+    // /contact?engagement=cmo|cco|diagnostic|brand|sprint|unsure preselects the dropdown
+    const raw = preselect ?? new URLSearchParams(window.location.search).get('engagement') ?? ''
+    const match = options.find((o) => o.id === (alias[raw] ?? raw))
+    if (match) setChoice(match.label)
   }, [preselect])
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -29,7 +40,11 @@ export default function IntakeForm({ preselect }: { preselect?: string }) {
     })
     if (!ok) return setState('invalid')
 
-    const data: Record<string, FormDataEntryValue> = { ...Object.fromEntries(new FormData(form).entries()), page: window.location.pathname }
+    const data: Record<string, FormDataEntryValue> = {
+      ...Object.fromEntries(new FormData(form).entries()),
+      question: current.q,
+      page: window.location.pathname,
+    }
     if (data._gotcha) return setState('sent')
     setState('sending')
     try {
@@ -40,6 +55,7 @@ export default function IntakeForm({ preselect }: { preselect?: string }) {
       })
       if (!res.ok) throw new Error()
       form.reset()
+      setChoice('')
       setState('sent')
     } catch {
       setState('error')
@@ -70,16 +86,16 @@ export default function IntakeForm({ preselect }: { preselect?: string }) {
       </div>
       <div className="field">
         <label htmlFor="f-engagement">Engagement of interest</label>
-        <select id="f-engagement" name="engagement" required defaultValue="">
+        <select id="f-engagement" name="engagement" required value={choice} onChange={(e) => setChoice(e.target.value)}>
           <option value="">Choose one</option>
           {options.map((o) => (
-            <option key={o}>{o}</option>
+            <option key={o.id}>{o.label}</option>
           ))}
         </select>
       </div>
       <div className="field">
-        <label htmlFor="f-msg">Where is growth stuck?</label>
-        <textarea id="f-msg" name="message" rows={5} required />
+        <label htmlFor="f-msg">{current.q}</label>
+        <textarea id="f-msg" name="message" rows={5} placeholder={current.ph} required />
       </div>
       <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" className="hp" aria-hidden="true" />
       <div className="actions">
