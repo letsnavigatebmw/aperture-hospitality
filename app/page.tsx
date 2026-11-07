@@ -108,9 +108,10 @@ const features = [
 
 // Entry paths shown under the hero. Each preselects the matching option on the contact form.
 const paths = [
-  { lead: 'I need a clear read on', em: 'where growth is stuck.', d: 'A Commercial Diagnostic: the three priorities that matter and a 90-day action plan.', meta: '4–6 weeks · Fixed fee', href: '/contact?engagement=diagnostic' },
-  { lead: 'I need senior leadership', em: 'running commercial.', d: 'A fractional CCO or CMO leading the team, GTM, partner deals and board reporting.', meta: '1–3 days a week · Retainer', href: '/contact?engagement=fractional' },
-  { lead: 'I have one outcome', em: 'to deliver, fast.', d: 'A Revenue Sprint: a pricing reset, launch, partnership program or turnaround plan.', meta: '8–12 weeks · Project fee', href: '/contact?engagement=sprint' },
+  { lead: 'I need a senior leader', em: 'running marketing.', d: 'A fractional CMO: brand, demand and the marketing team, owned and measured against revenue.', meta: 'Fractional CMO · Retainer', href: '/contact?engagement=fractional' },
+  { lead: 'I need a senior leader', em: 'running sales.', d: 'A fractional CCO: sales, channels, partnerships and pipeline, with board-level reporting.', meta: 'Fractional CCO · Retainer', href: '/contact?engagement=fractional' },
+  { lead: 'I need to understand why', em: 'my business stopped growing.', d: 'A Commercial Diagnostic: where growth is stuck, the three priorities that matter and a 90-day plan.', meta: '4–6 weeks · Fixed fee', href: '/contact?engagement=diagnostic' },
+  { lead: 'I need to understand why my brand', em: 'isn’t connecting with consumers.', d: 'A Brand & Marketing Diagnostic: positioning, audience and message, tested against what customers actually do.', meta: '4–6 weeks · Fixed fee', href: '/contact?engagement=diagnostic' },
   { lead: 'I’m not sure yet.', em: 'Help me figure it out.', d: 'Tell us where things stand and we’ll recommend the right place to start.', meta: 'Start a conversation', href: '/contact' },
 ]
 
