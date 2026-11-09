@@ -2,6 +2,9 @@ import type { Metadata } from 'next'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import ContactCTA from '@/components/ContactCTA'
+import ImplementationArchitect from '@/components/ImplementationArchitect'
+import LatestPapers from '@/components/LatestPapers'
+import { getPapers } from '@/lib/substack'
 import { site } from '@/lib/site'
 
 export const metadata: Metadata = {
@@ -11,7 +14,11 @@ export const metadata: Metadata = {
   alternates: { canonical: '/papers' },
 }
 
-export default function Papers() {
+// Re-check Substack hourly so new papers appear without a redeploy.
+export const revalidate = 3600
+
+export default async function Papers() {
+  const papers = await getPapers()
   return (
     <>
       <Nav />
@@ -52,6 +59,10 @@ export default function Papers() {
             </div>
           </div>
         </section>
+
+        <LatestPapers papers={papers} archive={`${site.substack}archive`} />
+
+        <ImplementationArchitect substack={site.substack} />
 
         <ContactCTA />
       </main>
