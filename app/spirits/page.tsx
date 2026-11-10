@@ -66,8 +66,8 @@ export default function Spirits() {
               <span className="eyebrow">What Aperture Brings</span>
               <h2 id="ap-h" className="h2">Strategy, Brand and the Numbers</h2>
               <p className="lede" style={{ marginTop: '1.25rem' }}>
-                Built on launches at Diageo, a P&amp;L at Stillhouse Spirits and advisory work with WES Brands, Beverly
-                Spirits and Perro Verde.
+                Built on launches at Diageo, a P&amp;L at Stillhouse Spirits and advisory work with WES Brands and Perro
+                Verde.
               </p>
             </div>
             <ul className="caps reveal">
