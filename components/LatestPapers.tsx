@@ -21,11 +21,10 @@ export default function LatestPapers({ papers, archive }: { papers: Paper[]; arc
         </div>
 
         <a className="paper-lead" href={lead.url} target="_blank" rel="noopener">
-          {lead.image && (
-            <div className="paper-lead__img">
-              <img src={lead.image} alt="" loading="lazy" />
-            </div>
-          )}
+          {/* Substack's feed only carries a low-res phone screenshot, so the lead uses a local crop of the same photo. */}
+          <div className="paper-lead__img">
+            <img src="/papers-portrait.jpg" alt="Brandon M. Weaver" loading="lazy" width={1179} height={1760} />
+          </div>
           <div className="paper-lead__txt">
             <p className="paper-meta">
               {lead.no && <span className="paper-no">No. {lead.no}</span>}

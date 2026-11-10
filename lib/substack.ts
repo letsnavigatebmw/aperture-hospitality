@@ -14,6 +14,7 @@ const decode = (s: string) =>
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
     .replace(/&amp;/g, '&')
+    .replace(/\s*\u2014\s*/g, ', ') // house style: no em dashes
     .trim()
 
 const tag = (xml: string, t: string) => decode(xml.match(new RegExp(`<${t}>([\\s\\S]*?)</${t}>`))?.[1] ?? '')
@@ -25,8 +26,16 @@ function parse(raw: string, dek: string) {
   const numMatch = raw.match(/(?:Paper(?:s)?\s*(?:No\.?|#)?\s*|#)?\.?\s*0*(\d{1,3})\b/i)
   const no = numMatch ? numMatch[1].padStart(3, '0') : ''
   const headline = parts.find((p) => !/aperture\s+paper/i.test(p) && !/^(?:paper\s*no\.?\s*|#|\.)?\s*\d+$/i.test(p))
-  return { no, title: headline || dek, dek: headline ? dek : '' }
+  return { no, title: headline || dek, dek: headline ? cleanDek(dek) : '' }
 }
+
+// Subtitles often end in "| The Aperture Papers | November 2026". Keep only the real subtitle.
+const cleanDek = (d: string) =>
+  d
+    .split('|')
+    .map((p) => p.trim())
+    .filter((p) => p && !/aperture\s+paper/i.test(p) && !/^[A-Z][a-z]+ \d{4}$/.test(p))
+    .join(' | ')
 
 export async function getPapers(): Promise<Paper[]> {
   try {
@@ -45,10 +54,11 @@ export async function getPapers(): Promise<Paper[]> {
           dek,
           url: tag(it, 'link'),
           date: new Date(tag(it, 'pubDate')).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'America/Los_Angeles' }),
-          image: it.match(/<enclosure url="([^"]+)"/)?.[1],
         } as Paper
       })
       .filter((p): p is Paper => !!p && !!p.title && !!p.url)
+      // Skip re-posts of the same paper number; the feed is newest first, so the latest wins.
+      .filter((p, i, all) => !p.no || all.findIndex((q) => q.no === p.no) === i)
   } catch {
     return []
   }
