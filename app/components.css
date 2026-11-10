@@ -28,7 +28,7 @@
 
 /* Testimonials */
 .quotes{gap:2.5rem;display:grid}
-@media (min-width:900px){.quotes{grid-template-columns:repeat(3,1fr);gap:3rem}}
+@media (min-width:900px){.quotes{grid-template-columns:repeat(auto-fit,minmax(0,1fr));gap:3rem}}
 .quote{margin:0}
 .quote blockquote{font-family:var(--serif);color:var(--ink);margin:0;font-size:1.3rem;font-style:italic;line-height:1.45}
 .quote figcaption{gap:.15rem;margin-top:1.25rem;font-size:.875rem;display:grid}
@@ -69,9 +69,10 @@
 .tl__line{margin:0;font-size:1rem}
 
 /* Logo and wordmark rows */
-.creds__logos{border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);margin:0;padding:.5rem 0;list-style:none;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;display:grid}
-@media (min-width:640px){.creds__logos{grid-template-columns:repeat(4,minmax(0,1fr))}}
-.creds__logos li{justify-content:center;align-items:center;min-height:112px;padding:0 .75rem;display:flex}
+.creds__logos{border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);margin:0;padding:.5rem 0;list-style:none;display:flex;flex-wrap:wrap;justify-content:center}
+/* Flex rows so a short last row stays centered */
+.creds__logos li{flex:0 0 50%;justify-content:center;align-items:center;min-height:112px;padding:0 .75rem;display:flex}
+@media (min-width:640px){.creds__logos li{flex-basis:25%}}
 .creds__logos img{object-fit:contain;opacity:.78;width:auto;max-width:min(170px,100%);transition:opacity .2s}
 .creds__logos img:hover{opacity:1}
 :root[data-theme=dark] .creds__logos img{filter:invert(1)}

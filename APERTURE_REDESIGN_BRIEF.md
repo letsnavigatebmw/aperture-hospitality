@@ -205,11 +205,11 @@ No dates in this list (unlike the personal site). Text link at the end: `Full ba
 
 ### 4.5 Advisory clients (logo row, like "Where I've Worked")
 
-Eyebrow: `Advisory Clients`. Logos or clean wordmarks: Swarm, Voyage Real Estate, Perro Verde, Beverly Spirits, Wilbur Labs, Boatsetter. Optional one-line caption under Swarm: "Supported a $3M seed raise." Use only logos Brandon has permission to display [confirm].
+Eyebrow: `Advisory Clients`. Logos or clean wordmarks: Swarm, Voyage Real Estate, Perro Verde, Wilbur Labs, Boatsetter. Optional one-line caption under Swarm: "Supported a $3M seed raise." Use only logos Brandon has permission to display [confirm].
 
 ### 4.6 Testimonials
 
-Eyebrow: `Client Testimonials`. H2: `What Clients Say`. Three columns, same three quotes and attributions as the personal site (Ari Afshar, Michael Silver, Andy Borenzweig). Titles must match the personal site exactly.
+Eyebrow: `Client Testimonials`. H2: `What Clients Say`. Two columns: Ari Afshar and Michael Silver, matching the personal site. Titles must match the personal site exactly.
 
 ### 4.7 How we work together (`#engagements`, three cards)
 

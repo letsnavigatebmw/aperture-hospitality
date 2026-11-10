@@ -42,7 +42,6 @@ const record = [
 const clients = [
   { n: 'Swarm', f: 'swarm', h: 56, w: 280, ih: 300 },
   { n: 'Voyage Real Estate', f: 'voyage', h: 22, w: 386, ih: 86 },
-  { n: 'Beverly Spirits', f: 'beverly-spirits', h: 50, w: 424, ih: 223 },
   { n: 'Perro Verde', f: 'perro-verde', h: 56, w: 359, ih: 264 },
   { n: 'WES Brands', f: 'wes-brands', h: 48, w: 181, ih: 138 },
   { n: 'All World Communications Group', f: 'all-world', h: 50, w: 520, ih: 235 },
@@ -120,7 +119,6 @@ const paths = [
 const quotes = [
   { q: 'Brandon has a unique ability to connect strategy with execution. He consistently identified opportunities others missed, built alignment across teams, and helped us accelerate expansion.', n: 'Ari Afshar', t: 'Founder & CEO, Voyage Real Estate' },
   { q: 'Working with Brandon felt like having a true strategic partner rather than an outside advisor. He challenged our assumptions in the right ways and translated complex growth objectives into practical, measurable actions.', n: 'Michael Silver', t: 'President, Foto Comercio' },
-  { q: 'Brandon brings a rare blend of luxury brand expertise, commercial leadership, and authentic relationship-building. He never loses sight of revenue and operational performance.', n: 'Andy Borenzweig', t: 'Founder & CEO, Beverly Spirits' },
 ]
 
 export default function Home() {

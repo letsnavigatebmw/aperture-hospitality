@@ -10,7 +10,6 @@ const brands: Brand[] = [
   { src: '/logos/brands/amex.png', alt: "American Express", h: 56 },
   { src: '/logos/brands/aman.png', alt: "Aman", h: 30 },
   { src: '/logos/brands/captainmorgan.png', alt: "Captain Morgan", h: 39 },
-  { src: '/logos/brands/beverly.png', alt: "The Beverly High Rye", h: 54 },
   { src: '/logos/brands/southernglazers.png', alt: "Southern Glazer’s Wine & Spirits", h: 66 },
   { src: '/logos/brands/nfl.png', alt: "NFL", h: 60 },
   { src: '/logos/brands/mlb.png', alt: "MLB", h: 46 },
