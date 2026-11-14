@@ -8,7 +8,7 @@ import { site } from '@/lib/site'
 import { method } from '@/lib/method'
 
 const who = [
-  { t: 'Hospitality & Travel', d: 'Hotels, luxury rentals, travel distribution, travel-tech and experiences, especially growth-stage and PE-backed.', more: { href: '/tools/revpar', label: 'Try the RevPAR Scenario Calculator' } },
+  { t: 'Hospitality & Travel', d: 'Hotels, luxury rentals, travel distribution, travel-tech and experiences, especially growth-stage and PE-backed.', more: { href: '/guides/travel-distribution', label: 'See How Travel Distribution Works' }, more2: { href: '/tools/revpar', label: 'Try the RevPAR Scenario Calculator' } },
   { t: 'Luxury, Lifestyle & Spirits', d: 'Positioning, distribution, retail and partnership growth.', more: { href: '/spirits', label: 'How We Help Spirits Brands' } },
   { t: 'Residential Real Estate & PropTech', d: 'Prospecting systems for brokerages and teams, and go-to-market for platforms that sell to agents and homeowners.', more: { href: '/real-estate', label: 'Explore the Agent Prospecting Library' } },
 ]
@@ -194,9 +194,16 @@ export default function Home() {
                   <h3 className="h3">{w.t}</h3>
                   <p>{w.d}</p>
                   {'more' in w && w.more && (
-                    <a className="link principles__more" href={w.more.href}>
-                      {w.more.label}
-                    </a>
+                    <div className="principles__more">
+                      <a className="link" href={w.more.href}>
+                        {w.more.label}
+                      </a>
+                      {'more2' in w && w.more2 && (
+                        <a className="link" href={w.more2.href}>
+                          {w.more2.label}
+                        </a>
+                      )}
+                    </div>
                   )}
                 </li>
               ))}
